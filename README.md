@@ -65,7 +65,7 @@ npm run review       # list species whose DNREC text no longer matches the revie
 
 `main` deploys to Cloud Run via GitHub Actions using Workload Identity Federation (no JSON keys).
 
-1. `PROJECT_ID=slotgauge-prod BILLING_ACCOUNT=… ./infra/setup-gcp.sh` (needs `gcloud` logged in as project creator). It creates the project, enables APIs, creates the Artifact Registry repo, the deploy and runtime service accounts, and the WIF pool/provider restricted to this repo, then prints four values.
+1. `BILLING_ACCOUNT=… ./infra/setup-gcp.sh (project defaults to `slotgauge`)` (needs `gcloud` logged in as project creator). It creates the project, enables APIs, creates the Artifact Registry repo, the deploy and runtime service accounts, and the WIF pool/provider restricted to this repo, then prints four values.
 2. Add those as repository **variables**: `GCP_PROJECT_ID`, `GCP_REGION`, `GCP_WIF_PROVIDER`, `GCP_DEPLOY_SA`. Create a `production` environment (optional: require a reviewer).
 3. Push to `main`. The workflow runs tests, builds the image, pushes to Artifact Registry, deploys to Cloud Run (scale-to-zero, 256Mi), and smoke-tests `/healthz`.
 4. Custom domain: `gcloud beta run domain-mappings create --service slotgauge --domain slotgauge.com --region us-east4` and add the DNS records it prints.

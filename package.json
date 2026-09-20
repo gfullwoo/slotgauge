@@ -4,18 +4,26 @@
   "description": "SlotGauge - keep-or-release checks against Delaware DNREC fishing regulations",
   "type": "module",
   "private": true,
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
+    "dev:fake": "DEV_FAKE=1 node --watch server.js",
     "scrape": "node scripts/scrape.js",
     "review": "node scripts/review.js",
     "test": "node --test test/*.test.js"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.127.0",
+    "@google-cloud/storage": "^8.2.0",
     "cheerio": "1.0.0",
     "compression": "1.8.0",
-    "express": "4.21.2"
+    "express": "4.21.2",
+    "firebase-admin": "^14.4.0",
+    "multer": "^2.4.0",
+    "sharp": "^0.35.4"
   },
   "devDependencies": {
     "supertest": "7.1.0"

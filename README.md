@@ -32,11 +32,30 @@ Each overlay entry stores a `rawHash` of the DNREC text it was reviewed against.
 }
 ```
 
+## Photo identification and galleries
+
+Signed-in users can take or upload a photo. The server downsizes it, asks Claude (vision) to pick the species from the DNREC catalog, stores the photo privately in Cloud Storage and the record in Firestore, and the app runs the normal keep/release check on the result. The gallery groups every photo by species; users can correct a species, add a length, re-check on a later date, or delete.
+
+```
+POST   /api/identify   multipart image=<file> source=camera|upload   -> {scan, species}
+GET    /api/scans                                                      -> {scans, groups}   (grouped by species)
+PATCH  /api/scans/:id  {speciesId?, lengthIn?, verdict?, verdictText?, note?}
+DELETE /api/scans/:id
+GET    /api/me, GET /api/config
+```
+
+Auth is Firebase Authentication (Google sign-in); the server verifies the ID token with firebase-admin. `/__/auth/*` is proxied to Firebase so sign-in stays on slotgauge.com (needed for iOS Safari).
+
+Local end-to-end without any cloud services: `npm run dev:fake` (fake sign-in, fake identifier that always says Black Sea Bass, in-memory photo store).
+
+Setup: `ANTHROPIC_API_KEY=sk-ant-… ./infra/setup-scans.sh`, then the Firebase console steps it prints, then add the `FIREBASE_API_KEY`, `FIREBASE_AUTH_DOMAIN`, `SCANS_BUCKET` repository variables. Each feature is independent: with no variables set the app still runs as the plain checker.
+
 ## Develop
 
 ```
 npm ci
-npm run dev          # http://localhost:8080
+npm run dev          # http://localhost:8080 (plain checker)
+npm run dev:fake     # checker + fake sign-in/identify/gallery for UI work
 npm test
 npm run scrape       # refresh data/dnrec_raw.json from DNREC (writes data/CHANGES.md if anything changed)
 npm run review       # list species whose DNREC text no longer matches the reviewed overlay (exit 1 if any)

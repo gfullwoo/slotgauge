@@ -1,0 +1,97 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import request from 'supertest';
+import sharp from 'sharp';
+import { createApp } from '../server.js';
+import { makeMemoryStore, groupBySpecies } from '../src/scans.js';
+import { parseModelJson, speciesCatalog, makeIdentifier } from '../src/identify.js';
+import { buildRegs } from '../src/regs.js';
+
+const regs = buildRegs();
+const seaBass = regs.species.find((s) => s.name === 'Black Sea Bass');
+const tautog = regs.species.find((s) => s.name === 'Tautog');
+
+async function testJpeg() {
+  return sharp({ create: { width: 640, height: 480, channels: 3, background: { r: 20, g: 90, b: 120 } } }).jpeg().toBuffer();
+}
+
+function appWithFakes({ ident } = {}) {
+  const store = makeMemoryStore();
+  const verifyToken = async (t) => { if (t !== 'good') throw new Error('bad token'); return { uid: 'u1', email: 'a@b.c', name: 'A', picture: null }; };
+  const identifier = async () => ident || { speciesId: seaBass.id, name: seaBass.name, confidence: 0.9, alternates: [{ speciesId: tautog.id, name: tautog.name, confidence: 0.05 }], lengthIn: 13.5, lengthBasis: 'ruler visible', notes: '', model: 'fake' };
+  return { app: createApp({ verifyToken, identifier, store, firebaseConfig: { apiKey: 'x', authDomain: 'y', projectId: 'p' } }), store };
+}
+
+test('parseModelJson tolerates prose around JSON and clamps values', () => {
+  const r = parseModelJson('Sure: {"speciesId": "93", "name": "Black Sea Bass", "confidence": 1.4, "alternates": [], "lengthIn": 13.13, "lengthBasis": null, "notes": ""} done');
+  assert.equal(r.speciesId, 93); assert.equal(r.confidence, 1); assert.equal(r.lengthIn, 13.25);
+  assert.throws(() => parseModelJson('no json here'));
+});
+
+test('makeIdentifier snaps names to the catalog and drops unknown ids', async () => {
+  const client = { messages: { create: async () => ({ content: [{ type: 'text', text: JSON.stringify({ speciesId: seaBass.id, name: 'sea bass thing', confidence: 0.8, alternates: [{ speciesId: 999999, name: 'x', confidence: 0.1 }, { speciesId: tautog.id, name: 'tog', confidence: 0.1 }], lengthIn: null, lengthBasis: null, notes: '' }) }] }) } };
+  const identify = makeIdentifier({ species: regs.species, client, model: 'test' });
+  const r = await identify(Buffer.from('x'));
+  assert.equal(r.name, 'Black Sea Bass');
+  assert.deepEqual(r.alternates.map((a) => a.name), ['Tautog']);
+  assert.ok(speciesCatalog(regs.species).includes(`${seaBass.id}|Black Sea Bass|saltwater`));
+});
+
+test('scan endpoints require auth and the feature flag is advertised', async () => {
+  const { app } = appWithFakes();
+  const cfg = await request(app).get('/api/config');
+  assert.equal(cfg.body.features.scans, true);
+  assert.equal((await request(app).get('/api/scans')).status, 401);
+  assert.equal((await request(app).get('/api/scans').set('Authorization', 'Bearer nope')).status, 401);
+  const off = createApp();
+  assert.equal((await request(off).get('/api/config')).body.features.scans, false);
+  assert.equal((await request(off).get('/api/scans')).status, 503);
+});
+
+test('identify -> gallery grouping -> correction -> delete', async () => {
+  const { app } = appWithFakes();
+  const auth = (r) => r.set('Authorization', 'Bearer good');
+  const jpeg = await testJpeg();
+  const id1 = await auth(request(app).post('/api/identify')).field('source', 'camera').attach('image', jpeg, 'a.jpg');
+  assert.equal(id1.status, 201);
+  assert.equal(id1.body.scan.speciesName, 'Black Sea Bass');
+  assert.equal(id1.body.scan.lengthIn, 13.5);
+  assert.equal(id1.body.scan.source, 'camera');
+  assert.match(id1.body.scan.thumbUrl, /thumb\.jpg$/);
+  const id2 = await auth(request(app).post('/api/identify')).attach('image', jpeg, 'b.jpg');
+  assert.equal(id2.status, 201);
+
+  let g = await auth(request(app).get('/api/scans'));
+  assert.equal(g.body.scans.length, 2);
+  assert.deepEqual(g.body.groups.map((x) => [x.speciesName, x.count]), [['Black Sea Bass', 2]]);
+
+  // user says the second one is actually a tautog, adds a verdict
+  const p = await auth(request(app).patch('/api/scans/' + id2.body.scan.id)).send({ speciesId: tautog.id, lengthIn: 17, verdict: 'keep', verdictText: 'ok' });
+  assert.equal(p.status, 200);
+  assert.equal(p.body.scan.speciesName, 'Tautog');
+  assert.equal(p.body.scan.userCorrected, true);
+  g = await auth(request(app).get('/api/scans'));
+  assert.deepEqual(g.body.groups.map((x) => [x.speciesName, x.count]).sort(), [['Black Sea Bass', 1], ['Tautog', 1]]);
+
+  assert.equal((await auth(request(app).patch('/api/scans/' + id2.body.scan.id)).send({ speciesId: 424242 })).status, 400);
+  assert.equal((await auth(request(app).delete('/api/scans/' + id1.body.scan.id))).status, 204);
+  assert.equal((await auth(request(app).delete('/api/scans/' + id1.body.scan.id))).status, 404);
+  const me = await auth(request(app).get('/api/me'));
+  assert.equal(me.body.scanCount, 1);
+});
+
+test('identify rejects non-images and reports identifier outages cleanly', async () => {
+  const { app } = appWithFakes();
+  const bad = await request(app).post('/api/identify').set('Authorization', 'Bearer good').attach('image', Buffer.from('not an image'), 'x.jpg');
+  assert.equal(bad.status, 400);
+  const broken = createApp({ verifyToken: async () => ({ uid: 'u' }), identifier: async () => { throw new Error('boom'); }, store: makeMemoryStore() });
+  const r = await request(broken).post('/api/identify').set('Authorization', 'Bearer t').attach('image', await testJpeg(), 'x.jpg');
+  assert.equal(r.status, 502);
+});
+
+test('groupBySpecies orders by count then recency and buckets unidentified', () => {
+  const g = groupBySpecies([
+    { speciesId: 1, speciesName: 'A', createdAt: '2026-01-01' }, { speciesId: 2, speciesName: 'B', createdAt: '2026-01-05' },
+    { speciesId: 2, speciesName: 'B', createdAt: '2026-01-02' }, { speciesId: null, speciesName: null, createdAt: '2026-01-03' }]);
+  assert.deepEqual(g.map((x) => [x.speciesName, x.count]), [['B', 2], ['Unidentified', 1], ['A', 1]]);
+});

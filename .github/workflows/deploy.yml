@@ -66,16 +66,20 @@ jobs:
           flags: >-
             --allow-unauthenticated
             --port=8080
-            --cpu=1 --memory=256Mi
+            --cpu=1 --memory=512Mi
             --min-instances=0 --max-instances=3
             --concurrency=80
             --cpu-throttling
             --service-account=slotgauge-run@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
+            --set-env-vars=FIREBASE_API_KEY=${{ vars.FIREBASE_API_KEY }},FIREBASE_AUTH_DOMAIN=${{ vars.FIREBASE_AUTH_DOMAIN }},SCANS_BUCKET=${{ vars.SCANS_BUCKET }},GOOGLE_CLOUD_PROJECT=${{ env.PROJECT_ID }},ANTHROPIC_MODEL=${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-4-5' }}
+            ${{ vars.SCANS_BUCKET && '--set-secrets=ANTHROPIC_API_KEY=anthropic-api-key:latest' || '' }}
           labels: app=slotgauge,commit=${{ github.sha }}
 
       - name: Smoke test
         run: |
-          curl -fsS "${{ steps.run.outputs.url }}/api/health"
-          curl -fsS "${{ steps.run.outputs.url }}/api/regs" | head -c 300
-          echo
-          echo "Deployed ${{ steps.run.outputs.url }}"
+          URL="${{ steps.run.outputs.url }}"
+          for i in $(seq 1 12); do
+            if curl -fsS "$URL/api/health"; then echo; curl -fsS "$URL/api/config"; echo; echo "Deployed $URL"; exit 0; fi
+            echo "not ready yet ($i)…"; sleep 5
+          done
+          echo "health check never came up"; exit 1

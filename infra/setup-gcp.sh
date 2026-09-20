@@ -3,7 +3,7 @@
 # Usage: PROJECT_ID=slotgauge-prod BILLING_ACCOUNT=XXXXXX-XXXXXX-XXXXXX ./infra/setup-gcp.sh
 set -euo pipefail
 
-PROJECT_ID="${PROJECT_ID:?set PROJECT_ID, e.g. slotgauge-prod}"
+PROJECT_ID="${PROJECT_ID:-slotgauge}"
 BILLING_ACCOUNT="${BILLING_ACCOUNT:?set BILLING_ACCOUNT (gcloud billing accounts list)}"
 REGION="${REGION:-us-east4}"            # Northern Virginia: closest region to Delaware
 GITHUB_REPO="${GITHUB_REPO:-gfullwoo/slotgauge}"

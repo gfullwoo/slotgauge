@@ -1,0 +1,1916 @@
+{
+"scraped": "2026-09-20",
+"source": "https://fishspecies.dnrec.delaware.gov/",
+"species": [
+{
+"id": 38,
+"h": "freshwater",
+"n": "Largemouth Bass",
+"f": "Basses (Black)",
+"sci": "",
+"season": "Open Year-Round",
+"size": "12 inch minimum (total length); except 15 inch minimum (total length) in Becks Pond",
+"limit": "6; except 2 from Becks Pond"
+},
+{
+"id": 53,
+"h": "freshwater",
+"n": "Smallmouth Bass",
+"f": "Basses (Black)",
+"sci": "",
+"season": "Open Year-Round",
+"size": "None allowed between 12 and 17 inches (total length)Any Smallmouth Bass taken which is greater than 12 inches and less than 17 inches must be immediately released.",
+"limit": "6 (no more than 1 greater than 17 inches)"
+},
+{
+"id": 55,
+"h": "freshwater",
+"n": "Striped Bass",
+"f": "Basses (Temperate)",
+"sci": "",
+"season": "Open Year-Round in State of Delaware waters (coast to 3 miles offshore) except catch & release only on spawning grounds April 1 to May 31 (see Delaware Fishing Guide)CLOSED in Federal waters (3 to 200 miles offshore)",
+"size": "In State of Delaware waters (coast to 3 miles offshore), 28 inches to 31 inches, except 20 inches to 25 inches from July 1 through August 31 in the Delaware River, Delaware Bay and their tributaries.CLOSED in Federal waters (3 to 200 miles offshore)",
+"limit": "1 in State of Delaware waters (coast to 3 miles offshore), except catch & release only on spawning grounds April 1 to May 31 (see Delaware Fishing Guide)CLOSED in Federal waters (3 to 200 miles offshore)"
+},
+{
+"id": 54,
+"h": "freshwater",
+"n": "Striped Bass Hybrid",
+"f": "Basses (Temperate)",
+"sci": "",
+"season": "Open Year-Round",
+"size": "15 inch minimum (total length)",
+"limit": "2"
+},
+{
+"id": 216,
+"h": "freshwater",
+"n": "White Perch",
+"f": "Basses (Temperate)",
+"sci": "",
+"season": "Open Year-Round",
+"size": "8 inch minimum (total length)",
+"limit": "Non-Tidal Waters: 50 panfish total (no more than 25 White Perch)Tidal Waters: No Limit"
+},
+{
+"id": 32,
+"h": "freshwater",
+"n": "Common Carp",
+"f": "Carps",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 40,
+"h": "freshwater",
+"n": "Mirror Carp",
+"f": "Carps",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 22,
+"h": "freshwater",
+"n": "Blue Catfish",
+"f": "Catfishes",
+"sci": "",
+"season": "Open Year-RoundINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914.",
+"size": "No Size LimitINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914.",
+"limit": "No LimitINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914."
+},
+{
+"id": 27,
+"h": "freshwater",
+"n": "Brown Bullhead",
+"f": "Catfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 30,
+"h": "freshwater",
+"n": "Channel Catfish",
+"f": "Catfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 33,
+"h": "freshwater",
+"n": "Flathead Catfish",
+"f": "Catfishes",
+"sci": "",
+"season": "Open Year-RoundINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914.",
+"size": "No Size LimitINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914.",
+"limit": "No LimitINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914."
+},
+{
+"id": 60,
+"h": "freshwater",
+"n": "White Catfish",
+"f": "Catfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 64,
+"h": "freshwater",
+"n": "Yellow Bullhead",
+"f": "Catfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 21,
+"h": "freshwater",
+"n": "Black Crappie",
+"f": "Crappies",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "50 panfish total (no more than 25 Black Crappie)"
+},
+{
+"id": 61,
+"h": "freshwater",
+"n": "White Crappie",
+"f": "Crappies",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "50 panfish total (no more than 25 White Crappie)"
+},
+{
+"id": 29,
+"h": "freshwater",
+"n": "Chain Pickerel",
+"f": "Pickerels and Muskellunges",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 42,
+"h": "freshwater",
+"n": "Muskellunge",
+"f": "Pickerels and Muskellunges",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 50,
+"h": "freshwater",
+"n": "Redfin Pickerel",
+"f": "Pickerels and Muskellunges",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 56,
+"h": "freshwater",
+"n": "Tiger Muskellunge",
+"f": "Pickerels and Muskellunges",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 17,
+"h": "freshwater",
+"n": "Alewife",
+"f": "Shads and Herrings",
+"sci": "",
+"season": "CLOSED - no harvest permitted",
+"size": "CLOSED - no harvest permitted",
+"limit": "CLOSED - no harvest permitted"
+},
+{
+"id": 19,
+"h": "freshwater",
+"n": "American Shad",
+"f": "Shads and Herrings",
+"sci": "",
+"season": "Ocean/Delaware Bay and Tributaries/Delaware River and Tributaries/Inland Bays:Open Year-RoundNanticoke River/Tributaries:CLOSED \u2013 Both commercial and recreational American Shad are CLOSED to harvest on the Nanticoke River and its tributaries",
+"size": "No Size Limit",
+"limit": "2"
+},
+{
+"id": 23,
+"h": "freshwater",
+"n": "Blueback Herring",
+"f": "Shads and Herrings",
+"sci": "",
+"season": "CLOSED - no harvest permitted",
+"size": "CLOSED - no harvest permitted",
+"limit": "CLOSED - no harvest permitted"
+},
+{
+"id": 37,
+"h": "freshwater",
+"n": "Hickory Shad",
+"f": "Shads and Herrings",
+"sci": "",
+"season": "Ocean/Delaware Bay and Tributaries/Delaware River and Tributaries/Inland Bays:Open Year-RoundNanticoke River/Tributaries: CLOSED \u2013 Both commercial and recreational Hickory shad are CLOSED to harvest on the Nanticoke River and their tributaries",
+"size": "No Size Limit",
+"limit": "10"
+},
+{
+"id": 20,
+"h": "freshwater",
+"n": "Atlantic Sturgeon",
+"f": "Sturgeons",
+"sci": "",
+"season": "CLOSED - no harvest permitted",
+"size": "CLOSED - no harvest permitted",
+"limit": "CLOSED - no harvest permitted"
+},
+{
+"id": 52,
+"h": "freshwater",
+"n": "Shortnose Sturgeon",
+"f": "Sturgeons",
+"sci": "",
+"season": "CLOSED - no harvest permitted",
+"size": "CLOSED - no harvest permitted",
+"limit": "CLOSED - no harvest permitted"
+},
+{
+"id": 24,
+"h": "freshwater",
+"n": "Bluegill",
+"f": "Sunfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "50 panfish total (no more than 25 Bluegill)"
+},
+{
+"id": 36,
+"h": "freshwater",
+"n": "Green Sunfish",
+"f": "Sunfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit (The Green Sunfish is not included in Delaware's panfish regulations)"
+},
+{
+"id": 41,
+"h": "freshwater",
+"n": "Mud Sunfish",
+"f": "Sunfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit (The Mud Sunfish is not included in Delaware's panfish regulations)"
+},
+{
+"id": 46,
+"h": "freshwater",
+"n": "Pumpkinseed Sunfish",
+"f": "Sunfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "50 panfish total (no more than 25 Pumpkinseed Sunfish)"
+},
+{
+"id": 48,
+"h": "freshwater",
+"n": "Redbreast Sunfish",
+"f": "Sunfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit (The Redbreast Sunfish is not included in Delaware's panfish regulations)"
+},
+{
+"id": 49,
+"h": "freshwater",
+"n": "Redear Sunfish",
+"f": "Sunfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "50 panfish total (no more than 25 Redear Sunfish)"
+},
+{
+"id": 51,
+"h": "freshwater",
+"n": "Rock Bass",
+"f": "Sunfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit (The Rock Bass is not included in Delaware's panfish regulations)"
+},
+{
+"id": 59,
+"h": "freshwater",
+"n": "Warmouth Sunfish",
+"f": "Sunfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit (The Warmouth Sunfish is not included in Delaware's panfish regulations)"
+},
+{
+"id": 26,
+"h": "freshwater",
+"n": "Brook Trout",
+"f": "Trout",
+"sci": "",
+"season": "Streams open 1st Saturday in AprilPonds open 1st Saturday in March",
+"size": "No Size Limit",
+"limit": "6 (All Trout species combined)4 in fly-fishing only waters"
+},
+{
+"id": 28,
+"h": "freshwater",
+"n": "Brown Trout",
+"f": "Trout",
+"sci": "",
+"season": "Streams open 1st Saturday in AprilPonds open 1st Saturday in March",
+"size": "No Size Limit",
+"limit": "6 (All Trout species combined)4 in fly-fishing only waters"
+},
+{
+"id": 34,
+"h": "freshwater",
+"n": "Golden Rainbow Trout",
+"f": "Trout",
+"sci": "",
+"season": "Streams open 1st Saturday in AprilPonds open 1st Saturday in March",
+"size": "No Size Limit",
+"limit": "6 (All Trout species combined)4 in fly-fishing only waters"
+},
+{
+"id": 47,
+"h": "freshwater",
+"n": "Rainbow Trout",
+"f": "Trout",
+"sci": "",
+"season": "Streams open 1st Saturday in AprilPonds open 1st Saturday in March",
+"size": "No Size Limit",
+"limit": "6 (All Trout species combined)4 in fly-fishing only waters"
+},
+{
+"id": 57,
+"h": "freshwater",
+"n": "Tiger Trout",
+"f": "Trout",
+"sci": "",
+"season": "Streams open 1st Saturday in AprilPonds open 1st Saturday in March",
+"size": "No Size Limit",
+"limit": "6 (All Trout species combined)4 in fly-fishing only water"
+},
+{
+"id": 18,
+"h": "freshwater",
+"n": "American Eel",
+"f": "Additional Freshwater Species",
+"sci": "",
+"season": "Open Year-Round",
+"size": "9 inch minimum (total length)",
+"limit": "25"
+},
+{
+"id": 25,
+"h": "freshwater",
+"n": "Bowfin",
+"f": "Additional Freshwater Species",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 35,
+"h": "freshwater",
+"n": "Golden Shiner",
+"f": "Additional Freshwater Species",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 39,
+"h": "freshwater",
+"n": "Longnose Gar",
+"f": "Additional Freshwater Species",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 43,
+"h": "freshwater",
+"n": "Northern Snakehead",
+"f": "Additional Freshwater Species",
+"sci": "",
+"season": "Open Year-RoundINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914.",
+"size": "No Size LimitINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914.",
+"limit": "No LimitINVASIVE: Please do not return to water. Immediately kill and contact Fish and Wildlife at 302-739-9914."
+},
+{
+"id": 58,
+"h": "freshwater",
+"n": "Walleye",
+"f": "Additional Freshwater Species",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 210,
+"h": "freshwater",
+"n": "White sucker",
+"f": "Additional Freshwater Species",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 65,
+"h": "freshwater",
+"n": "Yellow Perch",
+"f": "Additional Freshwater Species",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "50 panfish total (no more than 25 Yellow Perch)"
+},
+{
+"id": 93,
+"h": "saltwater",
+"n": "Black Sea Bass",
+"f": "Basses (Sea)",
+"sci": "",
+"season": "May 1 through December 31.",
+"size": "12.5 inch minimum (measured from the tip of the snout or jaw (mouth shut) to the farthest extremity of the tail, not including the tail filament)",
+"limit": "15"
+},
+{
+"id": 154,
+"h": "saltwater",
+"n": "Rock Hind",
+"f": "Basses (Sea)",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 173,
+"h": "saltwater",
+"n": "Snowy Grouper",
+"f": "Basses (Sea)",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 191,
+"h": "saltwater",
+"n": "Warsaw Grouper",
+"f": "Basses (Sea)",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 203,
+"h": "saltwater",
+"n": "Striped Bass",
+"f": "Basses (Temperate)",
+"sci": "",
+"season": "Open Year-Round in State of Delaware waters (coast to 3 miles offshore) except catch & release only on spawning grounds April 1 to May 31 (see Delaware Fishing Guide)CLOSED in Federal waters (3 to 200 miles offshore)",
+"size": "In State of Delaware waters (coast to 3 miles offshore), 28 inches to 31 inches, except 20 inches to 24 inches from July 1 through August 31 in the Delaware River, Delaware Bay and their tributaries.CLOSED in Federal waters (3 to 200 miles offshore)",
+"limit": "1 in State of Delaware waters (coast to 3 miles offshore), except catch & release only on spawning grounds April 1 to May 31 (see Delaware Fishing Guide)CLOSED in Federal waters (3 to 200 miles offshore)"
+},
+{
+"id": 204,
+"h": "saltwater",
+"n": "White Perch",
+"f": "Basses (Temperate)",
+"sci": "",
+"season": "Open Year-Round",
+"size": "8 inch minimum (total length)",
+"limit": "Non-Tidal Waters: 50 panfish total (no more than 25 white perch)Tidal Waters: No Limit"
+},
+{
+"id": 96,
+"h": "saltwater",
+"n": "Blue Marlin",
+"f": "Billfishes",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.There is an annual U.S. landings limit of 250 Atlantic Blue Marlin, White Marlin, and Roundscale Spearfish (combined). Landings updates and seasonal closures are posted under \u201cWhat's New...\u201d at https://hmspermits.noaa.gov/*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov/ or call toll free (888) 872-8862 for specific information and permits.",
+"size": "99 inch minimum (measured from the tip of the lower jaw to the tail fork)",
+"limit": "No Limit"
+},
+{
+"id": 134,
+"h": "saltwater",
+"n": "Longbill Spearfish",
+"f": "Billfishes",
+"sci": "",
+"season": "CLOSED - no harvest permittedLongbill spearfish must be immediately released without removing the fish from the water.",
+"size": "CLOSED - no harvest permittedLongbill spearfish must be immediately released.",
+"limit": "CLOSED - no harvest permittedLongbill spearfish must be immediately released."
+},
+{
+"id": 155,
+"h": "saltwater",
+"n": "Roundscale Spearfish",
+"f": "Billfishes",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.There is an annual U.S. landings limit of 250 Atlantic Blue Marlin, White Marlin, and Roundscale Spearfish (combined). Landings updates and seasonal closures are posted under \u201cWhat's New...\u201d at https://hmspermits.noaa.gov/*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov/ or call toll free (888) 872-8862 for specific information and permits.",
+"size": "66 inch minimum (measured from the tip of the lower jaw to the tail fork)",
+"limit": "No Limit"
+},
+{
+"id": 156,
+"h": "saltwater",
+"n": "Sailfish",
+"f": "Billfishes",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov/ or call toll free (888) 872-8862 for specific information and permits.",
+"size": "63 inch minimum (measured from the tip of the lower jaw to the tail fork)",
+"limit": "No Limit"
+},
+{
+"id": 186,
+"h": "saltwater",
+"n": "Swordfish",
+"f": "Billfishes",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.Landings updates and seasonal closures are posted under \u201cWhat's New...\u201d at https://hmspermits.noaa.gov/*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov/ or call toll free (888) 872-8862 for specific information and permits.",
+"size": "47 inch minimum (head on) (measured from the tip of the lower jaw to the tail fork)",
+"limit": "Private vessel \u2013 1 per person, no more than 4 per tripCharter vessel \u2013 1 per paying person, no more than 6 per tripHeadboat \u2013 1 per paying person, no more than 15 per trip"
+},
+{
+"id": 194,
+"h": "saltwater",
+"n": "White Marlin",
+"f": "Billfishes",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.There is an annual U.S. landings limit of 250 Atlantic Blue Marlin, White Marlin, andRoundscale Spearfish (combined). Landings updates and seasonal closures are posted under \u201cWhat's New...\u201d at https://hmspermits.noaa.gov/*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov/ or call toll free (888) 872-8862 for specific information and permits.",
+"size": "66 inch minimum (measured from the tip of the lower jaw to the tail fork)",
+"limit": "No Limit"
+},
+{
+"id": 234,
+"h": "saltwater",
+"n": "Atlantic Cod",
+"f": "Cods",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit in State of Delaware waters (coast to 3 miles offshore)22 inch minimum (total length) in Federal waters (3 to 200 miles offshore)",
+"limit": "No Limit in State of Delaware waters (coast to 3 miles offshore)9 in Federal waters (3 to 200 miles offshore)"
+},
+{
+"id": 148,
+"h": "saltwater",
+"n": "Pollock",
+"f": "Cods",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit in State of Delaware waters (coast to 3 miles offshore)19 inch minimum (total length) in Federal waters (3 to 200 miles offshore)",
+"limit": "No Limit"
+},
+{
+"id": 79,
+"h": "saltwater",
+"n": "Atlantic Croaker",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round",
+"size": "8 inch minimum (total length)",
+"limit": "50"
+},
+{
+"id": 92,
+"h": "saltwater",
+"n": "Black Drum",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round",
+"size": "16 inch minimum (total length)",
+"limit": "3"
+},
+{
+"id": 136,
+"h": "saltwater",
+"n": "Northern Kingfish",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 150,
+"h": "saltwater",
+"n": "Red Drum",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round in State of Delaware waters (coast to 3 miles offshore)CLOSED in Federal waters (3 to 200 miles offshore)",
+"size": "20 to 27 inches (total length) in State of Delaware waters (coast to 3 miles offshore)CLOSED in Federal waters (3 to 200 miles offshore)",
+"limit": "5 in State of Delaware waters (coast to 3 miles offshore)CLOSED in Federal waters (3 to 200 miles offshore)"
+},
+{
+"id": 167,
+"h": "saltwater",
+"n": "Silver Perch",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 174,
+"h": "saltwater",
+"n": "Southern Kingfish",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 180,
+"h": "saltwater",
+"n": "Spot",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "50"
+},
+{
+"id": 183,
+"h": "saltwater",
+"n": "Spotted Seatrout",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round",
+"size": "12 inch minimum (total length)",
+"limit": "No Limit"
+},
+{
+"id": 192,
+"h": "saltwater",
+"n": "Weakfish",
+"f": "Drums",
+"sci": "",
+"season": "Open Year-Round",
+"size": "13 inch minimum (total length)",
+"limit": "1"
+},
+{
+"id": 117,
+"h": "saltwater",
+"n": "Four-Spot Flounder",
+"f": "Flounders",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 185,
+"h": "saltwater",
+"n": "Summer Flounder",
+"f": "Flounders",
+"sci": "",
+"season": "Open Year-Round",
+"size": "January 1 - May 31: 16 inch minimum (total length)June 1 - December 31: 17.5 inch minimum (total length)",
+"limit": "4"
+},
+{
+"id": 196,
+"h": "saltwater",
+"n": "Windowpane Flounder",
+"f": "Flounders",
+"sci": "",
+"season": "Open Year-Round in State of Delaware watersCLOSED in Federal waters (3 to 200 miles offshore)",
+"size": "No Size Limit in State of Delaware waters (coast to 3 miles offshore)CLOSED in Federal waters (3 to 200 miles offshore)",
+"limit": "No Limit in State of Delaware waters (coast to 3 miles offshore)CLOSED in Federal waters (3 to 200 miles offshore)"
+},
+{
+"id": 197,
+"h": "saltwater",
+"n": "Winter Flounder",
+"f": "Flounders",
+"sci": "",
+"season": "February 11 to April 10",
+"size": "12 inch minimum (total length)",
+"limit": "2"
+},
+{
+"id": 198,
+"h": "saltwater",
+"n": "Witch Flounder",
+"f": "Flounders",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit in State of Delaware waters (coast to 3 miles offshore)14 inches in Federal waters (3 to 200 miles offshore)",
+"limit": "No Limit"
+},
+{
+"id": 202,
+"h": "saltwater",
+"n": "Yellowtail Flounder",
+"f": "Flounders",
+"sci": "",
+"season": "Open All-Year",
+"size": "No Size Limit in State of Delaware waters (coast to 3 miles offshore)13 inch minimum Federal waters (3 to 200 miles offshore)",
+"limit": "No Limit"
+},
+{
+"id": 146,
+"h": "saltwater",
+"n": "Pigfish",
+"f": "Grunts",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 193,
+"h": "saltwater",
+"n": "White Grunt",
+"f": "Grunts",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 151,
+"h": "saltwater",
+"n": "Red Hake (Ling)",
+"f": "Hakes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 166,
+"h": "saltwater",
+"n": "Silver Hake",
+"f": "Hakes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 182,
+"h": "saltwater",
+"n": "Spotted Hake",
+"f": "Hakes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 2,
+"h": "saltwater",
+"n": "African Pompano",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 72,
+"h": "saltwater",
+"n": "Almaco Jack",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 87,
+"h": "saltwater",
+"n": "Banded Rudderfish",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 88,
+"h": "saltwater",
+"n": "Bar Jack",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 97,
+"h": "saltwater",
+"n": "Blue Runner",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 111,
+"h": "saltwater",
+"n": "Crevalle Jack",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 116,
+"h": "saltwater",
+"n": "Florida Pompano",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 124,
+"h": "saltwater",
+"n": "Greater Amberjack",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 126,
+"h": "saltwater",
+"n": "Horse-Eye Jack",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 130,
+"h": "saltwater",
+"n": "Leatherjack",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 132,
+"h": "saltwater",
+"n": "Lesser Amberjack",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 135,
+"h": "saltwater",
+"n": "Lookdown",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 144,
+"h": "saltwater",
+"n": "Palometa",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 145,
+"h": "saltwater",
+"n": "Permit",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 149,
+"h": "saltwater",
+"n": "Rainbow Runner",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 200,
+"h": "saltwater",
+"n": "Yellow Jack",
+"f": "Jacks and Pompanos",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 209,
+"h": "saltwater",
+"n": "Atlantic Chub Mackerel",
+"f": "Mackerels",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 80,
+"h": "saltwater",
+"n": "Atlantic Mackerel",
+"f": "Mackerels",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 107,
+"h": "saltwater",
+"n": "Cero Mackerel",
+"f": "Mackerels",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 114,
+"h": "saltwater",
+"n": "Escolar",
+"f": "Mackerels",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 128,
+"h": "saltwater",
+"n": "King Mackerel",
+"f": "Mackerels",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 176,
+"h": "saltwater",
+"n": "Spanish Mackerel",
+"f": "Mackerels",
+"sci": "",
+"season": "Open Year-Round",
+"size": "14 inch minimum",
+"limit": "15"
+},
+{
+"id": 190,
+"h": "saltwater",
+"n": "Wahoo",
+"f": "Mackerels",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "2"
+},
+{
+"id": 147,
+"h": "saltwater",
+"n": "Pinfish",
+"f": "Porgies",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 152,
+"h": "saltwater",
+"n": "Red Porgy",
+"f": "Porgies",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 160,
+"h": "saltwater",
+"n": "Scup",
+"f": "Porgies",
+"sci": "",
+"season": "Open Year-Round",
+"size": "9 inch minimum (total length)",
+"limit": "30"
+},
+{
+"id": 161,
+"h": "saltwater",
+"n": "Sea Bream",
+"f": "Porgies",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 163,
+"h": "saltwater",
+"n": "Sheepshead",
+"f": "Porgies",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 181,
+"h": "saltwater",
+"n": "Spottail Pinfish",
+"f": "Porgies",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 137,
+"h": "saltwater",
+"n": "Northern Puffer",
+"f": "Puffers",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 171,
+"h": "saltwater",
+"n": "Smooth Puffer",
+"f": "Puffers",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 138,
+"h": "saltwater",
+"n": "Northern Searobin",
+"f": "Searobins",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 184,
+"h": "saltwater",
+"n": "Striped Searobin",
+"f": "Searobins",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 71,
+"h": "saltwater",
+"n": "Alewife",
+"f": "Shads and Herrings",
+"sci": "",
+"season": "CLOSED - no harvest permitted",
+"size": "CLOSED - no harvest permitted",
+"limit": "CLOSED - no harvest permitted"
+},
+{
+"id": 74,
+"h": "saltwater",
+"n": "American Shad",
+"f": "Shads and Herrings",
+"sci": "",
+"season": "Ocean/Delaware Bay and Tributaries/Delaware River and Tributaries/Inland BaysOpen Year-RoundNanticoke River/TributariesCLOSED \u2013 Both commercial and recreational hickory shad are CLOSED to harvest on the Nanticoke River and its tributaries",
+"size": "No Size Limit",
+"limit": "10 in any combination with Hickory Shad"
+},
+{
+"id": 99,
+"h": "saltwater",
+"n": "Blueback Herring",
+"f": "Shads and Herrings",
+"sci": "",
+"season": "CLOSED - no harvest permitted",
+"size": "CLOSED - no harvest permitted",
+"limit": "CLOSED - no harvest permitted"
+},
+{
+"id": 125,
+"h": "saltwater",
+"n": "Hickory Shad",
+"f": "Shads and Herrings",
+"sci": "",
+"season": "Ocean/Delaware Bay and Tributaries/Delaware River and Tributaries/Inland BaysOpen Year-RoundNanticoke River/Tributaries CLOSED \u2013 Both commercial and recreational hickory shad are CLOSED to harvest on the Nanticoke River and their tributaries",
+"size": "No Size Limit",
+"limit": "10 in any combination with American Shad"
+},
+{
+"id": 123,
+"h": "saltwater",
+"n": "Great Hammerhead Shark",
+"f": "Sharks (Hammerhead)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "78 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 159,
+"h": "saltwater",
+"n": "Scalloped Hammerhead Shark",
+"f": "Sharks (Hammerhead)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "78 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 170,
+"h": "saltwater",
+"n": "Smooth Hammerhead Shark",
+"f": "Sharks (Hammerhead)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, non corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "78 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 95,
+"h": "saltwater",
+"n": "Blacktip Shark",
+"f": "Sharks (Large Coastal)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 104,
+"h": "saltwater",
+"n": "Bull Shark",
+"f": "Sharks (Large Coastal)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 131,
+"h": "saltwater",
+"n": "Lemon Shark",
+"f": "Sharks (Large Coastal)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 140,
+"h": "saltwater",
+"n": "Nurse Shark",
+"f": "Sharks (Large Coastal)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels.Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 165,
+"h": "saltwater",
+"n": "Silky Shark",
+"f": "Sharks (Large Coastal)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 177,
+"h": "saltwater",
+"n": "Spinner Shark",
+"f": "Sharks (Large Coastal)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 189,
+"h": "saltwater",
+"n": "Tiger Shark",
+"f": "Sharks (Large Coastal)",
+"sci": "",
+"season": "January 1 to May 14July 16 to December 31All Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 98,
+"h": "saltwater",
+"n": "Blue Shark",
+"f": "Sharks (Pelagic)",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 142,
+"h": "saltwater",
+"n": "Oceanic Whitetip Shark",
+"f": "Sharks (Pelagic)",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 188,
+"h": "saltwater",
+"n": "Thresher Shark",
+"f": "Sharks (Pelagic)",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "54 inch minimum (measured from the tip of the snout to the fork of the tail)",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 75,
+"h": "saltwater",
+"n": "Atlantic Angel Shark",
+"f": "Sharks (Prohibited)",
+"sci": "",
+"season": "CLOSED - no harvest permittedAtlantic angel sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"size": "CLOSED - no harvest permittedAtlantic angel sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"limit": "CLOSED - no harvest permittedAtlantic angel sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water."
+},
+{
+"id": 113,
+"h": "saltwater",
+"n": "Dusky Shark",
+"f": "Sharks (Prohibited)",
+"sci": "",
+"season": "CLOSED - no harvest permittedDusky sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"size": "CLOSED - no harvest permittedDusky sharks must be immediately released to ensure the maximum probability of survival., without removing the fish from the water.",
+"limit": "CLOSED - no harvest permittedDusky sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water."
+},
+{
+"id": 157,
+"h": "saltwater",
+"n": "Sand Tiger Shark",
+"f": "Sharks (Prohibited)",
+"sci": "",
+"season": "CLOSED - no harvest permittedSand tiger sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"size": "CLOSED - no harvest permittedSand tiger sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"limit": "CLOSED - no harvest permittedSand tiger sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water."
+},
+{
+"id": 158,
+"h": "saltwater",
+"n": "Sandbar Shark",
+"f": "Sharks (Prohibited)",
+"sci": "",
+"season": "CLOSED - no harvest permittedSandbar sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"size": "CLOSED - no harvest permittedSandbar sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"limit": "CLOSED - no harvest permittedSandbar sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water."
+},
+{
+"id": 164,
+"h": "saltwater",
+"n": "Shortfin mako Shark",
+"f": "Sharks (Prohibited)",
+"sci": "",
+"season": "Possession is prohibited in state and federal waters.Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information.",
+"size": "Possession is prohibited in state and federal waters.",
+"limit": "Possession is prohibited in state and federal waters."
+},
+{
+"id": 195,
+"h": "saltwater",
+"n": "White Shark",
+"f": "Sharks (Prohibited)",
+"sci": "",
+"season": "CLOSED - no harvest permittedWhite sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"size": "CLOSED - no harvest permittedWhite sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.",
+"limit": "CLOSED - no harvest permittedWhite sharks must be immediately released to ensure the maximum probability of survival, without removing the fish from the water."
+},
+{
+"id": 82,
+"h": "saltwater",
+"n": "Atlantic Sharpnose Shark",
+"f": "Sharks (Small Coastal)",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "No Size Limit",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 94,
+"h": "saltwater",
+"n": "Blacknose Shark",
+"f": "Sharks (Small Coastal)",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "No Size Limit",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 103,
+"h": "saltwater",
+"n": "Bonnethead Shark",
+"f": "Sharks (Small Coastal)",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species permit holders must abide by the non-offset, corrodible circle hook requirement when targeting sharks in Federal waters of the Atlantic Ocean (3 to 200 miles off shore).All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "No Size Limit",
+"limit": "Boat anglers - only 1 shark of any species per vessel, except 1 additional Bonnethead and 1 additional Atlantic Sharpnose per angler onboard vessels. Shore anglers - only 1 shark of any species per angler, except 1 additional Bonnethead and one additional Atlantic Sharpnose per shore angler."
+},
+{
+"id": 85,
+"h": "saltwater",
+"n": "Atlantic Torpedo Ray",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 89,
+"h": "saltwater",
+"n": "Barndoor Skate",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round in State of Delaware waters (coast to 3 miles offshore)CLOSED in Federal waters (3 to 200 miles offshore)",
+"size": "No Size Limit in State of Delaware waters (coast to 3 miles offshore)CLOSED in Federal waters (3 to 200 miles offshore)",
+"limit": "No Limit in State of Delaware waters (coast to 3 miles offshore)CLOSED in Federal waters (3 to 200 miles offshore)"
+},
+{
+"id": 102,
+"h": "saltwater",
+"n": "Bluntnose Stingray",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 105,
+"h": "saltwater",
+"n": "Bullnose Ray",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 108,
+"h": "saltwater",
+"n": "Clearnose Skate",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 110,
+"h": "saltwater",
+"n": "Cownose Ray",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 133,
+"h": "saltwater",
+"n": "Little Skate",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 169,
+"h": "saltwater",
+"n": "Smooth Butterfly Ray",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 175,
+"h": "saltwater",
+"n": "Southern Stingray",
+"f": "Skates and Rays",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 172,
+"h": "saltwater",
+"n": "Smoothhound (Smooth Dogfish)",
+"f": "Smoothhound and Spiny Dogfish",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 178,
+"h": "saltwater",
+"n": "Spiny Dogfish",
+"f": "Smoothhound and Spiny Dogfish",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 212,
+"h": "saltwater",
+"n": "Cubera snapper",
+"f": "Snappers",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 211,
+"h": "saltwater",
+"n": "Dog snapper",
+"f": "Snappers",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 207,
+"h": "saltwater",
+"n": "Gray Snapper",
+"f": "Snappers",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 213,
+"h": "saltwater",
+"n": "Yellowtail snapper",
+"f": "Snappers",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 101,
+"h": "saltwater",
+"n": "Blueline Tilefish",
+"f": "Tilefishes",
+"sci": "",
+"season": "Open May 1 to October 31 Charter/party vessels must hold a valid open access Golden Tilefish permit to land Blueline Tilefish. Questions? Contact the NOAA Greater Atlantic Region Permits Office at (978) 282-8438 or Email: NMFS.GAR.Permits@noaa.gov",
+"size": "No Size Limit",
+"limit": "3 for private vessel5 for USCG uninspected for-hire vessel7 for USCG inspected for-hire vessel"
+},
+{
+"id": 119,
+"h": "saltwater",
+"n": "Golden Tilefish",
+"f": "Tilefishes",
+"sci": "",
+"season": "Open Year-RoundCharter/party vessels must hold a valid open access Golden Tilefish permit to land Blueline Tilefish. Questions? Contact the NOAA Greater Atlantic Region Permits Office at (978) 282-8438 or Email: NMFS.GAR.Permits@noaa.gov",
+"size": "No Size Limit",
+"limit": "8"
+},
+{
+"id": 121,
+"h": "saltwater",
+"n": "Gray Triggerfish",
+"f": "Triggerfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 141,
+"h": "saltwater",
+"n": "Ocean Triggerfish",
+"f": "Triggerfishes",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 70,
+"h": "saltwater",
+"n": "Albacore Tuna",
+"f": "Tunas",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 76,
+"h": "saltwater",
+"n": "Atlantic Bluefin Tuna",
+"f": "Tunas",
+"sci": "",
+"season": "Open Year-Round until season is shut down. (Regulated Federally, subject to frequent changes). Prior to departure, check https://hmspermits.noaa.gov or (888) 872-8862 for up-to-date limits.All Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "27 inches to less than 47 inches (School)47 inches to less than 73 inches (Large school orSmall medium)73 inches or greater (Large medium or Giant)",
+"limit": "Atlantic Bluefin Tuna retention limits may change throughout the season. Call (888) 872-8862 or visit //hmspermits.noaa.gov/ for current limits."
+},
+{
+"id": 77,
+"h": "saltwater",
+"n": "Atlantic Bonito",
+"f": "Tunas",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 91,
+"h": "saltwater",
+"n": "Bigeye Tuna",
+"f": "Tunas",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "27 inch minimum (measurement is taken in a line, tracing the contour of the body from the tip of the upper jaw to the fork of the tail, which crosses the dorsal insertion of the pectoral fin and the dorsal side of the caudal keel)",
+"limit": "No Limit"
+},
+{
+"id": 115,
+"h": "saltwater",
+"n": "False Albacore",
+"f": "Tunas",
+"sci": "",
+"season": "Open Year-Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 168,
+"h": "saltwater",
+"n": "Skipjack Tuna",
+"f": "Tunas",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) for personal use in the Atlantic Ocean must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Further limits and restrictions apply. Consult https://hmspermits.noaa.gov or call toll free (888) 872-8862 for specific information and permits.",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 201,
+"h": "saltwater",
+"n": "Yellowfin Tuna",
+"f": "Tunas",
+"sci": "",
+"season": "Open Year-RoundAll Atlantic Highly Migratory Species (Atlantic tunas, sharks, swordfish and billfish) not retained must be immediately released to ensure the maximum probability of survival, without removing the fish from the water.*Special permit required - All private vessel owners/operators recreationally fishing for and/or retaining regulated Atlantic Highly Migratory Shark Species for personal use in Federal waters of the Atlantic Ocean (3 to 200 miles off shore) must obtain an Atlantic Highly Migratory Species (HMS) Angling Permit. Consult https://hmspermits.noaa.gov/ or call toll free (888) 872-8862 for specific information and permits.",
+"size": "27 inch minimum (measurement is taken in a line, tracing the contour of the body from the tip of the upper jaw to the fork of the tail, which crosses the dorsal insertion of the pectoral fin and the dorsal side of the caudal keel)",
+"limit": "3"
+},
+{
+"id": 73,
+"h": "saltwater",
+"n": "American Eel",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "9 inch minimum (total length)",
+"limit": "25"
+},
+{
+"id": 208,
+"h": "saltwater",
+"n": "Atlantic Cutlassfish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 81,
+"h": "saltwater",
+"n": "Atlantic Needlefish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 83,
+"h": "saltwater",
+"n": "Atlantic Spadefish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 84,
+"h": "saltwater",
+"n": "Atlantic Sturgeon",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "CLOSED - no harvest permitted",
+"size": "CLOSED - no harvest permitted",
+"limit": "CLOSED - no harvest permitted"
+},
+{
+"id": 86,
+"h": "saltwater",
+"n": "Atlantic Tripletail",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 100,
+"h": "saltwater",
+"n": "Bluefish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "5 per shore or private boat anglers.7 per anglers on \u2018for-hire\u2019 vessels (Headboats and Charter boats)."
+},
+{
+"id": 106,
+"h": "saltwater",
+"n": "Butterfish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 109,
+"h": "saltwater",
+"n": "Cobia",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year-Round",
+"size": "43 inches minimum length (total length)",
+"limit": "2 per angler or 2 per vessel"
+},
+{
+"id": 90,
+"h": "saltwater",
+"n": "Cunner (Bergall)",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 118,
+"h": "saltwater",
+"n": "Gafftopsail Catfish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 122,
+"h": "saltwater",
+"n": "Great Barracuda",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 127,
+"h": "saltwater",
+"n": "Inshore Lizardfish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 129,
+"h": "saltwater",
+"n": "Ladyfish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 139,
+"h": "saltwater",
+"n": "Northern Stargazer",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 143,
+"h": "saltwater",
+"n": "Oyster Toadfish",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 153,
+"h": "saltwater",
+"n": "Remora",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 214,
+"h": "saltwater",
+"n": "Tarpon",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 187,
+"h": "saltwater",
+"n": "Tautog",
+"f": "Additional Nearshore and Occasional Nearshore Species",
+"sci": "",
+"season": "January 1 to May 15July 1 to December 31",
+"size": "16 inch minimum (total length)",
+"limit": "4"
+},
+{
+"id": 112,
+"h": "saltwater",
+"n": "Dolphinfish",
+"f": "Additional Offshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "Private vessel \u2013 10 per person, no more than 60 per tripHeadboat \u2013 10 per paying person"
+},
+{
+"id": 120,
+"h": "saltwater",
+"n": "Goosefish (Monkfish)",
+"f": "Additional Offshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit in State of Delaware waters (coast to 3 miles offshore)17 inch minimum (total length) or 11 inch minimum tail length (when removed) in Federal waters (3 to 200 miles offshore)",
+"limit": "No Limit"
+},
+{
+"id": 162,
+"h": "saltwater",
+"n": "Sea Raven",
+"f": "Additional Offshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 199,
+"h": "saltwater",
+"n": "Wreckfish",
+"f": "Additional Offshore Species",
+"sci": "",
+"season": "Open Year Round",
+"size": "No Size Limit",
+"limit": "No Limit"
+},
+{
+"id": 67,
+"h": "shellfish",
+"n": "Atlantic Lobster",
+"f": "Shellfish",
+"sci": "",
+"season": "Open Year RoundA fishing license is required to harvest Atlantic Lobsters in waters of the State of Delaware.",
+"size": "3\u215c to 5\u00bc inches (slot)The measurement is made between the extreme rear of the eye socket to the end of the carapace.",
+"limit": "2; V-notched (Female) prohibited"
+},
+{
+"id": 68,
+"h": "shellfish",
+"n": "Blue Crab",
+"f": "Shellfish",
+"sci": "",
+"season": "Pots: March 1 to November 30; other gears Open Year RoundA fishing license is required to crab in all waters of the State of Delaware.",
+"size": "Peeler - 3 inch minimumSoft-shell - 3\u00bd inch minimum Hard-shell - 5 inch minimum The measurement is taken from the left point of the hard shell to the right point of the hard shell.",
+"limit": "1 bushel"
+},
+{
+"id": 69,
+"h": "shellfish",
+"n": "Hard Clam",
+"f": "Shellfish",
+"sci": "",
+"season": "Open Year-RoundA fishing license is required to harvest clams in waters of the State of Delaware.",
+"size": "1\u00bd inch minimum",
+"limit": "100/resident50/non-resident"
+}
+]
+}

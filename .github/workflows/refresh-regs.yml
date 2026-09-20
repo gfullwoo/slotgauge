@@ -1,0 +1,43 @@
+name: Refresh DNREC regulations
+
+on:
+  schedule:
+    - cron: '17 9 * * *'   # daily 09:17 UTC (~5am Eastern)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Scrape DNREC species pages
+        id: scrape
+        run: |
+          npm run scrape | tee scrape.log
+          if [ -f data/CHANGES.md ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Check which reviewed rules the change affects
+        if: steps.scrape.outputs.changed == 'true'
+        run: |
+          { echo; echo '## Reviewed rules affected (tests will fail until overlay.json is updated)'; echo '```'; npm run --silent review || true; echo '```'; } >> data/CHANGES.md
+
+      - name: Open pull request
+        if: steps.scrape.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: regs/dnrec-update
+          title: 'DNREC regulation text changed'
+          commit-message: 'data: refresh DNREC species text'
+          labels: regulations
+          add-paths: data/dnrec_raw.json
+          body-path: data/CHANGES.md

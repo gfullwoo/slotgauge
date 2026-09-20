@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Say what you caught and where. KeepGauge checks Delaware season, size, and daily limits and tells you keep or release.">
+<meta name="theme-color" content="#0f6f8c" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d171c" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="KeepGauge">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<title>KeepGauge</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#eef3f4; --surface:#ffffff; --surface-2:#e3ebed; --ink:#14232a; --ink-2:#4d6169; --ink-3:#7f939a;
+  --line:#cfdadd; --accent:#0f6f8c; --accent-ink:#ffffff;
+  --keep:#1f7a4d; --keep-bg:#dcf2e5; --release:#b3361f; --release-bg:#fbe3dc; --closed:#4a5a62; --closed-bg:#e2e8ea; --warn:#9a6b00; --warn-bg:#fdf0cc;
+  --shadow:0 10px 30px -18px rgba(20,35,42,.45);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0d171c; --surface:#142229; --surface-2:#1c2e36; --ink:#e8f0f2; --ink-2:#a9bcc3; --ink-3:#6f858d;
+  --line:#264049; --accent:#4fb6d3; --accent-ink:#06171d;
+  --keep:#5fd39a; --keep-bg:#0f3324; --release:#ff8f73; --release-bg:#3b1a12; --closed:#b6c4ca; --closed-bg:#22323a; --warn:#f2c14e; --warn-bg:#3a2d0b;
+  --shadow:0 10px 30px -18px rgba(0,0,0,.8);
+}}
+:root[data-theme="dark"]{
+  --bg:#0d171c; --surface:#142229; --surface-2:#1c2e36; --ink:#e8f0f2; --ink-2:#a9bcc3; --ink-3:#6f858d;
+  --line:#264049; --accent:#4fb6d3; --accent-ink:#06171d;
+  --keep:#5fd39a; --keep-bg:#0f3324; --release:#ff8f73; --release-bg:#3b1a12; --closed:#b6c4ca; --closed-bg:#22323a; --warn:#f2c14e; --warn-bg:#3a2d0b;
+  --shadow:0 10px 30px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.45;padding-inline:16px;padding-block:0 32px}
+.wrap{max-width:560px;margin:0 auto}
+h1,h2,h3,.disp{font-family:"Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.01em;text-wrap:balance;margin:0}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-block:18px 10px}
+header h1{font-size:30px;font-weight:700;line-height:1}
+header h1 small{font-size:14px;font-family:"IBM Plex Sans",sans-serif;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-left:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-2);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
+.chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip .dot{width:7px;height:7px;border-radius:50%;background:var(--ink-3)}
+.chip.ok .dot{background:var(--keep)}
+.chip button{all:unset}
+.inputbox{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:10px 10px 10px 14px;display:flex;gap:8px;align-items:flex-end}
+.inputbox textarea{flex:1;border:0;background:transparent;color:var(--ink);font:inherit;font-size:17px;resize:none;min-height:46px;max-height:120px;outline:none;padding:8px 0}
+.inputbox textarea::placeholder{color:var(--ink-3)}
+.btn{border:0;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;padding:10px 14px;background:var(--surface-2);color:var(--ink)}
+.btn:focus-visible,textarea:focus-visible,.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.mic{width:44px;height:44px;padding:0;display:grid;place-items:center;border-radius:50%}
+.btn.mic.live{background:var(--release);color:#fff;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(179,54,31,.5)}50%{box-shadow:0 0 0 10px rgba(179,54,31,0)}}
+@media (prefers-reduced-motion: reduce){.btn.mic.live{animation:none}}
+.hint{font-size:12px;color:var(--ink-3);margin:8px 2px 0}
+.examples{display:flex;gap:6px;overflow-x:auto;padding-block:10px 2px;scrollbar-width:none}
+.examples .chip{white-space:nowrap;flex:none}
+
+.verdict{margin-top:16px;border-radius:16px;padding:18px 18px 16px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow);position:relative;overflow:hidden}
+.verdict::before{content:"";position:absolute;inset:0 auto 0 0;width:8px;background:var(--vc)}
+.verdict.keep{--vc:var(--keep);--vbg:var(--keep-bg)} .verdict.release{--vc:var(--release);--vbg:var(--release-bg)}
+.verdict.closed{--vc:var(--closed);--vbg:var(--closed-bg)} .verdict.check{--vc:var(--warn);--vbg:var(--warn-bg)} .verdict.kill{--vc:var(--release);--vbg:var(--release-bg)}
+.verdict .word{font-family:"Barlow Condensed",sans-serif;font-size:54px;font-weight:700;line-height:.95;color:var(--vc);letter-spacing:.01em}
+.verdict .fish{font-size:20px;font-weight:600;margin-top:6px}
+.verdict .fish em{font-style:normal;color:var(--ink-2);font-weight:400}
+.verdict .why{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--vbg);color:var(--ink);font-size:14px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.fact{background:var(--surface-2);border-radius:10px;padding:8px 10px;min-width:0}
+.fact .k{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-3);font-weight:600}
+.fact .v{font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:500;margin-top:2px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.fact .v.small{font-family:"IBM Plex Sans",sans-serif;font-size:12.5px;font-weight:500}
+.ruler{margin-top:12px;height:34px;position:relative;border-radius:6px;background:var(--surface-2);overflow:hidden}
+.ruler .legal{position:absolute;top:0;bottom:0;background:var(--keep-bg);border-inline:2px solid var(--keep)}
+.ruler .tick{position:absolute;bottom:0;width:1px;height:8px;background:var(--ink-3)}
+.ruler .tick.major{height:14px}
+.ruler .lbl{position:absolute;top:2px;font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--ink-2);transform:translateX(-50%)}
+.ruler .you{position:absolute;top:0;bottom:0;width:3px;background:var(--vc,var(--accent));transform:translateX(-50%)}
+.ruler .you::after{content:attr(data-l);position:absolute;bottom:2px;left:6px;background:var(--surface);padding:0 3px;border-radius:3px;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;color:var(--ink);white-space:nowrap}
+.notes{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.notes li{font-size:13px;color:var(--ink-2);padding-left:14px;position:relative}
+.notes li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--ink-3)}
+.src{margin-top:14px;font-size:12px;color:var(--ink-3);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.src a{color:var(--accent);font-weight:500;text-decoration:none}
+details.rawtxt{margin-top:8px;font-size:12px;color:var(--ink-2)}
+details.rawtxt summary{cursor:pointer;color:var(--accent);font-weight:500}
+details.rawtxt dl{margin:6px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px}
+details.rawtxt dt{font-weight:600;color:var(--ink-3)}
+details.rawtxt dd{margin:0}
+.picker{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+.picker h3{font-size:22px}
+.picker p{margin:4px 0 10px;color:var(--ink-2);font-size:14px}
+.picker .list{display:flex;flex-wrap:wrap;gap:6px}
+section.recent{margin-top:26px}
+section.recent h2{font-size:18px;color:var(--ink-2);margin-bottom:8px}
+.rlist{display:grid;gap:6px}
+.rlist button{all:unset;cursor:pointer;display:flex;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13.5px}
+.rlist .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;min-width:64px}
+.rlist .tag.keep{color:var(--keep)} .rlist .tag.release,.rlist .tag.kill{color:var(--release)} .rlist .tag.closed{color:var(--closed)} .rlist .tag.check{color:var(--warn)}
+footer{margin-top:28px;font-size:12px;color:var(--ink-3);line-height:1.5}
+footer a{color:var(--accent);text-decoration:none}
+.sr{position:absolute;left:-9999px}
+@media (max-width:420px){.facts{grid-template-columns:1fr 1fr}.verdict .word{font-size:46px}}
+html,body{margin:0}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <h1>KeepGauge<small>Delaware</small></h1>
+  <span class="eyebrow" id="today"></span>
+</header>
+
+<div class="chips" id="ctx">
+  <span class="chip" id="locChip"><span class="dot"></span><span id="locTxt">Locating…</span></span>
+  <span class="chip" id="zoneChip" role="button" tabindex="0" title="Tap to cycle water type"><span id="zoneTxt">State waters</span> ▾</span>
+</div>
+
+<div class="inputbox">
+  <label class="sr" for="q">Describe the fish</label>
+  <textarea id="q" rows="1" placeholder="e.g. 30 inch striper in the bay"></textarea>
+  <button class="btn mic" id="mic" aria-label="Speak" title="Speak">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3" fill="currentColor" stroke="none"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+  </button>
+  <button class="btn primary" id="go">Check</button>
+</div>
+<div class="examples" id="examples"></div>
+<div class="hint" id="hint">Say or type the species, length, and where you are fishing. Count (“my 3rd”) is optional.</div>
+
+<div id="out"></div>
+
+<section class="recent" id="recentWrap" hidden>
+  <h2 class="disp">Recent checks</h2>
+  <div class="rlist" id="recent"></div>
+</section>
+
+<footer>
+  <span id="offline" hidden>Offline - using the last saved regulations. </span>Regulations from the <a href="https://fishspecies.dnrec.delaware.gov/" target="_blank" rel="noopener">DNREC Fish Facts</a> species pages, captured <span id="scraped"></span>. Rules are simplified for quick checks; the source page and the current Delaware Fishing Guide govern. Not legal advice. Gear, license, and area restrictions may also apply.
+</footer>
+</div>
+
+<script>
+async function loadRegs(){
+  try { const r = await fetch('/api/regs'); if (!r.ok) throw new Error(r.status); const j = await r.json(); try{ localStorage.setItem('kg.regs', JSON.stringify(j)); }catch(e){} return j; }
+  catch(e){ try { const c = localStorage.getItem('kg.regs'); if (c) { document.querySelector('#offline').hidden=false; return JSON.parse(c); } } catch(_){} throw e; }
+}
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
+loadRegs().then(initApp).catch(err => { document.querySelector('#out').innerHTML = '<div class="picker"><h3>Could not load regulations</h3><p>'+String(err.message||err)+'. Check your connection and reload.</p></div>'; });
+function initApp(D){
+const SP = D.species;
+const $ = s => document.querySelector(s);
+const MONTHS = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+const ZONES = {
+  state:'State waters', federal:'Federal waters (3–200 mi)', delriver:'Delaware River / Bay', nanticoke:'Nanticoke River',
+  becks:'Becks Pond', tidal:'Tidal waters', nontidal:'Non-tidal waters', streams:'Trout stream', ponds:'Pond / lake', flyonly:'Fly-fishing-only water', vessel:'For-hire vessel'
+};
+const ZONE_WORDS = [
+  ['federal',/\b(federal|offshore|canyon|canyons|\d\d\+?\s*miles?\s*(out|offshore)|eez|deep ?drop)\b/],
+  ['nanticoke',/\bnanticoke\b/], ['becks',/\bbecks?\s*pond\b/],
+  ['delriver',/\b(delaware (river|bay)|the bay|the river|c\s*&\s*d canal|tributar|broadkill|mispillion|murderkill|st\.? jones|leipsic|smyrna river|appoquinimink|christina|brandywine)\b/],
+  ['flyonly',/\bfly[- ]?(fishing|only)\b/], ['streams',/\b(stream|creek|brook|run)\b/], ['ponds',/\b(pond|lake|reservoir)\b/],
+  ['nontidal',/\bnon[- ]?tidal\b/], ['tidal',/\btidal\b/],
+  ['vessel',/\b(charter|headboat|head boat|party boat|for[- ]hire)\b/]
+];
+const ORDER = ['state','federal','delriver','nanticoke','becks','tidal','nontidal','streams','ponds','flyonly','vessel'];
+let ctxZone = 'state', geo = null;
+
+// ---------- species index ----------
+const index = [];
+for (const s of SP) {
+  const names = new Set([s.name.toLowerCase(), ...s.aliases.map(a=>a.toLowerCase())]);
+  for (const n of names) index.push({term:n, s});
+}
+index.sort((a,b)=>b.term.length-a.term.length);
+const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+function findSpecies(text){
+  const t = ' '+text.toLowerCase().replace(/[^a-z0-9&.\-\s]/g,' ').replace(/\s+/g,' ')+' ';
+  let best=null, hits=[];
+  for (const e of index) {
+    const re = new RegExp('(^|[^a-z])'+esc(e.term)+'(s|es)?(?=[^a-z]|$)');
+    if (re.test(t)) {
+      if (!best) { best=e.term; hits.push(e.s); }
+      else if (e.term===best) hits.push(e.s);
+      else if (best.includes(e.term)) continue; else if (e.term.length===best.length) hits.push(e.s);
+    }
+  }
+  if (hits.length) return {hits:dedupe(hits), term:best};
+  // fallback: suggestions by substring on single words
+  const words = t.trim().split(' ').filter(w=>w.length>3);
+  const sug = SP.filter(s=>words.some(w=>s.name.toLowerCase().includes(w)||s.aliases.some(a=>a.includes(w))));
+  return {hits:[], suggestions:dedupe(sug).slice(0,12)};
+}
+function dedupe(arr){ const seen=new Set(); return arr.filter(s=>!seen.has(s.id)&&seen.add(s.id)); }
+// prefer saltwater duplicate when same name exists in two habitats and no habitat hint
+function collapseDupes(hits, text){
+  const byName = {};
+  for (const s of hits) (byName[s.name] ||= []).push(s);
+  const fresh = /\b(pond|lake|stream|creek|fresh|river|brook)\b/.test(text.toLowerCase());
+  return Object.values(byName).map(g => g.length===1 ? g[0] : (g.find(s=>s.habitat===(fresh?'freshwater':'saltwater'))||g[0]));
+}
+
+// ---------- number words ----------
+const SMALL = {zero:0,one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,eleven:11,twelve:12,thirteen:13,fourteen:14,fifteen:15,sixteen:16,seventeen:17,eighteen:18,nineteen:19,twenty:20,thirty:30,forty:40,fifty:50,sixty:60,seventy:70,eighty:80,ninety:90};
+function wordsToDigits(t){
+  return t.replace(/\b(twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)[\s-](one|two|three|four|five|six|seven|eight|nine)\b/g,(m,a,b)=>SMALL[a]+SMALL[b])
+          .replace(/\b(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)\b/g,m=>SMALL[m])
+          .replace(/\b(\d+)\s+and\s+a\s+half\b/g,(m,n)=>(+n+.5))
+          .replace(/\b(\d+)\s+(\d)\/(\d)\b/g,(m,n,a,b)=>(+n + a/b))
+          .replace(/\b(a|one)\s+half\s+(inch|inches)/g,'0.5 inches');
+}
+function parseLength(t){
+  t = wordsToDigits(t.toLowerCase());
+  let m = t.match(/(\d+(?:\.\d+)?)\s*(?:foot|feet|ft|')\s*(\d+(?:\.\d+)?)?\s*(?:inch|inches|in\b|")?/);
+  if (m) return +m[1]*12 + (+m[2]||0);
+  m = t.match(/(\d+(?:\.\d+)?)\s*(?:-|–)?\s*(?:inch|inches|inche|in\b|"|”)/);
+  if (m) return +m[1];
+  m = t.match(/\b(\d+(?:\.\d+)?)\s*(?:incher|inchers)\b/);
+  if (m) return +m[1];
+  return null;
+}
+function parseCount(t){
+  t = wordsToDigits(t.toLowerCase()).replace(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s*\d{1,2}(st|nd|rd|th)?\b/g,' ').replace(/\b\d{1,2}\/\d{1,2}(\/\d{2,4})?\b/g,' ');
+  let m = t.match(/\b(?:my|our)\s+(\d+)(?:st|nd|rd|th)\b/) || t.match(/\b(\d+)(?:st|nd|rd|th)\s+(?:one|fish|of the day|today)\b/) || t.match(/\bnumber\s+(\d+)\b/);
+  if (m) return +m[1];
+  m = t.match(/\b(\d+)\s+(?:more\s+)?(?=[a-z]+(?:s|es)?\b)(?!inch|in\b|foot|feet|pound|lb|miles?)/);
+  if (m && !/inch|in\b|"/.test(t.slice(m.index, m.index+m[0].length+4))) return +m[1];
+  return null;
+}
+function parseDate(t, base){
+  t = t.toLowerCase();
+  const d = new Date(base);
+  if (/\byesterday\b/.test(t)) { d.setDate(d.getDate()-1); return d; }
+  let m = t.match(/\b(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept|sep|oct|nov|dec)\.?\s*(\d{1,2})?(?:st|nd|rd|th)?\b/);
+  if (m) {
+    const mi = MONTHS.findIndex(x=>x.startsWith(m[1].slice(0,3)));
+    const nd = new Date(d.getFullYear(), mi, m[2]?+m[2]:15);
+    return nd;
+  }
+  m = t.match(/\b(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?\b/);
+  if (m) return new Date(m[3]? (m[3].length===2?2000+ +m[3]:+m[3]) : d.getFullYear(), +m[1]-1, +m[2]);
+  return d;
+}
+function parseZone(t){
+  t = t.toLowerCase();
+  for (const [z,re] of ZONE_WORDS) if (re.test(t)) return z;
+  return null;
+}
+
+// ---------- season helpers ----------
+function mmdd(d){ return String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+function firstSat(year, month){ const d=new Date(year,month,1); d.setDate(1+((6-d.getDay()+7)%7)); return mmdd(d); }
+function resolve(tok, year){ if (tok==='FIRST_SAT_APR') return firstSat(year,3); if (tok==='FIRST_SAT_MAR') return firstSat(year,2); return tok; }
+function inWindow(md, a, b){ return a<=b ? (md>=a && md<=b) : (md>=a || md<=b); }
+function seasonOpen(zone, date){
+  if (!zone.seasons) return {open:true, text:'Open year-round'};
+  const md = mmdd(date), y = date.getFullYear();
+  const wins = zone.seasons.map(([a,b])=>[resolve(a,y),resolve(b,y)]);
+  const open = wins.some(([a,b])=>inWindow(md,a,b));
+  const fmt = s => { const [m,d]=s.split('-'); return MONTHS[+m-1].slice(0,3).replace(/^./,c=>c.toUpperCase())+' '+(+d); };
+  return {open, text: wins.map(([a,b])=>fmt(a)+' – '+fmt(b)).join(', ')};
+}
+function sizeRules(zone, date){
+  const md = mmdd(date);
+  return zone.size.filter(r => !r.from || inWindow(md, r.from, r.to));
+}
+function sizeText(rules, zone){
+  if (!rules.length) return 'No size limit';
+  return rules.map(r => r.min!=null && r.max!=null ? `${fmtIn(r.min)}–${fmtIn(r.max)} in slot` : r.min!=null ? `${fmtIn(r.min)} in minimum` : `under ${fmtIn(r.max)} in`).join(' or ');
+}
+const fmtIn = n => Number.isInteger(n) ? String(n) : String(n).replace(/\.?0+$/,'');
+function pickZone(sp, want){
+  const zs = sp.zones;
+  return zs.find(z=>z.zone===want) || zs.find(z=>z.zone==='state') || zs[0];
+}
+
+// ---------- evaluate ----------
+function evaluate(sp, q){
+  const date = q.date, zoneKey = q.zone || ctxZone;
+  const zone = pickZone(sp, zoneKey);
+  const usedZone = zone.zone;
+  const r = {sp, zone, usedZone, date, length:q.length, count:q.count, reasons:[]};
+  const season = seasonOpen(zone, date); r.season = season;
+  const rules = sizeRules(zone, date); r.rules = rules; r.sizeText = sizeText(rules, zone);
+  r.bagText = zone.bagNote || (zone.bag==null ? 'No daily limit' : `${zone.bag} per person per day`);
+  if (sp.status==='closed' || zone.closed) {
+    r.verdict='closed'; r.word='RELEASE'; r.reasons.push(zone.closed && sp.status!=='closed' ? `Closed to harvest in ${ZONES[usedZone].toLowerCase()}.` : 'Harvest is closed for this species.'); return r;
+  }
+  if (sp.status==='invasive') { r.verdict='kill'; r.word='KEEP'; r.reasons.push('Invasive - do not return it to the water. No size or daily limit.'); return r; }
+  if (!season.open) { r.verdict='closed'; r.word='RELEASE'; r.reasons.push(`Season is closed on ${date.toLocaleDateString(undefined,{month:'short',day:'numeric'})}. Open ${season.text}.`); return r; }
+  if (rules.length) {
+    if (q.length==null) { r.verdict='check'; r.word='NEED LENGTH'; r.reasons.push(`Size limit applies: ${r.sizeText}. Add the length to get a verdict.`); return r; }
+    const ok = rules.some(x => (x.min==null || q.length>=x.min) && (x.max==null || q.length<=x.max));
+    if (!ok) { r.verdict='release'; r.word='RELEASE'; r.reasons.push(`${fmtIn(q.length)} in is outside the legal size (${r.sizeText}).`); return r; }
+    r.reasons.push(`${fmtIn(q.length)} in meets the size limit (${r.sizeText}).`);
+  } else r.reasons.push('No size limit.');
+  if (zone.bag!=null && q.count!=null && q.count>zone.bag) { r.verdict='release'; r.word='RELEASE'; r.reasons.push(`Over the daily limit of ${zone.bag}.`); return r; }
+  r.verdict='keep'; r.word='KEEP';
+  if (zone.bag!=null) r.reasons.push(`Daily limit ${zone.bag}${q.count?` - this would be #${q.count}`:''}.`);
+  return r;
+}
+
+// ---------- render ----------
+function ruler(r){
+  if (!r.rules.length) return '';
+  const mins = r.rules.map(x=>x.min).filter(x=>x!=null), maxs = r.rules.map(x=>x.max).filter(x=>x!=null);
+  const lo = Math.max(0, Math.floor(Math.min(...mins, ...maxs, r.length??Infinity)/5)*5 - 5);
+  const hi = Math.ceil(Math.max(...mins, ...maxs, (r.length??0))/5)*5 + 5;
+  const px = v => (4+(v-lo)/(hi-lo)*92).toFixed(2)+'%';
+  let h = '<div class="ruler" aria-hidden="true">';
+  for (const x of r.rules) { const a=x.min??lo, b=x.max??hi; h += `<div class="legal" style="left:${px(a)};width:${((b-a)/(hi-lo)*92).toFixed(2)}%"></div>`; }
+  const step = (hi-lo)>40?10:5;
+  for (let v=lo; v<=hi; v+=step) h += `<div class="tick major" style="left:${px(v)}"></div><div class="lbl" style="left:${px(v)}">${v}</div>`;
+  if (r.length!=null) h += `<div class="you" style="left:${px(r.length)}" data-l="${fmtIn(r.length)}″"></div>`;
+  return h+'</div>';
+}
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function render(r){
+  const sp = r.sp, notes = [...(r.zone.sizeNote?['Size detail: '+r.zone.sizeNote]:[]), ...sp.notes];
+  const zoneInfo = sp.zones.length>1 ? `Rules shown for <strong>${ZONES[r.usedZone]}</strong>. Also has rules for ${sp.zones.filter(z=>z.zone!==r.usedZone).map(z=>ZONES[z.zone]).join(', ')}.` : '';
+  $('#out').innerHTML = `
+  <article class="verdict ${r.verdict}" aria-live="polite">
+    <div class="word">${r.word}</div>
+    <div class="fish">${escapeHtml(sp.name)} <em>· ${sp.family}</em></div>
+    <div class="why">${r.reasons.map(escapeHtml).join(' ')}</div>
+    <div class="facts">
+      <div class="fact"><div class="k">Season</div><div class="v small">${escapeHtml(r.season.text)}</div></div>
+      <div class="fact"><div class="k">Size</div><div class="v small">${escapeHtml(r.sizeText)}</div></div>
+      <div class="fact"><div class="k">Daily limit</div><div class="v small">${escapeHtml(r.bagText)}</div></div>
+    </div>
+    ${ruler(r)}
+    ${zoneInfo?`<p class="hint" style="margin-top:10px">${zoneInfo}</p>`:''}
+    ${notes.length?`<ul class="notes">${notes.map(n=>`<li>${escapeHtml(n)}</li>`).join('')}</ul>`:''}
+    <details class="rawtxt"><summary>Exact DNREC wording</summary>
+      <dl><dt>Season</dt><dd>${escapeHtml(sp.raw.season)}</dd><dt>Size</dt><dd>${escapeHtml(sp.raw.size)}</dd><dt>Limit</dt><dd>${escapeHtml(sp.raw.limit)}</dd></dl></details>
+    <div class="src"><span>Checked for ${r.date.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})}</span><a href="${sp.url}" target="_blank" rel="noopener">DNREC source page ↗</a></div>
+  </article>`;
+  $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
+}
+function renderPicker(title, msg, list, extra){
+  $('#out').innerHTML = `<div class="picker"><h3>${title}</h3><p>${msg}</p><div class="list">${list.map(s=>`<button class="chip" data-pick="${s.id}">${escapeHtml(s.name)}<span style="color:var(--ink-3)">· ${s.habitat}</span></button>`).join('')}</div>${extra||''}</div>`;
+}
+
+// ---------- run ----------
+let pending = null; // {text, q}
+function run(text, forcedId, quiet){
+  text = text.trim(); if (!text) return;
+  const q = { length: parseLength(text), count: parseCount(text), date: parseDate(text, new Date()), zone: parseZone(text) };
+  let sp = null;
+  if (forcedId) sp = SP.find(s=>s.id===forcedId);
+  else {
+    const f = findSpecies(text);
+    let hits = collapseDupes(f.hits, text);
+    if (hits.length===1) sp = hits[0];
+    else if (hits.length>1) { pending={text}; renderPicker('Which one?', `“${escapeHtml(f.term)}” matches several species.`, hits); return; }
+    else { pending={text}; renderPicker('Which fish?', 'No species name recognized. Pick one, or try the common name (striper, fluke, tog, sea bass…).', f.suggestions.length?f.suggestions:SP.filter(s=>['Striped Bass','Summer Flounder','Black Sea Bass','Tautog','Bluefish','Weakfish','Largemouth Bass','Blue Crab'].includes(s.name)&&s.habitat!=='freshwater')); return; }
+  }
+  const r = evaluate(sp, q);
+  render(r);
+  if (!quiet) remember({text, id:sp.id, verdict:r.verdict, word:r.word, name:sp.name});
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-pick]'); if (b && pending) { run(pending.text, +b.dataset.pick); pending=null; }
+  const rb = e.target.closest('[data-recent]'); if (rb) { $('#q').value = rb.dataset.recent; run(rb.dataset.recent); }
+});
+$('#go').addEventListener('click', ()=>run($('#q').value));
+$('#q').addEventListener('keydown', e=>{ if (e.key==='Enter' && !e.shiftKey) { e.preventDefault(); run($('#q').value); } });
+$('#q').addEventListener('input', e=>{ e.target.style.height='auto'; e.target.style.height=Math.min(120,e.target.scrollHeight)+'px'; });
+
+// ---------- recent (per-device convenience) ----------
+function loadRecent(){ try { return JSON.parse(localStorage.getItem('kg.recent')||'[]'); } catch(e){ return []; } }
+function remember(item){
+  let list = loadRecent().filter(x=>x.text!==item.text); list.unshift(item); list = list.slice(0,6);
+  try { localStorage.setItem('kg.recent', JSON.stringify(list)); } catch(e){}
+  drawRecent(list);
+}
+function drawRecent(list){
+  $('#recentWrap').hidden = !list.length;
+  $('#recent').innerHTML = list.map(x=>`<button data-recent="${escapeHtml(x.text)}"><span class="tag ${x.verdict}">${x.word}</span><span>${escapeHtml(x.text)}</span></button>`).join('');
+}
+drawRecent(loadRecent());
+
+// ---------- examples ----------
+const EX = ['30 inch striper in the bay','14 inch flounder','my 5th sea bass, 13 inches','tog 15 inches','bluefish, 20 in','red drum 24 inches offshore','16 in largemouth at Becks Pond','sandbar shark 60 inches','blue crab 4.5 inches'];
+$('#examples').innerHTML = EX.map(t=>`<button class="chip" data-ex="${t}">${t}</button>`).join('');
+$('#examples').addEventListener('click', e=>{ const b=e.target.closest('[data-ex]'); if (b) { $('#q').value=b.dataset.ex; run(b.dataset.ex); } });
+
+// ---------- zone chip ----------
+function setZone(z){ ctxZone=z; $('#zoneTxt').textContent=ZONES[z]; $('#zoneChip').classList.toggle('on', z!=='state'); }
+$('#zoneChip').addEventListener('click', ()=>{ setZone(ORDER[(ORDER.indexOf(ctxZone)+1)%ORDER.length]); if (pending==null && $('#q').value.trim()) run($('#q').value); });
+$('#zoneChip').addEventListener('keydown', e=>{ if (e.key==='Enter'||e.key===' ') { e.preventDefault(); $('#zoneChip').click(); } });
+
+// ---------- location ----------
+const DE_POLY = [[-75.79,38.45],[-75.05,38.45],[-74.85,38.45],[-74.85,39.0],[-75.2,39.4],[-75.4,39.62],[-75.55,39.84],[-75.79,39.72]];
+function inPoly(lon,lat,poly){ let inside=false; for (let i=0,j=poly.length-1;i<poly.length;j=i++){ const [xi,yi]=poly[i],[xj,yj]=poly[j]; if (((yi>lat)!==(yj>lat)) && (lon < (xj-xi)*(lat-yi)/(yj-yi)+xi)) inside=!inside; } return inside; }
+function locate(){
+  const chip=$('#locChip'), txt=$('#locTxt');
+  if (!navigator.geolocation) { txt.textContent='Location unavailable · Delaware rules'; return; }
+  navigator.geolocation.getCurrentPosition(p=>{
+    const {latitude:lat, longitude:lon} = p.coords; geo={lat,lon};
+    const inDE = inPoly(lon,lat,DE_POLY);
+    const offshore = lat<38.85 && lon > -75.02;   // rough: >3 nm east of the Delaware coast
+    if (inDE && offshore) { txt.textContent='Delaware · likely federal waters'; chip.classList.add('ok'); setZone('federal'); }
+    else if (inDE) { txt.textContent='Delaware waters'; chip.classList.add('ok'); }
+    else { txt.textContent='Outside Delaware · DE rules shown'; }
+  }, err=>{ txt.textContent='Location off · Delaware rules'; }, {timeout:8000, maximumAge:600000});
+}
+$('#locChip').addEventListener('click', locate);
+locate();
+
+// ---------- voice ----------
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+const mic = $('#mic');
+if (!SR) { mic.hidden = true; $('#hint').textContent += ' Voice input needs Chrome or Safari.'; }
+else {
+  let rec=null, live=false;
+  mic.addEventListener('click', ()=>{
+    if (live) { rec.stop(); return; }
+    rec = new SR(); rec.lang='en-US'; rec.interimResults=true; rec.maxAlternatives=1;
+    let final='';
+    rec.onresult = e => { let s=''; for (const r of e.results) s += r[0].transcript; $('#q').value = s; if (e.results[e.results.length-1].isFinal) final = s; };
+    rec.onend = () => { live=false; mic.classList.remove('live'); const t = final || $('#q').value; if (t.trim()) run(t); };
+    rec.onerror = e => { live=false; mic.classList.remove('live'); $('#hint').textContent = e.error==='not-allowed' ? 'Microphone blocked. Allow mic access for this page, or open it in a browser tab.' : 'Voice error: '+e.error; };
+    try { rec.start(); live=true; mic.classList.add('live'); $('#q').value=''; } catch(err){ $('#hint').textContent='Could not start voice input.'; }
+  });
+}
+
+// ---------- header ----------
+$('#today').textContent = new Date().toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric',year:'numeric'});
+$('#scraped').textContent = D.scraped;
+// open in a realistic state
+run('30 inch striper in the bay', null, true);
+}
+</script>
+</body>
+</html>

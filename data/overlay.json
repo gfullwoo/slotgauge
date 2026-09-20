@@ -1,0 +1,3199 @@
+{
+ "_schema": "See README: zones[{zone,seasons,size,bag,bagNote,closed,sizeNote}], status open|closed|invasive, aliases, notes. rawHash = sha1(season|size|limit) of DNREC text at review time; a mismatch flags the species as needing re-review.",
+ "38": {
+  "name": "Largemouth Bass",
+  "reviewed": "2026-09-20",
+  "rawHash": "a4c568ff99a1",
+  "aliases": [
+   "largemouth",
+   "bucketmouth",
+   "largemouth bass",
+   "green bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 6,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "becks",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Becks Pond: 15 inch minimum, 2 per day."
+  ]
+ },
+ "53": {
+  "name": "Smallmouth Bass",
+  "reviewed": "2026-09-20",
+  "rawHash": "6dc7b2e31d9a",
+  "aliases": [
+   "smallmouth",
+   "smallie",
+   "bronzeback",
+   "smallmouth bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": null,
+      "max": 12
+     },
+     {
+      "min": 17,
+      "max": null
+     }
+    ],
+    "bag": 6,
+    "bagNote": "No more than 1 over 17 inches",
+    "closed": false,
+    "sizeNote": "Protected slot: fish between 12 and 17 inches must be released"
+   }
+  ],
+  "notes": [
+   "Keepable only under 12 in or over 17 in (total length)."
+  ]
+ },
+ "55": {
+  "name": "Striped Bass",
+  "reviewed": "2026-09-20",
+  "rawHash": "15c1ba0adb63",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock",
+   "linesider",
+   "striped bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot (total length)"
+   },
+   {
+    "zone": "delriver",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     },
+     {
+      "min": 20,
+      "max": 24,
+      "from": "07-01",
+      "to": "08-31"
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28-31 in; July 1 - Aug 31 in Delaware River/Bay and tributaries: 20-24 in slot"
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Catch and release only on spawning grounds April 1 - May 31 (see Delaware Fishing Guide).",
+   "CLOSED in federal waters (3-200 mi).",
+   "DNREC freshwater page lists the summer river/bay slot as 20-25 in; the saltwater page says 20-24 in. The stricter 20-24 is used here - verify in the current Fishing Guide."
+  ]
+ },
+ "203": {
+  "name": "Striped Bass",
+  "reviewed": "2026-09-20",
+  "rawHash": "c12349198743",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock",
+   "linesider",
+   "striped bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot (total length)"
+   },
+   {
+    "zone": "delriver",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     },
+     {
+      "min": 20,
+      "max": 24,
+      "from": "07-01",
+      "to": "08-31"
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28-31 in; July 1 - Aug 31 in Delaware River/Bay and tributaries: 20-24 in slot"
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Catch and release only on spawning grounds April 1 - May 31 (see Delaware Fishing Guide).",
+   "CLOSED in federal waters (3-200 mi).",
+   "DNREC freshwater page lists the summer river/bay slot as 20-25 in; the saltwater page says 20-24 in. The stricter 20-24 is used here - verify in the current Fishing Guide."
+  ]
+ },
+ "54": {
+  "name": "Striped Bass Hybrid",
+  "reviewed": "2026-09-20",
+  "rawHash": "178d90d46596",
+  "aliases": [
+   "hybrid striper",
+   "hybrid striped bass",
+   "wiper",
+   "hybrid"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "216": {
+  "name": "White Perch",
+  "reviewed": "2026-09-20",
+  "rawHash": "b9bb15b65082",
+  "aliases": [
+   "white perch",
+   "perch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "nontidal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "50 panfish total per day (all panfish species combined), no more than 25 of this species.",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "tidal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Tidal waters: no daily limit. Non-tidal: counts toward 50 panfish total."
+  ]
+ },
+ "204": {
+  "name": "White Perch",
+  "reviewed": "2026-09-20",
+  "rawHash": "39c11be0ea4c",
+  "aliases": [
+   "white perch",
+   "perch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "nontidal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "50 panfish total per day (all panfish species combined), no more than 25 of this species.",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "tidal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Tidal waters: no daily limit. Non-tidal: counts toward 50 panfish total."
+  ]
+ },
+ "22": {
+  "name": "Blue Catfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "39a45d29bccc",
+  "aliases": [
+   "blue cat",
+   "blue catfish"
+  ],
+  "status": "invasive",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "INVASIVE: do not return to water. Kill immediately and contact Fish & Wildlife at 302-739-9914."
+  ]
+ },
+ "33": {
+  "name": "Flathead Catfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "39a45d29bccc",
+  "aliases": [
+   "flathead",
+   "flathead catfish",
+   "shovelhead"
+  ],
+  "status": "invasive",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "INVASIVE: do not return to water. Kill immediately and contact Fish & Wildlife at 302-739-9914."
+  ]
+ },
+ "43": {
+  "name": "Northern Snakehead",
+  "reviewed": "2026-09-20",
+  "rawHash": "39a45d29bccc",
+  "aliases": [
+   "snakehead",
+   "northern snakehead",
+   "frankenfish"
+  ],
+  "status": "invasive",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "INVASIVE: do not return to water. Kill immediately and contact Fish & Wildlife at 302-739-9914."
+  ]
+ },
+ "21": {
+  "name": "Black Crappie",
+  "reviewed": "2026-09-20",
+  "rawHash": "d4b1c604ca65",
+  "aliases": [
+   "crappie",
+   "black crappie",
+   "calico bass",
+   "speck (freshwater)"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "50 panfish total per day (all panfish species combined), no more than 25 of this species.",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "61": {
+  "name": "White Crappie",
+  "reviewed": "2026-09-20",
+  "rawHash": "caa44f8686f9",
+  "aliases": [
+   "white crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "50 panfish total per day (all panfish species combined), no more than 25 of this species.",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "24": {
+  "name": "Bluegill",
+  "reviewed": "2026-09-20",
+  "rawHash": "456542f7a76d",
+  "aliases": [
+   "bluegill",
+   "sunny",
+   "sunfish",
+   "bream",
+   "brim"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "50 panfish total per day (all panfish species combined), no more than 25 of this species.",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "46": {
+  "name": "Pumpkinseed Sunfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "b905ab51298a",
+  "aliases": [
+   "pumpkinseed"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "50 panfish total per day (all panfish species combined), no more than 25 of this species.",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "49": {
+  "name": "Redear Sunfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "e27e01592083",
+  "aliases": [
+   "redear",
+   "shellcracker",
+   "redear sunfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "50 panfish total per day (all panfish species combined), no more than 25 of this species.",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "65": {
+  "name": "Yellow Perch",
+  "reviewed": "2026-09-20",
+  "rawHash": "3f2ba850d313",
+  "aliases": [
+   "yellow perch",
+   "perch",
+   "ringed perch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "50 panfish total per day (all panfish species combined), no more than 25 of this species.",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "36": {
+  "name": "Green Sunfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "5dbfbadadb06",
+  "aliases": [
+   "green sunfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Not included in Delaware panfish regulations - no limit."
+  ]
+ },
+ "41": {
+  "name": "Mud Sunfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "969d47919903",
+  "aliases": [
+   "mud sunfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Not included in Delaware panfish regulations - no limit."
+  ]
+ },
+ "48": {
+  "name": "Redbreast Sunfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "480466cbd4ae",
+  "aliases": [
+   "redbreast",
+   "redbreast sunfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Not included in Delaware panfish regulations - no limit."
+  ]
+ },
+ "51": {
+  "name": "Rock Bass",
+  "reviewed": "2026-09-20",
+  "rawHash": "3359d439f2f6",
+  "aliases": [
+   "rock bass",
+   "goggle-eye"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Not included in Delaware panfish regulations - no limit."
+  ]
+ },
+ "59": {
+  "name": "Warmouth Sunfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "70b4a024e87c",
+  "aliases": [
+   "warmouth"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Not included in Delaware panfish regulations - no limit."
+  ]
+ },
+ "17": {
+  "name": "Alewife",
+  "reviewed": "2026-09-20",
+  "rawHash": "e1d0ba6ec170",
+  "aliases": [
+   "alewife",
+   "river herring"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED - no harvest permitted. Release immediately."
+  ]
+ },
+ "71": {
+  "name": "Alewife",
+  "reviewed": "2026-09-20",
+  "rawHash": "e1d0ba6ec170",
+  "aliases": [
+   "alewife",
+   "river herring"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED - no harvest permitted. Release immediately."
+  ]
+ },
+ "23": {
+  "name": "Blueback Herring",
+  "reviewed": "2026-09-20",
+  "rawHash": "e1d0ba6ec170",
+  "aliases": [
+   "blueback",
+   "blueback herring",
+   "herring"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED - no harvest permitted. Release immediately."
+  ]
+ },
+ "99": {
+  "name": "Blueback Herring",
+  "reviewed": "2026-09-20",
+  "rawHash": "e1d0ba6ec170",
+  "aliases": [
+   "blueback",
+   "blueback herring",
+   "herring"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED - no harvest permitted. Release immediately."
+  ]
+ },
+ "20": {
+  "name": "Atlantic Sturgeon",
+  "reviewed": "2026-09-20",
+  "rawHash": "e1d0ba6ec170",
+  "aliases": [
+   "atlantic sturgeon",
+   "sturgeon"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED - no harvest permitted. Release immediately."
+  ]
+ },
+ "84": {
+  "name": "Atlantic Sturgeon",
+  "reviewed": "2026-09-20",
+  "rawHash": "e1d0ba6ec170",
+  "aliases": [
+   "atlantic sturgeon",
+   "sturgeon"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED - no harvest permitted. Release immediately."
+  ]
+ },
+ "52": {
+  "name": "Shortnose Sturgeon",
+  "reviewed": "2026-09-20",
+  "rawHash": "e1d0ba6ec170",
+  "aliases": [
+   "shortnose sturgeon"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED - no harvest permitted. Release immediately."
+  ]
+ },
+ "19": {
+  "name": "American Shad",
+  "reviewed": "2026-09-20",
+  "rawHash": "b1997d3f8c38",
+  "aliases": [
+   "american shad",
+   "white shad",
+   "shad"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "nanticoke",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED on the Nanticoke River and its tributaries.",
+   "Saltwater page lists 10 in combination with Hickory Shad; freshwater page lists 2. Stricter (2) used here."
+  ]
+ },
+ "74": {
+  "name": "American Shad",
+  "reviewed": "2026-09-20",
+  "rawHash": "a345f513644f",
+  "aliases": [
+   "american shad (ocean)"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 in any combination with Hickory Shad",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "nanticoke",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED on the Nanticoke River and its tributaries."
+  ]
+ },
+ "37": {
+  "name": "Hickory Shad",
+  "reviewed": "2026-09-20",
+  "rawHash": "90171b78fb55",
+  "aliases": [
+   "hickory shad",
+   "hickory"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 in any combination with American Shad",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "nanticoke",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED on the Nanticoke River and its tributaries."
+  ]
+ },
+ "125": {
+  "name": "Hickory Shad",
+  "reviewed": "2026-09-20",
+  "rawHash": "b7a5df1f4836",
+  "aliases": [
+   "hickory shad",
+   "hickory"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 in any combination with American Shad",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "nanticoke",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED on the Nanticoke River and its tributaries."
+  ]
+ },
+ "26": {
+  "name": "Brook Trout",
+  "reviewed": "2026-09-20",
+  "rawHash": "7b551046063e",
+  "aliases": [
+   "brook trout",
+   "brookie",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "streams",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "ponds",
+    "seasons": [
+     [
+      "FIRST_SAT_MAR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "flyonly",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 4,
+    "bagNote": "4 in fly-fishing-only waters",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Opening day: streams 1st Saturday in April, ponds 1st Saturday in March. Closed before opening day; check the Delaware Fishing Guide for closures on designated trout streams."
+  ]
+ },
+ "28": {
+  "name": "Brown Trout",
+  "reviewed": "2026-09-20",
+  "rawHash": "7b551046063e",
+  "aliases": [
+   "brown trout",
+   "brownie",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "streams",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "ponds",
+    "seasons": [
+     [
+      "FIRST_SAT_MAR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "flyonly",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 4,
+    "bagNote": "4 in fly-fishing-only waters",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Opening day: streams 1st Saturday in April, ponds 1st Saturday in March. Closed before opening day; check the Delaware Fishing Guide for closures on designated trout streams."
+  ]
+ },
+ "34": {
+  "name": "Golden Rainbow Trout",
+  "reviewed": "2026-09-20",
+  "rawHash": "7b551046063e",
+  "aliases": [
+   "golden rainbow",
+   "golden trout",
+   "palomino",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "streams",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "ponds",
+    "seasons": [
+     [
+      "FIRST_SAT_MAR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "flyonly",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 4,
+    "bagNote": "4 in fly-fishing-only waters",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Opening day: streams 1st Saturday in April, ponds 1st Saturday in March. Closed before opening day; check the Delaware Fishing Guide for closures on designated trout streams."
+  ]
+ },
+ "47": {
+  "name": "Rainbow Trout",
+  "reviewed": "2026-09-20",
+  "rawHash": "7b551046063e",
+  "aliases": [
+   "rainbow trout",
+   "rainbow",
+   "bow",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "streams",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "ponds",
+    "seasons": [
+     [
+      "FIRST_SAT_MAR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "flyonly",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 4,
+    "bagNote": "4 in fly-fishing-only waters",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Opening day: streams 1st Saturday in April, ponds 1st Saturday in March. Closed before opening day; check the Delaware Fishing Guide for closures on designated trout streams."
+  ]
+ },
+ "57": {
+  "name": "Tiger Trout",
+  "reviewed": "2026-09-20",
+  "rawHash": "30d8a22d63a4",
+  "aliases": [
+   "tiger trout",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "streams",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "ponds",
+    "seasons": [
+     [
+      "FIRST_SAT_MAR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 trout, all species combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "flyonly",
+    "seasons": [
+     [
+      "FIRST_SAT_APR",
+      "12-31"
+     ]
+    ],
+    "size": [],
+    "bag": 4,
+    "bagNote": "4 in fly-fishing-only waters",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Opening day: streams 1st Saturday in April, ponds 1st Saturday in March. Closed before opening day; check the Delaware Fishing Guide for closures on designated trout streams."
+  ]
+ },
+ "18": {
+  "name": "American Eel",
+  "reviewed": "2026-09-20",
+  "rawHash": "0ecf2cd8d524",
+  "aliases": [
+   "eel",
+   "american eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "73": {
+  "name": "American Eel",
+  "reviewed": "2026-09-20",
+  "rawHash": "abccb952bfaf",
+  "aliases": [
+   "eel",
+   "american eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "93": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-09-20",
+  "rawHash": "8b0c21984dc3",
+  "aliases": [
+   "sea bass",
+   "black sea bass",
+   "bsb",
+   "blackfish (sea bass)"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12.5,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Measured snout to tail tip, not including tail filament."
+  ]
+ },
+ "96": {
+  "name": "Blue Marlin",
+  "reviewed": "2026-09-20",
+  "rawHash": "0583898daae2",
+  "aliases": [
+   "blue marlin"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 99,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862.",
+   "Annual U.S. landings cap on Atlantic Blue/White Marlin and Roundscale Spearfish; check hmspermits.noaa.gov."
+  ]
+ },
+ "134": {
+  "name": "Longbill Spearfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "89498c238efe",
+  "aliases": [
+   "longbill spearfish",
+   "spearfish"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED - must be released without removing from the water."
+  ]
+ },
+ "155": {
+  "name": "Roundscale Spearfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "eb951f1a404e",
+  "aliases": [
+   "roundscale spearfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 66,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "156": {
+  "name": "Sailfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "0e6f869cc56b",
+  "aliases": [
+   "sailfish",
+   "sail"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 63,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "186": {
+  "name": "Swordfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "51ac8dbb8f00",
+  "aliases": [
+   "swordfish",
+   "sword",
+   "broadbill"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 47,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Private vessel: 1 per person, max 4 per trip. Charter: 1 per paying person, max 6. Headboat: max 15.",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862.",
+   "47 in lower jaw to fork, head on."
+  ]
+ },
+ "194": {
+  "name": "White Marlin",
+  "reviewed": "2026-09-20",
+  "rawHash": "2ac1c78cd97c",
+  "aliases": [
+   "white marlin"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 66,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "234": {
+  "name": "Atlantic Cod",
+  "reviewed": "2026-09-20",
+  "rawHash": "880379cdd20c",
+  "aliases": [
+   "cod",
+   "atlantic cod"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 22,
+      "max": null
+     }
+    ],
+    "bag": 9,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "148": {
+  "name": "Pollock",
+  "reviewed": "2026-09-20",
+  "rawHash": "e08b07a8cd9e",
+  "aliases": [
+   "pollock"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 19,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "79": {
+  "name": "Atlantic Croaker",
+  "reviewed": "2026-09-20",
+  "rawHash": "daa120c614f9",
+  "aliases": [
+   "croaker",
+   "hardhead",
+   "atlantic croaker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "92": {
+  "name": "Black Drum",
+  "reviewed": "2026-09-20",
+  "rawHash": "40c9bd79c5cf",
+  "aliases": [
+   "black drum",
+   "drum"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "150": {
+  "name": "Red Drum",
+  "reviewed": "2026-09-20",
+  "rawHash": "f6ebf1bf8728",
+  "aliases": [
+   "red drum",
+   "redfish",
+   "puppy drum",
+   "channel bass",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 20,
+      "max": 27
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "20 to 27 inch slot"
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "CLOSED in federal waters."
+  ]
+ },
+ "180": {
+  "name": "Spot",
+  "reviewed": "2026-09-20",
+  "rawHash": "03c0458c7426",
+  "aliases": [
+   "spot",
+   "norfolk spot"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "183": {
+  "name": "Spotted Seatrout",
+  "reviewed": "2026-09-20",
+  "rawHash": "4ff95d48d9da",
+  "aliases": [
+   "spotted seatrout",
+   "speckled trout",
+   "speck",
+   "specks",
+   "spotted sea trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "192": {
+  "name": "Weakfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "4aa32c713c09",
+  "aliases": [
+   "weakfish",
+   "weakie",
+   "gray trout",
+   "grey trout",
+   "sea trout",
+   "tiderunner"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "185": {
+  "name": "Summer Flounder",
+  "reviewed": "2026-09-20",
+  "rawHash": "754e8a0d7555",
+  "aliases": [
+   "fluke",
+   "flounder",
+   "summer flounder",
+   "flattie",
+   "doormat"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null,
+      "from": "01-01",
+      "to": "05-31"
+     },
+     {
+      "min": 17.5,
+      "max": null,
+      "from": "06-01",
+      "to": "12-31"
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "16 in Jan 1 - May 31; 17.5 in June 1 - Dec 31"
+   }
+  ],
+  "notes": []
+ },
+ "196": {
+  "name": "Windowpane Flounder",
+  "reviewed": "2026-09-20",
+  "rawHash": "dde07d57928a",
+  "aliases": [
+   "windowpane",
+   "windowpane flounder",
+   "sand dab"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "197": {
+  "name": "Winter Flounder",
+  "reviewed": "2026-09-20",
+  "rawHash": "48b527024c8f",
+  "aliases": [
+   "winter flounder",
+   "blackback",
+   "lemon sole"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "02-11",
+      "04-10"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "198": {
+  "name": "Witch Flounder",
+  "reviewed": "2026-09-20",
+  "rawHash": "3f5c89ba6d55",
+  "aliases": [
+   "witch flounder",
+   "grey sole"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "202": {
+  "name": "Yellowtail Flounder",
+  "reviewed": "2026-09-20",
+  "rawHash": "71171821c998",
+  "aliases": [
+   "yellowtail flounder",
+   "yellowtail"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "176": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-09-20",
+  "rawHash": "84a493fb0c93",
+  "aliases": [
+   "spanish mackerel",
+   "spanish",
+   "spanish mack"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "190": {
+  "name": "Wahoo",
+  "reviewed": "2026-09-20",
+  "rawHash": "1619442e3137",
+  "aliases": [
+   "wahoo",
+   "ono"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "160": {
+  "name": "Scup",
+  "reviewed": "2026-09-20",
+  "rawHash": "54be94510ef9",
+  "aliases": [
+   "scup",
+   "porgy",
+   "porgies"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "123": {
+  "name": "Great Hammerhead Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "88e3b3deeb37",
+  "aliases": [
+   "great hammerhead",
+   "hammerhead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 78,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "159": {
+  "name": "Scalloped Hammerhead Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "88e3b3deeb37",
+  "aliases": [
+   "scalloped hammerhead",
+   "hammerhead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 78,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "170": {
+  "name": "Smooth Hammerhead Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "9861983f70f9",
+  "aliases": [
+   "smooth hammerhead",
+   "hammerhead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 78,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "95": {
+  "name": "Blacktip Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "7a338562b608",
+  "aliases": [
+   "blacktip",
+   "blacktip shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "104": {
+  "name": "Bull Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "7a338562b608",
+  "aliases": [
+   "bull shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "131": {
+  "name": "Lemon Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "7a338562b608",
+  "aliases": [
+   "lemon shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "140": {
+  "name": "Nurse Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "46e3c06352c7",
+  "aliases": [
+   "nurse shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "165": {
+  "name": "Silky Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "7a338562b608",
+  "aliases": [
+   "silky shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "177": {
+  "name": "Spinner Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "7a338562b608",
+  "aliases": [
+   "spinner shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "189": {
+  "name": "Tiger Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "7a338562b608",
+  "aliases": [
+   "tiger shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-14"
+     ],
+     [
+      "07-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 15 - July 15.",
+   "Fork length (snout to fork of tail).",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "98": {
+  "name": "Blue Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "0511f7d3ebf3",
+  "aliases": [
+   "blue shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Fork length.",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "142": {
+  "name": "Oceanic Whitetip Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "0511f7d3ebf3",
+  "aliases": [
+   "oceanic whitetip"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Fork length.",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "188": {
+  "name": "Thresher Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "0511f7d3ebf3",
+  "aliases": [
+   "thresher",
+   "thresher shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 54,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Fork length.",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "82": {
+  "name": "Atlantic Sharpnose Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "0111b9b3f3be",
+  "aliases": [
+   "sharpnose",
+   "atlantic sharpnose"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "94": {
+  "name": "Blacknose Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "0111b9b3f3be",
+  "aliases": [
+   "blacknose",
+   "blacknose shark"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "103": {
+  "name": "Bonnethead Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "0111b9b3f3be",
+  "aliases": [
+   "bonnethead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 1,
+    "bagNote": "Boat: 1 shark of any species per vessel (+1 Bonnethead and +1 Atlantic Sharpnose per angler). Shore: 1 shark per angler (+1 Bonnethead, +1 Sharpnose).",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "75": {
+  "name": "Atlantic Angel Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "44676928d5d6",
+  "aliases": [
+   "angel shark"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "PROHIBITED - release immediately without removing from the water."
+  ]
+ },
+ "113": {
+  "name": "Dusky Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "d54aa964b028",
+  "aliases": [
+   "dusky",
+   "dusky shark"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "PROHIBITED - release immediately without removing from the water."
+  ]
+ },
+ "157": {
+  "name": "Sand Tiger Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "72d65e8a97ea",
+  "aliases": [
+   "sand tiger",
+   "sand tiger shark"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "PROHIBITED - release immediately without removing from the water."
+  ]
+ },
+ "158": {
+  "name": "Sandbar Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "c9ee5fad0c7b",
+  "aliases": [
+   "sandbar",
+   "sandbar shark",
+   "brown shark"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "PROHIBITED - release immediately without removing from the water."
+  ]
+ },
+ "195": {
+  "name": "White Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "874321f3ed89",
+  "aliases": [
+   "white shark",
+   "great white"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "PROHIBITED - release immediately without removing from the water."
+  ]
+ },
+ "164": {
+  "name": "Shortfin mako Shark",
+  "reviewed": "2026-09-20",
+  "rawHash": "a287e39e141b",
+  "aliases": [
+   "mako",
+   "shortfin mako"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Possession prohibited in state and federal waters."
+  ]
+ },
+ "89": {
+  "name": "Barndoor Skate",
+  "reviewed": "2026-09-20",
+  "rawHash": "a878fee80b82",
+  "aliases": [
+   "barndoor skate",
+   "barndoor"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "101": {
+  "name": "Blueline Tilefish",
+  "reviewed": "2026-09-20",
+  "rawHash": "c194e2d8dc67",
+  "aliases": [
+   "blueline tilefish",
+   "blueline"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "05-01",
+      "10-31"
+     ]
+    ],
+    "size": [],
+    "bag": 3,
+    "bagNote": "3 private vessel; 5 USCG uninspected for-hire; 7 USCG inspected for-hire",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Charter/party vessels need an open-access Golden Tilefish permit."
+  ]
+ },
+ "119": {
+  "name": "Golden Tilefish",
+  "reviewed": "2026-09-20",
+  "rawHash": "c4bcc34f26df",
+  "aliases": [
+   "golden tilefish",
+   "tilefish",
+   "golden tile"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 8,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "70": {
+  "name": "Albacore Tuna",
+  "reviewed": "2026-09-20",
+  "rawHash": "2326d8a7b208",
+  "aliases": [
+   "albacore",
+   "longfin",
+   "longfin tuna"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "76": {
+  "name": "Atlantic Bluefin Tuna",
+  "reviewed": "2026-09-20",
+  "rawHash": "ce0af039bcb9",
+  "aliases": [
+   "bluefin",
+   "bluefin tuna",
+   "atlantic bluefin",
+   "tuna"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 27,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "Retention limits change during the season. Check hmspermits.noaa.gov or (888) 872-8862 before departure.",
+    "closed": false,
+    "sizeNote": "27 to <47 in School; 47 to <73 Large school/Small medium; 73+ Large medium/Giant. Curved fork length."
+   }
+  ],
+  "notes": [
+   "Federally regulated; limits change frequently.",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "91": {
+  "name": "Bigeye Tuna",
+  "reviewed": "2026-09-20",
+  "rawHash": "2af847ecf9e5",
+  "aliases": [
+   "bigeye",
+   "bigeye tuna",
+   "tuna"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 27,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Curved fork length.",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "168": {
+  "name": "Skipjack Tuna",
+  "reviewed": "2026-09-20",
+  "rawHash": "2326d8a7b208",
+  "aliases": [
+   "skipjack",
+   "skipjack tuna"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "201": {
+  "name": "Yellowfin Tuna",
+  "reviewed": "2026-09-20",
+  "rawHash": "6745dceaba49",
+  "aliases": [
+   "yellowfin",
+   "yellowfin tuna",
+   "tuna",
+   "yft"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 27,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Curved fork length.",
+   "Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862."
+  ]
+ },
+ "100": {
+  "name": "Bluefish",
+  "reviewed": "2026-09-20",
+  "rawHash": "12084ccccfe0",
+  "aliases": [
+   "bluefish",
+   "blue",
+   "blues",
+   "chopper",
+   "snapper blue",
+   "tailor"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 shore/private boat; 7 on for-hire vessels",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "vessel",
+    "seasons": null,
+    "size": [],
+    "bag": 7,
+    "bagNote": "7 per angler on for-hire (headboat/charter)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "109": {
+  "name": "Cobia",
+  "reviewed": "2026-09-20",
+  "rawHash": "755c6485b080",
+  "aliases": [
+   "cobia",
+   "ling",
+   "lemonfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 43,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per angler or 2 per vessel",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "187": {
+  "name": "Tautog",
+  "reviewed": "2026-09-20",
+  "rawHash": "b0447d6cc459",
+  "aliases": [
+   "tautog",
+   "tog",
+   "blackfish",
+   "toggie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": [
+     [
+      "01-01",
+      "05-15"
+     ],
+     [
+      "07-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 16 - June 30."
+  ]
+ },
+ "112": {
+  "name": "Dolphinfish",
+  "reviewed": "2026-09-20",
+  "rawHash": "f4c71769df29",
+  "aliases": [
+   "mahi",
+   "mahi-mahi",
+   "mahi mahi",
+   "dolphin",
+   "dolphinfish",
+   "dorado"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "Private vessel: 10 per person, max 60 per trip. Headboat: 10 per paying person.",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "120": {
+  "name": "Goosefish (Monkfish)",
+  "reviewed": "2026-09-20",
+  "rawHash": "12979815e2ae",
+  "aliases": [
+   "monkfish",
+   "goosefish",
+   "monk"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "federal",
+    "seasons": null,
+    "size": [
+     {
+      "min": 17,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "17 in total length, or 11 in tail length if tail removed"
+   }
+  ],
+  "notes": []
+ },
+ "67": {
+  "name": "Atlantic Lobster",
+  "reviewed": "2026-09-20",
+  "rawHash": "a9bc274f3167",
+  "aliases": [
+   "lobster",
+   "atlantic lobster",
+   "maine lobster"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 3.375,
+      "max": 5.25
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "3-3/8 to 5-1/4 in carapace (rear of eye socket to end of carapace)"
+   }
+  ],
+  "notes": [
+   "V-notched females prohibited.",
+   "Fishing license required."
+  ]
+ },
+ "68": {
+  "name": "Blue Crab",
+  "reviewed": "2026-09-20",
+  "rawHash": "a36e5f21f065",
+  "aliases": [
+   "blue crab",
+   "crab",
+   "crabs",
+   "jimmy",
+   "sook",
+   "peeler",
+   "soft shell",
+   "softshell"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel",
+    "closed": false,
+    "sizeNote": "Hard-shell 5 in; soft-shell 3.5 in; peeler 3 in (point to point)"
+   }
+  ],
+  "notes": [
+   "Pots: March 1 - November 30. Other gear year-round.",
+   "Fishing license required."
+  ]
+ },
+ "69": {
+  "name": "Hard Clam",
+  "reviewed": "2026-09-20",
+  "rawHash": "14afc7ec60bc",
+  "aliases": [
+   "clam",
+   "clams",
+   "hard clam",
+   "quahog",
+   "littleneck",
+   "cherrystone"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "seasons": null,
+    "size": [
+     {
+      "min": 1.5,
+      "max": null
+     }
+    ],
+    "bag": 100,
+    "bagNote": "100 resident / 50 non-resident",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Fishing license required."
+  ]
+ }
+}

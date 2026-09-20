@@ -1,0 +1,23 @@
+{
+  "name": "fishkeepr",
+  "version": "0.1.0",
+  "description": "KeepGauge - keep-or-release checks against Delaware DNREC fishing regulations",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "scrape": "node scripts/scrape.js",
+    "review": "node scripts/review.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0",
+    "compression": "1.8.0",
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "supertest": "7.1.0"
+  }
+}

@@ -56,9 +56,9 @@ test('bundled data: no species with a rule is missing an overlay', () => {
   assert.deepEqual(missing.map((s) => s.name), []);
 });
 
-test('GET /api/regs and /healthz', async () => {
+test('GET /api/regs and /api/health', async () => {
   const app = createApp();
-  const h = await request(app).get('/healthz');
+  const h = await request(app).get('/api/health');
   assert.equal(h.status, 200);
   assert.ok(h.body.species > 150);
   const r = await request(app).get('/api/regs');

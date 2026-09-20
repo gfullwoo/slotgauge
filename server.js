@@ -15,7 +15,7 @@ export function createApp() {
   const regs = buildRegs();
   const etag = `"${rawHash({ season: regs.scraped, size: String(regs.species.length), limit: process.env.K_REVISION || 'local' })}"`;
 
-  app.get('/healthz', (_req, res) => res.json({ ok: true, scraped: regs.scraped, species: regs.species.length }));
+  app.get('/api/health', (_req, res) => res.json({ ok: true, scraped: regs.scraped, species: regs.species.length }));
 
   app.get('/api/regs', (req, res) => {
     res.set('Cache-Control', 'public, max-age=3600');

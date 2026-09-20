@@ -75,7 +75,7 @@ jobs:
 
       - name: Smoke test
         run: |
-          curl -fsS "${{ steps.run.outputs.url }}/healthz"
+          curl -fsS "${{ steps.run.outputs.url }}/api/health"
           curl -fsS "${{ steps.run.outputs.url }}/api/regs" | head -c 300
           echo
           echo "Deployed ${{ steps.run.outputs.url }}"

@@ -70,7 +70,6 @@ jobs:
             --min-instances=0 --max-instances=3
             --concurrency=80
             --cpu-throttling
-            --execution-environment=gen2
             --service-account=slotgauge-run@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
           labels: app=slotgauge,commit=${{ github.sha }}
 

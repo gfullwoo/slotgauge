@@ -8,7 +8,7 @@ export const HABITATS = { 1: 'freshwater', 2: 'saltwater', 3: 'shellfish' };
 const clean = (s) => (s || '').replace(/\s+/g, ' ').trim();
 
 async function get(url, fetchImpl) {
-  const r = await fetchImpl(url, { headers: { 'user-agent': 'fishkeepr-scraper (+github.com/gfullwoo/fishkeepr)' } });
+  const r = await fetchImpl(url, { headers: { 'user-agent': 'slotgauge-scraper (+github.com/gfullwoo/slotgauge)' } });
   if (!r.ok) throw new Error(`${r.status} ${url}`);
   return r.text();
 }

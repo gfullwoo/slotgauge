@@ -8,8 +8,8 @@ on:
 env:
   PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
   REGION: ${{ vars.GCP_REGION || 'us-east4' }}
-  SERVICE: keepgauge
-  AR_REPO: keepgauge
+  SERVICE: slotgauge
+  AR_REPO: slotgauge
 
 permissions:
   contents: read
@@ -71,8 +71,8 @@ jobs:
             --concurrency=80
             --cpu-throttling
             --execution-environment=gen2
-            --service-account=keepgauge-run@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
-          labels: app=keepgauge,commit=${{ github.sha }}
+            --service-account=slotgauge-run@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
+          labels: app=slotgauge,commit=${{ github.sha }}
 
       - name: Smoke test
         run: |

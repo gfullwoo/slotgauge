@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
-# One-time GCP bootstrap for KeepGauge (fishkeepr) on Cloud Run with keyless GitHub Actions deploys.
-# Usage: PROJECT_ID=keepgauge-prod BILLING_ACCOUNT=XXXXXX-XXXXXX-XXXXXX ./infra/setup-gcp.sh
+# One-time GCP bootstrap for SlotGauge (slotgauge) on Cloud Run with keyless GitHub Actions deploys.
+# Usage: PROJECT_ID=slotgauge-prod BILLING_ACCOUNT=XXXXXX-XXXXXX-XXXXXX ./infra/setup-gcp.sh
 set -euo pipefail
 
-PROJECT_ID="${PROJECT_ID:?set PROJECT_ID, e.g. keepgauge-prod}"
+PROJECT_ID="${PROJECT_ID:?set PROJECT_ID, e.g. slotgauge-prod}"
 BILLING_ACCOUNT="${BILLING_ACCOUNT:?set BILLING_ACCOUNT (gcloud billing accounts list)}"
 REGION="${REGION:-us-east4}"            # Northern Virginia: closest region to Delaware
-GITHUB_REPO="${GITHUB_REPO:-gfullwoo/fishkeepr}"
-SERVICE="keepgauge"
-AR_REPO="keepgauge"
+GITHUB_REPO="${GITHUB_REPO:-gfullwoo/slotgauge}"
+SERVICE="slotgauge"
+AR_REPO="slotgauge"
 SA_NAME="github-deploy"
 POOL="github"
 PROVIDER="github-oidc"
 
 echo "== project"
 if ! gcloud projects describe "$PROJECT_ID" >/dev/null 2>&1; then
-  gcloud projects create "$PROJECT_ID" --name="KeepGauge"
+  gcloud projects create "$PROJECT_ID" --name="SlotGauge"
 fi
 gcloud billing projects link "$PROJECT_ID" --billing-account="$BILLING_ACCOUNT"
 gcloud config set project "$PROJECT_ID"
@@ -27,7 +27,7 @@ gcloud services enable run.googleapis.com artifactregistry.googleapis.com iam.go
 
 echo "== Artifact Registry"
 gcloud artifacts repositories describe "$AR_REPO" --location="$REGION" >/dev/null 2>&1 || \
-  gcloud artifacts repositories create "$AR_REPO" --repository-format=docker --location="$REGION" --description="KeepGauge images"
+  gcloud artifacts repositories create "$AR_REPO" --repository-format=docker --location="$REGION" --description="SlotGauge images"
 # keep only recent images
 gcloud artifacts repositories set-cleanup-policies "$AR_REPO" --location="$REGION" --policy=/dev/stdin <<'JSON' || true
 [{"name":"keep-recent","action":{"type":"Keep"},"mostRecentVersions":{"keepCount":10}},
@@ -42,9 +42,9 @@ for role in roles/run.admin roles/artifactregistry.writer roles/iam.serviceAccou
   gcloud projects add-iam-policy-binding "$PROJECT_ID" --member="serviceAccount:$SA" --role="$role" --condition=None >/dev/null
 done
 # runtime identity for the Cloud Run service (least privilege: nothing beyond defaults)
-gcloud iam service-accounts describe "keepgauge-run@$PROJECT_ID.iam.gserviceaccount.com" >/dev/null 2>&1 || \
-  gcloud iam service-accounts create keepgauge-run --display-name="KeepGauge Cloud Run runtime"
-gcloud iam service-accounts add-iam-policy-binding "keepgauge-run@$PROJECT_ID.iam.gserviceaccount.com" \
+gcloud iam service-accounts describe "slotgauge-run@$PROJECT_ID.iam.gserviceaccount.com" >/dev/null 2>&1 || \
+  gcloud iam service-accounts create slotgauge-run --display-name="SlotGauge Cloud Run runtime"
+gcloud iam service-accounts add-iam-policy-binding "slotgauge-run@$PROJECT_ID.iam.gserviceaccount.com" \
   --member="serviceAccount:$SA" --role="roles/iam.serviceAccountUser" >/dev/null
 
 echo "== Workload Identity Federation (keyless GitHub -> GCP)"
@@ -77,7 +77,7 @@ Or with the GitHub CLI:
   gh variable set GCP_DEPLOY_SA    -R $GITHUB_REPO -b "$SA"
 
 Then push to main (or run the "Deploy to Cloud Run" workflow). After the first deploy, map your domain:
-  gcloud beta run domain-mappings create --service $SERVICE --domain keepgauge.com --region $REGION
-  gcloud beta run domain-mappings create --service $SERVICE --domain www.keepgauge.com --region $REGION
+  gcloud beta run domain-mappings create --service $SERVICE --domain slotgauge.com --region $REGION
+  gcloud beta run domain-mappings create --service $SERVICE --domain www.slotgauge.com --region $REGION
 and add the DNS records it prints at your registrar (A/AAAA for the apex, CNAME ghs.googlehosted.com for www).
 EOT

@@ -1,10 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#0f6f8c"/>
-  <rect x="8" y="36" width="48" height="12" rx="3" fill="#e8f0f2"/>
-  <g fill="#0f6f8c">
-    <rect x="14" y="36" width="2" height="7"/><rect x="22" y="36" width="2" height="4"/><rect x="30" y="36" width="2" height="7"/>
-    <rect x="38" y="36" width="2" height="4"/><rect x="46" y="36" width="2" height="7"/>
-  </g>
-  <path d="M14 24c6-8 16-10 26-6l8-6v16l-8-6c-10 4-20 2-26-6z" fill="#5fd39a"/>
+  <!-- gauge bar -->
+  <rect x="7" y="40" width="50" height="14" rx="3" fill="#e8f0f2"/>
+  <!-- legal slot band -->
+  <rect x="24" y="40" width="18" height="14" fill="#5fd39a"/>
+  <!-- slot limit marks -->
+  <rect x="23" y="38" width="2.5" height="18" rx="1" fill="#0d171c"/>
+  <rect x="40.5" y="38" width="2.5" height="18" rx="1" fill="#0d171c"/>
+  <!-- minor ticks -->
+  <g fill="#0f6f8c"><rect x="12" y="49" width="1.5" height="5"/><rect x="17.5" y="49" width="1.5" height="5"/><rect x="47" y="49" width="1.5" height="5"/><rect x="52.5" y="49" width="1.5" height="5"/></g>
+  <!-- fish sitting in the slot -->
+  <path d="M15 24c5-8 14-10 22-6l9-6v18l-9-6c-8 4-17 2-22-6z" fill="#e8f0f2"/>
   <circle cx="21" cy="23" r="1.8" fill="#0d171c"/>
 </svg>

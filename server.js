@@ -39,7 +39,7 @@ export function createApp() {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  createApp().listen(PORT, () => console.log(`fishkeepr listening on :${PORT}`));
+  createApp().listen(PORT, () => console.log(`slotgauge listening on :${PORT}`));
 }
 
 export { loadJson };

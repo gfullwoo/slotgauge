@@ -3,15 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Say what you caught and where. KeepGauge checks Delaware season, size, and daily limits and tells you keep or release.">
+<meta name="description" content="Say what you caught. Know if it's a keeper. SlotGauge checks your fish against Delaware season, size, and daily limits.">
+<link rel="canonical" href="https://slotgauge.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SlotGauge">
+<meta property="og:title" content="SlotGauge">
+<meta property="og:description" content="Say what you caught. Know if it's a keeper. Delaware season, size, and daily limits in one check.">
+<meta property="og:url" content="https://slotgauge.com/">
+<meta property="og:image" content="https://slotgauge.com/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0f6f8c" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0d171c" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="KeepGauge">
+<meta name="apple-mobile-web-app-title" content="SlotGauge">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/icon-192.png">
-<title>KeepGauge</title>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>SlotGauge</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
 :root{
@@ -112,7 +121,7 @@ html,body{margin:0}
 
 <div class="wrap">
 <header>
-  <h1>KeepGauge<small>Delaware</small></h1>
+  <h1><img src="/icon.svg" alt="" width="28" height="28" style="vertical-align:-4px;margin-right:8px">Slot<span style="color:var(--accent)">Gauge</span><small>Delaware</small></h1>
   <span class="eyebrow" id="today"></span>
 </header>
 
@@ -146,8 +155,8 @@ html,body{margin:0}
 
 <script>
 async function loadRegs(){
-  try { const r = await fetch('/api/regs'); if (!r.ok) throw new Error(r.status); const j = await r.json(); try{ localStorage.setItem('kg.regs', JSON.stringify(j)); }catch(e){} return j; }
-  catch(e){ try { const c = localStorage.getItem('kg.regs'); if (c) { document.querySelector('#offline').hidden=false; return JSON.parse(c); } } catch(_){} throw e; }
+  try { const r = await fetch('/api/regs'); if (!r.ok) throw new Error(r.status); const j = await r.json(); try{ localStorage.setItem('sg.regs', JSON.stringify(j)); }catch(e){} return j; }
+  catch(e){ try { const c = localStorage.getItem('sg.regs'); if (c) { document.querySelector('#offline').hidden=false; return JSON.parse(c); } } catch(_){} throw e; }
 }
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
 loadRegs().then(initApp).catch(err => { document.querySelector('#out').innerHTML = '<div class="picker"><h3>Could not load regulations</h3><p>'+String(err.message||err)+'. Check your connection and reload.</p></div>'; });
@@ -310,9 +319,9 @@ function ruler(r){
   const mins = r.rules.map(x=>x.min).filter(x=>x!=null), maxs = r.rules.map(x=>x.max).filter(x=>x!=null);
   const lo = Math.max(0, Math.floor(Math.min(...mins, ...maxs, r.length??Infinity)/5)*5 - 5);
   const hi = Math.ceil(Math.max(...mins, ...maxs, (r.length??0))/5)*5 + 5;
-  const px = v => (4+(v-lo)/(hi-lo)*92).toFixed(2)+'%';
+  const px = v => (5+(v-lo)/(hi-lo)*90).toFixed(2)+'%';
   let h = '<div class="ruler" aria-hidden="true">';
-  for (const x of r.rules) { const a=x.min??lo, b=x.max??hi; h += `<div class="legal" style="left:${px(a)};width:${((b-a)/(hi-lo)*92).toFixed(2)}%"></div>`; }
+  for (const x of r.rules) { const a=x.min??lo, b=x.max??hi; h += `<div class="legal" style="left:${px(a)};width:${((b-a)/(hi-lo)*90).toFixed(2)}%"></div>`; }
   const step = (hi-lo)>40?10:5;
   for (let v=lo; v<=hi; v+=step) h += `<div class="tick major" style="left:${px(v)}"></div><div class="lbl" style="left:${px(v)}">${v}</div>`;
   if (r.length!=null) h += `<div class="you" style="left:${px(r.length)}" data-l="${fmtIn(r.length)}″"></div>`;
@@ -372,10 +381,10 @@ $('#q').addEventListener('keydown', e=>{ if (e.key==='Enter' && !e.shiftKey) { e
 $('#q').addEventListener('input', e=>{ e.target.style.height='auto'; e.target.style.height=Math.min(120,e.target.scrollHeight)+'px'; });
 
 // ---------- recent (per-device convenience) ----------
-function loadRecent(){ try { return JSON.parse(localStorage.getItem('kg.recent')||'[]'); } catch(e){ return []; } }
+function loadRecent(){ try { return JSON.parse(localStorage.getItem('sg.recent')||'[]'); } catch(e){ return []; } }
 function remember(item){
   let list = loadRecent().filter(x=>x.text!==item.text); list.unshift(item); list = list.slice(0,6);
-  try { localStorage.setItem('kg.recent', JSON.stringify(list)); } catch(e){}
+  try { localStorage.setItem('sg.recent', JSON.stringify(list)); } catch(e){}
   drawRecent(list);
 }
 function drawRecent(list){

@@ -69,5 +69,5 @@ test('GET /api/regs and /healthz', async () => {
   assert.equal(again.status, 304);
   const idx = await request(app).get('/');
   assert.equal(idx.status, 200);
-  assert.match(idx.text, /KeepGauge/);
+  assert.match(idx.text, /SlotGauge/);
 });

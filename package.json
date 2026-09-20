@@ -1,7 +1,7 @@
 {
-  "name": "fishkeepr",
+  "name": "slotgauge",
   "version": "0.1.0",
-  "description": "KeepGauge - keep-or-release checks against Delaware DNREC fishing regulations",
+  "description": "SlotGauge - keep-or-release checks against Delaware DNREC fishing regulations",
   "type": "module",
   "private": true,
   "engines": { "node": ">=20" },

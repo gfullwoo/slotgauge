@@ -1,6 +1,6 @@
-# KeepGauge (fishkeepr)
+# SlotGauge
 
-Keep or release? Describe a fish by voice or text ("30 inch striper in the bay", "my 5th sea bass, 13 inches") and KeepGauge checks it against the current Delaware season, size, and daily limits and gives a verdict with the source.
+Keep or release? Describe a fish by voice or text ("30 inch striper in the bay", "my 5th sea bass, 13 inches") and SlotGauge checks it against the current Delaware season, size, and daily limits and gives a verdict with the source.
 
 Regulations come only from the official state source, the DNREC Fish Facts species pages (https://fishspecies.dnrec.delaware.gov/), re-scraped nightly.
 
@@ -46,10 +46,10 @@ npm run review       # list species whose DNREC text no longer matches the revie
 
 `main` deploys to Cloud Run via GitHub Actions using Workload Identity Federation (no JSON keys).
 
-1. `PROJECT_ID=keepgauge-prod BILLING_ACCOUNT=… ./infra/setup-gcp.sh` (needs `gcloud` logged in as project creator). It creates the project, enables APIs, creates the Artifact Registry repo, the deploy and runtime service accounts, and the WIF pool/provider restricted to this repo, then prints four values.
+1. `PROJECT_ID=slotgauge-prod BILLING_ACCOUNT=… ./infra/setup-gcp.sh` (needs `gcloud` logged in as project creator). It creates the project, enables APIs, creates the Artifact Registry repo, the deploy and runtime service accounts, and the WIF pool/provider restricted to this repo, then prints four values.
 2. Add those as repository **variables**: `GCP_PROJECT_ID`, `GCP_REGION`, `GCP_WIF_PROVIDER`, `GCP_DEPLOY_SA`. Create a `production` environment (optional: require a reviewer).
 3. Push to `main`. The workflow runs tests, builds the image, pushes to Artifact Registry, deploys to Cloud Run (scale-to-zero, 256Mi), and smoke-tests `/healthz`.
-4. Custom domain: `gcloud beta run domain-mappings create --service keepgauge --domain keepgauge.com --region us-east4` and add the DNS records it prints.
+4. Custom domain: `gcloud beta run domain-mappings create --service slotgauge --domain slotgauge.com --region us-east4` and add the DNS records it prints.
 
 Cost at hobby traffic is effectively $0 (Cloud Run free tier; Artifact Registry a few cents).
 

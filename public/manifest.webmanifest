@@ -1,7 +1,7 @@
 {
-  "name": "KeepGauge",
-  "short_name": "KeepGauge",
-  "description": "Keep or release? Checks your catch against Delaware season, size, and daily limits.",
+  "name": "SlotGauge",
+  "short_name": "SlotGauge",
+  "description": "Say what you caught. Know if it's a keeper.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0d171c",

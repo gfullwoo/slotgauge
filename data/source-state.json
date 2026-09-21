@@ -1,0 +1,152 @@
+{
+ "sources": {
+  "de-fishfacts": {
+   "state": "DE",
+   "id": "de-fishfacts",
+   "title": "DNREC Fish Facts species pages",
+   "url": "https://fishspecies.dnrec.delaware.gov/",
+   "status": 200,
+   "hash": "da9d9ca6c5e52f32",
+   "bytes": 43460,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "de-guide": {
+   "state": "DE",
+   "id": "de-guide",
+   "title": "Delaware Fishing Guide (annual)",
+   "url": "https://dnrec.delaware.gov/fish-wildlife/fishing/",
+   "status": 200,
+   "hash": "36135b119a3f9b39",
+   "bytes": 84636,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "nj-marine-digest": {
+   "state": "NJ",
+   "id": "nj-marine-digest",
+   "title": "NJ Marine Digest 2026 (complete PDF)",
+   "url": "https://dep.nj.gov/wp-content/uploads/njfw/digest-marine-2026-complete.pdf",
+   "status": 403,
+   "bytes": 0,
+   "checked": "2026-09-21"
+  },
+  "nj-marine-seasons": {
+   "state": "NJ",
+   "id": "nj-marine-seasons",
+   "title": "NJ marine seasons & regulations page",
+   "url": "https://dep.nj.gov/njfw/fishing/marine/seasons-and-regulations/",
+   "status": 403,
+   "bytes": 0,
+   "checked": "2026-09-21"
+  },
+  "nj-digest-index": {
+   "state": "NJ",
+   "id": "nj-digest-index",
+   "title": "NJ Marine Digest index (finds the newest edition)",
+   "url": "https://dep.nj.gov/njfw/digests/marine/",
+   "status": 403,
+   "bytes": 0,
+   "checked": "2026-09-21"
+  },
+  "md-atlantic": {
+   "state": "MD",
+   "id": "md-atlantic",
+   "title": "Maryland Atlantic seasons, sizes & limits",
+   "url": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+   "status": 200,
+   "hash": "b5addd156d8fbc90",
+   "bytes": 87009,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "md-chesapeake": {
+   "state": "MD",
+   "id": "md-chesapeake",
+   "title": "Maryland Chesapeake Bay seasons, sizes & limits",
+   "url": "https://www.eregulations.com/maryland/fishing/chesapeake-bay-seasons-sizes-limits",
+   "status": 200,
+   "hash": "8036b04f7a59f3d8",
+   "bytes": 86674,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "md-dnr": {
+   "state": "MD",
+   "id": "md-dnr",
+   "title": "MD DNR recreational size & creel limits",
+   "url": "https://dnr.maryland.gov/fisheries/pages/regulations/changes.aspx",
+   "status": 200,
+   "hash": "e3b0c44298fc1c14",
+   "bytes": 99617,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "va-mrc-rules": {
+   "state": "VA",
+   "id": "va-mrc-rules",
+   "title": "VMRC recreational fishing regulations for marine waters",
+   "url": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
+   "status": 200,
+   "hash": "a1043145fdcd2507",
+   "bytes": 56192,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "va-mrc-card": {
+   "state": "VA",
+   "id": "va-mrc-card",
+   "title": "VMRC finfish regulation card (PDF)",
+   "url": "https://webapps.mrc.virginia.gov/public/reports/FinfishRegCardMay2026.pdf",
+   "status": 200,
+   "hash": "63e542201abbbde0",
+   "bytes": 599015,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "fl-fwc-recreational": {
+   "state": "FL",
+   "id": "fl-fwc-recreational",
+   "title": "FWC saltwater recreational regulations",
+   "url": "https://myfwc.com/fishing/saltwater/recreational/",
+   "status": 200,
+   "hash": "030f726e9e76f718",
+   "bytes": 198867,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "ny-marine": {
+   "state": "NY",
+   "id": "ny-marine",
+   "title": "NYSDEC recreational saltwater fishing regulations",
+   "url": "https://dec.ny.gov/things-to-do/saltwater-fishing/recreational-fishing-regulations",
+   "status": 200,
+   "hash": "6f90e0270402dc15",
+   "bytes": 104383,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  },
+  "ct-marine": {
+   "state": "CT",
+   "id": "ct-marine",
+   "title": "CT DEEP saltwater species regulations",
+   "url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/species-regulations",
+   "status": 200,
+   "hash": "256800c2f29ac310",
+   "bytes": 45072,
+   "checked": "2026-09-21",
+   "changed": null,
+   "firstSeen": true
+  }
+ },
+ "lastRun": "2026-09-21T16:50:05.805Z"
+}

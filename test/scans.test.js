@@ -22,19 +22,50 @@ function appWithFakes({ ident } = {}) {
   return { app: createApp({ verifyToken, identifier, store, firebaseConfig: { apiKey: 'x', authDomain: 'y', projectId: 'p' } }), store };
 }
 
-test('parseModelJson tolerates prose around JSON and clamps values', () => {
-  const r = parseModelJson('Sure: {"speciesId": "93", "name": "Black Sea Bass", "confidence": 1.4, "alternates": [], "lengthIn": 13.13, "lengthBasis": null, "notes": ""} done');
-  assert.equal(r.speciesId, 93); assert.equal(r.confidence, 1); assert.equal(r.lengthIn, 13.25);
+test('parseModelJson accepts ranked candidates and the legacy single-answer shape', () => {
+  const r = parseModelJson('Sure: {"candidates":[{"speciesId":"187","name":"Tautog","confidence":0.55,"why":"thick lips"},{"speciesId":93,"name":"Black Sea Bass","confidence":0.4,"why":"dark"}], "lengthIn": 13.13, "lengthBasis": null, "notes": ""} done');
+  assert.equal(r.speciesId, 187); assert.equal(r.confidence, 0.55); assert.equal(r.lengthIn, 13.25);
+  assert.equal(r.alternates[0].speciesId, 93); assert.equal(r.alternates[0].why, 'dark');
+  const legacy = parseModelJson('{"speciesId": 93, "name": "x", "confidence": 1.4, "alternates": [], "lengthIn": null}');
+  assert.equal(legacy.speciesId, 93); assert.equal(legacy.confidence, 1);
   assert.throws(() => parseModelJson('no json here'));
 });
 
-test('makeIdentifier snaps names to the catalog and drops unknown ids', async () => {
-  const client = { messages: { create: async () => ({ content: [{ type: 'text', text: JSON.stringify({ speciesId: seaBass.id, name: 'sea bass thing', confidence: 0.8, alternates: [{ speciesId: 999999, name: 'x', confidence: 0.1 }, { speciesId: tautog.id, name: 'tog', confidence: 0.1 }], lengthIn: null, lengthBasis: null, notes: '' }) }] }) } };
+test('makeIdentifier snaps names to the catalog, drops unknown ids, skips verify when confident', async () => {
+  let calls = 0;
+  const client = { messages: { create: async () => { calls++; return { content: [{ type: 'text', text: JSON.stringify({ candidates: [{ speciesId: seaBass.id, name: 'sea bass thing', confidence: 0.95, why: 'filaments' }, { speciesId: 999999, name: 'x', confidence: 0.03 }, { speciesId: tautog.id, name: 'tog', confidence: 0.02 }], lengthIn: null, lengthBasis: null, notes: '' }) }] }; } } };
   const identify = makeIdentifier({ species: regs.species, client, model: 'test' });
   const r = await identify(Buffer.from('x'));
   assert.equal(r.name, 'Black Sea Bass');
   assert.deepEqual(r.alternates.map((a) => a.name), ['Tautog']);
+  assert.equal(calls, 1); assert.equal(r.verified, false);
   assert.ok(speciesCatalog(regs.species).includes(`${seaBass.id}|Black Sea Bass|saltwater`));
+});
+
+test('makeIdentifier runs a head-to-head verify pass when unsure and adopts its ranking', async () => {
+  const replies = [
+    { candidates: [{ speciesId: seaBass.id, confidence: 0.6, why: 'dark body' }, { speciesId: tautog.id, confidence: 0.35, why: 'blunt head' }], lengthIn: null, lengthBasis: null, notes: 'first look' },
+    { candidates: [{ speciesId: tautog.id, confidence: 0.85, why: 'thick rubbery lips, rounded tail, no dorsal filaments' }, { speciesId: seaBass.id, confidence: 0.15, why: 'no white tabs on dorsal' }], notes: 'lips decide it' },
+  ];
+  const prompts = [];
+  const client = { messages: { create: async (req) => { prompts.push(req.system); return { content: [{ type: 'text', text: JSON.stringify(replies.shift()) }] }; } } };
+  const identify = makeIdentifier({ species: regs.species, client, model: 'test' });
+  const r = await identify(Buffer.from('x'));
+  assert.equal(r.name, 'Tautog'); assert.equal(r.confidence, 0.85); assert.equal(r.verified, true);
+  assert.equal(r.alternates[0].name, 'Black Sea Bass');
+  assert.equal(r.notes, 'lips decide it');
+  assert.equal(prompts.length, 2); assert.match(prompts[1], /head-to-head/);
+});
+
+test('makeIdentifier falls back to the next model when the API says the name is unknown', async () => {
+  const used = [];
+  const client = { messages: { create: async (req) => { used.push(req.model); if (req.model === 'bogus') { const e = new Error('model: bogus not found'); e.status = 404; throw e; } return { content: [{ type: 'text', text: JSON.stringify({ candidates: [{ speciesId: tautog.id, name: 'Tautog', confidence: 0.95, why: 'lips' }] }) }] }; } } };
+  const identify = makeIdentifier({ species: regs.species, client, model: 'bogus', models: ['bogus', 'good-model'] });
+  const r = await identify(Buffer.from('x'));
+  assert.equal(r.name, 'Tautog'); assert.equal(r.model, 'good-model');
+  assert.deepEqual(used, ['bogus', 'good-model']);
+  await identify(Buffer.from('x'));
+  assert.deepEqual(used.slice(2), ['good-model']);   // sticks with the working model
 });
 
 test('scan endpoints require auth and the feature flag is advertised', async () => {

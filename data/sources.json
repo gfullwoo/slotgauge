@@ -1,0 +1,173 @@
+{
+  "_doc": "Registry of OFFICIAL regulation sources per state. Allowed hosts: *.gov, eregulations.com (official digest publisher for MD DNR) and myfwc.com (FWC is the Florida state agency; it does not use a .gov domain). The weekly source watcher (scripts/watch-sources.js) fetches each url, extracts its text, hashes it, and opens a GitHub issue when the text changes or when a state's captured season falls behind the calendar. Only add government / agency-run URLs here (eregulations.com is the official digest publisher contracted by MD DNR).",
+  "states": {
+    "DE": {
+      "name": "Delaware",
+      "slug": "delaware",
+      "agency": "DNREC Division of Fish & Wildlife",
+      "season": 2026,
+      "data": "data/dnrec_raw.json",
+      "extractor": "scraper",
+      "sources": [
+        {
+          "id": "de-fishfacts",
+          "title": "DNREC Fish Facts species pages",
+          "url": "https://fishspecies.dnrec.delaware.gov/",
+          "type": "html",
+          "role": "primary",
+          "note": "Scraped nightly per species by scripts/scrape.js"
+        },
+        {
+          "id": "de-guide",
+          "title": "Delaware Fishing Guide (annual)",
+          "url": "https://dnrec.delaware.gov/fish-wildlife/fishing/",
+          "type": "html",
+          "role": "guide"
+        }
+      ]
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "slug": "new-jersey",
+      "agency": "NJDEP Fish & Wildlife",
+      "season": null,
+      "data": "data/nj/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "nj-marine-digest",
+          "title": "NJ Marine Digest 2026 (complete PDF)",
+          "url": "https://dep.nj.gov/wp-content/uploads/njfw/digest-marine-2026-complete.pdf",
+          "type": "pdf",
+          "role": "primary",
+          "annual": true,
+          "urlPattern": "https://dep.nj.gov/wp-content/uploads/njfw/digest-marine-{year}-complete.pdf"
+        },
+        {
+          "id": "nj-marine-seasons",
+          "title": "NJ marine seasons & regulations page",
+          "url": "https://dep.nj.gov/njfw/fishing/marine/seasons-and-regulations/",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "nj-digest-index",
+          "title": "NJ Marine Digest index (finds the newest edition)",
+          "url": "https://dep.nj.gov/njfw/digests/marine/",
+          "type": "html",
+          "role": "guide"
+        }
+      ]
+    },
+    "MD": {
+      "name": "Maryland",
+      "slug": "maryland",
+      "agency": "Maryland DNR Fishing & Boating Services",
+      "season": null,
+      "data": "data/md/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "md-atlantic",
+          "title": "Maryland Atlantic seasons, sizes & limits",
+          "url": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+          "type": "html",
+          "role": "primary",
+          "zone": "atlantic"
+        },
+        {
+          "id": "md-chesapeake",
+          "title": "Maryland Chesapeake Bay seasons, sizes & limits",
+          "url": "https://www.eregulations.com/maryland/fishing/chesapeake-bay-seasons-sizes-limits",
+          "type": "html",
+          "role": "primary",
+          "zone": "chesapeake"
+        },
+        {
+          "id": "md-dnr",
+          "title": "MD DNR recreational size & creel limits",
+          "url": "https://dnr.maryland.gov/fisheries/pages/regulations/changes.aspx",
+          "type": "html",
+          "role": "secondary"
+        }
+      ]
+    },
+    "VA": {
+      "name": "Virginia",
+      "slug": "virginia",
+      "agency": "Virginia Marine Resources Commission",
+      "season": null,
+      "data": "data/va/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "va-mrc-rules",
+          "title": "VMRC recreational fishing regulations for marine waters",
+          "url": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "va-mrc-card",
+          "title": "VMRC finfish regulation card (PDF)",
+          "url": "https://webapps.mrc.virginia.gov/public/reports/FinfishRegCardMay2026.pdf",
+          "type": "pdf",
+          "role": "secondary",
+          "annual": true
+        }
+      ]
+    },
+    "FL": {
+      "name": "Florida",
+      "slug": "florida",
+      "agency": "Florida Fish and Wildlife Conservation Commission",
+      "season": null,
+      "data": "data/fl/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "fl-fwc-recreational",
+          "title": "FWC saltwater recreational regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/",
+          "type": "html",
+          "role": "primary",
+          "note": "Index page; species rules live on linked pages (followLinks: /fishing/saltwater/recreational/)"
+        }
+      ]
+    },
+    "NY": {
+      "name": "New York",
+      "slug": "new-york",
+      "agency": "NYSDEC",
+      "season": null,
+      "data": "data/ny/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "ny-marine",
+          "title": "NYSDEC recreational saltwater fishing regulations",
+          "url": "https://dec.ny.gov/things-to-do/saltwater-fishing/recreational-fishing-regulations",
+          "type": "html",
+          "role": "primary"
+        }
+      ]
+    },
+    "CT": {
+      "name": "Connecticut",
+      "slug": "connecticut",
+      "agency": "CT DEEP",
+      "season": null,
+      "data": "data/ct/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "ct-marine",
+          "title": "CT DEEP saltwater species regulations",
+          "url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/species-regulations",
+          "type": "html",
+          "role": "primary"
+        }
+      ]
+    }
+  }
+}

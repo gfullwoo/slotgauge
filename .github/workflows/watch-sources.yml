@@ -1,0 +1,50 @@
+name: Watch official regulation sources
+
+on:
+  schedule:
+    - cron: '23 10 * * 1'   # Mondays 10:23 UTC
+    - cron: '0 12 2 1 *'    # Jan 2 — annual season rollover check
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Fetch and hash every official source
+        id: watch
+        run: |
+          rm -f data/source-changes.md
+          npm run --silent watch-sources | tee watch.log
+          if [ -f data/source-changes.md ]; then echo "attention=true" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Save source snapshots
+        run: |
+          git config user.name "slotgauge-bot"
+          git config user.email "bot@slotgauge.com"
+          git add data/source-state.json data/source-text
+          git diff --cached --quiet || git commit -m "data: source watcher snapshot $(date -u +%F)"
+          git push
+
+      - name: Open or update the review issue
+        if: steps.watch.outputs.attention == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('data/source-changes.md', 'utf8');
+            const title = 'Regulation sources need review';
+            const { data: open } = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'regulations' });
+            const existing = open.find((i) => i.title === title);
+            if (existing) await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: existing.number, body });
+            else await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body, labels: ['regulations'] });

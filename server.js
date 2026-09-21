@@ -4,7 +4,9 @@ import multer from 'multer';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildRegs, rawHash } from './src/regs.js';
-import { makePages, SITE } from './src/pages.js';
+import { makePages, sitemapAll, SITE } from './src/pages.js';
+import { buildAllRegs } from './src/regs.js';
+import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
 
@@ -169,21 +171,29 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {} 
     res.type('image/jpeg').send(b);
   });
 
-  // ---- crawlable regulation pages (SEO): /<state>/, /<state>/<habitat>/, /<state>/<species>/ ----
-  const pages = makePages(regs);
+  // ---- crawlable regulation pages (SEO): /<state>/, /<state>/<habitat>/, /<state>/<species>/ for every state with data ----
+  const allRegs = buildAllRegs();
+  const pagesByState = Object.fromEntries(Object.values(allRegs).map((r) => { const p = makePages(r); return [p.state.slug, p]; }));
+  const HABS = ['saltwater', 'freshwater', 'shellfish'];
   const html = (res, body, maxAge = 3600) => { res.set('Cache-Control', `public, max-age=${maxAge}`); res.type('html').send(body); };
   app.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /__/\nSitemap: ${SITE}/sitemap.xml\n`));
-  app.get('/sitemap.xml', (_req, res) => { res.set('Cache-Control', 'public, max-age=3600'); res.type('application/xml').send(pages.sitemap()); });
+  app.get('/sitemap.xml', (_req, res) => { res.set('Cache-Control', 'public, max-age=3600'); res.type('application/xml').send(sitemapAll(pagesByState)); });
+  app.get('/api/sources', (_req, res) => {
+    // freshness dashboard: which official sources back each state, when they were last checked / changed
+    const reg = loadSources(); const st = loadSourceState();
+    res.json({ lastRun: st.lastRun || null, states: Object.entries(reg.states).map(([code, x]) => ({ code, name: x.name, season: x.season, live: !!allRegs[code], species: allRegs[code]?.species.length || 0, captured: allRegs[code]?.scraped || null,
+      sources: x.sources.map((src) => ({ id: src.id, title: src.title, url: src.url, role: src.role, checked: st.sources?.[src.id]?.checked || null, changed: st.sources?.[src.id]?.changed || null, status: st.sources?.[src.id]?.status ?? null })) })) });
+  });
   if (process.env.GOOGLE_SITE_VERIFICATION) {
     const token = process.env.GOOGLE_SITE_VERIFICATION.replace(/^google|\.html$/g, '');
     app.get(`/google${token}.html`, (_req, res) => res.type('text/html').send(`google-site-verification: google${token}.html`));
   }
-  app.get('/:state', (req, res, next) => { if (req.params.state !== pages.state.slug) return next(); return req.path.endsWith('/') ? html(res, pages.statePage()) : res.redirect(301, `/${pages.state.slug}/`); });
+  app.get('/:state', (req, res, next) => { const p = pagesByState[req.params.state]; if (!p) return next(); return req.path.endsWith('/') ? html(res, p.statePage()) : res.redirect(301, `/${p.state.slug}/`); });
   app.get('/:state/:slug', (req, res, next) => {
-    if (req.params.state !== pages.state.slug) return next();
+    const p = pagesByState[req.params.state]; if (!p) return next();
     const { slug } = req.params;
-    if (!req.path.endsWith('/')) return (pages.bySlug.has(slug) || ['saltwater', 'freshwater', 'shellfish'].includes(slug)) ? res.redirect(301, `${req.path}/`) : next();
-    const page = ['saltwater', 'freshwater', 'shellfish'].includes(slug) ? pages.hubPage(slug) : pages.speciesPage(slug);
+    if (!req.path.endsWith('/')) return (p.bySlug.has(slug) || HABS.includes(slug)) ? res.redirect(301, `${req.path}/`) : next();
+    const page = HABS.includes(slug) ? p.hubPage(slug) : p.speciesPage(slug);
     return page ? html(res, page) : next();
   });
 

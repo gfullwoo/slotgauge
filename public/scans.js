@@ -181,18 +181,32 @@
       const { scans, groups } = await api('/api/scans');
       selected = new Set([...selected].filter((id) => scans.some((s) => s.id === id)));
       const stats = scans.length ? `${scans.length} photo${scans.length === 1 ? '' : 's'} · ${groups.filter((g) => g.speciesId != null).length} species` : '';
-      $('#galStats').innerHTML = scans.length ? `<span>${stats}</span> <button class="btn" id="galEdit">${editing ? 'Done' : 'Edit'}</button>${editing ? ` <button class="btn danger" id="galDelSel" ${selected.size ? '' : 'disabled'}>Delete ${selected.size || ''}</button>` : ''}` : '';
+      $('#galStats').innerHTML = scans.length ? (editing
+        ? `<span>${selected.size ? selected.size + ' selected' : 'Tap photos to select'}</span> <button class="btn" id="galAll">${selected.size === scans.length ? 'None' : 'All'}</button> <button class="btn danger" id="galDelSel" ${selected.size ? '' : 'disabled'}>Remove${selected.size ? ' ' + selected.size : ''}</button> <button class="btn" id="galEdit">Done</button>`
+        : `<span>${stats}</span> <button class="btn" id="galEdit">Select</button>`) : '';
       if (!scans.length) { editing = false; $('#galBody').innerHTML = '<div class="empty">No catches yet. Snap a photo from the Check tab and it lands here, sorted by species.</div>'; return; }
       $('#galBody').innerHTML = groups.map((g) => `<section class="species-group"><h3 class="disp">${esc(g.speciesName)} <span class="n">×${g.count}</span></h3><div class="grid${editing ? ' editing' : ''}">${g.scans.map((s) => `<button data-scan="${s.id}" class="${selected.has(s.id) ? 'sel' : ''}" title="${esc(new Date(s.createdAt).toLocaleDateString())}"><img src="${esc(s.thumbUrl)}" alt="" loading="lazy">${s.verdict ? `<span class="v ${s.verdict}">${s.verdict === 'kill' ? 'KEEP' : s.verdict === 'check' ? '?' : s.verdict.toUpperCase()}</span>` : ''}${editing ? `<span class="tick" aria-hidden="true">${selected.has(s.id) ? '✓' : ''}</span><span class="x" data-del="${s.id}" role="button" aria-label="Remove photo">×</span>` : ''}</button>`).join('')}</div></section>`).join('');
       $('#galBody').dataset.scans = JSON.stringify(scans);
     } catch (e) { $('#galBody').innerHTML = `<div class="empty">${esc(e.message)}</div>`; }
   }
+  function askConfirm(message, okLabel) {
+    return new Promise((resolve) => {
+      const old = $('#confirmBar'); if (old) old.remove();
+      const bar = document.createElement('div'); bar.id = 'confirmBar'; bar.className = 'confirm';
+      bar.innerHTML = `<span>${esc(message)}</span><span class="acts"><button class="btn" data-c="no">Cancel</button><button class="btn danger solid" data-c="yes">${esc(okLabel)}</button></span>`;
+      document.body.appendChild(bar);
+      bar.addEventListener('click', (e) => { const b = e.target.closest('[data-c]'); if (!b) return; bar.remove(); resolve(b.dataset.c === 'yes'); });
+    });
+  }
   async function deleteScans(ids) {
     if (!ids.length) return;
-    if (!confirm(ids.length === 1 ? 'Remove this photo from your gallery?' : `Remove ${ids.length} photos from your gallery?`)) return;
+    const ok = await askConfirm(ids.length === 1 ? 'Remove this photo from your gallery?' : `Remove ${ids.length} photos from your gallery?`, ids.length === 1 ? 'Remove' : `Remove ${ids.length}`);
+    if (!ok) return;
+    $('#galStats').innerHTML = '<span>Removing…</span>';
     try { await api('/api/scans/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ids }) }); }
-    catch (e) { alert(e.message); }
+    catch (e) { $('#galBody').insertAdjacentHTML('afterbegin', `<div class="empty">${esc(e.message)}</div>`); }
     for (const id of ids) selected.delete(id);
+    $('#galDetail').innerHTML = '';
     loadGallery();
   }
 
@@ -215,7 +229,7 @@
     $('#galDetail').onclick = async (e) => {
       const b = e.target.closest('[data-dact]'); if (!b) return;
       if (b.dataset.dact === 'close') $('#galDetail').innerHTML = '';
-      if (b.dataset.dact === 'delete') { if (confirm('Delete this photo from your gallery?')) { await api('/api/scans/' + scan.id, { method: 'DELETE' }); loadGallery(); } }
+      if (b.dataset.dact === 'delete') { deleteScans([scan.id]); }
       if (b.dataset.dact === 'recheck') { currentScan = scan; showView('check'); drawScan(scan, scan.fullUrl); checkScan(scan, true); }
       if (b.dataset.dact === 'species') { currentScan = scan; showView('check'); drawScan(scan, scan.fullUrl); pickAnySpecies((id) => setSpecies(scan, id, scan.fullUrl)); }
     };
@@ -238,11 +252,20 @@
       if (e.target.closest('#scanCheck') && currentScan) checkScan(currentScan);
       if (e.target.closest('#galEdit')) { editing = !editing; if (!editing) selected.clear(); loadGallery(); return; }
       if (e.target.closest('#galDelSel')) { deleteScans([...selected]); return; }
+      if (e.target.closest('#galAll')) { const scans = JSON.parse($('#galBody').dataset.scans || '[]'); if (selected.size === scans.length) selected.clear(); else scans.forEach((s) => selected.add(s.id)); loadGallery(); return; }
       const x = e.target.closest('#galBody [data-del]');
       if (x) { e.stopPropagation(); deleteScans([x.dataset.del]); return; }
       const g = e.target.closest('#galBody [data-scan]');
       if (g) {
-        if (editing) { const id = g.dataset.scan; selected.has(id) ? selected.delete(id) : selected.add(id); loadGallery(); return; }
+        if (editing) {
+          const id = g.dataset.scan; selected.has(id) ? selected.delete(id) : selected.add(id);
+          g.classList.toggle('sel', selected.has(id)); const tk = g.querySelector('.tick'); if (tk) tk.textContent = selected.has(id) ? '✓' : '';
+          const scans = JSON.parse($('#galBody').dataset.scans || '[]');
+          $('#galStats').querySelector('span').textContent = selected.size ? selected.size + ' selected' : 'Tap photos to select';
+          const del = $('#galDelSel'); del.disabled = !selected.size; del.textContent = 'Remove' + (selected.size ? ' ' + selected.size : '');
+          $('#galAll').textContent = selected.size === scans.length ? 'None' : 'All';
+          return;
+        }
         const scans = JSON.parse($('#galBody').dataset.scans || '[]'); const s = scans.find((x) => x.id === g.dataset.scan); if (s) showDetail(s);
       }
     });

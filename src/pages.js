@@ -124,7 +124,7 @@ ${body}
 </div></body></html>`;
 }
 
-const speciesImage = (st, sp) => (st.code === 'DE' ? `https://fishspecies.dnrec.delaware.gov/imageDB.ashx?id=${sp.id}&ss=2` : null);
+const speciesImage = (st, sp) => (st.code === 'DE' ? `${SITE}/img/species/${sp.id}.jpg` : null);
 
 export function makePages(regs) {
   const st = STATES[regs.state] || STATES.DE;

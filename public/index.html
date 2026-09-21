@@ -530,7 +530,7 @@ function renderPicker(title, msg, list, extra){
 }
 
 // ---------- hero banner: last fish searched ----------
-const SPECIES_IMG = id => `https://fishspecies.dnrec.delaware.gov/imageDB.ashx?id=${id}&ss=2`;
+const SPECIES_IMG = id => `/img/species/${id}.jpg`;
 function setHero({src, fallback, name, sub}){
   const h=$('#hero'), img=$('#heroImg'); if (!src) return;
   const show=()=>{ h.hidden=false; $('#heroName').textContent=name||''; $('#heroSub').textContent=sub||''; requestAnimationFrame(()=>img.classList.add('in')); };
@@ -541,7 +541,8 @@ function setHero({src, fallback, name, sub}){
   try { localStorage.setItem('sg.hero', JSON.stringify({src, fallback, name, sub})); } catch(e){}
 }
 function heroForSpecies(sp, sub){ setHero({src:SPECIES_IMG(sp.id), name:sp.name, sub: sub || 'Last checked'}); }
-try { const h=JSON.parse(localStorage.getItem('sg.hero')||'null'); if (h && h.src) setHero(h); } catch(e){}
+const fixImg = u => { const m = /imageDB\.ashx\?id=(\d+)/.exec(u||''); return m ? SPECIES_IMG(+m[1]) : u; };
+try { const h=JSON.parse(localStorage.getItem('sg.hero')||'null'); if (h && h.src) { h.src=fixImg(h.src); h.fallback=fixImg(h.fallback); setHero(h); } else { const d=SP.find(s=>s.id===203)||SP[0]; if (d) setHero({src:SPECIES_IMG(d.id), name:d.name, sub:'Try a check to see your fish here'}); } } catch(e){}
 
 // ---------- run ----------
 let pending = null; // {text, q}

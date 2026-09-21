@@ -21,7 +21,7 @@ test('species page carries title, table, FAQ schema and DNREC source', () => {
   assert.match(html, /rel="canonical" href="https:\/\/slotgauge\.com\/delaware\/striped-bass\/"/);
   assert.match(html, /28–31 inch slot/);
   assert.match(html, /"@type":"FAQPage"/);
-  assert.match(html, /FishSpecies\.aspx\?habitat=2&amp;species=203/);
+  assert.match(html, /img\/species\/203\.jpg/); assert.match(html, /FishSpecies\.aspx\?habitat=2&amp;species=203/);
   assert.match(html, /href="\/\?q=Striped%20Bass"/);
   assert.match(html, /Often confused with/); // look-alike links
   assert.equal(pages.speciesPage('no-such-fish'), null);

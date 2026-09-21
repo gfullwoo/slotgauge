@@ -171,6 +171,27 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {} 
     res.type('image/jpeg').send(b);
   });
 
+  // ---- species photo proxy: DNREC serves images as text/html with no caching headers, which some
+  // phone browsers refuse to render in <img>; re-serve them as proper images from our own origin. ----
+  const imgCache = new Map(); const IMG_MAX = 300;
+  app.get('/img/species/:id.jpg', async (req, res) => {
+    const id = Number(req.params.id);
+    if (!speciesById.has(id)) return res.status(404).end();
+    let hit = imgCache.get(id);
+    if (!hit) {
+      try {
+        const r = await fetch(`https://fishspecies.dnrec.delaware.gov/imageDB.ashx?id=${id}&ss=2`, { headers: { 'user-agent': 'SlotGauge (+https://slotgauge.com)' } });
+        const buf = Buffer.from(await r.arrayBuffer());
+        if (!r.ok || buf.length < 1000) return res.status(404).end();
+        const type = buf[0] === 0x89 && buf[1] === 0x50 ? 'image/png' : buf[0] === 0x47 && buf[1] === 0x49 ? 'image/gif' : 'image/jpeg';
+        hit = { buf, type };
+        if (imgCache.size >= IMG_MAX) imgCache.delete(imgCache.keys().next().value);
+        imgCache.set(id, hit);
+      } catch (e) { return res.status(502).end(); }
+    }
+    res.set('Cache-Control', 'public, max-age=604800, immutable').type(hit.type).send(hit.buf);
+  });
+
   // ---- crawlable regulation pages (SEO): /<state>/, /<state>/<habitat>/, /<state>/<species>/ for every state with data ----
   const allRegs = buildAllRegs();
   const pagesByState = Object.fromEntries(Object.values(allRegs).map((r) => { const p = makePages(r); return [p.state.slug, p]; }));

@@ -51,7 +51,12 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {} 
     const m = /^Bearer (.+)$/.exec(req.headers.authorization || '');
     if (!m) return res.status(401).json({ error: 'Sign in to use this feature.' });
     try { req.user = await verifyToken(m[1]); next(); }
-    catch (e) { res.status(401).json({ error: 'Your session expired. Sign in again.' }); }
+    catch (e) {
+      let claims = {};
+      try { claims = JSON.parse(Buffer.from(m[1].split('.')[1], 'base64url').toString()); } catch (_) {}
+      console.warn(`auth: token rejected: ${e.code || ''} ${e.message} (aud=${claims.aud} iss=${claims.iss} exp=${claims.exp})`);
+      res.status(401).json({ error: 'Your session expired. Sign in again.' });
+    }
   };
 
   app.get('/api/me', requireAuth, async (req, res) => {

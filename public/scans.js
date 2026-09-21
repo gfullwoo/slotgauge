@@ -29,7 +29,7 @@
   // ---------- auth ----------
   async function signIn() {
     const p = new firebase.auth.GoogleAuthProvider();
-    try { await firebase.auth().signInWithPopup(p); }
+    try { const r = await firebase.auth().signInWithPopup(p); if (r && r.user) user = r.user; }
     catch (e) { if (/popup/i.test(e.code || '')) await firebase.auth().signInWithRedirect(p); else alert('Sign-in failed: ' + (e.message || e.code)); }
   }
   async function token() { return user ? user.getIdToken() : null; }

@@ -166,9 +166,10 @@ export async function createProductionApp() {
     return createApp({ verifyToken, identifier, store, firebaseConfig });
   }
   if (firebaseConfig.apiKey) {
-    const admin = await import('firebase-admin');
-    const fb = admin.default.initializeApp({ projectId: firebaseConfig.projectId });
-    verifyToken = async (t) => { const d = await fb.auth().verifyIdToken(t); return { uid: d.uid, email: d.email || null, name: d.name || null, picture: d.picture || null }; };
+    const { initializeApp } = await import('firebase-admin/app');
+    const { getAuth } = await import('firebase-admin/auth');
+    const fbAuth = getAuth(initializeApp({ projectId: firebaseConfig.projectId }));
+    verifyToken = async (t) => { const d = await fbAuth.verifyIdToken(t); return { uid: d.uid, email: d.email || null, name: d.name || null, picture: d.picture || null }; };
   }
   if (process.env.ANTHROPIC_API_KEY) {
     const { makeIdentifier } = await import('./src/identify.js');

@@ -101,6 +101,7 @@ section.recent h2{font-size:18px;color:var(--ink-2);margin-bottom:8px}
 .rlist button{all:unset;cursor:pointer;display:flex;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13.5px}
 .rlist .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;min-width:64px}
 .rlist .tag.keep{color:var(--keep)} .rlist .tag.release,.rlist .tag.kill{color:var(--release)} .rlist .tag.closed{color:var(--closed)} .rlist .tag.check{color:var(--warn)}
+.seo{margin-top:36px;padding-top:18px;border-top:1px solid var(--line)}.seo h2{font-size:22px}.seo p{font-size:13.5px;color:var(--ink-2);margin:6px 0 10px}.seo-links{display:flex;flex-wrap:wrap;gap:6px}.seo-links a{font-size:12.5px;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--ink);text-decoration:none}
 footer{margin-top:28px;font-size:12px;color:var(--ink-3);line-height:1.5}
 footer a{color:var(--accent);text-decoration:none}
 .sr{position:absolute;left:-9999px}
@@ -268,6 +269,24 @@ html,body{margin:0}
   <div class="gal-head"><h2 class="disp">My catches</h2><span class="gal-stats" id="galStats"></span></div>
   <div id="galDetail"></div>
   <div id="galBody"><div class="empty">Loading…</div></div>
+</section>
+
+<section class="seo" id="seo">
+  <h2 class="disp">Delaware fishing regulations, in plain English</h2>
+  <p>SlotGauge covers every species the Delaware Division of Fish &amp; Wildlife (DNREC) regulates: size limits, slot limits, seasons and daily limits for saltwater, freshwater and shellfish, rechecked against the official pages every night. Browse the full tables or jump to the fish people look up most.</p>
+  <div class="seo-links">
+    <a href="/delaware/">All Delaware regulations</a>
+    <a href="/delaware/saltwater/">Saltwater size limits</a>
+    <a href="/delaware/freshwater/">Freshwater size limits</a>
+    <a href="/delaware/striped-bass/">Striped bass</a>
+    <a href="/delaware/summer-flounder/">Summer flounder (fluke)</a>
+    <a href="/delaware/black-sea-bass/">Black sea bass</a>
+    <a href="/delaware/tautog/">Tautog</a>
+    <a href="/delaware/bluefish/">Bluefish</a>
+    <a href="/delaware/weakfish/">Weakfish</a>
+    <a href="/delaware/blue-crab/">Blue crab</a>
+    <a href="/delaware/largemouth-bass/">Largemouth bass</a>
+  </div>
 </section>
 
 <footer>
@@ -636,6 +655,8 @@ document.addEventListener('click', e => {
   if (w.dataset.way === 'photo') { const c = $('#camBtn'); if (!c.hidden) c.click(); else { const a = $('#avatarBtn'); if (a && !$('#acct').hidden) a.click(); else $('#q').focus(); } }
 });
 showWelcome();
+// deep link from the regulation pages: /?q=Striped%20Bass
+try { const q0 = new URLSearchParams(location.search).get('q'); if (q0) { $('#q').value = q0; run(q0); } } catch(e){}
 window.SG = { SP, run, evaluate, render, escapeHtml, $, fmtIn, ZONES, showWelcome, setHero, SPECIES_IMG, get zone(){ return ctxZone; } };
 document.dispatchEvent(new Event('sg:ready'));
 }

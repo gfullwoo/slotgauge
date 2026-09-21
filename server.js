@@ -4,6 +4,7 @@ import multer from 'multer';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildRegs, rawHash } from './src/regs.js';
+import { makePages, SITE } from './src/pages.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
 
@@ -166,6 +167,24 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {} 
     const b = store.blobs.get(req.params[0]);
     if (!b) return res.status(404).end();
     res.type('image/jpeg').send(b);
+  });
+
+  // ---- crawlable regulation pages (SEO): /<state>/, /<state>/<habitat>/, /<state>/<species>/ ----
+  const pages = makePages(regs);
+  const html = (res, body, maxAge = 3600) => { res.set('Cache-Control', `public, max-age=${maxAge}`); res.type('html').send(body); };
+  app.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /__/\nSitemap: ${SITE}/sitemap.xml\n`));
+  app.get('/sitemap.xml', (_req, res) => { res.set('Cache-Control', 'public, max-age=3600'); res.type('application/xml').send(pages.sitemap()); });
+  if (process.env.GOOGLE_SITE_VERIFICATION) {
+    const token = process.env.GOOGLE_SITE_VERIFICATION.replace(/^google|\.html$/g, '');
+    app.get(`/google${token}.html`, (_req, res) => res.type('text/html').send(`google-site-verification: google${token}.html`));
+  }
+  app.get('/:state', (req, res, next) => { if (req.params.state !== pages.state.slug) return next(); return req.path.endsWith('/') ? html(res, pages.statePage()) : res.redirect(301, `/${pages.state.slug}/`); });
+  app.get('/:state/:slug', (req, res, next) => {
+    if (req.params.state !== pages.state.slug) return next();
+    const { slug } = req.params;
+    if (!req.path.endsWith('/')) return (pages.bySlug.has(slug) || ['saltwater', 'freshwater', 'shellfish'].includes(slug)) ? res.redirect(301, `${req.path}/`) : next();
+    const page = ['saltwater', 'freshwater', 'shellfish'].includes(slug) ? pages.hubPage(slug) : pages.speciesPage(slug);
+    return page ? html(res, page) : next();
   });
 
   app.use(express.static(path.join(__dirname, 'public'), {

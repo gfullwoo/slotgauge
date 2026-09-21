@@ -69,7 +69,7 @@
     view = v;
     for (const b of document.querySelectorAll('#tabs [role=tab]')) b.setAttribute('aria-selected', String(b.dataset.tab === v));
     const check = v === 'check';
-    for (const id of ['#ctx', '.inputbox', '#examples', '#hint', '#scanCard', '#out', '#recentWrap']) { const el = document.querySelector(id); if (el) el.hidden = !check || (id === '#recentWrap' && !el.querySelector('button')); }
+    for (const id of ['#ctx', '.inputbox', '#examples', '#hint', '#scanCard', '#out', '#recentWrap', '#seo']) { const el = document.querySelector(id); if (el) el.hidden = !check || (id === '#recentWrap' && !el.querySelector('button')); }
     const hero = $('#hero'); if (hero) hero.hidden = !check || !$('#heroImg').classList.contains('in');
     $('#galleryView').hidden = check;
     if (!check) loadGallery(); else if (!$('#out').innerHTML.trim() && !$('#scanCard').innerHTML.trim()) window.SG.showWelcome();

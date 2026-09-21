@@ -70,6 +70,7 @@
     for (const b of document.querySelectorAll('#tabs [role=tab]')) b.setAttribute('aria-selected', String(b.dataset.tab === v));
     const check = v === 'check';
     for (const id of ['#ctx', '.inputbox', '#examples', '#hint', '#scanCard', '#out', '#recentWrap']) { const el = document.querySelector(id); if (el) el.hidden = !check || (id === '#recentWrap' && !el.querySelector('button')); }
+    const hero = $('#hero'); if (hero) hero.hidden = !check || !$('#heroImg').classList.contains('in');
     $('#galleryView').hidden = check;
     if (!check) loadGallery(); else if (!$('#out').innerHTML.trim() && !$('#scanCard').innerHTML.trim()) window.SG.showWelcome();
   }
@@ -108,6 +109,8 @@
     const rows = [];
     if (sp) rows.push(candRow(sp.id, sp.name, scan.userCorrected ? 1 : scan.confidence, scan.userCorrected ? '' : scan.why, true));
     for (const a of scan.alternates || []) rows.push(candRow(a.speciesId, a.name, a.confidence, a.why, false));
+    const heroSrc = imgUrl || scan.fullUrl;
+    if (heroSrc) window.SG.setHero({ src: heroSrc, fallback: sp ? window.SG.SPECIES_IMG(sp.id) : null, name: sp ? sp.name : 'Your photo', sub: scan.userCorrected ? 'You chose this' : sp ? 'Identified from your photo' : 'No match' });
     $('#scanCard').innerHTML = `<div class="scan">
       <div class="photo"><img src="${esc(imgUrl || scan.fullUrl)}" alt="${esc(scan.speciesName || 'fish')}"></div>
       <div class="body">

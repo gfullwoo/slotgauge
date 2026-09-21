@@ -16,15 +16,18 @@
   async function init() {
     await ready();
     try { cfg = await fetch('/api/config').then((r) => r.json()); } catch (e) { return; }
-    if (!cfg.features?.scans || !cfg.firebase?.apiKey) return; // feature off on this deployment
+    const canIdentify = !!cfg.features?.identify;
+    const canSave = !!(cfg.features?.scans && cfg.firebase?.apiKey);
+    if (!canIdentify && !canSave) return; // nothing extra on this deployment
+    if (canIdentify) { $('#camBtn').hidden = false; $('#upBtn').hidden = false; $('#hint').textContent = 'Try an example above, snap a photo, or describe your own catch.'; }
+    wire();
+    drawWayPhoto();
+    if (!canSave) return;
     if (cfg.firebase.apiKey === 'dev') window.firebase = fakeFirebase(); else if (!window.firebase) return;
     firebase.initializeApp(cfg.firebase);
-    $('#tabs').hidden = false; $('#acct').hidden = false; $('#camBtn').hidden = false; $('#upBtn').hidden = false;
-    $('#hint').textContent = 'Try an example above, snap a photo, or describe your own catch.';
+    $('#tabs').hidden = false; $('#acct').hidden = false;
     firebase.auth().onAuthStateChanged((u) => { user = u; drawAccount(); drawWayPhoto(); if (view === 'gallery') loadGallery(); });
-    drawWayPhoto();
     firebase.auth().getRedirectResult().catch(() => {});
-    wire();
   }
 
   // ---------- auth ----------
@@ -46,8 +49,9 @@
   }
   function drawWayPhoto() {
     const w = $('#wayPhoto'), d = $('#wayPhotoD'); if (!w) return;
-    w.classList.toggle('locked', !user);
-    d.textContent = user ? 'Take or upload a photo; it identifies the species' : 'Sign in with Google to identify a fish from a photo';
+    const on = !$('#camBtn').hidden;
+    w.classList.toggle('locked', !on);
+    d.textContent = on ? 'Take or upload a photo; it identifies the species' : 'Photo identification is not enabled here';
   }
   function drawAccount() {
     const b = $('#avatarBtn');
@@ -73,7 +77,6 @@
   // ---------- photo -> identify ----------
   async function handleFile(file, source) {
     if (!file) return;
-    if (!user) { await signIn(); if (!user) return; }
     const preview = URL.createObjectURL(file);
     $('#scanCard').innerHTML = `<div class="scan"><div class="photo"><img src="${preview}" alt="Your photo"><div class="busy"><span class="spin"></span>Identifying the fish…</div></div></div>`;
     $('#out').innerHTML = '';
@@ -121,7 +124,7 @@
           <button class="btn primary" id="scanCheck">Check</button>
           ${scan.lengthBasis ? `<span class="hint" style="margin:0">Measured from photo: ${esc(scan.lengthBasis)}</span>` : `<span class="hint" style="margin:0">No ruler in the photo - enter the length.</span>`}
         </div>
-        <div class="meta">Saved to your gallery · ${new Date(scan.createdAt).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}${scan.verified ? ' · double-checked' : ''}</div>
+        <div class="meta">${scan.saved ? 'Saved to your gallery' : (window.firebase && $('#acct') && !$('#acct').hidden ? '<button class="linkish" data-act="signin">Sign in</button> to keep this in a gallery' : 'Not saved')} · ${new Date(scan.createdAt).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}${scan.verified ? ' · double-checked' : ''}</div>
       </div></div>`;
   }
 
@@ -135,18 +138,26 @@
     const v = document.querySelector('#out .verdict');
     const verdict = v ? [...v.classList].find((c) => ['keep', 'release', 'closed', 'check', 'kill'].includes(c)) : null;
     const verdictText = v ? v.querySelector('.why').textContent : '';
+    if (!scan.id) { currentScan = { ...scan, lengthIn, verdict, verdictText }; return; }
     try {
       const { scan: updated } = await api('/api/scans/' + scan.id, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lengthIn, verdict, verdictText, zone }) });
-      currentScan = updated;
+      currentScan = { ...updated, saved: true };
     } catch (e) { /* verdict still shown; saving is best-effort */ }
   }
 
   async function setSpecies(scan, speciesId, imgUrl) {
+    if (!scan.id) {
+      const sp = window.SG.SP.find((s) => s.id === speciesId);
+      const alts = (scan.alternates || []).filter((a) => a.speciesId !== speciesId);
+      if (scan.speciesId != null && !alts.some((a) => a.speciesId === scan.speciesId)) alts.unshift({ speciesId: scan.speciesId, name: scan.speciesName, confidence: scan.confidence, why: scan.why });
+      const updated = { ...scan, speciesId, speciesName: sp ? sp.name : null, userCorrected: true, alternates: alts.slice(0, 3) };
+      currentScan = updated; drawScan(updated, imgUrl); checkScan(updated, true); return;
+    }
     try {
       const { scan: updated } = await api('/api/scans/' + scan.id, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ speciesId }) });
-      currentScan = updated;
-      drawScan(updated, imgUrl);
-      checkScan(updated, true);
+      currentScan = { ...updated, saved: true };
+      drawScan(currentScan, imgUrl);
+      checkScan(currentScan, true);
     } catch (e) { alert(e.message); }
   }
 
@@ -161,17 +172,28 @@
   }
 
   // ---------- gallery ----------
+  let editing = false, selected = new Set();
   async function loadGallery() {
     $('#galDetail').innerHTML = '';
-    if (!user) { $('#galBody').innerHTML = `<div class="empty">Sign in to see your catches.<br><br><button class="btn primary" data-act="signin">Sign in with Google</button></div>`; $('#galStats').textContent = ''; return; }
+    if (!user) { $('#galBody').innerHTML = `<div class="empty">Sign in to keep a gallery of your catches, sorted by species.<br><br><button class="btn primary" data-act="signin">Sign in with Google</button></div>`; $('#galStats').innerHTML = ''; return; }
     $('#galBody').innerHTML = '<div class="empty">Loading…</div>';
     try {
       const { scans, groups } = await api('/api/scans');
-      $('#galStats').textContent = scans.length ? `${scans.length} photo${scans.length === 1 ? '' : 's'} · ${groups.filter((g) => g.speciesId != null).length} species` : '';
-      if (!scans.length) { $('#galBody').innerHTML = '<div class="empty">No catches yet. Snap a photo from the Check tab and it lands here, sorted by species.</div>'; return; }
-      $('#galBody').innerHTML = groups.map((g) => `<section class="species-group"><h3 class="disp">${esc(g.speciesName)} <span class="n">×${g.count}</span></h3><div class="grid">${g.scans.map((s) => `<button data-scan="${s.id}" title="${esc(new Date(s.createdAt).toLocaleDateString())}"><img src="${esc(s.thumbUrl)}" alt="" loading="lazy">${s.verdict ? `<span class="v ${s.verdict}">${s.verdict === 'kill' ? 'KEEP' : s.verdict === 'check' ? '?' : s.verdict.toUpperCase()}</span>` : ''}</button>`).join('')}</div></section>`).join('');
+      selected = new Set([...selected].filter((id) => scans.some((s) => s.id === id)));
+      const stats = scans.length ? `${scans.length} photo${scans.length === 1 ? '' : 's'} · ${groups.filter((g) => g.speciesId != null).length} species` : '';
+      $('#galStats').innerHTML = scans.length ? `<span>${stats}</span> <button class="btn" id="galEdit">${editing ? 'Done' : 'Edit'}</button>${editing ? ` <button class="btn danger" id="galDelSel" ${selected.size ? '' : 'disabled'}>Delete ${selected.size || ''}</button>` : ''}` : '';
+      if (!scans.length) { editing = false; $('#galBody').innerHTML = '<div class="empty">No catches yet. Snap a photo from the Check tab and it lands here, sorted by species.</div>'; return; }
+      $('#galBody').innerHTML = groups.map((g) => `<section class="species-group"><h3 class="disp">${esc(g.speciesName)} <span class="n">×${g.count}</span></h3><div class="grid${editing ? ' editing' : ''}">${g.scans.map((s) => `<button data-scan="${s.id}" class="${selected.has(s.id) ? 'sel' : ''}" title="${esc(new Date(s.createdAt).toLocaleDateString())}"><img src="${esc(s.thumbUrl)}" alt="" loading="lazy">${s.verdict ? `<span class="v ${s.verdict}">${s.verdict === 'kill' ? 'KEEP' : s.verdict === 'check' ? '?' : s.verdict.toUpperCase()}</span>` : ''}${editing ? `<span class="tick" aria-hidden="true">${selected.has(s.id) ? '✓' : ''}</span><span class="x" data-del="${s.id}" role="button" aria-label="Remove photo">×</span>` : ''}</button>`).join('')}</div></section>`).join('');
       $('#galBody').dataset.scans = JSON.stringify(scans);
     } catch (e) { $('#galBody').innerHTML = `<div class="empty">${esc(e.message)}</div>`; }
+  }
+  async function deleteScans(ids) {
+    if (!ids.length) return;
+    if (!confirm(ids.length === 1 ? 'Remove this photo from your gallery?' : `Remove ${ids.length} photos from your gallery?`)) return;
+    try { await api('/api/scans/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ids }) }); }
+    catch (e) { alert(e.message); }
+    for (const id of ids) selected.delete(id);
+    loadGallery();
   }
 
   function showDetail(scan) {
@@ -214,8 +236,15 @@
       const alt = e.target.closest('#scanCard [data-alt]');
       if (alt && currentScan) { const img = $('#scanCard img')?.src; if (alt.dataset.alt === 'other') pickAnySpecies((id) => setSpecies(currentScan, id, img)); else setSpecies(currentScan, +alt.dataset.alt, img); }
       if (e.target.closest('#scanCheck') && currentScan) checkScan(currentScan);
+      if (e.target.closest('#galEdit')) { editing = !editing; if (!editing) selected.clear(); loadGallery(); return; }
+      if (e.target.closest('#galDelSel')) { deleteScans([...selected]); return; }
+      const x = e.target.closest('#galBody [data-del]');
+      if (x) { e.stopPropagation(); deleteScans([x.dataset.del]); return; }
       const g = e.target.closest('#galBody [data-scan]');
-      if (g) { const scans = JSON.parse($('#galBody').dataset.scans || '[]'); const s = scans.find((x) => x.id === g.dataset.scan); if (s) showDetail(s); }
+      if (g) {
+        if (editing) { const id = g.dataset.scan; selected.has(id) ? selected.delete(id) : selected.add(id); loadGallery(); return; }
+        const scans = JSON.parse($('#galBody').dataset.scans || '[]'); const s = scans.find((x) => x.id === g.dataset.scan); if (s) showDetail(s);
+      }
     });
     $('#scanCard').addEventListener('keydown', (e) => { if (e.key === 'Enter' && e.target.id === 'scanLen' && currentScan) { e.preventDefault(); checkScan(currentScan); } });
   }

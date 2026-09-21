@@ -20,6 +20,7 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 
 export function createApp({ verifyToken, identifier, store, firebaseConfig = {} } = {}) {
   const app = express();
   app.disable('x-powered-by');
+  app.set('trust proxy', true);   // Cloud Run sits behind Google's load balancer; req.ip must be the client
   app.use(compression());
   app.use(express.json({ limit: '64kb' }));
 
@@ -31,7 +32,7 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {} 
 
   app.get('/api/config', (_req, res) => {
     res.set('Cache-Control', 'public, max-age=300');
-    res.json({ firebase: firebaseConfig, features: { scans: !!(store && identifier && verifyToken) } });
+    res.json({ firebase: firebaseConfig, features: { scans: !!(store && identifier && verifyToken), identify: !!identifier, anonIdentify: !!identifier } });
   });
 
   app.get('/api/regs', (req, res) => {
@@ -59,25 +60,55 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {} 
     }
   };
 
+  // Optional auth: sets req.user when a valid token is present, otherwise continues anonymously.
+  const optionalAuth = async (req, _res, next) => {
+    const m = /^Bearer (.+)$/.exec(req.headers.authorization || '');
+    if (verifyToken && m) { try { req.user = await verifyToken(m[1]); } catch (e) { /* treat as anonymous */ } }
+    next();
+  };
+  // Anonymous identifications cost money; cap them per IP per hour.
+  const anonBudget = new Map();
+  const ANON_PER_HOUR = Number(process.env.ANON_IDENTIFY_PER_HOUR || 12);
+  function anonAllowed(ip) {
+    const now = Date.now(); const hour = Math.floor(now / 36e5);
+    const e = anonBudget.get(ip); if (!e || e.hour !== hour) { anonBudget.set(ip, { hour, n: 1 }); return true; }
+    if (e.n >= ANON_PER_HOUR) return false; e.n++; return true;
+  }
+  setInterval(() => { const hour = Math.floor(Date.now() / 36e5); for (const [k, v] of anonBudget) if (v.hour !== hour) anonBudget.delete(k); }, 36e5).unref?.();
+
   app.get('/api/me', requireAuth, async (req, res) => {
     const scans = store ? await store.list(req.user.uid) : [];
     res.json({ user: req.user, scanCount: scans.length, speciesCount: new Set(scans.map((s) => s.speciesId).filter((x) => x != null)).size });
   });
 
-  app.post('/api/identify', requireAuth, upload.single('image'), async (req, res) => {
-    if (!identifier || !store) return res.status(503).json({ error: 'Photo identification is not configured on this server.' });
+  app.post('/api/identify', optionalAuth, upload.single('image'), async (req, res) => {
+    if (!identifier) return res.status(503).json({ error: 'Photo identification is not configured on this server.' });
     if (!req.file) return res.status(400).json({ error: 'Attach an image as the "image" field.' });
+    if (!req.user && !anonAllowed(req.ip)) return res.status(429).json({ error: 'Hourly limit for photo checks without an account reached. Sign in for unlimited checks and a gallery.' });
     let images;
     try { images = await normalizeImage(req.file.buffer); }
     catch (e) { return res.status(400).json({ error: 'That file is not an image we can read.' }); }
     let ident;
     try { ident = await identifier(images.full); }
     catch (e) { console.error('identify failed', e); return res.status(502).json({ error: 'The fish identifier is unavailable right now. Try again in a minute.' }); }
-    const rec = newScanRecord({ uid: req.user.uid, ident, source: req.body?.source });
+    const rec = newScanRecord({ uid: req.user ? req.user.uid : null, ident, source: req.body?.source });
+    const species = rec.speciesId != null ? speciesById.get(rec.speciesId) : null;
+    if (!req.user || !store) {
+      // anonymous: identify only, nothing stored
+      return res.status(200).json({ scan: { ...rec, id: null, saved: false }, species });
+    }
     Object.assign(rec, await store.putImages(req.user.uid, rec.id, images));
     await store.create(req.user.uid, rec);
     const [withUrl] = await store.withUrls([rec]);
-    res.status(201).json({ scan: withUrl, species: rec.speciesId != null ? speciesById.get(rec.speciesId) : null });
+    res.status(201).json({ scan: { ...withUrl, saved: true }, species });
+  });
+
+  // Bulk delete for the gallery's edit mode.
+  app.post('/api/scans/delete', requireAuth, async (req, res) => {
+    if (!store) return res.status(503).json({ error: 'Scan storage is not configured.' });
+    const ids = Array.isArray(req.body?.ids) ? req.body.ids.map(String).slice(0, 200) : [];
+    let n = 0; for (const id of ids) if (await store.remove(req.user.uid, id)) n++;
+    res.json({ deleted: n });
   });
 
   app.get('/api/scans', requireAuth, async (req, res) => {

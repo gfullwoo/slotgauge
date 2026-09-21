@@ -158,6 +158,11 @@ header .right{display:flex;align-items:center;gap:8px}
 .cand .cname{grid-area:name;font-weight:600;font-size:15px} .cand .cpct{grid-area:pct;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-2);align-self:center}
 .cand .cbar{grid-area:bar;height:4px;border-radius:2px;background:var(--line);overflow:hidden;margin-top:3px} .cand .cbar span{display:block;height:100%;background:var(--accent)} .cand.top .cbar span{background:var(--keep)}
 .cand .cwhy{grid-area:why;font-size:12.5px;color:var(--ink-2);margin-top:3px} .cand .cpick{grid-area:pick;font-size:11.5px;color:var(--accent);font-weight:600;margin-top:2px}
+.grid button .x{position:absolute;top:4px;right:4px;width:24px;height:24px;border-radius:50%;background:rgba(13,23,28,.8);color:#fff;font-size:16px;line-height:24px;text-align:center;font-weight:700}
+.grid button .tick{position:absolute;top:4px;left:4px;width:22px;height:22px;border-radius:50%;border:2px solid #fff;background:rgba(13,23,28,.5);color:#fff;font-size:13px;line-height:18px;text-align:center}
+.grid button.sel{outline:3px solid var(--accent);outline-offset:-3px} .grid button.sel .tick{background:var(--accent);border-color:var(--accent)}
+.gal-stats .btn{padding:5px 10px;font-size:12.5px;margin-left:6px}
+.linkish{all:unset;cursor:pointer;color:var(--accent);font-weight:600}
 /* ---- welcome ---- */
 .welcome{margin-top:16px;border-radius:16px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow);padding:20px 18px 16px}
 .welcome h2{font-size:34px;line-height:1;margin:0 0 4px}
@@ -592,7 +597,7 @@ function showWelcome(){
     <p class="lede">Tell SlotGauge what you caught. It checks today's Delaware season, size, and daily limit and answers keep or release.</p>
     <div class="ways">
       <button class="way" data-way="speak"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3" fill="currentColor" stroke="none"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><span class="t">Say it</span><span class="d">“Twenty-two inch striper in the bay”</span></button>
-      <button class="way locked" data-way="photo" id="wayPhoto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="t">Snap it</span><span class="d" id="wayPhotoD">Sign in to identify a fish from a photo</span></button>
+      <button class="way" data-way="photo" id="wayPhoto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="t">Snap it</span><span class="d" id="wayPhotoD">Take or upload a photo; it identifies the species</span></button>
       <button class="way" data-way="type"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M8 14h8"/></svg><span class="t">Type it</span><span class="d">Species, length, and where you are</span></button>
     </div>
     <ul class="steps">

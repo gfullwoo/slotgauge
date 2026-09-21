@@ -129,6 +129,38 @@ test('identify -> gallery grouping -> correction -> delete', async () => {
   assert.equal(me.body.scanCount, 1);
 });
 
+test('anonymous identify works without storing, and is rate limited per IP', async () => {
+  const { app, store } = appWithFakes();
+  const jpeg = await testJpeg();
+  const r = await request(app).post('/api/identify').attach('image', jpeg, 'a.jpg');
+  assert.equal(r.status, 200);
+  assert.equal(r.body.scan.saved, false); assert.equal(r.body.scan.id, null);
+  assert.equal(r.body.scan.speciesName, 'Black Sea Bass');
+  assert.equal((await store.list('u1')).length, 0);
+  const cfg = await request(app).get('/api/config');
+  assert.equal(cfg.body.features.identify, true);
+  // exhaust the anonymous budget
+  process.env.ANON_IDENTIFY_PER_HOUR = '2';
+  const { app: tight } = appWithFakes();
+  assert.equal((await request(tight).post('/api/identify').attach('image', jpeg, 'a.jpg')).status, 200);
+  assert.equal((await request(tight).post('/api/identify').attach('image', jpeg, 'a.jpg')).status, 200);
+  assert.equal((await request(tight).post('/api/identify').attach('image', jpeg, 'a.jpg')).status, 429);
+  assert.equal((await request(tight).post('/api/identify').set('Authorization', 'Bearer good').attach('image', jpeg, 'a.jpg')).status, 201);
+  delete process.env.ANON_IDENTIFY_PER_HOUR;
+});
+
+test('bulk delete removes several scans at once', async () => {
+  const { app } = appWithFakes();
+  const auth = (r) => r.set('Authorization', 'Bearer good');
+  const jpeg = await testJpeg();
+  const ids = [];
+  for (let i = 0; i < 3; i++) ids.push((await auth(request(app).post('/api/identify')).attach('image', jpeg, 'a.jpg')).body.scan.id);
+  const d = await auth(request(app).post('/api/scans/delete')).send({ ids: ids.slice(0, 2).concat(['nope']) });
+  assert.equal(d.body.deleted, 2);
+  assert.equal((await auth(request(app).get('/api/scans'))).body.scans.length, 1);
+  assert.equal((await request(app).post('/api/scans/delete').send({ ids })).status, 401);
+});
+
 test('identify rejects non-images and reports identifier outages cleanly', async () => {
   const { app } = appWithFakes();
   const bad = await request(app).post('/api/identify').set('Authorization', 'Bearer good').attach('image', Buffer.from('not an image'), 'x.jpg');

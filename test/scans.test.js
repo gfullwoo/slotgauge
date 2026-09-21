@@ -4,7 +4,7 @@ import request from 'supertest';
 import sharp from 'sharp';
 import { createApp } from '../server.js';
 import { makeMemoryStore, groupBySpecies } from '../src/scans.js';
-import { parseModelJson, speciesCatalog, makeIdentifier } from '../src/identify.js';
+import { parseModelJson, speciesCatalog, makeIdentifier, geminiBackend } from '../src/identify.js';
 import { buildRegs } from '../src/regs.js';
 
 const regs = buildRegs();
@@ -62,10 +62,28 @@ test('makeIdentifier falls back to the next model when the API says the name is 
   const client = { messages: { create: async (req) => { used.push(req.model); if (req.model === 'bogus') { const e = new Error('model: bogus not found'); e.status = 404; throw e; } return { content: [{ type: 'text', text: JSON.stringify({ candidates: [{ speciesId: tautog.id, name: 'Tautog', confidence: 0.95, why: 'lips' }] }) }] }; } } };
   const identify = makeIdentifier({ species: regs.species, client, model: 'bogus', models: ['bogus', 'good-model'] });
   const r = await identify(Buffer.from('x'));
-  assert.equal(r.name, 'Tautog'); assert.equal(r.model, 'good-model');
+  assert.equal(r.name, 'Tautog'); assert.equal(r.model, 'claude:good-model');
   assert.deepEqual(used, ['bogus', 'good-model']);
   await identify(Buffer.from('x'));
   assert.deepEqual(used.slice(2), ['good-model']);   // sticks with the working model
+});
+
+test('geminiBackend calls Vertex AI with the image and walks its model chain on 404', async () => {
+  const calls = [];
+  const fetchImpl = async (url, opts) => {
+    calls.push(url);
+    if (url.includes('/models/gone:')) return { status: 404, ok: false, text: async () => 'nope' };
+    const body = JSON.parse(opts.body);
+    assert.equal(body.contents[0].parts[0].inlineData.mimeType, 'image/jpeg');
+    assert.match(opts.headers.authorization, /^Bearer tok/);
+    return { status: 200, ok: true, json: async () => ({ candidates: [{ content: { parts: [{ text: JSON.stringify({ candidates: [{ speciesId: tautog.id, name: 'Tautog', confidence: 0.93, why: 'thick lips, scaled body' }] }) }] } }] }) };
+  };
+  const backend = geminiBackend({ project: 'p', location: 'global', models: ['gone', 'gemini-test'], fetchImpl, tokenProvider: async () => 'tok' });
+  const identify = makeIdentifier({ species: regs.species, backend });
+  const r = await identify(Buffer.from('x'));
+  assert.equal(r.name, 'Tautog'); assert.equal(r.model, 'gemini:gemini-test');
+  assert.match(calls[0], /aiplatform\.googleapis\.com\/v1\/projects\/p\/locations\/global\/publishers\/google\/models\/gone:generateContent/);
+  assert.equal(calls.length, 2);
 });
 
 test('scan endpoints require auth and the feature flag is advertised', async () => {

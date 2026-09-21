@@ -48,6 +48,8 @@ Auth is Firebase Authentication (Google sign-in); the server verifies the ID tok
 
 Local end-to-end without any cloud services: `npm run dev:fake` (fake sign-in, fake identifier that always says Black Sea Bass, in-memory photo store).
 
+Identifier provider: Gemini on Vertex AI (`GEMINI_ENABLED=1`, no key needed, runs as the Cloud Run service account) with Claude as automatic fallback; or Claude only when `ANTHROPIC_API_KEY` is set and Gemini is off. `IDENTIFY_PROVIDER=claude` forces Claude. Both walk a model-name fallback chain.
+
 Setup: `ANTHROPIC_API_KEY=sk-ant-… ./infra/setup-scans.sh`, then the Firebase console steps it prints, then add the `FIREBASE_API_KEY`, `FIREBASE_AUTH_DOMAIN`, `SCANS_BUCKET` repository variables. Each feature is independent: with no variables set the app still runs as the plain checker.
 
 ## Develop

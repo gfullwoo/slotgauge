@@ -161,7 +161,7 @@ export async function createProductionApp() {
     firebaseConfig.apiKey = 'dev';
     verifyToken = async () => ({ uid: 'dev-user', email: 'dev@example.com', name: 'Dev Angler', picture: null });
     const pick = regs.species.find((s) => s.name === 'Black Sea Bass');
-    identifier = async () => ({ speciesId: pick.id, name: pick.name, confidence: 0.86, alternates: [{ speciesId: 187, name: 'Tautog', confidence: 0.1 }], lengthIn: null, lengthBasis: null, notes: 'Fake identification (DEV_FAKE=1).', model: 'fake' });
+    identifier = async () => ({ speciesId: pick.id, name: pick.name, confidence: 0.55, why: 'Dark body, large mouth (fake).', alternates: [{ speciesId: 187, name: 'Tautog', confidence: 0.4, why: 'Blunt head and thick lips would point here (fake).' }], lengthIn: null, lengthBasis: null, notes: 'Fake identification (DEV_FAKE=1).', model: 'fake', verified: true });
     store = makeMemoryStore();
     return createApp({ verifyToken, identifier, store, firebaseConfig });
   }
@@ -171,9 +171,22 @@ export async function createProductionApp() {
     const fbAuth = getAuth(initializeApp({ projectId: firebaseConfig.projectId }));
     verifyToken = async (t) => { const d = await fbAuth.verifyIdToken(t); return { uid: d.uid, email: d.email || null, name: d.name || null, picture: d.picture || null }; };
   }
-  if (process.env.ANTHROPIC_API_KEY) {
-    const { makeIdentifier } = await import('./src/identify.js');
-    identifier = makeIdentifier({ species: regs.species });
+  {
+    const { makeIdentifier, claudeBackend, geminiBackend } = await import('./src/identify.js');
+    const provider = (process.env.IDENTIFY_PROVIDER || 'auto').toLowerCase();   // gemini | claude | auto
+    const gemini = process.env.GEMINI_ENABLED === '1' || provider === 'gemini';
+    const claude = !!process.env.ANTHROPIC_API_KEY;
+    const primary = gemini && provider !== 'claude' ? geminiBackend() : claude ? claudeBackend() : null;
+    const fallback = primary && gemini && claude && provider !== 'claude' ? claudeBackend() : null;
+    if (primary) {
+      const main = makeIdentifier({ species: regs.species, backend: primary });
+      const alt = fallback ? makeIdentifier({ species: regs.species, backend: fallback }) : null;
+      identifier = async (jpeg) => {
+        try { return await main(jpeg); }
+        catch (e) { if (!alt) throw e; console.warn('identify: primary failed, using fallback:', e.message); return alt(jpeg); }
+      };
+      console.log(`identify: primary=${primary.name_()}${fallback ? ' fallback=' + fallback.name_() : ''}`);
+    }
   }
   if (process.env.SCANS_BUCKET) {
     const { Storage } = await import('@google-cloud/storage');

@@ -71,13 +71,10 @@ export function parseModelJson(text) {
  * makeIdentifier({species}) -> async (jpegBuffer) => result
  * Injected into the app so tests can swap in a fake.
  */
-export function makeIdentifier({ species, client = new Anthropic(), model = MODEL, models = MODEL_CHAIN, verifyBelow = VERIFY_BELOW }) {
+/** Claude backend: ask(system, text, jpeg, maxTokens) -> reply text. Walks the model chain on unknown-model errors. */
+export function claudeBackend({ client = new Anthropic(), model = MODEL, models = MODEL_CHAIN } = {}) {
   let active = model;
-  const catalog = speciesCatalog(species);
-  const lookalikes = lookalikeText(species);
-  const byId = new Map(species.map((s) => [s.id, s]));
-
-  async function ask(system, text, jpeg, maxTokens) {
+  const ask = async (system, text, jpeg, maxTokens) => {
     const order = [active, ...models.filter((m) => m !== active)];
     let lastErr;
     for (const m of order) {
@@ -98,7 +95,55 @@ export function makeIdentifier({ species, client = new Anthropic(), model = MODE
       }
     }
     throw lastErr;
+  };
+  ask.name_ = () => `claude:${active}`;
+  return ask;
+}
+
+export const GEMINI_CHAIN = [process.env.GEMINI_MODEL, 'gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.0-flash'].filter(Boolean).filter((m, i, a) => a.indexOf(m) === i);
+
+/** Gemini backend on Vertex AI (runs in the GCP project; auth = the Cloud Run service account). */
+export function geminiBackend({ project = process.env.GOOGLE_CLOUD_PROJECT, location = process.env.GEMINI_LOCATION || 'global', models = GEMINI_CHAIN, fetchImpl = fetch, tokenProvider } = {}) {
+  let active = models[0];
+  let authP = null;
+  async function token() {
+    if (tokenProvider) return tokenProvider();
+    if (!authP) authP = import('google-auth-library').then(({ GoogleAuth }) => new GoogleAuth({ scopes: ['https://www.googleapis.com/auth/cloud-platform'] }).getClient());
+    const c = await authP; const { token: t } = await c.getAccessToken(); return t;
   }
+  const ask = async (system, text, jpeg, maxTokens) => {
+    const host = location === 'global' ? 'aiplatform.googleapis.com' : `${location}-aiplatform.googleapis.com`;
+    const order = [active, ...models.filter((m) => m !== active)];
+    let lastErr;
+    for (const m of order) {
+      const url = `https://${host}/v1/projects/${project}/locations/${location}/publishers/google/models/${m}:generateContent`;
+      const body = {
+        systemInstruction: { parts: [{ text: system }] },
+        contents: [{ role: 'user', parts: [{ inlineData: { mimeType: 'image/jpeg', data: jpeg.toString('base64') } }, { text }] }],
+        generationConfig: { temperature: 0.2, maxOutputTokens: maxTokens, responseMimeType: 'application/json' },
+      };
+      const r = await fetchImpl(url, { method: 'POST', headers: { authorization: `Bearer ${await token()}`, 'content-type': 'application/json' }, body: JSON.stringify(body) });
+      if (r.status === 404) { lastErr = new Error(`gemini model ${m} not found`); continue; }
+      if (!r.ok) throw new Error(`gemini ${r.status}: ${(await r.text()).slice(0, 300)}`);
+      const j = await r.json();
+      if (m !== active) { console.warn(`identify: gemini model ${active} unavailable, using ${m}`); active = m; }
+      return (j.candidates?.[0]?.content?.parts || []).map((p) => p.text || '').join('');
+    }
+    throw lastErr || new Error('no gemini model available');
+  };
+  ask.name_ = () => `gemini:${active}`;
+  return ask;
+}
+
+/**
+ * makeIdentifier({species, backend}) -> async (jpegBuffer) => result
+ * backend defaults to Claude; pass geminiBackend() to use Vertex AI. Injected so tests can swap in fakes.
+ */
+export function makeIdentifier({ species, backend, client, model, models, verifyBelow = VERIFY_BELOW } = {}) {
+  const ask = backend || claudeBackend({ client, model, models });
+  const catalog = speciesCatalog(species);
+  const lookalikes = lookalikeText(species);
+  const byId = new Map(species.map((s) => [s.id, s]));
 
   return async function identify(jpeg) {
     const r = parseModelJson(await ask(RANK_SYSTEM, `Species catalog:\n${catalog}\n\nLook-alike notes:\n${lookalikes}\n\nIdentify the fish. JSON only.`, jpeg, 900));
@@ -129,7 +174,7 @@ export function makeIdentifier({ species, client = new Anthropic(), model = MODE
       why: top ? top.why : '',
       alternates: ranked.slice(1, 4),
       lengthIn: r.lengthIn, lengthBasis: r.lengthBasis,
-      notes: r.notes, model: active, verified,
+      notes: r.notes, model: ask.name_ ? ask.name_() : 'unknown', verified,
     };
   };
 }

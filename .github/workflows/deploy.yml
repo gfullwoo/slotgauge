@@ -71,7 +71,7 @@ jobs:
             --concurrency=80
             --cpu-throttling
             --service-account=slotgauge-run@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
-            --set-env-vars=FIREBASE_API_KEY=${{ vars.FIREBASE_API_KEY }},FIREBASE_AUTH_DOMAIN=${{ vars.FIREBASE_AUTH_DOMAIN }},SCANS_BUCKET=${{ vars.SCANS_BUCKET }},GOOGLE_CLOUD_PROJECT=${{ env.PROJECT_ID }},ANTHROPIC_MODEL=${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-5' }}
+            --set-env-vars=FIREBASE_API_KEY=${{ vars.FIREBASE_API_KEY }},FIREBASE_AUTH_DOMAIN=${{ vars.FIREBASE_AUTH_DOMAIN }},SCANS_BUCKET=${{ vars.SCANS_BUCKET }},GOOGLE_CLOUD_PROJECT=${{ env.PROJECT_ID }},ANTHROPIC_MODEL=${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-5' }},GEMINI_ENABLED=${{ vars.GEMINI_ENABLED || '0' }},GEMINI_MODEL=${{ vars.GEMINI_MODEL || 'gemini-2.5-pro' }},IDENTIFY_PROVIDER=${{ vars.IDENTIFY_PROVIDER || 'auto' }}
             ${{ vars.SCANS_BUCKET && '--set-secrets=ANTHROPIC_API_KEY=anthropic-api-key:latest' || '' }}
           labels: app=slotgauge,commit=${{ github.sha }}
 

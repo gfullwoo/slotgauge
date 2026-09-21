@@ -44,6 +44,10 @@ gcloud projects add-iam-policy-binding "$PROJECT_ID" --member="serviceAccount:$R
 gcloud projects add-iam-policy-binding "$PROJECT_ID" --member="serviceAccount:$RUN_SA" --role="roles/firebaseauth.viewer" --condition=None >/dev/null
 gcloud secrets add-iam-policy-binding anthropic-api-key --member="serviceAccount:$RUN_SA" --role="roles/secretmanager.secretAccessor" >/dev/null 2>&1 || true
 
+echo "== Vertex AI (Gemini identifier)"
+gcloud services enable aiplatform.googleapis.com >/dev/null
+gcloud projects add-iam-policy-binding "$PROJECT_ID" --member="serviceAccount:$RUN_SA" --role="roles/aiplatform.user" --condition=None >/dev/null
+
 echo "== Firebase"
 if command -v firebase >/dev/null; then
   firebase projects:addfirebase "$PROJECT_ID" >/dev/null 2>&1 || true
@@ -65,6 +69,7 @@ cat <<EOT
   FIREBASE_API_KEY    = <apiKey from step 3>
   FIREBASE_AUTH_DOMAIN= slotgauge.com          (the app proxies /__/auth/* to Firebase; keeps sign-in first-party)
   SCANS_BUCKET        = $BUCKET
+  GEMINI_ENABLED      = 1        (identify with Gemini on Vertex AI; Claude becomes the fallback)
   gh variable set FIREBASE_API_KEY     -R $GITHUB_REPO -b "<apiKey>"
   gh variable set FIREBASE_AUTH_DOMAIN -R $GITHUB_REPO -b "slotgauge.com"
   gh variable set SCANS_BUCKET         -R $GITHUB_REPO -b "$BUCKET"

@@ -71,7 +71,7 @@ export function mergeExtracted(raw, overlay = {}) {
     if (!groups.has(key)) groups.set(key, { id: r.id, name: r.n, habitat: r.h, family: r.f || '', sci: r.sci || '', url: raw.sources?.find((s) => s.id === r.sourceId)?.url || raw.source, raw: { season: r.season, size: r.size, limit: r.limit }, quotes: [], aliases: [], status: 'open', zones: [], notes: [], reviewed: null, needsReview: true });
     const g = groups.get(key);
     const zoneKey = zoneKeyFor(r.zone);
-    g.zones.push({ zone: zoneKey, label: r.zone, seasons: null, size: [], bag: null, bagNote: r.limit || '', closed: /closed|prohibited|no (harvest|possession)/i.test(`${r.season} ${r.limit}`), sizeNote: r.size || '' , rawSeason: r.season });
+    g.zones.push({ zone: zoneKey, label: r.zone, seasons: null, size: [], bag: null, bagNote: r.limit || '', closed: /illegal to possess|moratorium|prohibited|no (harvest|possession)|^closed( all year)?$/i.test(`${r.season}`.trim()) || /illegal to possess|^closed$/i.test(`${r.limit}`.trim()), sizeNote: r.size || '' , rawSeason: r.season });
     if (r.quote) g.quotes.push({ zone: r.zone, quote: r.quote });
     if (r.notes) g.notes.push(r.notes);
   }

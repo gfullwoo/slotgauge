@@ -96,7 +96,7 @@
       "name": "Virginia",
       "slug": "virginia",
       "agency": "Virginia Marine Resources Commission",
-      "season": null,
+      "season": 2026,
       "data": "data/va/raw.json",
       "extractor": "ai",
       "sources": [

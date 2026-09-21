@@ -1,0 +1,760 @@
+{
+ "1": {
+  "name": "Alewife",
+  "reviewed": "2026-09-21",
+  "rawHash": "a17e074baf19",
+  "aliases": [
+   "river herring"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Moratorium on river herring: illegal to possess."
+  ]
+ },
+ "2": {
+  "name": "Amberjack",
+  "reviewed": "2026-09-21",
+  "rawHash": "7648e7f21c05",
+  "aliases": [
+   "greater amberjack",
+   "aj"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 32,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "3": {
+  "name": "American Eel",
+  "reviewed": "2026-09-21",
+  "rawHash": "560ee8c7e2a0",
+  "aliases": [
+   "eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "4": {
+  "name": "Black Drum",
+  "reviewed": "2026-09-21",
+  "rawHash": "49da993cc49e",
+  "aliases": [
+   "drum",
+   "drumfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "5": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-09-21",
+  "rawHash": "6824a23b1c15",
+  "aliases": [
+   "sea bass",
+   "bsb"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": [
+     [
+      "05-11",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Federal-waters rules are set by NMFS and may differ."
+  ]
+ },
+ "6": {
+  "name": "Blueback Herring",
+  "reviewed": "2026-09-21",
+  "rawHash": "a17e074baf19",
+  "aliases": [
+   "river herring"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Moratorium on river herring: illegal to possess."
+  ]
+ },
+ "7": {
+  "name": "Bluefish",
+  "reviewed": "2026-09-21",
+  "rawHash": "bbc26d652550",
+  "aliases": [
+   "blues",
+   "snapper blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 per person (shore, private or for-hire vessel)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "8": {
+  "name": "Cobia",
+  "reviewed": "2026-09-21",
+  "rawHash": "9c3a6c271c66",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": [
+     [
+      "06-15",
+      "09-20"
+     ]
+    ],
+    "size": [
+     {
+      "min": 43,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 2 per vessel (whichever is more restrictive)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Gaffing is prohibited."
+  ]
+ },
+ "9": {
+  "name": "Atlantic Croaker",
+  "reviewed": "2026-09-21",
+  "rawHash": "8d52efb3dbff",
+  "aliases": [
+   "croaker",
+   "hardhead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "10": {
+  "name": "Weakfish",
+  "reviewed": "2026-09-21",
+  "rawHash": "83774712630f",
+  "aliases": [
+   "grey trout",
+   "gray trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "11": {
+  "name": "Groupers",
+  "reviewed": "2026-09-21",
+  "rawHash": "19cf304b42e2",
+  "aliases": [
+   "grouper",
+   "snowy grouper"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "12": {
+  "name": "King Mackerel",
+  "reviewed": "2026-09-21",
+  "rawHash": "b14664f3bcdf",
+  "aliases": [
+   "kingfish",
+   "king"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 27,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "13": {
+  "name": "Red Drum",
+  "reviewed": "2026-09-21",
+  "rawHash": "27ec37c97fa7",
+  "aliases": [
+   "redfish",
+   "channel bass",
+   "puppy drum",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 26
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "18 to 26 inch slot"
+   }
+  ],
+  "notes": [
+   "Fish over 26 inches must be released."
+  ]
+ },
+ "14": {
+  "name": "Scup",
+  "reviewed": "2026-09-21",
+  "rawHash": "9207d30441ce",
+  "aliases": [
+   "porgy"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "State-waters rule; federal-waters rules are set by NMFS."
+  ]
+ },
+ "15": {
+  "name": "American Shad",
+  "reviewed": "2026-09-21",
+  "rawHash": "a17e074baf19",
+  "aliases": [
+   "shad"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Illegal to possess American shad."
+  ]
+ },
+ "17": {
+  "name": "Sheepshead",
+  "reviewed": "2026-09-21",
+  "rawHash": "2e008e6bed88",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "18": {
+  "name": "Spadefish",
+  "reviewed": "2026-09-21",
+  "rawHash": "2e008e6bed88",
+  "aliases": [
+   "spade"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "19": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-09-21",
+  "rawHash": "03b2d3f356ac",
+  "aliases": [
+   "spanish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "20": {
+  "name": "Spotted Seatrout",
+  "reviewed": "2026-09-21",
+  "rawHash": "6f863983c059",
+  "aliases": [
+   "speckled trout",
+   "specks",
+   "speck",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": [
+     [
+      "07-01",
+      "03-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 per person, only 1 over 24 inches",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed April 1 – June 30, 2026."
+  ]
+ },
+ "21": {
+  "name": "Spot",
+  "reviewed": "2026-09-21",
+  "rawHash": "8d52efb3dbff",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "22": {
+  "name": "Striped Bass",
+  "reviewed": "2026-09-21",
+  "rawHash": "a0f54d38a678",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "coastal",
+    "label": "Virginia coastal waters (ocean side)",
+    "seasons": [
+     [
+      "01-01",
+      "03-31"
+     ],
+     [
+      "05-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   },
+   {
+    "zone": "chesapeakebay",
+    "label": "Chesapeake Bay and tributaries",
+    "seasons": [
+     [
+      "05-16",
+      "06-15"
+     ],
+     [
+      "10-04",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 19,
+      "max": 24
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "19 to 24 inch slot"
+   },
+   {
+    "zone": "federal",
+    "label": "Federal waters (beyond 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Circle hooks (non-offset, corrodible, non-stainless) required when fishing with bait.",
+   "Gaffing striped bass is illegal in Virginia marine waters.",
+   "Potomac River tributaries follow Potomac River Fisheries Commission rules.",
+   "Possession limits cannot be combined across overlapping seasons or jurisdictions."
+  ]
+ },
+ "25": {
+  "name": "Sturgeon",
+  "reviewed": "2026-09-21",
+  "rawHash": "a17e074baf19",
+  "aliases": [
+   "atlantic sturgeon"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Illegal to possess (Code of Virginia § 28.2-303)."
+  ]
+ },
+ "26": {
+  "name": "Summer Flounder",
+  "reviewed": "2026-09-21",
+  "rawHash": "f27ce256164f",
+  "aliases": [
+   "fluke",
+   "flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null,
+      "from": "01-01",
+      "to": "05-31"
+     },
+     {
+      "min": 17.5,
+      "max": null,
+      "from": "06-01",
+      "to": "12-31"
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
+   }
+  ],
+  "notes": [
+   "Virginia Potomac River tributaries follow PRFC mainstem rules."
+  ]
+ },
+ "27": {
+  "name": "Tautog",
+  "reviewed": "2026-09-21",
+  "rawHash": "00c011e7ab18",
+  "aliases": [
+   "tog",
+   "blackfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": [
+     [
+      "07-01",
+      "05-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed May 16 – June 30."
+  ]
+ },
+ "28": {
+  "name": "Blueline Tilefish",
+  "reviewed": "2026-09-21",
+  "rawHash": "7cf9fc2fdc20",
+  "aliases": [
+   "blueline"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": [
+     [
+      "05-15",
+      "11-15"
+     ]
+    ],
+    "size": [],
+    "bag": 3,
+    "bagNote": "3 per person on a private vessel; 5 on an uninspected for-hire vessel; 7 on an inspected for-hire vessel",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "29": {
+  "name": "Golden Tilefish",
+  "reviewed": "2026-09-21",
+  "rawHash": "f2a88bb1cd1d",
+  "aliases": [
+   "golden tile"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 8,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ }
+}

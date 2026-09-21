@@ -20,8 +20,9 @@
     if (cfg.firebase.apiKey === 'dev') window.firebase = fakeFirebase(); else if (!window.firebase) return;
     firebase.initializeApp(cfg.firebase);
     $('#tabs').hidden = false; $('#acct').hidden = false; $('#camBtn').hidden = false; $('#upBtn').hidden = false;
-    $('#hint').textContent = 'Type or say the fish, or snap a photo. Add the length and where you are fishing.';
-    firebase.auth().onAuthStateChanged((u) => { user = u; drawAccount(); if (view === 'gallery') loadGallery(); });
+    $('#hint').textContent = 'Try an example above, snap a photo, or describe your own catch.';
+    firebase.auth().onAuthStateChanged((u) => { user = u; drawAccount(); drawWayPhoto(); if (view === 'gallery') loadGallery(); });
+    drawWayPhoto();
     firebase.auth().getRedirectResult().catch(() => {});
     wire();
   }
@@ -39,8 +40,14 @@
     const r = await fetch(path, { ...opts, headers });
     if (r.status === 204) return null;
     const j = await r.json().catch(() => ({}));
+    if (r.status === 401 && user) { try { await user.getIdToken(true); } catch (_) {} }
     if (!r.ok) throw new Error(j.error || ('Request failed (' + r.status + ')'));
     return j;
+  }
+  function drawWayPhoto() {
+    const w = $('#wayPhoto'), d = $('#wayPhotoD'); if (!w) return;
+    w.classList.toggle('locked', !user);
+    d.textContent = user ? 'Take or upload a photo; it identifies the species' : 'Sign in with Google to identify a fish from a photo';
   }
   function drawAccount() {
     const b = $('#avatarBtn');
@@ -60,7 +67,7 @@
     const check = v === 'check';
     for (const id of ['#ctx', '.inputbox', '#examples', '#hint', '#scanCard', '#out', '#recentWrap']) { const el = document.querySelector(id); if (el) el.hidden = !check || (id === '#recentWrap' && !el.querySelector('button')); }
     $('#galleryView').hidden = check;
-    if (!check) loadGallery();
+    if (!check) loadGallery(); else if (!$('#out').innerHTML.trim() && !$('#scanCard').innerHTML.trim()) window.SG.showWelcome();
   }
 
   // ---------- photo -> identify ----------
@@ -83,23 +90,38 @@
   }
 
   function confClass(c) { return c >= 0.75 ? 'hi' : c >= 0.45 ? '' : 'lo'; }
+  function candRow(id, name, conf, why, isTop) {
+    const pct = Math.round(conf * 100);
+    return `<button class="cand${isTop ? ' top' : ''}" data-alt="${id}" ${isTop ? 'disabled' : ''}>
+      <span class="cname">${esc(name)}</span><span class="cpct">${pct}%</span>
+      <span class="cbar"><span style="width:${pct}%"></span></span>
+      ${why ? `<span class="cwhy">${esc(why)}</span>` : ''}
+      ${isTop ? '' : '<span class="cpick">Tap if this is it</span>'}
+    </button>`;
+  }
   function drawScan(scan, imgUrl) {
     const sp = scan.speciesId != null ? window.SG.SP.find((s) => s.id === scan.speciesId) : null;
-    const alts = (scan.alternates || []).map((a) => `<button class="chip" data-alt="${a.speciesId}">${esc(a.name)} <span style="color:var(--ink-3)">${Math.round(a.confidence * 100)}%</span></button>`).join('');
+    const sure = scan.confidence >= 0.8;
+    const rows = [];
+    if (sp) rows.push(candRow(sp.id, sp.name, scan.userCorrected ? 1 : scan.confidence, scan.userCorrected ? '' : scan.why, true));
+    for (const a of scan.alternates || []) rows.push(candRow(a.speciesId, a.name, a.confidence, a.why, false));
     $('#scanCard').innerHTML = `<div class="scan">
       <div class="photo"><img src="${esc(imgUrl || scan.fullUrl)}" alt="${esc(scan.speciesName || 'fish')}"></div>
       <div class="body">
-        <div class="idline"><span class="name">${sp ? esc(sp.name) : 'No match in Delaware species'}</span>
-          ${sp ? `<span class="conf ${confClass(scan.confidence)}">${Math.round(scan.confidence * 100)}% sure${scan.userCorrected ? ' · corrected' : ''}</span>` : ''}</div>
+        <div class="idline">
+          <span class="name">${sp ? esc(sp.name) : 'No match in Delaware species'}</span>
+          ${sp ? `<span class="conf ${confClass(scan.confidence)}">${scan.userCorrected ? 'You chose this' : (sure ? 'Likely' : 'Best guess') + ' · ' + Math.round(scan.confidence * 100) + '%'}</span>` : ''}
+        </div>
+        ${!sure && sp && !scan.userCorrected ? `<p class="hint" style="margin-top:6px">Not certain. Compare the candidates below and tap the right one; the regulations update instantly.</p>` : ''}
         ${scan.notes ? `<p class="hint" style="margin-top:6px">${esc(scan.notes)}</p>` : ''}
-        <div class="alts">${alts}<button class="chip" data-alt="other">Different fish…</button></div>
+        <div class="cands">${rows.join('')}<button class="cand other" data-alt="other"><span class="cname">Something else…</span><span class="cpick">Search all species</span></button></div>
         <div class="lenrow">
           <label for="scanLen">Length</label>
           <input id="scanLen" type="number" inputmode="decimal" step="0.25" min="0" max="200" placeholder="inches" value="${scan.lengthIn ?? ''}">
           <button class="btn primary" id="scanCheck">Check</button>
           ${scan.lengthBasis ? `<span class="hint" style="margin:0">Measured from photo: ${esc(scan.lengthBasis)}</span>` : `<span class="hint" style="margin:0">No ruler in the photo - enter the length.</span>`}
         </div>
-        <div class="meta">Saved to your gallery · ${new Date(scan.createdAt).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}</div>
+        <div class="meta">Saved to your gallery · ${new Date(scan.createdAt).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}${scan.verified ? ' · double-checked' : ''}</div>
       </div></div>`;
   }
 

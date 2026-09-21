@@ -405,7 +405,7 @@ function ruler(r){
   return h+'</div>';
 }
 function escapeHtml(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
-function render(r){
+function render(r, quiet){
   const sp = r.sp, notes = [...(r.zone.sizeNote?['Size detail: '+r.zone.sizeNote]:[]), ...sp.notes];
   const zoneInfo = sp.zones.length>1 ? `Rules shown for <strong>${ZONES[r.usedZone]}</strong>. Also has rules for ${sp.zones.filter(z=>z.zone!==r.usedZone).map(z=>ZONES[z.zone]).join(', ')}.` : '';
   $('#out').innerHTML = `
@@ -425,7 +425,7 @@ function render(r){
       <dl><dt>Season</dt><dd>${escapeHtml(sp.raw.season)}</dd><dt>Size</dt><dd>${escapeHtml(sp.raw.size)}</dd><dt>Limit</dt><dd>${escapeHtml(sp.raw.limit)}</dd></dl></details>
     <div class="src"><span>Checked for ${r.date.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})}</span><a href="${sp.url}" target="_blank" rel="noopener">DNREC source page ↗</a></div>
   </article>`;
-  $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
+  if (!quiet) $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
 }
 function renderPicker(title, msg, list, extra){
   $('#out').innerHTML = `<div class="picker"><h3>${title}</h3><p>${msg}</p><div class="list">${list.map(s=>`<button class="chip" data-pick="${s.id}">${escapeHtml(s.name)}<span style="color:var(--ink-3)">· ${s.habitat}</span></button>`).join('')}</div>${extra||''}</div>`;
@@ -446,7 +446,7 @@ function run(text, forcedId, quiet){
     else { pending={text}; renderPicker('Which fish?', 'No species name recognized. Pick one, or try the common name (striper, fluke, tog, sea bass…).', f.suggestions.length?f.suggestions:SP.filter(s=>['Striped Bass','Summer Flounder','Black Sea Bass','Tautog','Bluefish','Weakfish','Largemouth Bass','Blue Crab'].includes(s.name)&&s.habitat!=='freshwater')); return; }
   }
   const r = evaluate(sp, q);
-  render(r);
+  render(r, quiet);
   if (!quiet) remember({text, id:sp.id, verdict:r.verdict, word:r.word, name:sp.name});
 }
 document.addEventListener('click', e => {

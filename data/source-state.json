@@ -9,8 +9,7 @@
    "hash": "da9d9ca6c5e52f32",
    "bytes": 43460,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "de-guide": {
    "state": "DE",
@@ -21,8 +20,7 @@
    "hash": "36135b119a3f9b39",
    "bytes": 84636,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "nj-marine-digest": {
    "state": "NJ",
@@ -58,10 +56,9 @@
    "url": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
    "status": 200,
    "hash": "b5addd156d8fbc90",
-   "bytes": 87009,
+   "bytes": 87062,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "md-chesapeake": {
    "state": "MD",
@@ -72,8 +69,7 @@
    "hash": "8036b04f7a59f3d8",
    "bytes": 86674,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "md-dnr": {
    "state": "MD",
@@ -84,8 +80,7 @@
    "hash": "e3b0c44298fc1c14",
    "bytes": 99617,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "va-mrc-rules": {
    "state": "VA",
@@ -96,8 +91,7 @@
    "hash": "a1043145fdcd2507",
    "bytes": 56192,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "va-mrc-card": {
    "state": "VA",
@@ -108,8 +102,7 @@
    "hash": "63e542201abbbde0",
    "bytes": 599015,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "fl-fwc-recreational": {
    "state": "FL",
@@ -120,8 +113,7 @@
    "hash": "030f726e9e76f718",
    "bytes": 198867,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "ny-marine": {
    "state": "NY",
@@ -132,8 +124,7 @@
    "hash": "6f90e0270402dc15",
    "bytes": 104383,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   },
   "ct-marine": {
    "state": "CT",
@@ -144,9 +135,8 @@
    "hash": "256800c2f29ac310",
    "bytes": 45072,
    "checked": "2026-09-21",
-   "changed": null,
-   "firstSeen": true
+   "changed": null
   }
  },
- "lastRun": "2026-09-21T16:50:05.805Z"
+ "lastRun": "2026-09-21T17:55:50.999Z"
 }

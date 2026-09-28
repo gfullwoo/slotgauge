@@ -8,7 +8,7 @@
    "status": 200,
    "hash": "da9d9ca6c5e52f32",
    "bytes": 43460,
-   "checked": "2026-09-21",
+   "checked": "2026-09-28",
    "changed": null
   },
   "de-guide": {
@@ -18,8 +18,8 @@
    "url": "https://dnrec.delaware.gov/fish-wildlife/fishing/",
    "status": 200,
    "hash": "36135b119a3f9b39",
-   "bytes": 84636,
-   "checked": "2026-09-21",
+   "bytes": 84646,
+   "checked": "2026-09-28",
    "changed": null
   },
   "nj-marine-digest": {
@@ -29,7 +29,7 @@
    "url": "https://dep.nj.gov/wp-content/uploads/njfw/digest-marine-2026-complete.pdf",
    "status": 403,
    "bytes": 0,
-   "checked": "2026-09-21"
+   "checked": "2026-09-28"
   },
   "nj-marine-seasons": {
    "state": "NJ",
@@ -38,7 +38,7 @@
    "url": "https://dep.nj.gov/njfw/fishing/marine/seasons-and-regulations/",
    "status": 403,
    "bytes": 0,
-   "checked": "2026-09-21"
+   "checked": "2026-09-28"
   },
   "nj-digest-index": {
    "state": "NJ",
@@ -47,7 +47,7 @@
    "url": "https://dep.nj.gov/njfw/digests/marine/",
    "status": 403,
    "bytes": 0,
-   "checked": "2026-09-21"
+   "checked": "2026-09-28"
   },
   "md-atlantic": {
    "state": "MD",
@@ -56,8 +56,8 @@
    "url": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
    "status": 200,
    "hash": "b5addd156d8fbc90",
-   "bytes": 87062,
-   "checked": "2026-09-21",
+   "bytes": 87030,
+   "checked": "2026-09-28",
    "changed": null
   },
   "md-chesapeake": {
@@ -67,8 +67,8 @@
    "url": "https://www.eregulations.com/maryland/fishing/chesapeake-bay-seasons-sizes-limits",
    "status": 200,
    "hash": "8036b04f7a59f3d8",
-   "bytes": 86674,
-   "checked": "2026-09-21",
+   "bytes": 86695,
+   "checked": "2026-09-28",
    "changed": null
   },
   "md-dnr": {
@@ -78,8 +78,8 @@
    "url": "https://dnr.maryland.gov/fisheries/pages/regulations/changes.aspx",
    "status": 200,
    "hash": "e3b0c44298fc1c14",
-   "bytes": 99617,
-   "checked": "2026-09-21",
+   "bytes": 99690,
+   "checked": "2026-09-28",
    "changed": null
   },
   "va-mrc-rules": {
@@ -90,7 +90,7 @@
    "status": 200,
    "hash": "a1043145fdcd2507",
    "bytes": 56192,
-   "checked": "2026-09-21",
+   "checked": "2026-09-28",
    "changed": null
   },
   "va-mrc-card": {
@@ -101,7 +101,7 @@
    "status": 200,
    "hash": "63e542201abbbde0",
    "bytes": 599015,
-   "checked": "2026-09-21",
+   "checked": "2026-09-28",
    "changed": null
   },
   "fl-fwc-recreational": {
@@ -111,8 +111,8 @@
    "url": "https://myfwc.com/fishing/saltwater/recreational/",
    "status": 200,
    "hash": "030f726e9e76f718",
-   "bytes": 198867,
-   "checked": "2026-09-21",
+   "bytes": 199805,
+   "checked": "2026-09-28",
    "changed": null
   },
   "ny-marine": {
@@ -123,7 +123,7 @@
    "status": 200,
    "hash": "6f90e0270402dc15",
    "bytes": 104383,
-   "checked": "2026-09-21",
+   "checked": "2026-09-28",
    "changed": null
   },
   "ct-marine": {
@@ -134,9 +134,9 @@
    "status": 200,
    "hash": "256800c2f29ac310",
    "bytes": 45072,
-   "checked": "2026-09-21",
+   "checked": "2026-09-28",
    "changed": null
   }
  },
- "lastRun": "2026-09-21T17:55:50.999Z"
+ "lastRun": "2026-09-28T18:12:03.879Z"
 }

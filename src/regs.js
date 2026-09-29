@@ -9,6 +9,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const DATA_DIR = path.join(__dirname, '..', 'data');
 
 const HAB_ID = { freshwater: 1, saltwater: 2, shellfish: 3 };
+export const DE_ZONES = {
+  state: 'State waters', federal: 'Federal waters (3–200 mi)', delriver: 'Delaware River / Bay', nanticoke: 'Nanticoke River',
+  becks: 'Becks Pond', tidal: 'Tidal waters', nontidal: 'Non-tidal waters', streams: 'Trout stream', ponds: 'Pond / lake', flyonly: 'Fly-fishing-only water', vessel: 'For-hire vessel',
+};
+const norm = (n) => n.toLowerCase().replace(/\(.*?\)/g, '').replace(/[^a-z ]/g, '').replace(/\s+/g, ' ').trim();
 const HMS = 'Atlantic HMS Angling Permit required for private vessels in federal waters; non-retained HMS must be released without removing from the water. hmspermits.noaa.gov / (888) 872-8862.';
 
 export const rawHash = (d) => createHash('sha1').update(`${d.season}|${d.size}|${d.limit}`).digest('hex').slice(0, 12);
@@ -51,7 +56,8 @@ export function merge(raw, overlay) {
     }
     return rec;
   });
-  return { scraped: raw.scraped, source: raw.source, state: 'DE', generated: new Date().toISOString(), species };
+  for (const sp of species) sp.photo = `/img/species/${sp.id}.jpg`;
+  return { scraped: raw.scraped, source: raw.source, state: 'DE', name: 'Delaware', agency: 'DNREC', season: Number(raw.scraped.slice(0, 4)), zoneLabels: DE_ZONES, generated: new Date().toISOString(), species };
 }
 
 export function buildRegs() {
@@ -64,7 +70,8 @@ export function buildRegs() {
  * the printed text in sizeNote/bagNote and is flagged needsReview, so the checker answers "check the
  * rule" rather than inventing a verdict.
  */
-export function mergeExtracted(raw, overlay = {}) {
+export const EXTRACTED_ID_BASE = 10000;
+export function mergeExtracted(raw, overlay = {}, { de = null } = {}) {
   const groups = new Map();
   for (const r of raw.species) {
     const key = r.n.toLowerCase();
@@ -81,9 +88,16 @@ export function mergeExtracted(raw, overlay = {}) {
       Object.assign(rec, { aliases: ov.aliases || [], status: ov.status || 'open', zones: ov.zones, notes: [...(ov.notes || [])], reviewed: ov.reviewed, needsReview: false });
       if (ov.rawHash && ov.rawHash !== rawHash(rec.raw)) { rec.needsReview = true; rec.notes.unshift(`The official text for this species changed after it was last reviewed (${ov.reviewed}). Check the exact wording below.`); }
     } else rec.notes.unshift('Not yet reviewed: shown exactly as the state prints it. Read the wording before keeping the fish.');
+    rec.rawId = rec.id; rec.id = EXTRACTED_ID_BASE + rec.id;   // never collide with DNREC ids (photo ID returns DNREC ids)
+    // A striped bass is a striped bass: reuse the DNREC photo (and link photo-ID results) when the name matches.
+    const twin = de ? de.species.find((d) => norm(d.name) === norm(rec.name) && d.habitat === rec.habitat) || de.species.find((d) => norm(d.name) === norm(rec.name))
+      || (ov?.photoOf ? de.species.find((d) => d.id === ov.photoOf) : null) : null;
+    if (twin) { rec.deId = twin.id; rec.photo = twin.photo; }
     return rec;
   });
-  return { scraped: raw.scraped, source: raw.source, sources: raw.sources || [], state: raw.state, season: raw.season, generated: new Date().toISOString(), species };
+  const zoneLabels = {};
+  for (const sp of species) for (const z of sp.zones) if (!zoneLabels[z.zone]) zoneLabels[z.zone] = z.label || z.zone;
+  return { scraped: raw.scraped, source: raw.source, sources: raw.sources || [], state: raw.state, name: raw.name, season: raw.season, zoneLabels, generated: new Date().toISOString(), species };
 }
 const zoneKeyFor = (label) => String(label || 'state').toLowerCase().replace(/[^a-z0-9]+/g, '').replace(/^statewide$|^allwaters$|^state$/, 'state') || 'state';
 
@@ -96,7 +110,8 @@ export function buildAllRegs() {
     const rawFile = path.join(DATA_DIR, code.toLowerCase(), 'raw.json');
     if (!existsSync(rawFile)) continue;
     const ovFile = path.join(DATA_DIR, code.toLowerCase(), 'overlay.json');
-    out[code] = mergeExtracted(JSON.parse(readFileSync(rawFile, 'utf8')), existsSync(ovFile) ? JSON.parse(readFileSync(ovFile, 'utf8')) : {});
+    out[code] = mergeExtracted(JSON.parse(readFileSync(rawFile, 'utf8')), existsSync(ovFile) ? JSON.parse(readFileSync(ovFile, 'utf8')) : {}, { de: out.DE });
+    out[code].agency = st.agencyShort || st.agency;
   }
   return out;
 }

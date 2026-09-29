@@ -7,6 +7,7 @@ import { buildRegs, rawHash } from './src/regs.js';
 import { makePages, sitemapAll, SITE } from './src/pages.js';
 import { buildAllRegs } from './src/regs.js';
 import { loadSources, loadState as loadSourceState } from './src/sources.js';
+import { makeLocator } from './src/locate.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
 
@@ -20,15 +21,20 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 
  *  identifier(jpegBuffer) -> identification result        (Claude vision in prod)
  *  store -> see src/scans.js                                (Firestore + GCS in prod)
  */
-export function createApp({ verifyToken, identifier, store, firebaseConfig = {} } = {}) {
+export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch } = {}) {
   const app = express();
   app.disable('x-powered-by');
   app.set('trust proxy', true);   // Cloud Run sits behind Google's load balancer; req.ip must be the client
   app.use(compression());
   app.use(express.json({ limit: '64kb' }));
 
-  const regs = buildRegs();
-  const etag = `"${rawHash({ season: regs.scraped, size: String(regs.species.length), limit: process.env.K_REVISION || 'local' })}"`;
+  const allRegs = buildAllRegs();
+  const regs = allRegs.DE;
+  const etagOf = (r) => `"${rawHash({ season: r.scraped + r.state, size: String(r.species.length), limit: process.env.K_REVISION || 'local' })}"`;
+  const etag = etagOf(regs);
+  const registry = loadSources();
+  const states = Object.entries(registry.states).map(([code, x]) => ({ code, slug: x.slug, name: x.name, live: !!allRegs[code], species: allRegs[code]?.species.length || 0, season: x.season }));
+  const locator = makeLocator({ live: states.filter((s) => s.live).map((s) => s.code), names: Object.fromEntries(states.map((s) => [s.code, s.name])), fetchImpl: locateFetch || fetch });
   const speciesById = new Map(regs.species.map((s) => [s.id, s]));
 
   app.get('/api/health', (_req, res) => res.json({ ok: true, scraped: regs.scraped, species: regs.species.length, scans: !!store, identify: !!identifier }));
@@ -39,10 +45,20 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {} 
   });
 
   app.get('/api/regs', (req, res) => {
+    const code = String(req.query.state || 'DE').toUpperCase();
+    const r = allRegs[code]; if (!r) return res.status(404).json({ error: `no regulations for ${code}`, states: states.filter((s) => s.live).map((s) => s.code) });
+    const tag = etagOf(r);
     res.set('Cache-Control', 'public, max-age=3600');
-    res.set('ETag', etag);
-    if (req.headers['if-none-match'] === etag) return res.status(304).end();
-    res.json(regs);
+    res.set('ETag', tag);
+    if (req.headers['if-none-match'] === tag) return res.status(304).end();
+    res.json(r);
+  });
+  app.get('/api/states', (_req, res) => { res.set('Cache-Control', 'public, max-age=3600'); res.json({ states }); });
+  app.get('/api/locate', async (req, res) => {
+    const lat = Number(req.query.lat), lon = Number(req.query.lon);
+    if (!Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) return res.status(400).json({ error: 'lat and lon required' });
+    res.set('Cache-Control', 'private, max-age=600');
+    res.json(await locator(lat, lon));
   });
 
   app.get('/api/regs/review', (_req, res) => {
@@ -193,7 +209,6 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {} 
   });
 
   // ---- crawlable regulation pages (SEO): /<state>/, /<state>/<habitat>/, /<state>/<species>/ for every state with data ----
-  const allRegs = buildAllRegs();
   const pagesByState = Object.fromEntries(Object.values(allRegs).map((r) => { const p = makePages(r); return [p.state.slug, p]; }));
   const HABS = ['saltwater', 'freshwater', 'shellfish'];
   const html = (res, body, maxAge = 3600) => { res.set('Cache-Control', `public, max-age=${maxAge}`); res.type('html').send(body); };

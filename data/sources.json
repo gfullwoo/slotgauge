@@ -24,7 +24,8 @@
           "type": "html",
           "role": "guide"
         }
-      ]
+      ],
+      "agencyShort": "DNREC"
     },
     "NJ": {
       "name": "New Jersey",
@@ -57,7 +58,8 @@
           "type": "html",
           "role": "guide"
         }
-      ]
+      ],
+      "agencyShort": "NJDEP"
     },
     "MD": {
       "name": "Maryland",
@@ -90,7 +92,8 @@
           "type": "html",
           "role": "secondary"
         }
-      ]
+      ],
+      "agencyShort": "MD DNR"
     },
     "VA": {
       "name": "Virginia",
@@ -115,7 +118,8 @@
           "role": "secondary",
           "annual": true
         }
-      ]
+      ],
+      "agencyShort": "VMRC"
     },
     "FL": {
       "name": "Florida",
@@ -133,7 +137,8 @@
           "role": "primary",
           "note": "Index page; species rules live on linked pages (followLinks: /fishing/saltwater/recreational/)"
         }
-      ]
+      ],
+      "agencyShort": "FWC"
     },
     "NY": {
       "name": "New York",
@@ -150,7 +155,8 @@
           "type": "html",
           "role": "primary"
         }
-      ]
+      ],
+      "agencyShort": "NYSDEC"
     },
     "CT": {
       "name": "Connecticut",
@@ -167,7 +173,8 @@
           "type": "html",
           "role": "primary"
         }
-      ]
+      ],
+      "agencyShort": "CT DEEP"
     }
   }
 }

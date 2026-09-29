@@ -49,7 +49,8 @@
     "sizeNote": ""
    }
   ],
-  "notes": []
+  "notes": [],
+  "photoOf": 124
  },
  "3": {
   "name": "American Eel",
@@ -292,7 +293,8 @@
     "sizeNote": ""
    }
   ],
-  "notes": []
+  "notes": [],
+  "photoOf": 173
  },
  "12": {
   "name": "King Mackerel",
@@ -447,7 +449,8 @@
     "sizeNote": ""
    }
   ],
-  "notes": []
+  "notes": [],
+  "photoOf": 83
  },
  "19": {
   "name": "Spanish Mackerel",
@@ -510,7 +513,7 @@
    }
   ],
   "notes": [
-   "Closed April 1 – June 30, 2026."
+   "Closed April 1 \u2013 June 30, 2026."
   ]
  },
  "21": {
@@ -632,8 +635,9 @@
    }
   ],
   "notes": [
-   "Illegal to possess (Code of Virginia § 28.2-303)."
-  ]
+   "Illegal to possess (Code of Virginia \u00a7 28.2-303)."
+  ],
+  "photoOf": 84
  },
  "26": {
   "name": "Summer Flounder",
@@ -666,7 +670,7 @@
     "bag": 4,
     "bagNote": "",
     "closed": false,
-    "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
+    "sizeNote": "16 in Jan 1 \u2013 May 31; 17.5 in Jun 1 \u2013 Dec 31"
    }
   ],
   "notes": [
@@ -705,7 +709,7 @@
    }
   ],
   "notes": [
-   "Closed May 16 – June 30."
+   "Closed May 16 \u2013 June 30."
   ]
  },
  "28": {

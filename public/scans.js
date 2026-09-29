@@ -104,7 +104,7 @@
     </button>`;
   }
   function drawScan(scan, imgUrl) {
-    const sp = scan.speciesId != null ? window.SG.SP.find((s) => s.id === scan.speciesId) : null;
+    const sp = scan.speciesId != null ? window.SG.findSp(scan.speciesId) : null;
     const sure = scan.confidence >= 0.8;
     const rows = [];
     if (sp) rows.push(candRow(sp.id, sp.name, scan.userCorrected ? 1 : scan.confidence, scan.userCorrected ? '' : scan.why, true));
@@ -115,7 +115,7 @@
       <div class="photo"><img src="${esc(imgUrl || scan.fullUrl)}" alt="${esc(scan.speciesName || 'fish')}"></div>
       <div class="body">
         <div class="idline">
-          <span class="name">${sp ? esc(sp.name) : 'No match in Delaware species'}</span>
+          <span class="name">${sp ? esc(sp.name) : `No match in ${window.SG.STATE_NAME} species`}</span>
           ${sp ? `<span class="conf ${confClass(scan.confidence)}">${scan.userCorrected ? 'You chose this' : (sure ? 'Likely' : 'Best guess') + ' · ' + Math.round(scan.confidence * 100) + '%'}</span>` : ''}
         </div>
         ${!sure && sp && !scan.userCorrected ? `<p class="hint" style="margin-top:6px">Not certain. Compare the candidates below and tap the right one; the regulations update instantly.</p>` : ''}
@@ -150,7 +150,7 @@
 
   async function setSpecies(scan, speciesId, imgUrl) {
     if (!scan.id) {
-      const sp = window.SG.SP.find((s) => s.id === speciesId);
+      const sp = window.SG.findSp(speciesId);
       const alts = (scan.alternates || []).filter((a) => a.speciesId !== speciesId);
       if (scan.speciesId != null && !alts.some((a) => a.speciesId === scan.speciesId)) alts.unshift({ speciesId: scan.speciesId, name: scan.speciesName, confidence: scan.confidence, why: scan.why });
       const updated = { ...scan, speciesId, speciesName: sp ? sp.name : null, userCorrected: true, alternates: alts.slice(0, 3) };
@@ -214,7 +214,7 @@
   }
 
   function showDetail(scan) {
-    const sp = scan.speciesId != null ? window.SG.SP.find((s) => s.id === scan.speciesId) : null;
+    const sp = scan.speciesId != null ? window.SG.findSp(scan.speciesId) : null;
     $('#galDetail').innerHTML = `<div class="scan">
       <div class="photo"><img src="${esc(scan.fullUrl)}" alt=""></div>
       <div class="body">

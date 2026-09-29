@@ -124,7 +124,7 @@ ${body}
 </div></body></html>`;
 }
 
-const speciesImage = (st, sp) => (st.code === 'DE' ? `${SITE}/img/species/${sp.id}.jpg` : null);
+const speciesImage = (st, sp) => (sp.photo ? SITE + sp.photo : null);
 
 export function makePages(regs) {
   const st = STATES[regs.state] || STATES.DE;

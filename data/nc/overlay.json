@@ -1,0 +1,733 @@
+{
+ "1": {
+  "name": "Bluefish",
+  "reviewed": "2026-09-29",
+  "rawHash": "6c13e3c11ab0",
+  "aliases": [
+   "blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 per person per day (7 on for-hire vessels)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "2": {
+  "name": "Cobia",
+  "reviewed": "2026-09-29",
+  "rawHash": "8919cafa8b36",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 36,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person per day; 2 per vessel May\u2013June, 1 per vessel July\u2013Dec (for-hire 4)",
+    "closed": false,
+    "sizeNote": "36 inch minimum, fork length"
+   }
+  ],
+  "notes": [
+   "Proclamation FF-4-2026."
+  ]
+ },
+ "3": {
+  "name": "Wahoo",
+  "reviewed": "2026-09-29",
+  "rawHash": "c83a6410927e",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "4": {
+  "name": "Dolphin",
+  "reviewed": "2026-09-29",
+  "rawHash": "2d6f1bee8e31",
+  "aliases": [
+   "mahi",
+   "mahi-mahi",
+   "dolphinfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 112
+ },
+ "5": {
+  "name": "King Mackerel",
+  "reviewed": "2026-09-29",
+  "rawHash": "e892d59f02aa",
+  "aliases": [
+   "kingfish",
+   "king"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "24 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "6": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-09-29",
+  "rawHash": "5608699b2467",
+  "aliases": [
+   "spanish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "7": {
+  "name": "Yellowfin Tuna",
+  "reviewed": "2026-09-29",
+  "rawHash": "4593ffd3c895",
+  "aliases": [
+   "yellowfin",
+   "tuna"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 27,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "27 inch curved fork length"
+   }
+  ],
+  "notes": []
+ },
+ "11": {
+  "name": "Sailfish",
+  "reviewed": "2026-09-29",
+  "rawHash": "334ca79613ec",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 63,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "63 inch lower-jaw fork length"
+   }
+  ],
+  "notes": []
+ },
+ "12": {
+  "name": "Red Drum",
+  "reviewed": "2026-09-29",
+  "rawHash": "859fcb9b3d72",
+  "aliases": [
+   "redfish",
+   "puppy drum",
+   "channel bass",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   }
+  ],
+  "notes": []
+ },
+ "13": {
+  "name": "Flounder",
+  "reviewed": "2026-09-29",
+  "rawHash": "ba3af0d91e7b",
+  "aliases": [
+   "fluke",
+   "summer flounder",
+   "southern flounder",
+   "gulf flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": [
+     [
+      "09-01",
+      "09-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "2026 recreational flounder season: September 1\u201314 only (proclamation FF-27-2026). All flounder species."
+  ],
+  "photoOf": 185
+ },
+ "14": {
+  "name": "Spotted Seatrout",
+  "reviewed": "2026-09-29",
+  "rawHash": "f7bd38abf134",
+  "aliases": [
+   "speckled trout",
+   "specks",
+   "speck",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": 20
+     }
+    ],
+    "bag": 3,
+    "bagNote": "3 per day, only 1 over 26 inches",
+    "closed": false,
+    "sizeNote": "14 to 20 inch slot; 1 fish over 26 inches allowed"
+   }
+  ],
+  "notes": [
+   "One fish in the daily limit may be over 26 inches."
+  ]
+ },
+ "15": {
+  "name": "Weakfish",
+  "reviewed": "2026-09-29",
+  "rawHash": "56a4ccb3874b",
+  "aliases": [
+   "gray trout",
+   "grey trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "16": {
+  "name": "Sheepshead",
+  "reviewed": "2026-09-29",
+  "rawHash": "d1a37f8cd33f",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "17": {
+  "name": "Black Drum",
+  "reviewed": "2026-09-29",
+  "rawHash": "05aab0a562e6",
+  "aliases": [
+   "drum"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": 25
+     }
+    ],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "14 to 25 inch slot"
+   }
+  ],
+  "notes": []
+ },
+ "18": {
+  "name": "Tarpon",
+  "reviewed": "2026-09-29",
+  "rawHash": "bf36f22fa23a",
+  "aliases": [],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Unlawful to possess."
+  ]
+ },
+ "19": {
+  "name": "Striped Bass",
+  "reviewed": "2026-09-29",
+  "rawHash": "8fd8f02ee772",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "ocean",
+    "label": "Atlantic Ocean (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   },
+   {
+    "zone": "internal",
+    "label": "Internal coastal waters (sounds, rivers)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Albemarle Sound Management Area: season closed; Central Southern Management Area: unlawful to possess (including hybrids). Unlawful to gig, spear, or gaff striped bass."
+  ]
+ },
+ "23": {
+  "name": "Alewife and Blueback Herring",
+  "reviewed": "2026-09-29",
+  "rawHash": "bf36f22fa23a",
+  "aliases": [
+   "river herring",
+   "alewife",
+   "blueback herring",
+   "herring"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Unlawful to possess."
+  ],
+  "photoOf": 71
+ },
+ "24": {
+  "name": "American Eel",
+  "reviewed": "2026-09-29",
+  "rawHash": "92fd4ac990f3",
+  "aliases": [
+   "eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "25": {
+  "name": "Scup",
+  "reviewed": "2026-09-29",
+  "rawHash": "dac661b3cb6e",
+  "aliases": [
+   "porgy"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "northhatteras",
+    "label": "North of Cape Hatteras",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "North of Cape Hatteras only."
+  ]
+ },
+ "26": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-09-29",
+  "rawHash": "d64b2a93a01e",
+  "aliases": [
+   "sea bass",
+   "bsb"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "northhatteras",
+    "label": "North of Cape Hatteras",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "southhatteras",
+    "label": "South of Cape Hatteras",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 7,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "29": {
+  "name": "Mullet",
+  "reviewed": "2026-09-29",
+  "rawHash": "982fc2c3d877",
+  "aliases": [
+   "striped mullet",
+   "white mullet",
+   "finger mullet"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 100,
+    "bagNote": "100 per day, species combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "30": {
+  "name": "Spot",
+  "reviewed": "2026-09-29",
+  "rawHash": "e6809022ffd5",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "31": {
+  "name": "Atlantic Croaker",
+  "reviewed": "2026-09-29",
+  "rawHash": "e6809022ffd5",
+  "aliases": [
+   "croaker",
+   "hardhead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "32": {
+  "name": "Blue Crab",
+  "reviewed": "2026-09-29",
+  "rawHash": "5e9582b89b6e",
+  "aliases": [
+   "crab",
+   "crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 5,
+      "max": null
+     }
+    ],
+    "bag": 50,
+    "bagNote": "50 per person per day, max 100 per vessel",
+    "closed": false,
+    "sizeNote": "5 inch carapace width"
+   }
+  ],
+  "notes": [
+   "Closed Jan 1\u201331 north of the Highway 58 bridge and Mar 1\u201315 south of it."
+  ]
+ },
+ "35": {
+  "name": "Hard Clam",
+  "reviewed": "2026-09-29",
+  "rawHash": "822145e96a22",
+  "aliases": [
+   "clam",
+   "clams"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 1,
+      "max": null
+     }
+    ],
+    "bag": 100,
+    "bagNote": "100 per day, max 200 per vessel",
+    "closed": false,
+    "sizeNote": "1 inch thick"
+   }
+  ],
+  "notes": []
+ },
+ "37": {
+  "name": "Conchs and Whelks",
+  "reviewed": "2026-09-29",
+  "rawHash": "8a0b278b7fc5",
+  "aliases": [
+   "conch",
+   "whelk"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 per day, max 20 per vessel",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ }
+}

@@ -14,7 +14,7 @@ test('locator: census state wins; offshore falls back to nearest live state as f
   const l2 = makeLocator({ live, fetchImpl: census(null) });           // 15 nm off Rehoboth
   const r2 = await l2(38.7, -74.7); assert.equal(r2.state, 'DE'); assert.equal(r2.offshore, true); assert.equal(r2.method, 'nearest');
   const l3 = makeLocator({ live, fetchImpl: census('MD') });           // Maryland: no data yet -> nearest live, on land
-  const r3 = await l3(38.3, -75.6); assert.equal(r3.detected, 'MD'); assert.equal(r3.offshore, false); assert.equal(r3.supported, false); assert.ok(['DE', 'VA'].includes(r3.state));
+  const r3 = await l3(38.3, -75.6); assert.equal(r3.detected, 'MD'); assert.equal(r3.offshore, false); assert.equal(r3.supported, false); assert.equal(r3.state, null); assert.ok(['DE', 'VA'].includes(r3.nearest));
   const l4 = makeLocator({ live, fetchImpl: down });                    // geocoder down: box fallback, never claims offshore
   const r4 = await l4(39.2, -75.5); assert.equal(r4.state, 'DE'); assert.equal(r4.method, 'fallback'); assert.equal(r4.offshore, false);
   const l5 = makeLocator({ live, fetchImpl: census('CA') });

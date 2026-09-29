@@ -12,6 +12,7 @@ export const STATE_BOXES = {
   VA: [-83.68, 36.54, -74.9, 39.47],
   NY: [-79.76, 40.45, -71.6, 45.02],
   CT: [-73.73, 40.95, -71.6, 42.05],
+  NC: [-84.32, 33.84, -75.0, 36.59],
   FL: [-87.63, 24.4, -79.5, 31.0],
 };
 
@@ -45,8 +46,9 @@ export function makeLocator({ live, names = {}, fetchImpl = fetch, cache = new M
     else {
       const near = nearestState(lat, lon, live);
       const offshore = answered && !found;               // geocoder answered "no state" => on the water
-      if (!near || near.d > 1.5) out = { state: null, method: answered ? 'census' : 'fallback', offshore, supported: false, nearest: near?.code || null, detected: found };
-      else out = { state: near.code, method: answered ? 'nearest' : 'fallback', offshore, supported: !found, detected: found };
+      if (found) out = { state: null, method: 'census', offshore: false, supported: false, nearest: near?.code || null, detected: found };   // on land, state not covered
+      else if (!near || near.d > 1.5) out = { state: null, method: answered ? 'census' : 'fallback', offshore, supported: false, nearest: near?.code || null, detected: null };
+      else out = { state: near.code, method: answered ? 'nearest' : 'fallback', offshore, supported: true, detected: null };
     }
     out.name = out.state ? names[out.state] || out.state : null;
     if (cache.size > 5000) cache.clear();

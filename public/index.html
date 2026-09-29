@@ -180,8 +180,10 @@ header .right{display:flex;align-items:center;gap:8px}
 /* ---- hero banner: last fish searched ---- */
 .hero{position:relative;height:150px;border-radius:16px;overflow:hidden;background:var(--surface-2);border:1px solid var(--line);box-shadow:var(--shadow);margin:0 0 12px}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.08);opacity:0;transition:opacity .45s ease}
+.hero.illus{background:#fff}.hero.illus img{object-fit:contain;transform:none;padding:14px 18px 34px}
 .hero img.in{opacity:1}
 .hero .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 10px;background:linear-gradient(to top,rgba(13,23,28,.82),rgba(13,23,28,0));color:#fff;display:flex;align-items:baseline;gap:8px}
+.hero.illus .cap{background:linear-gradient(to top,rgba(13,23,28,.7),rgba(13,23,28,0))}
 .hero .cap b{font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:700;letter-spacing:.01em;line-height:1}
 .hero .cap span{font-size:12px;opacity:.85}
 @media (min-width:600px){.hero{height:190px}}
@@ -367,7 +369,11 @@ const ZONE_WORDS = [
   ['nontidal',/\bnon[- ]?tidal\b/], ['tidal',/\btidal\b/],
   ['vessel',/\b(charter|headboat|head boat|party boat|for[- ]hire)\b/],
   ['chesapeakebay',/\b(chesapeake|the bay|bay side|bayside|tributar|james river|york river|rappahannock|potomac)\b/],
-  ['coastal',/\b(ocean|oceanside|ocean side|seaside|coast|coastal|surf|inlet|cbbt|virginia beach)\b/]
+  ['coastal',/\b(ocean|oceanside|ocean side|seaside|coast|coastal|surf|inlet|cbbt|virginia beach)\b/],
+  ['internal',/\b(sound|sounds|river|creek|inlet|the bay|bay|inside|inshore|internal|pamlico|albemarle|neuse|cape fear river)\b/],
+  ['ocean',/\b(ocean|surf|beach|pier|offshore|outside)\b/],
+  ['northhatteras',/\bnorth of (cape )?hatteras\b|\b(obx|outer banks|nags head|oregon inlet|kitty hawk)\b/],
+  ['southhatteras',/\bsouth of (cape )?hatteras\b|\b(wilmington|morehead|beaufort|wrightsville|carolina beach|topsail|cape lookout)\b/]
 ].filter(([z]) => ZONES[z]);
 const ORDER = ['state','federal','delriver','nanticoke','becks','tidal','nontidal','streams','ponds','flyonly','vessel','coastal','chesapeakebay'].filter(z => ZONES[z]);
 for (const z of Object.keys(ZONES)) if (!ORDER.includes(z)) ORDER.push(z);
@@ -553,7 +559,7 @@ function renderPicker(title, msg, list, extra){
 const SPECIES_IMG = id => `/img/species/${id}.jpg`;
 function setHero({src, fallback, name, sub}){
   const h=$('#hero'), img=$('#heroImg'); if (!src) return;
-  const show=()=>{ h.hidden=false; $('#heroName').textContent=name||''; $('#heroSub').textContent=sub||''; requestAnimationFrame(()=>img.classList.add('in')); };
+  const show=()=>{ h.hidden=false; h.classList.toggle('illus', /^\/img\/species\//.test(img.getAttribute('src')||'')); $('#heroName').textContent=name||''; $('#heroSub').textContent=sub||''; requestAnimationFrame(()=>img.classList.add('in')); };
   img.classList.remove('in');
   img.onload=show;
   img.onerror=()=>{ if (fallback && img.src!==fallback) { img.src=fallback; } else h.hidden=true; };
@@ -607,7 +613,10 @@ drawRecent(loadRecent());
 
 // ---------- examples ----------
 const EX = ['30 inch striper in the bay','14 inch flounder','my 5th sea bass, 13 inches','tog 15 inches','bluefish, 20 in','red drum 24 inches offshore','16 in largemouth at Becks Pond','sandbar shark 60 inches','blue crab 4.5 inches'];
-$('#examples').innerHTML = EX.map(t=>`<button class="chip" data-ex="${t}">${t}</button>`).join('');
+const EX_MORE = ['24 inch red drum','speck 18 inches','cobia 40 inches','sheepshead 15 in','spanish mackerel 14 inches','king mackerel 26 in','black drum 20 inches','weakfish 13 in'];
+const exOk = t => { try { const f = findSpecies(t); return collapseDupes(f.hits, t).length === 1; } catch(e) { return false; } };
+const EXS = [...EX, ...EX_MORE].filter(exOk).slice(0, 9);
+$('#examples').innerHTML = EXS.map(t=>`<button class="chip" data-ex="${t}">${t}</button>`).join('');
 $('#examples').addEventListener('click', e=>{ const b=e.target.closest('[data-ex]'); if (b) { $('#q').value=b.dataset.ex; run(b.dataset.ex); } });
 
 // ---------- zone chip ----------
@@ -630,7 +639,7 @@ function drawLoc(){
     else txt.textContent = `${STATE_NAME} · from your location`;
   }
   else if (LOC.status === 'ok' && LOC.state) txt.textContent = `Located in ${LOC.name} · showing ${STATE_NAME}`;
-  else if (LOC.status === 'ok') txt.textContent = `${LOC.detected ? 'In ' + LOC.detected + ' (not covered yet)' : 'Far from covered waters'} · ${STATE_NAME} rules`;
+  else if (LOC.status === 'ok') txt.textContent = `${LOC.detected ? LOC.detected + ' not covered yet' : 'Far from covered waters'} · showing ${STATE_NAME}`;
   else if (LOC.status === 'off') txt.textContent = `Location off · ${STATE_NAME} rules`;
   else txt.textContent = `${STATE_NAME} rules`;
 }

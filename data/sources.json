@@ -121,6 +121,45 @@
       ],
       "agencyShort": "VMRC"
     },
+    "NC": {
+      "name": "North Carolina",
+      "slug": "north-carolina",
+      "agency": "NC Division of Marine Fisheries",
+      "agencyShort": "NC DMF",
+      "season": 2026,
+      "data": "data/nc/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "nc-dmf-limits",
+          "title": "NC DMF recreational size and bag limits",
+          "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nc-flounder-proc",
+          "title": "NC DMF flounder proclamation (2026)",
+          "url": "https://www.deq.nc.gov/marine-fisheries/fisheries-management-proclamations/2026/flounder-recreational-internal-coastal-and-joint-fishing-waters-and-atlantic-ocean-waters/open",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-cobia-proc",
+          "title": "NC DMF cobia proclamation (2026)",
+          "url": "https://www.deq.nc.gov/marine-fisheries/fisheries-management-proclamations/2026/cobia-commercial-and-recreational-coastal-and-joint-fishing-waters/open",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-proclamations",
+          "title": "NC DMF fisheries management proclamations (index)",
+          "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/fisheries-management-proclamations",
+          "type": "html",
+          "role": "guide"
+        }
+      ]
+    },
     "FL": {
       "name": "Florida",
       "slug": "florida",

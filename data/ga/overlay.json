@@ -1,0 +1,665 @@
+{
+ "1": {
+  "name": "Amberjack",
+  "reviewed": "2026-10-01",
+  "rawHash": "1f563f28c8a0",
+  "aliases": [
+   "greater amberjack",
+   "aj"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 inch fork length"
+   }
+  ],
+  "notes": [],
+  "photoOf": 124
+ },
+ "2": {
+  "name": "American Eel",
+  "reviewed": "2026-10-01",
+  "rawHash": "dd0926b0fe03",
+  "aliases": [
+   "eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "3": {
+  "name": "Atlantic Croaker",
+  "reviewed": "2026-10-01",
+  "rawHash": "d7aeae31a450",
+  "aliases": [
+   "croaker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "4": {
+  "name": "Atlantic Sturgeon",
+  "reviewed": "2026-10-01",
+  "rawHash": "b3f30cd01597",
+  "aliases": [
+   "sturgeon"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ },
+ "5": {
+  "name": "Black Drum",
+  "reviewed": "2026-10-01",
+  "rawHash": "73da6281e591",
+  "aliases": [
+   "drum"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "6": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-10-01",
+  "rawHash": "f2986e6e5fae",
+  "aliases": [
+   "sea bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "7": {
+  "name": "Bluefish",
+  "reviewed": "2026-10-01",
+  "rawHash": "d2bf394204c9",
+  "aliases": [
+   "blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "8": {
+  "name": "Cobia",
+  "reviewed": "2026-10-01",
+  "rawHash": "7805ef24363a",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": [
+     [
+      "03-01",
+      "10-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 36,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per angler, max 6 per boat",
+    "closed": false,
+    "sizeNote": "36 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "9": {
+  "name": "Dolphin",
+  "reviewed": "2026-10-01",
+  "rawHash": "e017fae6bad7",
+  "aliases": [
+   "mahi",
+   "mahi-mahi",
+   "dolphinfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "10 per person, max 54 per boat",
+    "closed": false,
+    "sizeNote": "20 inch fork length"
+   }
+  ],
+  "notes": [],
+  "photoOf": 112
+ },
+ "10": {
+  "name": "Flounder",
+  "reviewed": "2026-10-01",
+  "rawHash": "f2986e6e5fae",
+  "aliases": [
+   "fluke",
+   "southern flounder",
+   "summer flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 185
+ },
+ "11": {
+  "name": "Gag Grouper",
+  "reviewed": "2026-10-01",
+  "rawHash": "40cdb2e1d6c3",
+  "aliases": [
+   "gag",
+   "grouper"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 173
+ },
+ "12": {
+  "name": "King Mackerel",
+  "reviewed": "2026-10-01",
+  "rawHash": "4b9e9f622008",
+  "aliases": [
+   "kingfish",
+   "king"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "24 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "13": {
+  "name": "Red Drum",
+  "reviewed": "2026-10-01",
+  "rawHash": "f0c0465c2a0f",
+  "aliases": [
+   "redfish",
+   "spottail",
+   "spottail bass",
+   "channel bass",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": 23
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 to 23 inch slot (conservative: legal under both the printed 14\u201323 / 5 fish rule and the proposed 15\u201324 / 3 fish rule)"
+   }
+  ],
+  "notes": [
+   "The printed 2026 guide says 5 fish, 14\u201323 in; the Board of Natural Resources considered 3 fish, 15\u201324 in on Aug 25, 2026. SlotGauge applies the stricter overlap until CoastalGaDNR.org/RedDrum confirms. Rod & reel only."
+  ]
+ },
+ "14": {
+  "name": "Red Porgy",
+  "reviewed": "2026-10-01",
+  "rawHash": "0899e36806c2",
+  "aliases": [
+   "pink snapper",
+   "porgy"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 160
+ },
+ "15": {
+  "name": "Red Snapper",
+  "reviewed": "2026-10-01",
+  "rawHash": "6b9821efec34",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "State waters only; federal waters (3\u2013200 mi) have a separate, very short season \u2014 see safmc.net."
+  ]
+ },
+ "16": {
+  "name": "Small Shark Composite",
+  "reviewed": "2026-10-01",
+  "rawHash": "1556bfb48c2a",
+  "aliases": [
+   "sharpnose",
+   "atlantic sharpnose",
+   "bonnethead",
+   "spiny dogfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 30,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "30 inch fork length"
+   }
+  ],
+  "notes": [],
+  "photoOf": 82
+ },
+ "18": {
+  "name": "Sheepshead",
+  "reviewed": "2026-10-01",
+  "rawHash": "4a656d11b22b",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 10,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "10 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "19": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-10-01",
+  "rawHash": "d2bf394204c9",
+  "aliases": [
+   "spanish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "20": {
+  "name": "Spot",
+  "reviewed": "2026-10-01",
+  "rawHash": "d7aeae31a450",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "21": {
+  "name": "Spotted Seatrout",
+  "reviewed": "2026-10-01",
+  "rawHash": "73da6281e591",
+  "aliases": [
+   "speckled trout",
+   "specks",
+   "speck",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "22": {
+  "name": "Striped Bass",
+  "reviewed": "2026-10-01",
+  "rawHash": "2c2d7e979e81",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia saltwater",
+    "seasons": null,
+    "size": [
+     {
+      "min": 22,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "savannah",
+    "label": "Savannah River",
+    "seasons": null,
+    "size": [
+     {
+      "min": 27,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "24": {
+  "name": "Tarpon",
+  "reviewed": "2026-10-01",
+  "rawHash": "d7d1e0ab0bb6",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 68,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "68 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "25": {
+  "name": "Tripletail",
+  "reviewed": "2026-10-01",
+  "rawHash": "76a414ef1dac",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 86
+ },
+ "26": {
+  "name": "Weakfish",
+  "reviewed": "2026-10-01",
+  "rawHash": "a95e5bc631da",
+  "aliases": [
+   "gray trout",
+   "grey trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ }
+}

@@ -1,0 +1,1814 @@
+{
+ "1": {
+  "name": "Red Drum",
+  "reviewed": "2026-10-01",
+  "rawHash": "3892010dbc52",
+  "aliases": [
+   "redfish",
+   "red",
+   "puppy drum",
+   "channel bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "nefl",
+    "label": "Northeast region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 4 per vessel",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   },
+   {
+    "zone": "irl",
+    "label": "Indian River Lagoon region",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   },
+   {
+    "zone": "sefl",
+    "label": "Southeast region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 2 per vessel",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   },
+   {
+    "zone": "swfl",
+    "label": "Southwest region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 2 per vessel",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   },
+   {
+    "zone": "charlotte",
+    "label": "Charlotte Harbor region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 2 per vessel",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   },
+   {
+    "zone": "sarasota",
+    "label": "Sarasota Bay region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 2 per vessel",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   },
+   {
+    "zone": "tampa",
+    "label": "Tampa Bay region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 2 per vessel",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   },
+   {
+    "zone": "bigbend",
+    "label": "Big Bend region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 4 per vessel",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   },
+   {
+    "zone": "panhandle",
+    "label": "Panhandle region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 4 per vessel",
+    "closed": false,
+    "sizeNote": "18 to 27 inch slot"
+   }
+  ],
+  "notes": [
+   "Indian River Lagoon region is catch-and-release only."
+  ]
+ },
+ "10": {
+  "name": "Spotted Seatrout",
+  "reviewed": "2026-10-01",
+  "rawHash": "3545fe3d3bf6",
+  "aliases": [
+   "speckled trout",
+   "specks",
+   "speck",
+   "trout",
+   "seatrout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "nefl",
+    "label": "Northeast region",
+    "seasons": null,
+    "size": [
+     {
+      "min": null,
+      "max": 19
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "no fish over 19 inches"
+   },
+   {
+    "zone": "irl",
+    "label": "Indian River Lagoon region",
+    "seasons": [
+     [
+      "01-01",
+      "10-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": null,
+      "max": 19
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "no fish over 19 inches"
+   },
+   {
+    "zone": "sefl",
+    "label": "Southeast region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": 19
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 to 19 inch slot; one fish over 19 inches allowed per person/vessel"
+   },
+   {
+    "zone": "swfl",
+    "label": "Southwest region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": 19
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 to 19 inch slot; one fish over 19 inches allowed per person/vessel"
+   },
+   {
+    "zone": "charlotte",
+    "label": "Charlotte Harbor region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": 19
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 to 19 inch slot; one fish over 19 inches allowed per person/vessel"
+   },
+   {
+    "zone": "sarasota",
+    "label": "Sarasota Bay region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": 19
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 to 19 inch slot; one fish over 19 inches allowed per person/vessel"
+   },
+   {
+    "zone": "tampa",
+    "label": "Tampa Bay region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": 19
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 to 19 inch slot; one fish over 19 inches allowed per person/vessel"
+   },
+   {
+    "zone": "bigbend",
+    "label": "Big Bend region",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": 19
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 to 19 inch slot; one fish over 19 inches allowed per person/vessel"
+   },
+   {
+    "zone": "panhandle",
+    "label": "Panhandle region",
+    "seasons": [
+     [
+      "03-01",
+      "01-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 15,
+      "max": 19
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 to 19 inch slot; one fish over 19 inches allowed per person/vessel"
+   }
+  ],
+  "notes": []
+ },
+ "19": {
+  "name": "Snook",
+  "reviewed": "2026-10-01",
+  "rawHash": "341a368a79b8",
+  "aliases": [
+   "linesider",
+   "robalo"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "nefl",
+    "label": "Northeast region",
+    "seasons": [
+     [
+      "02-01",
+      "05-31"
+     ],
+     [
+      "09-01",
+      "12-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 32
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 32 inch slot"
+   },
+   {
+    "zone": "irl",
+    "label": "Indian River Lagoon region",
+    "seasons": [
+     [
+      "02-01",
+      "05-31"
+     ],
+     [
+      "09-01",
+      "12-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 32
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 32 inch slot"
+   },
+   {
+    "zone": "sefl",
+    "label": "Southeast region",
+    "seasons": [
+     [
+      "02-01",
+      "05-31"
+     ],
+     [
+      "09-01",
+      "12-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 32
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 32 inch slot"
+   },
+   {
+    "zone": "swfl",
+    "label": "Southwest region",
+    "seasons": [
+     [
+      "03-01",
+      "04-30"
+     ],
+     [
+      "10-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 33
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 33 inch slot"
+   },
+   {
+    "zone": "charlotte",
+    "label": "Charlotte Harbor region",
+    "seasons": [
+     [
+      "03-01",
+      "04-30"
+     ],
+     [
+      "10-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 33
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 33 inch slot"
+   },
+   {
+    "zone": "sarasota",
+    "label": "Sarasota Bay region",
+    "seasons": [
+     [
+      "03-01",
+      "04-30"
+     ],
+     [
+      "09-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 33
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 33 inch slot"
+   },
+   {
+    "zone": "tampa",
+    "label": "Tampa Bay region",
+    "seasons": [
+     [
+      "03-01",
+      "04-30"
+     ],
+     [
+      "09-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 33
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 33 inch slot"
+   },
+   {
+    "zone": "bigbend",
+    "label": "Big Bend region",
+    "seasons": [
+     [
+      "03-01",
+      "04-30"
+     ],
+     [
+      "09-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 33
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 33 inch slot"
+   },
+   {
+    "zone": "panhandle",
+    "label": "Panhandle region",
+    "seasons": [
+     [
+      "03-01",
+      "04-30"
+     ],
+     [
+      "09-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 33
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 33 inch slot"
+   }
+  ],
+  "notes": [
+   "Snook permit required in addition to the fishing license. Hook and line only."
+  ]
+ },
+ "28": {
+  "name": "Flounder",
+  "reviewed": "2026-10-01",
+  "rawHash": "2852271e68e3",
+  "aliases": [
+   "fluke",
+   "southern flounder",
+   "gulf flounder",
+   "summer flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": [
+     [
+      "12-01",
+      "10-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Closed Oct 15 \u2013 Nov 30 every year."
+  ],
+  "photoOf": 185
+ },
+ "29": {
+  "name": "Sheepshead",
+  "reviewed": "2026-10-01",
+  "rawHash": "1686c4d78805",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 8,
+    "bagNote": "8 per person; 50 per vessel per trip in March\u2013April",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "30": {
+  "name": "Black Drum",
+  "reviewed": "2026-10-01",
+  "rawHash": "2d3b4fd0bfd7",
+  "aliases": [
+   "drum"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": 24
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 per person (may include one over 24 inches)",
+    "closed": false,
+    "sizeNote": "14 to 24 inch slot; one fish over 24 inches allowed"
+   }
+  ],
+  "notes": []
+ },
+ "31": {
+  "name": "Cobia",
+  "reviewed": "2026-10-01",
+  "rawHash": "bfd56bd3ab1f",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 36,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person or 2 per vessel, whichever is less",
+    "closed": false,
+    "sizeNote": "36 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "32": {
+  "name": "Dolphin",
+  "reviewed": "2026-10-01",
+  "rawHash": "1d8335234b82",
+  "aliases": [
+   "mahi",
+   "mahi-mahi",
+   "dolphinfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 per person or 30 per vessel",
+    "closed": false,
+    "sizeNote": "20 inch fork length"
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 per person or 60 per vessel",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 112
+ },
+ "34": {
+  "name": "Bluefish",
+  "reviewed": "2026-10-01",
+  "rawHash": "34c7324d4e4e",
+  "aliases": [
+   "blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12 inch fork length"
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "36": {
+  "name": "King Mackerel",
+  "reviewed": "2026-10-01",
+  "rawHash": "c761099b458e",
+  "aliases": [
+   "kingfish",
+   "king"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "24 inch fork length"
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "24 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "38": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-10-01",
+  "rawHash": "5b05e6c275ff",
+  "aliases": [
+   "spanish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "39": {
+  "name": "Mullet",
+  "reviewed": "2026-10-01",
+  "rawHash": "f1520c93796f",
+  "aliases": [
+   "striped mullet",
+   "black mullet",
+   "silver mullet"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "50 per person; vessel limit 50 (Sep\u2013Jan) or 100 (Feb\u2013Aug)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "40": {
+  "name": "Florida Pompano",
+  "reviewed": "2026-10-01",
+  "rawHash": "e5b709373aa2",
+  "aliases": [
+   "pompano"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 11,
+      "max": null
+     }
+    ],
+    "bag": 6,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "11 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "41": {
+  "name": "Permit",
+  "reviewed": "2026-10-01",
+  "rawHash": "85fb211015f3",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Outside the Special Permit Zone",
+    "seasons": null,
+    "size": [
+     {
+      "min": 11,
+      "max": 22
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per person; max 2 over 22 inches per vessel",
+    "closed": false,
+    "sizeNote": "11 to 22 inch fork length; one over 22 allowed"
+   },
+   {
+    "zone": "spz",
+    "label": "Special Permit Zone (south Florida / Keys)",
+    "seasons": [
+     [
+      "08-01",
+      "03-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 22,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 2 per vessel",
+    "closed": false,
+    "sizeNote": "22 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "43": {
+  "name": "Tarpon",
+  "reviewed": "2026-10-01",
+  "rawHash": "0cf734740c32",
+  "aliases": [],
+  "status": "closed",
+  "zones": [],
+  "notes": [
+   "Catch-and-release only; fish over 40 inches must stay in the water. A tarpon tag is required to possess one for a record."
+  ]
+ },
+ "44": {
+  "name": "Tripletail",
+  "reviewed": "2026-10-01",
+  "rawHash": "48aa3b3bd363",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 86
+ },
+ "45": {
+  "name": "Weakfish",
+  "reviewed": "2026-10-01",
+  "rawHash": "3f847aa42e38",
+  "aliases": [
+   "gray trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Weakfish Management Zone (northeast Florida)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "46": {
+  "name": "Greater Amberjack",
+  "reviewed": "2026-10-01",
+  "rawHash": "ec495fa699e7",
+  "aliases": [
+   "amberjack",
+   "aj"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": [
+     [
+      "05-01",
+      "03-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 inch fork length"
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": [
+     [
+      "09-01",
+      "10-13"
+     ]
+    ],
+    "size": [
+     {
+      "min": 34,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "34 inch fork length"
+   }
+  ],
+  "notes": [
+   "Gulf season 2026: Sept 1 \u2013 Oct 13. Atlantic closed in April."
+  ],
+  "photoOf": 124
+ },
+ "48": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-10-01",
+  "rawHash": "709651637cd4",
+  "aliases": [
+   "sea bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 7,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 10,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "100 pounds per person",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "50": {
+  "name": "Gag Grouper",
+  "reviewed": "2026-10-01",
+  "rawHash": "4138cf34a138",
+  "aliases": [
+   "gag",
+   "grouper"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": [
+     [
+      "05-01",
+      "08-01"
+     ]
+    ],
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 gag or black per person within the 3-grouper aggregate; 2 gag per vessel",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": [
+     [
+      "09-01",
+      "09-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per person within the 4-grouper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Gulf gag season 2026: September 1\u201330 only."
+  ],
+  "photoOf": 173
+ },
+ "52": {
+  "name": "Red Grouper",
+  "reviewed": "2026-10-01",
+  "rawHash": "7f3805850f29",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "up to 3 within the 3-grouper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per person within the 4-grouper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 173
+ },
+ "54": {
+  "name": "Black Grouper",
+  "reviewed": "2026-10-01",
+  "rawHash": "62a94f0eb862",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 gag or black within the 3-grouper aggregate; 2 black per vessel",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "4 within the 4-grouper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 173
+ },
+ "56": {
+  "name": "Scamp",
+  "reviewed": "2026-10-01",
+  "rawHash": "a38f68ec3122",
+  "aliases": [
+   "scamp grouper"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "within the 3-grouper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "within the 4-grouper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 173
+ },
+ "58": {
+  "name": "Hogfish",
+  "reviewed": "2026-10-01",
+  "rawHash": "7553cb295711",
+  "aliases": [
+   "hog snapper"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": [
+     [
+      "05-01",
+      "10-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "16 inch fork length"
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "14 inch fork length"
+   }
+  ],
+  "notes": [
+   "Atlantic zone includes all waters south of Cape Sable and the Keys."
+  ]
+ },
+ "60": {
+  "name": "Red Snapper",
+  "reviewed": "2026-10-01",
+  "rawHash": "c74e33ca1041",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state and federal waters",
+    "seasons": [
+     [
+      "10-09",
+      "10-22"
+     ]
+    ],
+    "size": [],
+    "bag": 1,
+    "bagNote": "1 per person per day (no captain/crew retention)",
+    "closed": false,
+    "sizeNote": "no minimum size during the Oct 9\u201322 season"
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": [
+     [
+      "05-22",
+      "07-31"
+     ],
+     [
+      "09-01",
+      "10-04"
+     ],
+     [
+      "10-09",
+      "10-22"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per person within the 10-snapper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Atlantic 2026 season: October 9\u201322 only, state and federal waters. Gulf fall season also includes weekend/holiday dates through Jan 4, 2027 \u2014 check FWC."
+  ]
+ },
+ "62": {
+  "name": "Gray Snapper",
+  "reviewed": "2026-10-01",
+  "rawHash": "e572aa3e6637",
+  "aliases": [
+   "mangrove snapper",
+   "mangrove",
+   "mangos"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 10,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 within the 10-snapper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 207
+ },
+ "63": {
+  "name": "Mutton Snapper",
+  "reviewed": "2026-10-01",
+  "rawHash": "e9f7d9751e0f",
+  "aliases": [
+   "mutton"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 within the 10-snapper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 207
+ },
+ "64": {
+  "name": "Lane Snapper",
+  "reviewed": "2026-10-01",
+  "rawHash": "4bf1641fea22",
+  "aliases": [
+   "lane"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "within the 10-snapper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 10,
+      "max": null
+     }
+    ],
+    "bag": 20,
+    "bagNote": "not in the snapper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 207
+ },
+ "66": {
+  "name": "Vermilion Snapper",
+  "reviewed": "2026-10-01",
+  "rawHash": "f878bfbbe20a",
+  "aliases": [
+   "vermilion",
+   "beeliner"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 10,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 207
+ },
+ "68": {
+  "name": "Yellowtail Snapper",
+  "reviewed": "2026-10-01",
+  "rawHash": "f9f6f7d02a08",
+  "aliases": [
+   "yellowtail"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "within the 10-snapper aggregate",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 213
+ },
+ "69": {
+  "name": "Gray Triggerfish",
+  "reviewed": "2026-10-01",
+  "rawHash": "673ad8d6c5fa",
+  "aliases": [
+   "triggerfish",
+   "trigger"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12 inch fork length"
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": [
+     [
+      "03-01",
+      "05-31"
+     ],
+     [
+      "08-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "71": {
+  "name": "Wahoo",
+  "reviewed": "2026-10-01",
+  "rawHash": "6d42f4cfe759",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "72": {
+  "name": "Spot",
+  "reviewed": "2026-10-01",
+  "rawHash": "0baf00c3c90f",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "100 pounds per person",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "74": {
+  "name": "Atlantic Croaker",
+  "reviewed": "2026-10-01",
+  "rawHash": "0baf00c3c90f",
+  "aliases": [
+   "croaker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic state waters",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulf",
+    "label": "Gulf state waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "100 pounds per person",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "76": {
+  "name": "Spiny Lobster",
+  "reviewed": "2026-10-01",
+  "rawHash": "9ac3762b6c0e",
+  "aliases": [
+   "lobster",
+   "bugs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": [
+     [
+      "08-06",
+      "03-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": 6,
+    "bagNote": "6 per person (regular season)",
+    "closed": false,
+    "sizeNote": "carapace longer than 3 inches, measured in the water"
+   }
+  ],
+  "notes": [
+   "Two-day sport season: last consecutive Wednesday\u2013Thursday of July (6 per person in Monroe County/Biscayne NP, 12 elsewhere). Land whole; carry a gauge."
+  ]
+ },
+ "77": {
+  "name": "Stone Crab",
+  "reviewed": "2026-10-01",
+  "rawHash": "c6f0d5a7d69d",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": [
+     [
+      "10-15",
+      "05-01"
+     ]
+    ],
+    "size": [
+     {
+      "min": 2.875,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 gallon of claws per person or 2 per vessel",
+    "closed": false,
+    "sizeNote": "2 7/8 inch claw; claws only"
+   }
+  ],
+  "notes": [
+   "No egg-bearing crabs."
+  ]
+ },
+ "78": {
+  "name": "Blue Crab",
+  "reviewed": "2026-10-01",
+  "rawHash": "82b41cc39799",
+  "aliases": [
+   "crab",
+   "crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters (Atlantic & Gulf)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "10 gallons whole per person per day",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "No egg-bearing crabs. Up to 5 traps per person, registered free at GoOutdoorsFlorida.com."
+  ]
+ },
+ "79": {
+  "name": "Bonefish",
+  "reviewed": "2026-10-01",
+  "rawHash": "80f53c165199",
+  "aliases": [],
+  "status": "closed",
+  "zones": [],
+  "notes": [
+   "Catch-and-release only."
+  ]
+ },
+ "80": {
+  "name": "Great Barracuda",
+  "reviewed": "2026-10-01",
+  "rawHash": "803b0bacc132",
+  "aliases": [
+   "barracuda",
+   "cuda"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "sefl",
+    "label": "Southeast zone (Collier\u2013Martin counties)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": 36
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per person, 6 per vessel",
+    "closed": false,
+    "sizeNote": "15 to 36 inch fork length; one over 36 allowed"
+   },
+   {
+    "zone": "state",
+    "label": "Rest of state",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "2 fish or 100 pounds, whichever is more",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ }
+}

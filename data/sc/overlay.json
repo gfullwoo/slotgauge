@@ -1,0 +1,551 @@
+{
+ "2": {
+  "name": "Black Drum",
+  "reviewed": "2026-10-01",
+  "rawHash": "cc055fff988e",
+  "aliases": [
+   "drum"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": 27
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "14 to 27 inch slot"
+   }
+  ],
+  "notes": []
+ },
+ "3": {
+  "name": "Bluefish",
+  "reviewed": "2026-10-01",
+  "rawHash": "80d500a0baba",
+  "aliases": [
+   "blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 per person (7 on for-hire boats)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "4": {
+  "name": "Flounder",
+  "reviewed": "2026-10-01",
+  "rawHash": "4345d6d539d5",
+  "aliases": [
+   "fluke",
+   "southern flounder",
+   "summer flounder",
+   "gulf flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 per person, max 10 per boat",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 185
+ },
+ "5": {
+  "name": "Red Drum",
+  "reviewed": "2026-10-01",
+  "rawHash": "87eaa6d580dd",
+  "aliases": [
+   "redfish",
+   "spottail",
+   "spottail bass",
+   "channel bass",
+   "puppy drum",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 25
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, max 2 per boat",
+    "closed": false,
+    "sizeNote": "18 to 25 inch slot (new July 1, 2026)"
+   },
+   {
+    "zone": "federal",
+    "label": "Federal waters (3\u2013200 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Slot and limits changed July 1, 2026 (Act No. 231): was 15\u201323 in, 2 per person.",
+   "Rod & reel and gig only; no gigging Dec 1 \u2013 Feb 28."
+  ]
+ },
+ "7": {
+  "name": "Saltwater Catfish",
+  "reviewed": "2026-10-01",
+  "rawHash": "0a765a076129",
+  "aliases": [
+   "hardhead catfish",
+   "gafftopsail catfish",
+   "gafftop",
+   "hardhead"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": [
+   "Possession prohibited; release immediately."
+  ],
+  "photoOf": 118
+ },
+ "8": {
+  "name": "Sheepshead",
+  "reviewed": "2026-10-01",
+  "rawHash": "6a17400d3b75",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "10 per person, max 30 per boat",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "9": {
+  "name": "Spotted Seatrout",
+  "reviewed": "2026-10-01",
+  "rawHash": "a6fa4466ff06",
+  "aliases": [
+   "speckled trout",
+   "specks",
+   "speck",
+   "trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "No gigging Dec 1 \u2013 Feb 28."
+  ]
+ },
+ "10": {
+  "name": "Striped Bass",
+  "reviewed": "2026-10-01",
+  "rawHash": "8c143e5952b8",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC saltwaters",
+    "seasons": [
+     [
+      "10-01",
+      "06-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 26,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "savannah",
+    "label": "Savannah River, lower reach",
+    "seasons": null,
+    "size": [
+     {
+      "min": 27,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Possession prohibited June 16 \u2013 Sept 30 (except lower Savannah River). Rod & reel only."
+  ]
+ },
+ "12": {
+  "name": "Tarpon",
+  "reviewed": "2026-10-01",
+  "rawHash": "e22a6f0efb45",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 77,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "77 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "13": {
+  "name": "Tripletail",
+  "reviewed": "2026-10-01",
+  "rawHash": "7357ff967ab9",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "3 per person, max 9 per boat",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 86
+ },
+ "14": {
+  "name": "Weakfish",
+  "reviewed": "2026-10-01",
+  "rawHash": "fef052e11eab",
+  "aliases": [
+   "gray trout",
+   "grey trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "15": {
+  "name": "Atlantic Croaker",
+  "reviewed": "2026-10-01",
+  "rawHash": "963a2aa3afdc",
+  "aliases": [
+   "croaker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "50 per person, croaker/spot/whiting combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "16": {
+  "name": "Spot",
+  "reviewed": "2026-10-01",
+  "rawHash": "963a2aa3afdc",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "50 per person, croaker/spot/whiting combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "17": {
+  "name": "Whiting",
+  "reviewed": "2026-10-01",
+  "rawHash": "963a2aa3afdc",
+  "aliases": [
+   "kingfish",
+   "sea mullet",
+   "southern kingfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "50 per person, croaker/spot/whiting combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 180
+ },
+ "18": {
+  "name": "Cobia",
+  "reviewed": "2026-10-01",
+  "rawHash": "f8e9aa6e8ee5",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "southedisto",
+    "label": "State waters south of Jeremy Inlet (Edisto)",
+    "seasons": [
+     [
+      "06-01",
+      "04-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 36,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, max 3 per boat",
+    "closed": false,
+    "sizeNote": "36 inch fork length"
+   },
+   {
+    "zone": "northedisto",
+    "label": "State waters north of Jeremy Inlet & federal waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 36,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, max 6 per boat",
+    "closed": false,
+    "sizeNote": "36 inch fork length"
+   }
+  ],
+  "notes": [
+   "Closed May 1\u201331 in state waters south of 32\u00b0 31.0\u2032 N (Jeremy Inlet, Edisto Island)."
+  ]
+ },
+ "20": {
+  "name": "Dolphin",
+  "reviewed": "2026-10-01",
+  "rawHash": "f17809a8d5c7",
+  "aliases": [
+   "mahi",
+   "mahi-mahi",
+   "dolphinfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "10 per person, max 54 per boat",
+    "closed": false,
+    "sizeNote": "20 inch fork length"
+   }
+  ],
+  "notes": [],
+  "photoOf": 112
+ },
+ "21": {
+  "name": "King Mackerel",
+  "reviewed": "2026-10-01",
+  "rawHash": "a4f9fdb1744c",
+  "aliases": [
+   "kingfish",
+   "king"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "24 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "22": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-10-01",
+  "rawHash": "d0cdff4ffd0a",
+  "aliases": [
+   "spanish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12 inch fork length"
+   }
+  ],
+  "notes": []
+ },
+ "23": {
+  "name": "Wahoo",
+  "reviewed": "2026-10-01",
+  "rawHash": "339e382f59d2",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ }
+}

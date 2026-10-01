@@ -1,5 +1,5 @@
 {
-  "_doc": "Registry of OFFICIAL regulation sources per state. Allowed hosts: *.gov, eregulations.com (official digest publisher for MD DNR) and myfwc.com (FWC is the Florida state agency; it does not use a .gov domain). The weekly source watcher (scripts/watch-sources.js) fetches each url, extracts its text, hashes it, and opens a GitHub issue when the text changes or when a state's captured season falls behind the calendar. Only add government / agency-run URLs here (eregulations.com is the official digest publisher contracted by MD DNR).",
+  "_doc": "Registry of OFFICIAL regulation sources per state. Allowed hosts: *.gov, eregulations.com (official digest publisher for MD DNR, SCDNR and GA DNR), myfwc.com (Florida FWC) and coastalgadnr.org / gadnr.org (Georgia DNR). The weekly source watcher (scripts/watch-sources.js) fetches each url, extracts its text, hashes it, and opens a GitHub issue when the text changes or when a state's captured season falls behind the calendar. Only add government / agency-run URLs here (eregulations.com is the official digest publisher contracted by MD DNR).",
   "states": {
     "DE": {
       "name": "Delaware",
@@ -160,21 +160,294 @@
         }
       ]
     },
+    "SC": {
+      "name": "South Carolina",
+      "slug": "south-carolina",
+      "agency": "South Carolina Department of Natural Resources",
+      "agencyShort": "SCDNR",
+      "season": 2026,
+      "data": "data/sc/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "sc-finfish-limits",
+          "title": "SCDNR Rules & Regulations digest \u2014 finfish size & catch limits",
+          "url": "https://www.eregulations.com/southcarolina/fishing/finfish-size-catch-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "sc-dnr-rules",
+          "title": "SCDNR saltwater rules and regulations",
+          "url": "https://saltwaterfishing.sc.gov/rulesandregs.html",
+          "type": "html",
+          "role": "secondary"
+        }
+      ]
+    },
+    "GA": {
+      "name": "Georgia",
+      "slug": "georgia",
+      "agency": "Georgia DNR Coastal Resources Division",
+      "agencyShort": "GA DNR",
+      "season": 2026,
+      "data": "data/ga/raw.json",
+      "extractor": "ai",
+      "sources": [
+        {
+          "id": "ga-finfish-limits",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 finfish seasons, limits, sizes",
+          "url": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ga-crd-limits",
+          "title": "GA DNR CRD recreational finfish limits",
+          "url": "https://coastalgadnr.org/limits",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "ga-red-drum",
+          "title": "GA DNR CRD red drum regulation changes 2026",
+          "url": "https://coastalgadnr.org/RedDrum",
+          "type": "html",
+          "role": "secondary"
+        }
+      ]
+    },
     "FL": {
       "name": "Florida",
       "slug": "florida",
       "agency": "Florida Fish and Wildlife Conservation Commission",
-      "season": null,
+      "season": 2026,
       "data": "data/fl/raw.json",
       "extractor": "ai",
       "sources": [
         {
           "id": "fl-fwc-recreational",
-          "title": "FWC saltwater recreational regulations",
+          "title": "FWC saltwater recreational regulations (index)",
           "url": "https://myfwc.com/fishing/saltwater/recreational/",
           "type": "html",
-          "role": "primary",
-          "note": "Index page; species rules live on linked pages (followLinks: /fishing/saltwater/recreational/)"
+          "role": "guide"
+        },
+        {
+          "id": "fl-red-drum",
+          "title": "FWC red drum regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/red-drum/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-spotted-seatrout",
+          "title": "FWC spotted seatrout regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/spotted-seatrout/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-flounder",
+          "title": "FWC flounder regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/flounder/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-sheepshead",
+          "title": "FWC sheepshead regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/sheepshead/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-snook",
+          "title": "FWC snook regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/snook/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-black-drum",
+          "title": "FWC black drum regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/black-drum/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-cobia",
+          "title": "FWC cobia regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/cobia/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-dolphinfish",
+          "title": "FWC dolphinfish regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/dolphinfish/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-bluefish",
+          "title": "FWC bluefish regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/bluefish/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-king-mackerel",
+          "title": "FWC king mackerel regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/king-mackerel/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-spanish-mackerel",
+          "title": "FWC spanish mackerel regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/spanish-mackerel/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-mullet",
+          "title": "FWC mullet regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/mullet/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-permit",
+          "title": "FWC permit regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/permit/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-tarpon",
+          "title": "FWC tarpon regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/tarpon/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-tripletail",
+          "title": "FWC tripletail regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/tripletail/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-weakfish",
+          "title": "FWC weakfish regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/weakfish/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-amberjack",
+          "title": "FWC amberjack regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/amberjack/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-black-sea-bass",
+          "title": "FWC black sea bass regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/black-sea-bass/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-groupers",
+          "title": "FWC groupers regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/groupers/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-hogfish",
+          "title": "FWC hogfish regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/hogfish/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-snappers",
+          "title": "FWC snappers regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/snappers/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-atlantic-red-snapper",
+          "title": "FWC atlantic red snapper regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/atlantic-red-snapper/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-triggerfish",
+          "title": "FWC triggerfish regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/triggerfish/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-wahoo",
+          "title": "FWC wahoo regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/wahoo/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-spot-croaker",
+          "title": "FWC spot croaker regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/spot-croaker/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-lobster",
+          "title": "FWC lobster regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/lobster/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-stone-crab",
+          "title": "FWC stone crab regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/stone-crab/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-blue-crab",
+          "title": "FWC blue crab regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/blue-crab/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-bonefish",
+          "title": "FWC bonefish regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/bonefish/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-barracuda",
+          "title": "FWC barracuda regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/barracuda/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "fl-sharks",
+          "title": "FWC sharks regulations",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/sharks/",
+          "type": "html",
+          "role": "primary"
         }
       ],
       "agencyShort": "FWC"

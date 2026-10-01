@@ -100,6 +100,6 @@ test('registry lists only official sources and every state has a primary', () =>
   const reg = loadSources();
   for (const [code, st] of Object.entries(reg.states)) {
     assert.ok(st.sources.some((s) => s.role === 'primary'), `${code} needs a primary source`);
-    for (const s of st.sources) assert.ok(/\.gov$|eregulations\.com$|^myfwc\.com$/.test(new URL(s.url).host), `${code} ${s.url} is not an official host`);
+    for (const s of st.sources) assert.ok(/\.gov$|eregulations\.com$|^myfwc\.com$|^(www\.)?(coastal)?gadnr\.org$/.test(new URL(s.url).host), `${code} ${s.url} is not an official host`);
   }
 });

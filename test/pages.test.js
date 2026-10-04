@@ -49,7 +49,7 @@ test('routes: state, hubs, species, redirects, sitemap, robots, verification', a
   assert.equal(hub.status, 200); assert.match(hub.text, /Summer Flounder/);
   assert.equal((await request(app).get('/delaware/tautog/')).status, 200);
   assert.equal((await request(app).get('/delaware/nope/')).status, 404);
-  assert.equal((await request(app).get('/new-jersey/')).status, 404);
+  assert.equal((await request(app).get('/new-jersey/')).status, 200); assert.equal((await request(app).get('/oregon/')).status, 404);
   assert.equal((await request(app).get('/virginia/striped-bass/')).status, 200); // extracted state served
   const sm = await request(app).get('/sitemap.xml');
   assert.equal(sm.status, 200); assert.ok((sm.text.match(/<url>/g) || []).length >= regs.species.length + 5); assert.match(sm.text, /slotgauge\.com\/delaware\/tautog\//);

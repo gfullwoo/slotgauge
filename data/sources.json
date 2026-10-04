@@ -31,7 +31,7 @@
       "name": "New Jersey",
       "slug": "new-jersey",
       "agency": "NJDEP Fish & Wildlife",
-      "season": null,
+      "season": 2026,
       "data": "data/nj/raw.json",
       "extractor": "ai",
       "sources": [
@@ -57,6 +57,24 @@
           "url": "https://dep.nj.gov/njfw/digests/marine/",
           "type": "html",
           "role": "guide"
+        },
+        {
+          "id": "nj-attention-anglers",
+          "title": "2026 NJ Attention Anglers summary sheet",
+          "url": "https://dep.nj.gov/njfw/wp-content/uploads/njfw/attention-anglers-2026.pdf",
+          "type": "pdf",
+          "role": "secondary",
+          "annual": true,
+          "urlPattern": "https://dep.nj.gov/njfw/wp-content/uploads/njfw/attention-anglers-{year}.pdf"
+        },
+        {
+          "id": "nj-freshwater-digest",
+          "title": "NJ Freshwater Fishing Digest (annual PDF)",
+          "url": "https://dep.nj.gov/wp-content/uploads/njfw/digest-freshwater-fishing-2026-complete.pdf",
+          "type": "pdf",
+          "role": "primary",
+          "annual": true,
+          "urlPattern": "https://dep.nj.gov/wp-content/uploads/njfw/digest-freshwater-fishing-{year}-complete.pdf"
         }
       ],
       "agencyShort": "NJDEP"
@@ -65,7 +83,7 @@
       "name": "Maryland",
       "slug": "maryland",
       "agency": "Maryland DNR Fishing & Boating Services",
-      "season": null,
+      "season": 2026,
       "data": "data/md/raw.json",
       "extractor": "ai",
       "sources": [
@@ -91,6 +109,20 @@
           "url": "https://dnr.maryland.gov/fisheries/pages/regulations/changes.aspx",
           "type": "html",
           "role": "secondary"
+        },
+        {
+          "id": "md-striped-bass",
+          "title": "Maryland striped bass regulations",
+          "url": "https://www.eregulations.com/maryland/fishing/striped-bass",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "md-freshwater",
+          "title": "Maryland freshwater (nontidal) seasons, sizes & limits",
+          "url": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+          "type": "html",
+          "role": "primary"
         }
       ],
       "agencyShort": "MD DNR"
@@ -117,6 +149,13 @@
           "type": "pdf",
           "role": "secondary",
           "annual": true
+        },
+        {
+          "id": "va-dwr-creel",
+          "title": "Virginia DWR freshwater creel and length limits (PDF)",
+          "url": "https://www.dwr.virginia.gov/fishing/regulations/creelandlengthlimits.pdf",
+          "type": "pdf",
+          "role": "primary"
         }
       ],
       "agencyShort": "VMRC"
@@ -157,6 +196,20 @@
           "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/fisheries-management-proclamations",
           "type": "html",
           "role": "guide"
+        },
+        {
+          "id": "nc-wrc-warmwater",
+          "title": "NC WRC warm water game fish regulations",
+          "url": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nc-wrc-trout",
+          "title": "NC WRC general mountain trout regulations",
+          "url": "https://www.eregulations.com/northcarolina/fishing/general-mountain-trout-regulations",
+          "type": "html",
+          "role": "secondary"
         }
       ]
     },
@@ -180,6 +233,20 @@
           "id": "sc-dnr-rules",
           "title": "SCDNR saltwater rules and regulations",
           "url": "https://saltwaterfishing.sc.gov/rulesandregs.html",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "sc-freshwater-limits",
+          "title": "SCDNR freshwater fish size & possession limits",
+          "url": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "sc-trout-limits",
+          "title": "SCDNR trout size & limits",
+          "url": "https://www.eregulations.com/southcarolina/fishing/trout-size-limits",
           "type": "html",
           "role": "secondary"
         }
@@ -214,6 +281,13 @@
           "url": "https://coastalgadnr.org/RedDrum",
           "type": "html",
           "role": "secondary"
+        },
+        {
+          "id": "ga-game-limits",
+          "title": "Georgia game species daily limits (freshwater)",
+          "url": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+          "type": "html",
+          "role": "primary"
         }
       ]
     },
@@ -448,6 +522,13 @@
           "url": "https://myfwc.com/fishing/saltwater/recreational/sharks/",
           "type": "html",
           "role": "primary"
+        },
+        {
+          "id": "fl-freshwater-general",
+          "title": "FWC general statewide freshwater bag and length limits",
+          "url": "https://myfwc.com/fishing/freshwater/regulations/general/",
+          "type": "html",
+          "role": "primary"
         }
       ],
       "agencyShort": "FWC"
@@ -456,7 +537,7 @@
       "name": "New York",
       "slug": "new-york",
       "agency": "NYSDEC",
-      "season": null,
+      "season": 2026,
       "data": "data/ny/raw.json",
       "extractor": "ai",
       "sources": [
@@ -464,6 +545,13 @@
           "id": "ny-marine",
           "title": "NYSDEC recreational saltwater fishing regulations",
           "url": "https://dec.ny.gov/things-to-do/saltwater-fishing/recreational-fishing-regulations",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ny-freshwater-statewide",
+          "title": "NYSDEC statewide freshwater seasons, sizes and catch limits",
+          "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/statewide-season-sizes-catch-limits",
           "type": "html",
           "role": "primary"
         }
@@ -474,7 +562,7 @@
       "name": "Connecticut",
       "slug": "connecticut",
       "agency": "CT DEEP",
-      "season": null,
+      "season": 2026,
       "data": "data/ct/raw.json",
       "extractor": "ai",
       "sources": [
@@ -482,6 +570,13 @@
           "id": "ct-marine",
           "title": "CT DEEP saltwater species regulations",
           "url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/species-regulations",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ct-inland-species",
+          "title": "CT DEEP statewide inland species regulations",
+          "url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations",
           "type": "html",
           "role": "primary"
         }

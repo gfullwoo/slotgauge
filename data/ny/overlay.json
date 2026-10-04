@@ -1,0 +1,1269 @@
+{
+ "1": {
+  "name": "Winter Flounder",
+  "reviewed": "2026-10-04",
+  "rawHash": "7ae96fd155be",
+  "aliases": [
+   "blackback"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": [
+     [
+      "04-01",
+      "05-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "2": {
+  "name": "Striped Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "e3b2b5272815",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock",
+   "linesider"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Marine waters & Delaware River",
+    "seasons": [
+     [
+      "04-15",
+      "12-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   },
+   {
+    "zone": "hudson",
+    "label": "Hudson River north of the GW Bridge",
+    "seasons": [
+     [
+      "04-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 23,
+      "max": 28
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "23 to 28 inch slot"
+   }
+  ],
+  "notes": [
+   "Inline circle hooks required with bait."
+  ]
+ },
+ "4": {
+  "name": "Scup",
+  "reviewed": "2026-10-04",
+  "rawHash": "cfe32ba1d3f2",
+  "aliases": [
+   "porgy"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 9.5,
+      "max": null
+     }
+    ],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "9.5 in from shore; 11 in from a vessel"
+   }
+  ],
+  "notes": []
+ },
+ "5": {
+  "name": "Summer Flounder",
+  "reviewed": "2026-10-04",
+  "rawHash": "01700fbb07b8",
+  "aliases": [
+   "fluke",
+   "flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": [
+     [
+      "05-04",
+      "10-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 19,
+      "max": null,
+      "from": "05-04",
+      "to": "08-01"
+     },
+     {
+      "min": 19.5,
+      "max": null,
+      "from": "08-02",
+      "to": "10-15"
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "19 in May 4 – Aug 1; 19.5 in Aug 2 – Oct 15"
+   }
+  ],
+  "notes": []
+ },
+ "6": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "fca55663cb9e",
+  "aliases": [
+   "sea bass",
+   "bsb"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": [
+     [
+      "05-16",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "3 (May 16 – Aug 31); 6 (Sep 1 – Dec 31)",
+    "closed": false,
+    "sizeNote": "16 in, not including tail filament"
+   }
+  ],
+  "notes": []
+ },
+ "7": {
+  "name": "Oyster Toadfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "f937cea55ea3",
+  "aliases": [
+   "toadfish",
+   "oyster cracker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": [
+     [
+      "07-16",
+      "05-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 10,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "8": {
+  "name": "Tautog",
+  "reviewed": "2026-10-04",
+  "rawHash": "698745dce66a",
+  "aliases": [
+   "tog",
+   "blackfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "nybight",
+    "label": "NY Bight (ocean, South Shore, western LIS)",
+    "seasons": [
+     [
+      "04-01",
+      "04-30"
+     ],
+     [
+      "10-15",
+      "12-22"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 in April; 4 Oct 15 – Dec 22",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "lisound",
+    "label": "Long Island Sound region",
+    "seasons": [
+     [
+      "04-01",
+      "04-30"
+     ],
+     [
+      "10-11",
+      "12-09"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 in April; 3 Oct 11 – Dec 9",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "10": {
+  "name": "American Eel",
+  "reviewed": "2026-10-04",
+  "rawHash": "732c42811ae7",
+  "aliases": [
+   "eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "11": {
+  "name": "Atlantic Cod",
+  "reviewed": "2026-10-04",
+  "rawHash": "914f6a25419c",
+  "aliases": [
+   "cod"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": [
+     [
+      "09-01",
+      "05-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 23,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "12": {
+  "name": "Atlantic Menhaden",
+  "reviewed": "2026-10-04",
+  "rawHash": "12f1dbc22bec",
+  "aliases": [
+   "bunker",
+   "menhaden"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [],
+    "bag": 100,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "13": {
+  "name": "Bluefish",
+  "reviewed": "2026-10-04",
+  "rawHash": "4a1122d9031b",
+  "aliases": [
+   "blues",
+   "snappers",
+   "snapper blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 per person (7 on party/charter boats)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "14": {
+  "name": "Cobia",
+  "reviewed": "2026-10-04",
+  "rawHash": "faf7a38a8ef9",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 43,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per angler; max 2 per vessel",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "15": {
+  "name": "Haddock",
+  "reviewed": "2026-10-04",
+  "rawHash": "8b1670df293d",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "16": {
+  "name": "Hickory Shad",
+  "reviewed": "2026-10-04",
+  "rawHash": "06d618d5b7e5",
+  "aliases": [
+   "shad"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "17": {
+  "name": "King Mackerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "df17210f9a9b",
+  "aliases": [
+   "kingfish",
+   "king"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 23,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "18": {
+  "name": "Monkfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "fd6331da4505",
+  "aliases": [
+   "goosefish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 17,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "17 in whole or 11 in tail"
+   }
+  ],
+  "notes": []
+ },
+ "19": {
+  "name": "Pollock",
+  "reviewed": "2026-10-04",
+  "rawHash": "7922ac3534ba",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 19,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "20": {
+  "name": "Red Drum",
+  "reviewed": "2026-10-04",
+  "rawHash": "3baa8873ffc5",
+  "aliases": [
+   "redfish",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": null,
+      "max": 27
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "no fish over 27 inches"
+   }
+  ],
+  "notes": []
+ },
+ "21": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "fc25aff33f0c",
+  "aliases": [
+   "spanish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "22": {
+  "name": "Weakfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "5208dacb9d39",
+  "aliases": [
+   "gray trout",
+   "grey trout",
+   "sea trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "23": {
+  "name": "Yellowtail Flounder",
+  "reviewed": "2026-10-04",
+  "rawHash": "9aa6e69dda10",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "24": {
+  "name": "River Herring",
+  "reviewed": "2026-10-04",
+  "rawHash": "31241540b6b5",
+  "aliases": [
+   "alewife",
+   "blueback herring",
+   "herring"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Marine waters south of the GW Bridge",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   },
+   {
+    "zone": "hudson",
+    "label": "Hudson River north of the GW Bridge",
+    "seasons": [
+     [
+      "03-15",
+      "06-15"
+     ]
+    ],
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 per angler or 50 per boat",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 71
+ },
+ "26": {
+  "name": "American Shad",
+  "reviewed": "2026-10-04",
+  "rawHash": "cd820ceed230",
+  "aliases": [
+   "shad"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ },
+ "27": {
+  "name": "Atlantic Sturgeon",
+  "reviewed": "2026-10-04",
+  "rawHash": "9de711bb6c4a",
+  "aliases": [
+   "sturgeon"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ },
+ "29": {
+  "name": "American Lobster",
+  "reviewed": "2026-10-04",
+  "rawHash": "eb190e8ebff9",
+  "aliases": [
+   "lobster"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 3.375,
+      "max": 5.25
+     }
+    ],
+    "bag": 6,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "3 3/8 to 5 1/4 inch carapace"
+   }
+  ],
+  "notes": [
+   "Recreational lobster permit required. LMA 4 closed Apr 30 – May 31; LMA 6 closed Sep 8 – Nov 28."
+  ],
+  "photoOf": 67
+ },
+ "30": {
+  "name": "Blue Crab",
+  "reviewed": "2026-10-04",
+  "rawHash": "cac99d50b50f",
+  "aliases": [
+   "crab",
+   "crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 4.5,
+      "max": null
+     }
+    ],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "hard 4.5 in, soft 3.5 in, peeler 3 in"
+   }
+  ],
+  "notes": []
+ },
+ "31": {
+  "name": "Whelk",
+  "reviewed": "2026-10-04",
+  "rawHash": "eb0dade20da9",
+  "aliases": [
+   "conch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY Marine & Coastal District",
+    "seasons": null,
+    "size": [
+     {
+      "min": 5.5,
+      "max": null
+     }
+    ],
+    "bag": 24,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "5.5 in shell length or 2.25 in height (LIS 5.25 / 2.125 until 2028)"
+   }
+  ],
+  "notes": []
+ },
+ "32": {
+  "name": "Brook Trout (lakes and ponds)",
+  "reviewed": "2026-10-04",
+  "rawHash": "d61cc56951cc",
+  "aliases": [
+   "brook trout",
+   "brookie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "04-01",
+      "10-15"
+     ]
+    ],
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "33": {
+  "name": "Brown and Rainbow Trout (lakes and ponds)",
+  "reviewed": "2026-10-04",
+  "rawHash": "7c42bf10e100",
+  "aliases": [
+   "brown trout",
+   "rainbow trout",
+   "splake"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5, only 2 over 12 in",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "34": {
+  "name": "Stream Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "cb47459710c0",
+  "aliases": [
+   "trout",
+   "stream trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "04-01",
+      "10-15"
+     ]
+    ],
+    "size": [],
+    "bag": 5,
+    "bagNote": "5, only 2 over 12 in",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Oct 16 – Mar 31: catch and release only, artificial lures only."
+  ]
+ },
+ "35": {
+  "name": "Lake Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "7b3cedcbf673",
+  "aliases": [
+   "laker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "04-01",
+      "10-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 21,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "36": {
+  "name": "Landlocked Atlantic Salmon",
+  "reviewed": "2026-10-04",
+  "rawHash": "25e812cba70a",
+  "aliases": [
+   "landlocked salmon",
+   "atlantic salmon"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "37": {
+  "name": "Black Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "6d362acf2446",
+  "aliases": [
+   "largemouth",
+   "largemouth bass",
+   "smallmouth",
+   "smallmouth bass",
+   "bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "06-15",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Dec 1 – June 14: catch and release only, artificial lures only."
+  ],
+  "photoOf": 38
+ },
+ "38": {
+  "name": "Muskellunge",
+  "reviewed": "2026-10-04",
+  "rawHash": "b9498658a678",
+  "aliases": [
+   "musky",
+   "muskie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "06-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 40,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "39": {
+  "name": "Northern Pike",
+  "reviewed": "2026-10-04",
+  "rawHash": "0ee91686170a",
+  "aliases": [
+   "pike"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "05-01",
+      "03-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "40": {
+  "name": "Pickerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "4285674e14a1",
+  "aliases": [
+   "chain pickerel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "05-01",
+      "03-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 28
+ },
+ "41": {
+  "name": "Tiger Muskellunge",
+  "reviewed": "2026-10-04",
+  "rawHash": "930afcb55043",
+  "aliases": [
+   "tiger musky",
+   "tiger muskie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "05-01",
+      "03-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 30,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "42": {
+  "name": "Walleye",
+  "reviewed": "2026-10-04",
+  "rawHash": "4285674e14a1",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": [
+     [
+      "05-01",
+      "03-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "43": {
+  "name": "Crappie",
+  "reviewed": "2026-10-04",
+  "rawHash": "fc10c4ac6df7",
+  "aliases": [
+   "calico bass",
+   "black crappie",
+   "white crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 10,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "44": {
+  "name": "Yellow Perch",
+  "reviewed": "2026-10-04",
+  "rawHash": "3ccd7aa79441",
+  "aliases": [
+   "perch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "45": {
+  "name": "Sunfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "d7aeae31a450",
+  "aliases": [
+   "bluegill",
+   "pumpkinseed",
+   "redbreast",
+   "panfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "46": {
+  "name": "Lake Whitefish",
+  "reviewed": "2026-10-04",
+  "rawHash": "06d618d5b7e5",
+  "aliases": [
+   "whitefish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "47": {
+  "name": "American Shad (inland)",
+  "reviewed": "2026-10-04",
+  "rawHash": "aeb5fa9bce23",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New York inland waters (statewide; regional special regs differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Hudson River and tributaries: possession prohibited."
+  ],
+  "photoOf": 19
+ }
+}

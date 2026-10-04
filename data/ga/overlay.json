@@ -342,11 +342,11 @@
     "bag": 3,
     "bagNote": "",
     "closed": false,
-    "sizeNote": "15 to 23 inch slot (conservative: legal under both the printed 14\u201323 / 5 fish rule and the proposed 15\u201324 / 3 fish rule)"
+    "sizeNote": "15 to 23 inch slot (conservative: legal under both the printed 14–23 / 5 fish rule and the proposed 15–24 / 3 fish rule)"
    }
   ],
   "notes": [
-   "The printed 2026 guide says 5 fish, 14\u201323 in; the Board of Natural Resources considered 3 fish, 15\u201324 in on Aug 25, 2026. SlotGauge applies the stricter overlap until CoastalGaDNR.org/RedDrum confirms. Rod & reel only."
+   "The printed 2026 guide says 5 fish, 14–23 in; the Board of Natural Resources considered 3 fish, 15–24 in on Aug 25, 2026. SlotGauge applies the stricter overlap until CoastalGaDNR.org/RedDrum confirms. Rod & reel only."
   ]
  },
  "14": {
@@ -402,7 +402,7 @@
    }
   ],
   "notes": [
-   "State waters only; federal waters (3\u2013200 mi) have a separate, very short season \u2014 see safmc.net."
+   "State waters only; federal waters (3–200 mi) have a separate, very short season — see safmc.net."
   ]
  },
  "16": {
@@ -579,9 +579,21 @@
     "bagNote": "",
     "closed": false,
     "sizeNote": ""
+   },
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": 15,
+    "bagNote": "15 striped/white/hybrid combined, only 2 of 22 in or longer",
+    "closed": false,
+    "sizeNote": ""
    }
   ],
-  "notes": []
+  "notes": [
+   "Freshwater statewide: 15 per day, only 2 of which may be 22 inches or longer; coastal rivers 2 per day at 22 in; lower Savannah 2 at 27 in."
+  ]
  },
  "24": {
   "name": "Tarpon",
@@ -655,6 +667,200 @@
      }
     ],
     "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "27": {
+  "name": "Black Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "b1729469b454",
+  "aliases": [
+   "largemouth",
+   "largemouth bass",
+   "smallmouth",
+   "smallmouth bass",
+   "spotted bass",
+   "shoal bass",
+   "bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 black bass, only 5 of the native stream species (shoal, Bartram's, Chattahoochee, Coosa, smallmouth…)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 38
+ },
+ "28": {
+  "name": "Catfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "channel catfish",
+   "flathead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 30
+ },
+ "29": {
+  "name": "Crappie",
+  "reviewed": "2026-10-04",
+  "rawHash": "42fe795269c7",
+  "aliases": [
+   "speck",
+   "black crappie",
+   "white crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "30": {
+  "name": "Pickerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "8e25beb5135b",
+  "aliases": [
+   "chain pickerel",
+   "jack"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 28
+ },
+ "31": {
+  "name": "Shad (freshwater)",
+  "reviewed": "2026-10-04",
+  "rawHash": "06d8fdf7f6a8",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": 8,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 19
+ },
+ "32": {
+  "name": "Sunfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "3ccd7aa79441",
+  "aliases": [
+   "bluegill",
+   "bream",
+   "redbreast",
+   "shellcracker",
+   "warmouth"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "33": {
+  "name": "Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "06d8fdf7f6a8",
+  "aliases": [
+   "brook trout",
+   "brown trout",
+   "rainbow trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": 8,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Special streams (Chattooga, Toccoa, Smith Creek, Waters Creek…) have their own limits."
+  ]
+ },
+ "34": {
+  "name": "Walleye",
+  "reviewed": "2026-10-04",
+  "rawHash": "06d8fdf7f6a8",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Georgia freshwater (statewide)",
+    "seasons": null,
+    "size": [],
+    "bag": 8,
     "bagNote": "",
     "closed": false,
     "sizeNote": ""

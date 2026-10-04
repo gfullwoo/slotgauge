@@ -20,6 +20,11 @@
    "id": "nc-cobia-proc",
    "url": "https://www.deq.nc.gov/marine-fisheries/fisheries-management-proclamations/2026/cobia-commercial-and-recreational-coastal-and-joint-fishing-waters/open",
    "title": "NC DMF cobia proclamation FF-4-2026"
+  },
+  {
+   "id": "nc-wrc-warmwater",
+   "url": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+   "title": "NC WRC warm water game fish regulations"
   }
  ],
  "species": [
@@ -540,6 +545,132 @@
    "quote": "Conchs and Whelks | None | 10/Day not to exceed 20/Vessel/Day",
    "notes": "",
    "sourceId": "nc-dmf-limits"
+  },
+  {
+   "id": 38,
+   "n": "Largemouth Bass",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "14-inch minimum, except 2 may be less than 14 inches",
+   "limit": "5, including only 2 less than 14 inches",
+   "quote": "Largemouth Bass — All public waters except those listed below: 14-inch minimum, except 2 may be less than 14 inches | 5, including only 2 less than 14 inches",
+   "notes": "",
+   "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 39,
+   "n": "Smallmouth Bass",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "14-inch minimum, except 2 may be less than 14 inches",
+   "limit": "5, including only 2 less than 14 inches",
+   "quote": "Smallmouth Bass — All public waters except those listed below: 14-inch minimum, except 2 may be less than 14 inches | 5, including only 2 less than 14 inches",
+   "notes": "",
+   "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 40,
+   "n": "Spotted Bass",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "No limit",
+   "quote": "Alabama Bass And Spotted Bass — All public waters except those listed below: None | None",
+   "notes": "",
+   "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 41,
+   "n": "Crappie",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "No limit",
+   "quote": "Crappie (Black And White) — All public fishing waters except those listed below: None | None (many waters: 8-inch minimum, 20 in combination)",
+   "notes": "Most rivers east of I-95 and waters west of I-77: 8 in minimum, 20 per day.",
+   "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 42,
+   "n": "Sunfish",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "No limit",
+   "quote": "Sunfish (Except Crappie, Rock Bass, & Roanoke Bass) — All public fishing waters except those listed below: None | None (coastal rivers: 30 in combination, no more than 12 redbreast)",
+   "notes": "",
+   "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 43,
+   "n": "Rock Bass",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "No limit",
+   "quote": "Rock Bass and Roanoke Bass — All public fishing waters except those listed below: None (east of I-77: 8-inch minimum, 2 in combination)",
+   "notes": "",
+   "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 44,
+   "n": "White Bass",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "10",
+   "quote": "White Bass — All inland fishing waters and joint fishing waters when caught by hook and line: None | 10",
+   "notes": "",
+   "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 45,
+   "n": "White Perch",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "No limit",
+   "quote": "White Perch — All inland fishing waters and joint fishing waters when caught by hook and line: None | None",
+   "notes": "",
+   "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 46,
+   "n": "Mountain Trout",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Hatchery Supported waters closed March 1 – April 2, 2027 (7 a.m. opening April 3)",
+   "size": "None in Hatchery Supported waters; 7 inches in Wild Trout Waters",
+   "limit": "7 (Hatchery Supported and undesignated waters); Wild Trout Waters: 7-inch minimum, 4",
+   "quote": "Mountain Trout — Hatchery Supported Trout Waters: Aug. 1, 2026 – Feb. 28, 2027; 7 a.m. April 3, 2027 – July 31, 2027: None | 7. Wild Trout Waters: No closed season | 7 inches | 4 | Artificial lures with a single hook. Delayed Harvest: no trout may be possessed Oct 1 – June 4.",
+   "notes": "",
+   "sourceId": "nc-wrc-warmwater"
   }
  ]
 }

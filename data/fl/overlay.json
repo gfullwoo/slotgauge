@@ -572,7 +572,7 @@
    }
   ],
   "notes": [
-   "Closed Oct 15 \u2013 Nov 30 every year."
+   "Closed Oct 15 – Nov 30 every year."
   ],
   "photoOf": 185
  },
@@ -594,7 +594,7 @@
      }
     ],
     "bag": 8,
-    "bagNote": "8 per person; 50 per vessel per trip in March\u2013April",
+    "bagNote": "8 per person; 50 per vessel per trip in March–April",
     "closed": false,
     "sizeNote": ""
    }
@@ -822,7 +822,7 @@
     "seasons": null,
     "size": [],
     "bag": 50,
-    "bagNote": "50 per person; vessel limit 50 (Sep\u2013Jan) or 100 (Feb\u2013Aug)",
+    "bagNote": "50 per person; vessel limit 50 (Sep–Jan) or 100 (Feb–Aug)",
     "closed": false,
     "sizeNote": ""
    }
@@ -1017,7 +1017,7 @@
    }
   ],
   "notes": [
-   "Gulf season 2026: Sept 1 \u2013 Oct 13. Atlantic closed in April."
+   "Gulf season 2026: Sept 1 – Oct 13. Atlantic closed in April."
   ],
   "photoOf": 124
  },
@@ -1115,7 +1115,7 @@
    }
   ],
   "notes": [
-   "Gulf gag season 2026: September 1\u201330 only."
+   "Gulf gag season 2026: September 1–30 only."
   ],
   "photoOf": 173
  },
@@ -1328,7 +1328,7 @@
     "bag": 1,
     "bagNote": "1 per person per day (no captain/crew retention)",
     "closed": false,
-    "sizeNote": "no minimum size during the Oct 9\u201322 season"
+    "sizeNote": "no minimum size during the Oct 9–22 season"
    },
    {
     "zone": "gulf",
@@ -1360,7 +1360,7 @@
    }
   ],
   "notes": [
-   "Atlantic 2026 season: October 9\u201322 only, state and federal waters. Gulf fall season also includes weekend/holiday dates through Jan 4, 2027 \u2014 check FWC."
+   "Atlantic 2026 season: October 9–22 only, state and federal waters. Gulf fall season also includes weekend/holiday dates through Jan 4, 2027 — check FWC."
   ]
  },
  "62": {
@@ -1702,7 +1702,7 @@
    }
   ],
   "notes": [
-   "Two-day sport season: last consecutive Wednesday\u2013Thursday of July (6 per person in Monroe County/Biscayne NP, 12 elsewhere). Land whole; carry a gauge."
+   "Two-day sport season: last consecutive Wednesday–Thursday of July (6 per person in Monroe County/Biscayne NP, 12 elsewhere). Land whole; carry a gauge."
   ]
  },
  "77": {
@@ -1785,7 +1785,7 @@
   "zones": [
    {
     "zone": "sefl",
-    "label": "Southeast zone (Collier\u2013Martin counties)",
+    "label": "Southeast zone (Collier–Martin counties)",
     "seasons": null,
     "size": [
      {
@@ -1810,5 +1810,178 @@
    }
   ],
   "notes": []
+ },
+ "84": {
+  "name": "Black Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "c99caa3777cc",
+  "aliases": [
+   "largemouth",
+   "largemouth bass",
+   "florida bass",
+   "bass",
+   "suwannee bass",
+   "shoal bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Florida freshwater (statewide; FMAs and listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 black bass combined, only 1 of 16 in or longer",
+    "closed": false,
+    "sizeNote": "no minimum for largemouth; only 1 fish 16 in or longer; Suwannee/shoal/spotted/Choctaw 12 in minimum"
+   }
+  ],
+  "notes": [],
+  "photoOf": 38
+ },
+ "85": {
+  "name": "Panfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "3ccd7aa79441",
+  "aliases": [
+   "bluegill",
+   "bream",
+   "shellcracker",
+   "redear",
+   "warmouth",
+   "stumpknocker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Florida freshwater (statewide; FMAs and listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "86": {
+  "name": "Crappie",
+  "reviewed": "2026-10-04",
+  "rawHash": "d7aeae31a450",
+  "aliases": [
+   "speckled perch",
+   "speck",
+   "black crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Florida freshwater (statewide; FMAs and listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "87": {
+  "name": "Striped Bass (freshwater)",
+  "reviewed": "2026-10-04",
+  "rawHash": "2ffd0f5d20dd",
+  "aliases": [
+   "sunshine bass",
+   "white bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Florida freshwater (statewide; FMAs and listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 20,
+    "bagNote": "20 striped/white/sunshine combined, only 6 of 24 in or longer",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 55
+ },
+ "88": {
+  "name": "Butterfly Peacock Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "3be752b4a098",
+  "aliases": [
+   "peacock bass",
+   "peacock"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Florida freshwater (statewide; FMAs and listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "2, only 1 of 17 in or longer",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "89": {
+  "name": "Shad (freshwater)",
+  "reviewed": "2026-10-04",
+  "rawHash": "e6951ac0c0d9",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Florida freshwater (statewide; FMAs and listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 19
+ },
+ "90": {
+  "name": "American Eel (freshwater)",
+  "reviewed": "2026-10-04",
+  "rawHash": "67b7f15a2eb3",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Florida freshwater (statewide; FMAs and listed waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 73
  }
 }

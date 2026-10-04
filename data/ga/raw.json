@@ -15,6 +15,11 @@
    "id": "ga-red-drum",
    "url": "https://coastalgadnr.org/RedDrum",
    "title": "GA DNR CRD red drum regulation changes 2026"
+  },
+  {
+   "id": "ga-game-limits",
+   "url": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+   "title": "Georgia game species daily limits"
   }
  ],
  "species": [
@@ -381,6 +386,118 @@
    "quote": "Weakfish | All year | 1 | 13 TL",
    "notes": "",
    "sourceId": "ga-finfish-limits"
+  },
+  {
+   "id": 27,
+   "n": "Black Bass",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "10 (total daily limit of 10 black bass, only 5 of which may be Altamaha, Bartrams, Chattahoochee, Coosa, Shoal, Smallmouth, Suwannee, Tallapoosa)",
+   "quote": "Bass | All black bass species (Genus Micropterus) | 10 | Total daily limit of 10 black bass, only 5 of which may be Altamaha, Bartrams, Chattahoochee, Coosa, Shoal, Smallmouth, Suwannee, Tallapoosa.",
+   "notes": "",
+   "sourceId": "ga-game-limits"
+  },
+  {
+   "id": 28,
+   "n": "Catfish",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "No limit",
+   "quote": "Catfish | Channel and/or Flathead | No limit",
+   "notes": "",
+   "sourceId": "ga-game-limits"
+  },
+  {
+   "id": 29,
+   "n": "Crappie",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "30",
+   "quote": "Crappie | Black and/or White | 30",
+   "notes": "",
+   "sourceId": "ga-game-limits"
+  },
+  {
+   "id": 30,
+   "n": "Pickerel",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "15",
+   "quote": "Pickerel | Chain, Grass and/or Redfin | 15",
+   "notes": "",
+   "sourceId": "ga-game-limits"
+  },
+  {
+   "id": 31,
+   "n": "Shad (freshwater)",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "8",
+   "quote": "Shad | American and/or Hickory | 8",
+   "notes": "",
+   "sourceId": "ga-game-limits"
+  },
+  {
+   "id": 32,
+   "n": "Sunfish",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "50",
+   "quote": "Sunfish or Bream | Bluegill, Flier, Redbreast, Redear, Rock bass, Spotted sunfish, Warmouth and/or Shadow bass | 50",
+   "notes": "",
+   "sourceId": "ga-game-limits"
+  },
+  {
+   "id": 33,
+   "n": "Trout",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "8",
+   "quote": "Trout | Brook, Rainbow, Brown trout, and any hybrids of these species | 8",
+   "notes": "",
+   "sourceId": "ga-game-limits"
+  },
+  {
+   "id": 34,
+   "n": "Walleye",
+   "sci": "",
+   "h": "freshwater",
+   "f": "",
+   "zone": "Inland waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "8",
+   "quote": "Walleye | 8",
+   "notes": "",
+   "sourceId": "ga-game-limits"
   }
  ]
 }

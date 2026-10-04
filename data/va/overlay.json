@@ -513,7 +513,7 @@
    }
   ],
   "notes": [
-   "Closed April 1 \u2013 June 30, 2026."
+   "Closed April 1 – June 30, 2026."
   ]
  },
  "21": {
@@ -605,13 +605,29 @@
     "bagNote": "",
     "closed": true,
     "sizeNote": ""
+   },
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (landlocked)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "4 striped bass + hybrids combined",
+    "closed": false,
+    "sizeNote": ""
    }
   ],
   "notes": [
    "Circle hooks (non-offset, corrodible, non-stainless) required when fishing with bait.",
    "Gaffing striped bass is illegal in Virginia marine waters.",
    "Potomac River tributaries follow Potomac River Fisheries Commission rules.",
-   "Possession limits cannot be combined across overlapping seasons or jurisdictions."
+   "Possession limits cannot be combined across overlapping seasons or jurisdictions.",
+   "Inland (DWR) waters: no fish under 20 inches, 4 per day; Smith Mountain Lake and others differ."
   ]
  },
  "25": {
@@ -635,7 +651,7 @@
    }
   ],
   "notes": [
-   "Illegal to possess (Code of Virginia \u00a7 28.2-303)."
+   "Illegal to possess (Code of Virginia § 28.2-303)."
   ],
   "photoOf": 84
  },
@@ -670,7 +686,7 @@
     "bag": 4,
     "bagNote": "",
     "closed": false,
-    "sizeNote": "16 in Jan 1 \u2013 May 31; 17.5 in Jun 1 \u2013 Dec 31"
+    "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
    }
   ],
   "notes": [
@@ -709,7 +725,7 @@
    }
   ],
   "notes": [
-   "Closed May 16 \u2013 June 30."
+   "Closed May 16 – June 30."
   ]
  },
  "28": {
@@ -760,5 +776,421 @@
    }
   ],
   "notes": []
+ },
+ "30": {
+  "name": "Largemouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "6ac56c6a32f3",
+  "aliases": [
+   "largemouth",
+   "bass",
+   "bucketmouth"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 largemouth + smallmouth combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "31": {
+  "name": "Smallmouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "6ac56c6a32f3",
+  "aliases": [
+   "smallmouth",
+   "smallie",
+   "bronzeback"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 largemouth + smallmouth combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "32": {
+  "name": "Spotted Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "e69359d235ff",
+  "aliases": [
+   "spot bass",
+   "alabama bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "33": {
+  "name": "White Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "c809160483f5",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "34": {
+  "name": "Walleye",
+  "reviewed": "2026-10-04",
+  "rawHash": "d6908cf7e16b",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "35": {
+  "name": "Sauger",
+  "reviewed": "2026-10-04",
+  "rawHash": "7350e8c99837",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "36": {
+  "name": "Muskellunge",
+  "reviewed": "2026-10-04",
+  "rawHash": "0a890211d90d",
+  "aliases": [
+   "musky",
+   "muskie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 40,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "37": {
+  "name": "Northern Pike",
+  "reviewed": "2026-10-04",
+  "rawHash": "a1f6a746111c",
+  "aliases": [
+   "pike"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "38": {
+  "name": "Chain Pickerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "a1f6a746111c",
+  "aliases": [
+   "pickerel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "39": {
+  "name": "Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "83e7eeb620d1",
+  "aliases": [
+   "brook trout",
+   "brown trout",
+   "rainbow trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 7,
+      "max": null
+     }
+    ],
+    "bag": 6,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "40": {
+  "name": "Crappie",
+  "reviewed": "2026-10-04",
+  "rawHash": "40edd344b736",
+  "aliases": [
+   "speck",
+   "papermouth",
+   "black crappie",
+   "white crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "41": {
+  "name": "Sunfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "47eeafda93b9",
+  "aliases": [
+   "bluegill",
+   "bream",
+   "pumpkinseed",
+   "redear",
+   "shellcracker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "42": {
+  "name": "Rock Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "9477b372978d",
+  "aliases": [
+   "roanoke bass",
+   "redeye"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "43": {
+  "name": "Yellow Perch",
+  "reviewed": "2026-10-04",
+  "rawHash": "eab8c8785563",
+  "aliases": [
+   "perch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "44": {
+  "name": "Channel Catfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "01ffe398d381",
+  "aliases": [
+   "catfish",
+   "channel cat",
+   "flathead",
+   "white catfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 20,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "45": {
+  "name": "Blue Catfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "01ffe398d381",
+  "aliases": [
+   "blue cat"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 20,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "46": {
+  "name": "Longnose Gar",
+  "reviewed": "2026-10-04",
+  "rawHash": "00a5ba2df5e5",
+  "aliases": [
+   "gar",
+   "bowfin"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Virginia inland waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 (1 during Apr 15 – Jun 30)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "47": {
+  "name": "Northern Snakehead",
+  "reviewed": "2026-10-04",
+  "rawHash": "eab8c8785563",
+  "aliases": [
+   "snakehead"
+  ],
+  "status": "invasive",
+  "zones": [],
+  "notes": [
+   "Kill immediately and notify DWR."
+  ]
  }
 }

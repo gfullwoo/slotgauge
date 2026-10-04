@@ -85,7 +85,7 @@ export function mergeExtracted(raw, overlay = {}, { de = null } = {}) {
   const species = [...groups.values()].map((rec) => {
     const ov = overlay[String(rec.id)];
     if (ov) {
-      Object.assign(rec, { aliases: ov.aliases || [], status: ov.status || 'open', zones: ov.zones, notes: [...(ov.notes || [])], reviewed: ov.reviewed, needsReview: false });
+      Object.assign(rec, { aliases: ov.aliases || [], status: ov.status || 'open', zones: ov.zones && ov.zones.length ? ov.zones : rec.zones, notes: [...(ov.notes || [])], reviewed: ov.reviewed, needsReview: false });
       if (ov.rawHash && ov.rawHash !== rawHash(rec.raw)) { rec.needsReview = true; rec.notes.unshift(`The official text for this species changed after it was last reviewed (${ov.reviewed}). Check the exact wording below.`); }
     } else rec.notes.unshift('Not yet reviewed: shown exactly as the state prints it. Read the wording before keeping the fish.');
     rec.rawId = rec.id; rec.id = EXTRACTED_ID_BASE + rec.id;   // never collide with DNREC ids (photo ID returns DNREC ids)

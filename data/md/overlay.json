@@ -1,0 +1,1541 @@
+{
+ "1": {
+  "name": "American Eel",
+  "reviewed": "2026-10-04",
+  "rawHash": "47cf10d39538",
+  "aliases": [
+   "eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": [
+     [
+      "01-01",
+      "08-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": [
+     [
+      "01-01",
+      "08-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Open year-round for spears and baited pots."
+  ]
+ },
+ "3": {
+  "name": "Black Drum",
+  "reviewed": "2026-10-04",
+  "rawHash": "a5d441ef4798",
+  "aliases": [
+   "drum"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, boat limit 6",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, boat limit 6",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "5": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "13c4213f0f9f",
+  "aliases": [
+   "sea bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12.5,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12.5 in, excluding tail filament"
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12.5,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "12.5 in, excluding tail filament"
+   }
+  ],
+  "notes": []
+ },
+ "7": {
+  "name": "Bluefish",
+  "reviewed": "2026-10-04",
+  "rawHash": "f95dbe5aabbc",
+  "aliases": [
+   "blues",
+   "snapper blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 per person (7 on for-hire boats)",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 per person (7 on for-hire boats)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "9": {
+  "name": "Cobia",
+  "reviewed": "2026-10-04",
+  "rawHash": "2eaf3cd41eea",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": [
+     [
+      "06-15",
+      "09-20"
+     ]
+    ],
+    "size": [
+     {
+      "min": 43,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person; 2 per vessel with 2+ aboard",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": [
+     [
+      "06-15",
+      "09-20"
+     ]
+    ],
+    "size": [
+     {
+      "min": 43,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person; 2 per vessel with 2+ aboard",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Catch-and-release only Sept 21 – June 14."
+  ]
+ },
+ "11": {
+  "name": "Atlantic Croaker",
+  "reviewed": "2026-10-04",
+  "rawHash": "e3d27fc41cd2",
+  "aliases": [
+   "croaker",
+   "hardhead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "13": {
+  "name": "Dolphin",
+  "reviewed": "2026-10-04",
+  "rawHash": "9927dc0e5143",
+  "aliases": [
+   "mahi",
+   "mahi-mahi",
+   "dolphinfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "federal",
+    "label": "Federal waters",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 per person, boat limit 54",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 112
+ },
+ "14": {
+  "name": "Grouper",
+  "reviewed": "2026-10-04",
+  "rawHash": "9126051ee79c",
+  "aliases": [
+   "groupers"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 173
+ },
+ "15": {
+  "name": "American Lobster",
+  "reviewed": "2026-10-04",
+  "rawHash": "0e796b4822ad",
+  "aliases": [
+   "lobster"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": [
+     [
+      "04-01",
+      "01-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 3.375,
+      "max": 5.25
+     }
+    ],
+    "bag": 100,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "3 3/8 to 5 1/4 inch carapace"
+   }
+  ],
+  "notes": [
+   "Land whole; no spearing; no egg-bearing females."
+  ],
+  "photoOf": 67
+ },
+ "16": {
+  "name": "Red Drum",
+  "reviewed": "2026-10-04",
+  "rawHash": "fe8e0bb8c1ea",
+  "aliases": [
+   "redfish",
+   "puppy drum",
+   "channel bass",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 26
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "18 to 26 inch slot"
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 26
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "18 to 26 inch slot"
+   }
+  ],
+  "notes": []
+ },
+ "18": {
+  "name": "Scup",
+  "reviewed": "2026-10-04",
+  "rawHash": "fbf8a4e49e99",
+  "aliases": [
+   "porgy"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "19": {
+  "name": "Sheepshead",
+  "reviewed": "2026-10-04",
+  "rawHash": "db23bdadeccd",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "21": {
+  "name": "Snapper",
+  "reviewed": "2026-10-04",
+  "rawHash": "ff487ec334cc",
+  "aliases": [
+   "snappers"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [],
+    "bag": 20,
+    "bagNote": "20 combined, max 10 of one species",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [],
+    "bag": 20,
+    "bagNote": "20 combined, max 10 of one species",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 207
+ },
+ "23": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "e1439ec3294d",
+  "aliases": [
+   "spanish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "25": {
+  "name": "Spot",
+  "reviewed": "2026-10-04",
+  "rawHash": "85108e3702fb",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "27": {
+  "name": "Spotted Seatrout",
+  "reviewed": "2026-10-04",
+  "rawHash": "65e8dec50029",
+  "aliases": [
+   "speckled trout",
+   "specks",
+   "speck"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "29": {
+  "name": "Striped Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "81912a47d9a1",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": [
+     [
+      "05-01",
+      "07-31"
+     ],
+     [
+      "09-01",
+      "12-05"
+     ]
+    ],
+    "size": [
+     {
+      "min": 19,
+      "max": 24
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "19 to 24 inch slot"
+   }
+  ],
+  "notes": [
+   "Chesapeake: catch-and-release only Jan 1 – Apr 30 (Mar–Apr lower Bay only) and Dec 6 – 31; no targeting Aug 1–31; May 1–31 harvest limited to designated areas. Circle hooks required with bait; cannot be used as bait."
+  ]
+ },
+ "31": {
+  "name": "Summer Flounder",
+  "reviewed": "2026-10-04",
+  "rawHash": "8d447f63e6ee",
+  "aliases": [
+   "fluke",
+   "flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null,
+      "from": "01-01",
+      "to": "05-31"
+     },
+     {
+      "min": 17.5,
+      "max": null,
+      "from": "06-01",
+      "to": "12-31"
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null,
+      "from": "01-01",
+      "to": "05-31"
+     },
+     {
+      "min": 17.5,
+      "max": null,
+      "from": "06-01",
+      "to": "12-31"
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
+   }
+  ],
+  "notes": []
+ },
+ "33": {
+  "name": "Tautog",
+  "reviewed": "2026-10-04",
+  "rawHash": "c87529828bb3",
+  "aliases": [
+   "tog",
+   "blackfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": [
+     [
+      "07-01",
+      "05-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "4 (Jan 1 – May 15 and Nov 1 – Dec 31); 2 (Jul 1 – Oct 31)",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": [
+     [
+      "07-01",
+      "05-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "4 (Jan 1 – May 15 and Nov 1 – Dec 31); 2 (Jul 1 – Oct 31)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Catch-and-release only May 16 – June 30."
+  ]
+ },
+ "36": {
+  "name": "Wahoo",
+  "reviewed": "2026-10-04",
+  "rawHash": "1a155b5ab9ee",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "federal",
+    "label": "Federal waters",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "37": {
+  "name": "Weakfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "82dc5c3f257e",
+  "aliases": [
+   "gray trout",
+   "grey trout",
+   "sea trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "39": {
+  "name": "Alewife and Blueback Herring",
+  "reviewed": "2026-10-04",
+  "rawHash": "9f18fd9c5f1b",
+  "aliases": [
+   "river herring",
+   "alewife",
+   "blueback herring",
+   "herring"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": [],
+  "photoOf": 71
+ },
+ "41": {
+  "name": "American Shad",
+  "reviewed": "2026-10-04",
+  "rawHash": "9f18fd9c5f1b",
+  "aliases": [
+   "shad"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ },
+ "43": {
+  "name": "Hickory Shad",
+  "reviewed": "2026-10-04",
+  "rawHash": "9f18fd9c5f1b",
+  "aliases": [],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ },
+ "45": {
+  "name": "Atlantic Sturgeon",
+  "reviewed": "2026-10-04",
+  "rawHash": "9f18fd9c5f1b",
+  "aliases": [
+   "sturgeon"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ },
+ "47": {
+  "name": "Atlantic Menhaden",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "bunker",
+   "menhaden"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "48": {
+  "name": "Largemouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "a9afa27d5771",
+  "aliases": [
+   "largemouth",
+   "bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null,
+      "from": "03-01",
+      "to": "06-15"
+     },
+     {
+      "min": 12,
+      "max": null,
+      "from": "06-16",
+      "to": "02-29"
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 largemouth + smallmouth combined",
+    "closed": false,
+    "sizeNote": "15 in Mar 1 – Jun 15; 12 in rest of year"
+   }
+  ],
+  "notes": []
+ },
+ "49": {
+  "name": "Smallmouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "a9afa27d5771",
+  "aliases": [
+   "smallmouth",
+   "smallie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null,
+      "from": "03-01",
+      "to": "06-15"
+     },
+     {
+      "min": 12,
+      "max": null,
+      "from": "06-16",
+      "to": "02-29"
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 largemouth + smallmouth combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "50": {
+  "name": "Catfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "blue catfish",
+   "channel catfish",
+   "flathead"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 22
+ },
+ "51": {
+  "name": "Chain Pickerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "f1a7a01855ec",
+  "aliases": [
+   "pickerel",
+   "pike"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": [
+     [
+      "05-01",
+      "03-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "52": {
+  "name": "Longnose Gar",
+  "reviewed": "2026-10-04",
+  "rawHash": "fb7438d0a540",
+  "aliases": [
+   "gar"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 (1 during Apr 15 – Jun 30)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "53": {
+  "name": "Northern Snakehead",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "snakehead",
+   "chesapeake channa"
+  ],
+  "status": "invasive",
+  "zones": [],
+  "notes": [
+   "Illegal to possess live."
+  ]
+ },
+ "54": {
+  "name": "Walleye",
+  "reviewed": "2026-10-04",
+  "rawHash": "9f00af0c18ee",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "55": {
+  "name": "White Perch",
+  "reviewed": "2026-10-04",
+  "rawHash": "0fff04260637",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "no minimum by hook and line (8 in with other gear)"
+   }
+  ],
+  "notes": []
+ },
+ "56": {
+  "name": "Yellow Perch",
+  "reviewed": "2026-10-04",
+  "rawHash": "793428986d19",
+  "aliases": [
+   "perch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "57": {
+  "name": "Largemouth Bass (nontidal)",
+  "reviewed": "2026-10-04",
+  "rawHash": "a8244d395c94",
+  "aliases": [
+   "largemouth",
+   "smallmouth",
+   "bass",
+   "smallmouth bass (nontidal)"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": [
+     [
+      "06-16",
+      "02-29"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 largemouth + smallmouth combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Catch and release allowed year-round."
+  ],
+  "photoOf": 38
+ },
+ "58": {
+  "name": "Carp",
+  "reviewed": "2026-10-04",
+  "rawHash": "f054e13f1005",
+  "aliases": [
+   "common carp"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 29
+ },
+ "59": {
+  "name": "Chain Pickerel (nontidal)",
+  "reviewed": "2026-10-04",
+  "rawHash": "46b7b0351356",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 28
+ },
+ "60": {
+  "name": "Channel Catfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "051a6602e8c3",
+  "aliases": [
+   "channel cat"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 30
+ },
+ "61": {
+  "name": "Crappie",
+  "reviewed": "2026-10-04",
+  "rawHash": "f054e13f1005",
+  "aliases": [
+   "black crappie",
+   "white crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "62": {
+  "name": "Muskellunge",
+  "reviewed": "2026-10-04",
+  "rawHash": "92b59a4804c7",
+  "aliases": [
+   "musky",
+   "muskie",
+   "tiger muskie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 36,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "63": {
+  "name": "Northern Pike",
+  "reviewed": "2026-10-04",
+  "rawHash": "7ed2dee3f896",
+  "aliases": [
+   "pike"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 30,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "64": {
+  "name": "Saugeye",
+  "reviewed": "2026-10-04",
+  "rawHash": "7eefe4a5121a",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "65": {
+  "name": "Striped Bass (lakes and ponds)",
+  "reviewed": "2026-10-04",
+  "rawHash": "87f17196b4a1",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2, only 1 over 30 in",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Illegal to keep striped bass from nontidal streams and rivers."
+  ],
+  "photoOf": 55
+ },
+ "66": {
+  "name": "Suckers",
+  "reviewed": "2026-10-04",
+  "rawHash": "95b4cb60bb9e",
+  "aliases": [
+   "sucker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "67": {
+  "name": "Sunfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "dc6cf7288af4",
+  "aliases": [
+   "bluegill",
+   "rock bass",
+   "redear",
+   "pumpkinseed",
+   "panfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "68": {
+  "name": "Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "1974c5bd395c",
+  "aliases": [
+   "brook trout",
+   "brown trout",
+   "rainbow trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Put-and-Take areas and Special Trout Management Areas have their own limits and seasons."
+  ]
+ },
+ "69": {
+  "name": "Walleye (nontidal)",
+  "reviewed": "2026-10-04",
+  "rawHash": "5b7f48775283",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 59
+ },
+ "70": {
+  "name": "Yellow Perch (nontidal)",
+  "reviewed": "2026-10-04",
+  "rawHash": "bc096b25f5be",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Maryland nontidal waters (statewide; special areas differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "9 in in rivers and streams; none in lakes (10 per day)"
+   }
+  ],
+  "notes": [],
+  "photoOf": 64
+ }
+}

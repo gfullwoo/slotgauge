@@ -44,7 +44,7 @@
      }
     ],
     "bag": 1,
-    "bagNote": "1 per person per day; 2 per vessel May\u2013June, 1 per vessel July\u2013Dec (for-hire 4)",
+    "bagNote": "1 per person per day; 2 per vessel May–June, 1 per vessel July–Dec (for-hire 4)",
     "closed": false,
     "sizeNote": "36 inch minimum, fork length"
    }
@@ -270,7 +270,7 @@
    }
   ],
   "notes": [
-   "2026 recreational flounder season: September 1\u201314 only (proclamation FF-27-2026). All flounder species."
+   "2026 recreational flounder season: September 1–14 only (proclamation FF-27-2026). All flounder species."
   ],
   "photoOf": 185
  },
@@ -444,10 +444,26 @@
     "bagNote": "",
     "closed": true,
     "sizeNote": ""
+   },
+   {
+    "zone": "inland",
+    "label": "NC inland impoundments (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 20,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "4 striped bass + hybrids combined",
+    "closed": false,
+    "sizeNote": ""
    }
   ],
   "notes": [
-   "Albemarle Sound Management Area: season closed; Central Southern Management Area: unlawful to possess (including hybrids). Unlawful to gig, spear, or gaff striped bass."
+   "Albemarle Sound Management Area: season closed; Central Southern Management Area: unlawful to possess (including hybrids). Unlawful to gig, spear, or gaff striped bass.",
+   "Inland impoundments (WRC): 20 in minimum, 4 per day; Roanoke River and coastal rivers follow their own management-area rules."
   ]
  },
  "23": {
@@ -676,7 +692,7 @@
    }
   ],
   "notes": [
-   "Closed Jan 1\u201331 north of the Highway 58 bridge and Mar 1\u201315 south of it."
+   "Closed Jan 1–31 north of the Highway 58 bridge and Mar 1–15 south of it."
   ]
  },
  "35": {
@@ -729,5 +745,223 @@
    }
   ],
   "notes": []
+ },
+ "38": {
+  "name": "Largemouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "6c23d561041f",
+  "aliases": [
+   "largemouth",
+   "bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5, only 2 under 14 in",
+    "closed": false,
+    "sizeNote": "14 in minimum, except 2 under 14 in allowed"
+   }
+  ],
+  "notes": []
+ },
+ "39": {
+  "name": "Smallmouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "6c23d561041f",
+  "aliases": [
+   "smallmouth",
+   "smallie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5, only 2 under 14 in",
+    "closed": false,
+    "sizeNote": "14 in minimum, except 2 under 14 in allowed"
+   }
+  ],
+  "notes": []
+ },
+ "40": {
+  "name": "Spotted Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "alabama bass",
+   "spot bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "41": {
+  "name": "Crappie",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "speck",
+   "black crappie",
+   "white crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "no statewide limit; 8 in / 20 per day on many listed waters",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "42": {
+  "name": "Sunfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "bluegill",
+   "bream",
+   "redbreast",
+   "shellcracker"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "43": {
+  "name": "Rock Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "roanoke bass",
+   "redeye"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "44": {
+  "name": "White Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "7f7a0a8fa38d",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "45": {
+  "name": "White Perch",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "46": {
+  "name": "Mountain Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "e8ff80d6be15",
+  "aliases": [
+   "trout",
+   "brook trout",
+   "brown trout",
+   "rainbow trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "NC inland waters (statewide; listed waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 7,
+    "bagNote": "7 in hatchery-supported waters; 4 (7 in minimum) in wild trout waters",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Hatchery Supported waters close Mar 1 – Apr 2 each spring; Delayed Harvest waters are catch-and-release Oct 1 – early June."
+  ]
  }
 }

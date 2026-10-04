@@ -1,0 +1,880 @@
+{
+ "1": {
+  "name": "Striped Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "de333de5c80a",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "linesider"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 in up to (not including) 31 in"
+   }
+  ],
+  "notes": [
+   "Inline circle hook required with bait."
+  ]
+ },
+ "2": {
+  "name": "Summer Flounder",
+  "reviewed": "2026-10-04",
+  "rawHash": "86c5be440e7b",
+  "aliases": [
+   "fluke",
+   "flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": [
+     [
+      "05-04",
+      "10-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 19,
+      "max": null,
+      "from": "05-04",
+      "to": "08-01"
+     },
+     {
+      "min": 19.5,
+      "max": null,
+      "from": "08-02",
+      "to": "10-15"
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "19 in May 4 \u2013 Aug 1; 19.5 in Aug 2 \u2013 Oct 15; 17 in at Enhanced Opportunity shore sites"
+   }
+  ],
+  "notes": []
+ },
+ "3": {
+  "name": "Tautog",
+  "reviewed": "2026-10-04",
+  "rawHash": "2e01921693ac",
+  "aliases": [
+   "tog",
+   "blackfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": [
+     [
+      "04-01",
+      "04-30"
+     ],
+     [
+      "07-01",
+      "08-31"
+     ],
+     [
+      "10-10",
+      "11-28"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 (April, Jul\u2013Aug); 3 (Oct 10 \u2013 Nov 28)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "4": {
+  "name": "Scup",
+  "reviewed": "2026-10-04",
+  "rawHash": "fe790301b576",
+  "aliases": [
+   "porgy"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": [
+     [
+      "05-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 9.5,
+      "max": null
+     }
+    ],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "9.5 in from shore; 11 in from a boat"
+   }
+  ],
+  "notes": []
+ },
+ "5": {
+  "name": "Bluefish",
+  "reviewed": "2026-10-04",
+  "rawHash": "7a587240ba1b",
+  "aliases": [
+   "blues",
+   "snappers",
+   "snapper blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 per angler (7 on party/charter boats)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "6": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "eecc0b07ec2f",
+  "aliases": [
+   "sea bass",
+   "bsb"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": [
+     [
+      "05-16",
+      "11-25"
+     ]
+    ],
+    "size": [
+     {
+      "min": 15.5,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15.5 in, excluding tail filament"
+   }
+  ],
+  "notes": [
+   "Party/charter: season to Dec 31, 4 fish (May 16 \u2013 Aug 31) / 6 fish (Sep 1 \u2013 Dec 31)."
+  ]
+ },
+ "7": {
+  "name": "Weakfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "fb1eb2f5b6cb",
+  "aliases": [
+   "sea trout",
+   "gray trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "8": {
+  "name": "Winter Flounder",
+  "reviewed": "2026-10-04",
+  "rawHash": "c3637c0d8b1f",
+  "aliases": [
+   "blackback"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": [
+     [
+      "04-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "9": {
+  "name": "Hickory Shad",
+  "reviewed": "2026-10-04",
+  "rawHash": "aee9bea00299",
+  "aliases": [
+   "shad"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 American + hickory shad combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "10": {
+  "name": "American Shad",
+  "reviewed": "2026-10-04",
+  "rawHash": "aee9bea00299",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "ctriver",
+    "label": "Connecticut River system",
+    "seasons": null,
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 American + hickory shad combined",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "state",
+    "label": "All other state waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "12": {
+  "name": "River Herring",
+  "reviewed": "2026-10-04",
+  "rawHash": "24b9b6440c36",
+  "aliases": [
+   "alewife",
+   "blueback herring",
+   "herring"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": [],
+  "photoOf": 71
+ },
+ "13": {
+  "name": "White Perch",
+  "reviewed": "2026-10-04",
+  "rawHash": "0a61a5e6bdd9",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 7,
+      "max": null
+     }
+    ],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "14": {
+  "name": "American Eel",
+  "reviewed": "2026-10-04",
+  "rawHash": "0802b710ffd9",
+  "aliases": [
+   "eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "15": {
+  "name": "Atlantic Menhaden",
+  "reviewed": "2026-10-04",
+  "rawHash": "738f990f3530",
+  "aliases": [
+   "bunker",
+   "menhaden"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "50 fish or 5 gallons, whichever is more",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "16": {
+  "name": "Blue Crab",
+  "reviewed": "2026-10-04",
+  "rawHash": "7555c5a91849",
+  "aliases": [
+   "crab",
+   "crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": [
+     [
+      "05-01",
+      "11-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "hard 5 in, soft 3.5 in (spike to spike)"
+   }
+  ],
+  "notes": [
+   "No egg-bearing females."
+  ]
+ },
+ "17": {
+  "name": "Jonah Crab",
+  "reviewed": "2026-10-04",
+  "rawHash": "340a51f4f86e",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "18": {
+  "name": "Red Drum",
+  "reviewed": "2026-10-04",
+  "rawHash": "c7210c971d3d",
+  "aliases": [
+   "redfish",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": null,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "no fish over 27 inches"
+   }
+  ],
+  "notes": []
+ },
+ "19": {
+  "name": "Smooth and Spiny Dogfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "dogfish",
+   "spiny dogfish",
+   "smooth dogfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Connecticut marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 178
+ },
+ "20": {
+  "name": "Largemouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "8aff301401fd",
+  "aliases": [
+   "largemouth",
+   "bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 6,
+    "bagNote": "6 largemouth + smallmouth combined",
+    "closed": false,
+    "sizeNote": "12 in in lakes, ponds and the CT River; none in streams"
+   }
+  ],
+  "notes": []
+ },
+ "21": {
+  "name": "Smallmouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "d97ca5b59c2a",
+  "aliases": [
+   "smallmouth",
+   "smallie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 6,
+    "bagNote": "6 largemouth + smallmouth combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "22": {
+  "name": "Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "8d1733ecbadd",
+  "aliases": [
+   "brook trout",
+   "brown trout",
+   "rainbow trout",
+   "tiger trout",
+   "lake trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": [
+     [
+      "04-11",
+      "02-28"
+     ]
+    ],
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Catch and release only from March 1 until 6 a.m. on the second Saturday of April (Apr 11 in 2026)."
+  ]
+ },
+ "23": {
+  "name": "Atlantic Salmon",
+  "reviewed": "2026-10-04",
+  "rawHash": "cc88f1002761",
+  "aliases": [
+   "salmon"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 1,
+    "bagNote": "1 in stocked lakes (Apr\u2013Feb); rivers Dec 16 \u2013 Aug 31; otherwise catch and release",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "24": {
+  "name": "Kokanee",
+  "reviewed": "2026-10-04",
+  "rawHash": "373c0f0ef159",
+  "aliases": [
+   "kokanee salmon"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": [
+     [
+      "04-11",
+      "02-28"
+     ]
+    ],
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "25": {
+  "name": "Northern Pike",
+  "reviewed": "2026-10-04",
+  "rawHash": "bffae2decf78",
+  "aliases": [
+   "pike",
+   "tiger muskie",
+   "tiger musky"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 26,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "26": {
+  "name": "Chain Pickerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "7f76e71c6b1b",
+  "aliases": [
+   "pickerel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 6,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "15 in in lakes and ponds; none in streams"
+   }
+  ],
+  "notes": []
+ },
+ "27": {
+  "name": "Walleye",
+  "reviewed": "2026-10-04",
+  "rawHash": "63bc08905be8",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "28": {
+  "name": "Channel Catfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "2010cced6c7e",
+  "aliases": [
+   "catfish",
+   "white catfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 6,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "29": {
+  "name": "Bullhead",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "brown bullhead",
+   "yellow bullhead",
+   "horned pout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 60
+ },
+ "30": {
+  "name": "Common Carp",
+  "reviewed": "2026-10-04",
+  "rawHash": "1eb02f130f61",
+  "aliases": [
+   "carp"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5, only 1 over 30 in",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "31": {
+  "name": "Panfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "c9ff6cec4f73",
+  "aliases": [
+   "sunfish",
+   "bluegill",
+   "yellow perch",
+   "crappie",
+   "calico bass",
+   "rock bass",
+   "perch",
+   "pumpkinseed"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "32": {
+  "name": "Smelt",
+  "reviewed": "2026-10-04",
+  "rawHash": "972f53452168",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "Connecticut inland waters (statewide; managed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 50,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "33": {
+  "name": "Burbot",
+  "reviewed": "2026-10-04",
+  "rawHash": "24b9b6440c36",
+  "aliases": [],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ },
+ "34": {
+  "name": "Sturgeon",
+  "reviewed": "2026-10-04",
+  "rawHash": "24b9b6440c36",
+  "aliases": [
+   "atlantic sturgeon",
+   "shortnose sturgeon"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ }
+}

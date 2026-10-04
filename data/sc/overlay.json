@@ -110,7 +110,7 @@
    },
    {
     "zone": "federal",
-    "label": "Federal waters (3\u2013200 mi)",
+    "label": "Federal waters (3–200 mi)",
     "seasons": null,
     "size": [],
     "bag": null,
@@ -120,8 +120,8 @@
    }
   ],
   "notes": [
-   "Slot and limits changed July 1, 2026 (Act No. 231): was 15\u201323 in, 2 per person.",
-   "Rod & reel and gig only; no gigging Dec 1 \u2013 Feb 28."
+   "Slot and limits changed July 1, 2026 (Act No. 231): was 15–23 in, 2 per person.",
+   "Rod & reel and gig only; no gigging Dec 1 – Feb 28."
   ]
  },
  "7": {
@@ -195,7 +195,7 @@
    }
   ],
   "notes": [
-   "No gigging Dec 1 \u2013 Feb 28."
+   "No gigging Dec 1 – Feb 28."
   ]
  },
  "10": {
@@ -244,10 +244,21 @@
     "bagNote": "",
     "closed": false,
     "sizeNote": ""
+   },
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; coastal rivers, Santee, Murray differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "10 striped/hybrid combined",
+    "closed": false,
+    "sizeNote": ""
    }
   ],
   "notes": [
-   "Possession prohibited June 16 \u2013 Sept 30 (except lower Savannah River). Rod & reel only."
+   "Possession prohibited June 16 – Sept 30 (except lower Savannah River). Rod & reel only.",
+   "Freshwater statewide: any length, 10 per day; coastal rivers 26 in min, 3 per day Oct 1 – Jun 15; Santee system, Lake Murray and Savannah River have their own slots."
   ]
  },
  "12": {
@@ -440,7 +451,7 @@
    }
   ],
   "notes": [
-   "Closed May 1\u201331 in state waters south of 32\u00b0 31.0\u2032 N (Jeremy Inlet, Edisto Island)."
+   "Closed May 1–31 in state waters south of 32° 31.0′ N (Jeremy Inlet, Edisto Island)."
   ]
  },
  "20": {
@@ -547,5 +558,292 @@
    }
   ],
   "notes": []
+ },
+ "24": {
+  "name": "Largemouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "9ad8e82e0474",
+  "aliases": [
+   "largemouth",
+   "bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 black bass combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "14 in minimum on major reservoirs (Murray, Marion, Moultrie, Wylie, Wateree, Greenwood, Jocassee…)."
+  ]
+ },
+ "25": {
+  "name": "Smallmouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "437e092754c7",
+  "aliases": [
+   "smallmouth"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 black bass combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "26": {
+  "name": "Spotted Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "8e25beb5135b",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "27": {
+  "name": "Bream",
+  "reviewed": "2026-10-04",
+  "rawHash": "42fe795269c7",
+  "aliases": [
+   "bluegill",
+   "sunfish",
+   "shellcracker",
+   "redear",
+   "warmouth"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "28": {
+  "name": "Redbreast Sunfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "8e25beb5135b",
+  "aliases": [
+   "redbreast",
+   "robin"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 15,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "29": {
+  "name": "Crappie",
+  "reviewed": "2026-10-04",
+  "rawHash": "f88c3d2f6295",
+  "aliases": [
+   "speck",
+   "black crappie",
+   "white crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": 20,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "30": {
+  "name": "Walleye",
+  "reviewed": "2026-10-04",
+  "rawHash": "bb8787dbe08f",
+  "aliases": [
+   "sauger"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 8,
+    "bagNote": "8 walleye + sauger combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "31": {
+  "name": "Chain Pickerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "42fe795269c7",
+  "aliases": [
+   "pickerel",
+   "jack"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "32": {
+  "name": "Yellow Perch",
+  "reviewed": "2026-10-04",
+  "rawHash": "42fe795269c7",
+  "aliases": [
+   "perch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "33": {
+  "name": "White Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "7f7a0a8fa38d",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "34": {
+  "name": "Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "06d618d5b7e5",
+  "aliases": [
+   "brook trout",
+   "brown trout",
+   "rainbow trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "35": {
+  "name": "American Eel (freshwater)",
+  "reviewed": "2026-10-04",
+  "rawHash": "b5ef9ce02121",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "SC freshwater (statewide; listed lakes differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 73
  }
 }

@@ -363,6 +363,7 @@ const MONTHS = ['january','february','march','april','may','june','july','august
 const ZONES = D.zoneLabels || { state:'State waters' };
 const STATE = D.state || 'DE', STATE_NAME = D.name || 'Delaware';
 const ZONE_WORDS = [
+  ['delbay',/\b(delaware bay|del bay|cape may)\b/], ['ibsp',/\b(island beach|ibsp)\b/],
   ['federal',/\b(federal|offshore|canyon|canyons|\d\d\+?\s*miles?\s*(out|offshore)|eez|deep ?drop)\b/],
   ['nanticoke',/\bnanticoke\b/], ['becks',/\bbecks?\s*pond\b/],
   ['delriver',/\b(delaware (river|bay)|the bay|the river|c\s*&\s*d canal|tributar|broadkill|mispillion|murderkill|st\.? jones|leipsic|smyrna river|appoquinimink|christina|brandywine)\b/],
@@ -375,7 +376,10 @@ const ZONE_WORDS = [
   ['ocean',/\b(ocean|surf|beach|pier|offshore|outside)\b/],
   ['northhatteras',/\bnorth of (cape )?hatteras\b|\b(obx|outer banks|nags head|oregon inlet|kitty hawk)\b/],
   ['southhatteras',/\bsouth of (cape )?hatteras\b|\b(wilmington|morehead|beaufort|wrightsville|carolina beach|topsail|cape lookout)\b/],
-  ['savannah',/\bsavannah\b/], ['southedisto',/\b(edisto|beaufort|hilton head|port royal|st\.? helena)\b/], ['northedisto',/\b(charleston|myrtle|georgetown|murrells|north inlet)\b/],
+  ['savannah',/\bsavannah\b/], ['chesapeake',/\b(chesapeake|the bay|bay|tributar|potomac|patuxent|choptank|severn|susquehanna)\b/],
+  ['hudson',/\b(hudson|tappan zee|haverstraw|croton|peekskill|newburgh|kingston|catskill)\b/], ['lisound',/\b(long island sound|the sound|lis|smithtown|port jefferson|huntington|mattituck)\b/], ['nybight',/\b(south shore|montauk|jones beach|fire island|shinnecock|moriches|raritan bay|jamaica bay|rockaway|breezy point)\b/],
+  ['ctriver',/\b(connecticut river|ct river)\b/],
+  ['inland',/\b(lake|pond|reservoir|river|creek|brook|stream|freshwater|fresh water|inland|impoundment)\b/], ['southedisto',/\b(edisto|beaufort|hilton head|port royal|st\.? helena)\b/], ['northedisto',/\b(charleston|myrtle|georgetown|murrells|north inlet)\b/],
   ['panhandle',/\b(panhandle|pensacola|destin|panama city|apalachicola|st\.? joe|choctawhatchee)\b/], ['bigbend',/\b(big bend|cedar key|crystal river|homosassa|steinhatchee|suwannee)\b/],
   ['tampa',/\b(tampa|clearwater|st\.? pete|anna maria)\b/], ['sarasota',/\b(sarasota|venice|bradenton)\b/], ['charlotte',/\b(charlotte harbor|boca grande|punta gorda|fort myers|pine island|sanibel)\b/],
   ['swfl',/\b(naples|marco|everglades|ten thousand|keys|key west|marathon|islamorada|key largo|flamingo)\b/], ['sefl',/\b(miami|biscayne|fort lauderdale|boca|palm beach|jupiter|stuart)\b/],
@@ -491,7 +495,7 @@ function sizeText(rules, zone){
 }
 const fmtIn = n => Number.isInteger(n) ? String(n) : String(n).replace(/\.?0+$/,'');
 // Regional zones roll up to a coast so "in Tampa Bay" still resolves for a species that only has Gulf/Atlantic rules, and vice versa.
-const ZONE_PARENT = { tampa:'gulf', sarasota:'gulf', charlotte:'gulf', swfl:'gulf', bigbend:'gulf', panhandle:'gulf', nefl:'atlantic', irl:'atlantic', sefl:'atlantic', spz:'atlantic', southedisto:'state', northedisto:'state', ocean:'state', internal:'state', northhatteras:'state', southhatteras:'state', coastal:'state', chesapeakebay:'state', savannah:'state' };
+const ZONE_PARENT = { inland:'state', chesapeake:'state', hudson:'state', nybight:'state', lisound:'state', delbay:'state', ibsp:'state', delriver:'state', delriverupper:'delriver', ctriver:'state', tampa:'gulf', sarasota:'gulf', charlotte:'gulf', swfl:'gulf', bigbend:'gulf', panhandle:'gulf', nefl:'atlantic', irl:'atlantic', sefl:'atlantic', spz:'atlantic', southedisto:'state', northedisto:'state', ocean:'state', internal:'state', northhatteras:'state', southhatteras:'state', coastal:'state', chesapeakebay:'state', savannah:'state' };
 function pickZone(sp, want){
   const zs = sp.zones;
   return zs.find(z=>z.zone===want) || (want && zs.find(z=>ZONE_PARENT[z.zone]===want)) || (want && ZONE_PARENT[want] && zs.find(z=>z.zone===ZONE_PARENT[want])) || zs.find(z=>z.zone==='state') || zs[0];

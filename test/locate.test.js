@@ -31,7 +31,7 @@ test('routes: /api/regs?state, /api/states, /api/locate', async () => {
   for (const [code, n, zone] of [['NC', 'ocean'], ['SC', 'savannah'], ['GA', 'savannah'], ['FL', 'tampa']].map(([c, z]) => [c, 0, z])) { const r = await request(app).get('/api/regs?state=' + code); assert.equal(r.status, 200); assert.ok(r.body.zoneLabels[zone], `${code} zone ${zone}`); assert.ok(r.body.species.length > 15); }
   const fl = (await request(app).get('/api/regs?state=FL')).body; const rd = fl.species.find((s) => s.name === 'Red Drum'); assert.equal(rd.zones.length, 9); assert.equal(rd.deId, 150); assert.ok(fl.species.find((s) => s.name === 'Snook'));
   assert.equal((await request(app).get('/api/regs?state=XX')).status, 404);
-  const st = await request(app).get('/api/states'); assert.ok(st.body.states.find((s) => s.code === 'VA').live); assert.ok(!st.body.states.find((s) => s.code === 'NJ').live);
+  const st = await request(app).get('/api/states'); assert.ok(st.body.states.find((s) => s.code === 'VA').live); assert.ok(st.body.states.find((s) => s.code === 'NJ').live); assert.ok(st.body.states.every((s) => s.live));
   const loc = await request(app).get('/api/locate?lat=38.7&lon=-74.7'); assert.equal(loc.body.state, 'DE'); assert.equal(loc.body.offshore, true);
   assert.equal((await request(app).get('/api/locate?lat=x')).status, 400);
 });

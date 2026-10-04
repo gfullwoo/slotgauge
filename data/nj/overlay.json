@@ -1,0 +1,1117 @@
+{
+ "1": {
+  "name": "American Eel",
+  "reviewed": "2026-10-04",
+  "rawHash": "9721feb92b34",
+  "aliases": [
+   "eel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 25,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "2": {
+  "name": "Black Drum",
+  "reviewed": "2026-10-04",
+  "rawHash": "fedc0022ddf1",
+  "aliases": [
+   "drum"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "3": {
+  "name": "Black Sea Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "8127a95f134a",
+  "aliases": [
+   "sea bass",
+   "bsb"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": [
+     [
+      "05-15",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12.5,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "10 (May 15 \u2013 Jun 21); 1 (Jun 22 \u2013 Sep 22); 10 (Sep 23 \u2013 Oct 31); 15 (Nov 1 \u2013 Dec 31)",
+    "closed": false,
+    "sizeNote": "12.5 in, not including tail filament"
+   }
+  ],
+  "notes": []
+ },
+ "4": {
+  "name": "Bluefish",
+  "reviewed": "2026-10-04",
+  "rawHash": "f4391f67c903",
+  "aliases": [
+   "blues",
+   "snapper blues"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 5,
+    "bagNote": "5 per person (7 on party/charter boats)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "5": {
+  "name": "Cobia",
+  "reviewed": "2026-10-04",
+  "rawHash": "ec8deba7a989",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 43,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "1 per person, 2 per vessel",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "6": {
+  "name": "Atlantic Cod",
+  "reviewed": "2026-10-04",
+  "rawHash": "d7ed4c49a14b",
+  "aliases": [
+   "cod"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": [
+     [
+      "01-01",
+      "05-31"
+     ],
+     [
+      "09-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 23,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "7": {
+  "name": "Haddock",
+  "reviewed": "2026-10-04",
+  "rawHash": "8b1670df293d",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "8": {
+  "name": "Pollock",
+  "reviewed": "2026-10-04",
+  "rawHash": "7922ac3534ba",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 19,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "9": {
+  "name": "Red Drum",
+  "reviewed": "2026-10-04",
+  "rawHash": "b89753b94712",
+  "aliases": [
+   "redfish",
+   "puppy drum",
+   "channel bass",
+   "red"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 18,
+      "max": 27
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "18 in up to (not including) 27 in"
+   }
+  ],
+  "notes": []
+ },
+ "10": {
+  "name": "River Herring",
+  "reviewed": "2026-10-04",
+  "rawHash": "b25d52ceb5ec",
+  "aliases": [
+   "alewife",
+   "blueback herring",
+   "herring"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": [],
+  "photoOf": 71
+ },
+ "11": {
+  "name": "Scup",
+  "reviewed": "2026-10-04",
+  "rawHash": "729b4ce5e41c",
+  "aliases": [
+   "porgy"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": [
+     [
+      "01-01",
+      "06-30"
+     ],
+     [
+      "09-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 10,
+      "max": null
+     }
+    ],
+    "bag": 30,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "12": {
+  "name": "Hickory Shad",
+  "reviewed": "2026-10-04",
+  "rawHash": "2c083ad67148",
+  "aliases": [
+   "shad"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": 6,
+    "bagNote": "6 shad combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "13": {
+  "name": "American Shad",
+  "reviewed": "2026-10-04",
+  "rawHash": "e39d4de10fae",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "delriver",
+    "label": "Delaware River & tributaries",
+    "seasons": null,
+    "size": [],
+    "bag": 2,
+    "bagNote": "max 2 American shad within the 6-shad limit",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "state",
+    "label": "All other marine waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "15": {
+  "name": "Spanish Mackerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "738776b1ec1a",
+  "aliases": [
+   "spanish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 14,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "16": {
+  "name": "Striped Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "e66b88d99391",
+  "aliases": [
+   "striper",
+   "stripers",
+   "rockfish",
+   "rock",
+   "linesider",
+   "hybrid striped bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "ocean",
+    "label": "Atlantic Ocean (0\u20133 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   },
+   {
+    "zone": "state",
+    "label": "All other marine waters (bays, rivers)",
+    "seasons": [
+     [
+      "03-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   },
+   {
+    "zone": "delriver",
+    "label": "Delaware River, Calhoun St. Bridge to Salem River",
+    "seasons": [
+     [
+      "03-01",
+      "03-31"
+     ],
+     [
+      "06-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   },
+   {
+    "zone": "delriverupper",
+    "label": "Delaware River above Calhoun St. Bridge",
+    "seasons": [
+     [
+      "03-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   },
+   {
+    "zone": "federal",
+    "label": "Federal waters (3\u2013200 nm)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "",
+    "closed": true,
+    "sizeNote": ""
+   },
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (landlocked)",
+    "seasons": [
+     [
+      "03-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 28,
+      "max": 31
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "28 to 31 inch slot"
+   }
+  ],
+  "notes": [
+   "Striped Bass Bonus Program: one 24 in to under 28 in fish per permit, May 15 \u2013 Dec 31.",
+   "Gaffing prohibited. Non-offset circle hooks required with bait. Hybrids count as striped bass.",
+   "Freshwater striped bass: 1 fish, 28\u201331 in, March 1 \u2013 Dec 31, circle hooks with bait."
+  ]
+ },
+ "21": {
+  "name": "Summer Flounder",
+  "reviewed": "2026-10-04",
+  "rawHash": "dcd6fb46fee2",
+  "aliases": [
+   "fluke",
+   "flounder"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "All waters except Delaware Bay and IBSP",
+    "seasons": [
+     [
+      "05-04",
+      "09-25"
+     ]
+    ],
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "delbay",
+    "label": "Delaware Bay & tributaries",
+    "seasons": [
+     [
+      "05-04",
+      "09-25"
+     ]
+    ],
+    "size": [
+     {
+      "min": 17,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "ibsp",
+    "label": "Island Beach State Park, shore fishing",
+    "seasons": [
+     [
+      "05-04",
+      "09-25"
+     ]
+    ],
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "One legal fluke per day may be filleted for bait; keep the rack intact."
+  ]
+ },
+ "24": {
+  "name": "Tautog",
+  "reviewed": "2026-10-04",
+  "rawHash": "1cebf7591582",
+  "aliases": [
+   "tog",
+   "blackfish"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": [
+     [
+      "01-01",
+      "02-28"
+     ],
+     [
+      "04-01",
+      "04-30"
+     ],
+     [
+      "08-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 4,
+    "bagNote": "4 (Jan\u2013Feb, April); 1 (Aug 1 \u2013 Nov 15); 5 (Nov 16 \u2013 Dec 31)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "25": {
+  "name": "Weakfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "fc36e0bce336",
+  "aliases": [
+   "gray trout",
+   "grey trout",
+   "sea trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 13,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "26": {
+  "name": "Winter Flounder",
+  "reviewed": "2026-10-04",
+  "rawHash": "a90b0e86336a",
+  "aliases": [
+   "blackback"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": [
+     [
+      "03-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "28": {
+  "name": "American Lobster",
+  "reviewed": "2026-10-04",
+  "rawHash": "075c610e9696",
+  "aliases": [
+   "lobster"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 3.375,
+      "max": 5.25
+     }
+    ],
+    "bag": 6,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "3 3/8 to 5 1/4 inch carapace"
+   }
+  ],
+  "notes": [
+   "Closed LMA 4 Apr 30 \u2013 May 31 and LMA 5 Feb 1 \u2013 Mar 31. No egg-bearing or v-notched females."
+  ],
+  "photoOf": 67
+ },
+ "29": {
+  "name": "Blue Crab",
+  "reviewed": "2026-10-04",
+  "rawHash": "982a50824430",
+  "aliases": [
+   "crab",
+   "crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 4.5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "one bushel per person per day",
+    "closed": false,
+    "sizeNote": "hard 4.5 in, soft 3.5 in, peeler 3 in (point to point)"
+   }
+  ],
+  "notes": []
+ },
+ "30": {
+  "name": "Hard Clam",
+  "reviewed": "2026-10-04",
+  "rawHash": "062d346a6629",
+  "aliases": [
+   "clam",
+   "clams"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NJ marine waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 1.5,
+      "max": null
+     }
+    ],
+    "bag": 150,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Shellfish license required; no Sunday harvest."
+  ]
+ },
+ "31": {
+  "name": "Atlantic Sturgeon",
+  "reviewed": "2026-10-04",
+  "rawHash": "24b9b6440c36",
+  "aliases": [
+   "sturgeon"
+  ],
+  "status": "closed",
+  "zones": [],
+  "notes": []
+ },
+ "32": {
+  "name": "Largemouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "f68f1e5bac2e",
+  "aliases": [
+   "largemouth",
+   "bass"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": [
+     [
+      "06-16",
+      "04-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 largemouth + smallmouth combined (Lunker Bass Lakes: 15 in, 3)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "33": {
+  "name": "Smallmouth Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "16990b0c6660",
+  "aliases": [
+   "smallmouth",
+   "smallie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": [
+     [
+      "06-16",
+      "04-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "5 largemouth + smallmouth combined",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "34": {
+  "name": "Northern Pike",
+  "reviewed": "2026-10-04",
+  "rawHash": "b061df11ecb9",
+  "aliases": [
+   "pike"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 24,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "35": {
+  "name": "Muskellunge",
+  "reviewed": "2026-10-04",
+  "rawHash": "c116982b9d75",
+  "aliases": [
+   "musky",
+   "muskie",
+   "tiger musky",
+   "tiger muskellunge"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 40,
+      "max": null
+     }
+    ],
+    "bag": 1,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": "40 in (44 in on Trophy Muskie Waters)"
+   }
+  ],
+  "notes": []
+ },
+ "36": {
+  "name": "Chain Pickerel",
+  "reviewed": "2026-10-04",
+  "rawHash": "591bce2629da",
+  "aliases": [
+   "pickerel",
+   "redfin pickerel"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 15,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "37": {
+  "name": "Walleye",
+  "reviewed": "2026-10-04",
+  "rawHash": "b26a3a98b4fc",
+  "aliases": [],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": [
+     [
+      "05-01",
+      "02-28"
+     ]
+    ],
+    "size": [
+     {
+      "min": 18,
+      "max": null
+     }
+    ],
+    "bag": 3,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "38": {
+  "name": "Hybrid Striped Bass",
+  "reviewed": "2026-10-04",
+  "rawHash": "e119027fe910",
+  "aliases": [
+   "hybrid",
+   "wiper"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 16,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 54
+ },
+ "39": {
+  "name": "Channel Catfish",
+  "reviewed": "2026-10-04",
+  "rawHash": "eee19ffe8488",
+  "aliases": [
+   "catfish",
+   "channel cat"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 12,
+      "max": null
+     }
+    ],
+    "bag": 5,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "40": {
+  "name": "Crappie",
+  "reviewed": "2026-10-04",
+  "rawHash": "bf30e6da276e",
+  "aliases": [
+   "calico bass",
+   "black crappie",
+   "white crappie"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 8,
+      "max": null
+     }
+    ],
+    "bag": 10,
+    "bagNote": "",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ },
+ "41": {
+  "name": "Sunfish and Perch",
+  "reviewed": "2026-10-04",
+  "rawHash": "3caf1c6be86a",
+  "aliases": [
+   "bluegill",
+   "pumpkinseed",
+   "yellow perch",
+   "white perch",
+   "rock bass",
+   "bullhead",
+   "carp",
+   "sunfish",
+   "perch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [],
+    "bag": 25,
+    "bagNote": "25 combined (all panfish and listed species)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [],
+  "photoOf": 24
+ },
+ "42": {
+  "name": "Trout",
+  "reviewed": "2026-10-04",
+  "rawHash": "f769e06ab43e",
+  "aliases": [
+   "brook trout",
+   "brown trout",
+   "rainbow trout"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "inland",
+    "label": "New Jersey fresh waters (statewide; special waters differ)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 9,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per day; 6 per day Apr 11 (8 a.m.) \u2013 May 31",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Stocked rivers and streams are closed Mar 23 \u2013 Apr 11 (8 a.m.). Brook trout in the Conservation Zone must be released."
+  ]
+ }
+}

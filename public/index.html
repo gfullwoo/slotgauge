@@ -101,7 +101,6 @@ section.recent h2{font-size:18px;color:var(--ink-2);margin-bottom:8px}
 .rlist button{all:unset;cursor:pointer;display:flex;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13.5px}
 .rlist .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;min-width:64px}
 .rlist .tag.keep{color:var(--keep)} .rlist .tag.release,.rlist .tag.kill{color:var(--release)} .rlist .tag.closed{color:var(--closed)} .rlist .tag.check{color:var(--warn)}
-.seo{margin-top:36px;padding-top:18px;border-top:1px solid var(--line)}.seo h2{font-size:22px}.seo p{font-size:13.5px;color:var(--ink-2);margin:6px 0 10px}.seo-links{display:flex;flex-wrap:wrap;gap:6px}.seo-links a{font-size:12.5px;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--ink);text-decoration:none}
 footer{margin-top:28px;font-size:12px;color:var(--ink-3);line-height:1.5}
 footer a{color:var(--accent);text-decoration:none}
 .sr{position:absolute;left:-9999px}
@@ -180,10 +179,8 @@ header .right{display:flex;align-items:center;gap:8px}
 /* ---- hero banner: last fish searched ---- */
 .hero{position:relative;height:150px;border-radius:16px;overflow:hidden;background:var(--surface-2);border:1px solid var(--line);box-shadow:var(--shadow);margin:0 0 12px}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.08);opacity:0;transition:opacity .45s ease}
-.hero.illus{background:#fff}.hero.illus img{object-fit:contain;transform:none;padding:14px 18px 34px}
 .hero img.in{opacity:1}
 .hero .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 10px;background:linear-gradient(to top,rgba(13,23,28,.82),rgba(13,23,28,0));color:#fff;display:flex;align-items:baseline;gap:8px}
-.hero.illus .cap{background:linear-gradient(to top,rgba(13,23,28,.7),rgba(13,23,28,0))}
 .hero .cap b{font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:700;letter-spacing:.01em;line-height:1}
 .hero .cap span{font-size:12px;opacity:.85}
 @media (min-width:600px){.hero{height:190px}}
@@ -220,7 +217,7 @@ html,body{margin:0}
 
 <div class="wrap">
 <header>
-  <h1><img src="/icon.svg" alt="" width="28" height="28" style="vertical-align:-4px;margin-right:8px">Slot<span style="color:var(--accent)">Gauge</span><small id="hdrState">Delaware</small></h1>
+  <h1><img src="/icon.svg" alt="" width="28" height="28" style="vertical-align:-4px;margin-right:8px">Slot<span style="color:var(--accent)">Gauge</span><small>Delaware</small></h1>
   <div class="right">
     <div class="tabs" role="tablist" id="tabs" hidden>
       <button role="tab" aria-selected="true" data-tab="check">Check</button>
@@ -273,27 +270,8 @@ html,body{margin:0}
   <div id="galBody"><div class="empty">Loading…</div></div>
 </section>
 
-<section class="seo" id="seo">
-  <h2 class="disp">Fishing regulations, in plain English</h2>
-  <p>SlotGauge covers every species Delaware (DNREC) and Virginia (VMRC) regulate: size limits, slot limits, seasons and daily limits, rechecked against the official state pages automatically. More states are on the way. Browse the full tables or jump to the fish people look up most.</p>
-  <div class="seo-links">
-    <a href="/delaware/">All Delaware regulations</a>
-    <a href="/virginia/">All Virginia regulations</a>
-    <a href="/delaware/saltwater/">Saltwater size limits</a>
-    <a href="/delaware/freshwater/">Freshwater size limits</a>
-    <a href="/delaware/striped-bass/">Striped bass</a>
-    <a href="/delaware/summer-flounder/">Summer flounder (fluke)</a>
-    <a href="/delaware/black-sea-bass/">Black sea bass</a>
-    <a href="/delaware/tautog/">Tautog</a>
-    <a href="/delaware/bluefish/">Bluefish</a>
-    <a href="/delaware/weakfish/">Weakfish</a>
-    <a href="/delaware/blue-crab/">Blue crab</a>
-    <a href="/delaware/largemouth-bass/">Largemouth bass</a>
-  </div>
-</section>
-
 <footer>
-  <span id="offline" hidden>Offline - using the last saved regulations. </span><span id="footSrc">Regulations from the <a href="https://fishspecies.dnrec.delaware.gov/" target="_blank" rel="noopener">DNREC Fish Facts</a> species pages, captured <span id="scraped"></span>. Rules are simplified for quick checks; the source page and the current Delaware Fishing Guide govern. Not legal advice. Gear, license, and area restrictions may also apply.</span>
+  <span id="offline" hidden>Offline - using the last saved regulations. </span>Regulations from the <a href="https://fishspecies.dnrec.delaware.gov/" target="_blank" rel="noopener">DNREC Fish Facts</a> species pages, captured <span id="scraped"></span>. Rules are simplified for quick checks; the source page and the current Delaware Fishing Guide govern. Not legal advice. Gear, license, and area restrictions may also apply.
 </footer>
 </div>
 
@@ -304,27 +282,9 @@ html,body{margin:0}
 </div>
 
 <script>
-const STATE_KEY = 'sg.state', STATE_MANUAL = 'sg.stateManual';
-let LOC = { status: 'pending' };   // filled by resolveState; read by initApp for the location chip
-function geoPosition(timeout){ return new Promise(res => { if (!navigator.geolocation) return res(null); navigator.geolocation.getCurrentPosition(p => res(p.coords), () => res(null), { timeout, maximumAge: 600000 }); }); }
-async function resolveState(){
-  let manual = null, last = null; try { manual = localStorage.getItem(STATE_MANUAL); last = localStorage.getItem(STATE_KEY); } catch(e){}
-  const coords = await geoPosition(7000);
-  if (coords) {
-    try {
-      const r = await fetch(`/api/locate?lat=${coords.latitude.toFixed(4)}&lon=${coords.longitude.toFixed(4)}`);
-      if (r.ok) { const j = await r.json(); LOC = { status: 'ok', ...j, lat: coords.latitude, lon: coords.longitude }; }
-      else LOC = { status: 'error' };
-    } catch(e) { LOC = { status: 'error' }; }
-  } else LOC = { status: 'off' };
-  const st = manual || (LOC.status === 'ok' && LOC.state) || last || 'DE';
-  try { localStorage.setItem(STATE_KEY, st); } catch(e){}
-  return st;
-}
 async function loadRegs(){
-  const st = await resolveState();
-  try { const r = await fetch('/api/regs?state=' + st); if (!r.ok) throw new Error(r.status); const j = await r.json(); try{ localStorage.setItem('sg.regs.' + st, JSON.stringify(j)); }catch(e){} return j; }
-  catch(e){ try { const c = localStorage.getItem('sg.regs.' + st) || localStorage.getItem('sg.regs'); if (c) { document.querySelector('#offline').hidden=false; return JSON.parse(c); } } catch(_){} throw e; }
+  try { const r = await fetch('/api/regs'); if (!r.ok) throw new Error(r.status); const j = await r.json(); try{ localStorage.setItem('sg.regs', JSON.stringify(j)); }catch(e){} return j; }
+  catch(e){ try { const c = localStorage.getItem('sg.regs'); if (c) { document.querySelector('#offline').hidden=false; return JSON.parse(c); } } catch(_){} throw e; }
 }
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
 // ---------- install prompt (PWA) ----------
@@ -359,32 +319,20 @@ function initApp(D){
 const SP = D.species;
 const $ = s => document.querySelector(s);
 const MONTHS = ['january','february','march','april','may','june','july','august','september','october','november','december'];
-const ZONES = D.zoneLabels || { state:'State waters' };
-const STATE = D.state || 'DE', STATE_NAME = D.name || 'Delaware';
+const ZONES = {
+  state:'State waters', federal:'Federal waters (3–200 mi)', delriver:'Delaware River / Bay', nanticoke:'Nanticoke River',
+  becks:'Becks Pond', tidal:'Tidal waters', nontidal:'Non-tidal waters', streams:'Trout stream', ponds:'Pond / lake', flyonly:'Fly-fishing-only water', vessel:'For-hire vessel'
+};
 const ZONE_WORDS = [
   ['federal',/\b(federal|offshore|canyon|canyons|\d\d\+?\s*miles?\s*(out|offshore)|eez|deep ?drop)\b/],
   ['nanticoke',/\bnanticoke\b/], ['becks',/\bbecks?\s*pond\b/],
   ['delriver',/\b(delaware (river|bay)|the bay|the river|c\s*&\s*d canal|tributar|broadkill|mispillion|murderkill|st\.? jones|leipsic|smyrna river|appoquinimink|christina|brandywine)\b/],
   ['flyonly',/\bfly[- ]?(fishing|only)\b/], ['streams',/\b(stream|creek|brook|run)\b/], ['ponds',/\b(pond|lake|reservoir)\b/],
   ['nontidal',/\bnon[- ]?tidal\b/], ['tidal',/\btidal\b/],
-  ['vessel',/\b(charter|headboat|head boat|party boat|for[- ]hire)\b/],
-  ['chesapeakebay',/\b(chesapeake|the bay|bay side|bayside|tributar|james river|york river|rappahannock|potomac)\b/],
-  ['coastal',/\b(ocean|oceanside|ocean side|seaside|coast|coastal|surf|inlet|cbbt|virginia beach)\b/],
-  ['internal',/\b(sound|sounds|river|creek|inlet|the bay|bay|inside|inshore|internal|pamlico|albemarle|neuse|cape fear river)\b/],
-  ['ocean',/\b(ocean|surf|beach|pier|offshore|outside)\b/],
-  ['northhatteras',/\bnorth of (cape )?hatteras\b|\b(obx|outer banks|nags head|oregon inlet|kitty hawk)\b/],
-  ['southhatteras',/\bsouth of (cape )?hatteras\b|\b(wilmington|morehead|beaufort|wrightsville|carolina beach|topsail|cape lookout)\b/],
-  ['savannah',/\bsavannah\b/], ['southedisto',/\b(edisto|beaufort|hilton head|port royal|st\.? helena)\b/], ['northedisto',/\b(charleston|myrtle|georgetown|murrells|north inlet)\b/],
-  ['panhandle',/\b(panhandle|pensacola|destin|panama city|apalachicola|st\.? joe|choctawhatchee)\b/], ['bigbend',/\b(big bend|cedar key|crystal river|homosassa|steinhatchee|suwannee)\b/],
-  ['tampa',/\b(tampa|clearwater|st\.? pete|anna maria)\b/], ['sarasota',/\b(sarasota|venice|bradenton)\b/], ['charlotte',/\b(charlotte harbor|boca grande|punta gorda|fort myers|pine island|sanibel)\b/],
-  ['swfl',/\b(naples|marco|everglades|ten thousand|keys|key west|marathon|islamorada|key largo|flamingo)\b/], ['sefl',/\b(miami|biscayne|fort lauderdale|boca|palm beach|jupiter|stuart)\b/],
-  ['irl',/\b(indian river|mosquito lagoon|banana river|sebastian|titusville|cocoa|vero|fort pierce|melbourne)\b/], ['nefl',/\b(jacksonville|jax|st\.? augustine|daytona|ponce|new smyrna|fernandina|amelia)\b/],
-  ['gulf',/\b(gulf|tampa|clearwater|st\.? pete|naples|fort myers|sarasota|pensacola|destin|panama city|apalachicola|cedar key|crystal river|homosassa|keys|key west|marathon)\b/],
-  ['atlantic',/\b(atlantic|jacksonville|jax|st\.? augustine|daytona|cocoa|sebastian|stuart|jupiter|palm beach|boca|fort lauderdale|miami|biscayne|mosquito lagoon|ponce)\b/],
-].filter(([z]) => ZONES[z]);
-const ORDER = ['state','federal','delriver','nanticoke','becks','tidal','nontidal','streams','ponds','flyonly','vessel','coastal','chesapeakebay'].filter(z => ZONES[z]);
-for (const z of Object.keys(ZONES)) if (!ORDER.includes(z)) ORDER.push(z);
-let ctxZone = ORDER.includes('state') ? 'state' : ORDER[0], geo = null;
+  ['vessel',/\b(charter|headboat|head boat|party boat|for[- ]hire)\b/]
+];
+const ORDER = ['state','federal','delriver','nanticoke','becks','tidal','nontidal','streams','ponds','flyonly','vessel'];
+let ctxZone = 'state', geo = null;
 
 // ---------- species index ----------
 const index = [];
@@ -489,11 +437,9 @@ function sizeText(rules, zone){
   return rules.map(r => r.min!=null && r.max!=null ? `${fmtIn(r.min)}–${fmtIn(r.max)} in slot` : r.min!=null ? `${fmtIn(r.min)} in minimum` : `under ${fmtIn(r.max)} in`).join(' or ');
 }
 const fmtIn = n => Number.isInteger(n) ? String(n) : String(n).replace(/\.?0+$/,'');
-// Regional zones roll up to a coast so "in Tampa Bay" still resolves for a species that only has Gulf/Atlantic rules, and vice versa.
-const ZONE_PARENT = { tampa:'gulf', sarasota:'gulf', charlotte:'gulf', swfl:'gulf', bigbend:'gulf', panhandle:'gulf', nefl:'atlantic', irl:'atlantic', sefl:'atlantic', spz:'atlantic', southedisto:'state', northedisto:'state', ocean:'state', internal:'state', northhatteras:'state', southhatteras:'state', coastal:'state', chesapeakebay:'state', savannah:'state' };
 function pickZone(sp, want){
   const zs = sp.zones;
-  return zs.find(z=>z.zone===want) || (want && zs.find(z=>ZONE_PARENT[z.zone]===want)) || (want && ZONE_PARENT[want] && zs.find(z=>z.zone===ZONE_PARENT[want])) || zs.find(z=>z.zone==='state') || zs[0];
+  return zs.find(z=>z.zone===want) || zs.find(z=>z.zone==='state') || zs[0];
 }
 
 // ---------- evaluate ----------
@@ -543,7 +489,7 @@ function render(r, quiet){
   $('#out').innerHTML = `
   <article class="verdict ${r.verdict}" aria-live="polite">
     <div class="word">${r.word}</div>
-    <div class="fish">${escapeHtml(sp.name)}${sp.family?` <em>· ${escapeHtml(sp.family)}</em>`:''}</div>
+    <div class="fish">${escapeHtml(sp.name)} <em>· ${sp.family}</em></div>
     <div class="why">${r.reasons.map(escapeHtml).join(' ')}</div>
     <div class="facts">
       <div class="fact"><div class="k">Season</div><div class="v small">${escapeHtml(r.season.text)}</div></div>
@@ -553,9 +499,9 @@ function render(r, quiet){
     ${ruler(r)}
     ${zoneInfo?`<p class="hint" style="margin-top:10px">${zoneInfo}</p>`:''}
     ${notes.length?`<ul class="notes">${notes.map(n=>`<li>${escapeHtml(n)}</li>`).join('')}</ul>`:''}
-    <details class="rawtxt"><summary>Exact ${escapeHtml(D.agency||'official')} wording</summary>
+    <details class="rawtxt"><summary>Exact DNREC wording</summary>
       <dl><dt>Season</dt><dd>${escapeHtml(sp.raw.season)}</dd><dt>Size</dt><dd>${escapeHtml(sp.raw.size)}</dd><dt>Limit</dt><dd>${escapeHtml(sp.raw.limit)}</dd></dl></details>
-    <div class="src"><span>Checked for ${r.date.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})}</span><a href="${sp.url}" target="_blank" rel="noopener">${escapeHtml(D.agency||'Official')} source page ↗</a></div>
+    <div class="src"><span>Checked for ${r.date.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})}</span><a href="${sp.url}" target="_blank" rel="noopener">DNREC source page ↗</a></div>
   </article>`;
   if (!quiet) heroForSpecies(sp, r.word + ' · ' + r.date.toLocaleDateString(undefined,{month:'short',day:'numeric'}));
   if (!quiet) $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
@@ -565,19 +511,18 @@ function renderPicker(title, msg, list, extra){
 }
 
 // ---------- hero banner: last fish searched ----------
-const SPECIES_IMG = id => `/img/species/${id}.jpg`;
+const SPECIES_IMG = id => `https://fishspecies.dnrec.delaware.gov/imageDB.ashx?id=${id}&ss=2`;
 function setHero({src, fallback, name, sub}){
   const h=$('#hero'), img=$('#heroImg'); if (!src) return;
-  const show=()=>{ h.hidden=false; h.classList.toggle('illus', /^\/img\/species\//.test(img.getAttribute('src')||'')); $('#heroName').textContent=name||''; $('#heroSub').textContent=sub||''; requestAnimationFrame(()=>img.classList.add('in')); };
+  const show=()=>{ h.hidden=false; $('#heroName').textContent=name||''; $('#heroSub').textContent=sub||''; requestAnimationFrame(()=>img.classList.add('in')); };
   img.classList.remove('in');
   img.onload=show;
   img.onerror=()=>{ if (fallback && img.src!==fallback) { img.src=fallback; } else h.hidden=true; };
   img.src=src;
   try { localStorage.setItem('sg.hero', JSON.stringify({src, fallback, name, sub})); } catch(e){}
 }
-function heroForSpecies(sp, sub){ if (!sp.photo) return; setHero({src:sp.photo, name:sp.name, sub: sub || 'Last checked'}); }
-const fixImg = u => { const m = /imageDB\.ashx\?id=(\d+)/.exec(u||''); return m ? SPECIES_IMG(+m[1]) : u; };
-try { const h=JSON.parse(localStorage.getItem('sg.hero')||'null'); if (h && h.src) { h.src=fixImg(h.src); h.fallback=fixImg(h.fallback); setHero(h); } else { const d=SP.find(s=>/^striped bass$/i.test(s.name)&&s.photo)||SP.find(s=>s.photo); if (d) setHero({src:d.photo, name:d.name, sub:'Try a check to see your fish here'}); } } catch(e){}
+function heroForSpecies(sp, sub){ setHero({src:SPECIES_IMG(sp.id), name:sp.name, sub: sub || 'Last checked'}); }
+try { const h=JSON.parse(localStorage.getItem('sg.hero')||'null'); if (h && h.src) setHero(h); } catch(e){}
 
 // ---------- run ----------
 let pending = null; // {text, q}
@@ -585,10 +530,8 @@ function run(text, forcedId, quiet){
   text = text.trim(); if (!text) return;
   const q = { length: parseLength(text), count: parseCount(text), date: parseDate(text, new Date()), zone: parseZone(text) };
   let sp = null;
-  if (forcedId) {
-    sp = SP.find(s=>s.id===forcedId) || SP.find(s=>s.deId===forcedId) || null;
-    if (!sp) { pending={text}; renderPicker('Which fish?', `That species is not in the ${STATE_NAME} rules. Pick the closest match.`, SP.slice().sort((a,b)=>a.name.localeCompare(b.name)).slice(0,40)); return; }
-  } else {
+  if (forcedId) sp = SP.find(s=>s.id===forcedId);
+  else {
     const f = findSpecies(text);
     let hits = collapseDupes(f.hits, text);
     if (hits.length===1) sp = hits[0];
@@ -622,51 +565,31 @@ drawRecent(loadRecent());
 
 // ---------- examples ----------
 const EX = ['30 inch striper in the bay','14 inch flounder','my 5th sea bass, 13 inches','tog 15 inches','bluefish, 20 in','red drum 24 inches offshore','16 in largemouth at Becks Pond','sandbar shark 60 inches','blue crab 4.5 inches'];
-const EX_MORE = ['24 inch red drum','speck 18 inches','cobia 40 inches','sheepshead 15 in','spanish mackerel 14 inches','king mackerel 26 in','black drum 20 inches','weakfish 13 in'];
-const exOk = t => { try { const f = findSpecies(t); return collapseDupes(f.hits, t).length === 1; } catch(e) { return false; } };
-const EXS = [...EX, ...EX_MORE].filter(exOk).slice(0, 9);
-$('#examples').innerHTML = EXS.map(t=>`<button class="chip" data-ex="${t}">${t}</button>`).join('');
+$('#examples').innerHTML = EX.map(t=>`<button class="chip" data-ex="${t}">${t}</button>`).join('');
 $('#examples').addEventListener('click', e=>{ const b=e.target.closest('[data-ex]'); if (b) { $('#q').value=b.dataset.ex; run(b.dataset.ex); } });
 
 // ---------- zone chip ----------
-function setZone(z){ if (!ZONES[z]) z = ORDER[0]; ctxZone=z; $('#zoneTxt').textContent=ZONES[z]; $('#zoneChip').classList.toggle('on', z!==ORDER[0]); }
-setZone(ctxZone);
+function setZone(z){ ctxZone=z; $('#zoneTxt').textContent=ZONES[z]; $('#zoneChip').classList.toggle('on', z!=='state'); }
 $('#zoneChip').addEventListener('click', ()=>{ setZone(ORDER[(ORDER.indexOf(ctxZone)+1)%ORDER.length]); if (pending==null && $('#q').value.trim()) run($('#q').value); });
 $('#zoneChip').addEventListener('keydown', e=>{ if (e.key==='Enter'||e.key===' ') { e.preventDefault(); $('#zoneChip').click(); } });
 
-// ---------- location + state ----------
-let STATES = [];
-fetch('/api/states').then(r=>r.json()).then(j=>{ STATES = j.states; }).catch(()=>{});
-function drawLoc(){
+// ---------- location ----------
+const DE_POLY = [[-75.79,38.45],[-75.05,38.45],[-74.85,38.45],[-74.85,39.0],[-75.2,39.4],[-75.4,39.62],[-75.55,39.84],[-75.79,39.72]];
+function inPoly(lon,lat,poly){ let inside=false; for (let i=0,j=poly.length-1;i<poly.length;j=i++){ const [xi,yi]=poly[i],[xj,yj]=poly[j]; if (((yi>lat)!==(yj>lat)) && (lon < (xj-xi)*(lat-yi)/(yj-yi)+xi)) inside=!inside; } return inside; }
+function locate(){
   const chip=$('#locChip'), txt=$('#locTxt');
-  let manual = null; try { manual = localStorage.getItem(STATE_MANUAL); } catch(e){}
-  chip.classList.remove('ok');
-  if (manual) { txt.textContent = `${STATE_NAME} rules · chosen`; chip.classList.add('ok'); return; }
-  if (LOC.status === 'ok' && LOC.state === STATE) {
-    chip.classList.add('ok');
-    if (LOC.offshore) { txt.textContent = `Near ${STATE_NAME} · likely federal waters`; if (ZONES.federal) setZone('federal'); }
-    else txt.textContent = `${STATE_NAME} · from your location`;
-  }
-  else if (LOC.status === 'ok' && LOC.state) txt.textContent = `Located in ${LOC.name} · showing ${STATE_NAME}`;
-  else if (LOC.status === 'ok') txt.textContent = `${LOC.detected ? LOC.detected + ' not covered yet' : 'Far from covered waters'} · showing ${STATE_NAME}`;
-  else if (LOC.status === 'off') txt.textContent = `Location off · ${STATE_NAME} rules`;
-  else txt.textContent = `${STATE_NAME} rules`;
+  if (!navigator.geolocation) { txt.textContent='Location unavailable · Delaware rules'; return; }
+  navigator.geolocation.getCurrentPosition(p=>{
+    const {latitude:lat, longitude:lon} = p.coords; geo={lat,lon};
+    const inDE = inPoly(lon,lat,DE_POLY);
+    const offshore = lat<38.85 && lon > -75.02;   // rough: >3 nm east of the Delaware coast
+    if (inDE && offshore) { txt.textContent='Delaware · likely federal waters'; chip.classList.add('ok'); setZone('federal'); }
+    else if (inDE) { txt.textContent='Delaware waters'; chip.classList.add('ok'); }
+    else { txt.textContent='Outside Delaware · DE rules shown'; }
+  }, err=>{ txt.textContent='Location off · Delaware rules'; }, {timeout:8000, maximumAge:600000});
 }
-function pickState(){
-  const live = STATES.filter(s=>s.live);
-  const opts = live.map(s=>`<button class="chip${s.code===STATE?' on':''}" data-state="${s.code}">${escapeHtml(s.name)}<span style="color:var(--ink-3)">· ${s.species}</span></button>`).join('');
-  const auto = `<button class="chip" data-state="auto">Use my location</button>`;
-  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3><p>Rules and seasons differ by state. Pick where you're fishing; SlotGauge remembers it until you switch back to your location.</p><div class="list">${opts}${auto}</div><p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>`;
-  $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
-}
-document.addEventListener('click', e => {
-  const b = e.target.closest('[data-state]'); if (!b) return;
-  try { if (b.dataset.state === 'auto') { localStorage.removeItem(STATE_MANUAL); localStorage.removeItem(STATE_KEY); } else { localStorage.setItem(STATE_MANUAL, b.dataset.state); localStorage.setItem(STATE_KEY, b.dataset.state); } } catch(_){}
-  location.reload();
-});
-$('#locChip').addEventListener('click', pickState);
-$('#locChip').setAttribute('role','button'); $('#locChip').setAttribute('title','Change state');
-drawLoc();
+$('#locChip').addEventListener('click', locate);
+locate();
 
 // ---------- voice ----------
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -689,13 +612,11 @@ else {
 if (matchMedia('(max-width:480px)').matches) $('#q').placeholder='Your catch…';
 $('#today').textContent = new Date().toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric',year:'numeric'});
 $('#scraped').textContent = D.scraped;
-$('#hdrState').textContent = STATE_NAME;
-{ const src = $('#footSrc'); if (src && STATE !== 'DE') { src.innerHTML = `Regulations from the official <a href="${escapeHtml(D.source||'#')}" target="_blank" rel="noopener">${escapeHtml(STATE_NAME)} state source</a>, captured <span id="scraped">${escapeHtml(D.scraped||'')}</span>. Rules are simplified for quick checks; the state's current regulations govern. Not legal advice. Gear, license, and area restrictions may also apply.`; } }
 // open in a realistic state
 function showWelcome(){
   $('#out').innerHTML = `<section class="welcome" id="welcome">
     <h2 class="disp">Is it a keeper?</h2>
-    <p class="lede">Tell SlotGauge what you caught. It checks today's ${STATE_NAME} season, size, and daily limit and answers keep or release.</p>
+    <p class="lede">Tell SlotGauge what you caught. It checks today's Delaware season, size, and daily limit and answers keep or release.</p>
     <div class="ways">
       <button class="way" data-way="speak"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3" fill="currentColor" stroke="none"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><span class="t">Say it</span><span class="d">“Twenty-two inch striper in the bay”</span></button>
       <button class="way" data-way="photo" id="wayPhoto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="t">Snap it</span><span class="d" id="wayPhotoD">Take or upload a photo; it identifies the species</span></button>
@@ -715,9 +636,7 @@ document.addEventListener('click', e => {
   if (w.dataset.way === 'photo') { const c = $('#camBtn'); if (!c.hidden) c.click(); else { const a = $('#avatarBtn'); if (a && !$('#acct').hidden) a.click(); else $('#q').focus(); } }
 });
 showWelcome();
-// deep link from the regulation pages: /?q=Striped%20Bass
-try { const q0 = new URLSearchParams(location.search).get('q'); if (q0) { $('#q').value = q0; run(q0); } } catch(e){}
-window.SG = { SP, run, evaluate, render, escapeHtml, $, fmtIn, ZONES, STATE, STATE_NAME, showWelcome, setHero, SPECIES_IMG, findSp: id => SP.find(s=>s.id===id) || SP.find(s=>s.deId===id) || null, get zone(){ return ctxZone; } };
+window.SG = { SP, run, evaluate, render, escapeHtml, $, fmtIn, ZONES, showWelcome, setHero, SPECIES_IMG, get zone(){ return ctxZone; } };
 document.dispatchEvent(new Event('sg:ready'));
 }
 </script>

@@ -45,9 +45,8 @@ See below for additional requirements for private anglers and for-hire operators
  Snapper Grouper Aggregate Bag Limit
 The snapper grouper aggregate bag limit is an alternative management strategy that FWC will test during the 2026 season to reduce dead discards. Each angler will be allowed to harvest 10 reef fish within the snapper grouper aggregate bag limit. All fish, excluding red snapper, must follow current state and federal seasons, size limits, and vessel limits. Anglers will be required to stop bottom fishing for reef fish once the snapper grouper aggregate bag limit is reached. Anglers can continue to fish for other non-reef species such as dolphinfish, kingfish, or redfish. The aggregate bag limit is as follows:
 Only 1 fish can be a red snapper
-Only 1 fish can be a gag (Out of season), black, or scamp grouper
+Only 1 fish can be a black or scamp grouper
 Up to 2 fish can be a red, yellowfin, yellowmouth, coney, graysby, red hind, or rock hind grouper
-Only 1 fish can be a red porgy, blueline tilefish, or golden tilefish (Out of season)
 Only 1 fish can be a greater amberjack
 Up to 2 fish can be black seabass
 Up to 5 fish can be gray triggerfish
@@ -55,6 +54,51 @@ Up to 7 fish can be a schoolmaster, gray, lane, yellowtail, queen, silk, or blac
 Up to 5 fish can be a vermilion or mutton snapper
 Up to 2 fish can be a cubera snapper if each measures 30 inches or longer in total length
 Example: if a single angler harvests 1 red snapper, 1 black grouper, 2 vermilion snapper, 3 gray snapper, 2 black sea bass, and 1 gray triggerfish, they will have filled their 10 fish snapper grouper aggregate bag limit for the day. This angler is now required to stop bottom fishing for reef fish but may target other non-reef fish, such as wahoo, cobia, or dolphinfish. 
+ Snapper Grouper Aggregate Bag Limit Table
+ Common Name 
+ Species Name 
+ Per Person Limit 
+Snapper 
+Red snapper
+1 
+Snapper 
+Cubera snapper (min 30 in TL)
+2 
+Snapper 
+Mutton snapper
+Vermilion snapper
+5 
+Snapper 
+Blackfin snapper
+Gray snapper
+Lane snapper
+Queen snapper
+Schoolmaster snapper
+Silk snapper
+Yellowtail snapper
+7 
+Grouper 
+Black grouper
+Scamp grouper
+1 
+Grouper 
+Coney grouper
+Graysby grouper
+Red grouper
+Red hind grouper
+Rock hind grouper
+Yellowfin grouper
+Yellowmouth grouper
+2 
+Jack 
+Greater amberjack
+1 
+Sea Bass 
+Black sea bass
+2 
+Triggerfish 
+Gray triggerfish
+5 
  Helpful Videos
  Welcome Video
  How to use the FWC Reporting App

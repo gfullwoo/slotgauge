@@ -15,6 +15,7 @@
 
   async function init() {
     await ready();
+    window.SG.showView = showView;
     try { cfg = await fetch('/api/config').then((r) => r.json()); } catch (e) { return; }
     const canIdentify = !!cfg.features?.identify;
     const canSave = !!(cfg.features?.scans && cfg.firebase?.apiKey);
@@ -71,8 +72,10 @@
     const check = v === 'check';
     for (const id of ['#ctx', '.inputbox', '#examples', '#hint', '#scanCard', '#out', '#recentWrap', '#seo']) { const el = document.querySelector(id); if (el) el.hidden = !check || (id === '#recentWrap' && !el.querySelector('button')); }
     const hero = $('#hero'); if (hero) hero.hidden = !check || !$('#heroImg').classList.contains('in');
-    $('#galleryView').hidden = check;
-    if (!check) loadGallery(); else if (!$('#out').innerHTML.trim() && !$('#scanCard').innerHTML.trim()) window.SG.showWelcome();
+    $('#galleryView').hidden = v !== 'gallery';
+    const tv = $('#tideView'); if (tv) tv.hidden = v !== 'tides';
+    if (v === 'gallery') loadGallery(); else if (check && !$('#out').innerHTML.trim() && !$('#scanCard').innerHTML.trim()) window.SG.showWelcome();
+    if (v !== 'check') window.scrollTo(0, 0);
   }
 
   // ---------- photo -> identify ----------

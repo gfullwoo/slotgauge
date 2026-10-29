@@ -1,6 +1,6 @@
 // Minimal offline cache: app shell + last good copy of the regs.
-const SHELL = 'sg-shell-v2';
-const ASSETS = ['/', '/index.html', '/scans.js', '/manifest.webmanifest', '/icon.svg', '/icon-192.png'];
+const SHELL = 'sg-shell-v3';
+const ASSETS = ['/', '/index.html', '/scans.js', '/tides.js', '/manifest.webmanifest', '/icon.svg', '/icon-192.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(SHELL).then((c) => c.addAll(ASSETS))); self.skipWaiting(); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== SHELL).map((k) => caches.delete(k))))); self.clients.claim(); });
 self.addEventListener('fetch', (e) => {

@@ -9,6 +9,7 @@ import { buildAllRegs } from './src/regs.js';
 import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
 import { makeInfoLookup, loadSpeciesInfo } from './src/wiki.js';
+import { makeTides } from './src/tides.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
 
@@ -22,7 +23,7 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 
  *  identifier(jpegBuffer) -> identification result        (Claude vision in prod)
  *  store -> see src/scans.js                                (Firestore + GCS in prod)
  */
-export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test' } = {}) {
+export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test', tides = makeTides(), tidesRefresh = process.env.NODE_ENV !== 'test' } = {}) {
   const app = express();
   app.disable('x-powered-by');
   app.set('trust proxy', true);   // Cloud Run sits behind Google's load balancer; req.ip must be the client
@@ -208,6 +209,34 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
     }
     res.set('Cache-Control', 'public, max-age=604800, immutable').type(hit.type).send(hit.buf);
   });
+
+  // ---- tides (NOAA CO-OPS) ----
+  // /api/tides/stations?lat=&lon=            nearest stations to a point (default 8)
+  // /api/tides/stations?q=myrtle             name search
+  // /api/tides/stations?state=SC             every prediction station in a state
+  // /api/tides?station=8661070[&date=YYYY-MM-DD][&days=2]   highs/lows + 30-minute curve, station local time
+  app.get('/api/tides/stations', (req, res) => {
+    const { lat, lon, q, state } = req.query; const n = Math.min(50, Math.max(1, +req.query.n || 8));
+    res.set('Cache-Control', 'public, max-age=3600');
+    if (lat != null && lon != null) { const la = +lat, lo = +lon; if (!Number.isFinite(la) || !Number.isFinite(lo)) return res.status(400).json({ error: 'bad lat/lon' }); return res.json({ stations: tides.nearest(la, lo, n) }); }
+    if (q) return res.json({ stations: tides.search(q, n) });
+    if (state) return res.json({ stations: tides.byState(state) });
+    return res.status(400).json({ error: 'give lat&lon, q or state' });
+  });
+  app.get('/api/tides', async (req, res) => {
+    const st = tides.station(req.query.station); if (!st) return res.status(404).json({ error: 'unknown station' });
+    const date = /^\d{4}-\d{2}-\d{2}$/.test(req.query.date || '') ? req.query.date : undefined;
+    const days = Math.min(7, Math.max(1, +req.query.days || 2));
+    try {
+      const data = await tides.predictions(st.id, { date, days });
+      res.set('Cache-Control', 'public, max-age=1800');
+      res.json({ ...data, now: tides.phase(data) });
+    } catch (e) { res.status(502).json({ error: 'tide service unavailable', detail: String(e.message || e) }); }
+  });
+  if (tidesRefresh) { // keep the bundled station list current without a deploy
+    const tick = () => tides.refreshStations().catch(() => {});
+    setTimeout(tick, 30e3).unref?.(); setInterval(tick, 24 * 3600e3).unref?.();
+  }
 
   // ---- crawlable regulation pages (SEO): /<state>/, /<state>/<habitat>/, /<state>/<species>/ for every state with data ----
   const pagesByState = Object.fromEntries(Object.values(allRegs).map((r) => { const p = makePages(r); return [p.state.slug, p]; }));

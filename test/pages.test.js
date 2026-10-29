@@ -57,3 +57,19 @@ test('routes: state, hubs, species, redirects, sitemap, robots, verification', a
   const v = await request(app).get('/googleTEST123.html');
   assert.equal(v.status, 200); assert.equal(v.text, 'google-site-verification: googleTEST123.html');
 });
+
+test('species directory page lists every species with regulation and Wikipedia links', async () => {
+  const app = createApp({ wikiLive: false });
+  const srv = app.listen(0); const base = `http://127.0.0.1:${srv.address().port}`;
+  try {
+    const r = await fetch(`${base}/delaware/species/`); assert.equal(r.status, 200);
+    const t = await r.text();
+    assert.ok(t.includes('/delaware/striped-bass/')); assert.ok(t.includes('https://en.wikipedia.org/wiki/Striped_bass'));
+    assert.ok(t.includes('Spot_(fish)')); assert.ok(t.includes('fish species, A to Z'));
+    assert.equal((await fetch(`${base}/delaware/species`, { redirect: 'manual' })).status, 301);
+    const v = await (await fetch(`${base}/virginia/species/`)).text(); assert.ok(v.includes('/virginia/striped-bass/'));
+    const sp = await (await fetch(`${base}/delaware/tautog/`)).text();
+    assert.ok(sp.includes('About the tautog')); assert.ok(sp.includes('https://en.wikipedia.org/wiki/Tautog'));
+    const sm = await (await fetch(`${base}/sitemap.xml`)).text(); assert.ok(sm.includes('https://slotgauge.com/delaware/species/')); assert.ok(sm.includes('https://slotgauge.com/florida/species/'));
+  } finally { srv.close(); }
+});

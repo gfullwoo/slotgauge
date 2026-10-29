@@ -275,12 +275,24 @@ html,body{margin:0}
 
 <section class="seo" id="seo">
   <h2 class="disp">Fishing regulations, in plain English</h2>
-  <p>SlotGauge covers every species Delaware (DNREC) and Virginia (VMRC) regulate: size limits, slot limits, seasons and daily limits, rechecked against the official state pages automatically. More states are on the way. Browse the full tables or jump to the fish people look up most.</p>
-  <div class="seo-links">
-    <a href="/delaware/">All Delaware regulations</a>
-    <a href="/virginia/">All Virginia regulations</a>
-    <a href="/delaware/saltwater/">Saltwater size limits</a>
-    <a href="/delaware/freshwater/">Freshwater size limits</a>
+  <p>SlotGauge covers every species regulated in Delaware, New Jersey, Maryland, Virginia, North Carolina, South Carolina, Georgia, Florida, New York and Connecticut: size limits, slot limits, seasons and daily limits, rechecked against the official state pages automatically. Browse a state's full species list, or jump to the fish people look up most.</p>
+  <div class="seo-links" id="seoStates">
+    <a href="/delaware/species/">Delaware species</a>
+    <a href="/new-jersey/species/">New Jersey species</a>
+    <a href="/maryland/species/">Maryland species</a>
+    <a href="/virginia/species/">Virginia species</a>
+    <a href="/north-carolina/species/">North Carolina species</a>
+    <a href="/south-carolina/species/">South Carolina species</a>
+    <a href="/georgia/species/">Georgia species</a>
+    <a href="/florida/species/">Florida species</a>
+    <a href="/new-york/species/">New York species</a>
+    <a href="/connecticut/species/">Connecticut species</a>
+  </div>
+  <div class="seo-links" id="seoState" style="margin-top:8px">
+    <a href="/delaware/" data-k="all">All Delaware regulations</a>
+    <a href="/delaware/species/" data-k="az">Delaware species A–Z</a>
+    <a href="/delaware/saltwater/" data-k="salt">Saltwater size limits</a>
+    <a href="/delaware/freshwater/" data-k="fresh">Freshwater size limits</a>
     <a href="/delaware/striped-bass/">Striped bass</a>
     <a href="/delaware/summer-flounder/">Summer flounder (fluke)</a>
     <a href="/delaware/black-sea-bass/">Black sea bass</a>
@@ -715,6 +727,10 @@ if (matchMedia('(max-width:480px)').matches) $('#q').placeholder='Your catch…'
 $('#today').textContent = new Date().toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric',year:'numeric'});
 $('#scraped').textContent = D.scraped;
 $('#hdrState').textContent = STATE_NAME;
+{ // point the "browse" links at the state in use
+  const slug = STATE_NAME.toLowerCase().replace(/\s+/g,'-'); const g = $('#seoState');
+  if (g) { g.querySelector('[data-k=all]').href = `/${slug}/`; g.querySelector('[data-k=all]').textContent = `All ${STATE_NAME} regulations`; g.querySelector('[data-k=az]').href = `/${slug}/species/`; g.querySelector('[data-k=az]').textContent = `${STATE_NAME} species A–Z`; g.querySelector('[data-k=salt]').href = `/${slug}/saltwater/`; const fw = g.querySelector('[data-k=fresh]'); if (fw) { if (SP.some(x=>x.habitat==='freshwater')) fw.href = `/${slug}/freshwater/`; else fw.remove(); } }
+}
 { const src = $('#footSrc'); if (src && STATE !== 'DE') { src.innerHTML = `Regulations from the official <a href="${escapeHtml(D.source||'#')}" target="_blank" rel="noopener">${escapeHtml(STATE_NAME)} state source</a>, captured <span id="scraped">${escapeHtml(D.scraped||'')}</span>. Rules are simplified for quick checks; the state's current regulations govern. Not legal advice. Gear, license, and area restrictions may also apply.`; } }
 // open in a realistic state
 function showWelcome(){

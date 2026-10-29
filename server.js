@@ -8,6 +8,7 @@ import { makePages, sitemapAll, SITE } from './src/pages.js';
 import { buildAllRegs } from './src/regs.js';
 import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
+import { makeInfoLookup, loadSpeciesInfo } from './src/wiki.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
 
@@ -21,7 +22,7 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 
  *  identifier(jpegBuffer) -> identification result        (Claude vision in prod)
  *  store -> see src/scans.js                                (Firestore + GCS in prod)
  */
-export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch } = {}) {
+export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test' } = {}) {
   const app = express();
   app.disable('x-powered-by');
   app.set('trust proxy', true);   // Cloud Run sits behind Google's load balancer; req.ip must be the client
@@ -211,6 +212,10 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
   // ---- crawlable regulation pages (SEO): /<state>/, /<state>/<habitat>/, /<state>/<species>/ for every state with data ----
   const pagesByState = Object.fromEntries(Object.values(allRegs).map((r) => { const p = makePages(r); return [p.state.slug, p]; }));
   const HABS = ['saltwater', 'freshwater', 'shellfish'];
+  // Species background (Wikipedia summaries): data/species-info.json is ingested weekly by the species-info workflow;
+  // anything missing is fetched once at request time and kept in memory.
+  const speciesInfo = loadSpeciesInfo();
+  const infoFor = makeInfoLookup({ info: speciesInfo, fetchImpl: wikiFetch, live: wikiLive });
   const html = (res, body, maxAge = 3600) => { res.set('Cache-Control', `public, max-age=${maxAge}`); res.type('html').send(body); };
   app.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /__/\nSitemap: ${SITE}/sitemap.xml\n`));
   app.get('/sitemap.xml', (_req, res) => { res.set('Cache-Control', 'public, max-age=3600'); res.type('application/xml').send(sitemapAll(pagesByState)); });
@@ -225,12 +230,15 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
     app.get(`/google${token}.html`, (_req, res) => res.type('text/html').send(`google-site-verification: google${token}.html`));
   }
   app.get('/:state', (req, res, next) => { const p = pagesByState[req.params.state]; if (!p) return next(); return req.path.endsWith('/') ? html(res, p.statePage()) : res.redirect(301, `/${p.state.slug}/`); });
-  app.get('/:state/:slug', (req, res, next) => {
+  app.get('/:state/:slug', async (req, res, next) => {
     const p = pagesByState[req.params.state]; if (!p) return next();
     const { slug } = req.params;
-    if (!req.path.endsWith('/')) return (p.bySlug.has(slug) || HABS.includes(slug)) ? res.redirect(301, `${req.path}/`) : next();
-    const page = HABS.includes(slug) ? p.hubPage(slug) : p.speciesPage(slug);
-    return page ? html(res, page) : next();
+    if (!req.path.endsWith('/')) return (p.bySlug.has(slug) || HABS.includes(slug) || slug === 'species') ? res.redirect(301, `${req.path}/`) : next();
+    if (slug === 'species') return html(res, p.directoryPage(speciesInfo));
+    if (HABS.includes(slug)) { const page = p.hubPage(slug); return page ? html(res, page) : next(); }
+    const sp = p.bySlug.get(slug); if (!sp) return next();
+    const info = await Promise.race([infoFor(sp.name), new Promise((r) => { const t = setTimeout(r, 2500, null); t.unref?.(); })]).catch(() => null);
+    return html(res, p.speciesPage(slug, new Date(), info));
   });
 
   app.use(express.static(path.join(__dirname, 'public'), {

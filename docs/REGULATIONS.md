@@ -57,3 +57,12 @@ the text exactly as printed and the checker says "check the rule" instead of gue
 
 `GET /api/sources` on the live site lists every source with its last checked / last changed dates, so
 freshness can be verified without opening GitHub.
+
+## Species background pages
+
+Every state has a species directory at `/<state>/species/` (for example `/delaware/species/`) listing each species in that state's regulations A–Z with a filter box, its size limit, a **Regulations** link to the full rules page and an **About** link to the species' Wikipedia article. Each species page also carries an "About the …" section.
+
+- `data/wiki-titles.json` maps regulation names to Wikipedia article titles (groups such as "Sharks (other)" point at the family article). Unmapped names fall back to the cleaned common name.
+- `npm run species-info` fetches the first paragraph, short description, thumbnail and canonical URL for every species from the Wikipedia REST API into `data/species-info.json` (90-day refresh; `-- --all` refetches everything). The `species-info` workflow runs it every Monday and whenever the species data or title map changes, and commits the result.
+- At request time the server fills any gap from Wikipedia once and keeps it in memory, so new species show background text before the next workflow run.
+- Text is shown under CC BY-SA 4.0 with attribution; regulations never come from Wikipedia.

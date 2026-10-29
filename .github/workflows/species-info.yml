@@ -1,0 +1,50 @@
+name: Ingest species background (Wikipedia)
+
+on:
+  schedule:
+    - cron: '41 11 * * 1'   # Mondays 11:41 UTC, after the source watcher
+  push:
+    branches: [main]
+    paths:
+      - 'data/wiki-titles.json'
+      - 'data/*/raw.json'
+      - 'data/dnrec_raw.json'
+      - 'scripts/fetch-species-info.js'
+      - 'src/wiki.js'
+  workflow_dispatch:
+    inputs:
+      all:
+        description: 'Refetch every species (ignore the 90-day freshness window)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: species-info
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Fetch Wikipedia summaries for every regulated species
+        run: |
+          if [ "${{ inputs.all }}" = "true" ]; then npm run --silent species-info -- --all; else npm run --silent species-info; fi
+
+      - name: Commit data/species-info.json
+        run: |
+          git config user.name "slotgauge-bot"
+          git config user.email "bot@slotgauge.com"
+          git add data/species-info.json
+          git diff --cached --quiet || git commit -m "data: species background from Wikipedia $(date -u +%F)"
+          git pull --rebase origin main
+          git push

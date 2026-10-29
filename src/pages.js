@@ -13,6 +13,7 @@ import path from 'node:path';
 import { DATA_DIR } from './regs.js';
 
 /** State metadata comes from the official-source registry, keyed by 2-letter code. */
+import { wikiTitle, wikiUrl, LICENSE } from './wiki.js';
 const REGISTRY = JSON.parse(readFileSync(path.join(DATA_DIR, 'sources.json'), 'utf8')).states;
 export const STATES = Object.fromEntries(Object.entries(REGISTRY).map(([code, st]) => [code, { code, slug: st.slug, name: st.name, agency: code === 'DE' ? 'DNREC' : st.agency, agencyLong: st.agency, sources: st.sources, season: st.season }]));
 
@@ -103,7 +104,10 @@ td a{color:var(--accent);text-decoration:none;font-weight:600}
 .app{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}.app p{margin:6px 0 12px;color:var(--ink-2)}
 footer{margin-top:32px;font-size:12.5px;color:var(--ink-3);line-height:1.5}footer a{color:var(--accent);text-decoration:none}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;margin-top:10px}.grid a{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}.grid a small{display:block;font-weight:400;color:var(--ink-3);font-size:12.5px}
-@media(max-width:480px){h1{font-size:32px}.hero{height:170px}table{font-size:14px}th,td{padding:8px}}`;
+.about{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-top:10px}.about img{width:150px;height:110px;object-fit:cover;border-radius:10px;flex:none;background:var(--surface-2)}.about p{margin:0 0 8px}.about .attr{font-size:12.5px;color:var(--ink-3)}.about .attr a,.about p a{color:var(--accent);text-decoration:none}
+.dir-tools{display:flex;gap:8px;margin:12px 0 4px}.dir-tools input{flex:1;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.dir{list-style:none;margin:0;padding:0}.dir li{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 10px;margin-top:6px}.dir img,.dir .ph{width:64px;height:48px;border-radius:8px;object-fit:cover;flex:none;background:var(--surface-2)}.dir .ph{display:flex;align-items:center;justify-content:center;color:var(--ink-3);font-size:11px}.dir .nm{flex:1;min-width:0}.dir .nm a{color:var(--ink);font-weight:600;text-decoration:none;font-size:16px}.dir .nm small{display:block;color:var(--ink-3);font-size:12.5px}.dir .lk{display:flex;flex-direction:column;gap:4px;align-items:flex-end;flex:none}.dir .lk a{font-size:12.5px;color:var(--accent);text-decoration:none;white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:3px 9px}.dir li.hide{display:none}.dir-count{font-size:13px;color:var(--ink-3);margin-top:6px}
+@media(max-width:480px){h1{font-size:32px}.about{flex-direction:column}.about img{width:100%;height:160px}.dir .lk a{padding:3px 7px;font-size:12px}.hero{height:170px}table{font-size:14px}th,td{padding:8px}}`;
 
 function layout({ title, description, canonical, body, jsonld = [], ogImage }) {
   return `<!doctype html>
@@ -125,6 +129,18 @@ ${body}
 }
 
 const speciesImage = (st, sp) => (sp.photo ? SITE + sp.photo : null);
+const cleanLabel = (name) => name.replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s+/g, ' ').trim();
+
+/** Background paragraph from the ingested Wikipedia summary, or a plain link when nothing is on file. */
+function aboutSection(sp, info, st) {
+  const title = wikiTitle(sp.name);
+  const url = info?.url || wikiUrl(sp.name);
+  if (!info || !info.extract) {
+    return `<div class="about"><div><p>Identification tips, range and habits for the ${esc(cleanLabel(sp.name).toLowerCase())}: <a href="${esc(url)}" rel="noopener" target="_blank">read the ${esc(title)} article on Wikipedia</a>.</p></div></div>`;
+  }
+  return `<div class="about">${info.thumbnail ? `<img src="${esc(info.thumbnail)}" alt="${esc(info.title)}" loading="lazy">` : ''}<div>${info.description ? `<p style="color:var(--ink-2);font-size:14px;margin-bottom:4px">${esc(info.description)}</p>` : ''}<p>${esc(info.extract)}</p><p><a href="${esc(url)}" rel="noopener" target="_blank">Read more about ${esc(info.title)} on Wikipedia →</a></p><p class="attr">Text from <a href="${esc(url)}" rel="noopener" target="_blank">Wikipedia</a>, <a href="${LICENSE.url}" rel="noopener" target="_blank">${LICENSE.name}</a>. Regulations on this page come from ${esc(st.agencyLong)}, not Wikipedia.</p></div></div>`;
+}
+
 
 export function makePages(regs) {
   const st = STATES[regs.state] || STATES.DE;
@@ -136,7 +152,7 @@ export function makePages(regs) {
   const urlOf = (sp) => `/${st.slug}/${slugOf.get(sp.id)}/`;
   const year = new Date().getFullYear();
 
-  function speciesPage(slug, date = new Date()) {
+  function speciesPage(slug, date = new Date(), info = null) {
     const sp = bySlug.get(slug); if (!sp) return null;
     const canonical = `${SITE}${urlOf(sp)}`;
     const stateZone = stateZoneOf(sp);
@@ -178,6 +194,8 @@ ${sp.notes.length ? `<h3>Notes</h3><ul class="notes">${sp.notes.map((n) => `<li>
 <div class="app"><h2 style="margin-top:0">Check your ${esc(sp.name.toLowerCase())} in seconds</h2><p>Say it, snap a photo, or type the length. SlotGauge answers KEEP or RELEASE using today's ${st.name} rules.</p><a class="cta" href="/?q=${encodeURIComponent(sp.name)}">Open SlotGauge for ${esc(sp.name)}</a></div>
 ${related.length ? `<h2>Often confused with</h2><div class="chips">${related.map((s) => `<a href="${urlOf(s)}">${esc(s.name)}</a>`).join('')}</div>` : ''}
 ${sameFamily.length ? `<h2>More ${esc(sp.family.toLowerCase())}</h2><div class="chips">${sameFamily.map((s) => `<a href="${urlOf(s)}">${esc(s.name)}</a>`).join('')}</div>` : ''}
+<h2>About the ${esc(cleanLabel(sp.name).toLowerCase())}</h2>${aboutSection(sp, info, st)}
+<p style="font-size:14px"><a href="/${st.slug}/species/" style="color:var(--accent);text-decoration:none">All ${species.length} ${st.name} species A–Z →</a></p>
 <h2>Frequently asked</h2>${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}`;
     return layout({ title, description, canonical, body, jsonld, ogImage: img });
   }
@@ -192,7 +210,7 @@ ${sameFamily.length ? `<h2>More ${esc(sp.family.toLowerCase())}</h2><div class="
     const body = `
 <nav class="crumbs"><a href="/">SlotGauge</a> › <a href="/${st.slug}/">${st.name}</a> › ${label}</nav>
 <h1>${st.name} ${label.toLowerCase()} size limits and seasons</h1>
-<p style="color:var(--ink-2)">${list.length} species, ${year} rules for state waters. Tap a species for every zone, the exact ${st.agency} wording and a keeper check. Updated ${esc(regs.scraped)}.</p>
+<p style="color:var(--ink-2)">${list.length} species, ${year} rules for state waters. Tap a species for every zone, the exact ${st.agency} wording and a keeper check. Updated ${esc(regs.scraped)}. <a href="/${st.slug}/species/" style="color:var(--accent);text-decoration:none">All ${species.length} ${st.name} species A–Z →</a></p>
 <table><thead><tr><th>Species</th><th>Season</th><th>Size limit</th><th>Daily limit</th></tr></thead><tbody>
 ${list.map((s) => { const z = stateZoneOf(s); const closed = s.status === 'closed' || z.closed; return `<tr><td><a href="${urlOf(s)}">${esc(s.name)}</a>${s.status === 'invasive' ? ' <small>(invasive)</small>' : ''}</td><td>${closed ? 'Closed' : esc(z.rawSeason || seasonText(z))}</td><td>${closed ? '—' : esc(sizeText(z, s))}</td><td>${closed ? '—' : esc(bagText(z, s))}</td></tr>`; }).join('\n')}
 </tbody></table>
@@ -211,20 +229,51 @@ ${list.map((s) => { const z = stateZoneOf(s); const closed = s.status === 'close
 <nav class="crumbs"><a href="/">SlotGauge</a> › ${st.name}</nav>
 <h1>${st.name} fishing regulations, ${year}</h1>
 <p style="color:var(--ink-2)">Size limits, seasons and daily limits for every species ${st.agency} regulates, rewritten in plain English and rechecked against the official pages automatically. Last captured ${esc(regs.scraped)}.</p>
-<h2>Most searched</h2><div class="chips">${popular.map((s) => `<a href="${urlOf(s)}">${esc(s.name)}</a>`).join('')}</div>
+<h2>Most searched</h2><div class="chips">${popular.map((s) => `<a href="${urlOf(s)}">${esc(s.name)}</a>`).join('')}<a href="/${st.slug}/species/" style="background:var(--accent);color:#fff;border-color:var(--accent)">All ${species.length} species A–Z →</a></div>
 ${groups.map((h) => `<h2><a href="/${st.slug}/${h}/" style="color:inherit;text-decoration:none">${HAB[h]} →</a></h2><div class="grid">${species.filter((s) => s.habitat === h).sort((a, b) => a.name.localeCompare(b.name)).map((s) => `<a href="${urlOf(s)}">${esc(s.name)}<small>${esc(sizeText(stateZoneOf(s), s))}</small></a>`).join('')}</div>`).join('')}
 <div class="app"><h2 style="margin-top:0">Is it a keeper?</h2><p>Say what you caught, snap a photo, or type it. SlotGauge checks today's rules and answers KEEP or RELEASE.</p><a class="cta" href="/">Open SlotGauge</a></div>`;
     return layout({ title, description, canonical, body });
   }
 
+  /** A–Z directory of every species in this state's regulations, each linking to its rules page and its Wikipedia article. */
+  function directoryPage(info = {}) {
+    const title = `All ${species.length} Fish Species Regulated in ${st.name} (${year}): A–Z List`;
+    const description = `Every species in the ${year} ${st.name} fishing regulations, A to Z, with its size limit and links to the full rules and species information.`;
+    const canonical = `${SITE}/${st.slug}/species/`;
+    const groups = ['saltwater', 'freshwater', 'shellfish'].filter((h) => species.some((s) => s.habitat === h));
+    const row = (s) => {
+      const t = wikiTitle(s.name); const w = info[t] && !info[t].missing ? info[t] : null;
+      const img = s.photo ? s.photo : w?.thumbnail;
+      const z = stateZoneOf(s); const closed = s.status === 'closed' || z.closed;
+      return `<li data-n="${esc((s.name + ' ' + s.family + ' ' + (s.sci || '') + ' ' + t).toLowerCase())}">${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : '<span class="ph">no photo</span>'}<div class="nm"><a href="${urlOf(s)}">${esc(s.name)}</a><small>${esc(s.family)}${s.sci ? ` · <em>${esc(s.sci)}</em>` : ''} · ${closed ? 'closed to harvest' : esc(sizeText(z, s))}</small></div><div class="lk"><a href="${urlOf(s)}">Regulations</a><a href="${esc(w?.url || wikiUrl(s.name))}" rel="noopener" target="_blank">About</a></div></li>`;
+    };
+    const body = `
+<nav class="crumbs"><a href="/">SlotGauge</a> › <a href="/${st.slug}/">${st.name}</a> › Species</nav>
+<h1>${st.name} fish species, A to Z</h1>
+<p style="color:var(--ink-2)">All ${species.length} species named in the ${year} ${st.agency} regulations. <strong>Regulations</strong> opens the size limit, season and daily limit for every zone; <strong>About</strong> opens the species' Wikipedia article (identification, range, habits). Updated ${esc(regs.scraped)}.</p>
+<div class="dir-tools"><input id="q" type="search" placeholder="Filter by name or family (e.g. flounder, drum, trout)" autocomplete="off" aria-label="Filter species"></div>
+<div class="dir-count" id="cnt"></div>
+${groups.map((h) => `<h2 data-h="${h}"><a href="/${st.slug}/${h}/" style="color:inherit;text-decoration:none">${HAB[h]}</a></h2><ul class="dir" data-h="${h}">${species.filter((s) => s.habitat === h).sort((a, b) => a.name.localeCompare(b.name)).map(row).join('')}</ul>`).join('')}
+<div class="app"><h2 style="margin-top:0">Caught one of these?</h2><p>Say it, snap it or type it. SlotGauge checks today's ${st.name} rules and answers KEEP or RELEASE.</p><a class="cta" href="/">Open SlotGauge</a></div>
+<script>(function(){var q=document.getElementById('q'),cnt=document.getElementById('cnt'),rows=[].slice.call(document.querySelectorAll('.dir li'));function f(){var v=q.value.trim().toLowerCase(),n=0;rows.forEach(function(r){var ok=!v||r.getAttribute('data-n').indexOf(v)>=0;r.classList.toggle('hide',!ok);if(ok)n++;});document.querySelectorAll('.dir').forEach(function(ul){var any=ul.querySelector('li:not(.hide)');ul.style.display=any?'':'none';var h=document.querySelector('h2[data-h="'+ul.getAttribute('data-h')+'"]');if(h)h.style.display=any?'':'none';});cnt.textContent=v?n+' of '+rows.length+' species match':rows.length+' species';}q.addEventListener('input',f);f();})();</script>`;
+    const jsonld = [
+      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'SlotGauge', item: SITE + '/' },
+        { '@type': 'ListItem', position: 2, name: `${st.name} fishing regulations`, item: `${SITE}/${st.slug}/` },
+        { '@type': 'ListItem', position: 3, name: 'Species', item: canonical }] },
+      { '@context': 'https://schema.org', '@type': 'ItemList', name: title, numberOfItems: species.length, itemListElement: species.slice().sort((a, b) => a.name.localeCompare(b.name)).map((s, i) => ({ '@type': 'ListItem', position: i + 1, name: s.name, url: SITE + urlOf(s) })) },
+    ];
+    return layout({ title, description, canonical, body, jsonld });
+  }
+
   function sitemap() {
-    const urls = [{ loc: SITE + '/', p: '1.0' }, { loc: `${SITE}/${st.slug}/`, p: '0.9' },
+    const urls = [{ loc: SITE + '/', p: '1.0' }, { loc: `${SITE}/${st.slug}/`, p: '0.9' }, { loc: `${SITE}/${st.slug}/species/`, p: '0.8' },
       ...['saltwater', 'freshwater', 'shellfish'].filter((h) => species.some((s) => s.habitat === h)).map((h) => ({ loc: `${SITE}/${st.slug}/${h}/`, p: '0.8' })),
       ...species.map((s) => ({ loc: SITE + urlOf(s), p: '0.7' }))];
     return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${u.loc}</loc><lastmod>${regs.scraped}</lastmod><changefreq>weekly</changefreq><priority>${u.p}</priority></url>`).join('\n')}\n</urlset>\n`;
   }
 
-  return { speciesPage, hubPage, statePage, sitemap, slugOf, urlOf, bySlug, state: st, species };
+  return { speciesPage, hubPage, statePage, directoryPage, sitemap, slugOf, urlOf, bySlug, state: st, species };
 }
 
 /** One sitemap for every loaded state. */

@@ -1,3 +1,4 @@
 node_modules/
 .env
 data/CHANGES.md
+Claude outputs/

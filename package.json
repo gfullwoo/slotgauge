@@ -13,9 +13,10 @@
     "dev:fake": "DEV_FAKE=1 node --watch server.js",
     "scrape": "node scripts/scrape.js",
     "review": "node scripts/review.js",
-    "test": "node --test test/*.test.js",
+    "test": "NODE_ENV=test node --test test/*.test.js",
     "watch-sources": "node scripts/watch-sources.js",
-    "extract": "node scripts/extract-state.js"
+    "extract": "node scripts/extract-state.js",
+    "species-info": "node scripts/fetch-species-info.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.127.0",

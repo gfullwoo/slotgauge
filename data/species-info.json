@@ -7,6 +7,14 @@
   "url": "https://en.wikipedia.org/wiki/African_pompano",
   "fetched": "2026-10-29"
  },
+ "Albacore": {
+  "title": "Albacore",
+  "description": "Species of tuna",
+  "extract": "The albacore, known also as the albicore or longfin tuna, is a species of tuna of the order Scombriformes. It lives in temperate and tropical waters across the globe in the epipelagic and mesopelagic zones. There are six distinct stocks known globally in the Atlantic, Pacific, and Indian oceans, as well as in the Mediterranean Sea. The albacore has an elongate, fusiform body with a conical snout, large eyes, and remarkably long pectoral fins. Its body is a deep blue dorsally and shades of silvery white ventrally. Individuals can reach up to 1.4 m in length.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Thon_germon_%28Thunnus_alalunga%29_%28Ifremer_00764-87615%29.jpg/330px-Thon_germon_%28Thunnus_alalunga%29_%28Ifremer_00764-87615%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Albacore",
+  "fetched": "2026-10-29"
+ },
  "Alewife (fish)": {
   "title": "Alewife (fish)",
   "description": "Species of North American shad",
@@ -23,6 +31,14 @@
   "url": "https://en.wikipedia.org/wiki/Longfin_yellowtail",
   "fetched": "2026-10-29"
  },
+ "American butterfish": {
+  "title": "American butterfish",
+  "description": "Species of fish",
+  "extract": "The American butterfish, also known as the Atlantic butterfish, is a butterfish of the family Stromateidae.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Poronotus_triacanthus.jpg/330px-Poronotus_triacanthus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/American_butterfish",
+  "fetched": "2026-10-29"
+ },
  "American eel": {
   "title": "American eel",
   "description": "Species of fish",
@@ -31,12 +47,28 @@
   "url": "https://en.wikipedia.org/wiki/American_eel",
   "fetched": "2026-10-29"
  },
+ "American lobster": {
+  "title": "American lobster",
+  "description": "Lobster of the western North Atlantic",
+  "extract": "The American lobster is a species of lobster found on the Atlantic coast of North America, chiefly from Labrador to New Jersey. It is also known as Atlantic lobster, Canadian lobster, northern lobster, Canadian Reds, or Maine lobster. It is sometimes called the true lobster or common lobster, but those names are ambiguous. It can reach a body length of 64 cm (25 in), and a mass of over 20 kilograms (44 lb), making it not only the heaviest crustacean in the world, but also the heaviest of all living arthropod species. Its closest relative is the European lobster Homarus gammarus, which can be distinguished by its coloration and the lack of spines on the underside of the rostrum. American lobsters are usually bluish green to brown with red spines, but several color variations have been observed.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Nur01521_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Nur01521_-_Flickr_-_NOAA_Photo_Library.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/American_lobster",
+  "fetched": "2026-10-29"
+ },
  "American shad": {
   "title": "American shad",
   "description": "Species of fish",
   "extract": "The American shad is a species of anadromous clupeid fish naturally distributed on the North American coast of the North Atlantic, from Newfoundland to Florida, and as an introduced species on the North Pacific coast. The American shad is not closely related to the other North American shads. Rather, it seems to form a lineage that diverged from a common ancestor of the European taxa before these diversified.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Dentonshad1904.jpg/330px-Dentonshad1904.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/American_shad",
+  "fetched": "2026-10-29"
+ },
+ "Archosargus rhomboidalis": {
+  "title": "Western Atlantic seabream",
+  "description": "Species of fish",
+  "extract": "Western Atlantic seabream is an ocean-going species of fish in the family, Sparidae. It was first described in 1758 by the \"father of modern taxonomy,\" Carl Linnaeus, in the 10th edition of his book, Systema Naturae. Within their native range, Western Atlantic seabream are also known as the seabream, brim, tropical sheepshead, chopa amarilla, or salema. Although they are eaten, and have been described as pan fish, Western Atlantic seabream have not gained the popularity as a gamefish that their relative, the sheepshead has.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Archosargus_rhomboidalis.jpg/330px-Archosargus_rhomboidalis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Western_Atlantic_seabream",
   "fetched": "2026-10-29"
  },
  "Atlantic Spanish mackerel": {
@@ -53,6 +85,22 @@
   "extract": "The Atlantic blue marlin is a species of marlin endemic to the Atlantic Ocean. It is closely related to, and usually considered conspecific with, the Indo-Pacific blue marlin, then simply called blue marlin. Some authorities consider both species distinct. Blue marlin are distributed throughout the tropical and subtropical waters of the Atlantic Ocean. It is a bluewater fish that spends the majority of its life in the open sea far from land.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Atlantic_blue_marlin.jpg/330px-Atlantic_blue_marlin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Atlantic_blue_marlin",
+  "fetched": "2026-10-29"
+ },
+ "Atlantic bluefin tuna": {
+  "title": "Atlantic bluefin tuna",
+  "description": "Species of fish",
+  "extract": "The Atlantic bluefin tuna is a species of tuna in the family Scombridae. It is variously known as the northern bluefin tuna, giant bluefin tuna, and formerly as the tunny.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/330px-Bluefin-big.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna",
+  "fetched": "2026-10-29"
+ },
+ "Atlantic bonito": {
+  "title": "Atlantic bonito",
+  "description": "Species of fish",
+  "extract": "The Atlantic bonito is a large mackerel-like fish of the family Scombridae. It is common in shallow waters of the Atlantic Ocean, the Mediterranean Sea, and the Black Sea, where it is an important commercial and game fish.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Sarda_sarda.jpg/330px-Sarda_sarda.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_bonito",
   "fetched": "2026-10-29"
  },
  "Atlantic chub mackerel": {
@@ -87,6 +135,22 @@
   "url": "https://en.wikipedia.org/wiki/Atlantic_mackerel",
   "fetched": "2026-10-29"
  },
+ "Atlantic menhaden": {
+  "title": "Atlantic menhaden",
+  "description": "Species of fish",
+  "extract": "The Atlantic menhaden is a North American species of fish in the herring family, Alosidae.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Brevoortia_tyrannus1.jpg/330px-Brevoortia_tyrannus1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_menhaden",
+  "fetched": "2026-10-29"
+ },
+ "Atlantic needlefish": {
+  "title": "Strongylura marina",
+  "description": "Species of fish",
+  "extract": "The Atlantic needlefish is a common demersal needlefish species common in marinas and other areas with minimal currents. Body very elongated, rounded; extremely elongated jaws form a long beak, with numerous needle-like teeth; rear of the top jaw-bone by being exposed when the mouth is closed. It has no gill rakers, the fins without spines; low lobes at the front of the dorsal and anal fins. Its dorsal fin is composed of 14–17 rays, anal fins is composed of 16–20 rays, and pectorals 10–12. Atlantic needlefish are found from Maine to Brazil and have been known to venture into fresh water for short periods, water columns, estuary, and reef associated.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Fish4485_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Fish4485_-_Flickr_-_NOAA_Photo_Library.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Strongylura_marina",
+  "fetched": "2026-10-29"
+ },
  "Atlantic sailfish": {
   "title": "Atlantic sailfish",
   "description": "Species of fish",
@@ -103,6 +167,22 @@
   "url": "https://en.wikipedia.org/wiki/Atlantic_salmon",
   "fetched": "2026-10-29"
  },
+ "Atlantic sharpnose shark": {
+  "title": "Atlantic sharpnose shark",
+  "description": "Species of shark",
+  "extract": "The Atlantic sharpnose shark is a species of requiem shark in the family Carcharhinidae. It is found in the subtropical waters of the north-western Atlantic Ocean, between latitudes 43°N and 18°N.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Rhizoprionodon_terraenovae_distmap.png/330px-Rhizoprionodon_terraenovae_distmap.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_sharpnose_shark",
+  "fetched": "2026-10-29"
+ },
+ "Atlantic spadefish": {
+  "title": "Atlantic spadefish",
+  "description": "Species of fish",
+  "extract": "The Atlantic spadefish is a species of marine ray-finned fish belonging to the family Ephippidae, the spadefishes. It is the symbol of the North Carolina Aquariums.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Atlantic_Spadefish_PLW_edit.jpg/330px-Atlantic_Spadefish_PLW_edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_spadefish",
+  "fetched": "2026-10-29"
+ },
  "Atlantic sturgeon": {
   "title": "Atlantic sturgeon",
   "description": "Species of fish",
@@ -111,12 +191,36 @@
   "url": "https://en.wikipedia.org/wiki/Atlantic_sturgeon",
   "fetched": "2026-10-29"
  },
+ "Atlantic tarpon": {
+  "title": "Atlantic tarpon",
+  "description": "Species of fish",
+  "extract": "The Atlantic tarpon is a ray-finned fish that inhabits coastal waters, estuaries, lagoons, and rivers. It is also known as the silver king. It is found in the Atlantic Ocean, typically in tropical and subtropical regions, though it has been reported as far north as Nova Scotia and the Atlantic coast of southern France, and as far south as Argentina. As with all elopiformes, it spawns at sea. Its diet includes small fish and crustaceans.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Megalops_atlanticus.jpg/330px-Megalops_atlanticus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_tarpon",
+  "fetched": "2026-10-29"
+ },
  "Atlantic torpedo": {
   "title": "Atlantic torpedo",
   "description": "Species of cartilaginous fish",
   "extract": "The Atlantic torpedo is a species of electric ray in the family Torpedinidae. It is found in the Atlantic Ocean, from Nova Scotia to Brazil in the west and from Scotland to West Africa and off southern Africa in the east, occurring at depths of up to 800 m (2,600 ft), and in the Mediterranean Sea. Younger individuals generally inhabit shallower, sandy or muddy habitats, whereas adults are more pelagic in nature and frequent open water.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Tetronarce_nobiliana_NOAA.jpg/330px-Tetronarce_nobiliana_NOAA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Atlantic_torpedo",
+  "fetched": "2026-10-29"
+ },
+ "Atlantic tripletail": {
+  "title": "Atlantic tripletail",
+  "description": "Species of fish",
+  "extract": "The Atlantic tripletail, also known as the black grunt, black perch, buoy fish, buoyfish, brown triple tail, brown tripletail, conchy leaf, dusky triple-tail, dusky tripletail, flasher, sleepfish, triple tail, triple-tail, tripletail, or tripple tail, is a species of marine, ray-finned fish belonging to the family Lobotidae.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Tripletail_Lobotes_surinamensis.jpg/330px-Tripletail_Lobotes_surinamensis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_tripletail",
+  "fetched": "2026-10-29"
+ },
+ "Atlantic wreckfish": {
+  "title": "Atlantic wreckfish",
+  "description": "Species of fish",
+  "extract": "The Atlantic wreckfish, also known as the stone bass or bass groper, is a marine, bathydemersal, and oceanodromous ray-finned fish in the family Polyprionidae. It has a worldwide, if disjunct, distribution in the Atlantic, Pacific and Indian Oceans.",
+  "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyprion_americanus.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_wreckfish",
   "fetched": "2026-10-29"
  },
  "Bairdiella chrysoura": {
@@ -143,6 +247,22 @@
   "url": "https://en.wikipedia.org/wiki/Bar_jack",
   "fetched": "2026-10-29"
  },
+ "Barndoor skate": {
+  "title": "Barndoor skate",
+  "description": "Species of cartilaginous fish",
+  "extract": "The barndoor skate is a species of marine cartilaginous fish in the skate family Rajidae of the order Rajiformes. It is native to the northwestern Atlantic Ocean, and is found from the Grand Banks of Newfoundland and the southern side of the Gulf of St. Lawrence south to North Carolina. The fish is one of the largest skates found in the North Atlantic Ocean, reaching lengths up to 1.5 m (5 ft). It is carnivorous, feeding on invertebrates and other fish found near the sea floor.",
+  "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Dipturus_laevis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://en.wikipedia.org/wiki/Barndoor_skate",
+  "fetched": "2026-10-29"
+ },
+ "Bigeye tuna": {
+  "title": "Bigeye tuna",
+  "description": "Species of fish",
+  "extract": "The bigeye tuna is a species of true tuna of the genus Thunnus, belonging to the wider mackerel family Scombridae. Bigeye tuna are found in the open waters of all tropical and temperate oceans, but not in the Mediterranean Sea.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Thunnus_obesus_%28bigeye_tuna%29.jpg/330px-Thunnus_obesus_%28bigeye_tuna%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Bigeye_tuna",
+  "fetched": "2026-10-29"
+ },
  "Black crappie": {
   "title": "Black crappie",
   "description": "Species of fish",
@@ -165,6 +285,22 @@
   "extract": "The black sea bass is a species of marine ray-finned fish, a sea bass from the subfamily Serraninae which is part of the family Serranidae, which also includes the groupers and anthias. It is found in the western Atlantic Ocean, where it is an important species for commercial and recreational fisheries.",
   "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/98/Centropristis_striata.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "url": "https://en.wikipedia.org/wiki/Black_sea_bass",
+  "fetched": "2026-10-29"
+ },
+ "Blacknose shark": {
+  "title": "Blacknose shark",
+  "description": "Species of shark",
+  "extract": "The blacknose shark is a species of requiem shark, belonging to the family Carcharhinidae, common in the tropical and subtropical waters of the western Atlantic Ocean. This species generally inhabits coastal seagrass, sand, or rubble habitats, with adults preferring deeper water than juveniles. A small shark typically measuring 1.3 m (4.3 ft) long, the blacknose has a typical streamlined \"requiem shark\" shape with a long, rounded snout, large eyes, and a small first dorsal fin. Its common name comes from a characteristic black blotch on the tip of its snout, though this may be indistinct in older individuals.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Blacknose_shark_nmfs.jpg/330px-Blacknose_shark_nmfs.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Blacknose_shark",
+  "fetched": "2026-10-29"
+ },
+ "Blacktip shark": {
+  "title": "Blacktip shark",
+  "description": "Species of shark",
+  "extract": "The blacktip shark is a species of requiem shark in the family Carcharhinidae. It is common to coastal tropical and subtropical waters around the world, including brackish habitats. Genetic analyses have revealed substantial variation within this species, with populations from the western Atlantic Ocean isolated and distinct from those in the rest of its range. The blacktip shark has a stout, fusiform body with a pointed snout, long gill slits, and no ridge between the dorsal fins. Most individuals have black tips or edges on the pectoral, dorsal, pelvic, and caudal fins. It usually attains a length of 1.5 m (4.9 ft).",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Carcharhinus_limbatus_%282%29.jpg/330px-Carcharhinus_limbatus_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Blacktip_shark",
   "fetched": "2026-10-29"
  },
  "Blue catfish": {
@@ -199,6 +335,14 @@
   "url": "https://en.wikipedia.org/wiki/Blueback_herring",
   "fetched": "2026-10-29"
  },
+ "Bluefish": {
+  "title": "Bluefish",
+  "description": "Species of marine pelagic fish (''Pomatomus saltatrix'')",
+  "extract": "The bluefish is the only extant species of the family Pomatomidae. It is a marine pelagic fish found around the world in temperate and subtropical waters, except for the northern Pacific Ocean. Bluefish are known as tailor in Australia and New Zealand, elf and shad in South Africa. It is a popular gamefish and food fish.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Pomatomus_saltatrix.png/330px-Pomatomus_saltatrix.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Bluefish",
+  "fetched": "2026-10-29"
+ },
  "Bluegill": {
   "title": "Bluegill",
   "description": "Species of fish",
@@ -207,12 +351,33 @@
   "url": "https://en.wikipedia.org/wiki/Bluegill",
   "fetched": "2026-10-29"
  },
+ "Blueline tilefish": {
+  "title": "Blueline tilefish",
+  "missing": true,
+  "fetched": "2026-10-29"
+ },
+ "Bluntnose stingray": {
+  "title": "Bluntnose stingray",
+  "description": "Species of cartilaginous fish",
+  "extract": "The bluntnose stingray or Say's stingray is a species of stingray in the family Dasyatidae, native to the coastal waters of the western Atlantic Ocean from the U.S. state of Massachusetts to Venezuela. It is a bottom-dwelling species that prefers sandy or muddy habitats 1–10 m (3.3–32.8 ft) deep, and is migratory in the northern portion of its range. Typically growing to 78 cm (31 in) across, the bluntnose stingray is characterized by a rhomboid pectoral fin disc with broadly rounded outer corners and an obtuse-angled snout. It has a whip-like tail with both an upper keel and a lower fin fold, and a line of small tubercles along the middle of its back.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Hypanus_say_Mandalay_Bay_Shark_Reef_Las_Vegas.jpg/330px-Hypanus_say_Mandalay_Bay_Shark_Reef_Las_Vegas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Bluntnose_stingray",
+  "fetched": "2026-10-29"
+ },
  "Bonefish": {
   "title": "Bonefish",
   "description": "Species of fish",
   "extract": "The bonefish or bananafish is the type species of the bonefish family (Albulidae), the only family in order Albuliformes.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Bonefish_Albula_vulpes.jpg/330px-Bonefish_Albula_vulpes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Bonefish",
+  "fetched": "2026-10-29"
+ },
+ "Bonnethead": {
+  "title": "Bonnethead",
+  "description": "Species of shark",
+  "extract": "The bonnethead, also called a bonnet shark or shovelhead, is the smallest member of the hammerhead shark genus Sphyrna, and part of the family Sphyrnidae. It is an abundant species in the littoral zone of the North Atlantic and the Gulf of Mexico, is the only shark species known to display sexual dimorphism in the morphology of the head, and is one of two shark species known to be omnivorous.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Sphyrna_tiburo_SI.jpg/330px-Sphyrna_tiburo_SI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Bonnethead",
   "fetched": "2026-10-29"
  },
  "Bowfin": {
@@ -255,6 +420,38 @@
   "url": "https://en.wikipedia.org/wiki/Bull_shark",
   "fetched": "2026-10-29"
  },
+ "Bullnose ray": {
+  "title": "Bullnose eagle ray",
+  "description": "Species of cartilaginous fish",
+  "extract": "The bullnose eagle ray or bullnose ray is species of eagle ray, which is widely distributed in the western Atlantic. It is most frequently found at a depth of 1–10 metres (3–33 ft), but can be found at the surface and up to a depth of 122 metres (400 ft). The species resides in the coastal waters and estuaries of the Eastern portions of North and South America. There are two distinct ranges for the species as it absent from Central America and the Caribbean. It is often confused with the southern eagle ray, due to a similarity in appearance and overlap in range. The Northern range spans from Massachusetts to Texas; the southern range spans from Venezuela to Buenos Aires, Argentina. It reaches a maximum disc width 106 cm (42 in) in disc width and gives birth to six young per litter. The bullnose ray feeds primarily on crustaceans, gastropods, and isopods.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Myliobatis_freminvillii_SI.jpg/330px-Myliobatis_freminvillii_SI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Bullnose_eagle_ray",
+  "fetched": "2026-10-29"
+ },
+ "Callinectes sapidus": {
+  "title": "Callinectes sapidus",
+  "description": "Species of crustacean",
+  "extract": "Callinectes sapidus, commonly known as the blue crab, Atlantic blue crab, or, regionally, the Maryland blue crab, is a species of crab native to the waters of the western Atlantic Ocean and the Gulf of Mexico, and introduced internationally.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/The_Childrens_Museum_of_Indianapolis_-_Atlantic_blue_crab.jpg/330px-The_Childrens_Museum_of_Indianapolis_-_Atlantic_blue_crab.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Callinectes_sapidus",
+  "fetched": "2026-10-29"
+ },
+ "Caribbean spiny lobster": {
+  "title": "Panulirus argus",
+  "description": "Species of crustacean",
+  "extract": "Panulirus argus, the Caribbean spiny lobster, is a species of spiny lobster that lives on reefs and in mangrove swamps in the western Atlantic Ocean.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Langosta_com%C3%BAn_del_Caribe_%28Panulirus_argus%29%2C_Cozumel%2C_M%C3%A9xico%2C_2025-12-20%2C_DD_70.jpg/330px-Langosta_com%C3%BAn_del_Caribe_%28Panulirus_argus%29%2C_Cozumel%2C_M%C3%A9xico%2C_2025-12-20%2C_DD_70.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Panulirus_argus",
+  "fetched": "2026-10-29"
+ },
+ "Catostomidae": {
+  "title": "Catostomidae",
+  "description": "Family of fishes",
+  "extract": "The Catostomidae are the suckers of the order Cypriniformes, with about 78 species in this family of freshwater fishes. The Catostomidae are almost exclusively native to North America. The only exceptions are Catostomus catostomus, found in both North America and Russia, and Myxocyprinus asiaticus found only in China. In the Ozarks they are a common food fish and a festival is held each year to celebrate them. The bigmouth buffalo, Ictiobus cyprinellus, can reach an age up to 127 years, making it the oldest known freshwater teleost by more than 50 years.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/White_Sucker%2C_Catostomus_commersonii.jpg/330px-White_Sucker%2C_Catostomus_commersonii.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Catostomidae",
+  "fetched": "2026-10-29"
+ },
  "Cero (fish)": {
   "title": "Cero (fish)",
   "description": "Species of fish",
@@ -279,6 +476,22 @@
   "url": "https://en.wikipedia.org/wiki/Channel_catfish",
   "fetched": "2026-10-29"
  },
+ "Clearnose skate": {
+  "title": "Clearnose skate",
+  "description": "Species of cartilaginous fish",
+  "extract": "The clearnose skate is a species of cartilaginous fish in the family Rajidae. R. eglanteria is also known by other common names such as the brier skate and summer skate. Clearnose skates are easily identified by the translucent patches on either side of their snouts and their mottled dorsal surface. They are found along the Atlantic and Gulf coasts of the United States in shallow waters of the continental shelf.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Raja_eglanteria_%28S0848%29_%2812656857295%29.jpg/330px-Raja_eglanteria_%28S0848%29_%2812656857295%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Clearnose_skate",
+  "fetched": "2026-10-29"
+ },
+ "Cobia": {
+  "title": "Cobia",
+  "description": "Species of ray-finned fish",
+  "extract": "The cobia is a species of marine carangiform ray-finned fish, the only extant representative of the genus Rachycentron and the family Rachycentridae. Its other common names include black kingfish, black salmon, ling, lemonfish, crabeater, prodigal son, codfish, and black bonito.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Rachycentron_canadum_Robertson.jpg/330px-Rachycentron_canadum_Robertson.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Cobia",
+  "fetched": "2026-10-29"
+ },
  "Common carp": {
   "title": "Common carp",
   "description": "Species of fish",
@@ -287,12 +500,84 @@
   "url": "https://en.wikipedia.org/wiki/Common_carp",
   "fetched": "2026-10-29"
  },
+ "Common thresher": {
+  "title": "Common thresher",
+  "description": "Species of shark",
+  "extract": "The common thresher, also known as Atlantic thresher, is the largest species of thresher shark, family Alopiidae, reaching 6 m (20 ft) in length. About half of its length consists of the elongated upper lobe of its caudal fin. With a streamlined body, short pointed snout, and modestly sized eyes, the common thresher resembles the pelagic thresher. It can be distinguished from the latter species by the white of its belly extending in a band over the bases of its pectoral fins. The common thresher is distributed worldwide in tropical and temperate waters, though it prefers cooler temperatures. It can be found both close to shore and in the open ocean, from the surface to a depth of 550 m (1,800 ft). It is seasonally migratory and spends summers at lower latitudes.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Alopias_vulpinus_noaa2.jpg/330px-Alopias_vulpinus_noaa2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Common_thresher",
+  "fetched": "2026-10-29"
+ },
+ "Cownose ray": {
+  "title": "Cownose ray",
+  "description": "Species of cartilaginous fish",
+  "extract": "The cownose ray is a species found throughout a large part of the western Atlantic and Caribbean, from New England to southern Brazil. These rays also belong to the order Myliobatiformes, a group that is shared by bat rays, manta rays, and eagle rays.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Rhinoptera_bonasus_Brest.jpg/330px-Rhinoptera_bonasus_Brest.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Cownose_ray",
+  "fetched": "2026-10-29"
+ },
+ "Crappie": {
+  "title": "Crappie",
+  "description": "Common name for two species of game fish",
+  "extract": "Crappies are two species of North American freshwater fish of the genus Pomoxis in the family Centrarchidae (sunfishes). Both species of crappies are popular game fish among recreational anglers.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Black_crappie_and_white_crappie_fish.jpg/330px-Black_crappie_and_white_crappie_fish.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Crappie",
+  "fetched": "2026-10-29"
+ },
  "Crevalle jack": {
   "title": "Crevalle jack",
   "description": "Species of fish",
   "extract": "The crevalle jack, also known as the common jack, black-tailed trevally, couvalli jack, black cavalli, jack crevale, or yellow cavalli is a common species of large marine fish classified within the jack family, Carangidae. The crevalle jack is distributed across the tropical and temperate waters of the Atlantic Ocean, ranging from Nova Scotia, Canada to Uruguay in the western Atlantic and Portugal to Angola in the eastern Atlantic, including the Mediterranean Sea. It is distinguishable from similar species by its deep body, fin colouration and a host of more detailed anatomical features, including fin ray and lateral line scale counts. It is one of the largest fish in the genus Caranx, growing to a maximum known length of 124 cm and a weight of 32 kg, although is rare at lengths greater than 60 cm. The crevalle jack inhabits both inshore and offshore waters to depths of around 350 m, predominantly over reefs, bays, lagoons and occasionally estuaries. Young fish dispersed north by currents in the eastern Atlantic are known to migrate back to more tropical waters before the onset of winter; however, if the fish fail to migrate, mass mortalities occur as the temperature falls below the species' tolerance.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Atlantic_Crevalle_Jack%2C_Gulf_State_Park%2C_Gulf_Shores%2C_AL%2C_US_imported_from_iNaturalist_photo_122719283.jpg/330px-Atlantic_Crevalle_Jack%2C_Gulf_State_Park%2C_Gulf_Shores%2C_AL%2C_US_imported_from_iNaturalist_photo_122719283.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Crevalle_jack",
+  "fetched": "2026-10-29"
+ },
+ "Cubera snapper": {
+  "title": "Cubera snapper",
+  "description": "Species of fish",
+  "extract": "The cubera snapper, also known as the Cuban snapper, is a species of marine ray-finned fish, a snapper belonging to the family Lutjanidae. It is native to the western Atlantic Ocean. It is a commercially important species and is a sought-after game fish, though it has been reported to cause ciguatera poisoning.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Gfp-cubera-snapper.jpg/330px-Gfp-cubera-snapper.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Cubera_snapper",
+  "fetched": "2026-10-29"
+ },
+ "Cunner": {
+  "title": "Cunner",
+  "description": "Species of fish",
+  "extract": "The cunner, also known as the blue perch, bergall, chogset, choggie, conner or sea perch, is a species of wrasse native to the northwestern Atlantic, where it is found from the Gulf of St. Lawrence and Newfoundland to the Chesapeake Bay. They inhabit inshore waters living near the sea floor at depths from 10 to 128 m, preferring areas with beds of seaweed, shipwrecks, or wharf pilings. They spend the winter months in a state of torpor underneath rocks. They can also be found in the aquarium trade.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Cunner.jpg/330px-Cunner.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Cunner",
+  "fetched": "2026-10-29"
+ },
+ "Dog snapper": {
+  "title": "Dog snapper",
+  "description": "Species of fish",
+  "extract": "The dog snapper, also known as the dogtooth snapper, pargue or snaggletooth snapper, is a species of marine ray-finned fish, a snapper belonging to the family Lutjanidae. It is native to the Atlantic Ocean. It is a commercially important species, and is popular for display in public aquaria.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Lutjanus_jocu_SI3.jpg/330px-Lutjanus_jocu_SI3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Dog_snapper",
+  "fetched": "2026-10-29"
+ },
+ "Dusky shark": {
+  "title": "Dusky shark",
+  "description": "Species of shark",
+  "extract": "The dusky shark is a species of requiem shark, in the family Carcharhinidae, occurring in tropical and warm-temperate continental seas worldwide. A generalist apex predator, the dusky shark can be found from the coast to the outer continental shelf and adjacent pelagic waters, and has been recorded from a depth of 400 m (1,300 ft). Populations migrate seasonally towards the poles in the summer and towards the equator in the winter, traveling hundreds to thousands of kilometers. One of the largest members of its genus, the dusky shark reaches more than 4 m (13 ft) in length and 350 kg (770 lb) in weight. It has a slender, streamlined body and can be identified by its short round snout, long sickle-shaped pectoral fins, ridge between the first and second dorsal fins, and faintly marked fins.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Carcharhinus_obscurus_at_Seaworld.jpg/330px-Carcharhinus_obscurus_at_Seaworld.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Dusky_shark",
+  "fetched": "2026-10-29"
+ },
+ "Dusky smooth-hound": {
+  "title": "Dusky smooth-hound",
+  "description": "Species of shark",
+  "extract": "The dusky smooth-hound, also called the smooth dogfish or the dog shark, is a species of houndshark in the family Triakidae. This shark is an olive grey or brown in color, and may have shades of yellow or grayish white. Females live to 16 years and males have a lifespan of 10 years. M. canis was the first shark recognised to have viral infections.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Mustelus_canis_head_SI.jpg/330px-Mustelus_canis_head_SI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Dusky_smooth-hound",
+  "fetched": "2026-10-29"
+ },
+ "Eastern oyster": {
+  "title": "Eastern oyster",
+  "description": "Species of bivalve",
+  "extract": "The eastern oyster —also called the Atlantic oyster, American oyster, or East Coast oyster—is a species of true oyster native to eastern North and South America. Other names in local or culinary use include the Wellfleet oyster, Virginia oyster, Malpeque oyster, Blue Point oyster, Chesapeake Bay oyster, and Apalachicola oyster. C. virginica ranges from northern New Brunswick south through parts of the West Indies to Venezuela. It is farmed in all of the Maritime provinces of Canada and all Eastern Seaboard and Gulf states of the United States, as well as Puget Sound, Washington, where it is known as the Totten Inlet Virginica. It was introduced to the Hawaiian Islands in the 19th century and is common in Pearl Harbor.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Oyster_bed%2C_Brunswick%2C_GA%2C_US.jpg/330px-Oyster_bed%2C_Brunswick%2C_GA%2C_US.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Eastern_oyster",
   "fetched": "2026-10-29"
  },
  "Escolar": {
@@ -311,6 +596,14 @@
   "url": "https://en.wikipedia.org/wiki/Flathead_catfish",
   "fetched": "2026-10-29"
  },
+ "Flathead grey mullet": {
+  "title": "Flathead grey mullet",
+  "description": "Species of fish",
+  "extract": "The striped mullet is an important food fish species in the mullet family Mugilidae. It is found in coastal temperate, subtropical, and tropical waters worldwide. Its length is typically 30 to 75 centimetres. It is known with numerous English names, including the flathead mullet, flathead grey mullet, striped mullet, black mullet, bully mullet, common mullet, grey mullet, sea mullet, and mullet.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/M%C3%BAjol_%28Mugil_cephalus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2021-09-09%2C_DD_25.jpg/330px-M%C3%BAjol_%28Mugil_cephalus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2021-09-09%2C_DD_25.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Flathead_grey_mullet",
+  "fetched": "2026-10-29"
+ },
  "Florida pompano": {
   "title": "Florida pompano",
   "description": "Species of ray-finned fish",
@@ -319,12 +612,28 @@
   "url": "https://en.wikipedia.org/wiki/Florida_pompano",
   "fetched": "2026-10-29"
  },
+ "Florida stone crab": {
+  "title": "Florida stone crab",
+  "description": "Species of crustacean",
+  "extract": "The Florida stone crab is a crab found in the western North Atlantic, from Connecticut to Colombia, including Texas, the Gulf of Mexico, Belize, Mexico, Jamaica, Cuba, the Bahamas, and the East Coast of the United States. The crab can also be found in and around the salt marshes of South Carolina and Georgia. The closely related species Menippe adina, the gulf stone crab, is sometimes considered a subspecies as they can interbreed to form hybrids, and they are treated as one species for commercial fishing, with their ranges partly overlapping. The two species are believed to have diverged approximately 3 million years ago. The species is widely caught for food.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Juvenile_Stone_Crab_at_Smyrna_Dunes_Park_-_Flickr_-_Andrea_Westmoreland.jpg/330px-Juvenile_Stone_Crab_at_Smyrna_Dunes_Park_-_Flickr_-_Andrea_Westmoreland.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Florida_stone_crab",
+  "fetched": "2026-10-29"
+ },
  "Fourspot flounder": {
   "title": "Hippoglossina oblonga",
   "description": "Species of fish",
   "extract": "Hippoglossina oblonga, is a flatfish and member of the large-tooth flounder family Paralichthyidae. This species has been placed in the genus Paralichthys by some authorities.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Fourspottedflounder.jpg/330px-Fourspottedflounder.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Hippoglossina_oblonga",
+  "fetched": "2026-10-29"
+ },
+ "Gafftopsail catfish": {
+  "title": "Gafftopsail catfish",
+  "description": "Species of fish",
+  "extract": "The gafftopsail catfish is a species of marine catfish found in the waters of the western central Atlantic Ocean, as well as the Gulf of Mexico and the Caribbean Sea. It has long, venomous spines which can cause painful wounds. It feeds on crustaceans and other fish. The male of the species fertilizes the eggs of the female, and broods them in his mouth until they hatch. The gafftopsail feeds throughout the water column. This fish is a common catch in the Southeastern US, although it may be found as far north as New York. They are considered strong fighters by anglers. They are taken from piers, jetties, reefs, and the surf, as well as bottom fishing or flats fishing. They are caught with hard lures as well as soft plastics, cut bait, and live or dead shrimp. Some fishermen use traps for catfish, a method regulated by some states.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Gafftop_cat_cropped.jpg/330px-Gafftop_cat_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Gafftopsail_catfish",
   "fetched": "2026-10-29"
  },
  "Golden rainbow trout": {
@@ -343,6 +652,38 @@
   "url": "https://en.wikipedia.org/wiki/Golden_shiner",
   "fetched": "2026-10-29"
  },
+ "Great barracuda": {
+  "title": "Great barracuda",
+  "description": "Species of fish",
+  "extract": "Sphyraena barracuda, commonly known as the great barracuda, is a species of barracuda, a genus of 27 species of large ray-finned fish found in subtropical oceans worldwide.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Gran_barracuda_%28Sphyraena_barracuda%29%2C_Yeda%2C_Arabia_Saudita%2C_2025-05-20%2C_DD_118.jpg/330px-Gran_barracuda_%28Sphyraena_barracuda%29%2C_Yeda%2C_Arabia_Saudita%2C_2025-05-20%2C_DD_118.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Great_barracuda",
+  "fetched": "2026-10-29"
+ },
+ "Great hammerhead": {
+  "title": "Great hammerhead",
+  "description": "Species of shark",
+  "extract": "The great hammerhead is the largest species of hammerhead shark, belonging to the family Sphyrnidae, attaining an average length of 4.6 m (15 ft) and reaching a maximum length of 6.2 m (20 ft). It is found around the globe in all the warmer parts of the oceans. The great hammerhead can be distinguished from other hammerheads by the shape of its \"hammer\", which is wide with an almost straight front margin, its tall, sickle-shaped first dorsal fin, and its strongly falcated pelvic fins. A solitary, strong-swimming apex predator, the great hammerhead feeds on a wide variety of prey ranging from crustaceans and cephalopods, to bony fish, to smaller sharks. Observations of this species in the wild suggest that the cephalofoil functions to immobilize stingrays, a favored prey. This species has a viviparous mode of reproduction, bearing litters of up to 2-49 pups every two years.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Great_hammerhead2.jpg/330px-Great_hammerhead2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Great_hammerhead",
+  "fetched": "2026-10-29"
+ },
+ "Great northern tilefish": {
+  "title": "Great northern tilefish",
+  "description": "Species of fish",
+  "extract": "The great northern tilefish or golden tile, is the largest species in the family Malacanthidae (tilefishes). It grows to a length of between 38 and 44 inches. The great northern tilefish is a slow-growing and long-lived species that has four stages of life. After hatching from eggs, the larvae are found in plankton. As they grow into juveniles, the individuals seek shelter until finding or making their own burrows. As adults, the tilefish continue to expand their burrows in the sediment throughout their lives. The diet of the larvae is unknown, but presumed to consist of zooplankton; juveniles and adults feed upon various benthic invertebrates, crustaceans, and fish. After reaching sexual maturity between 5 and 7 years of age, females lay eggs throughout the mating season for the male to fertilize, with each female laying an average of 2.3 million eggs.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Lopholatilus_chamaeleonticeps2.jpg/330px-Lopholatilus_chamaeleonticeps2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Great_northern_tilefish",
+  "fetched": "2026-10-29"
+ },
+ "Great white shark": {
+  "title": "Great white shark",
+  "description": "Species of large lamniform shark",
+  "extract": "The great white shark, also known as the white shark, white pointer, or great white, is a large shark. It is closely related to the mako sharks, the porbeagle, and the salmon shark. It is a robustly built species with a grayish upperside and a white underside. The white shark is one of the largest living shark and fish species, though it is still smaller than the whale shark and basking shark. It has about 300 triangular, serrated teeth that are continuously replaced. Its massive, fatty liver can reach over a quarter of its body weight, providing buoyancy and storing energy. The species is partially warm-blooded, an adaptation that allows it to remain active in colder waters.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/330px-White_shark.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Great_white_shark",
+  "fetched": "2026-10-29"
+ },
  "Greater amberjack": {
   "title": "Greater amberjack",
   "description": "Species of fish",
@@ -359,6 +700,14 @@
   "url": "https://en.wikipedia.org/wiki/Green_sunfish",
   "fetched": "2026-10-29"
  },
+ "Grey triggerfish": {
+  "title": "Grey triggerfish",
+  "description": "Species of fish",
+  "extract": "The grey triggerfish, or gray triggerfish, is a species of ray-finned fish in the triggerfish family Balistidae. The species is native to shallow parts of the western Atlantic from Nova Scotia to Argentina and also the eastern Atlantic, the Mediterranean Sea, and waters off Angola on the west coast of Africa.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Pez_ballesta_%28Balistes_capriscus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-23%2C_DD_24.jpg/330px-Pez_ballesta_%28Balistes_capriscus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-23%2C_DD_24.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Grey_triggerfish",
+  "fetched": "2026-10-29"
+ },
  "Grouper": {
   "title": "Grouper",
   "description": "Family of fishes",
@@ -373,6 +722,14 @@
   "extract": "The haddock is a saltwater ray-finned fish from the family Gadidae, the true cods. It is the only species in the monotypic genus Melanogrammus. It is found in the North Atlantic Ocean and associated seas, where it is an important species for fisheries, especially in northern Europe, where it is marketed fresh, frozen and smoked; smoked varieties include the Finnan haddie and the Arbroath smokie. Other smoked versions include long boneless, the filleted side of larger haddock smoked in oak chips with the skin left on the fillet.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Haddock%2C_Boston_Aquarium.JPG/330px-Haddock%2C_Boston_Aquarium.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Haddock",
+  "fetched": "2026-10-29"
+ },
+ "Hard clam": {
+  "title": "Hard clam",
+  "description": "Mollusc species native to the Americas",
+  "extract": "The hard clam, also known as the round clam, hard-shell clam, or the quahog, is an edible marine bivalve mollusk that is native to the eastern shores of North America and Central America from Prince Edward Island to the Yucatán Peninsula. It is one of many unrelated edible bivalves that in the United States are frequently referred to simply as clams. Older literature sources may use the systematic name Venus mercenaria; this species is in the family Veneridae, the venus clams.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/LittleNeck_clams_USDA96c1862.jpg/330px-LittleNeck_clams_USDA96c1862.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Hard_clam",
   "fetched": "2026-10-29"
  },
  "Hickory shad": {
@@ -399,12 +756,52 @@
   "url": "https://en.wikipedia.org/wiki/Hybrid_striped_bass",
   "fetched": "2026-10-29"
  },
+ "Ictaluridae": {
+  "title": "Ictaluridae",
+  "description": "Family of fishes",
+  "extract": "The Ictaluridae, sometimes called ictalurids, are a family of catfish native to North America, where they are an important food source and sometimes fished for sport. The family includes about 51 species, some commonly known as bullheads, madtoms, channel catfish, and blue catfish.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Bluecat5A.jpg/330px-Bluecat5A.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Ictaluridae",
+  "fetched": "2026-10-29"
+ },
+ "Inshore lizardfish": {
+  "title": "Inshore lizardfish",
+  "description": "Species of fish",
+  "extract": "The inshore lizardfish is a member of the family Synodontidae found in the western Atlantic.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Fish4494_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Fish4494_-_Flickr_-_NOAA_Photo_Library.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Inshore_lizardfish",
+  "fetched": "2026-10-29"
+ },
  "King mackerel": {
   "title": "King mackerel",
   "description": "Species of fish",
   "extract": "The king mackerel, kingfish or carite lucio is a migratory species of mackerel of the western Atlantic Ocean and Gulf of Mexico. It is an important species to both the commercial and recreational fishing industries.",
   "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/4/40/Scomberomorus_cavalla.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "url": "https://en.wikipedia.org/wiki/King_mackerel",
+  "fetched": "2026-10-29"
+ },
+ "Knobbed whelk": {
+  "title": "Knobbed whelk",
+  "description": "Species of gastropod",
+  "extract": "The knobbed whelk is a species of very large predatory sea snail, or in the US, a whelk, a marine gastropod mollusk in the family Busyconidae, the busycon whelks.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Busycon_carica.jpg/330px-Busycon_carica.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Knobbed_whelk",
+  "fetched": "2026-10-29"
+ },
+ "Ladyfish": {
+  "title": "Elops",
+  "description": "Genus of fishes",
+  "extract": "Elops is a genus of marine ray-finned fish found worldwide, and the only extant member of the ancient family Elopidae. They are commonly known as ladyfish, skipjacks, jack-rashes, or tenpounders.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Elops_saurus.jpg/330px-Elops_saurus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Elops",
+  "fetched": "2026-10-29"
+ },
+ "Largehead hairtail": {
+  "title": "Largehead hairtail",
+  "description": "Species of fish",
+  "extract": "The largehead hairtail or beltfish is a member of the cutlassfish family, Trichiuridae. This common to abundant species is found in tropical and temperate oceans throughout the world. The taxonomy is not fully resolved, and the Atlantic, East Pacific and Northwest Pacific populations are also known as Atlantic cutlassfish, Pacific cutlassfish, respectively. This predatory, elongated fish supports major fisheries.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Trichiurus_lepturus_Umitamago.jpg/330px-Trichiurus_lepturus_Umitamago.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Largehead_hairtail",
   "fetched": "2026-10-29"
  },
  "Largemouth bass": {
@@ -423,12 +820,36 @@
   "url": "https://en.wikipedia.org/wiki/Lemon_shark",
   "fetched": "2026-10-29"
  },
+ "Lepomis": {
+  "title": "Lepomis",
+  "description": "Genus of fishes",
+  "extract": "Lepomis or true sunfish is a genus of North American freshwater fish from the family Centrarchidae in the order Centrarchiformes. The generic name Lepomis derives from the Greek λεπίς (\"scale\") and πῶμα. The genus' most recognizable species is perhaps the bluegill.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Lepomis_auritus.jpg/330px-Lepomis_auritus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Lepomis",
+  "fetched": "2026-10-29"
+ },
  "Lesser amberjack": {
   "title": "Lesser amberjack",
   "description": "Species of fish",
   "extract": "The lesser amberjack, also known as the false amberjack or little amberjack, is a species of ray-finned fish from the family Carangidae, the jacks and pompanos.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Seriola_fasciata.png/330px-Seriola_fasciata.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Lesser_amberjack",
+  "fetched": "2026-10-29"
+ },
+ "Little skate": {
+  "title": "Little skate",
+  "description": "Species of cartilaginous fish",
+  "extract": "The little skate is a species of skate in the family Rajidae, found from Nova Scotia to North Carolina on sand or gravel habitats. They are one of the dominant members of the demersal fish community in the northwestern Atlantic. This species is of minimal commercial importance and is mainly used as bait for lobster traps, though its wings are also marketed for food. It is also important as a model organism for biological and medical research.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Leucoraja_erinacea.jpg/330px-Leucoraja_erinacea.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Little_skate",
+  "fetched": "2026-10-29"
+ },
+ "Little tunny": {
+  "title": "Little tunny",
+  "description": "Species of fish",
+  "extract": "The little tunny, also known as the little tuna, false albacore, or erroneously as the  blue bonito, is a species of tuna in the family Scombridae. It can be found in the Atlantic Ocean and the Mediterranean and Black seas; in the western Atlantic, it ranges from Brazil to the New England states. The little tunny is a pelagic fish that can be found regularly in both offshore and inshore waters, and it is classified as a highly migratory species. The little tunny is best identified by the \"worm-like\" markings on its back and the dark spots appearing between its pectoral and ventral fins.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Euall_u0.gif/330px-Euall_u0.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Little_tunny",
   "fetched": "2026-10-29"
  },
  "Longbill spearfish": {
@@ -453,6 +874,38 @@
   "extract": "The lookdown is a species of game fish in the family Carangidae. It was first described in 1758 by Carl Linnaeus, in the 10th edition of Systema Naturae.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Lookdown25.jpg/330px-Lookdown25.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Lookdown",
+  "fetched": "2026-10-29"
+ },
+ "Lophius americanus": {
+  "title": "Lophius americanus",
+  "description": "Species of fish",
+  "extract": "Lophius americanus is a goosefish in the family Lophiidae, also called all-mouth, American anglerfish, American monkfish, bellows-fish, devil-fish, headfish, molligut, satchel-mouth, or wide-gape. It is native to the eastern coast of North America.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Lophius_americanus.jpg/330px-Lophius_americanus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Lophius_americanus",
+  "fetched": "2026-10-29"
+ },
+ "Lutjanidae": {
+  "title": "Lutjanidae",
+  "description": "Family of fishes",
+  "extract": "Lutjanidae, the snappers and fusiliers, are a family of percomorph fishes, mainly marine but with some members inhabiting estuaries and, in some cases, fresh water. The family includes about 113 species. Most species are used for food and many are of high economic importance. Many species around the world are known in local languages as red snapper, including species from different genera",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Lutjanus_lutjanus_333911225.jpg/330px-Lutjanus_lutjanus_333911225.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Lutjanidae",
+  "fetched": "2026-10-29"
+ },
+ "Mahi-mahi": {
+  "title": "Mahi-mahi",
+  "description": "Species of fish",
+  "extract": "The mahi-mahi, common dolphinfish, dolphinfish, dolphin or  dorado is a surface-dwelling ray-finned fish found in off-shore temperate, tropical, and subtropical waters worldwide. It is one of two members of the family Coryphaenidae, the other being the pompano dolphinfish. These fish are most commonly found in the waters around the Gulf of Mexico, Costa Rica, Hawaii, and the Indian Ocean. In Italy it is called corifena, lampuga or pesce capone, and has even given its name to the caponata though eggplant has now taken the place of the fish.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Common_Dolphinfish_Monterey_Bay.jpg/330px-Common_Dolphinfish_Monterey_Bay.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Mahi-mahi",
+  "fetched": "2026-10-29"
+ },
+ "Mangrove snapper": {
+  "title": "Mangrove snapper",
+  "description": "Species of fish",
+  "extract": "The mangrove snapper or gray snapper is a species of snapper native to the western Atlantic Ocean from Massachusetts to Brazil, the Gulf of Mexico, Bermuda, and the Caribbean Sea. The species can be found in a wide variety of habitats, including brackish and fresh waters. It is commercially important and is sought as a game fish. It can also be found in the aquarium trade.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Grey_snapper_-_Lutjanus_griseus.jpg/330px-Grey_snapper_-_Lutjanus_griseus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Mangrove_snapper",
   "fetched": "2026-10-29"
  },
  "Mirror carp": {
@@ -487,12 +940,68 @@
   "url": "https://en.wikipedia.org/wiki/Yellowtail_amberjack",
   "fetched": "2026-10-29"
  },
+ "Northern pike": {
+  "title": "Northern pike",
+  "description": "Species of fish",
+  "extract": "The northern pike, also known as jack, northern or simply pike, is a species of carnivorous fish of the genus Esox (pikes). It is commonly found in fresh waters of the Northern Hemisphere.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Esox_lucius_ZOO_1.jpg/330px-Esox_lucius_ZOO_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Northern_pike",
+  "fetched": "2026-10-29"
+ },
+ "Northern puffer": {
+  "title": "Northern puffer",
+  "description": "Species of fish",
+  "extract": "The northern puffer, Sphoeroides maculatus, is a species in the family Tetraodontidae, or pufferfishes, found along the Atlantic coast of North America. Unlike many other pufferfish species, the flesh of the northern puffer is not poisonous, although its viscera can contain poison, and high concentrations of toxins have been observed in the skin of Floridian populations. They are commonly called sugar toads in the Chesapeake Bay region, where they are eaten as a delicacy. There was widespread consumption of northern puffers during the rationing that accompanied the Second World War, establishing a commercial fishery that reached its zenith in the 1960s. In much of the Northeast, the fish is known simply as \"blowfish\" or \"chicken of the sea\". They may also be sold as \"sea squab\".",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Northern_Puffer_%28Sphoeroides_maculatus%29.jpg/330px-Northern_Puffer_%28Sphoeroides_maculatus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Northern_puffer",
+  "fetched": "2026-10-29"
+ },
+ "Northern sea robin": {
+  "title": "Prionotus carolinus",
+  "description": "Species of fish",
+  "extract": "Prionotus carolinus, the northern sea robin, is a species of marine ray-finned fish belonging to the family Triglidae, the sea robins. This fish is found in the western Atlantic Ocean.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Prionotus_carolinus_iNaturalist.jpg/330px-Prionotus_carolinus_iNaturalist.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Prionotus_carolinus",
+  "fetched": "2026-10-29"
+ },
  "Northern snakehead": {
   "title": "Northern snakehead",
   "description": "Species of fish",
   "extract": "The northern snakehead also known as Chesapeake Channa in Maryland U.S is a species of snakehead fish native to temperate East Asia, in China, Russia, North Korea, and South Korea. Their natural range goes from the Amur River watershed in Siberia and Manchuria down to Hainan. It is an important food fish and one of the most cultivated in its native region, with 510,000 tonnes annual production worldwide. Due to this, the northern snakehead has been exported throughout the world and has managed to establish non-native populations in Central Asia and North America. In the United States, it is found in Pennsylvania, Virginia, West Virginia, Delaware, Maryland, North Carolina, Arkansas, Missouri, and Mississippi.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Channa_argus_distribution.png/330px-Channa_argus_distribution.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Northern_snakehead",
+  "fetched": "2026-10-29"
+ },
+ "Northern stargazer": {
+  "title": "Astroscopus guttatus",
+  "description": "Species of fish",
+  "extract": "Astroscopus guttatus or the northern stargazer is a species of fish belonging to the Uranoscopidae family and was first described by Charles Conrad Abbott in 1860. Members of the Uranoscopidae family are characterized by dorsally or dorsolaterally directed eyes placed on or near the top of a large, flattened cuboid head, an oblique to vertical mouth often lined with cutaneous cirri, and an elongated, sub-compressed body. Typically found on the Atlantic shores between the states of North Carolina and New York in the United States, the northern stargazer can sometimes be confused with its sister species the southern stargazer, Astroscopus y-graecum. Both A. guttatus and A. y-graecum overlap in their distributions in Cape Hatteras One way to distinguish the northern stargazer from the southern stargazer is by the presence of numerous small white spots closely spaced along its head and back, whereas the southern stargazer has fewer, larger spots on its back. The northern stargazer is a moderately sized fish that can reach lengths of 22 inches (56 cm). The northern stargazer can be found buried in sandy substrate at depths up to 120 feet where the species remains buried awaiting prey. Stargazers have a flat forehead with a lot of body mass near the mouth creating a body plane optimal for remaining buried under sandy substrate.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Northern_Stargazer.JPG/330px-Northern_Stargazer.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Astroscopus_guttatus",
+  "fetched": "2026-10-29"
+ },
+ "Nurse shark": {
+  "title": "Nurse shark",
+  "description": "Elasmobranch fish in the family Ginglymostomatidae",
+  "extract": "The nurse shark is an elasmobranch fish in the family Ginglymostomatidae. The conservation status of the nurse shark is globally assessed as vulnerable in the IUCN List of Threatened Species. They are considered to be a species of least concern in the United States and in The Bahamas, but considered to be near threatened in the western Atlantic Ocean because of their vulnerable status in South America and reported threats throughout many areas of Central America and the Caribbean. They are directly targeted in some fisheries and considered by-catch in others.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Nurse_shark.jpg/330px-Nurse_shark.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Nurse_shark",
+  "fetched": "2026-10-29"
+ },
+ "Ocean triggerfish": {
+  "title": "Canthidermis sufflamen",
+  "description": "Species of triggerfish",
+  "extract": "Canthidermis sufflamen, the ocean triggerfish, is a species of pelagic triggerfish that can be found throughout the western Atlantic Ocean and Gulf of Mexico, with its range extending as far north as Massachusetts and as far south as Brazil.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Canthidermis_sufflamen_%28ocean_triggerfish%29_%28San_Salvador_Island%2C_Bahamas%29_1_%2815965263309%29.jpg/330px-Canthidermis_sufflamen_%28ocean_triggerfish%29_%28San_Salvador_Island%2C_Bahamas%29_1_%2815965263309%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Canthidermis_sufflamen",
+  "fetched": "2026-10-29"
+ },
+ "Oceanic whitetip shark": {
+  "title": "Oceanic whitetip shark",
+  "description": "Species of requiem shark",
+  "extract": "The oceanic whitetip shark is a large requiem shark inhabiting the pelagic zone of tropical and warm temperate seas. It has a stocky body and iconic elongated rounded fins, with white tips. The species is typically solitary, though they may gather in large numbers at food concentrations. Bony fish and cephalopods are the main components of its diet and females give live birth.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Oceanic_Whitetip_Shark_%28cropped%29.jpg/330px-Oceanic_Whitetip_Shark_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Oceanic_whitetip_shark",
   "fetched": "2026-10-29"
  },
  "Oligoplites saurus": {
@@ -511,9 +1020,25 @@
   "url": "https://en.wikipedia.org/wiki/Orthopristis_chrysoptera",
   "fetched": "2026-10-29"
  },
+ "Oyster toadfish": {
+  "title": "Oyster toadfish",
+  "description": "Species of fish",
+  "extract": "The oyster toadfish, also known as the oyster toad, ugly toad, oyster cracker, oyster catcher, and bar dog, is a Northwest Atlantic species of fish of the family Batrachoididae. The maximum length of this toadfish is 43.2 cm (17 in), but they infrequently surpass 38 cm (15 in). The record size for this species is 19.2 inches (48.76 cm). They are generally yellowish with a pattern of brown oblique bars. The species can live in poor conditions and needs little food to live. They can be found near the shore from Maine to Florida.",
+  "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/91/OysterToadfish.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://en.wikipedia.org/wiki/Oyster_toadfish",
+  "fetched": "2026-10-29"
+ },
  "Palometa": {
   "title": "Palometa",
   "missing": true,
+  "fetched": "2026-10-29"
+ },
+ "Panfish": {
+  "title": "Panfish",
+  "description": "Pan-sized freshwater fish",
+  "extract": "The word panfish, also spelled pan-fish or pan fish, is an American English term describing any edible freshwater fish that usually do not outgrow the size of an average frying pan. It is also commonly used by recreational anglers to refer to any small game fish that can fit wholly into a pan for cooking but are still large enough to be legal. According to the Oxford English Dictionary, the term was first recorded in 1796 in American Cookery, the first known cookbook written by an American author.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Pan-fried-fish.jpg/330px-Pan-fried-fish.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Panfish",
   "fetched": "2026-10-29"
  },
  "Permit (fish)": {
@@ -522,6 +1047,14 @@
   "extract": "The permit is a game fish of the western Atlantic Ocean belonging to the family Trachinotidae. Adults feed on crabs, shrimp, and smaller fish.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Trachinotus_falcatus.jpg/330px-Trachinotus_falcatus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Permit_(fish)",
+  "fetched": "2026-10-29"
+ },
+ "Pinfish": {
+  "title": "Lagodon",
+  "description": "Species of fish",
+  "extract": "Lagodon is a monospecific genus of marine ray-finned fish belonging to the family Sparidae, which includes the seabreams and porgies. The only species in the genus is Lagodon rhomboides, the pinfish, red porgy, bream, pin perch, sand perch, butterfish or sailor's choice. This fish is found in the Western Atlantic Ocean and Gulf of Mexico.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lagodon_rhomboides_220344931_%28cropped%29.jpg/330px-Lagodon_rhomboides_220344931_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Lagodon",
   "fetched": "2026-10-29"
  },
  "Pollock": {
@@ -572,6 +1105,14 @@
   "url": "https://en.wikipedia.org/wiki/Red_hake",
   "fetched": "2026-10-29"
  },
+ "Red porgy": {
+  "title": "Red porgy",
+  "description": "Species of fish",
+  "extract": "The red porgy, also known as the common seabream or Couch's bream, is a species of marine ray-finned fish in the family Sparidae. It is found in shallow waters on either side of the Atlantic Ocean, being present on the western coast of Europe and the Mediterranean Sea as well as the eastern coasts of North and South America and the Caribbean Sea. It feeds on or near the seabed and most individuals start life as females and later change sex to males.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Pagrus_pagrus_579910017_%28cropped%29.jpg/330px-Pagrus_pagrus_579910017_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Red_porgy",
+  "fetched": "2026-10-29"
+ },
  "Redbreast sunfish": {
   "title": "Redbreast sunfish",
   "description": "Species of fish",
@@ -594,6 +1135,14 @@
   "extract": "The redfin pickerel is a subspecies of freshwater fish belonging to the pike family (Esocidae) of the order Esociformes. Not to be confused with its close relatives, the grass pickerel and the chain pickerel, this fish is unique in the fact that it has brightly colored red fins. Like all pikes, the redfin pickerel is an ambush predator, lying amongst thick vegetation in wait for smaller, more agile prey to enter within its range of attack.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Esox_americanus_americanus.jpg/330px-Esox_americanus_americanus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Redfin_pickerel",
+  "fetched": "2026-10-29"
+ },
+ "Remora": {
+  "title": "Remora",
+  "description": "Family (Echeneidae) of ray-finned fish",
+  "extract": "The remora, sometimes called suckerfish or sharksucker, is any of a family (Echeneidae) of ray-finned fish in the order Carangiformes. Depending on species, they grow to 30–110 cm (12–43 in) long. Their distinctive first dorsal fins take the form of a modified oval, sucker-like organ with slat-like structures that open and close to create suction and take a firm hold against the skin of larger marine animals. The disk is made up of stout, flexible membranes that can be raised and lowered to generate suction. By sliding backward, the remora can increase the suction, or it can release itself by swimming forward. Remoras sometimes attach to small boats, and have been observed attaching to divers as well. They swim well on their own, with a sinuous, or curved, motion.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Remora_remora.jpg/330px-Remora_remora.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Remora",
   "fetched": "2026-10-29"
  },
  "Rock bass": {
@@ -620,6 +1169,86 @@
   "url": "https://en.wikipedia.org/wiki/Roundscale_spearfish",
   "fetched": "2026-10-29"
  },
+ "Sand devil": {
+  "title": "Sand devil",
+  "description": "Species of shark",
+  "extract": "The sand devil or Atlantic angel shark is a species of angelshark, family Squatinidae, native to the northwestern Atlantic Ocean. It occurs off the eastern United States, in the northern Gulf of Mexico, and possibly in parts of the Caribbean Sea. This bottom-dwelling shark is found in shallow inshore waters in summer and fall, and deep offshore waters in winter and spring. The sand devil's flattened body and enlarged pectoral and pelvic fins give it a ray-like appearance. There is a band of enlarged thorns running along the middle of its back. It is gray or brown in color, with scattered small dark spots. This species reaches 1.2–1.5 m (3.9–4.9 ft) in length.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Squatina_dumeril_nefsc.jpg/330px-Squatina_dumeril_nefsc.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Sand_devil",
+  "fetched": "2026-10-29"
+ },
+ "Sand tiger shark": {
+  "title": "Sand tiger shark",
+  "description": "Species of shark",
+  "extract": "The sand tiger shark, also commonly known as the spotted ragged-tooth shark in South Africa, grey nurse shark in Australia, or blue-nurse sand tiger in India, is a species of shark that inhabits subtropical and temperate waters worldwide. It inhabits the continental shelf, from sandy shorelines and submerged reefs to a depth of around 191 m (627 ft). They dwell in the waters of East Asia, Australia, Western and Southern Africa, the Red sea, and the east coasts of North and South America. The sand tiger shark also inhabited the Mediterranean; however, it was last seen there in 2003 and is presumed extirpated. Despite its common names, it is not closely related to either the tiger shark or the nurse shark.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Sand_tiger_shark_%28Carcharias_taurus%29.jpg/330px-Sand_tiger_shark_%28Carcharias_taurus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Sand_tiger_shark",
+  "fetched": "2026-10-29"
+ },
+ "Sandbar shark": {
+  "title": "Sandbar shark",
+  "description": "Species of shark",
+  "extract": "The sandbar shark, also known as the brown shark or thickskin shark, is a species of requiem shark, and part of the family Carcharhinidae, native to the Atlantic Ocean and the Indo-Pacific. It is distinguishable by its very high first dorsal fin and interdorsal ridge. It is not to be confused with the similarly named sand tiger shark, or Carcharias taurus.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Carcharhinus_plumbeus_georgia.jpg/330px-Carcharhinus_plumbeus_georgia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Sandbar_shark",
+  "fetched": "2026-10-29"
+ },
+ "Sauger": {
+  "title": "Sauger",
+  "description": "Species of fish",
+  "extract": "The sauger is a freshwater perciform fish of the family Percidae that resembles its close relative, the walleye. The species is a member of the largest vertebrate order, the Perciformes. It is the most migratory percid species in North America. Saugers have two dorsal fins; the first is spiny and the posterior dorsal fin is soft-rayed. Their paired fins are in the thoracic position and their caudal fin is truncated, which means squared off at the corners, a characteristic of the family Percidae. Another physical characteristic of saugers is their ctenoid scales, which are common in advanced fishes. Saugers have a fusiform body structure, and as a result are well adapted predatory fishes and are capable of swimming into fast currents with minimal drag on their bodies. They may be distinguished from walleyes by the distinctly spotted dorsal fin, by the lack of a white splotch on the caudal fin, by the rough skin over their gills, and by their generally more brassy color, or darker color in some regions. The typical sauger is 300 to 400 g in weight.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Saugernctc.jpg/330px-Saugernctc.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Sauger",
+  "fetched": "2026-10-29"
+ },
+ "Saugeye": {
+  "title": "Saugeye",
+  "description": "Hybrid species of fish",
+  "extract": "The saugeye is a hybrid freshwater fish between walleye and sauger of the family Percidae. They are commonly stocked in the midwestern United States for recreational angling.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Sander_canadensis_%C3%97_vitreus_-_Jensyn_Scott_-_376881973.jpeg/330px-Sander_canadensis_%C3%97_vitreus_-_Jensyn_Scott_-_376881973.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Saugeye",
+  "fetched": "2026-10-29"
+ },
+ "Scalloped hammerhead": {
+  "title": "Scalloped hammerhead",
+  "description": "Species of shark",
+  "extract": "The scalloped hammerhead is a species of hammerhead shark in the family Sphyrnidae. It was originally known as Zygaena lewini. The Greek word sphyrna translates into \"hammer\" in English, referring to the shape of this shark's head, which is its most distinguishing characteristic. The shark's eyes and nostrils are at the tips of the extensions. It is a fairly large hammerhead, but is still smaller than both the great and smooth hammerheads.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Scalloped_hammerhead_shark_%28Sphyrna_lewini%29_Costa_Rica_%28cropped%29.jpg/330px-Scalloped_hammerhead_shark_%28Sphyrna_lewini%29_Costa_Rica_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Scalloped_hammerhead",
+  "fetched": "2026-10-29"
+ },
+ "Scup": {
+  "title": "Scup",
+  "description": "Species of fish",
+  "extract": "The scup is a fish that occurs primarily in the Atlantic from Massachusetts to South Carolina. Along with many other fish of the family Sparidae, it is also commonly known as porgy.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Stenotomus_chrysops_%28S0568%29_%2812592129064%29.jpg/330px-Stenotomus_chrysops_%28S0568%29_%2812592129064%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Scup",
+  "fetched": "2026-10-29"
+ },
+ "Sea raven": {
+  "title": "Hemitripteridae",
+  "description": "Family of fishes",
+  "extract": "The Hemitripteridae is a family of the perciform clade Cottoidei, known as sea ravens. They are bottom-dwelling fish that feed on small invertebrates, found in the northwest Atlantic and north Pacific Oceans. They are covered in small spines.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Blepsias_cirrhosus_1.jpg/330px-Blepsias_cirrhosus_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Hemitripteridae",
+  "fetched": "2026-10-29"
+ },
+ "Shark": {
+  "title": "Shark",
+  "description": "Predatory cartilaginous fishes",
+  "extract": "Sharks are a group of elasmobranch cartilaginous fishes characterized by a ribless endoskeleton, dermal denticles, five to seven gill slits on each side, and pectoral fins that are not fused to the head. Modern sharks are classified within the division Selachii and are the sister group to the Batomorphi. Some sources extend the term \"shark\" as an informal category including extinct members of Chondrichthyes with a shark-like morphology, such as hybodonts. Shark-like chondrichthyans such as Cladoselache and Doliodus first appeared in the Devonian Period, though some fossilized chondrichthyan-like scales are as old as the Late Ordovician. The earliest confirmed modern sharks (Selachii) are known from the Early Jurassic around 200 million years ago, with the oldest known member being Agaleus, though records of true sharks may extend back as far as the Permian.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Corl0207_%2828225976491%29.jpg/330px-Corl0207_%2828225976491%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Shark",
+  "fetched": "2026-10-29"
+ },
+ "Sheepshead (fish)": {
+  "title": "List of fish by common name",
+  "description": "List of common names used to refer to fish",
+  "extract": " \nCommon names of fish can refer to a single species; to an entire group of species, such as a genus or family; or to multiple unrelated species or groups. Ambiguous common names are accompanied by their possible meanings. Scientific names for individual species and higher taxa are included in parentheses.",
+  "thumbnail": null,
+  "url": "https://en.wikipedia.org/wiki/List_of_fish_by_common_name",
+  "fetched": "2026-10-29"
+ },
  "Shortfin mako shark": {
   "title": "Shortfin mako shark",
   "description": "Species of shark",
@@ -636,6 +1265,14 @@
   "url": "https://en.wikipedia.org/wiki/Shortnose_sturgeon",
   "fetched": "2026-10-29"
  },
+ "Silky shark": {
+  "title": "Silky shark",
+  "description": "Species of cartilaginous fish",
+  "extract": "The silky shark, also known by numerous names such as blackspot shark, gray whaler shark, olive shark, ridgeback shark, sickle shark, sickle-shaped shark and sickle silk shark, is a species of requiem shark, in the family Carcharhinidae, named for the smooth texture of its skin. It is one of the most abundant sharks in the pelagic zone, and can be found around the world in tropical waters. Highly mobile and migratory, this shark is most often found over the edge of the continental shelf down to 50 m (164 ft). The silky shark has a slender, streamlined body and typically grows to a length of 2.5 m. It can be distinguished from other large requiem sharks by its relatively small first dorsal fin with a curving rear margin, its tiny second dorsal fin with a long free rear tip, and its long, sickle-shaped pectoral fins. It is a deep, metallic bronze-gray above and white below.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Carcharhinus_falciformis_off_Cuba.jpg/330px-Carcharhinus_falciformis_off_Cuba.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Silky_shark",
+  "fetched": "2026-10-29"
+ },
  "Silver hake": {
   "title": "Silver hake",
   "description": "Species of fish",
@@ -644,12 +1281,28 @@
   "url": "https://en.wikipedia.org/wiki/Silver_hake",
   "fetched": "2026-10-29"
  },
+ "Skipjack tuna": {
+  "title": "Skipjack tuna",
+  "description": "Species of fish",
+  "extract": "The skipjack tuna is a perciform fish in the tuna family, Scombridae, and is the only member of the genus Katsuwonus. It is a cosmopolitan pelagic fish found in tropical and warm-temperate waters. Skipjack tuna can grow up to 1.1 m in length, and is a very important species for fisheries.",
+  "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Katsuwonus_pelamis.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://en.wikipedia.org/wiki/Skipjack_tuna",
+  "fetched": "2026-10-29"
+ },
  "Smallmouth bass": {
   "title": "Smallmouth bass",
   "description": "Species of freshwater fish",
   "extract": "The smallmouth bass is a species of freshwater fish in the sunfish family (Centrarchidae) of the order Centrarchiformes. It is the type species of its genus Micropterus, and is a popular game fish sought by anglers throughout the temperate zones of North America, and has been spread by stocking —as well as illegal introductions—to many cool-water tributaries and lakes in Canada and more so introduced in the United States. The maximum recorded size is approximately 27 inches (69 cm) and 12 pounds (5.4 kg).",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Smallmouth_Bass_%2849561724026%29.jpg/330px-Smallmouth_Bass_%2849561724026%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Smallmouth_bass",
+  "fetched": "2026-10-29"
+ },
+ "Smooth butterfly ray": {
+  "title": "Smooth butterfly ray",
+  "description": "Species of fish",
+  "extract": "The smooth butterfly ray is a species of cartilaginous fish in the family Gymnuridae. It is a member of the order Myliobatiformes, which contains 10 total families. Its natural habitats are shallow seas, subtidal aquatic beds, estuarine waters, and coastal saline lagoons. Its common name is derived from its compressed body, pectoral fins that are wider than their length, and overall diamond shape.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Gymnura_micrura_.jpg/330px-Gymnura_micrura_.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Smooth_butterfly_ray",
   "fetched": "2026-10-29"
  },
  "Smooth hammerhead": {
@@ -668,6 +1321,14 @@
   "url": "https://en.wikipedia.org/wiki/Snowy_grouper",
   "fetched": "2026-10-29"
  },
+ "Southern flounder": {
+  "title": "Southern flounder",
+  "description": "Family of fishes",
+  "extract": "The southern flounders or armless flounders are a small family, Achiropsettidae, of flounders found in Antarctic and sub-Antarctic waters. There are four genera, each with one species.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Neoachiropsetta_milfordi_%28Armless_flounder%29.gif/330px-Neoachiropsetta_milfordi_%28Armless_flounder%29.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Southern_flounder",
+  "fetched": "2026-10-29"
+ },
  "Southern kingfish": {
   "title": "Menticirrhus americanus",
   "description": "Species of fish",
@@ -676,12 +1337,52 @@
   "url": "https://en.wikipedia.org/wiki/Menticirrhus_americanus",
   "fetched": "2026-10-29"
  },
+ "Southern stingray": {
+  "title": "Southern stingray",
+  "description": "Species of fish",
+  "extract": "The southern stingray is a whiptail stingray found in tropical and subtropical waters of the Western Atlantic Ocean from New Jersey to southern Brazil. It has a flat, diamond-shaped disc, with a mud brown, olive, and grey dorsal surface and white underbelly. The barb on its tail is serrated and covered in a venomous mucus, used for self-defense.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Dasyatis_americana_SI.jpg/330px-Dasyatis_americana_SI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Southern_stingray",
+  "fetched": "2026-10-29"
+ },
+ "Spinner shark": {
+  "title": "Spinner shark",
+  "description": "Species of shark",
+  "extract": "The spinner shark is a type of requiem shark, in the family Carcharhinidae, named for the spinning leaps it makes as a part of its feeding strategy. This species occurs in tropical and warm temperate waters worldwide, except for in the eastern Pacific Ocean. It is found from coastal to offshore habitats to a depth of 100 m (330 ft), though it prefers shallow water. The spinner shark resembles a larger version of the blacktip shark, with a slender body, long snout, and black-marked fins. This species can be distinguished from the blacktip shark by the first dorsal fin, which has a different shape and is placed further back, and by the black tip on the anal fin. It attains a maximum length of 3 m (9.8 ft).",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Carcharhinus_brevipinna_JNC3080_Body.JPG/330px-Carcharhinus_brevipinna_JNC3080_Body.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Spinner_shark",
+  "fetched": "2026-10-29"
+ },
+ "Spiny dogfish": {
+  "title": "Spiny dogfish",
+  "description": "Species of shark",
+  "extract": "The spiny dogfish, spurdog, mud shark, or piked dogfish is one of the best known species of the Squalidae (dogfishes) family of sharks, which is part of the Squaliformes order.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Squalus_acanthias_stellwagen.jpg/330px-Squalus_acanthias_stellwagen.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Spiny_dogfish",
+  "fetched": "2026-10-29"
+ },
  "Spot (fish)": {
   "title": "Spot (fish)",
   "description": "Species of fish",
   "extract": "The spot ,Norfolk spot and the Virginia spot, is a species of small short-lived saltwater fish in the family Sciaenidae. The species inhabits estuary and coastal waters from Massachusetts to Texas, and derives its name from the prominent dark spot behind each gill. It is the only species in the genus Leiostomus. Spot are frequently caught by recreational anglers and are good to eat.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Spot_%28_Leiostomus_xanthurus_%29.jpg/330px-Spot_%28_Leiostomus_xanthurus_%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Spot_(fish)",
+  "fetched": "2026-10-29"
+ },
+ "Spottail pinfish": {
+  "title": "Spottail pinfish",
+  "description": "Species of fish",
+  "extract": "The spottail pinfish is an ocean-going species of fish in the family Sparidae. It is also known as the spottail seabream or spottail pinkish porgy. Along with other members of their family, spottail pinfish are occasionally eaten and considered by some to be a panfish.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Diplodus_holbrookii_%28S1259%29_0194_%2828991733978%29.jpg/330px-Diplodus_holbrookii_%28S1259%29_0194_%2828991733978%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Spottail_pinfish",
+  "fetched": "2026-10-29"
+ },
+ "Spotted bass": {
+  "title": "Spotted bass",
+  "description": "Species of fish",
+  "extract": "The spotted bass, also called spotty, or spots in various fishing communities, is a species of North American freshwater fish belonging to the sunfish family (Centrarchidae) of the order Centrarchiformes. It is noted for the rows of dark spots below the lateral line, which give it its common name. One of the black basses, it is native to the Mississippi River basin and across the Gulf states, from central Texas through the Florida panhandle. Its native range extends into the western Mid-Atlantic states and it has been introduced into western North Carolina and Virginia. It has also been introduced to southern Africa, where it has become established in some isolated waters as an invasive species.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Micropterus_punctulatus.jpg/330px-Micropterus_punctulatus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Spotted_bass",
   "fetched": "2026-10-29"
  },
  "Spotted hake": {
@@ -708,6 +1409,14 @@
   "url": "https://en.wikipedia.org/wiki/Striped_bass",
   "fetched": "2026-10-29"
  },
+ "Striped sea robin": {
+  "title": "Prionotinae",
+  "description": "Subfamily of marine fishes",
+  "extract": "Prionotinae is a subfamily of demersal, marine ray-finned fishes, part of the family Triglidae. The fishes in this subfamily are called sea robins and are found in the Western Atlantic and Eastern Pacific Oceans, the other two Triglid subfamilies are called gurnards.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Bluewing_Searobin%2C_Blue_Heron_Bridge%2C_Riviera_Beach%2C_FL%2C_USA_imported_from_iNaturalist_photo_137465538.jpg/330px-Bluewing_Searobin%2C_Blue_Heron_Bridge%2C_Riviera_Beach%2C_FL%2C_USA_imported_from_iNaturalist_photo_137465538.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Prionotinae",
+  "fetched": "2026-10-29"
+ },
  "Summer flounder": {
   "title": "Summer flounder",
   "description": "Species of fish",
@@ -724,6 +1433,14 @@
   "url": "https://en.wikipedia.org/wiki/Swordfish",
   "fetched": "2026-10-29"
  },
+ "Tautog": {
+  "title": "Tautog",
+  "description": "Species of wrasse (fish)",
+  "extract": "The tautog, also known as the blackfish, is a species of wrasse native to the western Atlantic Ocean from Nova Scotia to South Carolina. This species inhabits hard substrate habitats in inshore waters at depths from 1 to 75 m. It is the only species in its genus.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Tautog_%28Tautoga_onitis%29%2C_United_States_imported_from_iNaturalist_photo_442131359.jpg/330px-Tautog_%28Tautoga_onitis%29%2C_United_States_imported_from_iNaturalist_photo_442131359.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Tautog",
+  "fetched": "2026-10-29"
+ },
  "Tiger muskellunge": {
   "title": "Tiger muskellunge",
   "description": "Hybrid fish",
@@ -732,12 +1449,28 @@
   "url": "https://en.wikipedia.org/wiki/Tiger_muskellunge",
   "fetched": "2026-10-29"
  },
+ "Tiger shark": {
+  "title": "Tiger shark",
+  "description": "Species of ground shark",
+  "extract": "The tiger shark is a species of ground shark, and the only extant member of the genus Galeocerdo and family Galeocerdonidae. It is a large predator, with females capable of attaining a length of over 5 m. Populations are found in many tropical and temperate waters, especially around central Pacific islands. Its name derives from the dark stripes down its body, which resemble a tiger's pattern and fade as the shark matures.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Tiger_shark.jpg/330px-Tiger_shark.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Tiger_shark",
+  "fetched": "2026-10-29"
+ },
  "Tiger trout": {
   "title": "Tiger trout",
   "description": "Hybrid fish",
   "extract": "The tiger trout is a sterile, intergeneric hybrid of the brown trout and the brook trout. Pronounced vermiculations in the fish's patterning gave rise to its name, evoking the stripes of a tiger. Tiger trout are a rare anomaly in the wild, as the parent species are relatively distantly related, being members of different genera and possessing mismatched numbers of chromosomes. However, specialized hatchery rearing techniques are able to produce tiger trout reliably enough to meet the demands of stocking programs.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/TigerTrout3.jpg/330px-TigerTrout3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Tiger_trout",
+  "fetched": "2026-10-29"
+ },
+ "Trout": {
+  "title": "Trout",
+  "description": "Freshwater fish from subfamily Salmoninae",
+  "extract": "Trout is a generic common name for numerous species of carnivorous freshwater fishes belonging to the genera Oncorhynchus, Salmo, and Salvelinus, all of which are members of the subfamily Salmoninae in the family Salmonidae. The word trout is also used for some similar-shaped but non-salmonid fish, such as the spotted seatrout/speckled trout.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Salmo_trutta.jpg/330px-Salmo_trutta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Trout",
   "fetched": "2026-10-29"
  },
  "Wahoo": {
@@ -778,6 +1511,14 @@
   "extract": "Cynoscion is a genus of marine ray-finned fish belonging to the family, Sciaenidae, the drums and croakers. These fish are found off the coasts of North and South America in the western Atlantic and eastern Pacific Oceans. Many fish in this genus have been given the common name weakfish.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Cynoscion_arenarius.jpg/330px-Cynoscion_arenarius.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Cynoscion",
+  "fetched": "2026-10-29"
+ },
+ "White bass": {
+  "title": "White bass",
+  "description": "Species of fish",
+  "extract": "The white bass, silver bass, or sand bass is a freshwater fish of the temperate bass family Moronidae, and is commonly around 12–15 inches long. The species' main color is silver-white to pale green. Its back is dark, with white sides and belly, and with narrow dark stripes running lengthwise on its sides. It has large, rough scales and two dorsal fins. They are widely distributed across North America, inhabiting large reservoirs and rivers. When mating in the spring, they are more often found in shallow rivers, creeks, and streams. They have been introduced in some places as sport fish and also to predate on nuisance fish, such as gizzard shad. It is the state fish of Oklahoma.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/White_Bass_%28Morone_chrysops%29.jpg/330px-White_Bass_%28Morone_chrysops%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/White_bass",
   "fetched": "2026-10-29"
  },
  "White catfish": {
@@ -876,12 +1617,28 @@
   "url": "https://en.wikipedia.org/wiki/Yellow_perch",
   "fetched": "2026-10-29"
  },
+ "Yellowfin tuna": {
+  "title": "Yellowfin tuna",
+  "description": "Species of fish",
+  "extract": "The yellowfin tuna is a species of tuna found in pelagic waters of tropical and subtropical oceans worldwide.",
+  "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Thunnus_albacares.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://en.wikipedia.org/wiki/Yellowfin_tuna",
+  "fetched": "2026-10-29"
+ },
  "Yellowtail flounder": {
   "title": "Yellowtail flounder",
   "description": "Species of fish",
   "extract": "The yellowtail flounder, also known as the rusty dab, is a species of flatfish in the family Pleuronectidae. Reaching 56 cm (22 in) in length, it has reddish brown upperparts, pale underparts and yellow fins. Both its eyes are on the right (upper) side of its body. Found in the western North Atlantic, it has been fished commercially by North American fisheries for food. A victim of overfishing, the yellowtail flounder is categorized as \"Vulnerable\" by the International Union for Conservation of Nature.",
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Limanda_ferruginea_%28NOAA%29_no_watermark.png/330px-Limanda_ferruginea_%28NOAA%29_no_watermark.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Yellowtail_flounder",
+  "fetched": "2026-10-29"
+ },
+ "Yellowtail snapper": {
+  "title": "Yellowtail snapper",
+  "description": "Species of fish",
+  "extract": "The yellowtail snapper is an abundant species of snapper native to the western Atlantic Ocean including the Gulf of Mexico and the Caribbean Sea. Although they have been found as far north as Massachusetts, their normal range is along Florida south to the West Indies and Brazil. This species is mostly found around coral reefs, but may be found in other habitats. They occur at depths of from near the surface to 180 meters (590 ft), though mostly between 10 and 70 m. This species can reach a length of 86.3 cm (34.0 in), though most do not exceed 40 cm (16 in). The greatest weight recorded for this species is 4.98 kg (11.0 lb). Yellowtail snapper is a commercially important species and has been farmed. It is sought as a game fish by recreational anglers and is a popular species for display in public aquaria. This species is the only known member of its genus.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Yellowtail_snapper_seen_from_Underwater_Tunnel_Atlantis.jpg/330px-Yellowtail_snapper_seen_from_Underwater_Tunnel_Atlantis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Yellowtail_snapper",
   "fetched": "2026-10-29"
  }
 }

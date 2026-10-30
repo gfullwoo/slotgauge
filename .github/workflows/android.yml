@@ -13,6 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
+      PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
       ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
       ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
       ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
@@ -35,7 +36,7 @@ jobs:
       - name: Build
         working-directory: android
         run: |
-          if [ -f release.keystore ]; then gradle --no-daemon assembleRelease; else gradle --no-daemon assembleDebug; fi
+          if [ -f release.keystore ]; then gradle --no-daemon assembleRelease bundleRelease; else gradle --no-daemon assembleDebug; fi
 
       - name: Signing certificate fingerprint (paste into the ANDROID_CERT_SHA256 repo variable)
         working-directory: android
@@ -50,4 +51,19 @@ jobs:
           name: slotgauge-apk
           path: |
             android/app/build/outputs/apk/**/*.apk
+            android/app/build/outputs/bundle/release/*.aab
             android/cert.txt
+
+      # Upload the signed bundle to Google Play (internal testing track) when a Play service-account key is configured.
+      - name: Upload to Google Play (internal track)
+        if: ${{ env.ANDROID_KEYSTORE_PASSWORD != '' && env.PLAY_SERVICE_ACCOUNT_JSON != '' }}
+        env:
+          PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+          packageName: com.slotgauge.app
+          releaseFiles: android/app/build/outputs/bundle/release/app-release.aab
+          track: ${{ vars.PLAY_TRACK || 'internal' }}
+          status: completed
+          whatsNewDirectory: android/play/whatsnew

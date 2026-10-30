@@ -4,7 +4,7 @@ import multer from 'multer';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildRegs, rawHash } from './src/regs.js';
-import { makePages, sitemapAll, SITE } from './src/pages.js';
+import { makePages, sitemapAll, SITE, privacyPage } from './src/pages.js';
 import { buildAllRegs } from './src/regs.js';
 import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
@@ -254,6 +254,7 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
     res.set('Cache-Control', 'public, max-age=3600');
     res.json([{ relation: ['delegate_permission/common.handle_all_urls'], target: { namespace: 'android_app', package_name: 'com.slotgauge.app', sha256_cert_fingerprints: prints } }]);
   });
+  app.get(['/privacy', '/privacy/'], (req, res) => (req.path.endsWith('/') ? html(res, privacyPage(), 86400) : res.redirect(301, '/privacy/')));
   app.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /__/\nSitemap: ${SITE}/sitemap.xml\n`));
   app.get('/sitemap.xml', (_req, res) => { res.set('Cache-Control', 'public, max-age=3600'); res.type('application/xml').send(sitemapAll(pagesByState)); });
   app.get('/api/sources', (_req, res) => {

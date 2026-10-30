@@ -109,7 +109,7 @@ footer{margin-top:32px;font-size:12.5px;color:var(--ink-3);line-height:1.5}foote
 .dir{list-style:none;margin:0;padding:0}.dir li{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 10px;margin-top:6px}.dir img,.dir .ph{width:64px;height:48px;border-radius:8px;object-fit:cover;flex:none;background:var(--surface-2)}.dir .ph{display:flex;align-items:center;justify-content:center;color:var(--ink-3);font-size:11px}.dir .nm{flex:1;min-width:0}.dir .nm a{color:var(--ink);font-weight:600;text-decoration:none;font-size:16px}.dir .nm small{display:block;color:var(--ink-3);font-size:12.5px}.dir .lk{display:flex;flex-direction:column;gap:4px;align-items:flex-end;flex:none}.dir .lk a{font-size:12.5px;color:var(--accent);text-decoration:none;white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:3px 9px}.dir li.hide{display:none}.dir-count{font-size:13px;color:var(--ink-3);margin-top:6px}
 @media(max-width:480px){h1{font-size:32px}.about{flex-direction:column}.about img{width:100%;height:160px}.dir .lk a{padding:3px 7px;font-size:12px}.hero{height:170px}table{font-size:14px}th,td{padding:8px}}`;
 
-function layout({ title, description, canonical, body, jsonld = [], ogImage }) {
+export function layout({ title, description, canonical, body, jsonld = [], ogImage }) {
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
@@ -124,7 +124,7 @@ ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</sc
 </head><body><div class="wrap">
 <header><a class="logo" href="/"><img src="/icon.svg" alt="" width="26" height="26">Slot<span>Gauge</span></a><a class="cta" href="/">Check a catch</a></header>
 ${body}
-<footer>Regulations are simplified for quick reference from the official state source pages and rechecked nightly. The state agency's current fishing guide governs; gear, license, and area rules also apply. Not legal advice.<br>© ${new Date().getFullYear()} SlotGauge · <a href="/">App</a> · ${Object.values(STATES).map((s) => `<a href="/${s.slug}/">${s.name}</a>`).join(' · ')}</footer>
+<footer>Regulations are simplified for quick reference from the official state source pages and rechecked nightly. The state agency's current fishing guide governs; gear, license, and area rules also apply. Not legal advice.<br>© ${new Date().getFullYear()} SlotGauge · <a href="/">App</a> · <a href="/privacy/">Privacy</a> · ${Object.values(STATES).map((s) => `<a href="/${s.slug}/">${s.name}</a>`).join(' · ')}</footer>
 </div></body></html>`;
 }
 
@@ -282,4 +282,37 @@ export function sitemapAll(pagesByState) {
   const seen = new Set();
   const lines = bodies.join('\n').split('\n').filter((l) => l && !seen.has(l) && seen.add(l));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${lines.join('\n')}\n</urlset>\n`;
+}
+
+/** Privacy policy (linked from the app, the Android app and the Play listing). */
+export function privacyPage() {
+  const updated = '2026-10-30';
+  const body = `
+<nav class="crumbs"><a href="/">SlotGauge</a> › Privacy</nav>
+<h1>Privacy policy</h1>
+<p style="color:var(--ink-2)">Last updated ${updated}. Applies to slotgauge.com, the installed web app, and the SlotGauge Android app and widgets.</p>
+<h2>What SlotGauge does</h2>
+<p>SlotGauge tells you whether a fish is a keeper under your state's current regulations and shows tide predictions for your area. We built it to need as little of your data as possible, and we do not sell or share personal data with advertisers.</p>
+<h2>Information we use</h2>
+<h3>Location</h3>
+<p>If you allow it, your device's approximate location is used to pick the state whose regulations apply and the nearest NOAA tide station. Coordinates are sent to our server only to look up the state (via the U.S. Census geocoder) and the nearest tide stations, and are not stored. The Android widgets use the phone's last known location on the device for the same purpose. You can decline location access and choose a state or tide station by hand.</p>
+<h3>Microphone</h3>
+<p>"Say it" uses your browser's built-in speech recognition to turn your words into text. Audio is handled by your browser or phone's speech service (for example Google's on Android) under that provider's policy; SlotGauge only receives the resulting text, which is not stored on our servers. The microphone turns off automatically after a few seconds of silence.</p>
+<h3>Photos</h3>
+<p>"Snap it" sends the photo you choose to our server, where an AI model (Google Vertex AI or Anthropic Claude) identifies the species. If you are not signed in, the photo is discarded after identification. If you sign in and save a catch, the photo and the identification are stored in your gallery until you delete them.</p>
+<h3>Account</h3>
+<p>Sign-in is optional and only needed for the gallery. It uses Google sign-in through Firebase Authentication; we store your Google account ID, display name and email so your catches stay yours. Sign out at any time from the account menu; email us to delete your account and gallery.</p>
+<h3>On-device storage</h3>
+<p>The app keeps your last state, tide station, recent checks and a copy of the regulations in your browser's local storage so it works offline. Nothing in it is sent to us except as described above.</p>
+<h3>Server logs</h3>
+<p>Like any website, our hosting provider (Google Cloud Run) records standard request logs (IP address, time, page requested) for security and debugging; they are retained for a short period and not used for profiling.</p>
+<h2>What we do not do</h2>
+<p>No advertising, no ad tracking, no analytics SDKs, no selling or renting of data, no data brokers. Regulation and tide data come from public government sources (state wildlife agencies and NOAA) and involve none of your data.</p>
+<h2>Children</h2>
+<p>SlotGauge is not directed at children under 13 and we do not knowingly collect personal information from them.</p>
+<h2>Your choices</h2>
+<p>You can use SlotGauge without location, microphone, camera or an account. Permissions can be changed any time in your browser or phone settings. To delete a saved gallery or account, or for any question, email <a href="mailto:greg.fullwood@gmail.com">greg.fullwood@gmail.com</a>.</p>
+<h2>Changes</h2>
+<p>We will update this page when the policy changes and note the date at the top.</p>`;
+  return layout({ title: 'SlotGauge privacy policy', description: 'How SlotGauge uses location, microphone, photos and account data, and what it never does.', canonical: `${SITE}/privacy/`, body });
 }

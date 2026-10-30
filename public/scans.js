@@ -243,6 +243,7 @@
 
   // ---------- events ----------
   function wire() {
+    $('#galBack')?.addEventListener('click', () => showView('check'));
     $('#camBtn').addEventListener('click', () => $('#camInput').click());
     $('#upBtn').addEventListener('click', () => $('#upInput').click());
     $('#camInput').addEventListener('change', (e) => { handleFile(e.target.files[0], 'camera'); e.target.value = ''; });

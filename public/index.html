@@ -232,6 +232,8 @@ html,body{margin:0}
 .tv-chart .hi{fill:var(--accent)}.tv-chart .lo{fill:#b3561f}.tv-chart .lab{font-size:11px;fill:var(--ink);font-weight:600}.tv-chart .past{fill:var(--ink-3);opacity:.08}.tv-chart .now{stroke:var(--release);stroke-width:1.5}.tv-chart .nowdot{fill:var(--release);stroke:#fff;stroke-width:2}.tv-chart .nowl{font-size:11px;fill:var(--release);font-weight:700}
 .tv-table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14.5px;margin-top:12px}.tv-table th,.tv-table td{text-align:left;padding:8px 12px;border-top:1px solid var(--line)}.tv-table th{background:var(--surface-2);font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);border-top:0}.tv-table tr.hi td:nth-child(2){color:var(--accent);font-weight:600}.tv-table tr.lo td:nth-child(2){color:#b3561f;font-weight:600}
 .tv-foot{font-size:12px;color:var(--ink-3);margin-top:10px}.tv-foot a{color:var(--accent)}
+header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}.tide-badge{flex:none;margin-right:0}
+@media(max-width:640px){#tabs{display:none!important}}
 @media(max-width:420px){.tide-badge{padding:3px 7px 3px 5px}.tide-badge small{font-size:10px}header h1 small{display:none}.tv-pick-row{flex-wrap:wrap}}
 </style>
 </head>
@@ -287,7 +289,7 @@ html,body{margin:0}
 </section>
 
 <section id="galleryView" hidden>
-  <div class="gal-head"><h2 class="disp">My catches</h2><span class="gal-stats" id="galStats"></span></div>
+  <div class="gal-head"><div class="tv-head" style="margin:0"><button class="tv-back" id="galBack" type="button">‹ Checker</button><h2 class="disp">My catches</h2></div><span class="gal-stats" id="galStats"></span></div>
   <div id="galDetail"></div>
   <div id="galBody"><div class="empty">Loading…</div></div>
 </section>

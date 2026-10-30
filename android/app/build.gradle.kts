@@ -8,8 +8,8 @@ plugins {
 // Release signing comes from CI secrets (see .github/workflows/android.yml); without them only the debug APK is built.
 val ksFile = rootProject.file("release.keystore")
 val ksPass = System.getenv("ANDROID_KEYSTORE_PASSWORD") ?: ""
-val keyAlias = System.getenv("ANDROID_KEY_ALIAS") ?: "slotgauge"
-val keyPass = System.getenv("ANDROID_KEY_PASSWORD") ?: ksPass
+val envKeyAlias = System.getenv("ANDROID_KEY_ALIAS") ?: "slotgauge"
+val envKeyPass = System.getenv("ANDROID_KEY_PASSWORD") ?: ksPass
 
 android {
     namespace = "com.slotgauge.app"
@@ -29,8 +29,8 @@ android {
             create("release") {
                 storeFile = ksFile
                 storePassword = ksPass
-                this.keyAlias = keyAlias
-                keyPassword = keyPass
+                keyAlias = envKeyAlias
+                keyPassword = envKeyPass
             }
         }
     }

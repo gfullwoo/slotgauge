@@ -71,3 +71,13 @@ test('GET /api/regs and /api/health', async () => {
   assert.equal(idx.status, 200);
   assert.match(idx.text, /SlotGauge/);
 });
+
+test('Delaware extras (unregulated bait, conchs, oyster prohibition) merge into the DE dataset', async () => {
+  const { buildAllRegs } = await import('../src/regs.js');
+  const de = buildAllRegs().DE;
+  const names = de.species.filter((s) => s.habitat === 'shellfish').map((s) => s.name);
+  for (const n of ['Blue Crab', 'Grass Shrimp', 'Sand Flea', 'Knobbed Whelk', 'Oyster']) assert.ok(names.includes(n), n);
+  const shrimp = de.species.find((s) => s.name === 'Grass Shrimp');
+  assert.ok(shrimp.aliases.includes('green tail shrimp')); assert.ok(shrimp.id > 10000); assert.equal(shrimp.needsReview, false);
+  assert.equal(de.species.find((s) => s.name === 'Oyster').status, 'closed');
+});

@@ -1,0 +1,151 @@
+{
+ "1": {
+  "name": "Grass Shrimp",
+  "reviewed": "2026-10-30",
+  "rawHash": "a920300d59c8",
+  "aliases": [
+   "shrimp",
+   "shrimps",
+   "green tail shrimp",
+   "greentail shrimp",
+   "green-tail shrimp",
+   "greentail",
+   "grass shrimps",
+   "glass shrimp",
+   "bait shrimp",
+   "sand shrimp"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Delaware tidal waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "No limit \u2014 not a regulated species",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Not listed in Delaware's tidal seasons, size and creel limits: no minimum size, daily limit or closed season applies to recreational harvest. General gear rules (cast nets, dip nets, minnow traps) and a fishing license still apply."
+  ]
+ },
+ "2": {
+  "name": "Sand Flea",
+  "reviewed": "2026-10-30",
+  "rawHash": "a920300d59c8",
+  "aliases": [
+   "sand fleas",
+   "mole crab",
+   "mole crabs",
+   "sand crab",
+   "sand crabs",
+   "sand bugs",
+   "sand bug",
+   "emerita"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Delaware tidal waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "No limit \u2014 not a regulated species",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Not listed in Delaware's tidal seasons, size and creel limits: no minimum size, daily limit or closed season applies to recreational harvest. General gear rules (cast nets, dip nets, minnow traps) and a fishing license still apply."
+  ]
+ },
+ "3": {
+  "name": "Knobbed Whelk",
+  "reviewed": "2026-10-30",
+  "rawHash": "b228631ada66",
+  "aliases": [
+   "conch",
+   "conchs",
+   "whelk",
+   "whelks",
+   "knobbed conch"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Delaware tidal waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "No daily limit (max 2 conch pots)",
+    "closed": false,
+    "sizeNote": "5 inches along the axis, or 3.0 inch whorl diameter"
+   }
+  ],
+  "notes": [
+   "Pots must carry all-white buoys with the owner's name and address and be tended at least every 72 hours."
+  ]
+ },
+ "4": {
+  "name": "Channeled Whelk",
+  "reviewed": "2026-10-30",
+  "rawHash": "6bff40833997",
+  "aliases": [
+   "channeled conch",
+   "channel whelk"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Delaware tidal waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 6,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "No daily limit (max 2 conch pots)",
+    "closed": false,
+    "sizeNote": "6 inches along the axis, or 3\u215b inch whorl diameter"
+   }
+  ],
+  "notes": [
+   "Pots must carry all-white buoys with the owner's name and address and be tended at least every 72 hours."
+  ]
+ },
+ "5": {
+  "name": "Oyster",
+  "reviewed": "2026-10-30",
+  "rawHash": "b7631f92b9c0",
+  "aliases": [
+   "oysters"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Delaware tidal waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "Recreational harvest prohibited",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
+ }
+}

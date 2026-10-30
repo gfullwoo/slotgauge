@@ -102,8 +102,21 @@ export function mergeExtracted(raw, overlay = {}, { de = null } = {}) {
 const zoneKeyFor = (label) => String(label || 'state').toLowerCase().replace(/[^a-z0-9]+/g, '').replace(/^statewide$|^allwaters$|^state$/, 'state') || 'state';
 
 /** Every state with data on disk, keyed by 2-letter code. Delaware always; others once data/<st>/raw.json exists. */
+/** Delaware rules DNREC's Fish Facts pages don't carry (unregulated bait, conchs, the oyster prohibition): data/de/extra.json + extra-overlay.json, same shape as the other states. */
+export function buildDE() {
+  const de = buildRegs();
+  const extraFile = path.join(DATA_DIR, 'de', 'extra.json');
+  if (existsSync(extraFile)) {
+    const ovFile = path.join(DATA_DIR, 'de', 'extra-overlay.json');
+    const extra = mergeExtracted(JSON.parse(readFileSync(extraFile, 'utf8')), existsSync(ovFile) ? JSON.parse(readFileSync(ovFile, 'utf8')) : {}, { de });
+    const known = new Set(de.species.map((s) => s.name.toLowerCase()));
+    for (const sp of extra.species) { if (known.has(sp.name.toLowerCase())) continue; delete sp.photo; sp.id += 1000; sp.extra = true; de.species.push(sp); }
+  }
+  return de;
+}
+
 export function buildAllRegs() {
-  const out = { DE: buildRegs() };
+  const out = { DE: buildDE() };
   const reg = JSON.parse(readFileSync(path.join(DATA_DIR, 'sources.json'), 'utf8'));
   for (const [code, st] of Object.entries(reg.states)) {
     if (code === 'DE') continue;

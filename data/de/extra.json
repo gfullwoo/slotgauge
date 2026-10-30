@@ -1,0 +1,92 @@
+{
+ "state": "DE",
+ "name": "Delaware",
+ "season": 2026,
+ "scraped": "2026-10-30",
+ "extractor": "manual",
+ "source": "https://www.eregulations.com/delaware/fishing/",
+ "sources": [
+  {
+   "id": "de-tidal-limits",
+   "url": "https://www.eregulations.com/delaware/fishing/tidal-seasons-size-creel-limits",
+   "title": "Delaware Fishing Guide \u2014 tidal seasons, size & creel limits"
+  },
+  {
+   "id": "de-crabs-clams-conchs",
+   "url": "https://www.eregulations.com/delaware/fishing/blue-crabs-clams-conchs-oysters",
+   "title": "Delaware Fishing Guide \u2014 blue crabs, clams, conchs & oysters"
+  }
+ ],
+ "species": [
+  {
+   "id": 1,
+   "n": "Grass Shrimp",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Shrimp",
+   "zone": "Delaware tidal waters",
+   "season": "No closed season",
+   "size": "None",
+   "limit": "No limit (not a regulated species)",
+   "quote": "Species table of Tidal Waters seasons, minimum sizes and daily limits \u2014 shrimp are not listed.",
+   "notes": "Not listed in Delaware's tidal seasons, size and creel limits: no minimum size, daily limit or closed season applies to recreational harvest. General gear rules (cast nets, dip nets, minnow traps) and a fishing license still apply.",
+   "sourceId": "de-tidal-limits"
+  },
+  {
+   "id": 2,
+   "n": "Sand Flea",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Crabs",
+   "zone": "Delaware tidal waters",
+   "season": "No closed season",
+   "size": "None",
+   "limit": "No limit (not a regulated species)",
+   "quote": "Species table of Tidal Waters seasons, minimum sizes and daily limits \u2014 mole crabs (sand fleas) are not listed.",
+   "notes": "Not listed in Delaware's tidal seasons, size and creel limits: no minimum size, daily limit or closed season applies to recreational harvest. General gear rules (cast nets, dip nets, minnow traps) and a fishing license still apply.",
+   "sourceId": "de-tidal-limits"
+  },
+  {
+   "id": 3,
+   "n": "Knobbed Whelk",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Conchs & whelks",
+   "zone": "Delaware tidal waters",
+   "season": "Open year-round (conch pots only, max 2 pots)",
+   "size": "5 inches along the axis or 3.0 inch diameter at the whorl",
+   "limit": "No daily limit",
+   "quote": "Knobbed conch must measure at least 5 inches along the axis or have a minimum diameter at the whorl of 3.0 inches. Conch (channeled and knobbed whelk) may only be taken using conch pots with at least one escape vent measuring at least 5 inches x 10 inches in the top or parlor section. The recreational harvest of conch by any other method is prohibited. Recreational conch potters may not use, place, set or tend more than two conch pots.",
+   "notes": "Pots must carry all-white buoys with the owner's name and address and be tended at least every 72 hours.",
+   "sourceId": "de-crabs-clams-conchs"
+  },
+  {
+   "id": 4,
+   "n": "Channeled Whelk",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Conchs & whelks",
+   "zone": "Delaware tidal waters",
+   "season": "Open year-round (conch pots only, max 2 pots)",
+   "size": "6 inches along the axis or 3.125 inch diameter at the whorl",
+   "limit": "No daily limit",
+   "quote": "Channeled whelk must measure at least 6 inches along the axis or have a minimum diameter at the whorl of 3.125 (3 1/8) inches. Conch may only be taken using conch pots; recreational conch potters may not use more than two conch pots.",
+   "notes": "Pots must carry all-white buoys with the owner's name and address and be tended at least every 72 hours.",
+   "sourceId": "de-crabs-clams-conchs"
+  },
+  {
+   "id": 5,
+   "n": "Oyster",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "Delaware tidal waters",
+   "season": "Closed \u2014 recreational harvest prohibited",
+   "size": "\u2014",
+   "limit": "Prohibited",
+   "quote": "It is unlawful to recreationally harvest oysters in Delaware. This prohibition protects vulnerable oyster populations.",
+   "notes": "",
+   "sourceId": "de-crabs-clams-conchs"
+  }
+ ]
+}

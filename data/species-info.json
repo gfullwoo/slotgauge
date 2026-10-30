@@ -31,6 +31,14 @@
   "url": "https://en.wikipedia.org/wiki/Longfin_yellowtail",
   "fetched": "2026-10-29"
  },
+ "Ameiurus": {
+  "title": "Ameiurus",
+  "description": "Genus of fishes",
+  "extract": "Ameiurus is a genus of catfishes in the family Ictaluridae. It contains the three common types of bullhead catfish found in waters of the United States, the black bullhead, the brown bullhead, and the yellow bullhead, as well as other species, such as the white catfish, which are not typically called \"bullheads\".",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Ictalurus_nebulosus_GLERL_1.jpg/330px-Ictalurus_nebulosus_GLERL_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Ameiurus",
+  "fetched": "2026-10-30"
+ },
  "American butterfish": {
   "title": "American butterfish",
   "description": "Species of fish",
@@ -255,6 +263,14 @@
   "url": "https://en.wikipedia.org/wiki/Barndoor_skate",
   "fetched": "2026-10-29"
  },
+ "Bay Scallop": {
+  "title": "Argopecten irradians",
+  "description": "Species of bivalve",
+  "extract": "Argopecten irradians, formerly classified as Aequipecten irradians, common names Atlantic bay scallop, bay scallop, and blue-eyed scallop, is a species of scallop in the family Pectinidae. An edible saltwater bivalve, it is native to the northwest Atlantic from Cape Cod to the Gulf of Mexico.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Argopecten_irradians.jpg/330px-Argopecten_irradians.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Argopecten_irradians",
+  "fetched": "2026-10-30"
+ },
  "Bigeye tuna": {
   "title": "Bigeye tuna",
   "description": "Species of fish",
@@ -278,6 +294,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Pogonias_cromis_-_SERC.jpg/330px-Pogonias_cromis_-_SERC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Black_drum",
   "fetched": "2026-10-29"
+ },
+ "Black grouper": {
+  "title": "Mycteroperca bonaci",
+  "description": "Species of fish",
+  "extract": "Mycteroperca bonaci, the black grouper, black rockfish or marbled rockfish, is a species of marine ray-finned fish, a grouper from the subfamily Epinephelinae which is part of the family Serranidae, which also includes the anthias and sea basses. Other fish are sometimes called the black grouper including the similar gag grouper, the misty grouper, and the warsaw grouper. This species is found in the western Atlantic Ocean from the northeastern United States to Brazil.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Mycteroperca_bonaci_331692609.jpg/330px-Mycteroperca_bonaci_331692609.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Mycteroperca_bonaci",
+  "fetched": "2026-10-30"
  },
  "Black sea bass": {
   "title": "Black sea bass",
@@ -428,6 +452,22 @@
   "url": "https://en.wikipedia.org/wiki/Bullnose_eagle_ray",
   "fetched": "2026-10-29"
  },
+ "Burbot": {
+  "title": "Burbot",
+  "description": "Species of fish",
+  "extract": "The burbot, also known as bubbot, mariah, loche, cusk, freshwater cod, freshwater ling, freshwater cusk, the lawyer, coney-fish, lingcod, or eelpout, is a species of coldwater ray-finned fish native to the subarctic regions of the Northern Hemisphere. It is the only member of the genus Lota, and is the only freshwater species of the order Gadiformes. The species is closely related to marine fish such as the common ling and cusk, all of which belong to the family Lotidae (rocklings).",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Tr%C3%BCsche_Walchensee.jpg/330px-Tr%C3%BCsche_Walchensee.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Burbot",
+  "fetched": "2026-10-30"
+ },
+ "Butterfly peacock bass": {
+  "title": "Cichla ocellaris",
+  "description": "Species of fish",
+  "extract": "Cichla ocellaris, sometimes known as the butterfly peacock bass, is a very large species of cichlid from South America, and a prized game fish. It reaches 74 cm (29 in) in length. It is native to the Marowijne and Essequibo drainages in the Guianas, and the Branco River in Brazil. It has also been introduced to regions outside its natural range, but some uncertainty exists over the exact identity, and at least some of the introductions may involve another Cichla species or hybrids. It is frequently confused with C. monoculus. Studies conclude that the introduction of Cichla ocellaris does not negatively impact fish communities in Florida, making it an effective fisheries management tool.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Cichla_ocellaris_Dvur_zoo_1.jpg/330px-Cichla_ocellaris_Dvur_zoo_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Cichla_ocellaris",
+  "fetched": "2026-10-30"
+ },
  "Callinectes sapidus": {
   "title": "Callinectes sapidus",
   "description": "Species of crustacean",
@@ -499,6 +539,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Cyprinus_carpio_2008_G1_%28cropped%29.jpg/330px-Cyprinus_carpio_2008_G1_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Common_carp",
   "fetched": "2026-10-29"
+ },
+ "Common snook": {
+  "title": "Common snook",
+  "description": "Species of fish",
+  "extract": "The common snook is a species of marine fish in the family Centropomidae of the order Carangiformes. The common snook is also known as the sergeant fish or robalo. It was originally assigned to the sciaenid genus Sciaena; Sciaena undecimradiatus and Centropomus undecimradiatus are obsolete synonyms for the species.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Centropomus.jpg/330px-Centropomus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Common_snook",
+  "fetched": "2026-10-30"
  },
  "Common thresher": {
   "title": "Common thresher",
@@ -636,6 +684,14 @@
   "url": "https://en.wikipedia.org/wiki/Gafftopsail_catfish",
   "fetched": "2026-10-29"
  },
+ "Gag grouper": {
+  "title": "Mycteroperca microlepis",
+  "description": "Species of fish",
+  "extract": "The gag grouper, also known as velvet rockfish, the gag, or charcoal belly, is a species of marine ray-finned fish, a grouper from the subfamily Epinephelinae which is part of the family Serranidae, which also includes the anthias and sea basses. It comes from warmer parts of the West Atlantic, including the Caribbean and Gulf of Mexico. It is a drab, mottled-gray fish lacking the distinguishing features of most other groupers. Its pattern of markings resemble the box-shaped spots of the black grouper. It lacks the streamer-points on the tail fin that scamp and yellowmouth grouper have and lacks yellow coloration around the mouth.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/GAG_GROUPER.png/330px-GAG_GROUPER.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Mycteroperca_microlepis",
+  "fetched": "2026-10-30"
+ },
  "Golden rainbow trout": {
   "title": "Golden trout",
   "description": "Species of fish",
@@ -732,6 +788,14 @@
   "url": "https://en.wikipedia.org/wiki/Hard_clam",
   "fetched": "2026-10-29"
  },
+ "Hardhead catfish": {
+  "title": "Hardhead catfish",
+  "description": "Species of fish",
+  "extract": "The hardhead catfish is a species of sea catfish from the northwest Atlantic and Gulf of Mexico, and similar to the gafftopsail catfish. It is one of eight species in the genus Ariopsis. The common name, hardhead catfish, is derived from the presence of a hard, bony plate extending rearward toward the dorsal fin from a line between the catfish's eyes. It is an elongated marine catfish that reaches up to 28 in (70 cm) in length and 12 lb (5.5 kg) in weight. Their typical weight is less than 1 lb (450 g), but they commonly reach up to 3 lb (1.4 kg). They are often a dirty gray color on top, with white undersides.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Arius_felis.jpg/330px-Arius_felis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Hardhead_catfish",
+  "fetched": "2026-10-30"
+ },
  "Hickory shad": {
   "title": "Hickory shad",
   "description": "Species of fish",
@@ -739,6 +803,14 @@
   "thumbnail": null,
   "url": "https://en.wikipedia.org/wiki/Hickory_shad",
   "fetched": "2026-10-29"
+ },
+ "Hogfish": {
+  "title": "Hogfish",
+  "description": "Species of fish",
+  "extract": "The hogfish, also known as boquinete, doncella de pluma, or pez perro in Mexico is a species of wrasse native to the western Atlantic Ocean, living in a range from Nova Scotia, Canada, to northern South America, including the Gulf of Mexico. This species occurs around reefs, especially preferring areas with plentiful gorgonians. It is a carnivore that feeds on molluscs, crabs, and sea urchins. This species is currently the only known member of its genus.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/A_hogfish_is_a_large_wrasse%2C_Lachnolaimus_maximus.jpg/330px-A_hogfish_is_a_large_wrasse%2C_Lachnolaimus_maximus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Hogfish",
+  "fetched": "2026-10-30"
  },
  "Horse-eye jack": {
   "title": "Horse-eye jack",
@@ -772,6 +844,14 @@
   "url": "https://en.wikipedia.org/wiki/Inshore_lizardfish",
   "fetched": "2026-10-29"
  },
+ "Jonah crab": {
+  "title": "Jonah crab",
+  "description": "Species of crab",
+  "extract": "The Jonah crab is a marine brachyuran crab that inhabits waters along the east coast of North America from Newfoundland to Florida. Jonah crabs possess a rounded, rough-edged carapace with small light spots, and robust claws with dark brown-black tips. The maximum reported carapace width for males is 8.7 in (222 mm), while females rarely exceed 5.9 in (150 mm). It is the closest relative to the European brown crab in the Western Atlantic.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Jonah_crab_noaa_overhead_picture_accessed-2024-04-24.jpg/330px-Jonah_crab_noaa_overhead_picture_accessed-2024-04-24.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Jonah_crab",
+  "fetched": "2026-10-30"
+ },
  "King mackerel": {
   "title": "King mackerel",
   "description": "Species of fish",
@@ -788,6 +868,14 @@
   "url": "https://en.wikipedia.org/wiki/Knobbed_whelk",
   "fetched": "2026-10-29"
  },
+ "Kokanee salmon": {
+  "title": "Kokanee salmon",
+  "description": "Species of fish",
+  "extract": "The kokanee salmon, also known as the kokanee trout, little redfish, silver trout, kikanning, Kennerly's salmon, Kennerly's trout, Himemasu or walla, is the nonanadromous form of the sockeye salmon. Some debate exists as to whether the kokanee and its sea-going relative are separate species; geographic isolation, failure to interbreed, and genetic distinction point toward a recent divergence in the history of the two groups. The divergence most likely occurred around 15,000 years ago when a large ice melt created a series of freshwater lakes and rivers across the northern part of North America. While some members of the salmon and trout family (salmonids) went out to sea (anadromous), others stayed behind in fresh water (nonanadromous). The separation of the sockeye and the kokanee created a unique example of sympatric speciation that is relatively new in evolutionary terms. While they occupy the same areas and habitats during the breeding season, when ocean-going sockeye salmon return to fresh water to spawn, the two populations do not mate with each other in some regions, suggesting speciation.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Kokanee_salmon.jpg/330px-Kokanee_salmon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Kokanee_salmon",
+  "fetched": "2026-10-30"
+ },
  "Ladyfish": {
   "title": "Elops",
   "description": "Genus of fishes",
@@ -795,6 +883,30 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Elops_saurus.jpg/330px-Elops_saurus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Elops",
   "fetched": "2026-10-29"
+ },
+ "Lake trout": {
+  "title": "Lake trout",
+  "description": "Species of fish in northern North America",
+  "extract": "The lake trout is a freshwater char living mainly in lakes in Northern North America. Other names for it include mackinaw, namaycush, lake char (or charr), touladi, togue, laker, and grey trout. In Lake Superior, it can also be variously known as siscowet, paperbelly and lean. The lake trout is prized both as a game fish and as a food fish. Those caught with dark coloration may be called mud hens.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Lake_trout_fishes_salvelinus_namaycush.jpg/330px-Lake_trout_fishes_salvelinus_namaycush.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Lake_trout",
+  "fetched": "2026-10-30"
+ },
+ "Lake whitefish": {
+  "title": "Lake whitefish",
+  "description": "Species of fish",
+  "extract": "The lake whitefish is a species of freshwater whitefish from North America. Lake whitefish are found throughout much of Canada and parts of the northern United States, including all of the Great Lakes. The lake whitefish is sometimes referred to as a \"humpback\" fish due because of its small head size in relation to the length of the body. It is a valuable commercial fish and also occasionally taken by sport fishermen. Smoked, refrigerated, or vacuum-packed lake whitefish fillets are available in North American grocery stores. Other vernacular names used for this fish include Otsego bass, Sault whitefish, gizzard fish, common whitefish, eastern whitefish, Great Lakes whitefish, humpback whitefish, inland whitefish and whitefish.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Lake_whitefish1.jpg/330px-Lake_whitefish1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Lake_whitefish",
+  "fetched": "2026-10-30"
+ },
+ "Lane snapper": {
+  "title": "Lane snapper",
+  "description": "Species of fish",
+  "extract": "The lane snapper, Mexican snapper, redtail snapper or spot snapper is a species of marine ray-finned fish, a snapper belonging to the family Lutjanidae. It is native to the western Atlantic Ocean.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Lutjanus_synagris.jpg/330px-Lutjanus_synagris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Lane_snapper",
+  "fetched": "2026-10-30"
  },
  "Largehead hairtail": {
   "title": "Largehead hairtail",
@@ -908,6 +1020,14 @@
   "url": "https://en.wikipedia.org/wiki/Mangrove_snapper",
   "fetched": "2026-10-29"
  },
+ "Micropterus": {
+  "title": "Micropterus",
+  "description": "Genus of fishes",
+  "extract": "Micropterus is a genus of North American freshwater fish collectively known as the black bass, which belong to the sunfish family Centrarchidae of order Centrarchiformes. They are sometimes erroneously called \"black trout\", but the name trout more correctly refers to certain potamodromous members of the family Salmonidae.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Smallmouth_Bass_%28Micropterus_dolomieu%29.jpg/330px-Smallmouth_Bass_%28Micropterus_dolomieu%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Micropterus",
+  "fetched": "2026-10-30"
+ },
  "Mirror carp": {
   "title": "Common carp",
   "description": "Species of fish",
@@ -932,6 +1052,22 @@
   "url": "https://en.wikipedia.org/wiki/Muskellunge",
   "fetched": "2026-10-29"
  },
+ "Mussels": {
+  "title": "Mussel",
+  "description": "Bivalve mollusc",
+  "extract": "Mussel is the common name used for members of several families of bivalve molluscs, from saltwater and freshwater habitats. These groups have in common a shell whose outline is elongated and asymmetrical compared with other edible clams, which are often more or less rounded or oval.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/CornishMussels.JPG/330px-CornishMussels.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Mussel",
+  "fetched": "2026-10-30"
+ },
+ "Mutton snapper": {
+  "title": "Mutton snapper",
+  "description": "Species of fish",
+  "extract": "The mutton snapper is a species of marine ray-finned fish, a snapper belonging to the family Lutjanidae. It is found in the Western Atlantic Ocean.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Lutjanus_analis_SI.jpg/330px-Lutjanus_analis_SI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Mutton_snapper",
+  "fetched": "2026-10-30"
+ },
  "Northern kingfish": {
   "title": "Yellowtail amberjack",
   "description": "Species of fish",
@@ -955,6 +1091,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Northern_Puffer_%28Sphoeroides_maculatus%29.jpg/330px-Northern_Puffer_%28Sphoeroides_maculatus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Northern_puffer",
   "fetched": "2026-10-29"
+ },
+ "Northern red snapper": {
+  "title": "Northern red snapper",
+  "description": "Species of fish",
+  "extract": "The northern red snapper is a species of marine ray-finned fish, a snapper belonging to the family Lutjanidae. It is native to the western Atlantic Ocean, the Caribbean Sea, and the Gulf of Mexico, where it inhabits environments associated with reefs. This species is commercially important and is also sought after as a game fish.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Red_Snapper.jpg/330px-Red_Snapper.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Northern_red_snapper",
+  "fetched": "2026-10-30"
  },
  "Northern sea robin": {
   "title": "Prionotus carolinus",
@@ -1081,6 +1225,14 @@
   "url": "https://en.wikipedia.org/wiki/Rainbow_runner",
   "fetched": "2026-10-29"
  },
+ "Rainbow smelt": {
+  "title": "Rainbow smelt",
+  "description": "Species of fish",
+  "extract": "The rainbow smelt is a North American species of fish of the family Osmeridae. Walleye, trout, and other larger fish prey on these smelt. The rainbow smelt prefer juvenile ciscoes, zooplankton such as calanoid copepods, and other small organisms, but are aggressive and will eat almost any fish they find. They are anadromous spring spawners and prefer clean streams with light flow and light siltation. The rainbow smelt face several barriers. They are weak swimmers and struggle to navigate fish ladders preventing them from making it past dams to the headwater streams where they spawn. The rise in erosion and dams helped to decimate the smelt population in the 1980s. There are currently plans to try to reduce damming and to help control erosion.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Osmerus_mordax.jpg/330px-Osmerus_mordax.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Rainbow_smelt",
+  "fetched": "2026-10-30"
+ },
  "Rainbow trout": {
   "title": "Rainbow trout",
   "description": "Fresh-water species of fish",
@@ -1096,6 +1248,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Redfish_or_Red_drum.webp/330px-Redfish_or_Red_drum.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Red_drum",
   "fetched": "2026-10-29"
+ },
+ "Red grouper": {
+  "title": "Red grouper",
+  "description": "Species of fish",
+  "extract": "The red grouper is a species of marine ray-finned fish, a grouper from the subfamily Epinephelinae which is part of the family Serranidae, which also includes the anthias and sea basses. It is found in the western Atlantic Ocean.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Epinephelus_morio_in_Madagascar_Reef.jpg/330px-Epinephelus_morio_in_Madagascar_Reef.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Red_grouper",
+  "fetched": "2026-10-30"
  },
  "Red hake": {
   "title": "Red hake",
@@ -1217,6 +1377,14 @@
   "url": "https://en.wikipedia.org/wiki/Scalloped_hammerhead",
   "fetched": "2026-10-29"
  },
+ "Scamp grouper": {
+  "title": "Scamp grouper",
+  "description": "Species of fish",
+  "extract": "The scamp grouper, also known as scamp, is a species of marine ray-finned fish, a grouper from the subfamily Epinephelinae which is part of the family Serranidae, which also includes the anthias and sea basses. It is found in the western Atlantic Ocean.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Mycteroperca_phenax.jpg/330px-Mycteroperca_phenax.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Scamp_grouper",
+  "fetched": "2026-10-30"
+ },
  "Scup": {
   "title": "Scup",
   "description": "Species of fish",
@@ -1264,6 +1432,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Acipenser_brevirostrum_head.jpg/330px-Acipenser_brevirostrum_head.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Shortnose_sturgeon",
   "fetched": "2026-10-29"
+ },
+ "Shrimp": {
+  "title": "Shrimp",
+  "description": "Decapod crustaceans",
+  "extract": "A shrimp is a common name typically used for crustaceans with an elongated body and a primarily swimming mode of locomotion. The name usually refers to decapods belonging to the Caridea or Dendrobranchiata, although some crustaceans outside this order are also referred to as \"shrimp\".",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Palaemon_serratus_Croazia.jpg/330px-Palaemon_serratus_Croazia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Shrimp",
+  "fetched": "2026-10-30"
  },
  "Silky shark": {
   "title": "Silky shark",
@@ -1313,6 +1489,14 @@
   "url": "https://en.wikipedia.org/wiki/Smooth_hammerhead",
   "fetched": "2026-10-29"
  },
+ "Smooth puffer": {
+  "title": "Tetraodontidae",
+  "description": "Family of pufferfish",
+  "extract": "Tetraodontidae is a family of marine and freshwater fish in the order Tetraodontiformes. The family includes many familiar species variously called pufferfishes, puffers, balloonfishes, blowfishes, blowers, blowies, bubblefishes, globefishes, swellfishes, toadfishes, toadies, botetes, toadle, honey toads, sugar toads, and sea squabs. They are morphologically similar to the closely related porcupinefish, which have large external spines. The family name comes from Ancient Greek τετρα- (tetra-), meaning \"four\", and ὀδούς (odoús), meaning \"tooth\", referring to the four teeth of the type genus Tetraodon.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Tetraodon-hispidus.jpg/330px-Tetraodon-hispidus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Tetraodontidae",
+  "fetched": "2026-10-30"
+ },
  "Snowy grouper": {
   "title": "Snowy grouper",
   "description": "Species of fish",
@@ -1320,6 +1504,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Snowy_grouper_%28Epinephelus_niveatus%29.jpg/330px-Snowy_grouper_%28Epinephelus_niveatus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Snowy_grouper",
   "fetched": "2026-10-29"
+ },
+ "Soft Clam": {
+  "title": "Clam",
+  "description": "Common name for several kinds of bivalve mollusc",
+  "extract": "Clam is a common name for several species of bivalve mollusc. The word is often applied only to those that are deemed edible and live as infauna, spending most of their lives halfway buried in the sand of the sea floor or riverbeds. Clams have two shells of equal size connected by two adductor muscles and have a powerful burrowing foot. They live in both freshwater and marine environments; in salt water they prefer to burrow down into the mud. The turbidity of the water required varies with species and location; the greatest diversity of these is in North America.",
+  "thumbnail": null,
+  "url": "https://en.wikipedia.org/wiki/Clam",
+  "fetched": "2026-10-30"
  },
  "Southern flounder": {
   "title": "Southern flounder",
@@ -1472,6 +1664,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Salmo_trutta.jpg/330px-Salmo_trutta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Trout",
   "fetched": "2026-10-29"
+ },
+ "Vermilion snapper": {
+  "title": "Vermilion snapper",
+  "description": "Species of fish",
+  "extract": "The vermilion snapper, the clubhead snapper, night snapper or beeliner is a species of marine ray-finned fish, a snapper belonging to the family Lutjanidae. It is native to the western Atlantic Ocean.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Vermilion_snapper.jpg/330px-Vermilion_snapper.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Vermilion_snapper",
+  "fetched": "2026-10-30"
  },
  "Wahoo": {
   "title": "Wahoo",

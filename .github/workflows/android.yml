@@ -21,7 +21,7 @@ jobs:
       ANDROID_VERSION_NAME: 1.0.${{ github.run_number }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: 17
@@ -31,12 +31,15 @@ jobs:
 
       - name: Restore release keystore (only when the secret is set)
         if: ${{ env.ANDROID_KEYSTORE_PASSWORD != '' }}
-        run: echo "${{ secrets.ANDROID_KEYSTORE_B64 }}" | base64 -d > android/release.keystore
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE_B64 }}" | base64 -d > android/release.keystore
+          if [ ! -s android/release.keystore ]; then echo "::error::ANDROID_KEYSTORE_B64 secret is empty or not valid base64 — run: gh secret set ANDROID_KEYSTORE_B64 < <(base64 -i slotgauge-release.jks)"; exit 1; fi
+          keytool -list -keystore android/release.keystore -storepass "$ANDROID_KEYSTORE_PASSWORD" -alias "$ANDROID_KEY_ALIAS" > /dev/null || { echo "::error::keystore password or alias secret does not match the keystore"; exit 1; }
 
       - name: Build
         working-directory: android
         run: |
-          if [ -f release.keystore ]; then gradle --no-daemon assembleRelease bundleRelease; else gradle --no-daemon assembleDebug; fi
+          if [ -f release.keystore ]; then gradle --no-daemon --stacktrace assembleRelease bundleRelease; else gradle --no-daemon --stacktrace assembleDebug; fi
 
       - name: Signing certificate fingerprint (paste into the ANDROID_CERT_SHA256 repo variable)
         working-directory: android

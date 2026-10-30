@@ -19,7 +19,7 @@
 <meta name="apple-mobile-web-app-title" content="SlotGauge">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
 <title>SlotGauge</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
@@ -365,7 +365,7 @@ if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').cat
 (function(){
   const box = document.getElementById('install'), msg = document.getElementById('installMsg'), go = document.getElementById('installGo'), no = document.getElementById('installNo');
   const standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
-  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+  const ios = (/iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) && !window.MSStream; // iPadOS reports a Mac user agent
   const KEY = 'sg.installSnooze';
   let snoozed = false; try { snoozed = Number(localStorage.getItem(KEY) || 0) > Date.now(); } catch (e) {}
   let deferred = null;
@@ -373,7 +373,8 @@ if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').cat
   function show(){ if (standalone || snoozed) return; box.hidden = false; }
   window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferred = e; setTimeout(show, 2500); });
   if (ios && !standalone) {
-    msg.innerHTML = 'Tap <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M7 8l5-5 5 5"/><path d="M5 12v8h14v-8"/></svg> Share, then “Add to Home Screen”.';
+    const safari = /safari/i.test(navigator.userAgent) && !/crios|fxios|edgios/i.test(navigator.userAgent);
+    msg.innerHTML = `iPhone and iPad can't install from a button. Tap the <b>Share</b> button <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M7 8l5-5 5 5"/><path d="M5 12v8h14v-8"/></svg> ${safari ? 'at the bottom of Safari' : 'in the address bar'}, scroll down, tap <b>Add to Home Screen</b>, then <b>Add</b>.`;
     go.textContent = 'Got it';
     setTimeout(show, 2500);
   }

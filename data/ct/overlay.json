@@ -876,5 +876,41 @@
   "status": "closed",
   "zones": [],
   "notes": []
+ },
+ "35": {
+  "name": "American Lobster",
+  "reviewed": "2026-10-30",
+  "rawHash": "bd22795f0249",
+  "aliases": [
+   "lobster",
+   "lobsters",
+   "maine lobster"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Long Island Sound (Connecticut waters)",
+    "seasons": [
+     [
+      "11-29",
+      "09-07"
+     ]
+    ],
+    "size": [
+     {
+      "min": 3.375,
+      "max": 5.25
+     }
+    ],
+    "bag": null,
+    "bagNote": "No daily limit in state waters (personal use license); 6 per person in federal waters",
+    "closed": false,
+    "sizeNote": "3\u215c \u2013 5\u00bc inch carapace; no egg-bearing or V-notched females"
+   }
+  ],
+  "notes": [
+   "Personal Use Lobster License required ($60), including by hand or diving; annual catch report required."
+  ]
  }
 }

@@ -867,5 +867,151 @@
    }
   ],
   "notes": []
+ },
+ "35": {
+  "name": "Blue Crab",
+  "reviewed": "2026-10-30",
+  "rawHash": "365476427e32",
+  "aliases": [
+   "crab",
+   "crabs",
+   "blue crabs",
+   "jimmy",
+   "jimmies",
+   "sook",
+   "sooks",
+   "hard crab",
+   "hard crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (to 3 nm)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel per person per day, 2 bushels per boat",
+    "closed": false,
+    "sizeNote": "5 inch spike to spike (peelers 3 in; mature females exempt)"
+   }
+  ],
+  "notes": [
+   "Up to six crab traps (2 x 2 ft or smaller) with two 2⅜ in escape rings and a lime/fluorescent green float marked with name and address."
+  ]
+ },
+ "36": {
+  "name": "Shrimp",
+  "reviewed": "2026-10-30",
+  "rawHash": "5cfff2009a03",
+  "aliases": [
+   "shrimp",
+   "shrimps",
+   "white shrimp",
+   "brown shrimp",
+   "pink shrimp",
+   "cast net shrimp"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia state waters (food shrimp, cast net)",
+    "seasons": [
+     [
+      "06-15",
+      "01-15"
+     ]
+    ],
+    "size": [],
+    "bag": null,
+    "bagNote": "48 quarts heads-on (30 quarts tails) per person per day",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "bait",
+    "label": "Georgia state waters (bait shrimp)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "4 quarts per person per day, 2 quarts at a time",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Georgia fishing license and free Saltwater Information Permit (SIP) required. Exact opening/closing dates are set by Coastal Resources Division each year."
+  ]
+ },
+ "37": {
+  "name": "Oyster",
+  "reviewed": "2026-10-30",
+  "rawHash": "865632b7512e",
+  "aliases": [
+   "oyster",
+   "oysters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia public shellfish harvest areas",
+    "seasons": null,
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "2 bushels per person per day, 6 per boat",
+    "closed": false,
+    "sizeNote": "3 inches hinge to mouth"
+   }
+  ],
+  "notes": [
+   "Georgia fishing license and Saltwater Information Permit required. Harvest only from approved public harvest areas (CRD maps)."
+  ]
+ },
+ "38": {
+  "name": "Hard Clam",
+  "reviewed": "2026-10-30",
+  "rawHash": "332325579126",
+  "aliases": [
+   "clam",
+   "clams",
+   "quahog",
+   "quahogs",
+   "hard clams",
+   "littleneck",
+   "cherrystone"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Georgia public shellfish harvest areas",
+    "seasons": null,
+    "size": [
+     {
+      "min": 0.75,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel per person per day (1 per boat)",
+    "closed": false,
+    "sizeNote": "¾ inch thick"
+   }
+  ],
+  "notes": [
+   "Georgia fishing license and Saltwater Information Permit required."
+  ]
  }
 }

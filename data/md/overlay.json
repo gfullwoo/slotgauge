@@ -1537,5 +1537,145 @@
   ],
   "notes": [],
   "photoOf": 64
+ },
+ "71": {
+  "name": "Blue Crab",
+  "reviewed": "2026-10-30",
+  "rawHash": "7ae1e6dc8f69",
+  "aliases": [
+   "crab",
+   "crabs",
+   "blue crabs",
+   "jimmy",
+   "jimmies",
+   "sook",
+   "sooks",
+   "hard crab",
+   "hard crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "chesapeake",
+    "label": "Chesapeake Bay & tidal tributaries",
+    "seasons": [
+     [
+      "04-01",
+      "12-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 5,
+      "max": null,
+      "from": "04-01",
+      "to": "07-14"
+     },
+     {
+      "min": 5.25,
+      "max": null,
+      "from": "07-15",
+      "to": "12-15"
+     }
+    ],
+    "bag": null,
+    "bagNote": "2 dozen males per person (unlicensed); 1 bushel or 6 dozen (licensed); females prohibited",
+    "closed": false,
+    "sizeNote": "Male hard crab 5 in to Jul 14, 5¼ in from Jul 15; soft 3½ in"
+   },
+   {
+    "zone": "atlantic",
+    "label": "Atlantic Ocean & coastal bays",
+    "seasons": [
+     [
+      "04-01",
+      "12-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel (6 dozen) per person, 2 bushels (12 dozen) per boat",
+    "closed": false,
+    "sizeNote": "Hard crab 5 in; soft 3½ in; mature females no minimum"
+   }
+  ],
+  "notes": [
+   "Recreational crabbers may not keep any female crab in Maryland Chesapeake waters. Hours: ½ hour before/after sunrise to sunset (5 p.m. in the Bay mainstem)."
+  ]
+ },
+ "72": {
+  "name": "Oyster",
+  "reviewed": "2026-10-30",
+  "rawHash": "68f09d9cd2ea",
+  "aliases": [
+   "oyster",
+   "oysters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Maryland tidal waters (open areas)",
+    "seasons": [
+     [
+      "10-01",
+      "03-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": 100,
+    "bagNote": "100 oysters per person per day (Mon–Sat, sunrise to noon)",
+    "closed": false,
+    "sizeNote": "3 inches hinge to bill"
+   }
+  ],
+  "notes": [
+   "Maryland residents only. $10 resident oyster license (or free waterfront landowner registration) required. Rakes, diving, hand or shaft tongs only; not from sanctuaries, leases or closed areas."
+  ]
+ },
+ "73": {
+  "name": "Hard Clam",
+  "reviewed": "2026-10-30",
+  "rawHash": "7a086bc31101",
+  "aliases": [
+   "clam",
+   "clams",
+   "quahog",
+   "quahogs",
+   "hard clams",
+   "littleneck",
+   "cherrystone"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Maryland tidal waters (open areas)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 1,
+      "max": null
+     }
+    ],
+    "bag": 250,
+    "bagNote": "250 clams per person per day",
+    "closed": false,
+    "sizeNote": "1 inch across"
+   }
+  ],
+  "notes": [
+   "Maryland residents only, except nonresidents may harvest clams in Worcester County."
+  ]
  }
 }

@@ -15,6 +15,16 @@
    "id": "ct-inland-species",
    "url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations",
    "title": "CT DEEP statewide inland species regulations"
+  },
+  {
+   "id": "ct-crab-lobster",
+   "url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/bait-species-blue-crab-and-lobster-regulations",
+   "title": "CT DEEP bait species, blue crab and lobster regulations"
+  },
+  {
+   "id": "ct-lobster-guidelines",
+   "url": "https://portal.ct.gov/-/media/deep/fishing/fishing_forms/pu_lobster_guidelines.pdf",
+   "title": "CT DEEP guidelines for personal use lobster"
   }
  ],
  "species": [
@@ -28,7 +38,7 @@
    "season": "Open year-round",
    "size": "No person shall possess any striped bass less than 28 inches or greater than or equal to 31 inches",
    "limit": "1 fish per angler",
-   "quote": "Striped Bass: No person shall possess any striped bass less than 28 inches or greater than or equal to 31 inches … Daily creel limit: 1 fish per angler; Open Season: Open Year Round; Inline circle hook required when fishing with bait.",
+   "quote": "Striped Bass: No person shall possess any striped bass less than 28 inches or greater than or equal to 31 inches \u2026 Daily creel limit: 1 fish per angler; Open Season: Open Year Round; Inline circle hook required when fishing with bait.",
    "notes": "",
    "sourceId": "ct-marine"
   },
@@ -182,7 +192,7 @@
    "season": "Prohibited",
    "size": "Prohibited",
    "limit": "Prohibited",
-   "quote": "River Herring: Alewife / Blueback Herring — The taking of anadromous alewife and blueback herring is prohibited from all Connecticut waters, including Long Island Sound.",
+   "quote": "River Herring: Alewife / Blueback Herring \u2014 The taking of anadromous alewife and blueback herring is prohibited from all Connecticut waters, including Long Island Sound.",
    "notes": "",
    "sourceId": "ct-marine"
   },
@@ -294,7 +304,7 @@
    "season": "Open year-round",
    "size": "12 inches (lakes, ponds, Connecticut River); no minimum in rivers and streams",
    "limit": "6 fish in aggregate",
-   "quote": "Largemouth Bass and Smallmouth Bass — Lakes and Ponds and the Connecticut River: Minimum Length: 12 inches; Daily Creel Limit: 6 fish in aggregate. Rivers and Streams: No minimum length; 6 fish in aggregate. Housatonic River (MA line to Bleachery Dam): catch and release only.",
+   "quote": "Largemouth Bass and Smallmouth Bass \u2014 Lakes and Ponds and the Connecticut River: Minimum Length: 12 inches; Daily Creel Limit: 6 fish in aggregate. Rivers and Streams: No minimum length; 6 fish in aggregate. Housatonic River (MA line to Bleachery Dam): catch and release only.",
    "notes": "",
    "sourceId": "ct-inland-species"
   },
@@ -308,7 +318,7 @@
    "season": "Open year-round",
    "size": "12 inches (lakes, ponds, Connecticut River)",
    "limit": "6 fish in aggregate",
-   "quote": "Largemouth Bass and Smallmouth Bass … 12 inches; 6 fish in aggregate",
+   "quote": "Largemouth Bass and Smallmouth Bass \u2026 12 inches; 6 fish in aggregate",
    "notes": "",
    "sourceId": "ct-inland-species"
   },
@@ -335,7 +345,7 @@
    "zone": "Inland waters",
    "season": "Open year-round",
    "size": "No minimum length",
-   "limit": "1 fish (lakes/ponds from the second Saturday of April to end of February; Naugatuck/Shetucket/Housatonic Dec 16 – Aug 31); otherwise catch and release",
+   "limit": "1 fish (lakes/ponds from the second Saturday of April to end of February; Naugatuck/Shetucket/Housatonic Dec 16 \u2013 Aug 31); otherwise catch and release",
    "quote": "Atlantic Salmon: Taking prohibited except Naugatuck River, Shetucket River, Housatonic River and lakes/ponds stocked by CT DEEP. Lakes and Ponds: 1 fish from 6:00 a.m. on the second Saturday of April until the last day of February; 0 fish from March 1 (catch and release only)",
    "notes": "",
    "sourceId": "ct-inland-species"
@@ -349,7 +359,7 @@
    "zone": "Inland waters",
    "season": "Open year-round",
    "size": "None",
-   "limit": "5 fish (6:00 a.m. second Saturday of April – last day of February); catch and release March 1 – second Saturday of April",
+   "limit": "5 fish (6:00 a.m. second Saturday of April \u2013 last day of February); catch and release March 1 \u2013 second Saturday of April",
    "quote": "Kokanee: Lakes and Ponds; Open year-round; No minimum length; 5 fish from 6:00 a.m. on the second Saturday of April until the last day of February; 0 fish from March 1",
    "notes": "",
    "sourceId": "ct-inland-species"
@@ -493,6 +503,20 @@
    "quote": "Sturgeon: The taking of sturgeon is prohibited.",
    "notes": "",
    "sourceId": "ct-inland-species"
+  },
+  {
+   "id": 35,
+   "n": "American Lobster",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Lobsters",
+   "zone": "Long Island Sound (Connecticut waters)",
+   "season": "Open except closed season September 8 \u2013 November 28 (all gear out of the water)",
+   "size": "Carapace at least 3-3/8 inches and not greater than 5-1/4 inches",
+   "limit": "No daily limit in Connecticut waters (6 per person in federal waters); personal use only",
+   "quote": "The body shell (carapace) is at least 3-3/8 inches in length and not greater than 5-1/4 inches. Possessing any lobster bearing external eggs is prohibited; keeping a female with a V-notch mark is prohibited. The closed season for lobster in Long Island Sound is September 8 through November 28. License holders may not set, haul, or have in the water more than ten pots per day.",
+   "notes": "Personal Use Lobster License required ($60), including by hand or diving; annual catch report required.",
+   "sourceId": "ct-lobster-guidelines"
   }
  ]
 }

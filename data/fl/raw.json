@@ -165,6 +165,21 @@
    "id": "fl-freshwater-general",
    "url": "https://myfwc.com/fishing/freshwater/regulations/general/",
    "title": "FWC general statewide freshwater bag and length limits"
+  },
+  {
+   "id": "fl-shrimp",
+   "url": "https://myfwc.com/fishing/saltwater/recreational/shrimp/",
+   "title": "FWC recreational shrimping"
+  },
+  {
+   "id": "fl-bay-scallops",
+   "url": "https://myfwc.com/fishing/saltwater/recreational/bay-scallops/",
+   "title": "FWC bay scallops"
+  },
+  {
+   "id": "fl-shellfish",
+   "url": "https://myfwc.com/fishing/saltwater/recreational/shellfish/",
+   "title": "FWC oysters & clams"
   }
  ],
  "species": [
@@ -1427,6 +1442,62 @@
    "quote": "25 American eels, must be nine inches or greater in total length.",
    "notes": "",
    "sourceId": "fl-freshwater-general"
+  },
+  {
+   "id": 91,
+   "n": "Shrimp",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Shrimp",
+   "zone": "Florida state waters",
+   "season": "Open year-round except: NE inside waters (Nassau, Duval, St. Johns, Putnam, Flagler, Clay) closed Apr 1 – May 31; part of Apalachicola Bay closed Mar 1 – May 31 and Sep 15 – Dec 31",
+   "size": "None",
+   "limit": "5 gallons heads-on per person per day, 5 gallons per vessel (Big Bend: 2 gallons per person, 5 per vessel)",
+   "quote": "Bag limit: 5 gallons (heads on) per harvester or 5 gallons (heads on) per vessel; no more than 5 gallons (heads on) per vessel at any time regardless of the number of persons onboard. Big Bend Region: 2 gallons (heads on) per person or 5 gallons (heads on) per vessel.",
+   "notes": "Cast nets (14 ft stretched max), dip nets, frame nets, up to 4 traps; two nets per vessel. Recreational saltwater license required unless exempt.",
+   "sourceId": "fl-shrimp"
+  },
+  {
+   "id": 92,
+   "n": "Bay Scallop",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Scallops",
+   "zone": "Florida Gulf coast harvest zones",
+   "season": "2026: Fenholloway–Suwannee zone June 15 – Labor Day; Franklin–NW Taylor and Levy/Citrus/Hernando July 1 – Sept 24; St. Joseph Bay/Gulf County closed for 2026; Pasco zone closed Aug 6, 2026",
+   "size": "None",
+   "limit": "2 gallons whole (1 pint meat) per person; 10 gallons whole (½ gallon meat) per vessel. Fenholloway–Suwannee June 15–30: 1 gallon whole (1 cup meat) per person, 5 gallons (2 pints) per vessel",
+   "quote": "Daily bag limit: 2 gallons of whole scallops in shell or 1 pint of meat per person; per vessel up to 10 gallons whole or 1/2 gallon of meat. Fenholloway through Suwannee, June 15–30: 1 gallon whole or 1 cup shucked per person; 5 gallons whole or 2 pints shucked per vessel. Harvest by hand or landing/dip net only. The 2026 bay scallop season in St. Joseph Bay/Gulf County is closed to harvest. Pasco Zone: Closed effective August 6, 2026.",
+   "notes": "Saltwater fishing license required unless exempt. Zones and dates change every year — check FWC before the trip.",
+   "sourceId": "fl-bay-scallops"
+  },
+  {
+   "id": 93,
+   "n": "Oyster",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "Florida state waters (approved harvest areas)",
+   "season": "Closed July 1 – Sept 30 statewide (Dixie, Levy, Wakulla closed June 1 – Aug 31); Apalachicola Bay closed except ABRO permit holders Oct 1, 2026 – Feb 28, 2027 weekends",
+   "size": "3 inches",
+   "limit": "2 bags per person or vessel per day, whichever is less (bag = two 5-gallon buckets, one 10-gallon bucket or 60 lb)",
+   "quote": "Oysters, statewide (excluding Apalachicola Bay) — Bag limit: Two bags per person or vessel, whichever is less, per day. Minimum size: 3 inches. Dixie, Levy, and Wakulla counties are closed June 1 to Aug. 31; elsewhere the closure is July 1 to Sept. 30.",
+   "notes": "Harvest only when FDACS has the area open. Recreational saltwater license required unless exempt.",
+   "sourceId": "fl-shellfish"
+  },
+  {
+   "id": 94,
+   "n": "Hard Clam",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "Florida state waters (approved harvest areas)",
+   "season": "Open year-round (when FDACS area is open)",
+   "size": "1 inch thick across the hinge",
+   "limit": "5 gallons per person per day unshucked; 10 gallons per vessel",
+   "quote": "Hard clams (quahogs) — Minimum size: 1 inch thick across the hinge. Bag limit: 5 gallons per person per day, unshucked. Vessel limit: 10 gallons per vessel per day, unshucked. Season: Open year-round.",
+   "notes": "Harvest only when FDACS has the area open.",
+   "sourceId": "fl-shellfish"
   }
  ]
 }

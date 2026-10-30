@@ -15,6 +15,16 @@
    "id": "sc-freshwater-limits",
    "url": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
    "title": "SCDNR freshwater fish size & possession limits"
+  },
+  {
+   "id": "sc-crustacean-limits",
+   "url": "https://www.eregulations.com/southcarolina/fishing/crustaceans-shellfish-size-catch-limits",
+   "title": "SCDNR crustaceans & shellfish size & catch limits"
+  },
+  {
+   "id": "sc-shellfish-harvest",
+   "url": "https://saltwaterfishing.sc.gov/shellfishharvest.html",
+   "title": "SCDNR recreational shellfish harvesting"
   }
  ],
  "species": [
@@ -507,6 +517,90 @@
    "quote": "Statewide | American Eel | 9 inches min | 25",
    "notes": "",
    "sourceId": "sc-freshwater-limits"
+  },
+  {
+   "id": 36,
+   "n": "Blue Crab",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Crabs",
+   "zone": "SC state waters",
+   "season": "Open year-round",
+   "size": "5-inch minimum carapace width (point to point)",
+   "limit": "1 US bushel per person per day and 2 US bushels per boat per day",
+   "quote": "Possession Limit: 1 US bushel per person per day and 2 US bushels per boat per day. Size Limit: 5-inch minimum carapace width (point to point). Females with egg mass (sponge) must be returned to water unharmed immediately.",
+   "notes": "New for 2026–27: the 1 bushel/person, 2 bushels/boat limit and escape-vent requirement for pots (2⅜ in rings).",
+   "sourceId": "sc-crustacean-limits"
+  },
+  {
+   "id": 37,
+   "n": "Stone Crab",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Crabs",
+   "zone": "SC state waters",
+   "season": "Open year-round",
+   "size": "Claws must be 2 3/4-inch minimum forearm (propodus)",
+   "limit": "No possession limit stated; claws only",
+   "quote": "Size Limit: Claws must be 2 3/4-inch minimum forearm (propodus). Only crabs with 2 claws can have one removed. Only the larger of the 2 claws may be kept. No claw may be removed from a female with egg mass. It is unlawful to possess any stone crab body live or dead.",
+   "notes": "Take one claw only (the larger) from crabs that have two, and return the crab alive.",
+   "sourceId": "sc-crustacean-limits"
+  },
+  {
+   "id": 38,
+   "n": "Spiny Lobster",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Lobsters",
+   "zone": "SC state waters",
+   "season": "Open year-round",
+   "size": "3-inch minimum carapace",
+   "limit": "2 per person per day",
+   "quote": "Possession Limit: 2 per person per day. Size Limit: 3-inch minimum carapace. Removal of tail at sea prohibited. No harvest of berried females.",
+   "notes": "",
+   "sourceId": "sc-crustacean-limits"
+  },
+  {
+   "id": 39,
+   "n": "Oyster",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "SC public and state shellfish grounds",
+   "season": "Typically open October 1 – May 15; closed May 16 – Sept. 30 (SCDNR may shorten or extend)",
+   "size": "None stated",
+   "limit": "2 US bushels per person per day; max 3 personal limits per boat or vehicle; no more than 2 days per 7-day period",
+   "quote": "Possession Limit: 2 US bushels per person per day from public or state shellfish grounds; No boat, vehicle, or boat/vehicle combination may contain more then 3 personal limits regardless of the number of people on the boat or in the vehicle. A person may recreationally harvest shellfish (oysters and/or clams) no more than 2 days per 7 day period.",
+   "notes": "Saltwater recreational shellfish license required (16 and older). No scoops, scrapes or dredges. Daylight only (½ hour after sunrise to ½ hour before sunset).",
+   "sourceId": "sc-crustacean-limits"
+  },
+  {
+   "id": 40,
+   "n": "Hard Clam",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "SC public and state shellfish grounds",
+   "season": "Typically open October 1 – May 15; closed May 16 – Sept. 30 (SCDNR may shorten or extend)",
+   "size": "1-inch minimum thickness",
+   "limit": "1/2 US bushel per person per day; max 3 personal limits per boat or vehicle; no more than 2 days per 7-day period",
+   "quote": "Possession Limit: 1/2 US bushel per person per day from public or state shellfish grounds. Size Limit: 1-inch minimum thickness.",
+   "notes": "Saltwater recreational shellfish license required (16 and older).",
+   "sourceId": "sc-crustacean-limits"
+  },
+  {
+   "id": 41,
+   "n": "Shrimp",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Shrimp",
+   "zone": "SC state waters (cast net, no bait)",
+   "season": "Open May 1 – December 15 (closed Dec. 16 – Apr. 30)",
+   "size": "None",
+   "limit": "48 quarts whole (heads on) or 29 quarts headed per day per boat, or per person if no boat is used",
+   "quote": "Taking Shrimp Without Bait — Closed: Dec. 16 - Apr. 30. 48 quarts whole or 29 quarts headed per day (sunrise to sunrise) per boat, per person if no boat is used, or per seining party. 12 dozen dead or live shrimp allowed per boat during closed season.",
+   "notes": "Shrimp baiting (over bait, licensed, 10 poles): 2026 season Sept. 11 noon – Nov. 9 noon, 48 quarts whole or 29 quarts headed per day per set of poles.",
+   "sourceId": "sc-crustacean-limits"
   }
  ]
 }

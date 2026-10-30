@@ -15,6 +15,11 @@
    "id": "ny-freshwater-statewide",
    "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/statewide-season-sizes-catch-limits",
    "title": "NYSDEC statewide freshwater seasons, sizes and catch limits"
+  },
+  {
+   "id": "ny-shellfish",
+   "url": "https://dec.ny.gov/things-to-do/shellfishing/harvesting-regulations",
+   "title": "NYSDEC shellfish harvesting regulations"
   }
  ],
  "species": [
@@ -675,6 +680,62 @@
    "quote": "American Shad - All other inland waters, including Delaware River | All year | None | 2 (Hudson River and tributaries: possession prohibited)",
    "notes": "",
    "sourceId": "ny-freshwater-statewide"
+  },
+  {
+   "id": 48,
+   "n": "Hard Clam",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "NY certified shellfish areas",
+   "season": "Open year-round from certified areas",
+   "size": "1 inch thick across the hinge",
+   "limit": "100 clams per day (clams, oysters and mussels together may not exceed 1 bushel per day)",
+   "quote": "Hard clam — at least 1 inch thick, measured across the hinge; recreational limit 100 clams. No more than one bushel (combined total volume) of clams, oysters and mussels per day.",
+   "notes": "No DEC permit, but most towns require a recreational shellfish permit and may set their own limits.",
+   "sourceId": "ny-shellfish"
+  },
+  {
+   "id": 49,
+   "n": "Oyster",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "NY certified shellfish areas",
+   "season": "Open year-round from certified areas",
+   "size": "3 inches across the longest diameter",
+   "limit": "1/2 bushel per day (clams, oysters and mussels together may not exceed 1 bushel per day)",
+   "quote": "Oyster — at least 3 inches across the longest diameter; recreational limit 1/2 bushel. Oysters may be taken all year from areas open to shellfishing.",
+   "notes": "Town permit usually required.",
+   "sourceId": "ny-shellfish"
+  },
+  {
+   "id": 50,
+   "n": "Soft Clam",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "NY certified shellfish areas",
+   "season": "Open year-round from certified areas",
+   "size": "1.5 inches long",
+   "limit": "1/2 bushel per day",
+   "quote": "Soft clam — at least 1.5 inches long; recreational limit 1/2 bushel.",
+   "notes": "",
+   "sourceId": "ny-shellfish"
+  },
+  {
+   "id": 51,
+   "n": "Bay Scallop",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Scallops",
+   "zone": "NY certified shellfish areas",
+   "season": "First Monday in November through March 31",
+   "size": "2 1/4 inches mid-hinge to mid-bill, with an annual growth ring",
+   "limit": "1 bushel per day",
+   "quote": "Bay scallop — at least 2-1/4 inches (mid-hinge to mid-bill) and showing an annual growth ring; recreational limit 1 bushel; may be taken only from the first Monday in November through March 31.",
+   "notes": "Dredges up to 36 in wide, no mechanical retrieval, no dredging on Sundays. Town rules may be stricter.",
+   "sourceId": "ny-shellfish"
   }
  ]
 }

@@ -845,5 +845,221 @@
   ],
   "notes": [],
   "photoOf": 73
+ },
+ "36": {
+  "name": "Blue Crab",
+  "reviewed": "2026-10-30",
+  "rawHash": "0f5da496bb2d",
+  "aliases": [
+   "crab",
+   "crabs",
+   "blue crabs",
+   "jimmy",
+   "jimmies",
+   "sook",
+   "sooks",
+   "hard crab",
+   "hard crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel per person per day, 2 bushels per boat",
+    "closed": false,
+    "sizeNote": "5 inch carapace width, point to point"
+   }
+  ],
+  "notes": [
+   "New for 2026–27: the 1 bushel/person, 2 bushels/boat limit and escape-vent requirement for pots (2⅜ in rings)."
+  ]
+ },
+ "37": {
+  "name": "Stone Crab",
+  "reviewed": "2026-10-30",
+  "rawHash": "bce6386ed672",
+  "aliases": [
+   "stone crabs",
+   "stone crab claws",
+   "claws"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 2.75,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "No limit stated; one claw per crab, bodies may not be kept",
+    "closed": false,
+    "sizeNote": "2.75 inch claw (propodus) minimum"
+   }
+  ],
+  "notes": [
+   "Take one claw only (the larger) from crabs that have two, and return the crab alive."
+  ]
+ },
+ "38": {
+  "name": "Spiny Lobster",
+  "reviewed": "2026-10-30",
+  "rawHash": "9a24fc8248de",
+  "aliases": [
+   "lobster",
+   "lobsters",
+   "spiny lobsters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per person per day",
+    "closed": false,
+    "sizeNote": "3 inch carapace length"
+   }
+  ],
+  "notes": []
+ },
+ "39": {
+  "name": "Oyster",
+  "reviewed": "2026-10-30",
+  "rawHash": "bc883569221a",
+  "aliases": [
+   "oyster",
+   "oysters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC public & state shellfish grounds",
+    "seasons": [
+     [
+      "10-01",
+      "05-15"
+     ]
+    ],
+    "size": [],
+    "bag": null,
+    "bagNote": "2 bushels per person per day (max 3 limits per boat; 2 days per week)",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Saltwater recreational shellfish license required (16 and older). No scoops, scrapes or dredges. Daylight only (½ hour after sunrise to ½ hour before sunset)."
+  ]
+ },
+ "40": {
+  "name": "Hard Clam",
+  "reviewed": "2026-10-30",
+  "rawHash": "017d20a5e2d2",
+  "aliases": [
+   "clam",
+   "clams",
+   "quahog",
+   "quahogs",
+   "hard clams",
+   "littleneck",
+   "cherrystone"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC public & state shellfish grounds",
+    "seasons": [
+     [
+      "10-01",
+      "05-15"
+     ]
+    ],
+    "size": [
+     {
+      "min": 1,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "½ bushel per person per day (max 3 limits per boat; 2 days per week)",
+    "closed": false,
+    "sizeNote": "1 inch thick"
+   }
+  ],
+  "notes": [
+   "Saltwater recreational shellfish license required (16 and older)."
+  ]
+ },
+ "41": {
+  "name": "Shrimp",
+  "reviewed": "2026-10-30",
+  "rawHash": "2bbca24fd391",
+  "aliases": [
+   "shrimp",
+   "shrimps",
+   "white shrimp",
+   "brown shrimp",
+   "pink shrimp",
+   "cast net shrimp"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "SC state waters (cast net, no bait)",
+    "seasons": [
+     [
+      "05-01",
+      "12-15"
+     ]
+    ],
+    "size": [],
+    "bag": null,
+    "bagNote": "48 quarts heads-on (29 quarts headed) per boat per day, or per person without a boat",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "baiting",
+    "label": "SC shrimp baiting season (licensed, over bait)",
+    "seasons": [
+     [
+      "09-11",
+      "11-09"
+     ]
+    ],
+    "size": [],
+    "bag": null,
+    "bagNote": "48 quarts heads-on (29 quarts headed) per day per set of poles",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Shrimp baiting (over bait, licensed, 10 poles): 2026 season Sept. 11 noon – Nov. 9 noon, 48 quarts whole or 29 quarts headed per day per set of poles."
+  ]
  }
 }

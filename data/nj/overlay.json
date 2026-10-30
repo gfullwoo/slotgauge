@@ -79,7 +79,7 @@
      }
     ],
     "bag": 10,
-    "bagNote": "10 (May 15 \u2013 Jun 21); 1 (Jun 22 \u2013 Sep 22); 10 (Sep 23 \u2013 Oct 31); 15 (Nov 1 \u2013 Dec 31)",
+    "bagNote": "10 (May 15 – Jun 21); 1 (Jun 22 – Sep 22); 10 (Sep 23 – Oct 31); 15 (Nov 1 – Dec 31)",
     "closed": false,
     "sizeNote": "12.5 in, not including tail filament"
    }
@@ -395,7 +395,7 @@
   "zones": [
    {
     "zone": "ocean",
-    "label": "Atlantic Ocean (0\u20133 nm)",
+    "label": "Atlantic Ocean (0–3 nm)",
     "seasons": null,
     "size": [
      {
@@ -474,7 +474,7 @@
    },
    {
     "zone": "federal",
-    "label": "Federal waters (3\u2013200 nm)",
+    "label": "Federal waters (3–200 nm)",
     "seasons": null,
     "size": [],
     "bag": null,
@@ -504,9 +504,9 @@
    }
   ],
   "notes": [
-   "Striped Bass Bonus Program: one 24 in to under 28 in fish per permit, May 15 \u2013 Dec 31.",
+   "Striped Bass Bonus Program: one 24 in to under 28 in fish per permit, May 15 – Dec 31.",
    "Gaffing prohibited. Non-offset circle hooks required with bait. Hybrids count as striped bass.",
-   "Freshwater striped bass: 1 fish, 28\u201331 in, March 1 \u2013 Dec 31, circle hooks with bait."
+   "Freshwater striped bass: 1 fish, 28–31 in, March 1 – Dec 31, circle hooks with bait."
   ]
  },
  "21": {
@@ -618,7 +618,7 @@
      }
     ],
     "bag": 4,
-    "bagNote": "4 (Jan\u2013Feb, April); 1 (Aug 1 \u2013 Nov 15); 5 (Nov 16 \u2013 Dec 31)",
+    "bagNote": "4 (Jan–Feb, April); 1 (Aug 1 – Nov 15); 5 (Nov 16 – Dec 31)",
     "closed": false,
     "sizeNote": ""
    }
@@ -712,7 +712,7 @@
    }
   ],
   "notes": [
-   "Closed LMA 4 Apr 30 \u2013 May 31 and LMA 5 Feb 1 \u2013 Mar 31. No egg-bearing or v-notched females."
+   "Closed LMA 4 Apr 30 – May 31 and LMA 5 Feb 1 – Mar 31. No egg-bearing or v-notched females."
   ],
   "photoOf": 67
  },
@@ -1105,13 +1105,13 @@
      }
     ],
     "bag": 2,
-    "bagNote": "2 per day; 6 per day Apr 11 (8 a.m.) \u2013 May 31",
+    "bagNote": "2 per day; 6 per day Apr 11 (8 a.m.) – May 31",
     "closed": false,
     "sizeNote": ""
    }
   ],
   "notes": [
-   "Stocked rivers and streams are closed Mar 23 \u2013 Apr 11 (8 a.m.). Brook trout in the Conservation Zone must be released."
+   "Stocked rivers and streams are closed Mar 23 – Apr 11 (8 a.m.). Brook trout in the Conservation Zone must be released."
   ]
  }
 }

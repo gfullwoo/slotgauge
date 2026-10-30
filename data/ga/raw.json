@@ -20,6 +20,11 @@
    "id": "ga-game-limits",
    "url": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
    "title": "Georgia game species daily limits"
+  },
+  {
+   "id": "ga-shrimp-crab-shellfish",
+   "url": "https://gadnrle.org/shrimpregs",
+   "title": "Georgia DNR shrimp, crab, shellfish & bait minnow regulations"
   }
  ],
  "species": [
@@ -498,6 +503,62 @@
    "quote": "Walleye | 8",
    "notes": "",
    "sourceId": "ga-game-limits"
+  },
+  {
+   "id": 35,
+   "n": "Blue Crab",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Crabs",
+   "zone": "Georgia state waters",
+   "season": "Open year-round",
+   "size": "5 inches spike to spike; peelers 3 inches; mature adult females exempt",
+   "limit": "1 bushel per person per 24 hours; 2 bushels per boat with more than one person",
+   "quote": "Crabs must not be less than 5 inches from spike to spike across the back, except peelers, which must measure at least 3 inches, and mature adult females. Recreational crabbers may take no more than one bushel of crabs during any 24-hour period; on a boat with more than one person, no more than two bushels. No sponge (egg-bearing) crabs are allowed.",
+   "notes": "Up to six crab traps (2 x 2 ft or smaller) with two 2⅜ in escape rings and a lime/fluorescent green float marked with name and address.",
+   "sourceId": "ga-shrimp-crab-shellfish"
+  },
+  {
+   "id": 36,
+   "n": "Shrimp",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Shrimp",
+   "zone": "Georgia state waters (cast net, food shrimp)",
+   "season": "Food-shrimp cast netting follows the commercial season, generally mid-June through mid-January; bait shrimp (4 quarts/day) has no closed season",
+   "size": "None",
+   "limit": "48 quarts heads-on or 30 quarts tails per person per day",
+   "quote": "A person may not possess more than 48 quarts of heads-on shrimp or 30 quarts of shrimp tails in any day. Recreational cast netters are limited to two quarts per person at any time and may take a maximum of four quarts of bait shrimp per day; there is no closed season for the harvest of bait shrimp.",
+   "notes": "Georgia fishing license and free Saltwater Information Permit (SIP) required. Exact opening/closing dates are set by Coastal Resources Division each year.",
+   "sourceId": "ga-shrimp-crab-shellfish"
+  },
+  {
+   "id": 37,
+   "n": "Oyster",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "Georgia public shellfish areas",
+   "season": "Open year-round by law (check CRD seasonal closures; summer harvest is usually closed)",
+   "size": "3 inches hinge to mouth",
+   "limit": "2 bushels per person per day; 6 bushels per boat per day",
+   "quote": "Oysters must measure no less than three inches from hinge to mouth. Up to two bushels of oysters and one bushel of clams per person per day; a maximum limit of six bushels of oysters and one bushel of clams per boat per day.",
+   "notes": "Georgia fishing license and Saltwater Information Permit required. Harvest only from approved public harvest areas (CRD maps).",
+   "sourceId": "ga-shrimp-crab-shellfish"
+  },
+  {
+   "id": 38,
+   "n": "Hard Clam",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "Georgia public shellfish areas",
+   "season": "Open year-round by law (check CRD seasonal closures)",
+   "size": "3/4 inch thick",
+   "limit": "1 bushel per person per day; 1 bushel per boat per day",
+   "quote": "The maximum depth from one shell half to the other must be at least ¾ inch thick. Up to two bushels of oysters and one bushel of clams per person per day; a maximum limit of six bushels of oysters and one bushel of clams per boat per day.",
+   "notes": "Georgia fishing license and Saltwater Information Permit required.",
+   "sourceId": "ga-shrimp-crab-shellfish"
   }
  ]
 }

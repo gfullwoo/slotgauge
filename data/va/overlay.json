@@ -1192,5 +1192,102 @@
   "notes": [
    "Kill immediately and notify DWR."
   ]
+ },
+ "48": {
+  "name": "Blue Crab",
+  "reviewed": "2026-10-30",
+  "rawHash": "be738d2038ff",
+  "aliases": [
+   "crab",
+   "crabs",
+   "blue crabs",
+   "jimmy",
+   "jimmies",
+   "sook",
+   "sooks",
+   "hard crab",
+   "hard crabs"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia tidal waters",
+    "seasons": null,
+    "size": [
+     {
+      "min": 5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel of hard crabs + 2 dozen peelers per person per day",
+    "closed": false,
+    "sizeNote": "Hard crab 5 in point to point (mature female no minimum); peeler 3.25 in to Jul 15 then 3.5 in; soft crab 3.5 in"
+   }
+  ],
+  "notes": [
+   "March 17 – June 15 only bright orange sponge (egg-bearing) crabs may be kept; brown/black sponge crabs must be returned. VMRC asks that all sponge crabs be released."
+  ]
+ },
+ "49": {
+  "name": "Oyster",
+  "reviewed": "2026-10-30",
+  "rawHash": "cc83509ede6b",
+  "aliases": [
+   "oyster",
+   "oysters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia public oyster grounds",
+    "seasons": null,
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel per person per day",
+    "closed": false,
+    "sizeNote": "3 inch minimum (cull undersized back)"
+   }
+  ],
+  "notes": [
+   "No license needed for personal use from open public grounds by hand or ordinary tongs. Season dates differ by area — see the VMRC public oyster harvest season notice before going."
+  ]
+ },
+ "50": {
+  "name": "Hard Clam",
+  "reviewed": "2026-10-30",
+  "rawHash": "41391cca3b7e",
+  "aliases": [
+   "clam",
+   "clams",
+   "quahog",
+   "quahogs",
+   "hard clams",
+   "littleneck",
+   "cherrystone"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Virginia open shellfish areas",
+    "seasons": null,
+    "size": [],
+    "bag": 250,
+    "bagNote": "250 clams per person per day",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "By hand or ordinary tongs only; no license needed for personal use. Check VDH condemned-area closures."
+  ]
  }
 }

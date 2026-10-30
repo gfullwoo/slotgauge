@@ -1265,5 +1265,138 @@
    "Hudson River and tributaries: possession prohibited."
   ],
   "photoOf": 19
+ },
+ "48": {
+  "name": "Hard Clam",
+  "reviewed": "2026-10-30",
+  "rawHash": "304dc0857225",
+  "aliases": [
+   "clam",
+   "clams",
+   "quahog",
+   "quahogs",
+   "hard clams",
+   "littleneck",
+   "cherrystone"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY certified shellfish areas",
+    "seasons": null,
+    "size": [
+     {
+      "min": 1,
+      "max": null
+     }
+    ],
+    "bag": 100,
+    "bagNote": "100 clams per day (1 bushel combined shellfish)",
+    "closed": false,
+    "sizeNote": "1 inch thick across the hinge"
+   }
+  ],
+  "notes": [
+   "No DEC permit, but most towns require a recreational shellfish permit and may set their own limits."
+  ]
+ },
+ "49": {
+  "name": "Oyster",
+  "reviewed": "2026-10-30",
+  "rawHash": "6deae0f75575",
+  "aliases": [
+   "oyster",
+   "oysters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY certified shellfish areas",
+    "seasons": null,
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "½ bushel per day",
+    "closed": false,
+    "sizeNote": "3 inches longest diameter"
+   }
+  ],
+  "notes": [
+   "Town permit usually required."
+  ]
+ },
+ "50": {
+  "name": "Soft Clam",
+  "reviewed": "2026-10-30",
+  "rawHash": "455c44f58387",
+  "aliases": [
+   "steamer",
+   "steamers",
+   "soft shell clam",
+   "soft-shell clams",
+   "softshell clam"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY certified shellfish areas",
+    "seasons": null,
+    "size": [
+     {
+      "min": 1.5,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "½ bushel per day",
+    "closed": false,
+    "sizeNote": "1.5 inch shell length"
+   }
+  ],
+  "notes": []
+ },
+ "51": {
+  "name": "Bay Scallop",
+  "reviewed": "2026-10-30",
+  "rawHash": "6555d2309edf",
+  "aliases": [
+   "scallop",
+   "scallops",
+   "peconic scallops",
+   "bay scallops"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NY certified shellfish areas",
+    "seasons": [
+     [
+      "11-02",
+      "03-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 2.25,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel per day",
+    "closed": false,
+    "sizeNote": "2¼ inches with an annual growth ring"
+   }
+  ],
+  "notes": [
+   "Dredges up to 36 in wide, no mechanical retrieval, no dredging on Sundays. Town rules may be stricter."
+  ]
  }
 }

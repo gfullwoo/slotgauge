@@ -15,6 +15,16 @@
    "id": "va-dwr-creel",
    "url": "https://www.dwr.virginia.gov/fishing/regulations/creelandlengthlimits.pdf",
    "title": "Virginia DWR freshwater creel and length limits"
+  },
+  {
+   "id": "va-rec-crabbing",
+   "url": "https://mrc.virginia.gov/regulations/VA-recreational-crabbing-rules.shtm",
+   "title": "VMRC recreational crabbing rules"
+  },
+  {
+   "id": "va-rec-shellfish",
+   "url": "https://mrc.virginia.gov/Regulations/VA-recreational-shellfish-non-HL-fish-gears.shtm",
+   "title": "VMRC recreational shellfishing and alternative gears"
   }
  ],
  "species": [
@@ -704,6 +714,48 @@
    "quote": "Northern Snakehead: No statewide daily limit; must immediately kill the fish and notify the department",
    "notes": "",
    "sourceId": "va-dwr-creel"
+  },
+  {
+   "id": 48,
+   "n": "Blue Crab",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Crabs",
+   "zone": "Virginia tidal waters",
+   "season": "Hand line, dip net, collapsible traps and cast net: all year. Up to 2 crab pots: March 17 – December 19",
+   "size": "Hard crab 5 inches (male and immature female); mature female (sook) no size limit; peeler 3.25 in Mar 17–Jul 15 and 3.5 in Jul 16–Nov 30; soft crab 3.5 inches",
+   "limit": "1 bushel of hard crabs and 2 dozen peeler crabs per person per day",
+   "quote": "All recreational crabbing is limited to 1 bushel of hard crabs and 2 dozen peeler crabs per person per day. Minimum sizes (tip to tip of the longest spikes): hard crabs male 5 inches, immature female 5 inches, mature female no size limit; peeler crabs March 17 to July 15 3¼ inches, July 16 to November 30 3½ inches; softshell crabs 3½ inches.",
+   "notes": "March 17 – June 15 only bright orange sponge (egg-bearing) crabs may be kept; brown/black sponge crabs must be returned. VMRC asks that all sponge crabs be released.",
+   "sourceId": "va-rec-crabbing"
+  },
+  {
+   "id": 49,
+   "n": "Oyster",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "Virginia public oyster grounds",
+   "season": "Public oyster season (set each year by area, generally fall and winter); open 7 days a week to hand tongs",
+   "size": "3 inches (culling rules, 4VAC20-260)",
+   "limit": "1 bushel per person per day",
+   "quote": "Taking a maximum of one bushel of oysters in any one day for personal use when taken by hand or with ordinary tongs during the oyster season from open rocks. One bushel per person limit and culling regulations applies.",
+   "notes": "No license needed for personal use from open public grounds by hand or ordinary tongs. Season dates differ by area — see the VMRC public oyster harvest season notice before going.",
+   "sourceId": "va-rec-shellfish"
+  },
+  {
+   "id": 50,
+   "n": "Hard Clam",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "Virginia open shellfish areas",
+   "season": "Open year-round from areas open to harvest",
+   "size": "None stated for personal use",
+   "limit": "250 clams per person per day",
+   "quote": "Taking a maximum of 250 clams in any one day for personal use when taken by hand or with ordinary tongs from open areas.",
+   "notes": "By hand or ordinary tongs only; no license needed for personal use. Check VDH condemned-area closures.",
+   "sourceId": "va-rec-shellfish"
   }
  ]
 }

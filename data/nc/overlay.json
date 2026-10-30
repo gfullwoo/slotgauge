@@ -695,6 +695,72 @@
    "Closed Jan 1–31 north of the Highway 58 bridge and Mar 1–15 south of it."
   ]
  },
+ "33": {
+  "name": "Stone Crab",
+  "aliases": [
+   "stone crabs",
+   "stone crab claws"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": [
+     [
+      "08-16",
+      "06-14"
+     ]
+    ],
+    "size": [
+     {
+      "min": 2.75,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "No possession limit during the open season; claws only",
+    "closed": false,
+    "sizeNote": "2.75 inch claw (propodus) length"
+   }
+  ],
+  "notes": [
+   "Closed June 15 – August 15."
+  ],
+  "reviewed": "2026-10-30",
+  "rawHash": "277a924bf72f"
+ },
+ "34": {
+  "name": "Spiny Lobster",
+  "aliases": [
+   "lobster",
+   "lobsters",
+   "spiny lobsters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": 2,
+    "bagNote": "2 per trip",
+    "closed": false,
+    "sizeNote": "3 inch carapace length"
+   }
+  ],
+  "notes": [
+   "See the most recent DMF proclamation."
+  ],
+  "reviewed": "2026-10-30",
+  "rawHash": "299f06b0dd9a"
+ },
  "35": {
   "name": "Hard Clam",
   "reviewed": "2026-09-29",
@@ -722,6 +788,41 @@
    }
   ],
   "notes": []
+ },
+ "36": {
+  "name": "Oyster",
+  "aliases": [
+   "oyster",
+   "oysters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": [
+     [
+      "10-15",
+      "03-31"
+     ]
+    ],
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "1 bushel per day, max 2 bushels per vessel",
+    "closed": false,
+    "sizeNote": "3 inch shell length"
+   }
+  ],
+  "notes": [
+   "Season October 15 – March 31 unless closed earlier by proclamation; harvest only from open areas."
+  ],
+  "reviewed": "2026-10-30",
+  "rawHash": "b842efa5df01"
  },
  "37": {
   "name": "Conchs and Whelks",
@@ -963,5 +1064,84 @@
   "notes": [
    "Hatchery Supported waters close Mar 1 – Apr 2 each spring; Delayed Harvest waters are catch-and-release Oct 1 – early June."
   ]
+ },
+ "47": {
+  "name": "Shrimp",
+  "reviewed": "2026-10-30",
+  "rawHash": "b3c9eb7b4c85",
+  "aliases": [
+   "shrimp",
+   "shrimps",
+   "white shrimp",
+   "brown shrimp",
+   "pink shrimp",
+   "cast net shrimp"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "48 quarts heads-on (30 heads-off) per person or vessel per day",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Shrimp trawls and other commercial gear need an RCGL. Check DMF proclamations for open/closed shrimping areas."
+  ]
+ },
+ "48": {
+  "name": "Bay Scallop",
+  "reviewed": "2026-10-30",
+  "rawHash": "3080a6f3e312",
+  "aliases": [
+   "scallop",
+   "scallops",
+   "bay scallops"
+  ],
+  "status": "closed",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "Closed — unlawful to possess",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Bay scallop harvest has been closed statewide; watch DMF proclamations for any reopening."
+  ]
+ },
+ "49": {
+  "name": "Mussels",
+  "reviewed": "2026-10-30",
+  "rawHash": "9216eec1b40b",
+  "aliases": [
+   "mussel",
+   "blue mussels",
+   "ribbed mussels"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "NC coastal and joint waters (to 3 mi)",
+    "seasons": null,
+    "size": [],
+    "bag": 100,
+    "bagNote": "100 per day, max 200 per vessel",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": []
  }
 }

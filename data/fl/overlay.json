@@ -572,7 +572,7 @@
    }
   ],
   "notes": [
-   "Closed Oct 15 – Nov 30 every year."
+   "Closed Oct 15 \u2013 Nov 30 every year."
   ],
   "photoOf": 185
  },
@@ -594,7 +594,7 @@
      }
     ],
     "bag": 8,
-    "bagNote": "8 per person; 50 per vessel per trip in March–April",
+    "bagNote": "8 per person; 50 per vessel per trip in March\u2013April",
     "closed": false,
     "sizeNote": ""
    }
@@ -822,7 +822,7 @@
     "seasons": null,
     "size": [],
     "bag": 50,
-    "bagNote": "50 per person; vessel limit 50 (Sep–Jan) or 100 (Feb–Aug)",
+    "bagNote": "50 per person; vessel limit 50 (Sep\u2013Jan) or 100 (Feb\u2013Aug)",
     "closed": false,
     "sizeNote": ""
    }
@@ -1017,7 +1017,7 @@
    }
   ],
   "notes": [
-   "Gulf season 2026: Sept 1 – Oct 13. Atlantic closed in April."
+   "Gulf season 2026: Sept 1 \u2013 Oct 13. Atlantic closed in April."
   ],
   "photoOf": 124
  },
@@ -1115,7 +1115,7 @@
    }
   ],
   "notes": [
-   "Gulf gag season 2026: September 1–30 only."
+   "Gulf gag season 2026: September 1\u201330 only."
   ],
   "photoOf": 173
  },
@@ -1328,7 +1328,7 @@
     "bag": 1,
     "bagNote": "1 per person per day (no captain/crew retention)",
     "closed": false,
-    "sizeNote": "no minimum size during the Oct 9–22 season"
+    "sizeNote": "no minimum size during the Oct 9\u201322 season"
    },
    {
     "zone": "gulf",
@@ -1360,7 +1360,7 @@
    }
   ],
   "notes": [
-   "Atlantic 2026 season: October 9–22 only, state and federal waters. Gulf fall season also includes weekend/holiday dates through Jan 4, 2027 — check FWC."
+   "Atlantic 2026 season: October 9\u201322 only, state and federal waters. Gulf fall season also includes weekend/holiday dates through Jan 4, 2027 \u2014 check FWC."
   ]
  },
  "62": {
@@ -1702,14 +1702,18 @@
    }
   ],
   "notes": [
-   "Two-day sport season: last consecutive Wednesday–Thursday of July (6 per person in Monroe County/Biscayne NP, 12 elsewhere). Land whole; carry a gauge."
+   "Two-day sport season: last consecutive Wednesday\u2013Thursday of July (6 per person in Monroe County/Biscayne NP, 12 elsewhere). Land whole; carry a gauge."
   ]
  },
  "77": {
   "name": "Stone Crab",
-  "reviewed": "2026-10-01",
+  "reviewed": "2026-10-30",
   "rawHash": "c6f0d5a7d69d",
-  "aliases": [],
+  "aliases": [
+   "stone crabs",
+   "stone crab claws",
+   "claws"
+  ],
   "status": "open",
   "zones": [
    {
@@ -1734,16 +1738,24 @@
    }
   ],
   "notes": [
-   "No egg-bearing crabs."
+   "No egg-bearing crabs.",
+   "Claws only; harvest from egg-bearing crabs prohibited; up to 5 traps per person (registered). Season closes May 2."
   ]
  },
  "78": {
   "name": "Blue Crab",
-  "reviewed": "2026-10-01",
+  "reviewed": "2026-10-30",
   "rawHash": "82b41cc39799",
   "aliases": [
    "crab",
-   "crabs"
+   "crabs",
+   "blue crabs",
+   "jimmy",
+   "jimmies",
+   "sook",
+   "sooks",
+   "hard crab",
+   "hard crabs"
   ],
   "status": "open",
   "zones": [
@@ -1759,7 +1771,8 @@
    }
   ],
   "notes": [
-   "No egg-bearing crabs. Up to 5 traps per person, registered free at GoOutdoorsFlorida.com."
+   "No egg-bearing crabs. Up to 5 traps per person, registered free at GoOutdoorsFlorida.com.",
+   "No minimum size. Egg-bearing crabs may not be kept. Up to 5 traps per person with free annual trap registration (16+). Trap closures: Sept 20 \u2013 Oct 4 in Gulf state waters beyond 3 mi; regional 10-day trap closures alternate coasts each year."
   ]
  },
  "79": {
@@ -1785,7 +1798,7 @@
   "zones": [
    {
     "zone": "sefl",
-    "label": "Southeast zone (Collier–Martin counties)",
+    "label": "Southeast zone (Collier\u2013Martin counties)",
     "seasons": null,
     "size": [
      {
@@ -1983,5 +1996,211 @@
   ],
   "notes": [],
   "photoOf": 73
+ },
+ "91": {
+  "name": "Shrimp",
+  "reviewed": "2026-10-30",
+  "rawHash": "aba6ff73e79c",
+  "aliases": [
+   "shrimp",
+   "shrimps",
+   "white shrimp",
+   "brown shrimp",
+   "pink shrimp",
+   "cast net shrimp"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida state waters",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "5 gallons heads-on per person per day, 5 gallons per vessel",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "bigbend",
+    "label": "Big Bend region",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "2 gallons heads-on per person, 5 gallons per vessel",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "nefl",
+    "label": "Northeast region (inside waters)",
+    "seasons": [
+     [
+      "06-01",
+      "03-31"
+     ]
+    ],
+    "size": [],
+    "bag": null,
+    "bagNote": "5 gallons heads-on per person per day, 5 gallons per vessel",
+    "closed": false,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Cast nets (14 ft stretched max), dip nets, frame nets, up to 4 traps; two nets per vessel. Recreational saltwater license required unless exempt."
+  ]
+ },
+ "92": {
+  "name": "Bay Scallop",
+  "reviewed": "2026-10-30",
+  "rawHash": "0d634d54833c",
+  "aliases": [
+   "scallop",
+   "scallops",
+   "bay scallops",
+   "scalloping"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "suwannee",
+    "label": "Fenholloway\u2013Suwannee zone (Keaton Beach, Steinhatchee)",
+    "seasons": [
+     [
+      "06-15",
+      "09-07"
+     ]
+    ],
+    "size": [],
+    "bag": null,
+    "bagNote": "2 gallons whole (1 pint meat) per person, 10 gallons per vessel; June 15\u201330: 1 gallon per person",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "panhandle",
+    "label": "Franklin \u2013 NW Taylor County (Carrabelle, St. Marks)",
+    "seasons": [
+     [
+      "07-01",
+      "09-24"
+     ]
+    ],
+    "size": [],
+    "bag": null,
+    "bagNote": "2 gallons whole (1 pint meat) per person, 10 gallons per vessel",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "bigbend",
+    "label": "Levy, Citrus & Hernando counties (Crystal River, Homosassa)",
+    "seasons": [
+     [
+      "07-01",
+      "09-24"
+     ]
+    ],
+    "size": [],
+    "bag": null,
+    "bagNote": "2 gallons whole (1 pint meat) per person, 10 gallons per vessel",
+    "closed": false,
+    "sizeNote": ""
+   },
+   {
+    "zone": "gulfcounty",
+    "label": "St. Joseph Bay / Gulf County",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "Closed for 2026",
+    "closed": true,
+    "sizeNote": ""
+   },
+   {
+    "zone": "pasco",
+    "label": "Pasco zone",
+    "seasons": null,
+    "size": [],
+    "bag": null,
+    "bagNote": "Closed effective Aug 6, 2026 (toxin levels)",
+    "closed": true,
+    "sizeNote": ""
+   }
+  ],
+  "notes": [
+   "Saltwater fishing license required unless exempt. Zones and dates change every year \u2014 check FWC before the trip."
+  ]
+ },
+ "93": {
+  "name": "Oyster",
+  "reviewed": "2026-10-30",
+  "rawHash": "e7b1caf15e58",
+  "aliases": [
+   "oyster",
+   "oysters"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida approved harvest areas",
+    "seasons": [
+     [
+      "10-01",
+      "06-30"
+     ]
+    ],
+    "size": [
+     {
+      "min": 3,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "2 bags per person or vessel per day (bag \u2248 10 gallons / 60 lb)",
+    "closed": false,
+    "sizeNote": "3 inch minimum"
+   }
+  ],
+  "notes": [
+   "Harvest only when FDACS has the area open. Recreational saltwater license required unless exempt."
+  ]
+ },
+ "94": {
+  "name": "Hard Clam",
+  "reviewed": "2026-10-30",
+  "rawHash": "6df9c4b26a29",
+  "aliases": [
+   "clam",
+   "clams",
+   "quahog",
+   "quahogs",
+   "hard clams",
+   "littleneck",
+   "cherrystone"
+  ],
+  "status": "open",
+  "zones": [
+   {
+    "zone": "state",
+    "label": "Florida approved harvest areas",
+    "seasons": null,
+    "size": [
+     {
+      "min": 1,
+      "max": null
+     }
+    ],
+    "bag": null,
+    "bagNote": "5 gallons per person per day, 10 gallons per vessel",
+    "closed": false,
+    "sizeNote": "1 inch thick across the hinge"
+   }
+  ],
+  "notes": [
+   "Harvest only when FDACS has the area open."
+  ]
  }
 }

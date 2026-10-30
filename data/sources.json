@@ -123,6 +123,34 @@
           "url": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
           "type": "html",
           "role": "primary"
+        },
+        {
+          "id": "md-crab-chesapeake",
+          "title": "Maryland DNR blue crabs \u2014 Chesapeake Bay",
+          "url": "https://www.eregulations.com/maryland/fishing/blue-crabs-chesapeake-bay",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "md-crab-atlantic",
+          "title": "Maryland DNR blue crabs \u2014 Atlantic",
+          "url": "https://www.eregulations.com/maryland/fishing/blue-crabs-atlantic",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "md-oysters-clams",
+          "title": "Maryland DNR oysters & clams",
+          "url": "https://www.eregulations.com/maryland/fishing/oysters-clams",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "md-crab-limits-notice",
+          "title": "Maryland DNR recreational hard crab catch limits 2026-27",
+          "url": "https://dnr.maryland.gov/fisheries/Documents/Public_Notices/PN_RecCatchLimits_2026-27_Effective7-1-2026.pdf",
+          "type": "pdf",
+          "role": "secondary"
         }
       ],
       "agencyShort": "MD DNR"
@@ -156,6 +184,20 @@
           "url": "https://www.dwr.virginia.gov/fishing/regulations/creelandlengthlimits.pdf",
           "type": "pdf",
           "role": "primary"
+        },
+        {
+          "id": "va-rec-crabbing",
+          "title": "VMRC recreational crabbing rules",
+          "url": "https://mrc.virginia.gov/regulations/VA-recreational-crabbing-rules.shtm",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "va-rec-shellfish",
+          "title": "VMRC recreational shellfishing and alternative gears",
+          "url": "https://mrc.virginia.gov/Regulations/VA-recreational-shellfish-non-HL-fish-gears.shtm",
+          "type": "html",
+          "role": "secondary"
         }
       ],
       "agencyShort": "VMRC"
@@ -249,6 +291,20 @@
           "url": "https://www.eregulations.com/southcarolina/fishing/trout-size-limits",
           "type": "html",
           "role": "secondary"
+        },
+        {
+          "id": "sc-crustacean-limits",
+          "title": "SCDNR crustaceans & shellfish size & catch limits",
+          "url": "https://www.eregulations.com/southcarolina/fishing/crustaceans-shellfish-size-catch-limits",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "sc-shellfish-harvest",
+          "title": "SCDNR recreational shellfish harvesting",
+          "url": "https://saltwaterfishing.sc.gov/shellfishharvest.html",
+          "type": "html",
+          "role": "secondary"
         }
       ]
     },
@@ -288,6 +344,13 @@
           "url": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
           "type": "html",
           "role": "primary"
+        },
+        {
+          "id": "ga-shrimp-crab-shellfish",
+          "title": "Georgia DNR shrimp, crab, shellfish & bait minnow regulations",
+          "url": "https://gadnrle.org/shrimpregs",
+          "type": "html",
+          "role": "secondary"
         }
       ]
     },
@@ -529,6 +592,27 @@
           "url": "https://myfwc.com/fishing/freshwater/regulations/general/",
           "type": "html",
           "role": "primary"
+        },
+        {
+          "id": "fl-shrimp",
+          "title": "FWC recreational shrimping",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/shrimp/",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "fl-bay-scallops",
+          "title": "FWC bay scallops",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/bay-scallops/",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "fl-shellfish",
+          "title": "FWC oysters & clams",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/shellfish/",
+          "type": "html",
+          "role": "secondary"
         }
       ],
       "agencyShort": "FWC"
@@ -554,6 +638,13 @@
           "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/statewide-season-sizes-catch-limits",
           "type": "html",
           "role": "primary"
+        },
+        {
+          "id": "ny-shellfish",
+          "title": "NYSDEC shellfish harvesting regulations",
+          "url": "https://dec.ny.gov/things-to-do/shellfishing/harvesting-regulations",
+          "type": "html",
+          "role": "secondary"
         }
       ],
       "agencyShort": "NYSDEC"
@@ -579,6 +670,20 @@
           "url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations",
           "type": "html",
           "role": "primary"
+        },
+        {
+          "id": "ct-crab-lobster",
+          "title": "CT DEEP bait species, blue crab and lobster regulations",
+          "url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/bait-species-blue-crab-and-lobster-regulations",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "ct-lobster-guidelines",
+          "title": "CT DEEP guidelines for personal use lobster",
+          "url": "https://portal.ct.gov/-/media/deep/fishing/fishing_forms/pu_lobster_guidelines.pdf",
+          "type": "pdf",
+          "role": "secondary"
         }
       ],
       "agencyShort": "CT DEEP"

@@ -671,6 +671,48 @@
    "quote": "Mountain Trout — Hatchery Supported Trout Waters: Aug. 1, 2026 – Feb. 28, 2027; 7 a.m. April 3, 2027 – July 31, 2027: None | 7. Wild Trout Waters: No closed season | 7 inches | 4 | Artificial lures with a single hook. Delayed Harvest: no trout may be possessed Oct 1 – June 4.",
    "notes": "",
    "sourceId": "nc-wrc-warmwater"
+  },
+  {
+   "id": 47,
+   "n": "Shrimp",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Shrimp",
+   "zone": "NC coastal waters (cast net)",
+   "season": "Open year-round (areas open/closed by proclamation)",
+   "size": "None",
+   "limit": "48 quarts heads-on or 30 quarts heads-off per person per day, or per vessel per day; 96/60 quarts with two or more RCGL holders aboard",
+   "quote": "Shrimp — 48 quarts (heads on) or 30 quarts (heads off) per person per day, or per vessel per day if a vessel is used; 96 quarts (heads on) or 60 quarts (heads off) when more than one person aboard holds a valid Recreational Commercial Gear License. Cast net only.",
+   "notes": "Shrimp trawls and other commercial gear need an RCGL. Check DMF proclamations for open/closed shrimping areas.",
+   "sourceId": "nc-dmf-limits"
+  },
+  {
+   "id": 48,
+   "n": "Bay Scallop",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Scallops",
+   "zone": "NC coastal waters",
+   "season": "SEASON CLOSED — unlawful to possess",
+   "size": "None",
+   "limit": "None — closed",
+   "quote": "Bay Scallop — SEASON CLOSED UNLAWFUL TO POSSESS.",
+   "notes": "Bay scallop harvest has been closed statewide; watch DMF proclamations for any reopening.",
+   "sourceId": "nc-dmf-limits"
+  },
+  {
+   "id": 49,
+   "n": "Mussels",
+   "sci": "",
+   "h": "shellfish",
+   "f": "Clams & oysters",
+   "zone": "NC coastal waters",
+   "season": "Open year-round",
+   "size": "None",
+   "limit": "100 per day, not to exceed 200 per vessel per day",
+   "quote": "Mussels — 100/Day not to exceed 200/Vessel/Day.",
+   "notes": "",
+   "sourceId": "nc-dmf-limits"
   }
  ]
 }

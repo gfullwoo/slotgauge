@@ -414,7 +414,8 @@ const ZONE_WORDS = [
   ['hudson',/\b(hudson|tappan zee|haverstraw|croton|peekskill|newburgh|kingston|catskill)\b/], ['lisound',/\b(long island sound|the sound|lis|smithtown|port jefferson|huntington|mattituck)\b/], ['nybight',/\b(south shore|montauk|jones beach|fire island|shinnecock|moriches|raritan bay|jamaica bay|rockaway|breezy point)\b/],
   ['ctriver',/\b(connecticut river|ct river)\b/],
   ['inland',/\b(lake|pond|reservoir|river|creek|brook|stream|freshwater|fresh water|inland|impoundment)\b/], ['southedisto',/\b(edisto|beaufort|hilton head|port royal|st\.? helena)\b/], ['northedisto',/\b(charleston|myrtle|georgetown|murrells|north inlet)\b/],
-  ['panhandle',/\b(panhandle|pensacola|destin|panama city|apalachicola|st\.? joe|choctawhatchee)\b/], ['bigbend',/\b(big bend|cedar key|crystal river|homosassa|steinhatchee|suwannee)\b/],
+  ['gulfcounty',/\b(st\.? joe|port st\.? joe|st\.? joseph bay|mexico beach|cape san blas|gulf county)\b/], ['pasco',/\b(pasco|anclote|tarpon springs|new port richey)\b/], ['suwannee',/\b(steinhatchee|keaton beach|suwannee|fenholloway|taylor county|horseshoe beach)\b/],
+  ['panhandle',/\b(panhandle|pensacola|destin|panama city|apalachicola|carrabelle|st\.? marks|lanark|choctawhatchee)\b/], ['bigbend',/\b(big bend|cedar key|crystal river|homosassa|yankeetown|levy|citrus county|hernando)\b/],
   ['tampa',/\b(tampa|clearwater|st\.? pete|anna maria)\b/], ['sarasota',/\b(sarasota|venice|bradenton)\b/], ['charlotte',/\b(charlotte harbor|boca grande|punta gorda|fort myers|pine island|sanibel)\b/],
   ['swfl',/\b(naples|marco|everglades|ten thousand|keys|key west|marathon|islamorada|key largo|flamingo)\b/], ['sefl',/\b(miami|biscayne|fort lauderdale|boca|palm beach|jupiter|stuart)\b/],
   ['irl',/\b(indian river|mosquito lagoon|banana river|sebastian|titusville|cocoa|vero|fort pierce|melbourne)\b/], ['nefl',/\b(jacksonville|jax|st\.? augustine|daytona|ponce|new smyrna|fernandina|amelia)\b/],
@@ -529,7 +530,7 @@ function sizeText(rules, zone){
 }
 const fmtIn = n => Number.isInteger(n) ? String(n) : String(n).replace(/\.?0+$/,'');
 // Regional zones roll up to a coast so "in Tampa Bay" still resolves for a species that only has Gulf/Atlantic rules, and vice versa.
-const ZONE_PARENT = { inland:'state', chesapeake:'state', hudson:'state', nybight:'state', lisound:'state', delbay:'state', ibsp:'state', delriver:'state', delriverupper:'delriver', ctriver:'state', tampa:'gulf', sarasota:'gulf', charlotte:'gulf', swfl:'gulf', bigbend:'gulf', panhandle:'gulf', nefl:'atlantic', irl:'atlantic', sefl:'atlantic', spz:'atlantic', southedisto:'state', northedisto:'state', ocean:'state', internal:'state', northhatteras:'state', southhatteras:'state', coastal:'state', chesapeakebay:'state', savannah:'state' };
+const ZONE_PARENT = { inland:'state', chesapeake:'state', hudson:'state', nybight:'state', lisound:'state', delbay:'state', ibsp:'state', delriver:'state', delriverupper:'delriver', ctriver:'state', tampa:'gulf', sarasota:'gulf', charlotte:'gulf', swfl:'gulf', bigbend:'gulf', panhandle:'gulf', suwannee:'gulf', gulfcounty:'gulf', pasco:'gulf', baiting:'state', bait:'state', nefl:'atlantic', irl:'atlantic', sefl:'atlantic', spz:'atlantic', southedisto:'state', northedisto:'state', ocean:'state', internal:'state', northhatteras:'state', southhatteras:'state', coastal:'state', chesapeakebay:'state', savannah:'state' };
 function pickZone(sp, want){
   const zs = sp.zones;
   return zs.find(z=>z.zone===want) || (want && zs.find(z=>ZONE_PARENT[z.zone]===want)) || (want && ZONE_PARENT[want] && zs.find(z=>z.zone===ZONE_PARENT[want])) || zs.find(z=>z.zone==='state') || zs[0];
@@ -578,7 +579,8 @@ function ruler(r){
 function escapeHtml(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function render(r, quiet){
   const sp = r.sp, notes = [...(r.zone.sizeNote?['Size detail: '+r.zone.sizeNote]:[]), ...sp.notes];
-  const zoneInfo = sp.zones.length>1 ? `Rules shown for <strong>${ZONES[r.usedZone]}</strong>. Also has rules for ${sp.zones.filter(z=>z.zone!==r.usedZone).map(z=>ZONES[z.zone]).join(', ')}.` : '';
+  const zl = z => escapeHtml(z.label || ZONES[z.zone] || z.zone);
+  const zoneInfo = sp.zones.length>1 ? `Rules shown for <strong>${zl(sp.zones.find(z=>z.zone===r.usedZone) || {zone:r.usedZone})}</strong>. Also has rules for ${sp.zones.filter(z=>z.zone!==r.usedZone).map(zl).join(', ')}.` : '';
   $('#out').innerHTML = `
   <article class="verdict ${r.verdict}" aria-live="polite">
     <div class="word">${r.word}</div>
@@ -661,9 +663,9 @@ drawRecent(loadRecent());
 
 // ---------- examples ----------
 const EX = ['30 inch striper in the bay','14 inch flounder','my 5th sea bass, 13 inches','tog 15 inches','bluefish, 20 in','red drum 24 inches offshore','16 in largemouth at Becks Pond','sandbar shark 60 inches','blue crab 4.5 inches'];
-const EX_MORE = ['24 inch red drum','speck 18 inches','cobia 40 inches','sheepshead 15 in','spanish mackerel 14 inches','king mackerel 26 in','black drum 20 inches','weakfish 13 in'];
+const EX_MORE = ['24 inch red drum','5 inch blue crab','shrimp limit','speck 18 inches','cobia 40 inches','sheepshead 15 in','spanish mackerel 14 inches','king mackerel 26 in','black drum 20 inches','weakfish 13 in'];
 const exOk = t => { try { const f = findSpecies(t); return collapseDupes(f.hits, t).length === 1; } catch(e) { return false; } };
-const EXS = [...EX, ...EX_MORE].filter(exOk).slice(0, 9);
+const EXS = [...EX, ...EX_MORE].filter(exOk).slice(0, 10);
 $('#examples').innerHTML = EXS.map(t=>`<button class="chip" data-ex="${t}">${t}</button>`).join('');
 $('#examples').addEventListener('click', e=>{ const b=e.target.closest('[data-ex]'); if (b) { $('#q').value=b.dataset.ex; run(b.dataset.ex); } });
 

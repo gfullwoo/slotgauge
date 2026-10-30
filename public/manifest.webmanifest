@@ -7,13 +7,59 @@
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "categories": ["sports", "utilities"],
+  "categories": [
+    "sports",
+    "utilities"
+  ],
   "background_color": "#0d171c",
   "theme_color": "#0f6f8c",
   "icons": [
-    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" },
-    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tides",
+      "short_name": "Tides",
+      "description": "Rising or falling, next high and low, 48-hour chart",
+      "url": "/?source=shortcut#tides",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Say it",
+      "short_name": "Say it",
+      "description": "Start listening for your catch",
+      "url": "/?source=shortcut&voice=1",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="6dp">
+    <FrameLayout android:layout_width="34dp" android:layout_height="34dp">
+        <ImageView android:id="@+id/wave" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/ic_wave" android:contentDescription="@null" />
+        <ImageView android:id="@+id/arrow" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/ic_arrow_up" android:contentDescription="@null" />
+    </FrameLayout>
+    <TextView android:id="@+id/phase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tide" android:textColor="@color/ink" android:textSize="12sp" android:textStyle="bold" android:maxLines="1" />
+    <TextView android:id="@+id/next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:textColor="@color/ink2" android:textSize="10.5sp" android:maxLines="1" />
+</LinearLayout>

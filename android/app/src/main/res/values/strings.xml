@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SlotGauge</string>
+    <string name="widget_small_label">Tide (1×1)</string>
+    <string name="widget_wide_label">Tide + Say it (2×1)</string>
+    <string name="widget_desc_small">Rising or falling, and the next high or low. Tap for the chart.</string>
+    <string name="widget_desc_wide">Tide at a glance plus a one-tap microphone to check a catch.</string>
+    <string name="tide">Tide</string>
+    <string name="loading">Loading…</string>
+    <string name="no_data">No data</string>
+    <string name="rising">Rising</string>
+    <string name="falling">Falling</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="say_it">Say it</string>
+    <string name="config_title">Tide widget</string>
+    <string name="config_hint">Search a town, pier, inlet or river (e.g. Myrtle Beach)</string>
+    <string name="use_location">Follow my location</string>
+    <string name="following_location">Following your location</string>
+    <string name="pinned_to">Pinned to %1$s</string>
+    <string name="highs_lows_only">highs/lows</string>
+    <!-- Digital Asset Links statement: the site's /.well-known/assetlinks.json must list this app's signing certificate. -->
+    <string name="asset_statements">[{ \"relation\": [\"delegate_permission/common.handle_all_urls\"], \"target\": { \"namespace\": \"web\", \"site\": \"https://slotgauge.com\" } }]</string>
+</resources>

@@ -777,6 +777,8 @@ document.addEventListener('click', e => {
 showWelcome();
 // deep link from the regulation pages: /?q=Striped%20Bass
 try { const q0 = new URLSearchParams(location.search).get('q'); if (q0) { $('#q').value = q0; run(q0); } } catch(e){}
+// /?voice=1 (home-screen widget / app shortcut): start listening right away
+try { if (new URLSearchParams(location.search).get('voice') === '1') { history.replaceState(null, '', location.pathname + location.hash); setTimeout(() => $('#mic').click(), 350); } } catch(e){}
 window.SG = { loc: () => LOC, SP, run, evaluate, render, escapeHtml, $, fmtIn, ZONES, STATE, STATE_NAME, showWelcome, setHero, SPECIES_IMG, findSp: id => SP.find(s=>s.id===id) || SP.find(s=>s.deId===id) || null, get zone(){ return ctxZone; } };
 document.dispatchEvent(new Event('sg:ready'));
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#0F6F8C</color>
+    <color name="falling">#B3561F</color>
+    <color name="bg">#EEF3F4</color>
+    <color name="surface">#F7FAFA</color>
+    <color name="ink">#14232A</color>
+    <color name="ink2">#4D6169</color>
+    <color name="line">#CFDADD</color>
+</resources>

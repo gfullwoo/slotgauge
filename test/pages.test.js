@@ -73,3 +73,14 @@ test('species directory page lists every species with regulation and Wikipedia l
     const sm = await (await fetch(`${base}/sitemap.xml`)).text(); assert.ok(sm.includes('https://slotgauge.com/delaware/species/')); assert.ok(sm.includes('https://slotgauge.com/florida/species/'));
   } finally { srv.close(); }
 });
+
+test('assetlinks.json is served only when a certificate fingerprint is configured', async () => {
+  const prev = process.env.ANDROID_CERT_SHA256;
+  process.env.ANDROID_CERT_SHA256 = 'aa:bb|cc:dd';
+  const app = createApp({ wikiLive: false, tidesRefresh: false });
+  const srv = app.listen(0); const base = `http://127.0.0.1:${srv.address().port}`;
+  try {
+    const j = await (await fetch(`${base}/.well-known/assetlinks.json`)).json();
+    assert.equal(j[0].target.package_name, 'com.slotgauge.app'); assert.deepEqual(j[0].target.sha256_cert_fingerprints, ['AA:BB', 'CC:DD']);
+  } finally { srv.close(); if (prev == null) delete process.env.ANDROID_CERT_SHA256; else process.env.ANDROID_CERT_SHA256 = prev; }
+});

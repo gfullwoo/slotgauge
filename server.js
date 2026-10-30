@@ -246,6 +246,14 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
   const speciesInfo = loadSpeciesInfo();
   const infoFor = makeInfoLookup({ info: speciesInfo, fetchImpl: wikiFetch, live: wikiLive });
   const html = (res, body, maxAge = 3600) => { res.set('Cache-Control', `public, max-age=${maxAge}`); res.type('html').send(body); };
+  // Digital Asset Links so the Android app can open slotgauge.com full-screen (Trusted Web Activity).
+  // ANDROID_CERT_SHA256 = SHA-256 fingerprints separated by | (Cloud Run env vars cannot contain commas) of the app signing certificate(s); see docs/ANDROID.md.
+  app.get('/.well-known/assetlinks.json', (_req, res) => {
+    const prints = String(process.env.ANDROID_CERT_SHA256 || '').split(/[|; ]+/).map((s) => s.trim().toUpperCase()).filter(Boolean);
+    if (!prints.length) return res.status(404).json([]);
+    res.set('Cache-Control', 'public, max-age=3600');
+    res.json([{ relation: ['delegate_permission/common.handle_all_urls'], target: { namespace: 'android_app', package_name: 'com.slotgauge.app', sha256_cert_fingerprints: prints } }]);
+  });
   app.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /__/\nSitemap: ${SITE}/sitemap.xml\n`));
   app.get('/sitemap.xml', (_req, res) => { res.set('Cache-Control', 'public, max-age=3600'); res.type('application/xml').send(sitemapAll(pagesByState)); });
   app.get('/api/sources', (_req, res) => {

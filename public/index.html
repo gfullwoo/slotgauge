@@ -271,8 +271,8 @@ header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
 .upgrade{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:12px;padding:12px 14px;margin:8px 0}.upgrade b{font-size:15px}.upgrade p{margin:4px 0 10px;font-size:13.5px;color:var(--ink-2)}
 
 /* ---- text size (CSS zoom scales the whole layout, keeps proportions) ---- */
-html[data-text="large"]{zoom:1.12}html[data-text="xl"]{zoom:1.25}
-@media (max-width:480px){html[data-text="xl"]{zoom:1.2}}
+html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
+@media (max-width:480px){html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.32}}
 
 /* ---- weather ---- */
 .wx-line{font-size:13px;color:var(--ink-2);margin:-4px 0 10px;cursor:pointer}.wx-line b{color:var(--ink);font-size:14px}.wx-line .wx-place{color:var(--ink-3)}.wx-ico{font-size:1.15em;line-height:1;margin-right:2px}
@@ -284,6 +284,9 @@ html[data-text="large"]{zoom:1.12}html[data-text="xl"]{zoom:1.25}
 @media(max-width:420px){.wx-d{grid-template-columns:78px 24px 38px 1fr}.wx-d em{display:none}}
 /* ocean sky canvas sits behind everything */
 #sky{position:fixed;inset:0;z-index:0;pointer-events:none}html[data-theme="ocean"] .wrap{position:relative;z-index:1}
+
+/* narrow effective widths (large text on small phones): the catch box wraps its buttons under the text */
+@media (max-width:480px){html[data-text="xl"] .inputbox,html[data-text="large"] .inputbox{flex-wrap:wrap;padding:6px 10px 10px 14px}html[data-text="xl"] .inputbox textarea,html[data-text="large"] .inputbox textarea{flex:1 1 100%;min-height:40px}html[data-text="xl"] .inputbox .btn.primary,html[data-text="large"] .inputbox .btn.primary{margin-left:auto}}
 </style>
 </head>
 <body>

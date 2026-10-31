@@ -79,6 +79,14 @@
   "url": "https://en.wikipedia.org/wiki/Western_Atlantic_seabream",
   "fetched": "2026-10-29"
  },
+ "Argopecten irradians": {
+  "title": "Argopecten irradians",
+  "description": "Species of bivalve",
+  "extract": "Argopecten irradians, formerly classified as Aequipecten irradians, common names Atlantic bay scallop, bay scallop, and blue-eyed scallop, is a species of scallop in the family Pectinidae. An edible saltwater bivalve, it is native to the northwest Atlantic from Cape Cod to the Gulf of Mexico.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Argopecten_irradians.jpg/330px-Argopecten_irradians.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Argopecten_irradians",
+  "fetched": "2026-10-31"
+ },
  "Atlantic Spanish mackerel": {
   "title": "Atlantic Spanish mackerel",
   "description": "Species of fish",
@@ -335,6 +343,14 @@
   "url": "https://en.wikipedia.org/wiki/Blue_catfish",
   "fetched": "2026-10-29"
  },
+ "Blue mussel": {
+  "title": "Blue mussel",
+  "description": "Species of mollusc",
+  "extract": "The blue mussel, also known as the common mussel, is a medium-sized edible marine bivalve mollusc in the family Mytilidae, the only extant family in the order Mytilida, known as \"true mussels\". Blue mussels are subject to commercial use and intensive aquaculture. A species with a large range, the blue mussel leaves empty shells that are commonly found on beaches around the world.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Miesmuscheln-2.jpg/330px-Miesmuscheln-2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Blue_mussel",
+  "fetched": "2026-10-31"
+ },
  "Blue runner": {
   "title": "Blue runner",
   "description": "Species of fish",
@@ -516,6 +532,14 @@
   "url": "https://en.wikipedia.org/wiki/Channel_catfish",
   "fetched": "2026-10-29"
  },
+ "Channeled whelk": {
+  "title": "Busycotypus canaliculatus",
+  "description": "Species of gastropod",
+  "extract": "Busycotypus canaliculatus, commonly known as the channeled whelk, is a very large predatory sea snail, a marine prosobranch gastropod, a busycon whelk, belonging to the family Busyconidae.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Busycotypus_canaliculatus.jpg/330px-Busycotypus_canaliculatus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Busycotypus_canaliculatus",
+  "fetched": "2026-10-31"
+ },
  "Clearnose skate": {
   "title": "Clearnose skate",
   "description": "Species of cartilaginous fish",
@@ -627,6 +651,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Oyster_bed%2C_Brunswick%2C_GA%2C_US.jpg/330px-Oyster_bed%2C_Brunswick%2C_GA%2C_US.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Eastern_oyster",
   "fetched": "2026-10-29"
+ },
+ "Emerita (crustacean)": {
+  "title": "Emerita (crustacean)",
+  "description": "Genus of crustaceans",
+  "extract": "Emerita is a small genus of decapod crustaceans, known as mole crabs, sand fleas or sand crabs. These small animals burrow in the sand in the swash zone and use their antennae for filter feeding.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Female-sand-crab-back.jpg/330px-Female-sand-crab-back.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Emerita_(crustacean)",
+  "fetched": "2026-10-31"
  },
  "Escolar": {
   "title": "Escolar",
@@ -948,6 +980,14 @@
   "url": "https://en.wikipedia.org/wiki/Lesser_amberjack",
   "fetched": "2026-10-29"
  },
+ "Litopenaeus setiferus": {
+  "title": "Litopenaeus setiferus",
+  "description": "Species of crustacean",
+  "extract": "Litopenaeus setiferus is a species of prawn found along the Atlantic coast of North America and in the Gulf of Mexico. It was the subject of the earliest shrimp fishery in the United States.",
+  "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/8/86/Litopenaeus_setiferus.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://en.wikipedia.org/wiki/Litopenaeus_setiferus",
+  "fetched": "2026-10-31"
+ },
  "Little skate": {
   "title": "Little skate",
   "description": "Species of cartilaginous fish",
@@ -1171,6 +1211,14 @@
   "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/91/OysterToadfish.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "url": "https://en.wikipedia.org/wiki/Oyster_toadfish",
   "fetched": "2026-10-29"
+ },
+ "Palaemonetes": {
+  "title": "Palaemon (crustacean)",
+  "description": "Genus of crustaceans",
+  "extract": "Palaemon is a genus of caridean shrimp in the family Palaemonidae.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Isosujiebi070408.jpg/330px-Isosujiebi070408.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Palaemon_(crustacean)",
+  "fetched": "2026-10-31"
  },
  "Palometa": {
   "title": "Palometa",
@@ -1512,6 +1560,14 @@
   "thumbnail": null,
   "url": "https://en.wikipedia.org/wiki/Clam",
   "fetched": "2026-10-30"
+ },
+ "Soft-shell clam": {
+  "title": "Soft-shell clam",
+  "description": "Species of mollusc",
+  "extract": "Soft-shell clams or Sand gaper, scientific name Mya arenaria, popularly called \"steamers\", \"softshells\", \"piss clams\", \"Ipswich clams\", or \"Essex clams\", are a species of edible saltwater clam, a marine bivalve mollusk in the family Myidae.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Mya_arenaria.jpg/330px-Mya_arenaria.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Soft-shell_clam",
+  "fetched": "2026-10-31"
  },
  "Southern flounder": {
   "title": "Southern flounder",

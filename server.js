@@ -282,7 +282,7 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
   app.use(express.static(path.join(__dirname, 'public'), {
     maxAge: '1h',
     setHeaders(res, file) {
-      if (file.endsWith('sw.js') || file.endsWith('index.html')) res.set('Cache-Control', 'no-cache');
+      if (file.endsWith('.js') || file.endsWith('index.html') || file.endsWith('.webmanifest')) res.set('Cache-Control', 'no-cache'); // app code must never be stale for an hour after a deploy
     },
   }));
   return app;

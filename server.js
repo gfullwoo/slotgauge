@@ -10,7 +10,7 @@ import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
 import { makeInfoLookup, loadSpeciesInfo } from './src/wiki.js';
 import { makeTides } from './src/tides.js';
-import { makeMemoryAccounts, makeBilling, isPro, FREE_IDENTIFY_PER_MONTH, PLANS } from './src/billing.js';
+import { makeMemoryAccounts, makeBilling, isPro, isTestPro, FREE_IDENTIFY_PER_MONTH, PLANS } from './src/billing.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
 
@@ -108,7 +108,7 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
 
   app.get('/api/me', requireAuth, async (req, res) => {
     const scans = store ? await store.list(req.user.uid) : [];
-    const acct = await accounts.get(req.user.uid);
+    const acct = isTestPro(req.user) ? { ...(await accounts.get(req.user.uid)), testPro: true, pro: true, status: 'active', plan: 'year' } : await accounts.get(req.user.uid);
     res.json({ user: req.user, scanCount: scans.length, speciesCount: new Set(scans.map((s) => s.speciesId).filter((x) => x != null)).size,
       pro: isPro(acct), plan: acct?.plan || null, status: acct?.status || null, periodEnd: acct?.periodEnd || null, cancelAtPeriodEnd: !!acct?.cancelAtPeriodEnd,
       identifyUsed: await accounts.usage(`uid:${req.user.uid}`), identifyLimit: isPro(acct) ? null : FREE_IDENTIFY_PER_MONTH, billing: !!billing?.enabled });
@@ -136,7 +136,7 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
     if (!req.user && !anonAllowed(req.ip)) return res.status(429).json({ error: 'Hourly limit for photo checks without an account reached. Sign in for unlimited checks and a gallery.' });
     // Free tier: FREE_IDENTIFY_PER_MONTH photo IDs a month (per account, or per device when anonymous); Pro is unlimited.
     const acct = req.user ? await accounts.get(req.user.uid) : null;
-    const pro = isPro(acct);
+    const pro = isPro(acct) || isTestPro(req.user);
     const quotaKey = req.user ? `uid:${req.user.uid}` : (req.headers['x-sg-device'] ? `anon:${String(req.headers['x-sg-device']).slice(0, 64)}` : `ip:${req.ip}`);
     if (!pro && billing?.enabled) {
       const used = await accounts.usage(quotaKey);

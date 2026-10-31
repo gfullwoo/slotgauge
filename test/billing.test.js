@@ -75,3 +75,16 @@ test('without billing configured nothing is gated', async () => {
     assert.equal((await (await fetch(`${base}/api/config`)).json()).features.billing, false);
   } finally { srv.close(); }
 });
+
+test('PRO_TEST_EMAILS accounts are Pro without a subscription', async () => {
+  process.env.PRO_TEST_EMAILS = 'slotgauge.reviewer@gmail.com';
+  const accounts = makeMemoryAccounts(); const stripe = fakeStripe();
+  const billing = makeBilling({ stripe, accounts, prices: { year: 'p' }, webhookSecret: 'w' });
+  const app = createApp({ wikiLive: false, tidesRefresh: false, accounts, billing, store: makeMemoryStore(), firebaseConfig: { apiKey: 'x' }, verifyToken: async (t) => ({ uid: t, email: `${t}@gmail.com` }), identifier: async () => ({ speciesId: 1, name: 'x', confidence: 0.9, alternates: [] }) });
+  const srv = app.listen(0); const base = `http://127.0.0.1:${srv.address().port}`;
+  try {
+    const me = await (await fetch(`${base}/api/me`, { headers: { Authorization: 'Bearer slotgauge.reviewer' } })).json();
+    assert.equal(me.pro, true); assert.equal(me.identifyLimit, null);
+    const other = await (await fetch(`${base}/api/me`, { headers: { Authorization: 'Bearer someone' } })).json(); assert.equal(other.pro, false);
+  } finally { srv.close(); delete process.env.PRO_TEST_EMAILS; }
+});

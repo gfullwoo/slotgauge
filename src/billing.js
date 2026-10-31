@@ -14,7 +14,12 @@ export const PLANS = { year: { label: 'Yearly', price: '$19.99/year' }, month: {
 
 export const monthKey = (d = new Date()) => d.toISOString().slice(0, 7);
 
+/** Emails that are always Pro (store reviewers, testers): env PRO_TEST_EMAILS="a@x.com,b@y.com". */
+export const proTestEmails = () => new Set(String(process.env.PRO_TEST_EMAILS || '').toLowerCase().split(/[,\s]+/).filter(Boolean));
+export const isTestPro = (user) => !!(user?.email && proTestEmails().has(String(user.email).toLowerCase()));
+
 export function isPro(acct, now = Date.now()) {
+  if (acct && acct.testPro) return true;
   if (!acct || !acct.pro) return false;
   if (acct.status && !['active', 'trialing', 'past_due'].includes(acct.status)) return false;
   if (acct.periodEnd && new Date(acct.periodEnd).getTime() + 3 * 86400e3 < now) return false; // 3-day grace after period end

@@ -306,7 +306,7 @@ export function privacyPage() {
 <h3>Photos</h3>
 <p>"Snap it" sends the photo you choose to our server, where an AI model (Google Vertex AI or Anthropic Claude) identifies the species. If you are not signed in, the photo is discarded after identification. If you sign in and save a catch, the photo and the identification are stored in your gallery until you delete them.</p>
 <h3>Account</h3>
-<p>Sign-in is optional and only needed for the gallery. It uses Google sign-in through Firebase Authentication; we store your Google account ID, display name and email so your catches stay yours. Sign out at any time from the account menu; email us to delete your account and gallery.</p>
+<p>Sign-in is optional and only needed for the gallery. It uses Google sign-in through Firebase Authentication; we store your Google account ID, display name and email so your catches stay yours. Sign out at any time from the account menu. To delete your account and everything tied to it, follow the steps on <a href="/delete-account/">Delete your account</a>.</p>
 <h3>Payments (SlotGauge Pro)</h3>
 <p>Subscriptions are processed by Stripe. Your card details go directly to Stripe and never touch our servers; we store only your Stripe customer ID, subscription status and renewal date so Pro can be unlocked on your account. Purchases through Google Play are handled by Google under its policies.</p>
 <h3>On-device storage</h3>
@@ -363,4 +363,22 @@ export function termsPage() {
 <h2>Changes and contact</h2>
 <p>We may update these terms; the date above changes when we do. Questions: <a href="mailto:greg.fullwood@gmail.com">greg.fullwood@gmail.com</a>.</p>`;
   return layout({ title: 'SlotGauge terms of service', description: 'Terms for using SlotGauge and SlotGauge Pro.', canonical: `${SITE}/terms/`, body });
+}
+
+/** Account deletion page (Google Play requires a dedicated, linkable one). */
+export function deleteAccountPage() {
+  const body = `
+<nav class="crumbs"><a href="/">SlotGauge</a> › Delete your account</nav>
+<h1>Delete your SlotGauge account</h1>
+<p style="color:var(--ink-2)">SlotGauge (developer: Greg Fullwood) stores very little about you, and you can have all of it removed.</p>
+<h2>How to request deletion</h2>
+<p>Email <a href="mailto:greg.fullwood@gmail.com?subject=Delete%20my%20SlotGauge%20account" style="color:var(--accent)">greg.fullwood@gmail.com</a> with the subject <strong>Delete my SlotGauge account</strong> from the Google address you signed in with. That address is how we match the request to your account; no other details are needed. You will get a confirmation reply when it is done, normally within 7 days.</p>
+<h2>What gets deleted</h2>
+<p>Everything tied to your account: your Google account ID, display name and email as stored by SlotGauge; every saved catch, including photos and the identification results; your Pro subscription record (the Stripe subscription is cancelled at the same time); and your photo-ID usage counters. Deletion is permanent.</p>
+<h2>What is kept</h2>
+<p>Nothing that identifies you. Stripe keeps invoice records for the period required by tax law, under Stripe's own retention policy. Anonymized, aggregated catch statistics (species, date, tide stage, moon phase, weather — never your name, photos or exact location) are not linked to any account and are retained. Standard hosting request logs age out within 30 days.</p>
+<h2>Deleting some data without closing the account</h2>
+<p>In the app, open <strong>My catches</strong> from the account menu, select any catches and choose <strong>Delete</strong>; photos and records are removed immediately. Signing out does not delete anything. Cancelling Pro (account menu → Manage subscription) keeps your account and catches.</p>
+<p style="font-size:13px;color:var(--ink-3)">See also the <a href="/privacy/" style="color:var(--accent)">privacy policy</a>.</p>`;
+  return layout({ title: 'Delete your SlotGauge account', description: 'How to delete your SlotGauge account and data, what is removed, and what is kept.', canonical: `${SITE}/delete-account/`, body });
 }

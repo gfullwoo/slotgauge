@@ -4,7 +4,7 @@ import multer from 'multer';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildRegs, rawHash } from './src/regs.js';
-import { makePages, sitemapAll, SITE, privacyPage, proPage, termsPage } from './src/pages.js';
+import { makePages, sitemapAll, SITE, privacyPage, proPage, termsPage, deleteAccountPage } from './src/pages.js';
 import { buildAllRegs } from './src/regs.js';
 import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
@@ -293,6 +293,7 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
     res.json([{ relation: ['delegate_permission/common.handle_all_urls'], target: { namespace: 'android_app', package_name: 'com.slotgauge.app', sha256_cert_fingerprints: prints } }]);
   });
   app.get(['/privacy', '/privacy/'], (req, res) => (req.path.endsWith('/') ? html(res, privacyPage(), 86400) : res.redirect(301, '/privacy/')));
+  app.get(['/delete-account', '/delete-account/'], (req, res) => (req.path.endsWith('/') ? html(res, deleteAccountPage(), 86400) : res.redirect(301, '/delete-account/')));
   app.get(['/terms', '/terms/'], (req, res) => (req.path.endsWith('/') ? html(res, termsPage(), 86400) : res.redirect(301, '/terms/')));
   app.get(['/pro', '/pro/'], (req, res) => (req.path.endsWith('/') ? html(res, proPage(), 3600) : res.redirect(301, '/pro/')));
   app.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /__/\nSitemap: ${SITE}/sitemap.xml\n`));

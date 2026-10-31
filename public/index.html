@@ -39,7 +39,7 @@ header{display:flex;align-items:center;justify-content:space-between;gap:10px;pa
 header h1{flex:0 1 auto;white-space:nowrap;min-width:0;display:flex;align-items:center}
 header h1 img{flex:none}
 header .right{margin-left:auto;flex:none}
-header h1{font-size:30px;font-weight:700;line-height:1}
+header h1{font-size:30px;font-weight:700;line-height:1}header h1 a.brand{color:inherit;text-decoration:none;display:inline-flex;align-items:center}header h1 a.brand:active{opacity:.7}
 header h1 small{flex:none;font-size:14px;font-family:"IBM Plex Sans",sans-serif;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-left:6px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-2);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
@@ -241,7 +241,7 @@ header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
 
 <div class="wrap">
 <header>
-  <h1><img src="/icon.svg" alt="" width="28" height="28" style="vertical-align:-4px;margin-right:8px">Slot<span style="color:var(--accent)">Gauge</span><small id="hdrState">Delaware</small></h1>
+  <h1><a href="/" id="brandHome" class="brand" aria-label="SlotGauge home"><img src="/icon.svg" alt="" width="28" height="28" style="vertical-align:-4px;margin-right:8px">Slot<span style="color:var(--accent)">Gauge</span></a><small id="hdrState">Delaware</small></h1>
   <div class="right">
     <div class="tabs" role="tablist" id="tabs" hidden>
       <button role="tab" aria-selected="true" data-tab="check">Check</button>
@@ -780,6 +780,8 @@ document.addEventListener('click', e => {
   if (w.dataset.way === 'photo') { const c = $('#camBtn'); if (!c.hidden) c.click(); else { const a = $('#avatarBtn'); if (a && !$('#acct').hidden) a.click(); else $('#q').focus(); } }
 });
 showWelcome();
+// the logo is the home button: back to a clean checker without reloading
+$('#brandHome').addEventListener('click', (e) => { e.preventDefault(); try { history.replaceState(null, '', '/'); } catch(_){} $('#out').innerHTML = ''; $('#scanCard').innerHTML = ''; $('#q').value = ''; if (window.SG.showView) window.SG.showView('check'); else { const tv = $('#tideView'); if (tv) tv.hidden = true; $('#galleryView').hidden = true; for (const id of ['#ctx','.inputbox','#examples','#hint','#seo']) { const el = $(id); if (el) el.hidden = false; } } showWelcome(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
 // deep link from the regulation pages: /?q=Striped%20Bass
 try { const q0 = new URLSearchParams(location.search).get('q'); if (q0) { $('#q').value = q0; run(q0); } } catch(e){}
 // /?voice=1 (home-screen widget / app shortcut): start listening right away

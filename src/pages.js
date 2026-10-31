@@ -129,7 +129,7 @@ ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</sc
 </head><body><div class="wrap">
 <header><a class="logo" href="/"><img src="/icon.svg" alt="" width="26" height="26">Slot<span>Gauge</span></a><a class="cta" href="/">Check a catch</a></header>
 ${body}
-<footer>Regulations are simplified for quick reference from the official state source pages and rechecked nightly. The state agency's current fishing guide governs; gear, license, and area rules also apply. Not legal advice.<br>© ${new Date().getFullYear()} SlotGauge · <a href="/">App</a> · <a href="/privacy/">Privacy</a> · ${Object.values(STATES).map((s) => `<a href="/${s.slug}/">${s.name}</a>`).join(' · ')}</footer>
+<footer>Regulations are simplified for quick reference from the official state source pages and rechecked nightly. The state agency's current fishing guide governs; gear, license, and area rules also apply. Not legal advice.<br>© ${new Date().getFullYear()} SlotGauge · <a href="/">App</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/pro/">Pro</a> · ${Object.values(STATES).map((s) => `<a href="/${s.slug}/">${s.name}</a>`).join(' · ')}</footer>
 </div></body></html>`;
 }
 
@@ -295,7 +295,7 @@ export function privacyPage() {
   const body = `
 <nav class="crumbs"><a href="/">SlotGauge</a> › Privacy</nav>
 <h1>Privacy policy</h1>
-<p style="color:var(--ink-2)">Last updated ${updated}. Applies to slotgauge.com, the installed web app, and the SlotGauge Android app and widgets.</p>
+<p style="color:var(--ink-2)">Last updated 2026-10-31. Applies to slotgauge.com, the installed web app, and the SlotGauge Android app and widgets.</p>
 <h2>What SlotGauge does</h2>
 <p>SlotGauge tells you whether a fish is a keeper under your state's current regulations and shows tide predictions for your area. We built it to need as little of your data as possible, and we do not sell or share personal data with advertisers.</p>
 <h2>Information we use</h2>
@@ -307,6 +307,8 @@ export function privacyPage() {
 <p>"Snap it" sends the photo you choose to our server, where an AI model (Google Vertex AI or Anthropic Claude) identifies the species. If you are not signed in, the photo is discarded after identification. If you sign in and save a catch, the photo and the identification are stored in your gallery until you delete them.</p>
 <h3>Account</h3>
 <p>Sign-in is optional and only needed for the gallery. It uses Google sign-in through Firebase Authentication; we store your Google account ID, display name and email so your catches stay yours. Sign out at any time from the account menu; email us to delete your account and gallery.</p>
+<h3>Payments (SlotGauge Pro)</h3>
+<p>Subscriptions are processed by Stripe. Your card details go directly to Stripe and never touch our servers; we store only your Stripe customer ID, subscription status and renewal date so Pro can be unlocked on your account. Purchases through Google Play are handled by Google under its policies.</p>
 <h3>On-device storage</h3>
 <p>The app keeps your last state, tide station, recent checks and a copy of the regulations in your browser's local storage so it works offline. Nothing in it is sent to us except as described above.</p>
 <h3>Server logs</h3>
@@ -320,4 +322,45 @@ export function privacyPage() {
 <h2>Changes</h2>
 <p>We will update this page when the policy changes and note the date at the top.</p>`;
   return layout({ title: 'SlotGauge privacy policy', description: 'How SlotGauge uses location, microphone, photos and account data, and what it never does.', canonical: `${SITE}/privacy/`, body });
+}
+
+/** Public SlotGauge Pro page (SEO + what the in-app page says). */
+export function proPage() {
+  const body = `
+<nav class="crumbs"><a href="/">SlotGauge</a> › Pro</nav>
+<h1>SlotGauge Pro</h1>
+<p style="color:var(--ink-2);font-size:17px">Free SlotGauge answers "is it a keeper?" for every regulated fish in ten states and shows today's tide. Pro is for the days you plan ahead — <strong>$19.99 a year</strong> or $2.99 a month, no ads, cancel any time.</p>
+<h2>What Pro adds</h2>
+<div class="grid" style="grid-template-columns:1fr">
+<a href="/?pro=open"><strong>Unlimited photo ID</strong><small>Snap a fish and SlotGauge names it. Free accounts get 3 a month; Pro never counts.</small></a>
+<a href="/?pro=open"><strong>Tides anywhere</strong><small>Any NOAA station in the country, saved stations for trips, and the week ahead — not just today and tomorrow near you.</small></a>
+<a href="/?pro=open"><strong>Catch log with conditions</strong><small>Every saved catch records tide stage, moon phase and weather, and Insights shows what has been working for you.</small></a>
+<a href="/?pro=open"><strong>Best windows</strong><small>Tide, moon, weather and open seasons combined into "fish here, then".</small></a>
+</div>
+<div class="app"><h2 style="margin-top:0">Go Pro</h2><p>Sign in with Google, pick yearly or monthly, pay through Stripe. Pro follows your account to every device.</p><a class="cta" href="/?pro=open">Open SlotGauge Pro</a></div>
+<h2>What stays free</h2>
+<p>Keeper checks by voice or text, every regulation and species page, the tide badge with today's chart for your nearest station, and three photo IDs a month. SlotGauge never shows ads to anyone.</p>
+<p style="font-size:13px;color:var(--ink-3)">Subscriptions renew automatically until cancelled from the account menu (Manage subscription). See the <a href="/terms/" style="color:var(--accent)">terms</a> and <a href="/privacy/" style="color:var(--accent)">privacy policy</a>.</p>`;
+  return layout({ title: 'SlotGauge Pro — unlimited photo ID, tides anywhere, catch log', description: 'SlotGauge Pro: unlimited fish photo ID, any NOAA tide station and the week ahead, a catch log with tide, moon and weather, no ads. $19.99 a year.', canonical: `${SITE}/pro/`, body });
+}
+
+/** Terms of service. */
+export function termsPage() {
+  const body = `
+<nav class="crumbs"><a href="/">SlotGauge</a> › Terms</nav>
+<h1>Terms of service</h1>
+<p style="color:var(--ink-2)">Last updated 2026-10-31.</p>
+<h2>The service</h2>
+<p>SlotGauge summarizes recreational fishing regulations published by state agencies, NOAA tide predictions and National Weather Service forecasts, and identifies fish from photos using AI. It is a convenience tool. The official regulations of the state you are fishing in govern; you are responsible for checking them and for every fish you keep. Identifications, size estimates and condition data can be wrong. SlotGauge is not legal advice and is provided "as is" without warranties of any kind.</p>
+<h2>Accounts</h2>
+<p>Sign-in uses your Google account. You are responsible for activity under your account. We may suspend accounts that abuse the service (for example automated photo uploads).</p>
+<h2>SlotGauge Pro</h2>
+<p>Pro is a subscription billed by Stripe at the price shown at checkout, yearly or monthly, in U.S. dollars plus any applicable tax. It renews automatically until you cancel. Cancel any time from the account menu (Manage subscription); Pro stays active until the end of the period you paid for, and we do not refund partial periods except where the law requires. Prices may change with at least 30 days' notice; the new price applies at your next renewal. Purchases made through Google Play are governed by Google Play's terms and refund policy.</p>
+<h2>Your content</h2>
+<p>Photos and catch records you save stay yours. You give SlotGauge permission to store and process them to provide the service, and to use anonymized, aggregated catch conditions (species, date, tide, moon, weather — never your name, photos or exact location) to improve the service and show community trends.</p>
+<h2>Limitation of liability</h2>
+<p>To the fullest extent permitted by law, SlotGauge is not liable for fines, lost catches, damages or losses arising from use of the service. Our total liability is limited to the amount you paid for Pro in the twelve months before the claim.</p>
+<h2>Changes and contact</h2>
+<p>We may update these terms; the date above changes when we do. Questions: <a href="mailto:greg.fullwood@gmail.com">greg.fullwood@gmail.com</a>.</p>`;
+  return layout({ title: 'SlotGauge terms of service', description: 'Terms for using SlotGauge and SlotGauge Pro.', canonical: `${SITE}/terms/`, body });
 }

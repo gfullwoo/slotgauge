@@ -145,7 +145,7 @@ header .right{display:flex;align-items:center;gap:8px}
 .menu .who{font-size:12.5px;color:var(--ink-2);padding:4px 8px 8px;border-bottom:1px solid var(--line)}
 .menu button{all:unset;cursor:pointer;padding:8px;border-radius:8px;font-size:14px}
 .menu button:hover{background:var(--surface-2)}
-.acct{position:relative}
+.acct{position:relative;display:flex;align-items:center}
 /* ---- photo buttons ---- */
 .btn.icon{width:44px;height:44px;padding:0;display:grid;place-items:center;border-radius:12px}
 .btn.icon svg{width:20px;height:20px}
@@ -261,6 +261,14 @@ html,body{margin:0}
 header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}.tide-badge{flex:none;margin-right:0}
 @media(max-width:640px){#tabs{display:none!important}}
 @media(max-width:420px){.tide-badge{padding:3px 7px 3px 5px}.tide-badge small{font-size:10px}header h1 small{display:none}.tv-pick-row{flex-wrap:wrap}}
+
+/* ---- Pro ---- */
+.pro-tag{font-size:10px;font-weight:800;letter-spacing:.08em;background:var(--accent);color:var(--accent-ink);border-radius:6px;padding:2px 6px;margin-right:6px}
+.pro-lead{font-size:16px;color:var(--ink-2);margin:4px 0 12px}
+.pro-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}.pro-list li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:grid;gap:2px}.pro-list li b{font-size:15px}.pro-list li span{font-size:13.5px;color:var(--ink-2)}
+.pro-plans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.pro-plans .btn{display:grid;gap:2px;padding:12px 10px;text-align:center;border-radius:14px}.pro-plans .btn b{font-size:17px}.pro-plans .btn small{font-size:12px;opacity:.85}
+.pro-note{font-size:13.5px;color:var(--ink-2);margin:10px 0}.pro-fine{font-size:12.5px;color:var(--ink-3);margin-top:16px}
+.upgrade{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:12px;padding:12px 14px;margin:8px 0}.upgrade b{font-size:15px}.upgrade p{margin:4px 0 10px;font-size:13.5px;color:var(--ink-2)}
 </style>
 </head>
 <body>
@@ -274,6 +282,7 @@ header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
       <button role="tab" aria-selected="false" data-tab="gallery">Gallery</button>
     </div>
     <div class="acct" id="acct" hidden>
+      <span class="pro-tag" id="proTag" hidden title="SlotGauge Pro">PRO</span>
       <button class="avatar" id="avatarBtn" aria-label="Account" title="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
       <div class="menu" id="menu" hidden></div>
     </div>
@@ -314,6 +323,7 @@ header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
   <div class="rlist" id="recent"></div>
 </section>
 
+<section id="proView" hidden></section>
 <section id="galleryView" hidden>
   <div class="gal-head"><div class="tv-head" style="margin:0"><button class="tv-back" id="galBack" type="button">‹ Checker</button><h2 class="disp">My catches</h2></div><span class="gal-stats" id="galStats"></span></div>
   <div id="galDetail"></div>
@@ -352,7 +362,7 @@ header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
 </section>
 
 <footer>
-  <span id="offline" hidden>Offline - using the last saved regulations. </span><span id="footSrc">Regulations from the <a href="https://fishspecies.dnrec.delaware.gov/" target="_blank" rel="noopener">DNREC Fish Facts</a> species pages, captured <span id="scraped"></span>. Rules are simplified for quick checks; the source page and the current Delaware Fishing Guide govern. Not legal advice. Gear, license, and area restrictions may also apply.</span> <a href="/privacy/">Privacy</a>
+  <span id="offline" hidden>Offline - using the last saved regulations. </span><span id="footSrc">Regulations from the <a href="https://fishspecies.dnrec.delaware.gov/" target="_blank" rel="noopener">DNREC Fish Facts</a> species pages, captured <span id="scraped"></span>. Rules are simplified for quick checks; the source page and the current Delaware Fishing Guide govern. Not legal advice. Gear, license, and area restrictions may also apply.</span> <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a>
 </footer>
 </div>
 

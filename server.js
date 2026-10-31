@@ -4,12 +4,13 @@ import multer from 'multer';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildRegs, rawHash } from './src/regs.js';
-import { makePages, sitemapAll, SITE, privacyPage } from './src/pages.js';
+import { makePages, sitemapAll, SITE, privacyPage, proPage, termsPage } from './src/pages.js';
 import { buildAllRegs } from './src/regs.js';
 import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
 import { makeInfoLookup, loadSpeciesInfo } from './src/wiki.js';
 import { makeTides } from './src/tides.js';
+import { makeMemoryAccounts, makeBilling, isPro, FREE_IDENTIFY_PER_MONTH, PLANS } from './src/billing.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
 
@@ -23,11 +24,19 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 
  *  identifier(jpegBuffer) -> identification result        (Claude vision in prod)
  *  store -> see src/scans.js                                (Firestore + GCS in prod)
  */
-export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test', tides = makeTides(), tidesRefresh = process.env.NODE_ENV !== 'test' } = {}) {
+export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test', tides = makeTides(), tidesRefresh = process.env.NODE_ENV !== 'test', accounts = makeMemoryAccounts(), billing = null } = {}) {
   const app = express();
   app.disable('x-powered-by');
   app.set('trust proxy', true);   // Cloud Run sits behind Google's load balancer; req.ip must be the client
   app.use(compression());
+  // Stripe webhook needs the raw body for signature verification, so it is mounted before the JSON parser.
+  app.post('/api/billing/webhook', express.raw({ type: 'application/json', limit: '1mb' }), async (req, res) => {
+    if (!billing?.enabled) return res.status(503).json({ error: 'billing not configured' });
+    let event;
+    try { event = billing.verify(req.body, req.headers['stripe-signature']); } catch (e) { return res.status(400).json({ error: `webhook signature: ${e.message}` }); }
+    try { const what = await billing.handleEvent(event); console.log(`billing: ${event.type}: ${what}`); res.json({ received: true }); }
+    catch (e) { console.error('billing webhook failed', e); res.status(500).json({ error: 'webhook failed' }); }
+  });
   app.use(express.json({ limit: '64kb' }));
 
   const allRegs = buildAllRegs();
@@ -43,7 +52,7 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
 
   app.get('/api/config', (_req, res) => {
     res.set('Cache-Control', 'public, max-age=300');
-    res.json({ firebase: firebaseConfig, features: { scans: !!(store && identifier && verifyToken), identify: !!identifier, anonIdentify: !!identifier } });
+    res.json({ firebase: firebaseConfig, features: { scans: !!(store && identifier && verifyToken), identify: !!identifier, anonIdentify: !!identifier, billing: !!billing?.enabled }, pro: { freeIdentify: FREE_IDENTIFY_PER_MONTH, plans: PLANS } });
   });
 
   app.get('/api/regs', (req, res) => {
@@ -99,20 +108,49 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
 
   app.get('/api/me', requireAuth, async (req, res) => {
     const scans = store ? await store.list(req.user.uid) : [];
-    res.json({ user: req.user, scanCount: scans.length, speciesCount: new Set(scans.map((s) => s.speciesId).filter((x) => x != null)).size });
+    const acct = await accounts.get(req.user.uid);
+    res.json({ user: req.user, scanCount: scans.length, speciesCount: new Set(scans.map((s) => s.speciesId).filter((x) => x != null)).size,
+      pro: isPro(acct), plan: acct?.plan || null, status: acct?.status || null, periodEnd: acct?.periodEnd || null, cancelAtPeriodEnd: !!acct?.cancelAtPeriodEnd,
+      identifyUsed: await accounts.usage(`uid:${req.user.uid}`), identifyLimit: isPro(acct) ? null : FREE_IDENTIFY_PER_MONTH, billing: !!billing?.enabled });
+  });
+  // Anonymous visitors get the same monthly free allowance, keyed by a device id the app generates.
+  app.get('/api/quota', async (req, res) => {
+    const did = String(req.headers['x-sg-device'] || '').slice(0, 64);
+    const used = did ? await accounts.usage(`anon:${did}`) : 0;
+    res.set('Cache-Control', 'no-store'); res.json({ identifyUsed: used, identifyLimit: FREE_IDENTIFY_PER_MONTH, billing: !!billing?.enabled });
+  });
+  app.post('/api/billing/checkout', requireAuth, async (req, res) => {
+    if (!billing?.enabled) return res.status(503).json({ error: 'Subscriptions are not available yet.' });
+    try { res.json(await billing.checkout({ uid: req.user.uid, email: req.user.email, plan: req.body?.plan === 'month' ? 'month' : 'year' })); }
+    catch (e) { console.error('checkout failed', e); res.status(502).json({ error: 'Could not start checkout. Try again in a minute.' }); }
+  });
+  app.post('/api/billing/portal', requireAuth, async (req, res) => {
+    if (!billing?.enabled) return res.status(503).json({ error: 'Subscriptions are not available yet.' });
+    try { const r = await billing.portal({ uid: req.user.uid }); if (!r) return res.status(404).json({ error: 'No subscription on this account yet.' }); res.json(r); }
+    catch (e) { console.error('portal failed', e); res.status(502).json({ error: 'Could not open the billing portal.' }); }
   });
 
   app.post('/api/identify', optionalAuth, upload.single('image'), async (req, res) => {
     if (!identifier) return res.status(503).json({ error: 'Photo identification is not configured on this server.' });
     if (!req.file) return res.status(400).json({ error: 'Attach an image as the "image" field.' });
     if (!req.user && !anonAllowed(req.ip)) return res.status(429).json({ error: 'Hourly limit for photo checks without an account reached. Sign in for unlimited checks and a gallery.' });
+    // Free tier: FREE_IDENTIFY_PER_MONTH photo IDs a month (per account, or per device when anonymous); Pro is unlimited.
+    const acct = req.user ? await accounts.get(req.user.uid) : null;
+    const pro = isPro(acct);
+    const quotaKey = req.user ? `uid:${req.user.uid}` : (req.headers['x-sg-device'] ? `anon:${String(req.headers['x-sg-device']).slice(0, 64)}` : `ip:${req.ip}`);
+    if (!pro && billing?.enabled) {
+      const used = await accounts.usage(quotaKey);
+      if (used >= FREE_IDENTIFY_PER_MONTH) return res.status(402).json({ error: `You've used your ${FREE_IDENTIFY_PER_MONTH} free photo IDs this month.`, quota: { used, limit: FREE_IDENTIFY_PER_MONTH }, upgrade: true, signedIn: !!req.user });
+    }
     let images;
     try { images = await normalizeImage(req.file.buffer); }
     catch (e) { return res.status(400).json({ error: 'That file is not an image we can read.' }); }
     let ident;
     try { ident = await identifier(images.full); }
     catch (e) { console.error('identify failed', e); return res.status(502).json({ error: 'The fish identifier is unavailable right now. Try again in a minute.' }); }
+    const used = pro ? null : await accounts.bumpUsage(quotaKey);
     const rec = newScanRecord({ uid: req.user ? req.user.uid : null, ident, source: req.body?.source });
+    res.set('X-SG-Identify-Used', String(used ?? 0)); res.set('X-SG-Identify-Limit', pro ? 'unlimited' : String(FREE_IDENTIFY_PER_MONTH));
     const species = rec.speciesId != null ? speciesById.get(rec.speciesId) : null;
     if (!req.user || !store) {
       // anonymous: identify only, nothing stored
@@ -255,6 +293,8 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
     res.json([{ relation: ['delegate_permission/common.handle_all_urls'], target: { namespace: 'android_app', package_name: 'com.slotgauge.app', sha256_cert_fingerprints: prints } }]);
   });
   app.get(['/privacy', '/privacy/'], (req, res) => (req.path.endsWith('/') ? html(res, privacyPage(), 86400) : res.redirect(301, '/privacy/')));
+  app.get(['/terms', '/terms/'], (req, res) => (req.path.endsWith('/') ? html(res, termsPage(), 86400) : res.redirect(301, '/terms/')));
+  app.get(['/pro', '/pro/'], (req, res) => (req.path.endsWith('/') ? html(res, proPage(), 3600) : res.redirect(301, '/pro/')));
   app.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /__/\nSitemap: ${SITE}/sitemap.xml\n`));
   app.get('/sitemap.xml', (_req, res) => { res.set('Cache-Control', 'public, max-age=3600'); res.type('application/xml').send(sitemapAll(pagesByState)); });
   app.get('/api/sources', (_req, res) => {
@@ -330,6 +370,15 @@ export async function createProductionApp() {
       console.log(`identify: primary=${primary.name_()}${fallback ? ' fallback=' + fallback.name_() : ''}`);
     }
   }
+  let accounts, billing;
+  if (process.env.STRIPE_SECRET_KEY && process.env.STRIPE_PRICE_YEAR) {
+    const { default: Stripe } = await import('stripe');
+    const { makeCloudAccounts } = await import('./src/billing.js');
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: '2025-09-30.clover' });
+    accounts = process.env.GOOGLE_CLOUD_PROJECT ? makeCloudAccounts(new (await import('@google-cloud/firestore')).Firestore()) : undefined;
+    billing = makeBilling({ stripe, accounts: accounts || makeMemoryAccounts(), prices: { year: process.env.STRIPE_PRICE_YEAR, month: process.env.STRIPE_PRICE_MONTH }, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET, siteUrl: SITE });
+    console.log(`billing: stripe on (${accounts ? 'firestore' : 'memory'} accounts, tax=${process.env.STRIPE_TAX === '1'})`);
+  }
   if (process.env.SCANS_BUCKET) {
     const { Storage } = await import('@google-cloud/storage');
     const { Firestore } = await import('@google-cloud/firestore');
@@ -339,7 +388,7 @@ export async function createProductionApp() {
     store = makeMemoryStore();
   }
   console.log(`features: auth=${!!verifyToken} identify=${!!identifier} store=${store ? (store.blobs ? 'memory' : 'cloud') : 'off'}`);
-  return createApp({ verifyToken, identifier, store, firebaseConfig });
+  return createApp({ verifyToken, identifier, store, firebaseConfig, accounts, billing });
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

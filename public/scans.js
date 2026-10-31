@@ -19,6 +19,7 @@
     try { cfg = await fetch('/api/config').then((r) => r.json()); } catch (e) { return; }
     const canIdentify = !!cfg.features?.identify;
     const canSave = !!(cfg.features?.scans && cfg.firebase?.apiKey);
+    billingOn = !!cfg.features?.billing;
     if (!canIdentify && !canSave) return; // nothing extra on this deployment
     if (canIdentify) { $('#camBtn').hidden = false; $('#upBtn').hidden = false; $('#hint').textContent = 'Try an example above, snap a photo, or describe your own catch.'; }
     wire();
@@ -27,7 +28,8 @@
     if (cfg.firebase.apiKey === 'dev') window.firebase = fakeFirebase(); else if (!window.firebase) return;
     firebase.initializeApp(cfg.firebase);
     $('#tabs').hidden = false; $('#acct').hidden = false;
-    firebase.auth().onAuthStateChanged((u) => { user = u; drawAccount(); drawWayPhoto(); if (view === 'gallery') loadGallery(); });
+    firebase.auth().onAuthStateChanged((u) => { user = u; drawAccount(); drawWayPhoto(); if (view === 'gallery') loadGallery(); loadMe().then(drawAccount); });
+    try { const p = new URLSearchParams(location.search).get('pro'); if (p) { history.replaceState(null, '', location.pathname + location.hash); if (p === 'welcome') { setTimeout(() => { loadMe().then(() => { drawAccount(); showView('pro'); }); }, 1200); } if (p === 'open') showView('pro'); } } catch (e) {}
     firebase.auth().getRedirectResult().catch(() => {});
   }
 
@@ -38,16 +40,69 @@
     catch (e) { if (/popup/i.test(e.code || '')) await firebase.auth().signInWithRedirect(p); else alert('Sign-in failed: ' + (e.message || e.code)); }
   }
   async function token() { return user ? user.getIdToken() : null; }
+  const deviceId = (() => { try { let d = localStorage.getItem('sg.did'); if (!d) { d = Array.from(crypto.getRandomValues(new Uint8Array(12)), (b) => b.toString(16).padStart(2, '0')).join(''); localStorage.setItem('sg.did', d); } return d; } catch (e) { return ''; } })();
   async function api(path, opts = {}) {
     const t = await token();
-    const headers = Object.assign({}, opts.headers || {}, t ? { Authorization: 'Bearer ' + t } : {});
+    const headers = Object.assign({ 'x-sg-device': deviceId }, opts.headers || {}, t ? { Authorization: 'Bearer ' + t } : {});
     const r = await fetch(path, { ...opts, headers });
     if (r.status === 204) return null;
     const j = await r.json().catch(() => ({}));
     if (r.status === 401 && user) { try { await user.getIdToken(true); } catch (_) {} }
-    if (!r.ok) throw new Error(j.error || ('Request failed (' + r.status + ')'));
+    if (!r.ok) { const err = new Error(j.error || ('Request failed (' + r.status + ')')); err.status = r.status; err.body = j; throw err; }
     return j;
   }
+
+  // ---------- SlotGauge Pro ----------
+  let me = null, quota = null, billingOn = false;
+  const isAndroidApp = (() => { try { if (new URLSearchParams(location.search).get('source') === 'android') sessionStorage.setItem('sg.platform', 'android'); return sessionStorage.getItem('sg.platform') === 'android'; } catch (e) { return false; } })();
+  const isPro = () => !billingOn || !!(me && me.pro);
+  async function loadMe() {
+    try { if (user) { me = await api('/api/me'); quota = null; } else { me = null; quota = await api('/api/quota'); } } catch (e) { /* offline: keep last known */ }
+    drawProBits();
+  }
+  function fmtDate(iso) { try { return new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }); } catch (e) { return ''; } }
+  function drawProBits() {
+    const tag = $('#proTag'); if (tag) tag.hidden = !(billingOn && me && me.pro);
+    const pv = $('#proView'); if (pv && !pv.hidden) drawProView();
+  }
+  function proMenuHtml() {
+    if (!billingOn) return '';
+    if (me && me.pro) return `<button data-act="pro"><b>SlotGauge Pro</b> · ${me.plan === 'month' ? 'monthly' : 'yearly'}${me.cancelAtPeriodEnd ? ' · ends ' : ' · renews '}${fmtDate(me.periodEnd)}</button>${isAndroidApp ? '' : '<button data-act="portal">Manage subscription</button>'}`;
+    const used = me ? me.identifyUsed : quota ? quota.identifyUsed : 0, limit = me ? me.identifyLimit : quota ? quota.identifyLimit : 3;
+    return `<button data-act="pro"><b>Go Pro</b> · ${Math.max(0, limit - used)} of ${limit} free photo IDs left this month</button>`;
+  }
+  function drawProView() {
+    const v = $('#proView'); if (!v) return;
+    const pro = me && me.pro;
+    const buy = isAndroidApp
+      ? `<p class="pro-note">SlotGauge Pro is coming to the Google Play version of the app. Everything else works as usual.</p>`
+      : pro ? `<p class="pro-note">You're on Pro (${me.plan === 'month' ? 'monthly' : 'yearly'}${me.cancelAtPeriodEnd ? `, ends ${fmtDate(me.periodEnd)}` : `, renews ${fmtDate(me.periodEnd)}`}). Thank you for keeping the lights on.</p><button class="btn" data-act="portal">Manage subscription</button>`
+      : `<div class="pro-plans"><button class="btn primary" data-act="buy" data-plan="year"><b>$19.99 / year</b><small>2 months free</small></button><button class="btn" data-act="buy" data-plan="month"><b>$2.99 / month</b><small>cancel any time</small></button></div><p class="pro-note">${user ? 'Secure checkout by Stripe. Cancel any time from the account menu.' : 'You\'ll sign in with Google first so Pro follows you to every device.'}</p>`;
+    v.innerHTML = `
+<div class="tv-head"><button class="tv-back" data-act="back" type="button">‹ Checker</button><h2 class="disp">SlotGauge Pro</h2></div>
+<p class="pro-lead">Free SlotGauge answers "is it a keeper?" for every fish in ten states and shows today's tide. Pro is for the days you plan ahead.</p>
+<ul class="pro-list">
+<li><b>Unlimited photo ID</b><span>Free accounts get ${me?.identifyLimit || quota?.identifyLimit || 3} a month. Pro never counts.</span></li>
+<li><b>Tides anywhere</b><span>Search any NOAA station in the country, save stations for trips, and page through the week ahead.</span></li>
+<li><b>Your catch log, with conditions</b><span>Every saved catch records tide stage, moon and weather — and Insights shows you what's been working.</span></li>
+<li><b>Best windows</b><span>Tide, moon, weather and open seasons combined into "fish here, then".</span></li>
+<li><b>No ads, ever</b><span>Pro is how SlotGauge stays ad-free and keeps paying for the rule checks and tide data.</span></li>
+</ul>
+${buy}
+<p class="pro-fine">Regulations, species pages, voice/text checks and the tide badge stay free for everyone.</p>`;
+  }
+  async function buy(plan) {
+    if (!user) { await signIn(); if (!user) return; }
+    try { const { url } = await api('/api/billing/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan }) }); location.href = url; }
+    catch (e) { alert(e.message); }
+  }
+  async function portal() { try { const { url } = await api('/api/billing/portal', { method: 'POST' }); location.href = url; } catch (e) { alert(e.message); } }
+  function upgradeCard(msg) {
+    return `<div class="upgrade"><b>${esc(msg || 'That\'s a Pro feature')}</b><p>Unlimited photo ID, tides anywhere, your catch log with conditions.</p><button class="btn primary" data-act="pro">See SlotGauge Pro</button></div>`;
+  }
+  /** Gate a Pro feature: returns true when allowed; otherwise shows the Pro page and returns false. */
+  function gate(feature) { if (isPro()) return true; showView('pro'); return false; }
+  window.SG_PRO = { isPro, gate, open: () => showView('pro'), refresh: loadMe, upgradeCard, get me() { return me; }, get android() { return isAndroidApp; } };
   function drawWayPhoto() {
     const w = $('#wayPhoto'), d = $('#wayPhotoD'); if (!w) return;
     const on = !$('#camBtn').hidden;
@@ -58,10 +113,10 @@
     const b = $('#avatarBtn');
     if (user) {
       b.innerHTML = user.photoURL ? `<img src="${esc(user.photoURL)}" alt="" referrerpolicy="no-referrer">` : `<span style="font-weight:700;font-size:13px">${esc((user.displayName || user.email || '?').slice(0, 1).toUpperCase())}</span>`;
-      $('#menu').innerHTML = `<div class="who">${esc(user.displayName || '')}<br>${esc(user.email || '')}</div><button data-act="gallery">My catches</button>${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}${window.SG_THEME ? window.SG_THEME.pickerHtml() : ''}<button data-act="signout">Sign out</button>`;
+      $('#menu').innerHTML = `<div class="who">${esc(user.displayName || '')}<br>${esc(user.email || '')}</div><button data-act="gallery">My catches</button>${proMenuHtml()}${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}${window.SG_THEME ? window.SG_THEME.pickerHtml() : ''}<button data-act="signout">Sign out</button>`;
     } else {
       b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>`;
-      $('#menu').innerHTML = `<div class="who">Sign in to identify fish from photos and keep a gallery of your catches.</div><button data-act="signin">Sign in with Google</button>${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}${window.SG_THEME ? window.SG_THEME.pickerHtml() : ''}`;
+      $('#menu').innerHTML = `<div class="who">Sign in to identify fish from photos and keep a gallery of your catches.</div><button data-act="signin">Sign in with Google</button>${proMenuHtml()}${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}${window.SG_THEME ? window.SG_THEME.pickerHtml() : ''}`;
     }
   }
 
@@ -74,6 +129,7 @@
     const hero = $('#hero'); if (hero) hero.hidden = !check || !$('#heroImg').classList.contains('in');
     $('#galleryView').hidden = v !== 'gallery';
     const tv = $('#tideView'); if (tv) tv.hidden = v !== 'tides';
+    const pv = $('#proView'); if (pv) { pv.hidden = v !== 'pro'; if (v === 'pro') drawProView(); }
     if (v === 'gallery') loadGallery(); else if (check && !$('#out').innerHTML.trim() && !$('#scanCard').innerHTML.trim()) window.SG.showWelcome();
     if (v !== 'check') window.scrollTo(0, 0);
   }
@@ -92,6 +148,7 @@
       drawScan(scan, preview);
       if (scan.speciesId != null) checkScan(scan, true);
     } catch (e) {
+      if (e.status === 402) { $('#scanCard').innerHTML = `<div class="scan"><div class="photo"><img src="${preview}" alt=""></div><div class="body">${upgradeCard(e.message)}</div></div>`; loadMe(); return; }
       $('#scanCard').innerHTML = `<div class="scan"><div class="photo"><img src="${preview}" alt=""></div><div class="body"><div class="idline"><span class="name">Couldn't identify</span></div><p class="hint">${esc(e.message)}</p></div></div>`;
     }
   }
@@ -254,6 +311,8 @@
       const a = e.target.closest('[data-act]');
       if (a) { $('#menu').hidden = true; if (a.dataset.act === 'signin') signIn(); if (a.dataset.act === 'signout') firebase.auth().signOut(); if (a.dataset.act === 'gallery') showView('gallery'); }
       const tab = e.target.closest('#tabs [data-tab]'); if (tab) showView(tab.dataset.tab);
+      const pa = e.target.closest('[data-act="pro"],[data-act="buy"],[data-act="portal"],#proView [data-act="back"]');
+      if (pa) { $('#menu').hidden = true; const act = pa.dataset.act; if (act === 'pro') showView('pro'); if (act === 'buy') buy(pa.dataset.plan || 'year'); if (act === 'portal') portal(); if (act === 'back') showView('check'); }
       const alt = e.target.closest('#scanCard [data-alt]');
       if (alt && currentScan) { const img = $('#scanCard img')?.src; if (alt.dataset.alt === 'other') pickAnySpecies((id) => setSpecies(currentScan, id, img)); else setSpecies(currentScan, +alt.dataset.alt, img); }
       if (e.target.closest('#scanCheck') && currentScan) checkScan(currentScan);

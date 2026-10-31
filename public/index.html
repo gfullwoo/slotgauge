@@ -51,8 +51,10 @@ html[data-theme="dark"]{
   --page-bg:var(--bg);
 }
 html[data-theme="ocean"] body{background:var(--page-bg);background-attachment:fixed;min-height:100vh}
-html[data-theme="ocean"] .chip,html[data-theme="ocean"] .btn:not(.primary),html[data-theme="ocean"] .tide-badge,html[data-theme="ocean"] .menu,html[data-theme="ocean"] .tv-station,html[data-theme="ocean"] .tv-card,html[data-theme="ocean"] .tv-chart,html[data-theme="ocean"] .tv-table,html[data-theme="ocean"] .tv-pick,html[data-theme="ocean"] .install,html[data-theme="ocean"] .inputbox,html[data-theme="ocean"] .verdict,html[data-theme="ocean"] .welcome{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+html[data-theme="ocean"] .chip,html[data-theme="ocean"] .btn:not(.primary),html[data-theme="ocean"] .tide-badge,html[data-theme="ocean"] .tv-station,html[data-theme="ocean"] .tv-card,html[data-theme="ocean"] .tv-chart,html[data-theme="ocean"] .tv-table,html[data-theme="ocean"] .tv-pick,html[data-theme="ocean"] .install,html[data-theme="ocean"] .inputbox,html[data-theme="ocean"] .verdict,html[data-theme="ocean"] .welcome{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 html[data-theme="ocean"] .tv-chart .grid{stroke:rgba(255,255,255,.18)}html[data-theme="dark"] .tv-chart .grid{stroke:#33393e}
+html[data-theme="ocean"] .menu{background:#0b3d5a;border-color:rgba(170,230,240,.35)}html[data-theme="dark"] .menu{background:#1c1f22}
+.menu .menu-sec{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);padding:6px 8px 0}.menu .theme-pick{margin:2px 4px 4px;justify-content:space-between}.menu .theme-pick button{flex:1}
 .theme-pick{display:inline-flex;gap:4px;margin-top:10px;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:3px}.theme-pick button{font:inherit;font-size:12px;border:0;background:transparent;color:var(--ink-2);border-radius:999px;padding:4px 10px;cursor:pointer}.theme-pick button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow);font-weight:600}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.45;padding-inline:16px;padding-block:0 32px}
@@ -350,7 +352,6 @@ header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
 </section>
 
 <footer>
-  <div class="theme-pick" id="themePick" role="group" aria-label="Theme"><button type="button" data-theme="light" aria-pressed="true">Light</button><button type="button" data-theme="ocean" aria-pressed="false">Ocean</button><button type="button" data-theme="dark" aria-pressed="false">Dark</button></div><br>
   <span id="offline" hidden>Offline - using the last saved regulations. </span><span id="footSrc">Regulations from the <a href="https://fishspecies.dnrec.delaware.gov/" target="_blank" rel="noopener">DNREC Fish Facts</a> species pages, captured <span id="scraped"></span>. Rules are simplified for quick checks; the source page and the current Delaware Fishing Guide govern. Not legal advice. Gear, license, and area restrictions may also apply.</span> <a href="/privacy/">Privacy</a>
 </footer>
 </div>
@@ -387,11 +388,12 @@ async function loadRegs(){
 }
 // ---------- themes: light (default), ocean, dark ----------
 const THEME_COLORS = { light: '#0f6f8c', ocean: '#02203a', dark: '#121416' };
-function setTheme(t){ t = THEME_COLORS[t] ? t : 'light'; if (t === 'light') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t); try { localStorage.setItem('sg.theme', t); } catch(e){} const m = document.getElementById('themeColor'); if (m) m.content = THEME_COLORS[t]; for (const b of document.querySelectorAll('#themePick button')) b.setAttribute('aria-pressed', String(b.dataset.theme === t)); }
+function setTheme(t){ t = THEME_COLORS[t] ? t : 'light'; if (t === 'light') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t); try { localStorage.setItem('sg.theme', t); } catch(e){} const m = document.getElementById('themeColor'); if (m) m.content = THEME_COLORS[t]; for (const b of document.querySelectorAll('.theme-pick button')) b.setAttribute('aria-pressed', String(b.dataset.theme === t)); }
+function themePickHtml(){ const c = currentTheme(); return `<div class="menu-sec">Theme</div><div class="theme-pick" role="group" aria-label="Theme">${['light','ocean','dark'].map(t => `<button type="button" data-theme="${t}" aria-pressed="${t===c}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>`; }
 function currentTheme(){ return document.documentElement.getAttribute('data-theme') || 'light'; }
-document.getElementById('themePick').addEventListener('click', e => { const b = e.target.closest('[data-theme]'); if (b) setTheme(b.dataset.theme); });
+document.addEventListener('click', e => { const b = e.target.closest('.theme-pick [data-theme]'); if (b) { e.stopPropagation(); setTheme(b.dataset.theme); } });
 setTheme(currentTheme());
-window.SG_THEME = { set: setTheme, get: currentTheme, next: () => { const o = ['light','ocean','dark']; setTheme(o[(o.indexOf(currentTheme()) + 1) % o.length]); } };
+window.SG_THEME = { set: setTheme, get: currentTheme, pickerHtml: themePickHtml, next: () => { const o = ['light','ocean','dark']; setTheme(o[(o.indexOf(currentTheme()) + 1) % o.length]); } };
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
 // ---------- install prompt (PWA) ----------
 (function(){

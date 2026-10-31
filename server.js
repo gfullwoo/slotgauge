@@ -10,6 +10,7 @@ import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
 import { makeInfoLookup, loadSpeciesInfo } from './src/wiki.js';
 import { makeTides } from './src/tides.js';
+import { makeWeather } from './src/weather.js';
 import { makeMemoryAccounts, makeBilling, isPro, isTestPro, FREE_IDENTIFY_PER_MONTH, PLANS } from './src/billing.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
@@ -24,7 +25,7 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 
  *  identifier(jpegBuffer) -> identification result        (Claude vision in prod)
  *  store -> see src/scans.js                                (Firestore + GCS in prod)
  */
-export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test', tides = makeTides(), tidesRefresh = process.env.NODE_ENV !== 'test', accounts = makeMemoryAccounts(), billing = null } = {}) {
+export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test', tides = makeTides(), tidesRefresh = process.env.NODE_ENV !== 'test', accounts = makeMemoryAccounts(), billing = null, weather = makeWeather() } = {}) {
   const app = express();
   app.disable('x-powered-by');
   app.set('trust proxy', true);   // Cloud Run sits behind Google's load balancer; req.ip must be the client
@@ -270,6 +271,13 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
       res.set('Cache-Control', 'public, max-age=1800');
       res.json({ ...data, now: tides.phase(data) });
     } catch (e) { res.status(502).json({ error: 'tide service unavailable', detail: String(e.message || e) }); }
+  });
+  // /api/weather?lat&lon — NWS current conditions + hourly + 7-day for a point (US only)
+  app.get('/api/weather', async (req, res) => {
+    const la = +req.query.lat, lo = +req.query.lon;
+    if (!Number.isFinite(la) || !Number.isFinite(lo)) return res.status(400).json({ error: 'lat and lon required' });
+    try { const w = await weather.at(la, lo); res.set('Cache-Control', 'public, max-age=600'); res.json(w); }
+    catch (e) { res.status(502).json({ error: 'weather unavailable', detail: String(e.message || e) }); }
   });
   if (tidesRefresh) { // keep the bundled station list current without a deploy
     const tick = () => tides.refreshStations().catch(() => {});

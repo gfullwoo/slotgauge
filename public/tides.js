@@ -85,6 +85,7 @@
   <div class="tv-results" id="tvResults"></div>
 </div>
 <div class="tv-now" id="tvNow"></div>
+<div class="tv-wx" id="tvWx" hidden></div>
 <div class="tv-nav"><button class="btn" id="tvPrev" type="button">‹ Earlier</button><span id="tvRange"></span><button class="btn" id="tvNext" type="button">Later ›</button></div>
 <div class="tv-chart" id="tvChart"></div>
 <table class="tv-table"><thead><tr><th>Day</th><th>Tide</th><th>Time</th><th>Height</th></tr></thead><tbody id="tvRows"></tbody></table>
@@ -113,8 +114,45 @@
     drawView(dayOffset === 0 ? data : await load(dayOffset).catch(() => data));
   }
 
+  // ---------- weather (National Weather Service) ----------
+  let wx = null, wxFor = null;
+  const SKY_ICON = { clear: '☀', partly: '⛅', cloudy: '☁', fog: '🌫', rain: '🌧', storm: '⛈', snow: '🌨', wind: '🌬', night: '🌙' };
+  const wxIcon = (sky, night) => `<span class="wx-ico">${night && (sky === 'clear' || sky === 'partly') ? SKY_ICON.night : SKY_ICON[sky] || SKY_ICON.partly}</span>`;
+  const hourTxt = (iso, tz) => new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: 'numeric' }).format(new Date(iso)).replace(' ', '').replace('AM', 'a').replace('PM', 'p');
+  async function loadWeather() {
+    const loc = (window.SG && window.SG.loc && window.SG.loc()) || {};
+    const lat = loc.status === 'ok' && loc.lat != null && !manual ? loc.lat : station?.lat, lon = loc.status === 'ok' && loc.lon != null && !manual ? loc.lon : station?.lng;
+    if (lat == null || lon == null) return null;
+    const key = `${lat.toFixed(2)},${lon.toFixed(2)}`; if (wxFor === key && wx && Date.now() - wx.at < 15 * 60e3) return wx.data;
+    try { const r = await fetch(`/api/weather?lat=${lat.toFixed(4)}&lon=${lon.toFixed(4)}`); if (!r.ok) throw new Error(); const data = await r.json(); wx = { data, at: Date.now() }; wxFor = key; document.dispatchEvent(new CustomEvent('sg:weather', { detail: { sky: data.sky, night: data.night } })); drawWxLine(); return data; }
+    catch (e) { return wx ? wx.data : null; }
+  }
+  function drawWxLine() {
+    let el = $('#wxLine'); if (!el) { el = document.createElement('div'); el.id = 'wxLine'; el.className = 'wx-line'; const today = $('#today'); if (today) today.insertAdjacentElement('afterend', el); else return; }
+    const d = wx?.data; if (!d) { el.hidden = true; return; }
+    const c = d.current, h = d.hourly?.[0];
+    const temp = c?.tempF ?? h?.tempF, text = c?.text || h?.text || '', wind = c?.windMph != null ? `${c.windDir || ''} ${c.windMph} mph` : h ? `${h.windDir || ''} ${h.windMph} mph` : '';
+    el.innerHTML = `${wxIcon(d.sky, d.night)} ${temp != null ? `<b>${temp}°</b>` : ''} ${esc(text)}${wind ? ` · ${esc(wind.trim())}` : ''}${d.place ? ` <span class="wx-place">· ${esc(d.place)}</span>` : ''}`;
+    el.hidden = false; el.onclick = () => openTides();
+  }
+  function drawWeather(d) {
+    const el = $('#tvWx'); if (!el) return;
+    if (!d) { el.hidden = true; return; }
+    const c = d.current, tz = d.tz || station?.tz || 'America/New_York';
+    const hours = (d.hourly || []).slice(0, 12);
+    const days = (d.daily || []).slice(0, 8);
+    el.innerHTML = `
+<div class="wx-head"><div class="wx-now">${wxIcon(d.sky, d.night)}<div><div class="wx-temp">${c?.tempF ?? hours[0]?.tempF ?? '—'}°<span>F</span></div><div class="wx-text">${esc(c?.text || hours[0]?.text || '')}</div></div></div>
+<div class="wx-facts">${c?.windMph != null ? `<span>Wind <b>${esc(c.windDir || '')} ${c.windMph}${c.gustMph ? `–${c.gustMph}` : ''} mph</b></span>` : ''}${c?.humidity != null ? `<span>Humidity <b>${c.humidity}%</b></span>` : ''}${c?.pressureInHg != null ? `<span>Pressure <b>${c.pressureInHg} inHg</b></span>` : ''}${c?.visibilityMi != null ? `<span>Visibility <b>${c.visibilityMi} mi</b></span>` : ''}</div></div>
+<div class="wx-hours">${hours.map((h) => `<div class="wx-h"><small>${hourTxt(h.t, tz)}</small>${wxIcon(h.sky, !h.day)}<b>${h.tempF}°</b><small class="pop">${h.pop ? h.pop + '%' : ''}</small></div>`).join('')}</div>
+<div class="wx-days">${days.map((p) => `<div class="wx-d"><b>${esc(p.name)}</b>${wxIcon(p.sky, !p.day)}<span>${p.tempF}°</span><small>${esc(p.text)}${p.pop ? ` · ${p.pop}%` : ''}</small><em>${esc(p.windDir || '')} ${esc(p.wind || '')}</em></div>`).join('')}</div>
+<p class="tv-foot" style="margin-top:6px">Weather from the <a href="https://www.weather.gov/" target="_blank" rel="noopener">National Weather Service</a>${c?.station ? ` · observed at ${esc(c.station.name)}` : ''}${d.place ? ` · forecast for ${esc(d.place)}` : ''}.</p>`;
+    el.hidden = false;
+  }
+
   function drawView(d) {
     if (!station) return;
+    loadWeather().then(drawWeather);
     shown = d;
     $('#tvName').textContent = nice(station.name); $('#tvId').textContent = station.id;
     $('#tvSub').textContent = `${station.state || ''}${station.miles != null && !manual ? ` · ${station.miles} mi from you` : manual ? ' · chosen by you' : ''}`;
@@ -152,9 +190,10 @@
   ready().then(async () => {
     ensureBadge(); ensureView();
     await resolveStation().catch(() => {});
-    drawBadge();
+    drawBadge(); loadWeather();
     let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (!$('#tideView').hidden && shown) drawView(shown); }, 200); });
     timer = setInterval(() => { drawBadge(); if (!$('#tideView').hidden && shown) drawView(shown); }, 60e3);
+    setInterval(loadWeather, 15 * 60e3);
     // refresh predictions when the day rolls over or the tab comes back after a long sleep
     document.addEventListener('visibilitychange', () => { if (!document.hidden && data && Date.now() - new Date(data.fetched).getTime() > 3 * 3600e3) load(0).then(() => drawBadge()).catch(() => {}); });
     if (location.hash === '#tides') openTides();

@@ -273,6 +273,17 @@ header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
 /* ---- text size (CSS zoom scales the whole layout, keeps proportions) ---- */
 html[data-text="large"]{zoom:1.12}html[data-text="xl"]{zoom:1.25}
 @media (max-width:480px){html[data-text="xl"]{zoom:1.2}}
+
+/* ---- weather ---- */
+.wx-line{font-size:13px;color:var(--ink-2);margin:-4px 0 10px;cursor:pointer}.wx-line b{color:var(--ink);font-size:14px}.wx-line .wx-place{color:var(--ink-3)}.wx-ico{font-size:1.15em;line-height:1;margin-right:2px}
+.tv-wx{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.wx-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}.wx-now{display:flex;align-items:center;gap:10px}.wx-now .wx-ico{font-size:34px}.wx-temp{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:34px;line-height:1}.wx-temp span{font-size:16px;font-weight:600;color:var(--ink-2);margin-left:2px}.wx-text{font-size:14px;color:var(--ink-2)}
+.wx-facts{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2)}.wx-facts b{color:var(--ink);font-weight:600}
+.wx-hours{display:flex;gap:4px;overflow-x:auto;margin-top:10px;padding-bottom:4px;-webkit-overflow-scrolling:touch}.wx-h{flex:0 0 52px;display:grid;justify-items:center;gap:2px;background:var(--surface-2);border-radius:10px;padding:6px 2px;font-size:12px}.wx-h small{color:var(--ink-3);font-size:11px}.wx-h .pop{color:var(--accent);min-height:13px}.wx-h .wx-ico{font-size:18px}
+.wx-days{display:grid;gap:4px;margin-top:10px}.wx-d{display:grid;grid-template-columns:92px 26px 42px 1fr auto;align-items:center;gap:6px;font-size:13px;padding:4px 0;border-top:1px solid var(--line)}.wx-d b{font-weight:600}.wx-d small{color:var(--ink-2)}.wx-d em{font-style:normal;color:var(--ink-3);font-size:12px;white-space:nowrap}
+@media(max-width:420px){.wx-d{grid-template-columns:78px 24px 38px 1fr}.wx-d em{display:none}}
+/* ocean sky canvas sits behind everything */
+#sky{position:fixed;inset:0;z-index:0;pointer-events:none}html[data-theme="ocean"] .wrap{position:relative;z-index:1}
 </style>
 </head>
 <body>
@@ -847,5 +858,6 @@ document.dispatchEvent(new Event('sg:ready'));
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script src="/scans.js"></script>
 <script src="/tides.js"></script>
+<script src="/sky.js"></script>
 </body>
 </html>

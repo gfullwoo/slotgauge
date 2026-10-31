@@ -88,6 +88,10 @@ export function todaySummary(sp, date = new Date()) {
 
 // ---- layout ----
 const CSS = `:root{--bg:#eef3f4;--surface:#fff;--surface-2:#e3ebed;--ink:#14232a;--ink-2:#4d6169;--ink-3:#7f939a;--line:#cfdadd;--accent:#0f6f8c;--keep:#1f7a4d;--keep-bg:#dcf2e5;--release:#b3361f;--release-bg:#fbe3dc}
+html[data-theme="ocean"]{color-scheme:dark;--bg:#06304a;--surface:rgba(255,255,255,.09);--surface-2:rgba(255,255,255,.16);--ink:#f1fbfd;--ink-2:#c9ecf3;--ink-3:#a9d8e2;--line:rgba(170,230,240,.26);--accent:#39d0c4;--keep:#5ff0a8;--keep-bg:rgba(95,240,168,.16);--release:#ff7a66;--release-bg:rgba(255,122,102,.18)}
+html[data-theme="dark"]{color-scheme:dark;--bg:#121416;--surface:#1c1f22;--surface-2:#272b2f;--ink:#e9edef;--ink-2:#aab3b8;--ink-3:#7f888d;--line:#33393e;--accent:#3cb6d6;--keep:#4fd48f;--keep-bg:rgba(79,212,143,.14);--release:#ff7461;--release-bg:rgba(255,116,97,.16)}
+html[data-theme="ocean"] body{background:linear-gradient(180deg,#02203a 0%,#063d5e 28%,#0a6a8c 62%,#128fa6 85%,#2bb7b9 100%);background-attachment:fixed;min-height:100vh}
+html[data-theme="ocean"] .cta,html[data-theme="dark"] .cta{color:#06202a}html[data-theme="ocean"] .about,html[data-theme="ocean"] .summary,html[data-theme="ocean"] table,html[data-theme="ocean"] .dir li{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 *{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.5;padding:0 16px 40px}
 .wrap{max-width:760px;margin:0 auto}h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.01em;line-height:1.05;margin:0}
 h1{font-size:40px;font-weight:700}h2{font-size:26px;margin-top:28px}h3{font-size:20px;margin-top:18px}
@@ -118,6 +122,7 @@ export function layout({ title, description, canonical, body, jsonld = [], ogIma
 <meta property="og:type" content="article"><meta property="og:site_name" content="SlotGauge"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:image" content="${esc(ogImage || SITE + '/og.png')}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0f6f8c">
+<script>(function(){try{var t=localStorage.getItem('sg.theme');if(t==='ocean'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <style>${CSS}</style>
 ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`).join('\n')}

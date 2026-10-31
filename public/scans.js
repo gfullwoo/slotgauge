@@ -58,10 +58,10 @@
     const b = $('#avatarBtn');
     if (user) {
       b.innerHTML = user.photoURL ? `<img src="${esc(user.photoURL)}" alt="" referrerpolicy="no-referrer">` : `<span style="font-weight:700;font-size:13px">${esc((user.displayName || user.email || '?').slice(0, 1).toUpperCase())}</span>`;
-      $('#menu').innerHTML = `<div class="who">${esc(user.displayName || '')}<br>${esc(user.email || '')}</div><button data-act="gallery">My catches</button>${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}<button data-act="signout">Sign out</button>`;
+      $('#menu').innerHTML = `<div class="who">${esc(user.displayName || '')}<br>${esc(user.email || '')}</div><button data-act="gallery">My catches</button>${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}<button data-act="theme">Theme: ${window.SG_THEME ? window.SG_THEME.get() : 'light'}</button><button data-act="signout">Sign out</button>`;
     } else {
       b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>`;
-      $('#menu').innerHTML = `<div class="who">Sign in to identify fish from photos and keep a gallery of your catches.</div><button data-act="signin">Sign in with Google</button>${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}`;
+      $('#menu').innerHTML = `<div class="who">Sign in to identify fish from photos and keep a gallery of your catches.</div><button data-act="signin">Sign in with Google</button>${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}<button data-act="theme">Theme: ${window.SG_THEME ? window.SG_THEME.get() : 'light'}</button>`;
     }
   }
 
@@ -252,7 +252,7 @@
     document.addEventListener('click', (e) => {
       if (!e.target.closest('#acct')) $('#menu').hidden = true;
       const a = e.target.closest('[data-act]');
-      if (a) { $('#menu').hidden = true; if (a.dataset.act === 'signin') signIn(); if (a.dataset.act === 'signout') firebase.auth().signOut(); if (a.dataset.act === 'gallery') showView('gallery'); }
+      if (a) { $('#menu').hidden = true; if (a.dataset.act === 'signin') signIn(); if (a.dataset.act === 'signout') firebase.auth().signOut(); if (a.dataset.act === 'gallery') showView('gallery'); if (a.dataset.act === 'theme') { window.SG_THEME?.next(); drawAccount(); } }
       const tab = e.target.closest('#tabs [data-tab]'); if (tab) showView(tab.dataset.tab);
       const alt = e.target.closest('#scanCard [data-alt]');
       if (alt && currentScan) { const img = $('#scanCard img')?.src; if (alt.dataset.alt === 'other') pickAnySpecies((id) => setSpecies(currentScan, id, img)); else setSpecies(currentScan, +alt.dataset.alt, img); }

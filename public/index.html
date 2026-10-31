@@ -14,7 +14,7 @@
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0f6f8c" id="themeColor">
-<script>(function(){try{var t=localStorage.getItem('sg.theme');if(t==='ocean'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){try{var t=localStorage.getItem('sg.theme');if(t==='ocean'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}var z=localStorage.getItem('sg.text')||(window.innerWidth<=480?'large':'normal');document.documentElement.setAttribute('data-text',z);}catch(e){}})();</script>
 <meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="SlotGauge">
@@ -269,6 +269,10 @@ header .right{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
 .pro-plans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.pro-plans .btn{display:grid;gap:2px;padding:12px 10px;text-align:center;border-radius:14px}.pro-plans .btn b{font-size:17px}.pro-plans .btn small{font-size:12px;opacity:.85}
 .pro-note{font-size:13.5px;color:var(--ink-2);margin:10px 0}.pro-fine{font-size:12.5px;color:var(--ink-3);margin-top:16px}
 .upgrade{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:12px;padding:12px 14px;margin:8px 0}.upgrade b{font-size:15px}.upgrade p{margin:4px 0 10px;font-size:13.5px;color:var(--ink-2)}
+
+/* ---- text size (CSS zoom scales the whole layout, keeps proportions) ---- */
+html[data-text="large"]{zoom:1.12}html[data-text="xl"]{zoom:1.25}
+@media (max-width:480px){html[data-text="xl"]{zoom:1.2}}
 </style>
 </head>
 <body>
@@ -401,9 +405,14 @@ const THEME_COLORS = { light: '#0f6f8c', ocean: '#02203a', dark: '#121416' };
 function setTheme(t){ t = THEME_COLORS[t] ? t : 'light'; if (t === 'light') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t); try { localStorage.setItem('sg.theme', t); } catch(e){} const m = document.getElementById('themeColor'); if (m) m.content = THEME_COLORS[t]; for (const b of document.querySelectorAll('.theme-pick button')) b.setAttribute('aria-pressed', String(b.dataset.theme === t)); }
 function themePickHtml(){ const c = currentTheme(); return `<div class="menu-sec">Theme</div><div class="theme-pick" role="group" aria-label="Theme">${['light','ocean','dark'].map(t => `<button type="button" data-theme="${t}" aria-pressed="${t===c}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>`; }
 function currentTheme(){ return document.documentElement.getAttribute('data-theme') || 'light'; }
+const TEXT_SIZES = { normal: 'Normal', large: 'Large', xl: 'Extra large' };
+function setTextSize(z){ z = TEXT_SIZES[z] ? z : 'normal'; document.documentElement.setAttribute('data-text', z); try { localStorage.setItem('sg.text', z); } catch(e){} for (const b of document.querySelectorAll('.text-pick button')) b.setAttribute('aria-pressed', String(b.dataset.text === z)); }
+function currentTextSize(){ return document.documentElement.getAttribute('data-text') || 'normal'; }
+function textPickHtml(){ const c = currentTextSize(); return `<div class="menu-sec">Text size</div><div class="theme-pick text-pick" role="group" aria-label="Text size">${Object.entries(TEXT_SIZES).map(([k, v]) => `<button type="button" data-text="${k}" aria-pressed="${k===c}">${v}</button>`).join('')}</div>`; }
+document.addEventListener('click', e => { const b = e.target.closest('.text-pick [data-text]'); if (b) { e.stopPropagation(); setTextSize(b.dataset.text); } });
 document.addEventListener('click', e => { const b = e.target.closest('.theme-pick [data-theme]'); if (b) { e.stopPropagation(); setTheme(b.dataset.theme); } });
 setTheme(currentTheme());
-window.SG_THEME = { set: setTheme, get: currentTheme, pickerHtml: themePickHtml, next: () => { const o = ['light','ocean','dark']; setTheme(o[(o.indexOf(currentTheme()) + 1) % o.length]); } };
+window.SG_THEME = { set: setTheme, get: currentTheme, pickerHtml: () => themePickHtml() + textPickHtml(), next: () => { const o = ['light','ocean','dark']; setTheme(o[(o.indexOf(currentTheme()) + 1) % o.length]); } };
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
 // ---------- install prompt (PWA) ----------
 (function(){

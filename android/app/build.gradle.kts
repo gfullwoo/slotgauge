@@ -13,12 +13,12 @@ val envKeyPass = System.getenv("ANDROID_KEY_PASSWORD") ?: ksPass
 
 android {
     namespace = "com.slotgauge.app"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.slotgauge.app"
         minSdk = 26
-        targetSdk = 35
+        targetSdk = 36
         versionCode = (System.getenv("ANDROID_VERSION_CODE") ?: "1").toInt()
         versionName = System.getenv("ANDROID_VERSION_NAME") ?: "1.0"
         resValue("string", "host", "slotgauge.com")
@@ -51,9 +51,9 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.core:core-ktx:1.16.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.browser:browser:1.8.0")
     implementation("com.google.androidbrowserhelper:androidbrowserhelper:2.5.0")
-    implementation("androidx.work:work-runtime-ktx:2.9.1")
+    implementation("androidx.work:work-runtime-ktx:2.10.2")
 }

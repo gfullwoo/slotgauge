@@ -123,6 +123,8 @@
     const loc = (window.SG && window.SG.loc && window.SG.loc()) || {};
     const lat = loc.status === 'ok' && loc.lat != null && !manual ? loc.lat : station?.lat, lon = loc.status === 'ok' && loc.lon != null && !manual ? loc.lon : station?.lng;
     if (lat == null || lon == null) return null;
+    // Moon/solunar needs the same point the weather uses; log.js listens for this.
+    document.dispatchEvent(new CustomEvent('sg:tides', { detail: { lat, lon, tz: station?.tz || null, station: station?.id || null } }));
     const key = `${lat.toFixed(2)},${lon.toFixed(2)}`; if (wxFor === key && wx && Date.now() - wx.at < 15 * 60e3) return wx.data;
     try { const r = await fetch(`/api/weather?lat=${lat.toFixed(4)}&lon=${lon.toFixed(4)}`); if (!r.ok) throw new Error(); const data = await r.json(); wx = { data, at: Date.now() }; wxFor = key; document.dispatchEvent(new CustomEvent('sg:weather', { detail: { sky: data.sky, night: data.night } })); drawWxLine(); return data; }
     catch (e) { return wx ? wx.data : null; }

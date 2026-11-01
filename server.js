@@ -9,11 +9,15 @@ import { buildAllRegs } from './src/regs.js';
 import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
 import { makeInfoLookup, loadSpeciesInfo } from './src/wiki.js';
-import { makeTides } from './src/tides.js';
+import { makeTides, addDays } from './src/tides.js';
 import { makeWeather } from './src/weather.js';
 import { makeMemoryAccounts, makeBilling, isPro, isTestPro, FREE_IDENTIFY_PER_MONTH, PLANS } from './src/billing.js';
 import { normalizeImage } from './src/identify.js';
 import { newScanRecord, groupBySpecies, makeMemoryStore } from './src/scans.js';
+import * as moonLib from './src/moon.js';
+import { solunar } from './src/moon.js';
+import { cleanCatch, stampConditions, makeMemoryCatches } from './src/catches.js';
+import { summarize, rankWindows, MIN_CATCHES } from './src/insights.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = process.env.PORT || 8080;
@@ -25,7 +29,7 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 
  *  identifier(jpegBuffer) -> identification result        (Claude vision in prod)
  *  store -> see src/scans.js                                (Firestore + GCS in prod)
  */
-export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test', tides = makeTides(), tidesRefresh = process.env.NODE_ENV !== 'test', accounts = makeMemoryAccounts(), billing = null, weather = makeWeather() } = {}) {
+export function createApp({ verifyToken, identifier, store, firebaseConfig = {}, locateFetch, wikiFetch, wikiLive = process.env.NODE_ENV !== 'test', tides = makeTides(), tidesRefresh = process.env.NODE_ENV !== 'test', accounts = makeMemoryAccounts(), billing = null, weather = makeWeather(), catches = process.env.NODE_ENV === 'test' ? makeMemoryCatches() : null } = {}) {
   const app = express();
   app.disable('x-powered-by');
   app.set('trust proxy', true);   // Cloud Run sits behind Google's load balancer; req.ip must be the client
@@ -49,11 +53,11 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
   const locator = makeLocator({ live: states.filter((s) => s.live).map((s) => s.code), names: Object.fromEntries(states.map((s) => [s.code, s.name])), fetchImpl: locateFetch || fetch });
   const speciesById = new Map(regs.species.map((s) => [s.id, s]));
 
-  app.get('/api/health', (_req, res) => res.json({ ok: true, scraped: regs.scraped, species: regs.species.length, scans: !!store, identify: !!identifier }));
+  app.get('/api/health', (_req, res) => res.json({ ok: true, scraped: regs.scraped, species: regs.species.length, scans: !!store, identify: !!identifier, catchLog: !!catches }));
 
   app.get('/api/config', (_req, res) => {
     res.set('Cache-Control', 'public, max-age=300');
-    res.json({ firebase: firebaseConfig, features: { scans: !!(store && identifier && verifyToken), identify: !!identifier, anonIdentify: !!identifier, billing: !!billing?.enabled }, pro: { freeIdentify: FREE_IDENTIFY_PER_MONTH, plans: PLANS } });
+    res.json({ firebase: firebaseConfig, features: { scans: !!(store && identifier && verifyToken), identify: !!identifier, anonIdentify: !!identifier, billing: !!billing?.enabled, catchLog: !!catches, moon: true }, pro: { freeIdentify: FREE_IDENTIFY_PER_MONTH, plans: PLANS } });
   });
 
   app.get('/api/regs', (req, res) => {
@@ -279,6 +283,62 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
     try { const w = await weather.at(la, lo); res.set('Cache-Control', 'public, max-age=600'); res.json(w); }
     catch (e) { res.status(502).json({ error: 'weather unavailable', detail: String(e.message || e) }); }
   });
+  // ---- moon & solunar (free) ----
+  // /api/moon?lat&lon[&date=YYYY-MM-DD][&days=N]  phase, moonrise/set and solunar windows per local day
+  app.get('/api/moon', (req, res) => {
+    const la = +req.query.lat, lo = +req.query.lon;
+    if (!Number.isFinite(la) || !Number.isFinite(lo)) return res.status(400).json({ error: 'lat and lon required' });
+    const days = Math.min(14, Math.max(1, +req.query.days || 1));
+    const start = /^\d{4}-\d{2}-\d{2}$/.test(req.query.date || '') ? req.query.date : new Date().toISOString().slice(0, 10);
+    const out = [];
+    for (let i = 0; i < days; i++) {
+      const ymd = addDays(start, i);
+      out.push(solunar(Date.parse(`${ymd}T00:00:00Z`) - (+req.query.tzOffset || 0) * 60e3, la, lo));
+    }
+    res.set('Cache-Control', 'public, max-age=3600');
+    res.json({ days: out, note: 'Solunar windows come from moon position (overhead, underfoot, rise and set). They are a traditional guide, not a forecast — the catch log is how you find out whether they hold where you fish.' });
+  });
+
+  // ---- catch log (Pro) ----
+  const proOnly = async (req, res, next) => {
+    const acct = accounts ? await accounts.get(req.user.uid) : null;
+    if (isPro(acct) || isTestPro(req.user)) return next();
+    return res.status(402).json({ error: 'The catch log is part of SlotGauge Pro.', upgrade: true });
+  };
+  if (catches) {
+    app.get('/api/catches', requireAuth, proOnly, async (req, res) => {
+      const rows = await catches.list(req.user.uid, { limit: Math.min(500, +req.query.limit || 200) });
+      res.json({ catches: rows, summary: summarize(rows, { species: req.query.species || null }) });
+    });
+    app.post('/api/catches', requireAuth, proOnly, async (req, res) => {
+      let rec;
+      try { rec = cleanCatch(req.body); } catch (e) { return res.status(400).json({ error: e.message }); }
+      const stamped = await stampConditions(rec, { tides, weather, moon: moonLib, stations: (la, lo) => tides.nearest(la, lo, 1) });
+      res.status(201).json({ catch: await catches.add(req.user.uid, stamped) });
+    });
+    app.delete('/api/catches/:id', requireAuth, proOnly, async (req, res) => {
+      const ok = await catches.remove(req.user.uid, req.params.id);
+      res.status(ok ? 200 : 404).json(ok ? { deleted: req.params.id } : { error: 'No such catch.' });
+    });
+    // /api/insights?lat&lon[&species]  what your log says, and which upcoming windows match it
+    app.get('/api/insights', requireAuth, proOnly, async (req, res) => {
+      const rows = await catches.list(req.user.uid, { limit: 500 });
+      const summary = summarize(rows, { species: req.query.species || null });
+      const la = +req.query.lat, lo = +req.query.lon;
+      let windows = [], hilo = [];
+      if (Number.isFinite(la) && Number.isFinite(lo)) {
+        const start = new Date().toISOString().slice(0, 10);
+        const days = Array.from({ length: 7 }, (_, i) => solunar(Date.parse(`${addDays(start, i)}T00:00:00Z`), la, lo));
+        try {
+          const near = tides.nearest(la, lo, 1)[0];
+          if (near) hilo = (await tides.predictions(near.id, { date: start, days: 7 })).hilo || [];
+        } catch { /* windows still rank on moon alone */ }
+        windows = rankWindows({ summary, days, hilo }).slice(0, 12);
+      }
+      res.json({ summary, windows, note: summary.enough ? null : `Log ${MIN_CATCHES - summary.catches} more catches and SlotGauge will start showing patterns. Until then this is just your tally.` });
+    });
+  }
+
   if (tidesRefresh) { // keep the bundled station list current without a deploy
     const tick = () => tides.refreshStations().catch(() => {});
     setTimeout(tick, 30e3).unref?.(); setInterval(tick, 24 * 3600e3).unref?.();
@@ -397,8 +457,16 @@ export async function createProductionApp() {
   } else if (process.env.NODE_ENV !== 'production') {
     store = makeMemoryStore();
   }
-  console.log(`features: auth=${!!verifyToken} identify=${!!identifier} store=${store ? (store.blobs ? 'memory' : 'cloud') : 'off'}`);
-  return createApp({ verifyToken, identifier, store, firebaseConfig, accounts, billing });
+  // Catch log: Firestore where there is a project, in-memory outside production so dev still works offline.
+  let catches = null;
+  if (process.env.GOOGLE_CLOUD_PROJECT) {
+    const { makeCloudCatches } = await import('./src/catches.js');
+    catches = makeCloudCatches(new (await import('@google-cloud/firestore')).Firestore());
+  } else if (process.env.NODE_ENV !== 'production') {
+    catches = makeMemoryCatches();
+  }
+  console.log(`features: auth=${!!verifyToken} identify=${!!identifier} store=${store ? (store.blobs ? 'memory' : 'cloud') : 'off'} catchLog=${catches ? (process.env.GOOGLE_CLOUD_PROJECT ? 'cloud' : 'memory') : 'off'}`);
+  return createApp({ verifyToken, identifier, store, firebaseConfig, accounts, billing, catches });
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

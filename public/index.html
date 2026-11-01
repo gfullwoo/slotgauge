@@ -277,6 +277,66 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 /* ---- weather ---- */
 .wx-line{font-size:13px;color:var(--ink-2);margin:-4px 0 10px;cursor:pointer}.wx-line b{color:var(--ink);font-size:14px}.wx-line .wx-place{color:var(--ink-3)}.wx-ico{font-size:1.15em;line-height:1;margin-right:2px}
 .tv-wx{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+/* --- moon & solunar --- */
+.tv-moon{margin-top:12px}
+.tv-card.moon{display:block}
+.moon-top{display:flex;align-items:center;gap:12px}
+.moon-face{font-size:32px;line-height:1}
+.moon-win{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.moon-win li{display:flex;align-items:baseline;gap:8px;padding:7px 10px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line)}
+.moon-win li.major{border-color:var(--accent,#0f6f8c);box-shadow:inset 3px 0 0 var(--accent,#0f6f8c)}
+.moon-win li b{flex:1}
+.moon-win li span{font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.moon-win li small{color:var(--ink-3);text-transform:uppercase;font-size:10px;letter-spacing:.06em}
+.moon-foot{margin:8px 0 0;font-size:12px;color:var(--ink-3);line-height:1.45}
+/* --- catch log --- */
+.log-intro{color:var(--ink-2);margin:0 0 12px;line-height:1.5}
+.log-form{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:10px}
+.log-row{display:flex;gap:10px;flex-wrap:wrap}
+.log-row label{flex:1;min-width:130px;display:grid;gap:4px;font-size:12px;color:var(--ink-2)}
+.log-form input,.log-form textarea,.log-form select{font:inherit;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);color:var(--ink);width:100%}
+.log-note{display:grid;gap:4px;font-size:12px;color:var(--ink-2)}
+.log-keep{align-items:center}
+.log-keep .chk{flex:0 0 auto;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink)}
+.log-keep .chk input{width:auto}
+.log-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.log-msg{font-size:13px;color:var(--ink-2)}
+.log-msg.good{color:#1a7f4b}.log-msg.bad{color:#b3261e}
+.log-count{margin:16px 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3)}
+.log-item{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 38px 12px 14px;margin-bottom:8px}
+.log-main b{font-size:16px}
+.log-main span{color:var(--ink-2);margin-left:6px}
+.log-main small{display:block;color:var(--ink-3);margin-top:2px}
+.log-cond{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.pill{font-size:11px;padding:3px 8px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-2)}
+.pill.tide{border-color:#2f7fa8}.pill.moon{border-color:#8a7ab8}.pill.sol{border-color:#c08a3e}
+.log-noteline{margin:8px 0 0;color:var(--ink-2);font-size:13px;line-height:1.5}
+.log-del{position:absolute;top:8px;right:8px;border:0;background:transparent;color:var(--ink-3);font-size:20px;line-height:1;cursor:pointer;padding:4px 8px;border-radius:8px}
+.log-del:hover{background:var(--surface-2);color:var(--ink)}
+/* --- best windows --- */
+.ins-head{color:var(--ink-2);line-height:1.55;margin:0 0 14px}
+.ins-group{margin:0 0 18px}
+.ins-group h3{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);margin:0 0 8px;font-weight:600}
+.ins-bars{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.ins-bars li{display:grid;grid-template-columns:minmax(90px,1fr) 2fr auto;align-items:center;gap:10px;font-size:13px}
+.ins-bars .bar{height:8px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden}
+.ins-bars .bar i{display:block;height:100%;background:var(--ink-3)}
+.ins-bars li.best .bar i{background:var(--accent,#0f6f8c)}
+.ins-bars li.best .bk{font-weight:700}
+.ins-bars .bn{color:var(--ink-3);font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ins-flat{margin:6px 0 0;font-size:12px;color:var(--ink-3)}
+.ins-win{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ins-win li{display:flex;gap:12px;padding:10px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--line)}
+.ins-win li.hit{border-color:var(--accent,#0f6f8c)}
+.iw-when{min-width:110px}
+.iw-when b{display:block;font-size:13px}
+.iw-when span{font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.iw-what small{color:var(--ink-3);font-size:11px}
+.iw-why{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:3px}
+.iw-why li{font-size:12px;color:var(--ink-2)}
+.iw-why li::before{content:'✓ ';color:var(--accent,#0f6f8c)}
+.ins-foot{margin:14px 0 0;font-size:12px;color:var(--ink-3);line-height:1.5}
+@media (max-width:480px){.ins-bars li{grid-template-columns:1fr auto;grid-template-areas:'k n' 'b b'}.ins-bars .bk{grid-area:k}.ins-bars .bn{grid-area:n}.ins-bars .bar{grid-area:b}.ins-win li{flex-direction:column;gap:4px}}
 .wx-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}.wx-now{display:flex;align-items:center;gap:10px}.wx-now .wx-ico{font-size:34px}.wx-temp{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:34px;line-height:1}.wx-temp span{font-size:16px;font-weight:600;color:var(--ink-2);margin-left:2px}.wx-text{font-size:14px;color:var(--ink-2)}
 .wx-facts{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2)}.wx-facts b{color:var(--ink);font-weight:600}
 .wx-hours{display:flex;gap:4px;overflow-x:auto;margin-top:10px;padding-bottom:4px;-webkit-overflow-scrolling:touch}.wx-h{flex:0 0 52px;display:grid;justify-items:center;gap:2px;background:var(--surface-2);border-radius:10px;padding:6px 2px;font-size:12px}.wx-h small{color:var(--ink-3);font-size:11px}.wx-h .pop{color:var(--accent);min-height:13px}.wx-h .wx-ico{font-size:18px}
@@ -861,6 +921,7 @@ document.dispatchEvent(new Event('sg:ready'));
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script src="/scans.js"></script>
 <script src="/tides.js"></script>
+<script src="/log.js" defer></script>
 <script src="/sky.js"></script>
 </body>
 </html>

@@ -16,6 +16,7 @@
   async function init() {
     await ready();
     window.SG.showView = showView;
+    window.SG.registerView = registerView;
     try { cfg = await fetch('/api/config').then((r) => r.json()); } catch (e) { return; }
     const canIdentify = !!cfg.features?.identify;
     const canSave = !!(cfg.features?.scans && cfg.firebase?.apiKey);
@@ -113,7 +114,7 @@ ${buy}
     const b = $('#avatarBtn');
     if (user) {
       b.innerHTML = user.photoURL ? `<img src="${esc(user.photoURL)}" alt="" referrerpolicy="no-referrer">` : `<span style="font-weight:700;font-size:13px">${esc((user.displayName || user.email || '?').slice(0, 1).toUpperCase())}</span>`;
-      $('#menu').innerHTML = `<div class="who">${esc(user.displayName || '')}<br>${esc(user.email || '')}</div><button data-act="gallery">My catches</button>${proMenuHtml()}${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}${window.SG_THEME ? window.SG_THEME.pickerHtml() : ''}<button data-act="signout">Sign out</button>`;
+      $('#menu').innerHTML = `<div class="who">${esc(user.displayName || '')}<br>${esc(user.email || '')}</div><button data-act="gallery">My photos</button><button data-act="log">Catch log</button><button data-act="insights">Best windows</button>${proMenuHtml()}${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}${window.SG_THEME ? window.SG_THEME.pickerHtml() : ''}<button data-act="signout">Sign out</button>`;
     } else {
       b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>`;
       $('#menu').innerHTML = `<div class="who">Sign in to identify fish from photos and keep a gallery of your catches.</div><button data-act="signin">Sign in with Google</button>${proMenuHtml()}${window.SG_INSTALL && window.SG_INSTALL.available() ? '<button data-act="install">Install app</button>' : ''}${window.SG_THEME ? window.SG_THEME.pickerHtml() : ''}`;
@@ -121,6 +122,10 @@ ${buy}
   }
 
   // ---------- tabs ----------
+  // Let later scripts (log.js) register their own full-page views without editing this switchboard.
+  // Published in init(), once window.SG exists — at IIFE time it does not.
+  const EXTRA_VIEWS = {};
+  const registerView = (name, sel, onShow) => { EXTRA_VIEWS[name] = { sel, onShow }; };
   function showView(v) {
     view = v;
     for (const b of document.querySelectorAll('#tabs [role=tab]')) b.setAttribute('aria-selected', String(b.dataset.tab === v));
@@ -130,6 +135,7 @@ ${buy}
     $('#galleryView').hidden = v !== 'gallery';
     const tv = $('#tideView'); if (tv) tv.hidden = v !== 'tides';
     const pv = $('#proView'); if (pv) { pv.hidden = v !== 'pro'; if (v === 'pro') drawProView(); }
+    for (const [name, x] of Object.entries(EXTRA_VIEWS)) { const el = document.querySelector(x.sel); if (el) { el.hidden = v !== name; if (v === name && x.onShow) x.onShow(); } }
     if (v === 'gallery') loadGallery(); else if (check && !$('#out').innerHTML.trim() && !$('#scanCard').innerHTML.trim()) window.SG.showWelcome();
     if (v !== 'check') window.scrollTo(0, 0);
   }
@@ -309,7 +315,7 @@ ${buy}
     document.addEventListener('click', (e) => {
       if (!e.target.closest('#acct')) $('#menu').hidden = true;
       const a = e.target.closest('[data-act]');
-      if (a) { $('#menu').hidden = true; if (a.dataset.act === 'signin') signIn(); if (a.dataset.act === 'signout') firebase.auth().signOut(); if (a.dataset.act === 'gallery') showView('gallery'); }
+      if (a) { $('#menu').hidden = true; if (a.dataset.act === 'signin') signIn(); if (a.dataset.act === 'signout') firebase.auth().signOut(); if (a.dataset.act === 'gallery') showView('gallery'); if (a.dataset.act === 'log') showView('log'); if (a.dataset.act === 'insights') showView('insights'); }
       const tab = e.target.closest('#tabs [data-tab]'); if (tab) showView(tab.dataset.tab);
       const pa = e.target.closest('[data-act="pro"],[data-act="buy"],[data-act="portal"],#proView [data-act="back"]');
       if (pa) { $('#menu').hidden = true; const act = pa.dataset.act; if (act === 'pro') showView('pro'); if (act === 'buy') buy(pa.dataset.plan || 'year'); if (act === 'portal') portal(); if (act === 'back') showView('check'); }

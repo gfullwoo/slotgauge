@@ -23,6 +23,14 @@
   "url": "https://en.wikipedia.org/wiki/Alewife_(fish)",
   "fetched": "2026-10-29"
  },
+ "Alewife / Blueback Herring (freshwater lakes)": {
+  "title": "Blueback herring",
+  "description": "Species of fish",
+  "extract": "The blueback herring, blueback shad, or summer shad is an anadromous species of herring from the east coast of North America, with a range from Nova Scotia to Florida. Blueback herring form schools and are believed to migrate offshore to overwinter near the bottom.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Blueback_herring_fish_image.jpg/330px-Blueback_herring_fish_image.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Blueback_herring",
+  "fetched": "2026-11-01"
+ },
  "Almaco jack": {
   "title": "Longfin yellowtail",
   "description": "Species of fish",
@@ -38,6 +46,38 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Ictalurus_nebulosus_GLERL_1.jpg/330px-Ictalurus_nebulosus_GLERL_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Ameiurus",
   "fetched": "2026-10-30"
+ },
+ "American Eel (Youghiogheny River Lake)": {
+  "title": "List of place names of Native American origin in the United States",
+  "description": "",
+  "extract": "Many places throughout the United States take their names from the languages of the indigenous Native American/American Indian tribes. The following list includes settlements, geographic features, and political subdivisions whose names are derived from these languages.",
+  "thumbnail": null,
+  "url": "https://en.wikipedia.org/wiki/List_of_place_names_of_Native_American_origin_in_the_United_States",
+  "fetched": "2026-11-01"
+ },
+ "American Eel (fresh waters)": {
+  "title": "American eel",
+  "description": "Species of fish",
+  "extract": "The American eel is a facultative catadromous eel found on the eastern coast of North America. Freshwater eels are fish belonging to the elopomorph superorder, a group of phylogenetically ancient teleosts. The American eel has a slender, supple, snake-like body that is covered with a mucus layer, which makes the eel appear to be naked and slimy despite the presence of minute scales. A long dorsal fin runs from the middle of the back and is continuous with a similar ventral fin. Pelvic fins are absent, and relatively small pectoral fins can be found near the midline, followed by the head and gill covers. Variations exist in coloration, from olive green, brown shading to greenish-yellow and light gray or white on the belly. Eels from clear water are often lighter than those from dark, tannic acid streams.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/American_eel_%28Anguilla_rostrata%29_%284015394951%29.jpg/330px-American_eel_%28Anguilla_rostrata%29_%284015394951%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/American_eel",
+  "fetched": "2026-11-01"
+ },
+ "American Shad (Youghiogheny River Lake)": {
+  "title": "Mallows Bay–Potomac River National Marine Sanctuary",
+  "description": "Marine sanctuary in the Potomac River",
+  "extract": "The Mallows Bay–Potomac River National Marine Sanctuary is a National Marine Sanctuary in the United States located in the Potomac River in Charles County, Maryland. It is best known for the \"Ghost Fleet\", 118 historic shipwrecks in Mallows Bay in the sanctuary's northeast corner which is the largest shipwreck fleet in the Western Hemisphere. They are among more than 200 shipwrecks in the sanctuary, some of which date as far back as the American Revolutionary War and others to the American Civil War.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Mallows_Bay-Potomac_River_NMS_kayaker_shipwrecks.PNG/330px-Mallows_Bay-Potomac_River_NMS_kayaker_shipwrecks.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Mallows_Bay%E2%80%93Potomac_River_National_Marine_Sanctuary",
+  "fetched": "2026-11-01"
+ },
+ "American Shad and Hickory Shad": {
+  "title": "Hickory shad",
+  "description": "Species of fish",
+  "extract": "The hickory shad, fall herring, mattowacca, freshwater taylor or bonejack is a member of the family Alosidae, ranging along the East Coast of the United States from Florida to the Gulf of Maine. It is an anadromous fish species, meaning that it spawns in freshwater portions of rivers, but spends most of its life at sea. It is subject to fishing, both historic and current, but it is often confused with or simply grouped together with American shad in catch statistics.",
+  "thumbnail": null,
+  "url": "https://en.wikipedia.org/wiki/Hickory_shad",
+  "fetched": "2026-11-01"
  },
  "American butterfish": {
   "title": "American butterfish",
@@ -86,6 +126,22 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Argopecten_irradians.jpg/330px-Argopecten_irradians.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Argopecten_irradians",
   "fetched": "2026-10-31"
+ },
+ "Atlantic Herring": {
+  "title": "Atlantic herring",
+  "description": "Species of fish",
+  "extract": "Atlantic herring is a herring in the family Clupeidae. It is one of the most abundant fish species in the world. Atlantic herrings can be found on both sides of the northern Atlantic Ocean, congregating in large schools. They can grow up to 45 centimetres (18 in) in length and weigh up to 1.1 kilograms (2.4 lb). They feed on copepods, krill and small fish, while their natural predators are seals, whales, cod and other larger fish.",
+  "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/04/Clupea_harengus.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_herring",
+  "fetched": "2026-11-01"
+ },
+ "Atlantic Sharpnose Shark and Bonnethead Shark": {
+  "title": "Atlantic sharpnose shark",
+  "description": "Species of shark",
+  "extract": "The Atlantic sharpnose shark is a species of requiem shark in the family Carcharhinidae. It is found in the subtropical waters of the north-western Atlantic Ocean, between latitudes 43°N and 18°N.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Rhizoprionodon_terraenovae_distmap.png/330px-Rhizoprionodon_terraenovae_distmap.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Atlantic_sharpnose_shark",
+  "fetched": "2026-11-01"
  },
  "Atlantic Spanish mackerel": {
   "title": "Atlantic Spanish mackerel",
@@ -247,6 +303,16 @@
   "url": "https://en.wikipedia.org/wiki/Bairdiella_chrysoura",
   "fetched": "2026-10-29"
  },
+ "Baitfish (Youghiogheny River Lake)": {
+  "title": "Baitfish (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
+ "Baitfish (including madtoms)": {
+  "title": "Baitfish (including madtoms)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
  "Banded rudderfish": {
   "title": "Banded rudderfish",
   "description": "Species of fish",
@@ -271,6 +337,11 @@
   "url": "https://en.wikipedia.org/wiki/Barndoor_skate",
   "fetched": "2026-10-29"
  },
+ "Bass - Largemouth, Smallmouth and Spotted (Youghiogheny River Lake)": {
+  "title": "Bass - Largemouth, Smallmouth and Spotted (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
  "Bay Scallop": {
   "title": "Argopecten irradians",
   "description": "Species of bivalve",
@@ -286,6 +357,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Thunnus_obesus_%28bigeye_tuna%29.jpg/330px-Thunnus_obesus_%28bigeye_tuna%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Bigeye_tuna",
   "fetched": "2026-10-29"
+ },
+ "Billfish": {
+  "title": "Billfish",
+  "description": "Group of ray-finned fishes",
+  "extract": "The billfish are saltwater predatory ray-finned fish from the superfamily Xiphioidea, characterised by prominent pointed bills (rostra), and by their large size; some are longer than 4 m (13 ft). Extant billfish include sailfish and marlin, which make up the family Istiophoridae; and swordfish, sole member of the family Xiphiidae. They are often apex predators which feed on a wide variety of smaller fish, crustaceans and cephalopods.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Atlantic_blue_marlin.jpg/330px-Atlantic_blue_marlin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Billfish",
+  "fetched": "2026-11-01"
  },
  "Black crappie": {
   "title": "Black crappie",
@@ -374,6 +453,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Blueback_herring_fish_image.jpg/330px-Blueback_herring_fish_image.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Blueback_herring",
   "fetched": "2026-10-29"
+ },
+ "Bluefin Tuna": {
+  "title": "Bluefin tuna",
+  "description": "Index of animals with the same common name",
+  "extract": "Bluefin tuna  is a common name used to refer to several species of tuna of the genus Thunnus.",
+  "thumbnail": null,
+  "url": "https://en.wikipedia.org/wiki/Bluefin_tuna",
+  "fetched": "2026-11-01"
  },
  "Bluefish": {
   "title": "Bluefish",
@@ -596,6 +683,14 @@
   "url": "https://en.wikipedia.org/wiki/Crappie",
   "fetched": "2026-10-29"
  },
+ "Crayfish (Youghiogheny River Lake)": {
+  "title": "Allegheny Mountains",
+  "description": "Mountain range in the northeastern United States",
+  "extract": "The Allegheny Mountains are a mountain range situated in the eastern United States. A sub-range of the much vaster Appalachian Mountains, they extend roughly 300 miles (480 km) along a northeast-southwest orientation from north-central Pennsylvania southwestward, through western Maryland and eastern West Virginia. The peaks further continue into portions of Virginia and Tennessee as the Cumberland Mountains—which are essentially part of the same landform—while giving way to the Ridge and Valley Appalachians in the east and northeast.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/View_from_the_observation_tower_atop_of_Spruce_Knob_WV.jpg/330px-View_from_the_observation_tower_atop_of_Spruce_Knob_WV.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Allegheny_Mountains",
+  "fetched": "2026-11-01"
+ },
  "Crevalle jack": {
   "title": "Crevalle jack",
   "description": "Species of fish",
@@ -628,6 +723,22 @@
   "url": "https://en.wikipedia.org/wiki/Dog_snapper",
   "fetched": "2026-10-29"
  },
+ "Dogfish (smooth & spiny)": {
+  "title": "Spiny dogfish",
+  "description": "Species of shark",
+  "extract": "The spiny dogfish, spurdog, mud shark, or piked dogfish is one of the best known species of the Squalidae (dogfishes) family of sharks, which is part of the Squaliformes order.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Squalus_acanthias_stellwagen.jpg/330px-Squalus_acanthias_stellwagen.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Spiny_dogfish",
+  "fetched": "2026-11-01"
+ },
+ "Dolphin (Mahi-Mahi)": {
+  "title": "Mahi-mahi",
+  "description": "Species of fish",
+  "extract": "The mahi-mahi, common dolphinfish, dolphinfish, dolphin or  dorado is a surface-dwelling ray-finned fish found in off-shore temperate, tropical, and subtropical waters worldwide. It is one of two members of the family Coryphaenidae, the other being the pompano dolphinfish. These fish are most commonly found in the waters around the Gulf of Mexico, Costa Rica, Hawaii, and the Indian Ocean. In Italy it is called corifena, lampuga or pesce capone, and has even given its name to the caponata though eggplant has now taken the place of the fish.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Common_Dolphinfish_Monterey_Bay.jpg/330px-Common_Dolphinfish_Monterey_Bay.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Mahi-mahi",
+  "fetched": "2026-11-01"
+ },
  "Dusky shark": {
   "title": "Dusky shark",
   "description": "Species of shark",
@@ -643,6 +754,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Mustelus_canis_head_SI.jpg/330px-Mustelus_canis_head_SI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Dusky_smooth-hound",
   "fetched": "2026-10-29"
+ },
+ "Eastern Oyster": {
+  "title": "Eastern oyster",
+  "description": "Species of bivalve",
+  "extract": "The eastern oyster —also called the Atlantic oyster, American oyster, or East Coast oyster—is a species of true oyster native to eastern North and South America. Other names in local or culinary use include the Wellfleet oyster, Virginia oyster, Malpeque oyster, Blue Point oyster, Chesapeake Bay oyster, and Apalachicola oyster. C. virginica ranges from northern New Brunswick south through parts of the West Indies to Venezuela. It is farmed in all of the Maritime provinces of Canada and all Eastern Seaboard and Gulf states of the United States, as well as Puget Sound, Washington, where it is known as the Totten Inlet Virginica. It was introduced to the Hawaiian Islands in the 19th century and is common in Pearl Harbor.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Oyster_bed%2C_Brunswick%2C_GA%2C_US.jpg/330px-Oyster_bed%2C_Brunswick%2C_GA%2C_US.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Eastern_oyster",
+  "fetched": "2026-11-01"
  },
  "Eastern oyster": {
   "title": "Eastern oyster",
@@ -708,6 +827,22 @@
   "url": "https://en.wikipedia.org/wiki/Hippoglossina_oblonga",
   "fetched": "2026-10-29"
  },
+ "Freshwater Baitfish": {
+  "title": "Bass (fish)",
+  "description": "Name of various types of fish",
+  "extract": "Bass is a common name shared by many species of ray-finned fish from the large clade Percomorpha, mainly belonging to the orders Perciformes and Moroniformes, encompassing both freshwater and marine species. The word bass comes from Middle English bars, meaning \"perch\", despite that none of the commonly referred bass species belong to the perch family Percidae.",
+  "thumbnail": null,
+  "url": "https://en.wikipedia.org/wiki/Bass_(fish)",
+  "fetched": "2026-11-01"
+ },
+ "Freshwater Mussels, Clams and Bivalves": {
+  "title": "Freshwater bivalve",
+  "description": "Kind of freshwater mollusc",
+  "extract": "Freshwater bivalves are molluscs of the class Bivalvia that inhabit freshwater ecosystems. They are one of the two main groups of freshwater molluscs, along with freshwater snails. The majority of bivalve molluscs are saltwater species that live in the marine habitats, but a number of families have evolved to live in fresh water. These belong to two different evolutionary lineages, i.e. freshwater mussels and freshwater clams, and the various groups are not closely related.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Louisiana_pearlshell_mussels.png/330px-Louisiana_pearlshell_mussels.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Freshwater_bivalve",
+  "fetched": "2026-11-01"
+ },
  "Gafftopsail catfish": {
   "title": "Gafftopsail catfish",
   "description": "Species of fish",
@@ -724,6 +859,11 @@
   "url": "https://en.wikipedia.org/wiki/Mycteroperca_microlepis",
   "fetched": "2026-10-30"
  },
+ "Gizzard Shad (Youghiogheny River Lake)": {
+  "title": "Gizzard Shad (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
  "Golden rainbow trout": {
   "title": "Golden trout",
   "description": "Species of fish",
@@ -739,6 +879,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Notemigonus_crysoleucas-1.jpg/330px-Notemigonus_crysoleucas-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Golden_shiner",
   "fetched": "2026-10-29"
+ },
+ "Grass Carp": {
+  "title": "Grass carp",
+  "description": "Species of fish",
+  "extract": "The grass carp is a species of large herbivorous freshwater fish in the family Cyprinidae, native to the Pacific Far East, with a native range stretching from northern Vietnam to the Amur River on the Sino-Russian border. This Asian carp is the only species of the genus Ctenopharyngodon.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/2x_amur_b%C3%ADl%C3%BD.jpg/330px-2x_amur_b%C3%ADl%C3%BD.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Grass_carp",
+  "fetched": "2026-11-01"
  },
  "Great barracuda": {
   "title": "Great barracuda",
@@ -812,6 +960,14 @@
   "url": "https://en.wikipedia.org/wiki/Haddock",
   "fetched": "2026-10-29"
  },
+ "Hammerhead Sharks (Great, Scalloped, Smooth)": {
+  "title": "Scalloped hammerhead",
+  "description": "Species of shark",
+  "extract": "The scalloped hammerhead is a species of hammerhead shark in the family Sphyrnidae. It was originally known as Zygaena lewini. The Greek word sphyrna translates into \"hammer\" in English, referring to the shape of this shark's head, which is its most distinguishing characteristic. The shark's eyes and nostrils are at the tips of the extensions. It is a fairly large hammerhead, but is still smaller than both the great and smooth hammerheads.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Scalloped_hammerhead_shark_%28Sphyrna_lewini%29_Costa_Rica_%28cropped%29.jpg/330px-Scalloped_hammerhead_shark_%28Sphyrna_lewini%29_Costa_Rica_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Scalloped_hammerhead",
+  "fetched": "2026-11-01"
+ },
  "Hard clam": {
   "title": "Hard clam",
   "description": "Mollusc species native to the Americas",
@@ -828,6 +984,14 @@
   "url": "https://en.wikipedia.org/wiki/Hardhead_catfish",
   "fetched": "2026-10-30"
  },
+ "Herring": {
+  "title": "Herring",
+  "description": "Forage fish, mostly belonging to the family Clupeidae",
+  "extract": "Herring are various species of forage fish, belonging to the order Clupeiformes.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Clupea_harengus_Gervais.flipped.jpg/330px-Clupea_harengus_Gervais.flipped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Herring",
+  "fetched": "2026-11-01"
+ },
  "Hickory shad": {
   "title": "Hickory shad",
   "description": "Species of fish",
@@ -835,6 +999,14 @@
   "thumbnail": null,
   "url": "https://en.wikipedia.org/wiki/Hickory_shad",
   "fetched": "2026-10-29"
+ },
+ "Highly Migratory Species - Tunas, Billfish and Swordfish (Bluefin Tuna, Blue Marlin, White Marlin, Roundscale Spearfish, Sailfish, Swordfish)": {
+  "title": "Billfish",
+  "description": "Group of ray-finned fishes",
+  "extract": "The billfish are saltwater predatory ray-finned fish from the superfamily Xiphioidea, characterised by prominent pointed bills (rostra), and by their large size; some are longer than 4 m (13 ft). Extant billfish include sailfish and marlin, which make up the family Istiophoridae; and swordfish, sole member of the family Xiphiidae. They are often apex predators which feed on a wide variety of smaller fish, crustaceans and cephalopods.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Atlantic_blue_marlin.jpg/330px-Atlantic_blue_marlin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Billfish",
+  "fetched": "2026-11-01"
  },
  "Hogfish": {
   "title": "Hogfish",
@@ -851,6 +1023,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Car%C3%A1ngido_%28Caranx_latus%29%2C_Cozumel%2C_M%C3%A9xico%2C_2025-12-20%2C_DD_67.jpg/330px-Car%C3%A1ngido_%28Caranx_latus%29%2C_Cozumel%2C_M%C3%A9xico%2C_2025-12-20%2C_DD_67.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Horse-eye_jack",
   "fetched": "2026-10-29"
+ },
+ "Horseshoe Crab": {
+  "title": "Horseshoe crab",
+  "description": "Family of basal chelicerates",
+  "extract": "Horseshoe crabs are arthropods of the family Limulidae and the only surviving xiphosurans. Despite their name, they are not crabs or even crustaceans; they are chelicerates, more closely related to arachnids like spiders, ticks, and scorpions. The body of a horseshoe crab is divided into three main parts: the cephalothorax, abdomen, and telson. The largest of these, the cephalothorax, houses most of the animal's eyes, limbs, and internal organs. It is also where the animal gets its name, as its shape somewhat resembles that of a horseshoe. Horseshoe crabs have been described as \"living fossils\", having changed little since they first appeared in the Triassic around 250 million years ago, and similar-looking fossil xiphosurans extend back to the Ordovician around 445 million years ago.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tachypleus_gigas.JPG/330px-Tachypleus_gigas.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Horseshoe_crab",
+  "fetched": "2026-11-01"
  },
  "Hybrid striped bass": {
   "title": "Hybrid striped bass",
@@ -891,6 +1071,14 @@
   "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/4/40/Scomberomorus_cavalla.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "url": "https://en.wikipedia.org/wiki/King_mackerel",
   "fetched": "2026-10-29"
+ },
+ "Kingfish (Sea Mullet)": {
+  "title": "Whiting (fish)",
+  "description": "Index of animals with the same common name",
+  "extract": "A number of Actinopterygiian fish have been given the common name whiting.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Wijting002.jpg/330px-Wijting002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Whiting_(fish)",
+  "fetched": "2026-11-01"
  },
  "Knobbed whelk": {
   "title": "Knobbed whelk",
@@ -1076,6 +1264,11 @@
   "url": "https://en.wikipedia.org/wiki/Common_carp",
   "fetched": "2026-10-29"
  },
+ "Mud Bugs (Dragonfly Nymphs) (Youghiogheny River Lake)": {
+  "title": "Mud Bugs (Dragonfly Nymphs) (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
  "Mud sunfish": {
   "title": "Mud sunfish",
   "description": "Species of fish",
@@ -1092,6 +1285,11 @@
   "url": "https://en.wikipedia.org/wiki/Muskellunge",
   "fetched": "2026-10-29"
  },
+ "Muskellunge and Tiger Muskie (Youghiogheny River Lake)": {
+  "title": "Muskellunge and Tiger Muskie (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
  "Mussels": {
   "title": "Mussel",
   "description": "Bivalve mollusc",
@@ -1107,6 +1305,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Lutjanus_analis_SI.jpg/330px-Lutjanus_analis_SI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Mutton_snapper",
   "fetched": "2026-10-30"
+ },
+ "Northern Pike (Youghiogheny River Lake)": {
+  "title": "Deep Creek Lake",
+  "description": "Man-made lake in Maryland, United States",
+  "extract": "Deep Creek Lake is an artificial reservoir in the U.S. state of Maryland. It has an area of 3,900 acres (16 km2), a shoreline length of 69 miles (111 km), and a volume of 106,000 acre⋅ft (0.131 km3). The lake is home to a wide variety of aquatic life, such as freshwater fish and aquatic birds. Along with the nearby Wisp Ski Resort, the lake is a popular regional vacation and tourism destination. Deep Creek Lake State Park is on the northeast side. There is also the Deep Creek Lake Natural Resources Management Area.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/DCL-May2008.jpg/330px-DCL-May2008.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Deep_Creek_Lake",
+  "fetched": "2026-11-01"
  },
  "Northern kingfish": {
   "title": "Yellowtail amberjack",
@@ -1212,6 +1418,11 @@
   "url": "https://en.wikipedia.org/wiki/Oyster_toadfish",
   "fetched": "2026-10-29"
  },
+ "Paddlefish, Mussels, Clams and Threatened/Endangered Species (Youghiogheny River Lake)": {
+  "title": "Paddlefish, Mussels, Clams and Threatened/Endangered Species (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
  "Palaemonetes": {
   "title": "Palaemon (crustacean)",
   "description": "Genus of crustaceans",
@@ -1233,6 +1444,11 @@
   "url": "https://en.wikipedia.org/wiki/Panfish",
   "fetched": "2026-10-29"
  },
+ "Panfish aggregate - Sunfish, Yellow Perch, White Perch, Crappies, Catfish, Rock Bass, Suckers, Carp and White Bass (Youghiogheny River Lake)": {
+  "title": "Panfish aggregate - Sunfish, Yellow Perch, White Perch, Crappies, Catfish, Rock Bass, Suckers, Carp and White Bass (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
  "Permit (fish)": {
   "title": "Permit (fish)",
   "description": "Species of ray-finned fish",
@@ -1240,6 +1456,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Trachinotus_falcatus.jpg/330px-Trachinotus_falcatus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Permit_(fish)",
   "fetched": "2026-10-29"
+ },
+ "Pickerel (Youghiogheny River Lake)": {
+  "title": "Deep Creek Lake",
+  "description": "Man-made lake in Maryland, United States",
+  "extract": "Deep Creek Lake is an artificial reservoir in the U.S. state of Maryland. It has an area of 3,900 acres (16 km2), a shoreline length of 69 miles (111 km), and a volume of 106,000 acre⋅ft (0.131 km3). The lake is home to a wide variety of aquatic life, such as freshwater fish and aquatic birds. Along with the nearby Wisp Ski Resort, the lake is a popular regional vacation and tourism destination. Deep Creek Lake State Park is on the northeast side. There is also the Deep Creek Lake Natural Resources Management Area.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/DCL-May2008.jpg/330px-DCL-May2008.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Deep_Creek_Lake",
+  "fetched": "2026-11-01"
  },
  "Pinfish": {
   "title": "Lagodon",
@@ -1256,6 +1480,27 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Pollachius_pollachius_aquarium.jpg/330px-Pollachius_pollachius_aquarium.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Pollock",
   "fetched": "2026-10-29"
+ },
+ "Potentially Dangerous Fish": {
+  "title": "Candiru (fish)",
+  "description": "Small-bodied catfish of concern to human health",
+  "extract": "Candiru are South American catfish of a parasitic or scavenging niche. The species known as candiru are not necessarily closely related.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Candiru_catfishes_in_Brazil.jpg/330px-Candiru_catfishes_in_Brazil.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Candiru_(fish)",
+  "fetched": "2026-11-01"
+ },
+ "Prohibited Sharks (Sandbar, Dusky, Sand Tiger, Oceanic Whitetip, Shortfin Mako and all unlisted species)": {
+  "title": "Prohibited Sharks (Sandbar, Dusky, Sand Tiger, Oceanic Whitetip, Shortfin Mako and all unlisted species)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
+ "Protected native species": {
+  "title": "United States Fish and Wildlife Service list of endangered mammals and birds",
+  "description": "Endangered species list",
+  "extract": "\n\n\nThis is a list of the bird and mammal species and subspecies described as endangered by the United States Fish and Wildlife Service. It contains species and subspecies not only in the U.S. and its territories, but also those only found in other parts of the world. It does not include endangered fish, amphibians, reptiles, plants, or invertebrates. The complete list can be found in the U.S. Code of Federal Regulations Title 50 Part 17.",
+  "thumbnail": null,
+  "url": "https://en.wikipedia.org/wiki/United_States_Fish_and_Wildlife_Service_list_of_endangered_mammals_and_birds",
+  "fetched": "2026-11-01"
  },
  "Pumpkinseed": {
   "title": "Pumpkinseed",
@@ -1353,6 +1598,22 @@
   "url": "https://en.wikipedia.org/wiki/Remora",
   "fetched": "2026-10-29"
  },
+ "River Herring (Youghiogheny River Lake)": {
+  "title": "Deep Creek Lake",
+  "description": "Man-made lake in Maryland, United States",
+  "extract": "Deep Creek Lake is an artificial reservoir in the U.S. state of Maryland. It has an area of 3,900 acres (16 km2), a shoreline length of 69 miles (111 km), and a volume of 106,000 acre⋅ft (0.131 km3). The lake is home to a wide variety of aquatic life, such as freshwater fish and aquatic birds. Along with the nearby Wisp Ski Resort, the lake is a popular regional vacation and tourism destination. Deep Creek Lake State Park is on the northeast side. There is also the Deep Creek Lake Natural Resources Management Area.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/DCL-May2008.jpg/330px-DCL-May2008.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Deep_Creek_Lake",
+  "fetched": "2026-11-01"
+ },
+ "Roanoke Bass": {
+  "title": "Roanoke bass",
+  "description": "Species of fish",
+  "extract": "The Roanoke bass is a species of freshwater fish in the sunfish family (Centrarchidae) of order Centrarchiformes. This species is endemic to rivers in the eastern United States, where it is native only to the states of Virginia and North Carolina.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Roanoke_Bass.jpg/330px-Roanoke_Bass.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Roanoke_bass",
+  "fetched": "2026-11-01"
+ },
  "Rock bass": {
   "title": "Rock bass",
   "description": "Species of freshwater fish",
@@ -1409,6 +1670,14 @@
   "url": "https://en.wikipedia.org/wiki/Sauger",
   "fetched": "2026-10-29"
  },
+ "Sauger (Youghiogheny River Lake)": {
+  "title": "Ohio River",
+  "description": "Major river in the Eastern United States",
+  "extract": "The Ohio River is a 981-mile-long (1,579 km) river in the United States. It begins in the Northeast and serves as the boundary between the Midwestern and Southern United States, flowing in a southwesterly direction from Pittsburgh, Pennsylvania, to its mouth on the Mississippi River at Cairo, Illinois. It is the third largest river by discharge volume in the United States and the largest tributary by volume of the Mississippi River. It is also the sixth oldest river on the North American continent. The river flows through or along the border of six states, and its drainage basin includes parts of 14 states. Through its largest tributary, the Tennessee River, the basin includes several states of the southeastern United States. It is the source of drinking water for five million people.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ohiorivermap.png/330px-Ohiorivermap.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Ohio_River",
+  "fetched": "2026-11-01"
+ },
  "Saugeye": {
   "title": "Saugeye",
   "description": "Hybrid species of fish",
@@ -1457,6 +1726,88 @@
   "url": "https://en.wikipedia.org/wiki/Shark",
   "fetched": "2026-10-29"
  },
+ "Sharks (blacknose & finetooth)": {
+  "title": "Finetooth shark",
+  "description": "Species of shark",
+  "extract": "The finetooth shark is a species of requiem shark, in the family Carcharhinidae, found in the western Atlantic Ocean, from North Carolina to Brazil. It forms large schools in shallow, coastal waters, and migrates seasonally following warm water. A relatively small, slender-bodied shark, the finetooth shark can be identified by its needle-like teeth, dark blue-gray dorsal coloration, and long gill slits. It attains a maximum length of 1.9 m (6.2 ft). The diet of this species consists primarily of small bony fishes, in particular menhaden. Like other members of its family, it is viviparous with females giving birth to two to six pups in estuarine nursery areas every other year.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Finetooth_shark_nmfs.jpg/330px-Finetooth_shark_nmfs.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Finetooth_shark",
+  "fetched": "2026-11-01"
+ },
+ "Sharks (large coastal group)": {
+  "title": "List of largest fish",
+  "description": "Largest known fish species",
+  "extract": "Fish vary greatly in size. The extant whale shark and basking shark exceed all other fish by a considerable margin in weight and length. The extinct Otodus megalodon exceeds all other fish, extant and extinct, in size. Fish in the common usage are a paraphyletic group that describes aquatic vertebrates while excluding the tetrapods, four limbed vertebrates nested within the lobe-finned fish, which include all land vertebrates and their nearest extinct relatives.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Carcharodon_megalodon.jpg/330px-Carcharodon_megalodon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/List_of_largest_fish",
+  "fetched": "2026-11-01"
+ },
+ "Sharks (pelagic: blue, porbeagle, thresher)": {
+  "title": "Pelagic thresher",
+  "description": "Species of shark",
+  "extract": "The pelagic thresher is a species of thresher shark, family Alopiidae; this group of sharks is characterized by the greatly elongated upper lobes of their caudal fins. The pelagic thresher occurs in the tropical and subtropical waters of the Indian Ocean and Pacific Ocean, usually far from shore, although they do occasionally enter coastal habitats. Palagic thresher sharks are often confused with the common thresher, even in professional publications, but they can be taxonomically distinguished by the dark, rather than white, color over the bases of their pectoral fins. The smallest of the three thresher species, the pelagic thresher typically measures 3 m (9.8 ft) long.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Pelagic_thresher_shark_%28Alopias_pelagicus%29_%28cropped%29.jpg/330px-Pelagic_thresher_shark_%28Alopias_pelagicus%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Pelagic_thresher",
+  "fetched": "2026-11-01"
+ },
+ "Sharks (recreationally prohibited)": {
+  "title": "Great white shark",
+  "description": "Species of large lamniform shark",
+  "extract": "The great white shark, also known as the white shark, white pointer, or great white, is a large shark. It is closely related to the mako sharks, the porbeagle, and the salmon shark. It is a robustly built species with a grayish upperside and a white underside. The white shark is one of the largest living shark and fish species, though it is still smaller than the whale shark and basking shark. It has about 300 triangular, serrated teeth that are continuously replaced. Its massive, fatty liver can reach over a quarter of its body weight, providing buoyancy and storing energy. The species is partially warm-blooded, an adaptation that allows it to remain active in colder waters.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/330px-White_shark.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Great_white_shark",
+  "fetched": "2026-11-01"
+ },
+ "Sharks - 54 inch group, closed May 15 to July 15 (Blacktip, Bull, Lemon, Nurse, Spinner, Tiger)": {
+  "title": "Sharks - 54 inch group, closed May 15 to July 15 (Blacktip, Bull, Lemon, Nurse, Spinner, Tiger)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
+ "Sharks - 54 inch group, open year round (Blacknose, Blue, Common Thresher, Finetooth, Porbeagle)": {
+  "title": "Sharks - 54 inch group, open year round (Blacknose, Blue, Common Thresher, Finetooth, Porbeagle)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
+ "Sharks — Aggregated Large Coastal group": {
+  "title": "Coastal fish",
+  "description": "Fish that inhabit the sea between the shoreline and the edge of the continental shelf",
+  "extract": "Coastal fish, also called inshore fish or neritic fish, inhabit the sea between the shoreline and the edge of the continental shelf. Since the continental shelf is usually less than 200 metres (660 ft) deep, it follows that pelagic coastal fish are generally epipelagic fish, inhabiting the sunlit epipelagic zone. Coastal fish can be contrasted with oceanic fish or offshore fish, which inhabit the deep seas beyond the continental shelves.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Sixfinger_threadfin_school.jpg/330px-Sixfinger_threadfin_school.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Coastal_fish",
+  "fetched": "2026-11-01"
+ },
+ "Sharks — Hammerhead group": {
+  "title": "Scalloped hammerhead",
+  "description": "Species of shark",
+  "extract": "The scalloped hammerhead is a species of hammerhead shark in the family Sphyrnidae. It was originally known as Zygaena lewini. The Greek word sphyrna translates into \"hammer\" in English, referring to the shape of this shark's head, which is its most distinguishing characteristic. The shark's eyes and nostrils are at the tips of the extensions. It is a fairly large hammerhead, but is still smaller than both the great and smooth hammerheads.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Scalloped_hammerhead_shark_%28Sphyrna_lewini%29_Costa_Rica_%28cropped%29.jpg/330px-Scalloped_hammerhead_shark_%28Sphyrna_lewini%29_Costa_Rica_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Scalloped_hammerhead",
+  "fetched": "2026-11-01"
+ },
+ "Sharks — Non-Blacknose Small Coastal group": {
+  "title": "Copper shark",
+  "description": "Species of shark",
+  "extract": "The copper shark, bronze whaler, or narrowtooth shark is a species of requiem shark found mostly in temperate latitudes. It is distributed in a number of separate populations in the northeastern and southwestern Atlantic, off southern Africa, in the northwestern and eastern Pacific, and around Australia and New Zealand, with scattered reports from equatorial regions. The species can be found from brackish rivers and estuaries to shallow bays and harbors, to offshore waters 100 m (330 ft) deep or more. Females are found apart from males for most of the year, and conduct seasonal migrations. A large species reaching 3.3 m (11 ft) long, the copper shark is difficult to distinguish from other large requiem sharks. It is characterized by its narrow, hook-shaped upper teeth, lack of a prominent ridge between the dorsal fins, and plain bronze coloration.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Bronze_whaler_auckland.jpg/330px-Bronze_whaler_auckland.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Copper_shark",
+  "fetched": "2026-11-01"
+ },
+ "Sharks — Pelagic group": {
+  "title": "Pelagic fish",
+  "description": "Fish in the pelagic zone of ocean waters",
+  "extract": "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor near the shore—in contrast with demersal fish that live on or near the bottom, and reef fish that are associated with coral reefs.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Moofushi_Kandu_fish.jpg/330px-Moofushi_Kandu_fish.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Pelagic_fish",
+  "fetched": "2026-11-01"
+ },
+ "Sharks — Prohibited species": {
+  "title": "Dusky shark",
+  "description": "Species of shark",
+  "extract": "The dusky shark is a species of requiem shark, in the family Carcharhinidae, occurring in tropical and warm-temperate continental seas worldwide. A generalist apex predator, the dusky shark can be found from the coast to the outer continental shelf and adjacent pelagic waters, and has been recorded from a depth of 400 m (1,300 ft). Populations migrate seasonally towards the poles in the summer and towards the equator in the winter, traveling hundreds to thousands of kilometers. One of the largest members of its genus, the dusky shark reaches more than 4 m (13 ft) in length and 350 kg (770 lb) in weight. It has a slender, streamlined body and can be identified by its short round snout, long sickle-shaped pectoral fins, ridge between the first and second dorsal fins, and faintly marked fins.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Carcharhinus_obscurus_at_Seaworld.jpg/330px-Carcharhinus_obscurus_at_Seaworld.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Dusky_shark",
+  "fetched": "2026-11-01"
+ },
  "Sheepshead (fish)": {
   "title": "List of fish by common name",
   "description": "List of common names used to refer to fish",
@@ -1464,6 +1815,22 @@
   "thumbnail": null,
   "url": "https://en.wikipedia.org/wiki/List_of_fish_by_common_name",
   "fetched": "2026-10-29"
+ },
+ "Shellfish (recreational aggregate)": {
+  "title": "Shellfish",
+  "description": "Culinary and fisheries term for exoskeleton-bearing aquatic invertebrates",
+  "extract": "Shellfish, in colloquial and fisheries usage, are exoskeleton-bearing aquatic invertebrates used as food, including various species of molluscs, crustaceans, and echinoderms. Although most kinds of shellfish are harvested from saltwater environments, some are found in freshwater. In addition, a few species of land crabs are eaten, for example Cardisoma guanhumi in the Caribbean. Shellfish are among the most common food allergens.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Oysters_p1040741.jpg/330px-Oysters_p1040741.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Shellfish",
+  "fetched": "2026-11-01"
+ },
+ "Shortfin Mako": {
+  "title": "Shortfin mako shark",
+  "description": "Species of shark",
+  "extract": "The shortfin mako shark, also known as the shortfin mako, blue pointer, or bonito shark, is a species of large mackerel shark. It is commonly referred to as the mako shark, as is the longfin mako shark. The fastest known shark species, able to reach speeds of 74 km/h (46 mph) in bursts, the shortfin mako can attain sizes of more than 4 m (13 ft) in length and weigh over 570 kg (1,260 lb). The species is classified as Endangered by the IUCN.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Shortfin_mako_%28Isurus_oxyrinchus%29.jpg/330px-Shortfin_mako_%28Isurus_oxyrinchus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Shortfin_mako_shark",
+  "fetched": "2026-11-01"
  },
  "Shortfin mako shark": {
   "title": "Shortfin mako shark",
@@ -1521,6 +1888,14 @@
   "url": "https://en.wikipedia.org/wiki/Smallmouth_bass",
   "fetched": "2026-10-29"
  },
+ "Smooth Dogfish": {
+  "title": "Dusky smooth-hound",
+  "description": "Species of shark",
+  "extract": "The dusky smooth-hound, also called the smooth dogfish or the dog shark, is a species of houndshark in the family Triakidae. This shark is an olive grey or brown in color, and may have shades of yellow or grayish white. Females live to 16 years and males have a lifespan of 10 years. M. canis was the first shark recognised to have viral infections.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Mustelus_canis_head_SI.jpg/330px-Mustelus_canis_head_SI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Dusky_smooth-hound",
+  "fetched": "2026-11-01"
+ },
  "Smooth butterfly ray": {
   "title": "Smooth butterfly ray",
   "description": "Species of fish",
@@ -1544,6 +1919,14 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Tetraodon-hispidus.jpg/330px-Tetraodon-hispidus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Tetraodontidae",
   "fetched": "2026-10-30"
+ },
+ "Smoothhound Shark": {
+  "title": "Smooth-hound",
+  "description": "Genus of sharks",
+  "extract": "Mustelus, also known as the smooth-hounds, is a genus of sharks in the family Triakidae. The name of the genus comes from the Latin word mustela, meaning weasel. It should not be confused with the name Mustela, which is used for weasels.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Mustelus_mosis_phuket.jpg/330px-Mustelus_mosis_phuket.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Smooth-hound",
+  "fetched": "2026-11-01"
  },
  "Snowy grouper": {
   "title": "Snowy grouper",
@@ -1649,6 +2032,38 @@
   "url": "https://en.wikipedia.org/wiki/Cynoscion_nebulosus",
   "fetched": "2026-10-29"
  },
+ "Striped Bass (Susquehanna Flats, Lower Susquehanna River and Northeast River)": {
+  "title": "List of North American species extinct in the Holocene",
+  "description": "",
+  "extract": "This is a list of North American animals extinct in the Holocene that covers extinctions from the Holocene epoch, a geologic epoch that began about 11,650 years before present and continues to the present day.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Location_North_America.svg/330px-Location_North_America.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/List_of_North_American_species_extinct_in_the_Holocene",
+  "fetched": "2026-11-01"
+ },
+ "Striped Bass (fresh waters)": {
+  "title": "Striped bass",
+  "description": "Species of fish",
+  "extract": "The striped bass, also called the Atlantic striped bass, striper, linesider, rock, or rockfish, is an anadromous perciform fish of the family Moronidae found primarily along the Atlantic coast of North America. It has also been widely introduced into inland recreational fisheries across the United States. Striped bass found in the Gulf of Mexico are a separate strain referred to as Gulf Coast striped bass.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Morone_saxatilis_SI2.jpg/330px-Morone_saxatilis_SI2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Striped_bass",
+  "fetched": "2026-11-01"
+ },
+ "Striped Bass (nontidal rivers and streams)": {
+  "title": "Long Island Sound",
+  "description": "Tidal estuary on the U.S. East Coast",
+  "extract": "Long Island Sound is a marine sound and tidal estuary of the Atlantic Ocean. It lies predominantly between the U.S. state of Connecticut to the north and Long Island in New York state to the south. From west to east, the sound stretches 110 mi (180 km) from the East River and the Throgs Neck Bridge in New York City, along the North Shore of Long Island, to Block Island Sound. The sound forms part of the Intracoastal Waterway.",
+  "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Wpdms_ev26188_long_island_sound.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://en.wikipedia.org/wiki/Long_Island_Sound",
+  "fetched": "2026-11-01"
+ },
+ "Striped Bass and Hybrid Striped Bass (Youghiogheny River Lake)": {
+  "title": "Ohio River",
+  "description": "Major river in the Eastern United States",
+  "extract": "The Ohio River is a 981-mile-long (1,579 km) river in the United States. It begins in the Northeast and serves as the boundary between the Midwestern and Southern United States, flowing in a southwesterly direction from Pittsburgh, Pennsylvania, to its mouth on the Mississippi River at Cairo, Illinois. It is the third largest river by discharge volume in the United States and the largest tributary by volume of the Mississippi River. It is also the sixth oldest river on the North American continent. The river flows through or along the border of six states, and its drainage basin includes parts of 14 states. Through its largest tributary, the Tennessee River, the basin includes several states of the southeastern United States. It is the source of drinking water for five million people.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ohiorivermap.png/330px-Ohiorivermap.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Ohio_River",
+  "fetched": "2026-11-01"
+ },
  "Striped bass": {
   "title": "Striped bass",
   "description": "Species of fish",
@@ -1689,6 +2104,14 @@
   "url": "https://en.wikipedia.org/wiki/Tautog",
   "fetched": "2026-10-29"
  },
+ "Tiger Musky": {
+  "title": "Muskellunge",
+  "description": "Species of fish",
+  "extract": "The muskellunge, often shortened to muskie, musky, ski, or lunge, is a species of large freshwater predatory fish native to North America. It is the largest member of the pike family, Esocidae.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Esox_masquinongyeditcrop.jpg/330px-Esox_masquinongyeditcrop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Muskellunge",
+  "fetched": "2026-11-01"
+ },
  "Tiger muskellunge": {
   "title": "Tiger muskellunge",
   "description": "Hybrid fish",
@@ -1721,6 +2144,19 @@
   "url": "https://en.wikipedia.org/wiki/Trout",
   "fetched": "2026-10-29"
  },
+ "Trout (Put-and-Take, Delayed Harvest and Catch-and-Return areas)": {
+  "title": "Forage fish",
+  "description": "Small prey fish",
+  "extract": "Forage fish, also called prey fish or bait fish, are small pelagic fish that feed on planktons and other small aquatic organisms. They are in turn preyed upon by various predators including larger fish, seabirds and marine mammals, this making them keystone species in their aquatic ecosystems.",
+  "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/School_of_Pterocaesio_chrysozona_in_Papua_New_Guinea_1.jpg/330px-School_of_Pterocaesio_chrysozona_in_Papua_New_Guinea_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://en.wikipedia.org/wiki/Forage_fish",
+  "fetched": "2026-11-01"
+ },
+ "Trout and Salmon (all species) (Youghiogheny River Lake)": {
+  "title": "Trout and Salmon (all species) (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
+ },
  "Vermilion snapper": {
   "title": "Vermilion snapper",
   "description": "Species of fish",
@@ -1744,6 +2180,11 @@
   "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Walleye_%28Sander_vitreus%29_%281%29.jpg/330px-Walleye_%28Sander_vitreus%29_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "url": "https://en.wikipedia.org/wiki/Walleye",
   "fetched": "2026-10-29"
+ },
+ "Walleye and Hybrids (Youghiogheny River Lake)": {
+  "title": "Walleye and Hybrids (Youghiogheny River Lake)",
+  "missing": true,
+  "fetched": "2026-11-01"
  },
  "Warmouth": {
   "title": "Warmouth",

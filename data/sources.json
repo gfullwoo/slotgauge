@@ -305,6 +305,13 @@
           "url": "https://saltwaterfishing.sc.gov/shellfishharvest.html",
           "type": "html",
           "role": "secondary"
+        },
+        {
+          "id": "sc-snapper-grouper",
+          "title": "SCDNR snapper grouper complex size & catch limits",
+          "url": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits",
+          "type": "html",
+          "role": "primary"
         }
       ]
     },

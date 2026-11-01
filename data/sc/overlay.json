@@ -1,1065 +1,2596 @@
 {
- "2": {
-  "name": "Black Drum",
-  "reviewed": "2026-10-01",
-  "rawHash": "cc055fff988e",
-  "aliases": [
-   "drum"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": 27
-     }
+  "2": {
+    "name": "Black Drum",
+    "reviewed": "2026-10-01",
+    "rawHash": "cc055fff988e",
+    "aliases": [
+      "drum"
     ],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "14 to 27 inch slot"
-   }
-  ],
-  "notes": []
- },
- "3": {
-  "name": "Bluefish",
-  "reviewed": "2026-10-01",
-  "rawHash": "80d500a0baba",
-  "aliases": [
-   "blues"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 5,
-    "bagNote": "5 per person (7 on for-hire boats)",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "4": {
-  "name": "Flounder",
-  "reviewed": "2026-10-01",
-  "rawHash": "4345d6d539d5",
-  "aliases": [
-   "fluke",
-   "southern flounder",
-   "summer flounder",
-   "gulf flounder"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 16,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": 27
+          }
+        ],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "14 to 27 inch slot"
+      }
     ],
-    "bag": 5,
-    "bagNote": "5 per person, max 10 per boat",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 185
- },
- "5": {
-  "name": "Red Drum",
-  "reviewed": "2026-10-01",
-  "rawHash": "87eaa6d580dd",
-  "aliases": [
-   "redfish",
-   "spottail",
-   "spottail bass",
-   "channel bass",
-   "puppy drum",
-   "red"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 18,
-      "max": 25
-     }
+    "notes": []
+  },
+  "3": {
+    "name": "Bluefish",
+    "reviewed": "2026-10-01",
+    "rawHash": "80d500a0baba",
+    "aliases": [
+      "blues"
     ],
-    "bag": 1,
-    "bagNote": "1 per person, max 2 per boat",
-    "closed": false,
-    "sizeNote": "18 to 25 inch slot (new July 1, 2026)"
-   },
-   {
-    "zone": "federal",
-    "label": "Federal waters (3–200 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": true,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Slot and limits changed July 1, 2026 (Act No. 231): was 15–23 in, 2 per person.",
-   "Rod & reel and gig only; no gigging Dec 1 – Feb 28."
-  ]
- },
- "7": {
-  "name": "Saltwater Catfish",
-  "reviewed": "2026-10-01",
-  "rawHash": "0a765a076129",
-  "aliases": [
-   "hardhead catfish",
-   "gafftopsail catfish",
-   "gafftop",
-   "hardhead"
-  ],
-  "status": "closed",
-  "zones": [],
-  "notes": [
-   "Possession prohibited; release immediately."
-  ],
-  "photoOf": 118
- },
- "8": {
-  "name": "Sheepshead",
-  "reviewed": "2026-10-01",
-  "rawHash": "6a17400d3b75",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "5 per person (7 on for-hire boats)",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 10,
-    "bagNote": "10 per person, max 30 per boat",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "9": {
-  "name": "Spotted Seatrout",
-  "reviewed": "2026-10-01",
-  "rawHash": "a6fa4466ff06",
-  "aliases": [
-   "speckled trout",
-   "specks",
-   "speck",
-   "trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "notes": []
+  },
+  "4": {
+    "name": "Flounder",
+    "reviewed": "2026-10-01",
+    "rawHash": "4345d6d539d5",
+    "aliases": [
+      "fluke",
+      "southern flounder",
+      "summer flounder",
+      "gulf flounder"
     ],
-    "bag": 10,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "No gigging Dec 1 – Feb 28."
-  ]
- },
- "10": {
-  "name": "Striped Bass",
-  "reviewed": "2026-10-01",
-  "rawHash": "8c143e5952b8",
-  "aliases": [
-   "striper",
-   "stripers",
-   "rockfish",
-   "rock"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC saltwaters",
-    "seasons": [
-     [
-      "10-01",
-      "06-15"
-     ]
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 16,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person, max 10 per boat",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "size": [
-     {
-      "min": 26,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 185
+  },
+  "5": {
+    "name": "Red Drum",
+    "reviewed": "2026-10-01",
+    "rawHash": "87eaa6d580dd",
+    "aliases": [
+      "redfish",
+      "spottail",
+      "spottail bass",
+      "channel bass",
+      "puppy drum",
+      "red"
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "savannah",
-    "label": "Savannah River, lower reach",
-    "seasons": null,
-    "size": [
-     {
-      "min": 27,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": 25
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person, max 2 per boat",
+        "closed": false,
+        "sizeNote": "18 to 25 inch slot (new July 1, 2026)"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": true,
+        "sizeNote": ""
+      }
     ],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; coastal rivers, Santee, Murray differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 10,
-    "bagNote": "10 striped/hybrid combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Possession prohibited June 16 – Sept 30 (except lower Savannah River). Rod & reel only.",
-   "Freshwater statewide: any length, 10 per day; coastal rivers 26 in min, 3 per day Oct 1 – Jun 15; Santee system, Lake Murray and Savannah River have their own slots."
-  ]
- },
- "12": {
-  "name": "Tarpon",
-  "reviewed": "2026-10-01",
-  "rawHash": "e22a6f0efb45",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 77,
-      "max": null
-     }
+    "notes": [
+      "Slot and limits changed July 1, 2026 (Act No. 231): was 15–23 in, 2 per person.",
+      "Rod & reel and gig only; no gigging Dec 1 – Feb 28."
+    ]
+  },
+  "7": {
+    "name": "Saltwater Catfish",
+    "reviewed": "2026-10-01",
+    "rawHash": "0a765a076129",
+    "aliases": [
+      "hardhead catfish",
+      "gafftopsail catfish",
+      "gafftop",
+      "hardhead"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "77 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "13": {
-  "name": "Tripletail",
-  "reviewed": "2026-10-01",
-  "rawHash": "7357ff967ab9",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 18,
-      "max": null
-     }
+    "status": "closed",
+    "zones": [],
+    "notes": [
+      "Possession prohibited; release immediately."
     ],
-    "bag": 3,
-    "bagNote": "3 per person, max 9 per boat",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 86
- },
- "14": {
-  "name": "Weakfish",
-  "reviewed": "2026-10-01",
-  "rawHash": "fef052e11eab",
-  "aliases": [
-   "gray trout",
-   "grey trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "photoOf": 118
+  },
+  "8": {
+    "name": "Sheepshead",
+    "reviewed": "2026-10-01",
+    "rawHash": "6a17400d3b75",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person, max 30 per boat",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "15": {
-  "name": "Atlantic Croaker",
-  "reviewed": "2026-10-01",
-  "rawHash": "963a2aa3afdc",
-  "aliases": [
-   "croaker"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 50,
-    "bagNote": "50 per person, croaker/spot/whiting combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "16": {
-  "name": "Spot",
-  "reviewed": "2026-10-01",
-  "rawHash": "963a2aa3afdc",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 50,
-    "bagNote": "50 per person, croaker/spot/whiting combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "17": {
-  "name": "Whiting",
-  "reviewed": "2026-10-01",
-  "rawHash": "963a2aa3afdc",
-  "aliases": [
-   "kingfish",
-   "sea mullet",
-   "southern kingfish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 50,
-    "bagNote": "50 per person, croaker/spot/whiting combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 180
- },
- "18": {
-  "name": "Cobia",
-  "reviewed": "2026-10-01",
-  "rawHash": "f8e9aa6e8ee5",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "southedisto",
-    "label": "State waters south of Jeremy Inlet (Edisto)",
-    "seasons": [
-     [
-      "06-01",
-      "04-30"
-     ]
+    "notes": []
+  },
+  "9": {
+    "name": "Spotted Seatrout",
+    "reviewed": "2026-10-01",
+    "rawHash": "a6fa4466ff06",
+    "aliases": [
+      "speckled trout",
+      "specks",
+      "speck",
+      "trout"
     ],
-    "size": [
-     {
-      "min": 36,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 1,
-    "bagNote": "1 per person, max 3 per boat",
-    "closed": false,
-    "sizeNote": "36 inch fork length"
-   },
-   {
-    "zone": "northedisto",
-    "label": "State waters north of Jeremy Inlet & federal waters",
-    "seasons": null,
-    "size": [
-     {
-      "min": 36,
-      "max": null
-     }
+    "notes": [
+      "No gigging Dec 1 – Feb 28."
+    ]
+  },
+  "10": {
+    "name": "Striped Bass",
+    "reviewed": "2026-10-01",
+    "rawHash": "8c143e5952b8",
+    "aliases": [
+      "striper",
+      "stripers",
+      "rockfish",
+      "rock"
     ],
-    "bag": 1,
-    "bagNote": "1 per person, max 6 per boat",
-    "closed": false,
-    "sizeNote": "36 inch fork length"
-   }
-  ],
-  "notes": [
-   "Closed May 1–31 in state waters south of 32° 31.0′ N (Jeremy Inlet, Edisto Island)."
-  ]
- },
- "20": {
-  "name": "Dolphin",
-  "reviewed": "2026-10-01",
-  "rawHash": "f17809a8d5c7",
-  "aliases": [
-   "mahi",
-   "mahi-mahi",
-   "dolphinfish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 20,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC saltwaters",
+        "seasons": [
+          [
+            "10-01",
+            "06-15"
+          ]
+        ],
+        "size": [
+          {
+            "min": 26,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "savannah",
+        "label": "Savannah River, lower reach",
+        "seasons": null,
+        "size": [
+          {
+            "min": 27,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; coastal rivers, Santee, Murray differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 striped/hybrid combined",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 10,
-    "bagNote": "10 per person, max 54 per boat",
-    "closed": false,
-    "sizeNote": "20 inch fork length"
-   }
-  ],
-  "notes": [],
-  "photoOf": 112
- },
- "21": {
-  "name": "King Mackerel",
-  "reviewed": "2026-10-01",
-  "rawHash": "a4f9fdb1744c",
-  "aliases": [
-   "kingfish",
-   "king"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 24,
-      "max": null
-     }
+    "notes": [
+      "Possession prohibited June 16 – Sept 30 (except lower Savannah River). Rod & reel only.",
+      "Freshwater statewide: any length, 10 per day; coastal rivers 26 in min, 3 per day Oct 1 – Jun 15; Santee system, Lake Murray and Savannah River have their own slots."
+    ]
+  },
+  "12": {
+    "name": "Tarpon",
+    "reviewed": "2026-10-01",
+    "rawHash": "e22a6f0efb45",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 77,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "77 inch fork length"
+      }
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "24 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "22": {
-  "name": "Spanish Mackerel",
-  "reviewed": "2026-10-01",
-  "rawHash": "d0cdff4ffd0a",
-  "aliases": [
-   "spanish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": []
+  },
+  "13": {
+    "name": "Tripletail",
+    "reviewed": "2026-10-01",
+    "rawHash": "7357ff967ab9",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "3 per person, max 9 per boat",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "12 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "23": {
-  "name": "Wahoo",
-  "reviewed": "2026-10-01",
-  "rawHash": "339e382f59d2",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "24": {
-  "name": "Largemouth Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "9ad8e82e0474",
-  "aliases": [
-   "largemouth",
-   "bass"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 5,
-    "bagNote": "5 black bass combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "14 in minimum on major reservoirs (Murray, Marion, Moultrie, Wylie, Wateree, Greenwood, Jocassee…)."
-  ]
- },
- "25": {
-  "name": "Smallmouth Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "437e092754c7",
-  "aliases": [
-   "smallmouth"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 86
+  },
+  "14": {
+    "name": "Weakfish",
+    "reviewed": "2026-10-01",
+    "rawHash": "fef052e11eab",
+    "aliases": [
+      "gray trout",
+      "grey trout"
     ],
-    "bag": 5,
-    "bagNote": "5 black bass combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "26": {
-  "name": "Spotted Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "8e25beb5135b",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "27": {
-  "name": "Bream",
-  "reviewed": "2026-10-04",
-  "rawHash": "42fe795269c7",
-  "aliases": [
-   "bluegill",
-   "sunfish",
-   "shellcracker",
-   "redear",
-   "warmouth"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 30,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "28": {
-  "name": "Redbreast Sunfish",
-  "reviewed": "2026-10-04",
-  "rawHash": "8e25beb5135b",
-  "aliases": [
-   "redbreast",
-   "robin"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "29": {
-  "name": "Crappie",
-  "reviewed": "2026-10-04",
-  "rawHash": "f88c3d2f6295",
-  "aliases": [
-   "speck",
-   "black crappie",
-   "white crappie"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 8,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 20,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "30": {
-  "name": "Walleye",
-  "reviewed": "2026-10-04",
-  "rawHash": "bb8787dbe08f",
-  "aliases": [
-   "sauger"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 8,
-    "bagNote": "8 walleye + sauger combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "31": {
-  "name": "Chain Pickerel",
-  "reviewed": "2026-10-04",
-  "rawHash": "42fe795269c7",
-  "aliases": [
-   "pickerel",
-   "jack"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 30,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "32": {
-  "name": "Yellow Perch",
-  "reviewed": "2026-10-04",
-  "rawHash": "42fe795269c7",
-  "aliases": [
-   "perch"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 30,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "33": {
-  "name": "White Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "7f7a0a8fa38d",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 10,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "34": {
-  "name": "Trout",
-  "reviewed": "2026-10-04",
-  "rawHash": "06d618d5b7e5",
-  "aliases": [
-   "brook trout",
-   "brown trout",
-   "rainbow trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "35": {
-  "name": "American Eel (freshwater)",
-  "reviewed": "2026-10-04",
-  "rawHash": "b5ef9ce02121",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "SC freshwater (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "notes": []
+  },
+  "15": {
+    "name": "Atlantic Croaker",
+    "reviewed": "2026-10-01",
+    "rawHash": "963a2aa3afdc",
+    "aliases": [
+      "croaker"
     ],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 73
- },
- "36": {
-  "name": "Blue Crab",
-  "reviewed": "2026-10-30",
-  "rawHash": "0f5da496bb2d",
-  "aliases": [
-   "crab",
-   "crabs",
-   "blue crabs",
-   "jimmy",
-   "jimmies",
-   "sook",
-   "sooks",
-   "hard crab",
-   "hard crabs"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 5,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "50 per person, croaker/spot/whiting combined",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": null,
-    "bagNote": "1 bushel per person per day, 2 bushels per boat",
-    "closed": false,
-    "sizeNote": "5 inch carapace width, point to point"
-   }
-  ],
-  "notes": [
-   "New for 2026–27: the 1 bushel/person, 2 bushels/boat limit and escape-vent requirement for pots (2⅜ in rings)."
-  ]
- },
- "37": {
-  "name": "Stone Crab",
-  "reviewed": "2026-10-30",
-  "rawHash": "bce6386ed672",
-  "aliases": [
-   "stone crabs",
-   "stone crab claws",
-   "claws"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 2.75,
-      "max": null
-     }
+    "notes": []
+  },
+  "16": {
+    "name": "Spot",
+    "reviewed": "2026-10-01",
+    "rawHash": "963a2aa3afdc",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "50 per person, croaker/spot/whiting combined",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": null,
-    "bagNote": "No limit stated; one claw per crab, bodies may not be kept",
-    "closed": false,
-    "sizeNote": "2.75 inch claw (propodus) minimum"
-   }
-  ],
-  "notes": [
-   "Take one claw only (the larger) from crabs that have two, and return the crab alive."
-  ]
- },
- "38": {
-  "name": "Spiny Lobster",
-  "reviewed": "2026-10-30",
-  "rawHash": "9a24fc8248de",
-  "aliases": [
-   "lobster",
-   "lobsters",
-   "spiny lobsters"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 3,
-      "max": null
-     }
+    "notes": []
+  },
+  "17": {
+    "name": "Whiting",
+    "reviewed": "2026-10-01",
+    "rawHash": "963a2aa3afdc",
+    "aliases": [
+      "kingfish",
+      "sea mullet",
+      "southern kingfish"
     ],
-    "bag": 2,
-    "bagNote": "2 per person per day",
-    "closed": false,
-    "sizeNote": "3 inch carapace length"
-   }
-  ],
-  "notes": []
- },
- "39": {
-  "name": "Oyster",
-  "reviewed": "2026-10-30",
-  "rawHash": "bc883569221a",
-  "aliases": [
-   "oyster",
-   "oysters"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC public & state shellfish grounds",
-    "seasons": [
-     [
-      "10-01",
-      "05-15"
-     ]
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "50 per person, croaker/spot/whiting combined",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "size": [],
-    "bag": null,
-    "bagNote": "2 bushels per person per day (max 3 limits per boat; 2 days per week)",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Saltwater recreational shellfish license required (16 and older). No scoops, scrapes or dredges. Daylight only (½ hour after sunrise to ½ hour before sunset)."
-  ]
- },
- "40": {
-  "name": "Hard Clam",
-  "reviewed": "2026-10-30",
-  "rawHash": "017d20a5e2d2",
-  "aliases": [
-   "clam",
-   "clams",
-   "quahog",
-   "quahogs",
-   "hard clams",
-   "littleneck",
-   "cherrystone"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC public & state shellfish grounds",
-    "seasons": [
-     [
-      "10-01",
-      "05-15"
-     ]
+    "notes": [],
+    "photoOf": 180
+  },
+  "18": {
+    "name": "Cobia",
+    "reviewed": "2026-10-01",
+    "rawHash": "f8e9aa6e8ee5",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "southedisto",
+        "label": "State waters south of Jeremy Inlet (Edisto)",
+        "seasons": [
+          [
+            "06-01",
+            "04-30"
+          ]
+        ],
+        "size": [
+          {
+            "min": 36,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person, max 3 per boat",
+        "closed": false,
+        "sizeNote": "36 inch fork length"
+      },
+      {
+        "zone": "northedisto",
+        "label": "State waters north of Jeremy Inlet & federal waters",
+        "seasons": null,
+        "size": [
+          {
+            "min": 36,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person, max 6 per boat",
+        "closed": false,
+        "sizeNote": "36 inch fork length"
+      }
     ],
-    "size": [
-     {
-      "min": 1,
-      "max": null
-     }
+    "notes": [
+      "Closed May 1–31 in state waters south of 32° 31.0′ N (Jeremy Inlet, Edisto Island)."
+    ]
+  },
+  "20": {
+    "name": "Dolphin",
+    "reviewed": "2026-10-01",
+    "rawHash": "f17809a8d5c7",
+    "aliases": [
+      "mahi",
+      "mahi-mahi",
+      "dolphinfish"
     ],
-    "bag": null,
-    "bagNote": "½ bushel per person per day (max 3 limits per boat; 2 days per week)",
-    "closed": false,
-    "sizeNote": "1 inch thick"
-   }
-  ],
-  "notes": [
-   "Saltwater recreational shellfish license required (16 and older)."
-  ]
- },
- "41": {
-  "name": "Shrimp",
-  "reviewed": "2026-10-30",
-  "rawHash": "2bbca24fd391",
-  "aliases": [
-   "shrimp",
-   "shrimps",
-   "white shrimp",
-   "brown shrimp",
-   "pink shrimp",
-   "cast net shrimp"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "SC state waters (cast net, no bait)",
-    "seasons": [
-     [
-      "05-01",
-      "12-15"
-     ]
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person, max 54 per boat",
+        "closed": false,
+        "sizeNote": "20 inch fork length"
+      }
     ],
-    "size": [],
-    "bag": null,
-    "bagNote": "48 quarts heads-on (29 quarts headed) per boat per day, or per person without a boat",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "baiting",
-    "label": "SC shrimp baiting season (licensed, over bait)",
-    "seasons": [
-     [
-      "09-11",
-      "11-09"
-     ]
+    "notes": [],
+    "photoOf": 112
+  },
+  "21": {
+    "name": "King Mackerel",
+    "reviewed": "2026-10-01",
+    "rawHash": "a4f9fdb1744c",
+    "aliases": [
+      "kingfish",
+      "king"
     ],
-    "size": [],
-    "bag": null,
-    "bagNote": "48 quarts heads-on (29 quarts headed) per day per set of poles",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Shrimp baiting (over bait, licensed, 10 poles): 2026 season Sept. 11 noon – Nov. 9 noon, 48 quarts whole or 29 quarts headed per day per set of poles."
-  ]
- }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "24 inch fork length"
+      }
+    ],
+    "notes": []
+  },
+  "22": {
+    "name": "Spanish Mackerel",
+    "reviewed": "2026-10-01",
+    "rawHash": "d0cdff4ffd0a",
+    "aliases": [
+      "spanish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "12 inch fork length"
+      }
+    ],
+    "notes": []
+  },
+  "23": {
+    "name": "Wahoo",
+    "reviewed": "2026-10-01",
+    "rawHash": "339e382f59d2",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "24": {
+    "name": "Largemouth Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "9ad8e82e0474",
+    "aliases": [
+      "largemouth",
+      "bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "5 black bass combined",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "14 in minimum on major reservoirs (Murray, Marion, Moultrie, Wylie, Wateree, Greenwood, Jocassee…)."
+    ]
+  },
+  "25": {
+    "name": "Smallmouth Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "437e092754c7",
+    "aliases": [
+      "smallmouth"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 black bass combined",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "26": {
+    "name": "Spotted Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "8e25beb5135b",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "27": {
+    "name": "Bream",
+    "reviewed": "2026-10-04",
+    "rawHash": "42fe795269c7",
+    "aliases": [
+      "bluegill",
+      "sunfish",
+      "shellcracker",
+      "redear",
+      "warmouth"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 30,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "28": {
+    "name": "Redbreast Sunfish",
+    "reviewed": "2026-10-04",
+    "rawHash": "8e25beb5135b",
+    "aliases": [
+      "redbreast",
+      "robin"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "29": {
+    "name": "Crappie",
+    "reviewed": "2026-10-04",
+    "rawHash": "f88c3d2f6295",
+    "aliases": [
+      "speck",
+      "black crappie",
+      "white crappie"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 8,
+            "max": null
+          }
+        ],
+        "bag": 20,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "30": {
+    "name": "Walleye",
+    "reviewed": "2026-10-04",
+    "rawHash": "bb8787dbe08f",
+    "aliases": [
+      "sauger"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 8,
+        "bagNote": "8 walleye + sauger combined",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "31": {
+    "name": "Chain Pickerel",
+    "reviewed": "2026-10-04",
+    "rawHash": "42fe795269c7",
+    "aliases": [
+      "pickerel",
+      "jack"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 30,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "32": {
+    "name": "Yellow Perch",
+    "reviewed": "2026-10-04",
+    "rawHash": "42fe795269c7",
+    "aliases": [
+      "perch"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 30,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "33": {
+    "name": "White Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "7f7a0a8fa38d",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "34": {
+    "name": "Trout",
+    "reviewed": "2026-10-04",
+    "rawHash": "06d618d5b7e5",
+    "aliases": [
+      "brook trout",
+      "brown trout",
+      "rainbow trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "35": {
+    "name": "American Eel (freshwater)",
+    "reviewed": "2026-10-04",
+    "rawHash": "b5ef9ce02121",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "SC freshwater (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 73
+  },
+  "36": {
+    "name": "Blue Crab",
+    "reviewed": "2026-10-30",
+    "rawHash": "0f5da496bb2d",
+    "aliases": [
+      "crab",
+      "crabs",
+      "blue crabs",
+      "jimmy",
+      "jimmies",
+      "sook",
+      "sooks",
+      "hard crab",
+      "hard crabs"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 5,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 bushel per person per day, 2 bushels per boat",
+        "closed": false,
+        "sizeNote": "5 inch carapace width, point to point"
+      }
+    ],
+    "notes": [
+      "New for 2026–27: the 1 bushel/person, 2 bushels/boat limit and escape-vent requirement for pots (2⅜ in rings)."
+    ]
+  },
+  "37": {
+    "name": "Stone Crab",
+    "reviewed": "2026-10-30",
+    "rawHash": "bce6386ed672",
+    "aliases": [
+      "stone crabs",
+      "stone crab claws",
+      "claws"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 2.75,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "No limit stated; one claw per crab, bodies may not be kept",
+        "closed": false,
+        "sizeNote": "2.75 inch claw (propodus) minimum"
+      }
+    ],
+    "notes": [
+      "Take one claw only (the larger) from crabs that have two, and return the crab alive."
+    ]
+  },
+  "38": {
+    "name": "Spiny Lobster",
+    "reviewed": "2026-10-30",
+    "rawHash": "9a24fc8248de",
+    "aliases": [
+      "lobster",
+      "lobsters",
+      "spiny lobsters"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 3,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 per person per day",
+        "closed": false,
+        "sizeNote": "3 inch carapace length"
+      }
+    ],
+    "notes": []
+  },
+  "39": {
+    "name": "Oyster",
+    "reviewed": "2026-10-30",
+    "rawHash": "bc883569221a",
+    "aliases": [
+      "oyster",
+      "oysters"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC public & state shellfish grounds",
+        "seasons": [
+          [
+            "10-01",
+            "05-15"
+          ]
+        ],
+        "size": [],
+        "bag": null,
+        "bagNote": "2 bushels per person per day (max 3 limits per boat; 2 days per week)",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Saltwater recreational shellfish license required (16 and older). No scoops, scrapes or dredges. Daylight only (½ hour after sunrise to ½ hour before sunset)."
+    ]
+  },
+  "40": {
+    "name": "Hard Clam",
+    "reviewed": "2026-10-30",
+    "rawHash": "017d20a5e2d2",
+    "aliases": [
+      "clam",
+      "clams",
+      "quahog",
+      "quahogs",
+      "hard clams",
+      "littleneck",
+      "cherrystone"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC public & state shellfish grounds",
+        "seasons": [
+          [
+            "10-01",
+            "05-15"
+          ]
+        ],
+        "size": [
+          {
+            "min": 1,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "½ bushel per person per day (max 3 limits per boat; 2 days per week)",
+        "closed": false,
+        "sizeNote": "1 inch thick"
+      }
+    ],
+    "notes": [
+      "Saltwater recreational shellfish license required (16 and older)."
+    ]
+  },
+  "41": {
+    "name": "Shrimp",
+    "reviewed": "2026-10-30",
+    "rawHash": "2bbca24fd391",
+    "aliases": [
+      "shrimp",
+      "shrimps",
+      "white shrimp",
+      "brown shrimp",
+      "pink shrimp",
+      "cast net shrimp"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (cast net, no bait)",
+        "seasons": [
+          [
+            "05-01",
+            "12-15"
+          ]
+        ],
+        "size": [],
+        "bag": null,
+        "bagNote": "48 quarts heads-on (29 quarts headed) per boat per day, or per person without a boat",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "baiting",
+        "label": "SC shrimp baiting season (licensed, over bait)",
+        "seasons": [
+          [
+            "09-11",
+            "11-09"
+          ]
+        ],
+        "size": [],
+        "bag": null,
+        "bagNote": "48 quarts heads-on (29 quarts headed) per day per set of poles",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Shrimp baiting (over bait, licensed, 10 poles): 2026 season Sept. 11 noon – Nov. 9 noon, 48 quarts whole or 29 quarts headed per day per set of poles."
+    ]
+  },
+  "42": {
+    "name": "Red Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "2968072aefe5",
+    "aliases": [
+      "american red snapper",
+      "genuine red"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 per person per day (state waters only)",
+        "sizeNote": "20 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "Possession prohibited in federal waters except during the announced federal mini-season",
+        "closed": true,
+        "sizeNote": "20 inch total length"
+      }
+    ],
+    "notes": [
+      "Federal waters: possession prohibited outside the short NOAA/SAFMC season announced each year — see safmc.net.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "43": {
+    "name": "Vermilion Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "30e43d92db13",
+    "aliases": [
+      "beeliner",
+      "b-liner",
+      "mingo"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person per day",
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      }
+    ],
+    "notes": [
+      "Not part of the 10-snapper aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "44": {
+    "name": "Lane Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "07cea824b90f",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 8,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "sizeNote": "8 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 8,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "closed": false,
+        "sizeNote": "8 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate (all snappers except red and vermilion).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "45": {
+    "name": "Mutton Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "f79c2357a007",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person per day, within the 10-snapper aggregate",
+        "sizeNote": "18 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person per day, within the 10-snapper aggregate",
+        "closed": false,
+        "sizeNote": "18 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate (all snappers except red and vermilion).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "46": {
+    "name": "Gray Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "17a13c628f67",
+    "aliases": [
+      "mangrove snapper",
+      "mango snapper",
+      "black snapper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate (all snappers except red and vermilion).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "47": {
+    "name": "Yellowtail Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "17a13c628f67",
+    "aliases": [
+      "flag"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate (all snappers except red and vermilion).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "48": {
+    "name": "Cubera Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "17a13c628f67",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate (all snappers except red and vermilion).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "49": {
+    "name": "Blackfin Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "105247c8db34",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate (all snappers except red and vermilion).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "50": {
+    "name": "Silk Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "105247c8db34",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate (all snappers except red and vermilion).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "51": {
+    "name": "Queen Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "105247c8db34",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 per person per day (snapper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate (all snappers except red and vermilion).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "52": {
+    "name": "Red Porgy",
+    "reviewed": "2026-10-31",
+    "rawHash": "c97086cbd09d",
+    "aliases": [
+      "pink snapper",
+      "silver snapper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day",
+        "sizeNote": "14 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "06-30"
+          ]
+        ],
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day",
+        "closed": false,
+        "sizeNote": "14 inch total length"
+      }
+    ],
+    "notes": [
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "53": {
+    "name": "Gag Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "faeb00a1e5c0",
+    "aliases": [
+      "gag",
+      "gray grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (gag or black grouper, not both), within the 3-grouper aggregate; 2 per vessel in federal waters",
+        "sizeNote": "24 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "08-01"
+          ]
+        ],
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (gag or black grouper, not both), within the 3-grouper aggregate; 2 per vessel in federal waters",
+        "closed": false,
+        "sizeNote": "24 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "For-hire captains and crew have a zero bag limit.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "54": {
+    "name": "Black Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "5110ec507076",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (gag or black grouper, not both), within the 3-grouper aggregate",
+        "sizeNote": "24 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (gag or black grouper, not both), within the 3-grouper aggregate",
+        "closed": false,
+        "sizeNote": "24 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "55": {
+    "name": "Red Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "73c26464af5e",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "20 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "06-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "56": {
+    "name": "Scamp",
+    "reviewed": "2026-10-31",
+    "rawHash": "52940051c527",
+    "aliases": [
+      "scamp grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day in state waters; federal: 1 scamp or yellowmouth (not both), within the 3-grouper aggregate",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day in state waters; federal: 1 scamp or yellowmouth (not both), within the 3-grouper aggregate",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "57": {
+    "name": "Yellowmouth Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "52940051c527",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day in state waters; federal: 1 scamp or yellowmouth (not both), within the 3-grouper aggregate",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day in state waters; federal: 1 scamp or yellowmouth (not both), within the 3-grouper aggregate",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "58": {
+    "name": "Yellowfin Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "b297b3791250",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "59": {
+    "name": "Snowy Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "66193bad6045",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per vessel per day, within the 3-grouper aggregate",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "06-06"
+          ]
+        ],
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per vessel per day, within the 3-grouper aggregate",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "60": {
+    "name": "Misty Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "b297b3791250",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "61": {
+    "name": "Yellowedge Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "b297b3791250",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "62": {
+    "name": "Coney",
+    "reviewed": "2026-10-31",
+    "rawHash": "b297b3791250",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "63": {
+    "name": "Graysby",
+    "reviewed": "2026-10-31",
+    "rawHash": "b297b3791250",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "64": {
+    "name": "Red Hind",
+    "reviewed": "2026-10-31",
+    "rawHash": "b297b3791250",
+    "aliases": [
+      "strawberry grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "65": {
+    "name": "Rock Hind",
+    "reviewed": "2026-10-31",
+    "rawHash": "b297b3791250",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "66": {
+    "name": "Golden Tilefish",
+    "reviewed": "2026-10-31",
+    "rawHash": "ada9934f49d9",
+    "aliases": [
+      "tilefish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per person per day, within the 3-grouper aggregate",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "01-01",
+            "03-20"
+          ]
+        ],
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per person per day, within the 3-grouper aggregate",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "67": {
+    "name": "Blueline Tilefish",
+    "reviewed": "2026-10-31",
+    "rawHash": "1458cddf8800",
+    "aliases": [
+      "gray tilefish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day in state waters (2 in federal waters), within the 3-grouper aggregate",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "08-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day in state waters (2 in federal waters), within the 3-grouper aggregate",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "68": {
+    "name": "Sand Tilefish",
+    "reviewed": "2026-10-31",
+    "rawHash": "b297b3791250",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per person per day (grouper aggregate)",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "69": {
+    "name": "Greater Amberjack",
+    "reviewed": "2026-10-31",
+    "rawHash": "dc2e891c72c0",
+    "aliases": [
+      "amberjack",
+      "aj",
+      "reef donkey"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 28,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day",
+        "sizeNote": "28 inch fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "03-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 28,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day",
+        "closed": false,
+        "sizeNote": "28 inch fork length"
+      }
+    ],
+    "notes": [
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "70": {
+    "name": "Hogfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "3d3ceb93ece0",
+    "aliases": [
+      "hog snapper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 17,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 per person per day",
+        "sizeNote": "17 inch fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 17,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 per person per day",
+        "closed": false,
+        "sizeNote": "17 inch fork length"
+      }
+    ],
+    "notes": [
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "71": {
+    "name": "Wreckfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "b1c28b884223",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per vessel per day",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": [
+          [
+            "07-01",
+            "08-31"
+          ]
+        ],
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per vessel per day",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "72": {
+    "name": "Black Sea Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "23b03b39ae7c",
+    "aliases": [
+      "sea bass",
+      "blackfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 13,
+            "max": null
+          }
+        ],
+        "bag": 7,
+        "bagNote": "7 per person per day",
+        "sizeNote": "13 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 13,
+            "max": null
+          }
+        ],
+        "bag": 7,
+        "bagNote": "7 per person per day",
+        "closed": false,
+        "sizeNote": "13 inch total length"
+      }
+    ],
+    "notes": [
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "73": {
+    "name": "Gray Triggerfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "ac3fe396895c",
+    "aliases": [
+      "triggerfish",
+      "trigger"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "20 aggregate per person per day with other complex species, no more than 10 of any one species",
+        "sizeNote": "12 inch fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "20 aggregate per person per day with other complex species, no more than 10 of any one species",
+        "closed": false,
+        "sizeNote": "12 inch fork length"
+      }
+    ],
+    "notes": [
+      "Part of the 20-fish \"other snapper-grouper species\" aggregate.",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "74": {
+    "name": "White Grunt",
+    "reviewed": "2026-10-31",
+    "rawHash": "4b1646732cae",
+    "aliases": [
+      "grunt"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [],
+        "bag": 10,
+        "bagNote": "20 aggregate per person per day with other complex species, no more than 10 of any one species",
+        "sizeNote": "No minimum size"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "20 aggregate per person per day with other complex species, no more than 10 of any one species",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Part of the 20-fish \"other snapper-grouper species\" aggregate (also scup, margate, sailors choice, lesser amberjack, almaco jack, banded rudderfish).",
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "75": {
+    "name": "Atlantic Spadefish",
+    "reviewed": "2026-10-31",
+    "rawHash": "4b507f68e654",
+    "aliases": [
+      "spadefish",
+      "spade"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": false,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 30,
+        "bagNote": "30 per boat per day (state waters)",
+        "sizeNote": "14 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 30,
+        "bagNote": "30 per boat per day (state waters)",
+        "closed": false,
+        "sizeNote": "14 inch total length"
+      }
+    ],
+    "notes": [
+      "State waters (0–3 mi) have no closed season; federal closures from SAFMC apply beyond 3 mi and can change mid-year when catch limits are met — check safmc.net before an offshore trip."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "76": {
+    "name": "Warsaw Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": true,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Release without removing from the water."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "77": {
+    "name": "Speckled Hind",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "kitty mitchell"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": true,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Release without removing from the water."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "78": {
+    "name": "Nassau Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": true,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "If hooked, cut the line and release without removing from the water."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  },
+  "79": {
+    "name": "Goliath Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "jewfish"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "SC state waters (to 3 mi)",
+        "seasons": null,
+        "closed": true,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "If hooked, cut the line and release without removing from the water."
+    ],
+    "sourceId": "sc-snapper-grouper"
+  }
 }

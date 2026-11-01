@@ -11,8 +11,8 @@
     "sports",
     "utilities"
   ],
-  "background_color": "#0d171c",
-  "theme_color": "#0f6f8c",
+  "background_color": "#02203a",
+  "theme_color": "#02203a",
   "icons": [
     {
       "src": "/icon.svg",

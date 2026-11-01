@@ -122,8 +122,8 @@ export function layout({ title, description, canonical, body, jsonld = [], ogIma
 <link rel="canonical" href="${esc(canonical)}">
 <meta property="og:type" content="article"><meta property="og:site_name" content="SlotGauge"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:image" content="${esc(ogImage || SITE + '/og.png')}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0f6f8c">
-<script>(function(){try{var t=localStorage.getItem('sg.theme');if(t==='ocean'||t==='dark')document.documentElement.setAttribute('data-theme',t);var z=localStorage.getItem('sg.text')||(window.innerWidth<=480?'large':'normal');document.documentElement.setAttribute('data-text',z);}catch(e){}})();</script>
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#02203a">
+<script>(function(){try{var t=localStorage.getItem('sg.theme');if(!t||(t==='light'&&!localStorage.getItem('sg.themeChosen'))){t='ocean';localStorage.setItem('sg.theme',t);}if(t==='ocean'||t==='dark')document.documentElement.setAttribute('data-theme',t);var z=localStorage.getItem('sg.text')||(window.innerWidth<=480?'large':'normal');document.documentElement.setAttribute('data-text',z);}catch(e){}})();</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <style>${CSS}</style>
 ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`).join('\n')}

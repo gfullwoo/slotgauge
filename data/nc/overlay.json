@@ -1,1147 +1,4619 @@
 {
- "1": {
-  "name": "Bluefish",
-  "reviewed": "2026-09-29",
-  "rawHash": "6c13e3c11ab0",
-  "aliases": [
-   "blues"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 5,
-    "bagNote": "5 per person per day (7 on for-hire vessels)",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "2": {
-  "name": "Cobia",
-  "reviewed": "2026-09-29",
-  "rawHash": "8919cafa8b36",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": [
-     [
-      "05-01",
-      "12-31"
-     ]
+  "1": {
+    "name": "Bluefish",
+    "reviewed": "2026-09-29",
+    "rawHash": "6c13e3c11ab0",
+    "aliases": [
+      "blues"
     ],
-    "size": [
-     {
-      "min": 36,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "5 per person per day (7 on for-hire vessels)",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 1,
-    "bagNote": "1 per person per day; 2 per vessel May–June, 1 per vessel July–Dec (for-hire 4)",
-    "closed": false,
-    "sizeNote": "36 inch minimum, fork length"
-   }
-  ],
-  "notes": [
-   "Proclamation FF-4-2026."
-  ]
- },
- "3": {
-  "name": "Wahoo",
-  "reviewed": "2026-09-29",
-  "rawHash": "c83a6410927e",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "4": {
-  "name": "Dolphin",
-  "reviewed": "2026-09-29",
-  "rawHash": "2d6f1bee8e31",
-  "aliases": [
-   "mahi",
-   "mahi-mahi",
-   "dolphinfish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 10,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 112
- },
- "5": {
-  "name": "King Mackerel",
-  "reviewed": "2026-09-29",
-  "rawHash": "e892d59f02aa",
-  "aliases": [
-   "kingfish",
-   "king"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 24,
-      "max": null
-     }
+    "notes": []
+  },
+  "2": {
+    "name": "Cobia",
+    "reviewed": "2026-09-29",
+    "rawHash": "8919cafa8b36",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 36,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day; 2 per vessel May–June, 1 per vessel July–Dec (for-hire 4)",
+        "closed": false,
+        "sizeNote": "36 inch minimum, fork length"
+      }
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "24 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "6": {
-  "name": "Spanish Mackerel",
-  "reviewed": "2026-09-29",
-  "rawHash": "5608699b2467",
-  "aliases": [
-   "spanish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": [
+      "Proclamation FF-4-2026."
+    ]
+  },
+  "3": {
+    "name": "Wahoo",
+    "reviewed": "2026-09-29",
+    "rawHash": "c83a6410927e",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "12 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "7": {
-  "name": "Yellowfin Tuna",
-  "reviewed": "2026-09-29",
-  "rawHash": "4593ffd3c895",
-  "aliases": [
-   "yellowfin",
-   "tuna"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 27,
-      "max": null
-     }
+    "notes": []
+  },
+  "4": {
+    "name": "Dolphin",
+    "reviewed": "2026-09-29",
+    "rawHash": "2d6f1bee8e31",
+    "aliases": [
+      "mahi",
+      "mahi-mahi",
+      "dolphinfish"
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "27 inch curved fork length"
-   }
-  ],
-  "notes": []
- },
- "11": {
-  "name": "Sailfish",
-  "reviewed": "2026-09-29",
-  "rawHash": "334ca79613ec",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 63,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "63 inch lower-jaw fork length"
-   }
-  ],
-  "notes": []
- },
- "12": {
-  "name": "Red Drum",
-  "reviewed": "2026-09-29",
-  "rawHash": "859fcb9b3d72",
-  "aliases": [
-   "redfish",
-   "puppy drum",
-   "channel bass",
-   "red"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 18,
-      "max": 27
-     }
+    "notes": [],
+    "photoOf": 112,
+    "review": [
+      {
+        "field": "limit",
+        "current": "10/Day",
+        "shouldBe": "10 per person per day, not to exceed 54 per vessel per day (headboats with a USCG Certificate of Inspection: 10 per paying customer); no sale of recreational bag limit from charter/head boats.",
+        "quote": "Limit of 10 per person per day or 54 per trip, whichever is less. On head boats, limit is 10 per person per day.",
+        "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "5": {
+    "name": "King Mackerel",
+    "reviewed": "2026-09-29",
+    "rawHash": "e892d59f02aa",
+    "aliases": [
+      "kingfish",
+      "king"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "18 to 27 inch slot"
-   }
-  ],
-  "notes": []
- },
- "13": {
-  "name": "Flounder",
-  "reviewed": "2026-09-29",
-  "rawHash": "ba3af0d91e7b",
-  "aliases": [
-   "fluke",
-   "summer flounder",
-   "southern flounder",
-   "gulf flounder"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": [
-     [
-      "09-01",
-      "09-14"
-     ]
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "24 inch fork length"
+      }
     ],
-    "size": [
-     {
-      "min": 15,
-      "max": null
-     }
+    "notes": []
+  },
+  "6": {
+    "name": "Spanish Mackerel",
+    "reviewed": "2026-09-29",
+    "rawHash": "5608699b2467",
+    "aliases": [
+      "spanish"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "2026 recreational flounder season: September 1–14 only (proclamation FF-27-2026). All flounder species."
-  ],
-  "photoOf": 185
- },
- "14": {
-  "name": "Spotted Seatrout",
-  "reviewed": "2026-09-29",
-  "rawHash": "f7bd38abf134",
-  "aliases": [
-   "speckled trout",
-   "specks",
-   "speck",
-   "trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": 20
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "12 inch fork length"
+      }
     ],
-    "bag": 3,
-    "bagNote": "3 per day, only 1 over 26 inches",
-    "closed": false,
-    "sizeNote": "14 to 20 inch slot; 1 fish over 26 inches allowed"
-   }
-  ],
-  "notes": [
-   "One fish in the daily limit may be over 26 inches."
-  ]
- },
- "15": {
-  "name": "Weakfish",
-  "reviewed": "2026-09-29",
-  "rawHash": "56a4ccb3874b",
-  "aliases": [
-   "gray trout",
-   "grey trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": []
+  },
+  "7": {
+    "name": "Yellowfin Tuna",
+    "reviewed": "2026-09-29",
+    "rawHash": "4593ffd3c895",
+    "aliases": [
+      "yellowfin",
+      "tuna"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "16": {
-  "name": "Sheepshead",
-  "reviewed": "2026-09-29",
-  "rawHash": "d1a37f8cd33f",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 27,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "27 inch curved fork length"
+      }
     ],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "17": {
-  "name": "Black Drum",
-  "reviewed": "2026-09-29",
-  "rawHash": "05aab0a562e6",
-  "aliases": [
-   "drum"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": 25
-     }
+    "notes": []
+  },
+  "8": {
+    "name": "Sharks (coastal species)",
+    "reviewed": null,
+    "aliases": [],
+    "status": "open",
+    "zones": [],
+    "notes": [],
+    "review": [
+      {
+        "field": "size/limit",
+        "current": "See most recent DMF proclamations",
+        "shouldBe": "Replace with the per-species/group shark rows in this file (FF-3-2026): sharpnose and bonnethead 1 per person, hammerheads 78\" FL, other LCS/pelagic/blacknose/finetooth 54\" FL, 1 additional shark per vessel per day; prohibited list.",
+        "quote": "It shall be unlawful to possess more than one (1) additional shark from the recreationally permitted species list aboard a vessel, per calendar day, regardless of the number of people on board the vessel.",
+        "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "11": {
+    "name": "Sailfish",
+    "reviewed": "2026-09-29",
+    "rawHash": "334ca79613ec",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 63,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "63 inch lower-jaw fork length"
+      }
     ],
-    "bag": 10,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "14 to 25 inch slot"
-   }
-  ],
-  "notes": []
- },
- "18": {
-  "name": "Tarpon",
-  "reviewed": "2026-09-29",
-  "rawHash": "bf36f22fa23a",
-  "aliases": [],
-  "status": "closed",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Unlawful to possess."
-  ]
- },
- "19": {
-  "name": "Striped Bass",
-  "reviewed": "2026-09-29",
-  "rawHash": "8fd8f02ee772",
-  "aliases": [
-   "striper",
-   "stripers",
-   "rockfish",
-   "rock"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "ocean",
-    "label": "Atlantic Ocean (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 28,
-      "max": 31
-     }
+    "notes": []
+  },
+  "12": {
+    "name": "Red Drum",
+    "reviewed": "2026-09-29",
+    "rawHash": "859fcb9b3d72",
+    "aliases": [
+      "redfish",
+      "puppy drum",
+      "channel bass",
+      "red"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "28 to 31 inch slot"
-   },
-   {
-    "zone": "internal",
-    "label": "Internal coastal waters (sounds, rivers)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": true,
-    "sizeNote": ""
-   },
-   {
-    "zone": "inland",
-    "label": "NC inland impoundments (statewide; listed lakes differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 20,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": 27
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "18 to 27 inch slot"
+      }
     ],
-    "bag": 4,
-    "bagNote": "4 striped bass + hybrids combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Albemarle Sound Management Area: season closed; Central Southern Management Area: unlawful to possess (including hybrids). Unlawful to gig, spear, or gaff striped bass.",
-   "Inland impoundments (WRC): 20 in minimum, 4 per day; Roanoke River and coastal rivers follow their own management-area rules."
-  ]
- },
- "23": {
-  "name": "Alewife and Blueback Herring",
-  "reviewed": "2026-09-29",
-  "rawHash": "bf36f22fa23a",
-  "aliases": [
-   "river herring",
-   "alewife",
-   "blueback herring",
-   "herring"
-  ],
-  "status": "closed",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Unlawful to possess."
-  ],
-  "photoOf": 71
- },
- "24": {
-  "name": "American Eel",
-  "reviewed": "2026-09-29",
-  "rawHash": "92fd4ac990f3",
-  "aliases": [
-   "eel"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "notes": []
+  },
+  "13": {
+    "name": "Flounder",
+    "reviewed": "2026-09-29",
+    "rawHash": "ba3af0d91e7b",
+    "aliases": [
+      "fluke",
+      "summer flounder",
+      "southern flounder",
+      "gulf flounder"
     ],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "25": {
-  "name": "Scup",
-  "reviewed": "2026-09-29",
-  "rawHash": "dac661b3cb6e",
-  "aliases": [
-   "porgy"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "northhatteras",
-    "label": "North of Cape Hatteras",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": [
+          [
+            "09-01",
+            "09-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 15,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 30,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "North of Cape Hatteras only."
-  ]
- },
- "26": {
-  "name": "Black Sea Bass",
-  "reviewed": "2026-09-29",
-  "rawHash": "d64b2a93a01e",
-  "aliases": [
-   "sea bass",
-   "bsb"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "northhatteras",
-    "label": "North of Cape Hatteras",
-    "seasons": [
-     [
-      "05-01",
-      "12-31"
-     ]
+    "notes": [
+      "2026 recreational flounder season: September 1–14 only (proclamation FF-27-2026). All flounder species."
     ],
-    "size": [
-     {
-      "min": 13,
-      "max": null
-     }
+    "photoOf": 185,
+    "review": [
+      {
+        "field": "season",
+        "current": "September 1, 2026 until 11:59 P.M. on September 14, 2026 (status open)",
+        "shouldBe": "Closed — the 2026 season ended Sept 14, 2026; DMF page effective Nov 1, 2026 prints UNLAWFUL TO POSSESS. Keep the Sept 1–14 window as the last-known season but mark closed: true until a 2027 proclamation issues. Inland waters (WRC) mirror: 15-inch minimum, 1 per day Sept 1–14.",
+        "quote": "Flounder ▲ (All Species) | UNLAWFUL TO POSSESS",
+        "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "14": {
+    "name": "Spotted Seatrout",
+    "reviewed": "2026-09-29",
+    "rawHash": "f7bd38abf134",
+    "aliases": [
+      "speckled trout",
+      "specks",
+      "speck",
+      "trout"
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "southhatteras",
-    "label": "South of Cape Hatteras",
-    "seasons": null,
-    "size": [
-     {
-      "min": 13,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": 20
+          }
+        ],
+        "bag": 3,
+        "bagNote": "3 per day, only 1 over 26 inches",
+        "closed": false,
+        "sizeNote": "14 to 20 inch slot; 1 fish over 26 inches allowed"
+      }
     ],
-    "bag": 7,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "29": {
-  "name": "Mullet",
-  "reviewed": "2026-09-29",
-  "rawHash": "982fc2c3d877",
-  "aliases": [
-   "striped mullet",
-   "white mullet",
-   "finger mullet"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 100,
-    "bagNote": "100 per day, species combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "30": {
-  "name": "Spot",
-  "reviewed": "2026-09-29",
-  "rawHash": "e6809022ffd5",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 50,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "31": {
-  "name": "Atlantic Croaker",
-  "reviewed": "2026-09-29",
-  "rawHash": "e6809022ffd5",
-  "aliases": [
-   "croaker",
-   "hardhead"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 50,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "32": {
-  "name": "Blue Crab",
-  "reviewed": "2026-09-29",
-  "rawHash": "5e9582b89b6e",
-  "aliases": [
-   "crab",
-   "crabs"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 5,
-      "max": null
-     }
+    "notes": [
+      "One fish in the daily limit may be over 26 inches."
     ],
-    "bag": 50,
-    "bagNote": "50 per person per day, max 100 per vessel",
-    "closed": false,
-    "sizeNote": "5 inch carapace width"
-   }
-  ],
-  "notes": [
-   "Closed Jan 1–31 north of the Highway 58 bridge and Mar 1–15 south of it."
-  ]
- },
- "33": {
-  "name": "Stone Crab",
-  "aliases": [
-   "stone crabs",
-   "stone crab claws"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": [
-     [
-      "08-16",
-      "06-14"
-     ]
+    "review": [
+      {
+        "field": "notes",
+        "current": "Open year-round",
+        "shouldBe": "Note FF-31-2026 re-opened harvest July 1, 2026 after a cold-stun closure; DMF closes seatrout by proclamation after cold-stun events — season should be flagged 'open unless closed by proclamation'. Also main page prints 26' (typo for 26\").",
+        "quote": "This proclamation opens the commercial and recreational spotted seatrout (speckled trout) fishery ... in Coastal and Joint Fishing Waters including the Atlantic Ocean on July 1, 2026",
+        "sourceUrl": "https://files.nc.gov/deq/documents/2026-06/FF-31-2026_SpottedSeatrout_open harvest_final.pdf",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "15": {
+    "name": "Weakfish",
+    "reviewed": "2026-09-29",
+    "rawHash": "56a4ccb3874b",
+    "aliases": [
+      "gray trout",
+      "grey trout"
     ],
-    "size": [
-     {
-      "min": 2.75,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": null,
-    "bagNote": "No possession limit during the open season; claws only",
-    "closed": false,
-    "sizeNote": "2.75 inch claw (propodus) length"
-   }
-  ],
-  "notes": [
-   "Closed June 15 – August 15."
-  ],
-  "reviewed": "2026-10-30",
-  "rawHash": "277a924bf72f"
- },
- "34": {
-  "name": "Spiny Lobster",
-  "aliases": [
-   "lobster",
-   "lobsters",
-   "spiny lobsters"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 3,
-      "max": null
-     }
+    "notes": []
+  },
+  "16": {
+    "name": "Sheepshead",
+    "reviewed": "2026-09-29",
+    "rawHash": "d1a37f8cd33f",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 2,
-    "bagNote": "2 per trip",
-    "closed": false,
-    "sizeNote": "3 inch carapace length"
-   }
-  ],
-  "notes": [
-   "See the most recent DMF proclamation."
-  ],
-  "reviewed": "2026-10-30",
-  "rawHash": "299f06b0dd9a"
- },
- "35": {
-  "name": "Hard Clam",
-  "reviewed": "2026-09-29",
-  "rawHash": "822145e96a22",
-  "aliases": [
-   "clam",
-   "clams"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 1,
-      "max": null
-     }
+    "notes": []
+  },
+  "17": {
+    "name": "Black Drum",
+    "reviewed": "2026-09-29",
+    "rawHash": "05aab0a562e6",
+    "aliases": [
+      "drum"
     ],
-    "bag": 100,
-    "bagNote": "100 per day, max 200 per vessel",
-    "closed": false,
-    "sizeNote": "1 inch thick"
-   }
-  ],
-  "notes": []
- },
- "36": {
-  "name": "Oyster",
-  "aliases": [
-   "oyster",
-   "oysters"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": [
-     [
-      "10-15",
-      "03-31"
-     ]
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": 25
+          }
+        ],
+        "bag": 10,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "14 to 25 inch slot"
+      }
     ],
-    "size": [
-     {
-      "min": 3,
-      "max": null
-     }
+    "notes": []
+  },
+  "18": {
+    "name": "Tarpon",
+    "reviewed": "2026-09-29",
+    "rawHash": "bf36f22fa23a",
+    "aliases": [],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": null,
-    "bagNote": "1 bushel per day, max 2 bushels per vessel",
-    "closed": false,
-    "sizeNote": "3 inch shell length"
-   }
-  ],
-  "notes": [
-   "Season October 15 – March 31 unless closed earlier by proclamation; harvest only from open areas."
-  ],
-  "reviewed": "2026-10-30",
-  "rawHash": "b842efa5df01"
- },
- "37": {
-  "name": "Conchs and Whelks",
-  "reviewed": "2026-09-29",
-  "rawHash": "8a0b278b7fc5",
-  "aliases": [
-   "conch",
-   "whelk"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 10,
-    "bagNote": "10 per day, max 20 per vessel",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "38": {
-  "name": "Largemouth Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "6c23d561041f",
-  "aliases": [
-   "largemouth",
-   "bass"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "notes": [
+      "Unlawful to possess."
+    ]
+  },
+  "19": {
+    "name": "Striped Bass",
+    "reviewed": "2026-09-29",
+    "rawHash": "8fd8f02ee772",
+    "aliases": [
+      "striper",
+      "stripers",
+      "rockfish",
+      "rock"
     ],
-    "bag": 5,
-    "bagNote": "5, only 2 under 14 in",
-    "closed": false,
-    "sizeNote": "14 in minimum, except 2 under 14 in allowed"
-   }
-  ],
-  "notes": []
- },
- "39": {
-  "name": "Smallmouth Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "6c23d561041f",
-  "aliases": [
-   "smallmouth",
-   "smallie"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "ocean",
+        "label": "Atlantic Ocean (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 28,
+            "max": 31
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "28 to 31 inch slot"
+      },
+      {
+        "zone": "internal",
+        "label": "Internal coastal waters (sounds, rivers)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "inland",
+        "label": "NC inland impoundments (statewide; listed lakes differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "4 striped bass + hybrids combined",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 5,
-    "bagNote": "5, only 2 under 14 in",
-    "closed": false,
-    "sizeNote": "14 in minimum, except 2 under 14 in allowed"
-   }
-  ],
-  "notes": []
- },
- "40": {
-  "name": "Spotted Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [
-   "alabama bass",
-   "spot bass"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "41": {
-  "name": "Crappie",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [
-   "speck",
-   "black crappie",
-   "white crappie"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "no statewide limit; 8 in / 20 per day on many listed waters",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "42": {
-  "name": "Sunfish",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [
-   "bluegill",
-   "bream",
-   "redbreast",
-   "shellcracker"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "43": {
-  "name": "Rock Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [
-   "roanoke bass",
-   "redeye"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "44": {
-  "name": "White Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "7f7a0a8fa38d",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 10,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "45": {
-  "name": "White Perch",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "46": {
-  "name": "Mountain Trout",
-  "reviewed": "2026-10-04",
-  "rawHash": "e8ff80d6be15",
-  "aliases": [
-   "trout",
-   "brook trout",
-   "brown trout",
-   "rainbow trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "NC inland waters (statewide; listed waters differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 7,
-    "bagNote": "7 in hatchery-supported waters; 4 (7 in minimum) in wild trout waters",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Hatchery Supported waters close Mar 1 – Apr 2 each spring; Delayed Harvest waters are catch-and-release Oct 1 – early June."
-  ]
- },
- "47": {
-  "name": "Shrimp",
-  "reviewed": "2026-10-30",
-  "rawHash": "b3c9eb7b4c85",
-  "aliases": [
-   "shrimp",
-   "shrimps",
-   "white shrimp",
-   "brown shrimp",
-   "pink shrimp",
-   "cast net shrimp"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "48 quarts heads-on (30 heads-off) per person or vessel per day",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Shrimp trawls and other commercial gear need an RCGL. Check DMF proclamations for open/closed shrimping areas."
-  ]
- },
- "48": {
-  "name": "Bay Scallop",
-  "reviewed": "2026-10-30",
-  "rawHash": "3080a6f3e312",
-  "aliases": [
-   "scallop",
-   "scallops",
-   "bay scallops"
-  ],
-  "status": "closed",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "Closed — unlawful to possess",
-    "closed": true,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Bay scallop harvest has been closed statewide; watch DMF proclamations for any reopening."
-  ]
- },
- "49": {
-  "name": "Mussels",
-  "reviewed": "2026-10-30",
-  "rawHash": "9216eec1b40b",
-  "aliases": [
-   "mussel",
-   "blue mussels",
-   "ribbed mussels"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "NC coastal and joint waters (to 3 mi)",
-    "seasons": null,
-    "size": [],
-    "bag": 100,
-    "bagNote": "100 per day, max 200 per vessel",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- }
+    "notes": [
+      "Albemarle Sound Management Area: season closed; Central Southern Management Area: unlawful to possess (including hybrids). Unlawful to gig, spear, or gaff striped bass.",
+      "Inland impoundments (WRC): 20 in minimum, 4 per day; Roanoke River and coastal rivers follow their own management-area rules."
+    ],
+    "review": [
+      {
+        "field": "zone (Internal coastal waters)",
+        "current": "single 'Internal coastal waters' closed row",
+        "shouldBe": "Split into management areas: Albemarle Sound MA closed (slot 18–25 when open); Roanoke River MA (WRC, 18–22 inch slot, 1/day, season by proclamation); CSMA closed except upper Tar-Pamlico/Neuse April 1–30 by proclamation (18 inch min, none 22–27, 1/day); Cape Fear River closed; inland impoundments 20 inch min, 4 in combination. See 'Striped Bass (by management area)' row in this file.",
+        "quote": "Albemarle Sound Management Area:  SEASON CURRENTLY CLOSED; Central Southern Management Area (CSMA): Unlawful to possess striped bass (including hybrid bass);  Atlantic Ocean: Year-round: 1 per person per day and a harvest slot limit of 28 inches to 31 inches TL.",
+        "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "21": {
+    "name": "American Shad",
+    "reviewed": null,
+    "aliases": [],
+    "status": "open",
+    "zones": [],
+    "notes": [],
+    "review": [
+      {
+        "field": "limit",
+        "current": "aggregate creel limit by proclamation (D)",
+        "shouldBe": "FF-8-2026: 10 American/hickory shad in the aggregate per person per day; of those no more than 5 American shad in the Cape Fear River system, no more than 1 American shad in all other internal coastal/joint waters; Pamlico and Pungo rivers 10 aggregate (no American sub-cap printed); Atlantic Ocean: American shad possession prohibited, hickory 10. Hook-and-line only after April 14, 2026. WRC inland: 10 in combination incl. no more than 1 American (Cape Fear 5; Pee Dee/Pungo/Tar-Pamlico 10); Kerr, Gaston, Roanoke Rapids and Yadkin-Pee Dee above Blewett Falls: no American shad.",
+        "quote": "more than ten (10) American shad or hickory shad in the aggregate ... only five (5) of the ten (10) may be an American shad ... only one (1) of the ten (10) may be an American shad",
+        "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-8-2026 Commercial and Rec Shad season_Draft (003).pdf",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "22": {
+    "name": "Hickory Shad",
+    "reviewed": null,
+    "aliases": [],
+    "status": "open",
+    "zones": [],
+    "notes": [],
+    "review": [
+      {
+        "field": "limit",
+        "current": "aggregate creel limit by proclamation (D)",
+        "shouldBe": "10 American/hickory shad in the aggregate per person per day in internal coastal/joint waters; Atlantic Ocean 10 hickory shad per person per day; hook-and-line only after April 14, 2026 (FF-8-2026). WRC inland: 10 in combination.",
+        "quote": "more than ten (10) hickory shad per person per day for recreational purposes.",
+        "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-8-2026 Commercial and Rec Shad season_Draft (003).pdf",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "23": {
+    "name": "Alewife and Blueback Herring",
+    "reviewed": "2026-09-29",
+    "rawHash": "bf36f22fa23a",
+    "aliases": [
+      "river herring",
+      "alewife",
+      "blueback herring",
+      "herring"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Unlawful to possess."
+    ],
+    "photoOf": 71,
+    "review": [
+      {
+        "field": "zones",
+        "current": "statewide closed",
+        "shouldBe": "Keep closed for DMF coastal/joint waters. Add WRC inland zone: inland fishing waters generally none/none; inland waters of coastal rivers up to the first dam (Cape Fear–Buckhorn, Neuse–Falls Lake, Pee Dee–Blewett Falls, Roanoke–Roanoke Rapids, Tar–Rocky Mount Mill, Waccamaw–Lake Waccamaw), Lumber River and all other inland waters east of I-95: no river herring greater than 6 inches may be taken or possessed; Little Tennessee basin above Santeetlah/Cedar Cliff: no live possession.",
+        "quote": "No minimum size limit, but no river herring greater than 6 inches may be taken or possessed (regardless or origin)",
+        "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-size-creel-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "24": {
+    "name": "American Eel",
+    "reviewed": "2026-09-29",
+    "rawHash": "92fd4ac990f3",
+    "aliases": [
+      "eel"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "25": {
+    "name": "Scup",
+    "reviewed": "2026-09-29",
+    "rawHash": "dac661b3cb6e",
+    "aliases": [
+      "porgy"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "northhatteras",
+        "label": "North of Cape Hatteras",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 30,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "North of Cape Hatteras only."
+    ]
+  },
+  "26": {
+    "name": "Black Sea Bass",
+    "reviewed": "2026-09-29",
+    "rawHash": "d64b2a93a01e",
+    "aliases": [
+      "sea bass",
+      "bsb"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "northhatteras",
+        "label": "North of Cape Hatteras",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 13,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "southhatteras",
+        "label": "South of Cape Hatteras",
+        "seasons": null,
+        "size": [
+          {
+            "min": 13,
+            "max": null
+          }
+        ],
+        "bag": 7,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "28": {
+    "name": "Snapper-Grouper complex",
+    "reviewed": null,
+    "aliases": [],
+    "status": "open",
+    "zones": [],
+    "notes": [],
+    "review": [
+      {
+        "field": "whole row",
+        "current": "placeholder 'See the most recent Snapper/Grouper Complex recreational DMF proclamation'",
+        "shouldBe": "Replace with the per-species rows in this file (FF-45-2026, effective Oct 28, 2026, supersedes FF-40-2026). Keep the family heading text as the group description only.",
+        "quote": "This proclamation supersedes proclamation FF-40-2026 dated September 28, 2026. This proclamation implements the requirements of the final rule for Regulatory Amendment 36",
+        "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "29": {
+    "name": "Mullet",
+    "reviewed": "2026-09-29",
+    "rawHash": "982fc2c3d877",
+    "aliases": [
+      "striped mullet",
+      "white mullet",
+      "finger mullet"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 100,
+        "bagNote": "100 per day, species combined",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "limit",
+        "current": "100/Day (species combined)",
+        "shouldBe": "100 per person per day (striped and white combined), vessel limit 100 per angler up to a maximum of 400 per vessel; for-hire may hold 400 in advance of a trip.",
+        "quote": "The recreational vessel limit is 100 fish per angler fishing up to a maximum of 400 fish per vessel.",
+        "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "30": {
+    "name": "Spot",
+    "reviewed": "2026-09-29",
+    "rawHash": "e6809022ffd5",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "31": {
+    "name": "Atlantic Croaker",
+    "reviewed": "2026-09-29",
+    "rawHash": "e6809022ffd5",
+    "aliases": [
+      "croaker",
+      "hardhead"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "32": {
+    "name": "Blue Crab",
+    "reviewed": "2026-09-29",
+    "rawHash": "5e9582b89b6e",
+    "aliases": [
+      "crab",
+      "crabs"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 5,
+            "max": null
+          }
+        ],
+        "bag": 50,
+        "bagNote": "50 per person per day, max 100 per vessel",
+        "closed": false,
+        "sizeNote": "5 inch carapace width"
+      }
+    ],
+    "notes": [
+      "Closed Jan 1–31 north of the Highway 58 bridge and Mar 1–15 south of it."
+    ]
+  },
+  "33": {
+    "name": "Stone Crab",
+    "aliases": [
+      "stone crabs",
+      "stone crab claws"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": [
+          [
+            "08-16",
+            "06-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 2.75,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "No possession limit during the open season; claws only",
+        "closed": false,
+        "sizeNote": "2.75 inch claw (propodus) length"
+      }
+    ],
+    "notes": [
+      "Closed June 15 – August 15."
+    ],
+    "reviewed": "2026-10-30",
+    "rawHash": "277a924bf72f"
+  },
+  "34": {
+    "name": "Spiny Lobster",
+    "aliases": [
+      "lobster",
+      "lobsters",
+      "spiny lobsters"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 3,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 per trip",
+        "closed": false,
+        "sizeNote": "3 inch carapace length"
+      }
+    ],
+    "notes": [
+      "See the most recent DMF proclamation."
+    ],
+    "reviewed": "2026-10-30",
+    "rawHash": "299f06b0dd9a",
+    "review": [
+      {
+        "field": "notes",
+        "current": "",
+        "shouldBe": "Add: unlawful to possess egg-bearing lobster or one with eggs removed; no detached tails aboard or landed; no gaff/spear, nets, pots or traps; 2 per person per trip.",
+        "quote": "It is unlawful to possess aboard a vessel or land more than two spiny lobsters per person per trip.",
+        "sourceUrl": "https://files.nc.gov/deq/documents/2022-04/M-7-2022_SpinyLobster-FINAL.pdf",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "35": {
+    "name": "Hard Clam",
+    "reviewed": "2026-09-29",
+    "rawHash": "822145e96a22",
+    "aliases": [
+      "clam",
+      "clams"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 1,
+            "max": null
+          }
+        ],
+        "bag": 100,
+        "bagNote": "100 per day, max 200 per vessel",
+        "closed": false,
+        "sizeNote": "1 inch thick"
+      }
+    ],
+    "notes": []
+  },
+  "36": {
+    "name": "Oyster",
+    "aliases": [
+      "oyster",
+      "oysters"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": [
+          [
+            "10-15",
+            "03-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 3,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 bushel per day, max 2 bushels per vessel",
+        "closed": false,
+        "sizeNote": "3 inch shell length"
+      }
+    ],
+    "notes": [
+      "Season October 15 – March 31 unless closed earlier by proclamation; harvest only from open areas."
+    ],
+    "reviewed": "2026-10-30",
+    "rawHash": "b842efa5df01",
+    "review": [
+      {
+        "field": "season/size/limit",
+        "current": "SEASON CLOSED / UNLAWFUL TO POSSESS",
+        "shouldBe": "Open: season opened sunrise Oct 15, 2026 and closes March 31, 2027 (SF-1-2026). Size 3 inch shell length; 1 bushel per person per day, not to exceed 2 bushels per vessel per day; hand and hand-operated implements only; no harvest sunset to sunrise; polluted-area closures still apply.",
+        "quote": "Oyster (I) | 3\" Shell Length | 1 Buschel Oysters/Day not to exceed 2 Bushels Oysters/Vessel/Day",
+        "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "37": {
+    "name": "Conchs and Whelks",
+    "reviewed": "2026-09-29",
+    "rawHash": "8a0b278b7fc5",
+    "aliases": [
+      "conch",
+      "whelk"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 per day, max 20 per vessel",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "38": {
+    "name": "Largemouth Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "6c23d561041f",
+    "aliases": [
+      "largemouth",
+      "bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5, only 2 under 14 in",
+        "closed": false,
+        "sizeNote": "14 in minimum, except 2 under 14 in allowed"
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "notes/zones",
+        "current": "single statewide 14-inch/5 rule",
+        "shouldBe": "Add printed exceptions: Albemarle/Currituck/Roanoke sounds and listed NE rivers 14-inch minimum, 5 (no under-14 allowance); New Lake, Pungo Lake, Lake Raleigh, Sutton Lake, Lake Hampton 14-inch min, 2 under 14, none 16–20 inches; Lake Phelps 14-inch min, none 16–20, 5; Buckhorn Reservoir 16-inch min, 5; Cane Creek Lake & Lake Mattamuskeet 16-inch min, only 1 over 20, 5; Lake Thom-A-Lex 18-inch min, 5; Lake Chatuge 12-inch min, 10 black bass combined; Lake Santeetlah/Cammack/Holt and New River (Alleghany) special slot rules; Jean Guite Creek and Martin Marietta Park ponds: no largemouth bass may be possessed.",
+        "quote": "Lake Thom-A-Lex (Davidson Co.) | 18-inch minimum | 5 | Jean Guite Creek and assoicated canals within the Town of Southern Shores (Dare Co.) | No largemouth bass may be possessed",
+        "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "39": {
+    "name": "Smallmouth Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "6c23d561041f",
+    "aliases": [
+      "smallmouth",
+      "smallie"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5, only 2 under 14 in",
+        "closed": false,
+        "sizeNote": "14 in minimum, except 2 under 14 in allowed"
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "notes/zones",
+        "current": "single statewide 14-inch/5 rule",
+        "shouldBe": "Add exceptions: Lake Chatuge no minimum, 10 black bass combined; New River (Alleghany Co.) no minimum, none 14–22 inches, only 1 largemouth/smallmouth over 22, 5 combined; Lake Santeetlah no minimum, no creel under 14 inches, 5 largemouth/smallmouth over 14 combined.",
+        "quote": "New River (Alleghany Co. portion downstream of Fields Dam in Grayson Co., VA) | No minimum size limit, none between 14–22 inches may be possessed, and only 1 largemouth bass or smallmouth bass may be greater than 22 inches",
+        "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "40": {
+    "name": "Spotted Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "alabama bass",
+      "spot bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "aliases/notes",
+        "current": "Spotted Bass | None | No limit",
+        "shouldBe": "Row covers 'Alabama Bass And Spotted Bass' — add alias Alabama bass and the Lake Chatuge exception (no minimum, 10 black bass in combination).",
+        "quote": "Alabama Bass And Spotted Bass — All public waters except those listed below: | None | None | Lake Chatuge (Clay Co.) | No minimum size limit | 10 largemouth bass, smallmouth bass, Alabama bass, and spotted bass in combination",
+        "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "41": {
+    "name": "Crappie",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "speck",
+      "black crappie",
+      "white crappie"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "no statewide limit; 8 in / 20 per day on many listed waters",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "notes/zones",
+        "current": "notes mention 8 in / 20 for many waters",
+        "shouldBe": "Add: Buckhorn Reservoir 20 in combination (no size); Lake Chatuge 30 in combination; John H. Kerr Reservoir 9-inch minimum, 25; Cashie, Eastmost, Middle and Roanoke rivers below Roanoke Rapids Dam and Lake Mattamuskeet 10-inch minimum, 20.",
+        "quote": "John H. Kerr Reservoir | 9-inch minimum | 25 in combination | Cashie, Eastmost, Middle, and Roanoke River (downstream of Roanoke Rapids Dam), and their tributaries | 10-inch minimum | 20 in combination",
+        "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "42": {
+    "name": "Sunfish",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "bluegill",
+      "bream",
+      "redbreast",
+      "shellcracker"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "43": {
+    "name": "Rock Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "roanoke bass",
+      "redeye"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "size/limit",
+        "current": "None / No limit",
+        "shouldBe": "West of I-77: no limit. All public waters east of I-77: 8-inch minimum, 2 in combination with Roanoke bass.",
+        "quote": "Rock Bass and Roanoke Bass — All public fishing waters except those listed below: | None | All public waters east of I-77 | 8-inch minimum | 2 in combination",
+        "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "44": {
+    "name": "White Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "7f7a0a8fa38d",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "45": {
+    "name": "White Perch",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "notes",
+        "current": "No limit",
+        "shouldBe": "Add: in and west of Buncombe, Haywood and Rutherford counties no live white perch may be possessed, transported or released.",
+        "quote": "All public fishing waters in and west of Buncombe, Haywood, and Rutherford counties | No live white perch may be possessed, transported or released.",
+        "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "46": {
+    "name": "Mountain Trout",
+    "reviewed": "2026-10-04",
+    "rawHash": "e8ff80d6be15",
+    "aliases": [
+      "trout",
+      "brook trout",
+      "brown trout",
+      "rainbow trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland waters (statewide; listed waters differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 7,
+        "bagNote": "7 in hatchery-supported waters; 4 (7 in minimum) in wild trout waters",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Hatchery Supported waters close Mar 1 – Apr 2 each spring; Delayed Harvest waters are catch-and-release Oct 1 – early June."
+    ],
+    "review": [
+      {
+        "field": "zones",
+        "current": "Hatchery Supported and Wild Trout only",
+        "shouldBe": "Add Delayed Harvest waters (Oct 1, 2026 – June 4, 2027 no trout may be possessed, artificial single-hook lures only; June 5 – July 31 and Aug 1 – Sept 30: no size, 7); Catch and Release/Artificial Flies and Lures Only waters (no trout may be possessed, year-round); Special Regulation waters: Catawba River Muddy Creek to Morganton intake 14 inches, 2; Apalachia Reservoir 3 per day, only one over 14 inches; Wild Trout 7 inches, 4, artificial single-hook lures only; Hatchery Supported closed March 1 – April 2, 2027 (no fishing) except listed no-closed-season waters.",
+        "quote": "DELAYED HARVEST TROUT WATERS Oct. 1, 2026 – June 4, 2027 **No trout may be possessed ... SPECIAL REGULATION TROUT WATERS No closed season Catawba River from Muddy Creek to Morganton water intake dam | 14 inches | 2",
+        "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/general-mountain-trout-regulations",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "47": {
+    "name": "Shrimp",
+    "reviewed": "2026-10-30",
+    "rawHash": "b3c9eb7b4c85",
+    "aliases": [
+      "shrimp",
+      "shrimps",
+      "white shrimp",
+      "brown shrimp",
+      "pink shrimp",
+      "cast net shrimp"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "48 quarts heads-on (30 heads-off) per person or vessel per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Shrimp trawls and other commercial gear need an RCGL. Check DMF proclamations for open/closed shrimping areas."
+    ]
+  },
+  "48": {
+    "name": "Bay Scallop",
+    "reviewed": "2026-10-30",
+    "rawHash": "3080a6f3e312",
+    "aliases": [
+      "scallop",
+      "scallops",
+      "bay scallops"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Closed — unlawful to possess",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Bay scallop harvest has been closed statewide; watch DMF proclamations for any reopening."
+    ]
+  },
+  "49": {
+    "name": "Mussels",
+    "reviewed": "2026-10-30",
+    "rawHash": "9216eec1b40b",
+    "aliases": [
+      "mussel",
+      "blue mussels",
+      "ribbed mussels"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 100,
+        "bagNote": "100 per day, max 200 per vessel",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "50": {
+    "name": "Gag Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "3c10c22fda6f",
+    "aliases": [
+      "gag",
+      "gag grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "08-01"
+          ]
+        ],
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (gag or black grouper, not both); 2 gag/black combined per private vessel per day; for-hire 2 per vessel per trip",
+        "closed": false,
+        "sizeNote": "24 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "08-01"
+          ]
+        ],
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (gag or black grouper, not both); 2 gag/black combined per private vessel per day; for-hire 2 per vessel per trip",
+        "closed": false,
+        "sizeNote": "24 inch total length"
+      }
+    ],
+    "notes": [
+      "2026 gag season ran May 1 – Aug 1, 2026; it is closed now. The general shallow-water grouper window is May 1 – Dec 31 but gag has its own shorter season set by proclamation.",
+      "Only one gag OR one black grouper per person, and no more than two gag/black combined on a private boat per day (two per trip on a charter/headboat).",
+      "For-hire captains and crew may not keep gag or black grouper.",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess black grouper or gag grouper less than 24 inches total length. ... It shall be unlawful to possess gag grouper except from 12:01 A.M. on May 1, 2026 through 11:59 P.M. on August 1,2026, subject to the bag and vessel limits in Section XVII. B"
+  },
+  "51": {
+    "name": "Black Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "908fecd048e3",
+    "aliases": [
+      "black grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (gag or black grouper, not both); 2 gag/black combined per private vessel per day; for-hire 2 per vessel per trip",
+        "closed": false,
+        "sizeNote": "24 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (gag or black grouper, not both); 2 gag/black combined per private vessel per day; for-hire 2 per vessel per trip",
+        "closed": false,
+        "sizeNote": "24 inch total length"
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – Apr 30 (shallow-water grouper closure).",
+      "Only one gag OR one black grouper per person, and no more than two gag/black combined on a private boat per day (two per trip on a charter/headboat). For-hire captains and crew may not keep them.",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess black grouper or gag grouper less than 24 inches total length. ... except from May 1 through December 31 each year: gag grouper, black grouper, rock hind, red hind, coney, graysby, yellowfin grouper, scamp and yellowmouth grouper."
+  },
+  "52": {
+    "name": "Red Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "dde56b16bacb",
+    "aliases": [
+      "red grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "06-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "06-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – May 31.",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess red grouper, yellowfin (fireback) grouper, yellowmouth grouper or scamp less than 20 inches total length. ... It shall be unlawful to possess red grouper except from June 1 through December 31 each year"
+  },
+  "53": {
+    "name": "Scamp",
+    "reviewed": "2026-10-31",
+    "rawHash": "a93eff050994",
+    "aliases": [
+      "scamp grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (scamp or yellowmouth, not both) within 3-fish grouper aggregate",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (scamp or yellowmouth, not both) within 3-fish grouper aggregate",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – Apr 30 (shallow-water grouper closure).",
+      "Only one scamp OR one yellowmouth grouper per person per day.",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess red grouper, yellowfin (fireback) grouper, yellowmouth grouper or scamp less than 20 inches total length. ... No more than one (1) may be a scamp or yellowmouth grouper (but not both) per person per day."
+  },
+  "54": {
+    "name": "Yellowmouth Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "a93eff050994",
+    "aliases": [
+      "yellowmouth"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (scamp or yellowmouth, not both) within 3-fish grouper aggregate",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day (scamp or yellowmouth, not both) within 3-fish grouper aggregate",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – Apr 30 (shallow-water grouper closure).",
+      "Only one scamp OR one yellowmouth grouper per person per day.",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess red grouper, yellowfin (fireback) grouper, yellowmouth grouper or scamp less than 20 inches total length. ... No more than one (1) may be a scamp or yellowmouth grouper (but not both) per person per day."
+  },
+  "55": {
+    "name": "Yellowfin Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "6d20824757ff",
+    "aliases": [
+      "fireback grouper",
+      "yellowfin (fireback) grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": "20 inch total length"
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – Apr 30 (shallow-water grouper closure).",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess red grouper, yellowfin (fireback) grouper, yellowmouth grouper or scamp less than 20 inches total length."
+  },
+  "56": {
+    "name": "Rock Hind",
+    "reviewed": "2026-10-31",
+    "rawHash": "b34b2d28993f",
+    "aliases": [
+      "rock hind grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – Apr 30 (shallow-water grouper closure).",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess the following grouper species taken from the waters under the jurisdiction of North Carolina or the South Atlantic Fishery Management Council except from May 1 through December 31 each year: gag grouper, black grouper, rock hind, red hind, coney, graysby, yellowfin grouper, scamp and yellowmouth grouper."
+  },
+  "57": {
+    "name": "Red Hind",
+    "reviewed": "2026-10-31",
+    "rawHash": "b34b2d28993f",
+    "aliases": [
+      "red hind grouper",
+      "strawberry grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – Apr 30 (shallow-water grouper closure).",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess the following grouper species taken from the waters under the jurisdiction of North Carolina or the South Atlantic Fishery Management Council except from May 1 through December 31 each year: gag grouper, black grouper, rock hind, red hind, coney, graysby, yellowfin grouper, scamp and yellowmouth grouper."
+  },
+  "58": {
+    "name": "Coney",
+    "reviewed": "2026-10-31",
+    "rawHash": "b34b2d28993f",
+    "aliases": [
+      "coney grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – Apr 30 (shallow-water grouper closure).",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess the following grouper species taken from the waters under the jurisdiction of North Carolina or the South Atlantic Fishery Management Council except from May 1 through December 31 each year: gag grouper, black grouper, rock hind, red hind, coney, graysby, yellowfin grouper, scamp and yellowmouth grouper."
+  },
+  "59": {
+    "name": "Graysby",
+    "reviewed": "2026-10-31",
+    "rawHash": "b34b2d28993f",
+    "aliases": [
+      "graysby grouper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Closed Jan 1 – Apr 30 (shallow-water grouper closure).",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess the following grouper species taken from the waters under the jurisdiction of North Carolina or the South Atlantic Fishery Management Council except from May 1 through December 31 each year: gag grouper, black grouper, rock hind, red hind, coney, graysby, yellowfin grouper, scamp and yellowmouth grouper."
+  },
+  "60": {
+    "name": "Snowy Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "24ecca6686f5",
+    "aliases": [
+      "snowy"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited (season re-opens May 1, 2027; then 1 per vessel per day)",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited (season re-opens May 1, 2027; then 1 per vessel per day)",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Closed now; the recreational season re-opens May 1, 2027. When open: 1 snowy grouper per vessel per day.",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess snowy grouper taken from waters under the jurisdiction of North Carolina or the South Atlantic Fishery Management Council. The snowy grouper recreational season will re-open May 1, 2027. ... No more than one (1) snowy grouper per vessel per day."
+  },
+  "61": {
+    "name": "Yellowedge Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "df25bbdd9fd9",
+    "aliases": [
+      "yellowedge"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "The Deepwater Complex includes yellowedge grouper, silk snapper, misty grouper ... Yellowedge grouper, misty grouper and sand tilefish are included in the three (3) fish aggregate"
+  },
+  "62": {
+    "name": "Misty Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "df25bbdd9fd9",
+    "aliases": [
+      "misty"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "The Deepwater Complex includes yellowedge grouper, silk snapper, misty grouper ... Yellowedge grouper, misty grouper and sand tilefish are included in the three (3) fish aggregate"
+  },
+  "63": {
+    "name": "Speckled Hind",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "kitty mitchell",
+      "speckled hind grouper"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Must be released immediately in all NC and South Atlantic federal waters; use a descending device.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess speckled hind, warsaw grouper, Nassau grouper, and goliath grouper."
+  },
+  "64": {
+    "name": "Warsaw Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "warsaw"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Must be released immediately in all NC and South Atlantic federal waters; use a descending device.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess speckled hind, warsaw grouper, Nassau grouper, and goliath grouper."
+  },
+  "65": {
+    "name": "Nassau Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "nassau"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Must be released immediately in all NC and South Atlantic federal waters; use a descending device.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess speckled hind, warsaw grouper, Nassau grouper, and goliath grouper."
+  },
+  "66": {
+    "name": "Goliath Grouper",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "goliath",
+      "jewfish"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Must be released immediately in all NC and South Atlantic federal waters; use a descending device.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess speckled hind, warsaw grouper, Nassau grouper, and goliath grouper."
+  },
+  "67": {
+    "name": "Greater Amberjack",
+    "reviewed": "2026-10-31",
+    "rawHash": "41b9aebe9486",
+    "aliases": [
+      "amberjack",
+      "AJ"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "03-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 28,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day",
+        "closed": false,
+        "sizeNote": "28 inch fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "03-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 28,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day",
+        "closed": false,
+        "sizeNote": "28 inch fork length"
+      }
+    ],
+    "notes": [
+      "Closed the month of April each year.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess greater amberjack less than 28 inches fork length. ... It shall be unlawful to possess more than one (1) greater amberjack per person per day. ... from April 1 through April 30 each year."
+  },
+  "68": {
+    "name": "Other Jacks (almaco jack, banded rudderfish, lesser amberjack)",
+    "reviewed": "2026-10-31",
+    "rawHash": "bd6911b90620",
+    "aliases": [
+      "almaco jack",
+      "banded rudderfish",
+      "lesser amberjack",
+      "other jacks complex"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 20-fish per person per day aggregate; no more than 10 of the aggregate may be whitebone, jolthead, knobbed or saucereye porgy, scup (south of Cape Hatteras), gray triggerfish, bar jack, almaco jack, banded rudderfish, lesser amberjack, white grunt, margate, sailor's choice or spadefish combined.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "The Other Jacks Complex includes almaco jack, banded rudderfish, and lesser amberjack. These species are included in the twenty (20) fish aggregate per person per day recreational bag and possession limit in Section XVII. C."
+  },
+  "69": {
+    "name": "Bar Jack",
+    "reviewed": "2026-10-31",
+    "rawHash": "bd6911b90620",
+    "aliases": [
+      "bar jack"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 20-fish per person per day aggregate; no more than 10 of the aggregate may be whitebone, jolthead, knobbed or saucereye porgy, scup (south of Cape Hatteras), gray triggerfish, bar jack, almaco jack, banded rudderfish, lesser amberjack, white grunt, margate, sailor's choice or spadefish combined.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "whitebone porgy, jolthead porgy, knobbed porgy, saucereye porgy, scup (south of Cape Hatteras, 35° 15.0321’ N. Latitude), gray triggerfish, bar jack, almaco jack, banded rudderfish, lesser amberjack, white grunt, margate, sailor’s choice and spadefish."
+  },
+  "70": {
+    "name": "Red Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "9728abca9011",
+    "aliases": [
+      "American red snapper"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Closed. NOAA opens short red snapper seasons by announcement (the 2026 season was Oct 9–11, 1 per person, no size limit); watch DMF proclamations and safmc.net for the next one.",
+      "Also listed on the DMF prohibited finfish list for coastal and joint waters.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess red snapper taken from waters under the jurisdiction of North Carolina or the South Atlantic Fishery Management Council."
+  },
+  "71": {
+    "name": "Vermilion Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "cc04b17aea22",
+    "aliases": [
+      "beeliner",
+      "b-liner"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      }
+    ],
+    "notes": [
+      "Vermilion snapper has its own 5-fish limit and is not counted in the 10-fish snapper aggregate.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess vermilion snapper (beeliner) less than 12 inches total length. It shall be unlawful to possess more than five (5) vermilion snapper per person per day."
+  },
+  "72": {
+    "name": "Hogfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "74a9c7c433e9",
+    "aliases": [
+      "hog snapper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 17,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 per person per day",
+        "closed": false,
+        "sizeNote": "17 inch fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 17,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 per person per day",
+        "closed": false,
+        "sizeNote": "17 inch fork length"
+      }
+    ],
+    "notes": [
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess hogfish less than 17 inches fork length. It shall be unlawful to possess more than two (2) hogfish per person per day."
+  },
+  "73": {
+    "name": "Yellowtail Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "1eaaff1351c0",
+    "aliases": [
+      "yellowtail"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate per person per day (silk, blackfin, yellowtail, cubera, queen, gray, mutton, lane); no more than 5 may be mutton snapper.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "yellowtail snapper, cubera snapper, and gray snapper less than 12 inches total length ... It shall be unlawful to possess more than ten (10) of the following species of snappers in the aggregate per person per day"
+  },
+  "74": {
+    "name": "Cubera Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "1eaaff1351c0",
+    "aliases": [
+      "cubera"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate per person per day (silk, blackfin, yellowtail, cubera, queen, gray, mutton, lane); no more than 5 may be mutton snapper.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "yellowtail snapper, cubera snapper, and gray snapper less than 12 inches total length ... It shall be unlawful to possess more than ten (10) of the following species of snappers in the aggregate per person per day"
+  },
+  "75": {
+    "name": "Gray Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "1eaaff1351c0",
+    "aliases": [
+      "mangrove snapper",
+      "mango snapper",
+      "grey snapper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate per person per day (silk, blackfin, yellowtail, cubera, queen, gray, mutton, lane); no more than 5 may be mutton snapper.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "yellowtail snapper, cubera snapper, and gray snapper less than 12 inches total length ... It shall be unlawful to possess more than ten (10) of the following species of snappers in the aggregate per person per day"
+  },
+  "76": {
+    "name": "Mutton Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "35a524981bf2",
+    "aliases": [
+      "mutton"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person per day within the 10-fish snapper aggregate",
+        "closed": false,
+        "sizeNote": "18 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person per day within the 10-fish snapper aggregate",
+        "closed": false,
+        "sizeNote": "18 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate per person per day (silk, blackfin, yellowtail, cubera, queen, gray, mutton, lane); no more than 5 may be mutton snapper.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess mutton snapper less than 18 inches total length. ... No more than five (5) may be mutton snapper per person per day within the ten (10) fish snapper aggregate."
+  },
+  "77": {
+    "name": "Lane Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "0be3d4a44ada",
+    "aliases": [
+      "lane"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 8,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": "8 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 8,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": "8 inch total length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate per person per day (silk, blackfin, yellowtail, cubera, queen, gray, mutton, lane); no more than 5 may be mutton snapper.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess lane snapper less than 8 inches total length."
+  },
+  "78": {
+    "name": "Silk Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "35611153f4b5",
+    "aliases": [
+      "silk"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate per person per day (silk, blackfin, yellowtail, cubera, queen, gray, mutton, lane); no more than 5 may be mutton snapper.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "Silk snapper, queen snapper and blackfin snapper are included in the ten (10) fish aggregate"
+  },
+  "79": {
+    "name": "Queen Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "35611153f4b5",
+    "aliases": [
+      "queen"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate per person per day (silk, blackfin, yellowtail, cubera, queen, gray, mutton, lane); no more than 5 may be mutton snapper.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "Silk snapper, queen snapper and blackfin snapper are included in the ten (10) fish aggregate"
+  },
+  "80": {
+    "name": "Blackfin Snapper",
+    "reviewed": "2026-10-31",
+    "rawHash": "35611153f4b5",
+    "aliases": [
+      "blackfin"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10-fish snapper aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 10-fish snapper aggregate per person per day (silk, blackfin, yellowtail, cubera, queen, gray, mutton, lane); no more than 5 may be mutton snapper.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "Silk snapper, queen snapper and blackfin snapper are included in the ten (10) fish aggregate"
+  },
+  "81": {
+    "name": "Red Porgy",
+    "reviewed": "2026-10-31",
+    "rawHash": "56df20d0c141",
+    "aliases": [
+      "pink snapper",
+      "silver snapper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "06-30"
+          ]
+        ],
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day or per trip, whichever is more restrictive",
+        "closed": false,
+        "sizeNote": "14 inch total length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "06-30"
+          ]
+        ],
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day or per trip, whichever is more restrictive",
+        "closed": false,
+        "sizeNote": "14 inch total length"
+      }
+    ],
+    "notes": [
+      "Only open May 1 – June 30; one fish per person per day or per trip (multi-day trips still get one).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess red porgy less than 14 inches total length. It shall be unlawful to possess more than one (1) red porgy per person per day, or one (1) red porgy per person per trip, whichever is more restrictive. It shall be unlawful to possess red porgy except from May 1 through June 30 each year."
+  },
+  "82": {
+    "name": "Other Porgies (jolthead, knobbed, whitebone, saucereye)",
+    "reviewed": "2026-10-31",
+    "rawHash": "bd6911b90620",
+    "aliases": [
+      "jolthead porgy",
+      "knobbed porgy",
+      "whitebone porgy",
+      "saucereye porgy",
+      "porgies complex"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 20-fish per person per day aggregate; no more than 10 of the aggregate may be whitebone, jolthead, knobbed or saucereye porgy, scup (south of Cape Hatteras), gray triggerfish, bar jack, almaco jack, banded rudderfish, lesser amberjack, white grunt, margate, sailor's choice or spadefish combined.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "The Porgies Complex includes jolthead porgy, knobbed porgy, whitebone porgy, saucereye porgy, and scup. These species are included in the twenty (20) fish in the aggregate per person per day recreational bag and possession limit in Section XVII. C."
+  },
+  "83": {
+    "name": "Scup (South of Cape Hatteras)",
+    "reviewed": "2026-10-31",
+    "rawHash": "bd6911b90620",
+    "aliases": [
+      "porgy",
+      "scup south of Cape Hatteras"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "southofhatteras",
+        "label": "Atlantic Ocean south of Cape Hatteras (35° 15.0321' N) incl. federal waters",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "South of Cape Hatteras there is no size limit; scup counts in the snapper-grouper 20-fish aggregate (max 10 of the listed species). North of Cape Hatteras: 9 inch minimum, 30 per person per day.",
+      "Counts toward the 20-fish per person per day aggregate; no more than 10 of the aggregate may be whitebone, jolthead, knobbed or saucereye porgy, scup (south of Cape Hatteras), gray triggerfish, bar jack, almaco jack, banded rudderfish, lesser amberjack, white grunt, margate, sailor's choice or spadefish combined."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "scup (south of Cape Hatteras, 35° 15.0321’ N. Latitude), gray triggerfish, bar jack ... within the twenty (20) fish per person per day aggregate bag limit"
+  },
+  "84": {
+    "name": "Golden Tilefish",
+    "reviewed": "2026-10-31",
+    "rawHash": "81125538295f",
+    "aliases": [
+      "tilefish",
+      "golden tile"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited until Jan 1, 2027 (then 1 per person per day)",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited until Jan 1, 2027 (then 1 per person per day)",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Closed for the rest of 2026; re-opens Jan 1, 2027 at 1 per person per day. The federal season typically closes again once the catch limit is met.",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess golden tilefish taken from waters under the jurisdiction of North Carolina or the South Atlantic Fishery Management Council. The golden tilefish recreational season will re-open January 1, 2027. ... No more than one (1) golden tilefish per person per day."
+  },
+  "85": {
+    "name": "Blueline Tilefish",
+    "reviewed": "2026-10-31",
+    "rawHash": "bd89f0913744",
+    "aliases": [
+      "gray tilefish",
+      "blueline"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "05-01",
+            "08-31"
+          ]
+        ],
+        "size": [],
+        "bag": 2,
+        "bagNote": "2 per person per day within 3-fish grouper/tilefish aggregate",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "05-01",
+            "08-31"
+          ]
+        ],
+        "size": [],
+        "bag": 2,
+        "bagNote": "2 per person per day within 3-fish grouper/tilefish aggregate",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Open May 1 – Aug 31 only. For-hire captains and crew may not keep blueline tilefish.",
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess blueline tilefish except from May 1 through August 31 each year, subject to the bag limits in Section XVII. B. ... No more than two (2) blueline tilefish per person per day."
+  },
+  "86": {
+    "name": "Sand Tilefish",
+    "reviewed": "2026-10-31",
+    "rawHash": "df25bbdd9fd9",
+    "aliases": [
+      "sand tile"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3-fish grouper/tilefish aggregate per person per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 3-fish grouper/tilefish aggregate per person per day (gag, black, snowy, misty, red, rock hind, red hind, coney, graysby, yellowedge, yellowfin, scamp, yellowmouth, blueline tilefish, golden tilefish, sand tilefish).",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "Yellowedge grouper, misty grouper and sand tilefish are included in the three (3) fish aggregate"
+  },
+  "87": {
+    "name": "Gray Triggerfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "007d02244fc8",
+    "aliases": [
+      "triggerfish",
+      "trigger"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": "12 inch fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": "12 inch fork length"
+      }
+    ],
+    "notes": [
+      "Counts toward the 20-fish per person per day aggregate; no more than 10 of the aggregate may be whitebone, jolthead, knobbed or saucereye porgy, scup (south of Cape Hatteras), gray triggerfish, bar jack, almaco jack, banded rudderfish, lesser amberjack, white grunt, margate, sailor's choice or spadefish combined.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess gray triggerfish less than 12 inches fork length and is subject to the bag limits in Section XVII. C."
+  },
+  "88": {
+    "name": "Wreckfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "12b095e6afbd",
+    "aliases": [
+      "wreckfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": [
+          [
+            "07-01",
+            "08-31"
+          ]
+        ],
+        "size": [],
+        "bag": null,
+        "bagNote": "1 per vessel per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": [
+          [
+            "07-01",
+            "08-31"
+          ]
+        ],
+        "size": [],
+        "bag": null,
+        "bagNote": "1 per vessel per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "One fish per boat per day, July and August only.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "It shall be unlawful to possess more than one (1) wreckfish per vessel per day. It shall be unlawful to possess wreckfish except from July 1 through August 31 of each year."
+  },
+  "89": {
+    "name": "Grunts (white grunt, margate, sailor's choice)",
+    "reviewed": "2026-10-31",
+    "rawHash": "bd6911b90620",
+    "aliases": [
+      "white grunt",
+      "margate",
+      "sailor's choice",
+      "sailors choice",
+      "grunt"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 20-fish per person per day aggregate; no more than 10 of the aggregate may be whitebone, jolthead, knobbed or saucereye porgy, scup (south of Cape Hatteras), gray triggerfish, bar jack, almaco jack, banded rudderfish, lesser amberjack, white grunt, margate, sailor's choice or spadefish combined.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "white grunt, margate, sailor’s choice and spadefish. ... It shall be unlawful to possess more than ten (10) of the following species of fish within the twenty (20) fish per person per day aggregate bag limit"
+  },
+  "90": {
+    "name": "Atlantic Spadefish",
+    "reviewed": "2026-10-31",
+    "rawHash": "bd6911b90620",
+    "aliases": [
+      "spadefish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi, SAFMC)",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20-fish aggregate per person per day; no more than 10 of listed species",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Counts toward the 20-fish per person per day aggregate; no more than 10 of the aggregate may be whitebone, jolthead, knobbed or saucereye porgy, scup (south of Cape Hatteras), gray triggerfish, bar jack, almaco jack, banded rudderfish, lesser amberjack, white grunt, margate, sailor's choice or spadefish combined.",
+      "Snapper-grouper gear rules: non-offset, non-stainless circle hooks with natural bait; a dehooking tool and a descending device (16 oz weight, 60 ft line) must be on board; fish must be landed with heads and fins intact.",
+      "Federal rules apply in both state and SAFMC waters; seasons can close early when catch limits are met — check safmc.net/regulations."
+    ],
+    "sourceId": "nc-sg-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+    "auditQuote": "white grunt, margate, sailor’s choice and spadefish. ... within the twenty (20) fish per person per day aggregate bag limit"
+  },
+  "91": {
+    "name": "Atlantic Sharpnose Shark",
+    "reviewed": "2026-10-31",
+    "rawHash": "8ab71434e642",
+    "aliases": [
+      "sharpnose",
+      "sharpnose shark"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per person per calendar day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Boat anglers: 1 Atlantic sharpnose and 1 bonnethead per person per day, plus only ONE additional shark from the permitted list per vessel per day regardless of how many people are aboard. Shore anglers: 1 sharpnose, 1 bonnethead and 1 other permitted shark per person per day.",
+      "Sharks (except spiny dogfish) must be caught on rod and reel or handline using a non-stainless, non-offset circle hook when using natural bait.",
+      "Keep sharks whole: head, tail and fins must stay attached until offloaded at the dock (you may gut and bleed the carcass).",
+      "Federal HMS Angling permit required for sharks in state or federal waters (hmspermits.noaa.gov). No sharks may be possessed in WRC inland fishing waters."
+    ],
+    "sourceId": "nc-shark-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+    "auditQuote": "Atlantic sharpnose None 1 per person of each species ... Jan. 1 – Dec. 31 ... One (1) Atlantic sharpnose and one (1) bonnethead may be possessed per person per calendar day"
+  },
+  "92": {
+    "name": "Bonnethead Shark",
+    "reviewed": "2026-10-31",
+    "rawHash": "8ab71434e642",
+    "aliases": [
+      "bonnethead"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per person per calendar day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Boat anglers: 1 Atlantic sharpnose and 1 bonnethead per person per day, plus only ONE additional shark from the permitted list per vessel per day regardless of how many people are aboard. Shore anglers: 1 sharpnose, 1 bonnethead and 1 other permitted shark per person per day.",
+      "Sharks (except spiny dogfish) must be caught on rod and reel or handline using a non-stainless, non-offset circle hook when using natural bait.",
+      "Keep sharks whole: head, tail and fins must stay attached until offloaded at the dock (you may gut and bleed the carcass).",
+      "Federal HMS Angling permit required for sharks in state or federal waters (hmspermits.noaa.gov). No sharks may be possessed in WRC inland fishing waters."
+    ],
+    "sourceId": "nc-shark-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+    "auditQuote": "Bonnethead None ... One (1) Atlantic sharpnose and one (1) bonnethead may be possessed per person per calendar day"
+  },
+  "93": {
+    "name": "Hammerhead Sharks (great, scalloped, smooth)",
+    "reviewed": "2026-10-31",
+    "rawHash": "df1a497b40ab",
+    "aliases": [
+      "great hammerhead",
+      "scalloped hammerhead",
+      "smooth hammerhead",
+      "hammerhead"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 78,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 per vessel per calendar day (shore anglers 1 per person)",
+        "closed": false,
+        "sizeNote": "78 inch fork length"
+      }
+    ],
+    "notes": [
+      "A hammerhead counts as the single 'additional shark' allowed per boat per day.",
+      "You may not have a hammerhead on board while also possessing tuna, billfish or swordfish.",
+      "Sharks (except spiny dogfish) must be caught on rod and reel or handline using a non-stainless, non-offset circle hook when using natural bait.",
+      "Keep sharks whole: head, tail and fins must stay attached until offloaded at the dock (you may gut and bleed the carcass).",
+      "Federal HMS Angling permit required for sharks in state or federal waters (hmspermits.noaa.gov). No sharks may be possessed in WRC inland fishing waters."
+    ],
+    "sourceId": "nc-shark-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+    "auditQuote": "Hammerheads (Great, Smooth and Scalloped) 78” ... 1 per vessel *OR 1 per person for shore-anglers** ... scalloped hammerhead sharks less than 78 inches fork length. ... It shall be unlawful to possess a great hammerhead, scalloped hammerhead, smooth hammerhead ... while in possession of tunas, billfish or swordfish."
+  },
+  "94": {
+    "name": "Large Coastal Sharks (blacktip, bull, lemon, nurse, spinner, tiger)",
+    "reviewed": "2026-10-31",
+    "rawHash": "b42759b9a60b",
+    "aliases": [
+      "blacktip shark",
+      "bull shark",
+      "lemon shark",
+      "nurse shark",
+      "spinner shark",
+      "tiger shark",
+      "large coastal sharks",
+      "LCS"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 54,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 per vessel per calendar day (shore anglers 1 per person)",
+        "closed": false,
+        "sizeNote": "54 inch fork length"
+      }
+    ],
+    "notes": [
+      "Only non-ridgeback large coastal sharks (plus tiger) may be kept; sandbar, dusky, silky and other ridgeback species are prohibited.",
+      "Boat anglers: 1 Atlantic sharpnose and 1 bonnethead per person per day, plus only ONE additional shark from the permitted list per vessel per day regardless of how many people are aboard. Shore anglers: 1 sharpnose, 1 bonnethead and 1 other permitted shark per person per day.",
+      "Sharks (except spiny dogfish) must be caught on rod and reel or handline using a non-stainless, non-offset circle hook when using natural bait.",
+      "Keep sharks whole: head, tail and fins must stay attached until offloaded at the dock (you may gut and bleed the carcass).",
+      "Federal HMS Angling permit required for sharks in state or federal waters (hmspermits.noaa.gov). No sharks may be possessed in WRC inland fishing waters."
+    ],
+    "sourceId": "nc-shark-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+    "auditQuote": "Non-Hammerhead Large Coastal Sharks (LCS), Non-Shortfin mako and NonOceanic whitetip-Pelagic Sharks, Blacknose and Finetooth 54” ... It shall be unlawful to possess nonhammerhead Large Coastal Shark species ... less than 54 inches fork length."
+  },
+  "95": {
+    "name": "Pelagic Sharks (blue, porbeagle, thresher)",
+    "reviewed": "2026-10-31",
+    "rawHash": "b42759b9a60b",
+    "aliases": [
+      "blue shark",
+      "porbeagle",
+      "thresher shark",
+      "common thresher",
+      "pelagic sharks"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 54,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 per vessel per calendar day (shore anglers 1 per person)",
+        "closed": false,
+        "sizeNote": "54 inch fork length"
+      }
+    ],
+    "notes": [
+      "Boat anglers: 1 Atlantic sharpnose and 1 bonnethead per person per day, plus only ONE additional shark from the permitted list per vessel per day regardless of how many people are aboard. Shore anglers: 1 sharpnose, 1 bonnethead and 1 other permitted shark per person per day.",
+      "Sharks (except spiny dogfish) must be caught on rod and reel or handline using a non-stainless, non-offset circle hook when using natural bait.",
+      "Keep sharks whole: head, tail and fins must stay attached until offloaded at the dock (you may gut and bleed the carcass).",
+      "Federal HMS Angling permit required for sharks in state or federal waters (hmspermits.noaa.gov). No sharks may be possessed in WRC inland fishing waters."
+    ],
+    "sourceId": "nc-shark-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+    "auditQuote": "Pelagic Sharks: Blue, Porbeagle, Thresher ... Non-Shortfin mako and NonOceanic whitetip-Pelagic Sharks, Blacknose and Finetooth 54”"
+  },
+  "96": {
+    "name": "Blacknose Shark",
+    "reviewed": "2026-10-31",
+    "rawHash": "b42759b9a60b",
+    "aliases": [
+      "blacknose"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 54,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 per vessel per calendar day (shore anglers 1 per person)",
+        "closed": false,
+        "sizeNote": "54 inch fork length"
+      }
+    ],
+    "notes": [
+      "Boat anglers: 1 Atlantic sharpnose and 1 bonnethead per person per day, plus only ONE additional shark from the permitted list per vessel per day regardless of how many people are aboard. Shore anglers: 1 sharpnose, 1 bonnethead and 1 other permitted shark per person per day.",
+      "Sharks (except spiny dogfish) must be caught on rod and reel or handline using a non-stainless, non-offset circle hook when using natural bait.",
+      "Keep sharks whole: head, tail and fins must stay attached until offloaded at the dock (you may gut and bleed the carcass).",
+      "Federal HMS Angling permit required for sharks in state or federal waters (hmspermits.noaa.gov). No sharks may be possessed in WRC inland fishing waters."
+    ],
+    "sourceId": "nc-shark-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+    "auditQuote": "It shall be unlawful to possess nonhammerhead Large Coastal Shark species ... blacknose sharks, and finetooth sharks less than 54 inches fork length."
+  },
+  "97": {
+    "name": "Finetooth Shark",
+    "reviewed": "2026-10-31",
+    "rawHash": "b42759b9a60b",
+    "aliases": [
+      "finetooth"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 54,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 per vessel per calendar day (shore anglers 1 per person)",
+        "closed": false,
+        "sizeNote": "54 inch fork length"
+      }
+    ],
+    "notes": [
+      "Boat anglers: 1 Atlantic sharpnose and 1 bonnethead per person per day, plus only ONE additional shark from the permitted list per vessel per day regardless of how many people are aboard. Shore anglers: 1 sharpnose, 1 bonnethead and 1 other permitted shark per person per day.",
+      "Sharks (except spiny dogfish) must be caught on rod and reel or handline using a non-stainless, non-offset circle hook when using natural bait.",
+      "Keep sharks whole: head, tail and fins must stay attached until offloaded at the dock (you may gut and bleed the carcass).",
+      "Federal HMS Angling permit required for sharks in state or federal waters (hmspermits.noaa.gov). No sharks may be possessed in WRC inland fishing waters."
+    ],
+    "sourceId": "nc-shark-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+    "auditQuote": "It shall be unlawful to possess nonhammerhead Large Coastal Shark species ... blacknose sharks, and finetooth sharks less than 54 inches fork length."
+  },
+  "98": {
+    "name": "Smooth Dogfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "7630783e1d4a",
+    "aliases": [
+      "smoothhound shark",
+      "smooth dogfish shark",
+      "dogfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Exempt from the shark bag and size limits, but shark gear rules (circle hooks with bait, fins attached) still apply.",
+      "Sharks (except spiny dogfish) must be caught on rod and reel or handline using a non-stainless, non-offset circle hook when using natural bait.",
+      "Keep sharks whole: head, tail and fins must stay attached until offloaded at the dock (you may gut and bleed the carcass)."
+    ],
+    "sourceId": "nc-shark-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+    "auditQuote": "Smooth dogfish (smoothhound shark) are exempt from harvest and size restrictions."
+  },
+  "99": {
+    "name": "Spiny Dogfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "6c599b58ea54",
+    "aliases": [
+      "spiny dogfish shark",
+      "dogfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No state size or bag limit; also exempt from the shark circle-hook requirement."
+    ],
+    "sourceId": "nc-dmf-limits",
+    "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+    "auditQuote": "Spiny Dogfish | None | None | Federal Spiny Dogfish Management"
+  },
+  "100": {
+    "name": "Prohibited Sharks",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "whale shark",
+      "basking shark",
+      "white shark",
+      "great white",
+      "sand tiger",
+      "bigeye sand tiger",
+      "Atlantic angel shark",
+      "bigeye sixgill",
+      "bigeye thresher",
+      "bignose shark",
+      "Caribbean reef shark",
+      "Caribbean sharpnose",
+      "dusky shark",
+      "Galapagos shark",
+      "longfin mako",
+      "oceanic whitetip",
+      "shortfin mako",
+      "mako",
+      "narrowtooth shark",
+      "night shark",
+      "sandbar shark",
+      "silky shark",
+      "sevengill shark",
+      "sixgill shark",
+      "smalltail shark"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "These 23 shark species must be released immediately. Shortfin mako and sandbar are the ones anglers most often confuse with legal species.",
+      "Federal HMS Angling permit required for sharks in state or federal waters (hmspermits.noaa.gov). No sharks may be possessed in WRC inland fishing waters."
+    ],
+    "sourceId": "nc-dmf-limits",
+    "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+    "auditQuote": "Sharks: whale, basking, white, sand tiger, bigeye sand tiger, Atlantic angel shark, bigeye sixgill, bigeye thresher, bignose, Caribbean reef, Caribbean sharpnose, dusky, Galapagos, longfin mako, oceanic whitetip, shortfin mako, narrowtooth, night, sandbar, silky, sevengill, sixgill, and smalltail."
+  },
+  "101": {
+    "name": "Bigeye Tuna",
+    "reviewed": "2026-10-31",
+    "rawHash": "deb8b1a954fc",
+    "aliases": [
+      "bigeye"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 27,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "No state bag limit; federal HMS rules apply",
+        "closed": false,
+        "sizeNote": "27 inch curved fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 27,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "Federal HMS rules apply",
+        "closed": false,
+        "sizeNote": "27 inch curved fork length"
+      }
+    ],
+    "notes": [
+      "HMS Angling permit required. NC prints only the 27 inch curved fork length minimum; bag limits are federal — see fisheries.noaa.gov/topic/atlantic-highly-migratory-species."
+    ],
+    "sourceId": "nc-dmf-limits",
+    "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+    "auditQuote": "Tuna: Bluefin, Bigeye and Yellowfin (G) | Bigeye and Yellowfin Tuna - 27\"  Curved FL | Yellowfin Tuna - 3/Day | Federal HMS Management"
+  },
+  "102": {
+    "name": "Bluefin Tuna",
+    "reviewed": "2026-10-31",
+    "rawHash": "9b08e33cd964",
+    "aliases": [
+      "bluefin"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Federal HMS rules apply",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Federal HMS rules apply",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "HMS Angling permit required; every bluefin must be reported at an NC HMS reporting station before it leaves the boat. Size and daily retention limits are set by NOAA HMS and change during the year."
+    ],
+    "sourceId": "nc-dmf-limits",
+    "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+    "auditQuote": "Tuna: Bluefin, Bigeye and Yellowfin (G) ... Prior to removal from vessel, all billfishes, swordfish and bluefin tuna must be reported at NC HMS reporting stations."
+  },
+  "103": {
+    "name": "Sturgeon",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "Atlantic sturgeon",
+      "shortnose sturgeon"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "NC coastal and joint waters (to 3 mi)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "inland",
+        "label": "NC inland fishing waters (WRC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Federally endangered; release immediately in all NC waters."
+    ],
+    "sourceId": "nc-dmf-limits",
+    "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+    "auditQuote": "Other finfish: river herring, Atlantic sturgeon, shortnose sturgeon, Nassau grouper, Goliath grouper, Warsaw grouper, speckled hind and red snapper."
+  },
+  "104": {
+    "name": "Calico Scallop",
+    "reviewed": "2026-10-31",
+    "rawHash": "64d8e32625bb",
+    "aliases": [
+      "calico scallops"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Atlantic Ocean 0–3 miles off NC",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Harvest closed",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Calico scallop harvest in NC ocean waters has been closed by proclamation since May 2024."
+    ],
+    "sourceId": "nc-calico-proc",
+    "sourceUrl": "https://files.nc.gov/deq/documents/2024-05/SF-4-2024_CalicoScallops-Final.pdf",
+    "auditQuote": "closes the harvest calico scallops in the Atlantic Ocean. ... from 0 to 3 miles as defined in G.S. 141-6(a). ... effective at 12:01 A.M., May 31, 2024."
+  },
+  "105": {
+    "name": "Striped Bass (by management area)",
+    "reviewed": "2026-10-31",
+    "rawHash": "58dfe149bdc1",
+    "aliases": [
+      "rockfish",
+      "striper",
+      "bodie bass",
+      "hybrid striped bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "albemarle",
+        "label": "Albemarle Sound Management Area (Albemarle, Currituck, Roanoke, Croatan sounds and tributaries)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": 25
+          }
+        ],
+        "bag": null,
+        "bagNote": "Possession prohibited — season closed",
+        "closed": true,
+        "sizeNote": "Slot 18–25 inch TL when a season is open"
+      },
+      {
+        "zone": "roanoke",
+        "label": "Roanoke River Management Area (Roanoke Rapids Dam to Albemarle Sound incl. Cashie, Middle, Eastmost rivers) — WRC",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": 22
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day; season by WRC proclamation only (closed until proclaimed)",
+        "closed": true,
+        "sizeNote": "18-inch minimum, no fish may be greater than 22 inches"
+      },
+      {
+        "zone": "csma",
+        "label": "Central Southern Management Area — all waters except the April Tar-Pamlico/Neuse opening (incl. Pungo, lower Cape Fear, Pamlico Sound)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited (including hybrid bass)",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "csmatarneuse",
+        "label": "CSMA: Tar-Pamlico River above Gum Point–Fork Point line and Neuse River above Cooper Point–Fisher Landing Point line",
+        "seasons": [
+          [
+            "04-01",
+            "04-30"
+          ]
+        ],
+        "size": [
+          {
+            "min": 18,
+            "max": 22
+          },
+          {
+            "min": 27,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person per day or per trip, April 1–30 by proclamation (FF-19-2026 for 2026)",
+        "closed": false,
+        "sizeNote": "18-inch minimum; no fish 22–27 inches"
+      },
+      {
+        "zone": "capefear",
+        "label": "Cape Fear River and tributaries incl. Snow's Cut",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "inland",
+        "label": "WRC inland impoundments and tributaries (except listed lakes)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "4 in combination with Bodie bass (striped bass hybrid)",
+        "closed": false,
+        "sizeNote": "20-inch minimum"
+      }
+    ],
+    "notes": [
+      "Where you are matters more than anything else for striped bass in NC: ocean = 1 fish 28–31 inches year-round; Albemarle Sound, the CSMA and the Cape Fear are closed; the Roanoke River season is set each spring by WRC proclamation (18–22 inch slot, 1 fish).",
+      "Upper Tar-Pamlico and Neuse rivers opened April 1–30, 2026 only (18 inch minimum, nothing 22–27 inches, 1 per person). Expect a new proclamation each spring.",
+      "Inland reservoirs (WRC): 20 inch minimum, 4 per day striped/Bodie bass combined; Lake Gaston, Roanoke Rapids, Kerr, Dan River, Chatuge and several city lakes have their own rules (see WRC warm-water table).",
+      "Recreational harvest of striped bass must be reported to DMF (deq.nc.gov/report-my-fish). No gigs, spears or gaffs; circle hooks with natural bait in the ocean."
+    ],
+    "sourceId": "nc-stb-info",
+    "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/public-information-and-education/striped-bass-recreational-fishing-information",
+    "auditQuote": "Albemarle Sound Management Area ... Season Closed; no harvest allowed. ... Slot limit 18 inches to 25 inches TL ... Illegal to possess | Central Southern Management Area ... Closed; no harvest allowed. See Proclamation FF-6-2019 | Roanoke River Management Area ... Size Limit (TL) 18 inches TL to 22 inches TL. ... Contact the Wildlife Resources Commission | Cape Fear River ... Closed; no harvest allowed"
+  },
+  "106": {
+    "name": "Bodie Bass (Hybrid Striped Bass)",
+    "reviewed": "2026-10-31",
+    "rawHash": "d52fe8ee8c41",
+    "aliases": [
+      "bodie bass",
+      "hybrid striped bass",
+      "hybrid bass",
+      "wiper"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "WRC inland impoundments and tributaries (default)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "4 in combination (striped bass + Bodie bass)",
+        "closed": false,
+        "sizeNote": "20-inch minimum"
+      },
+      {
+        "zone": "gaston",
+        "label": "Lake Gaston and Roanoke Rapids Reservoir",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "4 in combination; no minimum size June 1 – Sept 30",
+        "closed": false,
+        "sizeNote": "20-inch minimum Oct 1 – May 31; no minimum June 1 – Sept 30"
+      },
+      {
+        "zone": "kerr",
+        "label": "John H. Kerr Reservoir and Dan River (Caswell Co.) below Danville",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": 26
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 in combination Oct 1 – May 31; 4 in combination (no size limit) June 1 – Sept 30",
+        "closed": false,
+        "sizeNote": "20-inch minimum, none over 26 inches (Oct 1 – May 31)"
+      },
+      {
+        "zone": "csma",
+        "label": "CSMA internal coastal/joint waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited (striped bass includes hybrids)",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Hybrids count with striped bass in the same 4-fish limit in inland lakes.",
+      "In DMF-managed coastal waters 'striped bass' includes hybrids, so the CSMA/Albemarle closures apply to Bodie bass too."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Striped Bass And Bodie Bass (Striped Bass Hybrid) — INLAND IMPOUNDMENTS AND TRIBUTARIES — Impounded inland waters and their tributaries except those listed below: | 20-inch minimum | 4 in combination"
+  },
+  "107": {
+    "name": "Alabama Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "2b4f7a22cb10",
+    "aliases": [
+      "Alabama spotted bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "All NC public waters except Lake Chatuge",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chatuge",
+        "label": "Lake Chatuge (Clay Co.)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 largemouth, smallmouth, Alabama and spotted bass in combination",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No size or creel limit statewide — WRC wants Alabama bass removed where they are invasive. Lake Chatuge: 10 black bass of all species combined."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Alabama Bass And Spotted Bass — All public waters except those listed below: | None | None | Lake Chatuge (Clay Co.) | No minimum size limit | 10 largemouth bass, smallmouth bass, Alabama bass, and spotted bass in combination"
+  },
+  "108": {
+    "name": "Bartram's Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "6c23d561041f",
+    "aliases": [
+      "Bartrams bass",
+      "redeye bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "All NC public waters",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per day, only 2 under 14 inches",
+        "closed": false,
+        "sizeNote": "14-inch minimum except 2 may be under 14 inches"
+      }
+    ],
+    "notes": [
+      "Same rule as largemouth/smallmouth: 5 per day, no more than 2 shorter than 14 inches."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Bartram’s Bass — All public waters | 14-inch minimum, except 2 may be less than 14 inches | 5, including only 2 less than 14 inches"
+  },
+  "109": {
+    "name": "Roanoke Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "0bae27b3432b",
+    "aliases": [
+      "Roanoke bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC public waters west of I-77",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "eastofi77",
+        "label": "All public waters east of I-77",
+        "seasons": null,
+        "size": [
+          {
+            "min": 8,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 in combination with rock bass",
+        "closed": false,
+        "sizeNote": "8-inch minimum"
+      }
+    ],
+    "notes": [
+      "East of I-77 (most of the Roanoke bass range): 8 inch minimum and only 2 rock bass + Roanoke bass combined per day."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Rock Bass and Roanoke Bass — All public fishing waters except those listed below: | None | All public waters east of I-77 | 8-inch minimum | 2 in combination"
+  },
+  "110": {
+    "name": "Walleye",
+    "reviewed": "2026-10-31",
+    "rawHash": "28da8c8fa3a4",
+    "aliases": [
+      "walleye"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "All NC public waters except listed",
+        "seasons": null,
+        "size": [],
+        "bag": 8,
+        "bagNote": "8 per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "linville",
+        "label": "Linville River upstream from N.C. 126 bridge",
+        "seasons": null,
+        "size": [],
+        "bag": 4,
+        "bagNote": "4 per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "james",
+        "label": "Lake James and tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": null
+          }
+        ],
+        "bag": 8,
+        "bagNote": "8 per day",
+        "closed": false,
+        "sizeNote": "15-inch minimum"
+      },
+      {
+        "zone": "gaston",
+        "label": "Lake Gaston, John H. Kerr Reservoir, Roanoke Rapids Reservoir",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per day",
+        "closed": false,
+        "sizeNote": "18-inch minimum"
+      }
+    ],
+    "notes": [
+      "Statewide 8 per day with no size limit, but Lake James has a 15 inch minimum and the Roanoke basin reservoirs (Gaston, Kerr, Roanoke Rapids) have an 18 inch minimum and 5 per day."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Walleye — All public fishing waters except those listed below: | None | 8 | Linville River upstream from N.C. 126 bridge | None | 4 | Lake James and tributaries | 15-inch minimum | 8 | Lake Gaston, John H. Kerr Reservoir, Roanoke Rapids Reservoir | 18-inch minimum | 5"
+  },
+  "111": {
+    "name": "Muskellunge",
+    "reviewed": "2026-10-31",
+    "rawHash": "63e53b59dfb4",
+    "aliases": [
+      "musky",
+      "muskie"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "All NC public waters",
+        "seasons": null,
+        "size": [
+          {
+            "min": 42,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per day",
+        "closed": false,
+        "sizeNote": "42-inch minimum"
+      }
+    ],
+    "notes": [
+      "One fish per day, must be at least 42 inches."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Muskellunge — All public fishing waters | 42-inch minimum | 1"
+  },
+  "112": {
+    "name": "Sauger",
+    "reviewed": "2026-10-31",
+    "rawHash": "9a94b2bce6c7",
+    "aliases": [
+      "sauger"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "All NC public waters",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": null
+          }
+        ],
+        "bag": 8,
+        "bagNote": "8 per day",
+        "closed": false,
+        "sizeNote": "15-inch minimum"
+      }
+    ],
+    "notes": [],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Sauger — All public fishing waters | 15-inch minimum | 8"
+  },
+  "113": {
+    "name": "Kokanee Salmon",
+    "reviewed": "2026-10-31",
+    "rawHash": "6fbf7568d129",
+    "aliases": [
+      "kokanee"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "All NC public waters",
+        "seasons": null,
+        "size": [],
+        "bag": 4,
+        "bagNote": "4 per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Kokanee Salmon — All public fishing waters | None | 4"
+  },
+  "114": {
+    "name": "Bullheads (black, brown, flat, snail, yellow, white catfish)",
+    "reviewed": "2026-10-31",
+    "rawHash": "5e8ed9cc5da9",
+    "aliases": [
+      "bullhead",
+      "black bullhead",
+      "brown bullhead",
+      "flat bullhead",
+      "snail bullhead",
+      "yellow bullhead",
+      "white catfish",
+      "mudcat"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland and joint fishing waters (hook and line)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 in combination (all bullhead species + white catfish)",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "10 per day total across all bullhead species and white catfish."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Bullheads (Black, Brown, Flat, Snail, Yellow, And White Catfish) — All inland fishing waters and joint fishing waters when caught by hook and line | None | 10 in combination"
+  },
+  "115": {
+    "name": "Catfish (blue, channel, flathead)",
+    "reviewed": "2026-10-31",
+    "rawHash": "ca98c08a8e26",
+    "aliases": [
+      "blue catfish",
+      "channel catfish",
+      "flathead catfish",
+      "catfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland and joint fishing waters (default)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "communityponds",
+        "label": "Listed community fishing ponds and ponds on game lands",
+        "seasons": null,
+        "size": [],
+        "bag": 7,
+        "bagNote": "7 channel catfish per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "peedee",
+        "label": "Pee Dee River below Blewett Falls Dam to SC line and tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "5 in combination",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "bluecat32",
+        "label": "Badin, Dan River below Danville, Gaston, Kerr, Mountain Island, Norman, Roanoke Rapids, Tillery, Wylie",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit under 32 inches; only 1 blue catfish over 32 inches",
+        "closed": false,
+        "sizeNote": "Only one blue catfish may be greater than 32 inches"
+      }
+    ],
+    "notes": [
+      "No statewide limit, but trophy-blue-cat reservoirs (Badin, Gaston, Kerr, Norman, Tillery, Wylie, Mountain Island, Roanoke Rapids, Dan River) allow only one blue catfish over 32 inches per day.",
+      "Community fishing ponds: 7 channel catfish. Lower Pee Dee: 5 catfish combined."
+    ],
+    "sourceId": "nc-wrc-nongame-limits",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-size-creel-limits",
+    "auditQuote": "Catfish (Blue, Channel, & Flathead) — All inland fishing waters and joint fishing waters when caught by hook and line except those listed below: | None | None ... [community fishing ponds] | None | 7 Channel Catfish ... Pee Dee River downstream of Blewett Falls Dam to the South Carolina state line and all tributaries | None | 5 in combination ... Badin Lake, Dan River (downstream of the Union Street Dam in Danville, VA), Lake Gaston (North Carolina Portion), John H. Kerr Reservoir (North Carolina Portion), Mountain Island Reservoir, Lake Norman, Roanoke Rapids Reservoir, Lake Tillery, Lake Wylie | No minimum size limit, and only one Blue Catfish may be greater than 32 inches | No daily creel limit for Blue Catfish less than 32 inches, and only one Blue Catfish may be greater than 32 inches"
+  },
+  "116": {
+    "name": "Yellow Perch",
+    "reviewed": "2026-10-31",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "yellow perch",
+      "raccoon perch"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland and joint fishing waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No size or creel limit."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Yellow Perch — All inland and joint fishing waters | None | None"
+  },
+  "117": {
+    "name": "Pickerel",
+    "reviewed": "2026-10-31",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "chain pickerel",
+      "redfin pickerel",
+      "jack",
+      "jackfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "All NC public fishing waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No size or creel limit."
+    ],
+    "sourceId": "nc-wrc-warmwater",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+    "auditQuote": "Pickerel — All public fishing waters | None | None"
+  },
+  "118": {
+    "name": "Grass Carp",
+    "reviewed": "2026-10-31",
+    "rawHash": "f71496f03fb0",
+    "aliases": [
+      "white amur",
+      "grass carp"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland and joint fishing waters (default)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "archeryonly",
+        "label": "Lake James, Lookout Shoals Lake, Mountain Island Reservoir, Lake Wylie",
+        "seasons": null,
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 per day by archery equipment only",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "noharvest",
+        "label": "Lake Gaston, John H. Kerr Reservoir, Lake Norman, Roanoke Rapids Reservoir",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Grass carp are stocked for weed control in several reservoirs and may not be kept there."
+    ],
+    "sourceId": "nc-wrc-nongame-limits",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-size-creel-limits",
+    "auditQuote": "Grass Carp — All inland fishing waters eand joint fishing waters when caught by hook and line except those listed below: | None | None | Lake James, Lookout Shoals Lake, Mountain Island Reservoir, Lake Wylie | No grass carp may be possessed except one fish per day may be taken and possessed with archery equipment. | Lake Gaston, John H. Kerr Reservoir, Lake Norman, Roanoke Rapids Reservoir | No grass carp may be possessed or taken by any method including archery equipment except for by permit"
+  },
+  "119": {
+    "name": "Freshwater Mussels (incl. Asian clam)",
+    "reviewed": "2026-10-31",
+    "rawHash": "81de4634c4a9",
+    "aliases": [
+      "Asian clam",
+      "Corbicula",
+      "freshwater mussel",
+      "freshwater clam"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "flowing",
+        "label": "All flowing inland fishing waters, University Lake, Lake Waccamaw",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "impounded",
+        "label": "Impounded inland fishing waters (except University Lake and Lake Waccamaw)",
+        "seasons": null,
+        "size": [],
+        "bag": 200,
+        "bagNote": "200 in combination; no limit for Asian clam",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Never take mussels from rivers or streams — many NC river mussels are protected. Impoundments only, 200 per day."
+    ],
+    "sourceId": "nc-wrc-nongame-limits",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-size-creel-limits",
+    "auditQuote": "Freshwater Mussels Including The Asian Clam (Corbicula Fluminea) — All flowing inland fishing waters | No freshwater mussels including the Asian clam may be taken or possessed. | All impounded inland fishing waters except those listed below | None | 200 in combination, except there is no daily possession limit for the Asian clam | University Lake (Orange Co.), Lake Waccamaw | No freshwater mussels including the Asian clam may be taken or possessed."
+  },
+  "120": {
+    "name": "Madtoms (margined and tadpole)",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "margined madtom",
+      "tadpole madtom",
+      "madtom"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland and joint fishing waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Cannot be kept even as bait."
+    ],
+    "sourceId": "nc-wrc-nongame-limits",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-size-creel-limits",
+    "auditQuote": "Madtoms (Margined And Tadpole) — All inland fishing waters and joint fishing waters when caught by hook and line | No margined madtom and tadpole madtom may be possessed."
+  },
+  "121": {
+    "name": "Crayfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "75ee42ec855b",
+    "aliases": [
+      "crawfish",
+      "crawdad"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "NC inland fishing waters",
+        "seasons": null,
+        "size": [],
+        "bag": 200,
+        "bagNote": "200 in combination with other nongame fish and mollusks",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "200 per day combined with any other nongame fish/mollusks you take for bait or the table; invasive crayfish species (rusty, virile, marbled, red claw, bigclaw, Creole painted) may not be possessed alive."
+    ],
+    "sourceId": "nc-wrc-nongame-regs",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-regulations",
+    "auditQuote": "The daily creel limit is 200 nongame fish, crayfish, and mollusks, in combination, subject to species-specific size and creel limits."
+  },
+  "122": {
+    "name": "Prohibited Species (WRC live possession/stocking ban)",
+    "reviewed": "2026-10-31",
+    "rawHash": "63736bb03abf",
+    "aliases": [
+      "snakehead",
+      "northern snakehead",
+      "bighead carp",
+      "silver carp",
+      "black carp",
+      "piranha",
+      "walking catfish",
+      "rudd",
+      "round goby",
+      "zebra mussel",
+      "quagga mussel",
+      "applesnail",
+      "Asian swamp eel",
+      "yellow bass",
+      "red shiner",
+      "ruffe",
+      "tubenose goby",
+      "crucian carp",
+      "Prussian carp",
+      "redtail catfish",
+      "brown hoplo",
+      "Amur sleeper",
+      "oriental weatherfish",
+      "European perch",
+      "European eel",
+      "European minnow",
+      "African longfin eel",
+      "shortfin eel",
+      "mysterysnail",
+      "red-rim melania",
+      "rusty crayfish",
+      "virile crayfish",
+      "marbled crayfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "All NC waters (WRC)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No live possession; kill on capture (no harvest limit printed)",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "If you catch a snakehead, carp of these species, or any other listed invasive, do not release it or move it alive — kill it and report it to WRC."
+    ],
+    "sourceId": "nc-wrc-other-regs",
+    "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/other-fishing-regulations",
+    "auditQuote": "It is unlawful to transport, purchase, possess or sell any live individuals or stock any private or public waters of North Carolina from the following species: African longfin eel ... Snakehead (from the Family Channidae, formerly Ophiocephalidae) ... Yellow bass (Morone mississippiensis) Zebra mussel (Dreissena polymorpha)"
+  }
 }

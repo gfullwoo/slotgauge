@@ -1,0 +1,226 @@
+{
+  "state": "NJ",
+  "auditedOn": "2026-10-31",
+  "pending": [
+    {
+      "existingName": "Sunfish and Perch",
+      "field": "aliases",
+      "current": "(group row; member species not listed)",
+      "shouldBe": "Add all printed members: Bluegill, Pumpkinseed, Redbreast, Rock Bass, White Perch, Yellow Perch, Bullheads, White Catfish, White Sucker, Common Carp, Bowfin, American Eel, non-native species with no creel limit; and Greenwood Lake zone 'Sunfish | Open year-round | No minimum | 50 combined'",
+      "quote": "Bluegill, Pumpkinseed, Redbreast, Rock Bass, White Perch, Yellow Perch, Bullheads, White Catﬁsh, White Sucker, Common Carp, Bowﬁn, American Eel and all other non-native species with no specified creel limit. | Open year-round | Statewide | No minimum size Exception American Eel: 9 inch minimum size | 25 combined",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/size-season-creel-limits",
+      "id": 41,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sunfish and Perch",
+      "field": "limit",
+      "current": "25 combined",
+      "shouldBe": "25 combined statewide; Greenwood Lake: Sunfish 50 combined, Yellow Perch 50; Delaware River 'All Other Freshwater Species' 25",
+      "quote": "Perch, Yellow | Open year-round | No minimum | 50 ... Sunfish | Open year-round | No minimum | 50 combined",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/greenwood-lake",
+      "id": 41,
+      "status": "pending"
+    },
+    {
+      "existingName": "Trout",
+      "field": "aliases",
+      "current": "(none)",
+      "shouldBe": "brook trout, brown trout, rainbow trout, and their hybrids/strains",
+      "quote": "General Trout Fishing Regulations for Brook, Brown & Rainbow Trout (and their hybrids and strains)",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/trout-fishing-regulations",
+      "id": 42,
+      "status": "pending"
+    },
+    {
+      "existingName": "Trout",
+      "field": "zones",
+      "current": "Inland waters (general rivers/streams and lakes only)",
+      "shouldBe": "Add zones: Delaware River Apr 18 8 a.m.–Oct 15, no minimum, 5; Year Round TCAs 15 in/1 (C&R Mar 23–Apr 11, artificials only); Seasonal TCAs 15 in/1 except 9 in/6 Apr 11–May 24; Catch and Release Areas (Big Flat Brook Rt 206–Roy Bridge, Ken Lockwood Gorge) no possession; Trophy Trout Lakes 15 in/2 combined; Holdover Trout Lakes 9 in 2/4/2; Wild Trout Streams Apr 11–Sep 15 2 brown/rainbow combined",
+      "quote": "Trout | April 18 at 8 a.m.–Oct. 15 | No minimum | 5 ... YEAR ROUND TCAS Jan. 1–March 22 | 15 inches | 1 ... SEASONAL TCAS ... April 11 at 8 a.m.–May 24 Gear restrictions do not apply | 9 inches | 6 ; May 25–Dec. 31 | 15 inches | 1 ... Catch and Release Areas Jan. 1–Dec. 31 Fishing allowed year-round | Catch and release all trout",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/trout-fishing-regulations",
+      "id": 42,
+      "status": "pending"
+    },
+    {
+      "existingName": "Largemouth Bass",
+      "field": "zones",
+      "current": "Inland waters (statewide + Lunker Bass Lakes)",
+      "shouldBe": "Add Delaware River zone: Jan 1–Apr 17 and Jun 13–Dec 31, 12 in, 5 combined; Apr 18–Jun 12 catch and release only. Add Greenwood Lake zone: Jun 20–Nov 30 12 in 5 combined; catch and release Jan 1–Jun 19 and Dec 1–31",
+      "quote": "Bass, Largemouth & Smallmouth | Jan. 1–April 17 | 12 inches | 5 combined ; April 18–June 12 | Catch and release only ; June 13–Dec. 31 | 12 inches | 5 combined",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/delaware-river",
+      "id": 32,
+      "status": "pending"
+    },
+    {
+      "existingName": "Smallmouth Bass",
+      "field": "size",
+      "current": "12 inches",
+      "shouldBe": "12 inches statewide; 15 inches / 3 combined in Lunker Bass Lakes (Alloway, Assunpink, Parvin, Delaware lakes; Merrill Creek, Round Valley, Splitrock reservoirs); plus Delaware River and Greenwood Lake zones as for Largemouth Bass",
+      "quote": "Lunker Bass Lakes: Alloway, Assunpink, Parvin and Delaware lakes; Merrill Creek, Round Valley and Splitrock reservoirs | 15 inches | 3 combined ... Smallmouth Bass",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/size-season-creel-limits",
+      "id": 33,
+      "status": "pending"
+    },
+    {
+      "existingName": "Smallmouth Bass",
+      "field": "season",
+      "current": "Catch & release only April 15–June 15",
+      "shouldBe": "Jan 1–Apr 14 and Jun 16–Dec 31 harvest; Apr 15–Jun 15 catch & release only (all waters); Delaware River C&R Apr 18–Jun 12; Greenwood Lake C&R Jan 1–Jun 19 and Dec 1–31",
+      "quote": "Bass, Largemouth & Smallmouth | Jan. 1–June 19 | Catch and release only ; June 20–Nov. 30 | 12 inches | 5 combined ; Dec. 1–Dec. 31 | Catch and release only",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/greenwood-lake",
+      "id": 33,
+      "status": "pending"
+    },
+    {
+      "existingName": "Northern Pike",
+      "field": "season",
+      "current": "Open year-round",
+      "shouldBe": "Open year-round statewide; March 20–May 20 catch & release only at Echo Lake Reservoir, Mercer Lake, Mountain Lake, Monksville Reservoir (model as separate zone)",
+      "quote": "Northern Pike | Open year-round March 20–May 20 are Catch & Release only for Echo Lake Reservoir, Mercer Lake, Mountain Lake, Monksville Reservoir | Statewide | Northern Pike: 24 inches | 2",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/size-season-creel-limits",
+      "id": 34,
+      "status": "pending"
+    },
+    {
+      "existingName": "Chain Pickerel",
+      "field": "size",
+      "current": "15 inches",
+      "shouldBe": "15 inches statewide; 12 inches on the Delaware River (limit 5)",
+      "quote": "Pickerel, Chain | Open year-round | 12 inches | 5",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/delaware-river",
+      "id": 36,
+      "status": "pending"
+    },
+    {
+      "existingName": "Chain Pickerel",
+      "field": "aliases",
+      "current": "(none)",
+      "shouldBe": "redfin pickerel (printed under the same heading, 5 combined)",
+      "quote": "CHAIN PICKEREL AND REDFIN PICKEREL | Chain Pickerel | Open year-round | Statewide | 15 inches | 5 combined",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/size-season-creel-limits",
+      "id": 36,
+      "status": "pending"
+    },
+    {
+      "existingName": "Muskellunge",
+      "field": "aliases",
+      "current": "(none)",
+      "shouldBe": "tiger musky, muskellunge hybrids",
+      "quote": "Tiger Musky & Muskellunge: 40 inches | 1 combined",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/size-season-creel-limits",
+      "id": 35,
+      "status": "pending"
+    },
+    {
+      "existingName": "Hybrid Striped Bass",
+      "field": "zones",
+      "current": "Inland waters 16 in / 2 only",
+      "shouldBe": "Add Raritan River downstream of Duke Island Park dam: Mar 1–Dec 31, one @ 28 to 31 in, 1. Add Delaware River (Striped Bass & Hybrids): upstream of Calhoun St. Bridge Mar 1–Dec 31; downstream Mar 1–31 and Jun 1–Dec 31; 28–31 in slot, 1; circle hooks with bait",
+      "quote": "Hybrid Striped Bass | March 1–Dec. 31 Please check website for possible Hybrid Striped Bass regulation changes during 2026. | Raritan River (downstream of Duke Island Park dam) | One @ 28\" to a maximum of 31\" | 1",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/size-season-creel-limits",
+      "id": 38,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "zones",
+      "current": "5 marine zones; Bonus Program only mentioned in notes",
+      "shouldBe": "Add a 'bonus' zone: Striped Bass Bonus Program permit holders may harvest one fish per permit 24 in to less than 28 in, May 15–Dec 31, permit attached through mouth and gill, harvest reporting mandatory. Also add freshwater statewide zone Mar 1–Dec 31 28–31 in, 1 (see new row 'Striped Bass (fresh waters)')",
+      "quote": "Anglers participating in the Striped Bass Bonus Program may harvest one striped bass per permit at 24\" to less than 28\" in length from May 15 to December 31.",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/saltwater/state-size-possession-limits",
+      "id": 16,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "aliases",
+      "current": "(unknown)",
+      "shouldBe": "Include 'hybrid striped bass' — the marine table heading is 'STRIPED BASS OR HYBRID STRIPED BASS' so hybrids in marine waters follow this row",
+      "quote": "STRIPED BASS OR HYBRID STRIPED BASS | Delaware River & tributaries (Calhoun St. Bridge to Salem River & tributaries) | March 1–March 31 and June 1–Dec 31 | 28\"–31\" | 1",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/saltwater/state-size-possession-limits",
+      "id": 16,
+      "status": "pending"
+    },
+    {
+      "existingName": "Hickory Shad",
+      "field": "zones",
+      "current": "statewide Open year-round 6 (shad combined)",
+      "shouldBe": "Add Delaware River (non-tidal freshwater digest) zone: 'Shad, Hickory | Closed'. Marine table still allows 6 shad in Delaware River & tributaries — flag the conflict for review",
+      "quote": "Shad, Hickory | Closed | — | —",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/delaware-river",
+      "id": 12,
+      "status": "pending"
+    },
+    {
+      "existingName": "American Shad",
+      "field": "zones",
+      "current": "Delaware River & tributaries (max 2 within 6-shad limit); all other marine waters closed",
+      "shouldBe": "Freshwater digest: 'American Shad | Open year-round Season Closed in all other fresh waters | Delaware River Mainstem | — | 2' and Delaware River page 'Shad, American* | Open year-round | No minimum | 2' — add freshwater zone (Delaware River mainstem only, 2, no minimum; all other fresh waters closed). Note the freshwater rule is 'mainstem' while the marine rule says 'Delaware River & tributaries'",
+      "quote": "American Shad | Open year-round Season Closed in all other fresh waters | Delaware River Mainstem | — | 2",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/size-season-creel-limits",
+      "id": 13,
+      "status": "pending"
+    },
+    {
+      "existingName": "River Herring",
+      "field": "zones",
+      "current": "statewide No Open Season 0",
+      "shouldBe": "Keep closed for marine waters, rivers and streams, but add the freshwater-lake exception: lakes in Morris, Passaic, Sussex and Warren counties, Spruce Run Reservoir and Greenwood Lake — 35 per day, 6 inch maximum, must be returned to the lake (see new row 'Alewife / Blueback Herring (freshwater lakes)')",
+      "quote": "Freshwater lakes in Morris, Passaic, Sussex and Warren counties, and Spruce Run Reservoir (Hunterdon) | 6 inches maximum | 35",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/freshwater/baitfish",
+      "id": 10,
+      "status": "pending"
+    },
+    {
+      "existingName": "Black Sea Bass",
+      "field": "zones",
+      "current": "statewide only",
+      "shouldBe": "Add federal zone (3–200 nm): state defers to NOAA — 'Please check the NOAA recreational fishing regulations by species page for current black sea bass regulations in federal waters during 2026' (https://www.fisheries.noaa.gov/recreational-fishing-regulations-species)",
+      "quote": "Please check the NOAA recreational fishing regulations by species page for current black sea bass regulations in federal waters during 2026.",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/saltwater/state-size-possession-limits",
+      "id": 3,
+      "status": "pending"
+    },
+    {
+      "existingName": "Summer Flounder",
+      "field": "zones",
+      "current": "3 state zones only",
+      "shouldBe": "Add federal zone (3–200 nm): state defers to NOAA for summer flounder in federal waters during 2026",
+      "quote": "Please check the NOAA recreational fishing regulations by species page for current summer flounder regulations in federal waters during 2026.",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/saltwater/state-size-possession-limits",
+      "id": 21,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sharks (coastal species)",
+      "field": "aliases",
+      "current": "(none)",
+      "shouldBe": "Add every printed member: blacktip, bull, lemon, nurse, tiger, spinner, scalloped/smooth/great hammerhead, Atlantic sharpnose, bonnethead, finetooth, blacknose, blue, porbeagle, common thresher, smoothhound, shortfin mako, plus the 22 prohibited species; or replace with the per-group rows in this audit",
+      "quote": "Shark Species That May Be Kept (Authorized Species): Aggregated Large Coastal Shark—blacktip, bull, lemon, nurse, tiger, spinner; Hammerhead Shark—scalloped hammerhead, smooth hammerhead, great hammerhead; Non-Blacknose Small Coastal Shark—Atlantic sharpnose, bonnethead, finetooth; Blacknose Shark—blacknose; Pelagic Shark—blue, porbeagle, and common thresher.",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/saltwater/sharks",
+      "id": 27,
+      "status": "pending"
+    },
+    {
+      "existingName": "Hard Clam",
+      "field": "limit",
+      "current": "Recreational Limit = 150 clams",
+      "shouldBe": "150 shellfish in aggregate per day (all shellfish species combined, not 150 clams plus other species)",
+      "quote": "No holder of any recreational shellfish license may take more than a total of 150 shellfish (in aggregate) per day.",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/saltwater/mollusks-crustaceans",
+      "id": 30,
+      "status": "pending"
+    },
+    {
+      "existingName": "Blue Crab",
+      "field": "notes",
+      "current": "Crab pot/trot line seasons; egg-bearing females",
+      "shouldBe": "Also: no crabs may be harvested from the Newark Bay Complex; crab dredge seasons Delaware Bay Jan 1–Apr 15 & Nov 15–Dec 31, other waters Jan 1–Mar 31 & Dec 1–31 (license, 1 bushel)",
+      "quote": "No crabs may be harvested from the Newark Bay Complex. For more information, see Health Advisory.",
+      "sourceUrl": "https://www.eregulations.com/newjersey/fishing/saltwater/mollusks-crustaceans",
+      "id": 29,
+      "status": "pending"
+    }
+  ]
+}

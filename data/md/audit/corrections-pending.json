@@ -1,0 +1,166 @@
+{
+  "state": "MD",
+  "auditedOn": "2026-10-31",
+  "pending": [
+    {
+      "existingName": "Blue Crab",
+      "field": "size/limit (Atlantic zone row is blank)",
+      "current": "",
+      "shouldBe": "Season April 1–Dec. 31; Hard crabs 5 inches; Soft crabs 3½ inches; Peeler crabs Apr 1–Jul 14 3¼ in, Jul 15–Dec 31 3½ in; mature female crabs no minimum size; 1 bushel per person (or 6 dozen in other container), 2 bushels per boat (or 12 dozen); sponge crabs prohibited; no license required but gear must be marked",
+      "quote": "Season April 1–Dec. 31. ... Hard crabs—5 inches. Soft crabs—3½ inches. Peeler crabs April 1–July 14—3¼ inches. July 15–Dec. 31—3½ inches. Mature female crabs—no minimum size. The daily catch limit in the waters of the coastal bays of the Atlantic Ocean and their tidal tributaries is: One bushel per person if using a bushel basket, 6 dozen if using a container other than a bushel basket. Two bushels per boat if using a bushel basket or 12 dozen if using a container other than a bushel basket. ... The taking of sponge crabs is prohibited.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/blue-crabs-atlantic",
+      "id": 71,
+      "status": "pending"
+    },
+    {
+      "existingName": "Walleye (nontidal)",
+      "field": "season",
+      "current": "Open year-round",
+      "shouldBe": "Open year round—Except on Deep Creek Lake and the Youghiogheny River downstream of Route 42 bridge where it is closed from March 1 through April 15",
+      "quote": "WALLEYE | ... | Open year round—Except on Deep Creek Lake and the Youghiogheny River downstream of Route 42 bridge where it is closed from March 1 through April 15. | Daily—5 Possession—10 | Cannot be used as bait.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+      "id": 69,
+      "status": "pending"
+    },
+    {
+      "existingName": "Grouper",
+      "field": "aliases/notes",
+      "current": "aliases: groupers",
+      "shouldBe": "Add all COMAR 08.02.05.29 grouper species: black grouper, coney, gag grouper, goliath grouper, graysby, misty grouper, nassau grouper, red grouper, red hind, rock hind, scamp, snowy grouper, speckled hind, tiger grouper, warsaw grouper, wreckfish, yellowedge grouper, yellowfin grouper, yellowmouth grouper; limit 'One of any species or any combination'; note DNR may change limits by public notice to match NOAA",
+      "quote": "(1) Grouper. The following species of the snapper grouper complex are defined as grouper: (a) Black grouper (Mycteroperca bonaci); (b) Coney (Cephalopholis fulva); (c) Gag grouper (Mycteroperca microlepis); (d) Goliath grouper (Epinephelus itajara); (e) Graysby (Cephalopholis cruentata); (f) Misty grouper (Epinephelus mystacinus); (g) Nassau grouper (Epinephelus striatus); (h) Red grouper (Epinephelus morio); (i) Red hind (Epinephelus guttatus); (j) Rock hind (Epinephelus adscensionis); (k) Scamp (Mycteroperca phenax); (l) Snowy grouper (Epinephelus niveatus); (m) Speckled hind (Epinephelus drummondhayi); (n) Tiger grouper (Mycteroperca tigris); (o) Warsaw grouper (Epinephelus nigritus); (p) Wreckfish (Polyprion americanus); (q) Yellowedge grouper (Epinephelus flavolimbatus); (r) Yellowfin grouper (Mycteroperca venenosa); and (s) Yellowmouth grouper (Mycteroperca interstitialis). ... D. Recreational. An individual may not catch or possess more than: (1) One of any species or any combination of the species listed in §A(1) of this regulation;",
+      "sourceUrl": "https://regs.maryland.gov/us/md/exec/comar/08.02.05.29",
+      "id": 14,
+      "status": "pending"
+    },
+    {
+      "existingName": "Snapper",
+      "field": "aliases/notes",
+      "current": "aliases: snappers",
+      "shouldBe": "Add all COMAR 08.02.05.29 'Other' snapper-grouper complex species (the printed 'SNAPPER SPECIES (INCLUDES MANY SPECIES, PLEASE SEE LIST)' row): queen snapper, yellowtail snapper, gray snapper (mangrove), mutton snapper, lane snapper, cubera snapper, dog snapper, schoolmaster, mahogany snapper, vermilion snapper (beeliner), red snapper, silk snapper, blackfin snapper, black snapper, red porgy, knobbed porgy, jolthead porgy, whitebone porgy, saucereye porgy, grass porgy, longspine porgy, white grunt, black margate, margate, tomtate, sailor's choice, porkfish, bluestriped grunt, French grunt, cottonwick, Spanish grunt, smallmouth grunt, greater amberjack, crevalle jack, blue runner, almaco jack, banded rudderfish, bar jack, lesser amberjack, yellow jack, gray triggerfish, ocean triggerfish, queen triggerfish, hogfish, puddingwife, Atlantic spadefish. Limit: 10 of any single species and 20 of any combination. Note the group includes porgies, grunts, jacks, triggerfish, hogfish and spadefish, not just snappers",
+      "quote": "(3) Other. The remaining species of the snapper grouper complex are: (a) Queen snapper (Etelis oculatus); (b) Yellowtail snapper (Ocyurus chrysurus); (c) Gray snapper (Lutjanus griseus); (d) Mutton snapper (Lutjanus analis); (e) Lane snapper (Lutjanus synagris); (f) Cubera snapper (Lutjanus cyanopterus); (g) Dog snapper (Lutjanus jocu); (h) Schoolmaster (Lutjanus apodus); (i) Mahogany snapper (Lutjanus mahogoni); (j) Vermilion snapper (Rhomboplites aurorubens); (k) Red snapper (Lutjanus campechanus); (l) Silk snapper (Lutjanus vivanus); (m) Blackfin snapper (Lutjanus buccanella); (n) Black snapper (Apsilus dentatus); (o) Red porgy (Pagrus pagrus); (p) Knobbed porgy (Calamus nodosus); (q) Jolthead porgy (Calamus bajonado); (r) Whitebone porgy (Calamus leucosteus); (s) Saucereye porgy (Calamus calamus); (t) Grass porgy (Calamus arctifrons); (u) Longspine porgy (Stenotomus caprinus); (v) White grunt (Haemulon plumieri); (w) Black margate (Anisotremus surinamensis); (x) Margate (Haemulon album); (y) Tomtate (Haemulon aurolineatum); (z) Sailor's choice (Haemulon parra); (aa) Porkfish (Anisotremus virginicus); (bb) Bluestriped grunt (Haemulon sciurus); (cc) French grunt (Haemulon flavolineatum); (dd) Cottonwick (Haemulon melanurum); (ee) Spanish grunt (Haemulon macrostomum); (ff) Smallmouth grunt (Haemulon chrysargeryum); (gg) Greater amberjack (Seriola dumerili); (hh) Crevalle jack (Caranx hippos); (ii) Blue runner (Caranx crysos); (jj) Almaco jack (Seriola rivoliana); (kk) Banded rudderfish (Seriola zonata); (ll) Bar jack (Caranx ruber); (mm) Lesser amberjack (Seriola fasciata); (nn) Yellow jack (Caranx bartholomaei); (oo) Gray triggerfish (Balistes capriscus); (pp) Ocean triggerfish (Canthidermis sufflamen); (qq) Queen triggerfish (Balistes vetula); (rr) Hogfish (Lachnolaimus maximus); (ss) Puddingwife (Halichoeres radiates); and (tt) Atlantic spadefish (Chaetodipterus faber). ... (3) For species listed in §A(3) of this regulation: (a) Ten of any single species; and (b) 20 of any combination of the species.",
+      "sourceUrl": "https://regs.maryland.gov/us/md/exec/comar/08.02.05.29",
+      "id": 21,
+      "status": "pending"
+    },
+    {
+      "existingName": "Tilefish",
+      "field": "aliases/notes",
+      "current": "Federal limits; permit and reporting required",
+      "shouldBe": "Aliases: blueline tilefish, golden tilefish, sand tilefish. Notes: federal private recreational tilefish vessel permit required north of NC/VA border; trips targeting or retaining tilefish must be reported by eVTR within 24 hours; MD closes when NOAA closes federal waters",
+      "quote": "TILEFISH (BLUELINE, GOLDEN, SAND) | Must follow federal limits and season, permit, and reporting requirements as outlined in the federal snapper-grouper regulations. ... Any recreational vessel that intends to fish for blueline or golden tilefish north of the North Carolina/Virginia border must have a Federal private recreational tilefish vessel permit before taking a trip. ... Recreational vessel operators must report all trips that either targeted or retained tilefish within 24 hours of returning to port",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+      "id": 35,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass (lakes and ponds)",
+      "field": "limit/aliases/notes",
+      "current": "2 striped bass/hybrid striped bass per day, only one of which may be over 30 inches",
+      "shouldBe": "Add 'Possession—4, only one of which may be over 30 inches'; aliases hybrid striped bass, wiper; notes: illegal to keep striped bass/hybrids from nontidal streams and rivers; cannot be used as bait",
+      "quote": "STRIPED BASS AND HYBRID STRIPED BASS (LAKES AND PONDS) | 18 inches | Open Year Round | 2 striped bass/hybrid striped bass per day, only one of which may be over 30 inches. Possession—4, only one of which may be over 30 inches | It is illegal to keep striped bass and hybrid striped bass caught in nontidal streams and rivers. Cannot be used as bait.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+      "id": 65,
+      "status": "pending"
+    },
+    {
+      "existingName": "Largemouth Bass (nontidal)",
+      "field": "size/notes (special areas)",
+      "current": "12 inches",
+      "shouldBe": "12 inches or as provided for by special regulations. Add zones: Slot Length Limit Areas (Johnson Pond, Leonard Mill Pond, Little Seneca Lake, St. Mary's Lake) - 5 bass combined, none 11-15 inches, only one 15 inches or longer; Catch-and-Release Areas (Monocacy River Potomac to Buckeystown Dam, Patapsco River I-70 to MD 144, Potomac River Dam No. 2 to Monocacy mouth) - no possession",
+      "quote": "BASS (LARGEMOUTH AND SMALLMOUTH) | 12 inches or as provided for by special regulations. | June 16–Last Day of February | Daily—5 in aggregate Possession—10 in aggregate ... Slot Length Limit Areas ... You may not possess more than five bass (largemouth and smallmouth bass combined) per day while fishing in these areas. No bass in possession can measure between 11 and 15 inches long. Only one bass in possession may be 15 inches or longer. ... Catch-and-Release Bass Fishing Areas ... You may not possess largemouth or smallmouth bass in these areas.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/bass-fishing",
+      "id": 57,
+      "status": "pending"
+    },
+    {
+      "existingName": "Trout",
+      "field": "notes/zones",
+      "current": "Daily—2 in aggregate Possession—4 in aggregate (single inland zone)",
+      "shouldBe": "Keep statewide 2/4 but add userNotes: brook trout release-only in all nontidal waters east of I-81; Put-and-Take areas 5/10 (brook 0) with Closure 1 waters closed Mar 8–28, 2026; Delayed Harvest, Catch-and-Return and Trophy areas have separate rules (see new rows Brook Trout, Brown Trout, Trout (Put-and-Take...)); brown and brook trout cannot be used as bait",
+      "quote": "TROUT—STATEWIDE (ALL SPECIES OF TROUT) | None | Open Year Round | Daily—2 in aggregate Possession—4 in aggregate | Different rules apply for Put-and-Take Areas and Special Trout Management Areas. See Put-and-Take Trout Fishing Areas. Brown and Brook Trout cannot be used as bait.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+      "id": 68,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sunfish",
+      "field": "aliases",
+      "current": "bluegill, rock bass, redear, pumpkinseed, panfish",
+      "shouldBe": "Add printed names 'red eye' and 'goggle-eye' (rock bass)",
+      "quote": "SUNFISH, INCLUDING BLUEGILLS AND ROCK BASS (COMMONLY KNOWN AS RED EYE OR GOGGLE-EYE) | None | Open Year Round | Daily—15 in aggregate Possession—30 in aggregate",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+      "id": 67,
+      "status": "pending"
+    },
+    {
+      "existingName": "Northern Snakehead",
+      "field": "zones/notes",
+      "current": "zones: [] (Chesapeake row only)",
+      "shouldBe": "Add a zone (statewide, no size/creel) and note 'Illegal to possess live' - must be killed immediately; printed name is now 'Chesapeake Channa (Northern Snakehead)'",
+      "quote": "CHESAPEAKE CHANNA (NORTHERN SNAKEHEAD) | None | Open Year Round | None | Illegal to possess live.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/chesapeake-bay-seasons-sizes-limits",
+      "id": 53,
+      "status": "pending"
+    },
+    {
+      "existingName": "Spanish Mackerel",
+      "field": "notes (Chesapeake zone)",
+      "current": "",
+      "shouldBe": "Must be landed with head and fins intact (printed on Chesapeake Bay table)",
+      "quote": "SPANISH MACKEREL | 14 inches | Open Year Round | Daily—15 | Must be landed with head and fins intact.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/chesapeake-bay-seasons-sizes-limits",
+      "id": 23,
+      "status": "pending"
+    },
+    {
+      "existingName": "Cobia",
+      "field": "notes",
+      "current": "",
+      "shouldBe": "May catch-and-release Sept. 21–June 14",
+      "quote": "COBIA | 43 inches (total length) | June 15–Sept. 20 | 1 cobia per person per day; or up to 2 cobia per vessel per day if there are 2 or more individuals on the vessel | May catch-and-release Sept. 21–June 14",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+      "id": 9,
+      "status": "pending"
+    },
+    {
+      "existingName": "Tautog",
+      "field": "notes",
+      "current": "",
+      "shouldBe": "May catch-and-release May 16–June 30",
+      "quote": "TAUTOG | 16 inches | July 1–May 15 | January 1–May 15: Daily—4 July 1–October 31: Daily—2 November 1–December 31: Daily—4 | May catch-and-release May 16–June 30",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+      "id": 33,
+      "status": "pending"
+    },
+    {
+      "existingName": "American Lobster",
+      "field": "notes",
+      "current": "",
+      "shouldBe": "Must be landed whole. Spearing is prohibited. No egg-bearing females.",
+      "quote": "LOBSTER | 33⁄8–5¼ inches carapace length | April 1–January 31 | 100/person/24 hour period or 500 for a 5-day or longer trip when using gear other than lobster traps | Must be landed whole. Spearing is prohibited. No egg-bearing females.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+      "id": 15,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "notes (Chesapeake zone)",
+      "current": "Harvest May 1–July 31 and Sept. 1–Dec. 5; catch-and-release only Jan 1–Apr 30 (limited areas Mar–Apr) and Dec 6–31; all areas closed Aug 1–31",
+      "shouldBe": "Add: May 1–15 harvest only in Bay mainstem Brewerton Channel to VA line (plus Tangier/Pocomoke Sounds and Potomac tributaries below Nice Bridge); May 16–31 harvest area expands to Hart-Miller/Tolchester line south plus lower Chester, Patuxent, Choptank; spawning rivers and Upper Bay spawning area off limits through May 31; Mar 1–May 15 stinger hooks prohibited, barbless when trolling, max 6 trolling lines; new 2026 prohibition on using striped bass as bait; EEZ (3–200 mi) closed to striped bass",
+      "quote": "MAY 1–MAY 15, 2026 | Chesapeake Bay from the Brewerton Channel to the Virginia line, excluding all bays, sounds, tributaries, creeks and rivers, except Tangier and Pocomoke Sounds and all Potomac River tributaries downstream of the Nice Memorial Bridge (U.S. 301). | 1 fish per person per day. Must be at least 19\" and cannot exceed 24\". | Stinger (trailing) hooks are prohibited. Barbless hooks are required when trolling. No more than 6 lines may be employed while trolling. ... To use striped bass as bait. ... Striped bass may not be caught, harassed or possessed in the Exclusive Economic Zone, which stretches from 3–200 miles off the coast.",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/striped-bass",
+      "id": 29,
+      "status": "pending"
+    },
+    {
+      "existingName": "Longnose Gar",
+      "field": "notes",
+      "current": "",
+      "shouldBe": "Legal bowfishing target; bowfishing creel '5 per person creel (July 1 - April 14); 1 per person creel (April 15 - June 30)' matches hook-and-line table",
+      "quote": "Longnose Gar* ... * 5 per person creel (July 1 - April 14); 1 per person creel (April 15 - June 30)",
+      "sourceUrl": "https://www.eregulations.com/maryland/fishing/bowfishing",
+      "id": 52,
+      "status": "pending"
+    }
+  ]
+}

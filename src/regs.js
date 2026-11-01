@@ -87,6 +87,13 @@ export function mergeExtracted(raw, overlay = {}, { de = null } = {}) {
     if (ov) {
       Object.assign(rec, { aliases: ov.aliases || [], status: ov.status || 'open', zones: ov.zones && ov.zones.length ? ov.zones : rec.zones, notes: [...(ov.notes || [])], reviewed: ov.reviewed, needsReview: false });
       if (ov.rawHash && ov.rawHash !== rawHash(rec.raw)) { rec.needsReview = true; rec.notes.unshift(`The official text for this species changed after it was last reviewed (${ov.reviewed}). Check the exact wording below.`); }
+      // An audit found our rule disagreeing with the official page (or two official pages disagreeing with
+      // each other). Until a human resolves it the checker must not assert a verdict.
+      if (ov.review?.length) {
+        rec.needsReview = true;
+        rec.reviewFlags = ov.review;
+        rec.notes.unshift(`A ${ov.review[0].found} check against the official source found a discrepancy in this species' ${[...new Set(ov.review.map((r) => r.field))].join(' and ')}. Read the official wording before keeping the fish: ${ov.review[0].sourceUrl}`);
+      }
     } else rec.notes.unshift('Not yet reviewed: shown exactly as the state prints it. Read the wording before keeping the fish.');
     rec.rawId = rec.id; rec.id = EXTRACTED_ID_BASE + rec.id;   // never collide with DNREC ids (photo ID returns DNREC ids)
     // A striped bass is a striped bass: reuse the DNREC photo (and link photo-ID results) when the name matches.

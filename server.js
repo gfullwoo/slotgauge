@@ -310,6 +310,7 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
     // freshness dashboard: which official sources back each state, when they were last checked / changed
     const reg = loadSources(); const st = loadSourceState();
     res.json({ lastRun: st.lastRun || null, states: Object.entries(reg.states).map(([code, x]) => ({ code, name: x.name, season: x.season, live: !!allRegs[code], species: allRegs[code]?.species.length || 0, captured: allRegs[code]?.scraped || null,
+      audited: x.audited || null, auditNote: x.auditNote || null, needsReview: allRegs[code]?.species.filter((s) => s.needsReview).length || 0,
       sources: x.sources.map((src) => ({ id: src.id, title: src.title, url: src.url, role: src.role, checked: st.sources?.[src.id]?.checked || null, changed: st.sources?.[src.id]?.changed || null, status: st.sources?.[src.id]?.status ?? null })) })) });
   });
   if (process.env.GOOGLE_SITE_VERIFICATION) {

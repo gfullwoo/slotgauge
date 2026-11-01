@@ -25,7 +25,8 @@
           "role": "guide"
         }
       ],
-      "agencyShort": "DNREC"
+      "agencyShort": "DNREC",
+      "auditNote": "This state has not yet had a full line-by-line audit against its official pages; some species the state regulates may be missing. Always confirm with the official source linked on each species."
     },
     "NJ": {
       "name": "New Jersey",
@@ -75,9 +76,88 @@
           "role": "primary",
           "annual": true,
           "urlPattern": "https://dep.nj.gov/wp-content/uploads/njfw/digest-freshwater-fishing-{year}-complete.pdf"
+        },
+        {
+          "id": "nj-ereg-sw-limits",
+          "title": "NJ Marine Digest 2026 (eRegulations) \u2014 State Size & Possession Limits",
+          "url": "https://www.eregulations.com/newjersey/fishing/saltwater/state-size-possession-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-sw-sharks",
+          "title": "NJ Marine Digest 2026 (eRegulations) \u2014 Sharks",
+          "url": "https://www.eregulations.com/newjersey/fishing/saltwater/sharks",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-sw-mollusks",
+          "title": "NJ Marine Digest 2026 (eRegulations) \u2014 Mollusks & Crustaceans",
+          "url": "https://www.eregulations.com/newjersey/fishing/saltwater/mollusks-crustaceans",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-sw-finfish",
+          "title": "NJ Marine Digest 2026 (eRegulations) \u2014 Finfish Regulations (prohibited species, bait fish)",
+          "url": "https://www.eregulations.com/newjersey/fishing/saltwater/finfish-regulations",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-sw-sbbp",
+          "title": "NJ Marine Digest 2026 (eRegulations) \u2014 Striped Bass Bonus Program",
+          "url": "https://www.eregulations.com/newjersey/fishing/saltwater/striped-bass-bonus-program",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "nj-ereg-fw-limits",
+          "title": "NJ Freshwater Fishing Digest 2026 (eRegulations) \u2014 Size, Season & Creel Limits",
+          "url": "https://www.eregulations.com/newjersey/fishing/freshwater/size-season-creel-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-fw-trout",
+          "title": "NJ Freshwater Fishing Digest 2026 (eRegulations) \u2014 Trout Fishing Regulations",
+          "url": "https://www.eregulations.com/newjersey/fishing/freshwater/trout-fishing-regulations",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-fw-delaware",
+          "title": "NJ Freshwater Fishing Digest 2026 (eRegulations) \u2014 Delaware River",
+          "url": "https://www.eregulations.com/newjersey/fishing/freshwater/delaware-river",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-fw-greenwood",
+          "title": "NJ Freshwater Fishing Digest 2026 (eRegulations) \u2014 Greenwood Lake",
+          "url": "https://www.eregulations.com/newjersey/fishing/freshwater/greenwood-lake",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-fw-baitfish",
+          "title": "NJ Freshwater Fishing Digest 2026 (eRegulations) \u2014 Baitfish, Turtle and Frog Regulations",
+          "url": "https://www.eregulations.com/newjersey/fishing/freshwater/baitfish",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nj-ereg-fw-summary",
+          "title": "NJ Freshwater Fishing Digest 2026 (eRegulations) \u2014 Summary of Fishing Regulations",
+          "url": "https://www.eregulations.com/newjersey/fishing/freshwater/summary-of-fishing-regulations",
+          "type": "html",
+          "role": "secondary"
         }
       ],
-      "agencyShort": "NJDEP"
+      "agencyShort": "NJDEP",
+      "audited": "2026-10-31",
+      "auditNote": "Every official source page for this state was read line by line on 2026-10-31 and each species checked against it."
     },
     "MD": {
       "name": "Maryland",
@@ -151,9 +231,88 @@
           "url": "https://dnr.maryland.gov/fisheries/Documents/Public_Notices/PN_RecCatchLimits_2026-27_Effective7-1-2026.pdf",
           "type": "pdf",
           "role": "secondary"
+        },
+        {
+          "id": "md-sharks",
+          "title": "MD DNR Fishing Guide 2026 - Sharks",
+          "url": "https://www.eregulations.com/maryland/fishing/sharks",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "md-hms",
+          "title": "MD DNR Fishing Guide 2026 - Highly Migratory Species",
+          "url": "https://www.eregulations.com/maryland/fishing/highly-migratory-species",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "md-yough",
+          "title": "MD DNR Fishing Guide 2026 - Youghiogheny River Lake Seasons, Sizes & Limits",
+          "url": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "md-bass-areas",
+          "title": "MD DNR Fishing Guide 2026 - Bass Fishing (slot and catch-and-release areas)",
+          "url": "https://www.eregulations.com/maryland/fishing/bass-fishing",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "md-trout-sma",
+          "title": "MD DNR Fishing Guide 2026 - Special Management Areas - Trout",
+          "url": "https://www.eregulations.com/maryland/fishing/special-management-areas-trout",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "md-trout-pat",
+          "title": "MD DNR Fishing Guide 2026 - Put-and-Take Trout Fishing Areas",
+          "url": "https://www.eregulations.com/maryland/fishing/put-and-take-trout-fishing-areas",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "md-invasive",
+          "title": "MD DNR Fishing Guide 2026 - Invasive Species",
+          "url": "https://www.eregulations.com/maryland/fishing/invasive-species",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "md-comar-snapper-grouper",
+          "title": "COMAR 08.02.05.29 Snapper Grouper Complex / .30 Tilefish (linked from digest)",
+          "url": "https://regs.maryland.gov/us/md/exec/comar/08.02.05.29",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "md-sw-regs",
+          "title": "MD DNR Fishing Guide 2026 - Saltwater Fishing Regulations (gear/bait rules)",
+          "url": "https://www.eregulations.com/maryland/fishing/saltwater-fishing-regulations",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "md-fw-regs",
+          "title": "MD DNR Fishing Guide 2026 - Freshwater Fishing Regulations (gear/bait rules)",
+          "url": "https://www.eregulations.com/maryland/fishing/freshwater-fishing-regulations",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "md-bowfishing",
+          "title": "MD DNR Fishing Guide 2026 - Bowfishing",
+          "url": "https://www.eregulations.com/maryland/fishing/bowfishing",
+          "type": "html",
+          "role": "secondary"
         }
       ],
-      "agencyShort": "MD DNR"
+      "agencyShort": "MD DNR",
+      "audited": "2026-10-31",
+      "auditNote": "Every official source page for this state was read line by line on 2026-10-31 and each species checked against it."
     },
     "VA": {
       "name": "Virginia",
@@ -198,9 +357,81 @@
           "url": "https://mrc.virginia.gov/Regulations/VA-recreational-shellfish-non-HL-fish-gears.shtm",
           "type": "html",
           "role": "secondary"
+        },
+        {
+          "id": "va-mrc-sheet",
+          "title": "VMRC Recreational Fishing Regulations Sheet (April 2026)",
+          "url": "https://webapps.mrc.virginia.gov/public/reports/RecreationalFishingRegulationsApril2026.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "va-mrc-spear",
+          "title": "VMRC Spear Fishing Restrictions",
+          "url": "https://mrc.virginia.gov/Regulations/spearfishing-rules.shtm",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "va-vac-490-20",
+          "title": "4VAC20-490-20 Sharks: Definitions (permitted/prohibited species lists)",
+          "url": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter490/section20/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "va-vac-490-40",
+          "title": "4VAC20-490-40 Sharks: Recreational harvest limitations",
+          "url": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter490/section40/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "va-vac-110",
+          "title": "4VAC20-110 Pertaining to Lobsters (sections 20 and 30)",
+          "url": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter110/section20/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "va-vac-720-40",
+          "title": "4VAC20-720-40 Open oyster harvest season, areas and limits (2026-27)",
+          "url": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter720/section40/",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "va-dwr-trout",
+          "title": "VA DWR Trout Season and Limits",
+          "url": "https://dwr.virginia.gov/fishing/trout/season-and-limits/",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "va-dwr-trout-special",
+          "title": "VA DWR Special Regulation Trout Waters",
+          "url": "https://dwr.virginia.gov/fishing/trout/special-regulation-trout-waters/",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "va-dwr-trout-dh",
+          "title": "VA DWR Delayed Harvest Waters",
+          "url": "https://dwr.virginia.gov/fishing/trout/delayed-harvest-waters/",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "va-dwr-nongame",
+          "title": "VA DWR Nongame Fish, Reptile, Amphibian and Aquatic Invertebrate Regulations",
+          "url": "https://dwr.virginia.gov/fishing/regulations/nongame/",
+          "type": "html",
+          "role": "secondary"
         }
       ],
-      "agencyShort": "VMRC"
+      "agencyShort": "VMRC",
+      "audited": "2026-10-31",
+      "auditNote": "Every official source page for this state was read line by line on 2026-10-31 and each species checked against it."
     },
     "NC": {
       "name": "North Carolina",
@@ -252,8 +483,171 @@
           "url": "https://www.eregulations.com/northcarolina/fishing/general-mountain-trout-regulations",
           "type": "html",
           "role": "secondary"
+        },
+        {
+          "id": "nc-sg-proc",
+          "title": "NC DMF Proclamation FF-45-2026 Snapper Grouper Complex \u2013 Recreational (Reg. Amendment 36), effective Oct 28, 2026",
+          "url": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+          "type": "pdf",
+          "role": "primary"
+        },
+        {
+          "id": "nc-redsnapper-proc",
+          "title": "NC DMF Proclamation FF-40-2026 Red Snapper limited recreational season (Oct 9\u201311, 2026; superseded by FF-45-2026)",
+          "url": "https://files.nc.gov/deq/documents/2026-09/FF-40-2026 Snapper-Grouper Recreational_RED SNAPPER Season Announcement_Final.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-shark-proc",
+          "title": "NC DMF Proclamation FF-3-2026 Shark \u2013 Commercial and Recreational \u2013 opening date and harvest restrictions",
+          "url": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+          "type": "pdf",
+          "role": "primary"
+        },
+        {
+          "id": "nc-bluefish-proc",
+          "title": "NC DMF Proclamation FF-1-2026 Bluefish \u2013 Recreational",
+          "url": "https://files.nc.gov/deq/documents/2025-12/FF-1-2026 BlueFish Creel Limit Increase_0.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-bsb-north-proc",
+          "title": "NC DMF Proclamation FF-24-2026 Black Sea Bass \u2013 Recreational \u2013 North of Cape Hatteras",
+          "url": "https://files.nc.gov/deq/documents/2026-04/FF-24-2026 BSB Rec - April final.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-shad-proc",
+          "title": "NC DMF Proclamation FF-8-2026 Shad \u2013 Commercial and Recreational",
+          "url": "https://files.nc.gov/deq/documents/2025-12/FF-8-2026 Commercial and Rec Shad season_Draft (003).pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-dolphin-proc",
+          "title": "NC DMF Proclamation FF-30-2022 Dolphin \u2013 Recreational vessel limit",
+          "url": "https://files.nc.gov/deq/documents/2022-04/FF-30-2022 Dolphin vessel limit decrease_Final.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-sheepshead-proc",
+          "title": "NC DMF Proclamation FF-16-2026 Sheepshead \u2013 Recreational and Commercial",
+          "url": "https://files.nc.gov/deq/documents/2026-03/FF-16-2026 _Sheepshead_FINAL2.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-weakfish-proc",
+          "title": "NC DMF Proclamation FF-10-2024 Weakfish \u2013 Recreational",
+          "url": "https://files.nc.gov/deq/documents/2023-12/FF-10-2024_Rec_Weakfish-Final.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-scup-proc",
+          "title": "NC DMF Proclamation FF-18-2024 Scup \u2013 Recreational \u2013 North of Cape Hatteras",
+          "url": "https://files.nc.gov/deq/documents/2024-03/FF-18-2024 Scup Rec-Final.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-shrimp-proc",
+          "title": "NC DMF Proclamation SH-4-2022 Shrimp \u2013 Recreational cast net harvest",
+          "url": "https://files.nc.gov/deq/documents/2022-05/SH-4-2022_Shrimp_RecreationalCastNet_Final.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-oyster-proc",
+          "title": "NC DMF Proclamation SF-1-2026 2026-2027 Oyster hand harvest restrictions",
+          "url": "https://files.nc.gov/deq/documents/2026-10/SF-1-2026_Hand Harvest Oyster-FINAL.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-lobster-proc",
+          "title": "NC DMF Proclamation M-7-2022 Spiny Lobster \u2013 Commercial and Recreational",
+          "url": "https://files.nc.gov/deq/documents/2022-04/M-7-2022_SpinyLobster-FINAL.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-stb-ocean-proc",
+          "title": "NC DMF Proclamation FF-25-2023 (REVISED) Striped Bass Recreational \u2013 Atlantic Ocean \u2013 slot limit",
+          "url": "https://files.nc.gov/deq/documents/2023-06/FF-25-2023(REVISED) Striped Bass Recreational Atlantic Ocean Amendment 7 Emergency Action New Slot FINAL.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-stb-csma-proc",
+          "title": "NC DMF Proclamation FF-19-2026 Estuarine Striped Bass \u2013 Recreational \u2013 Tar-Pamlico and Neuse rivers (CSMA)",
+          "url": "https://files.nc.gov/deq/documents/2026-03/FF-19-2026 CSMA STB_Rec Open Proc FINAL-bb_0.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-stb-asma-proc",
+          "title": "NC DMF Proclamation FF-17-2023 Striped Bass \u2013 Recreational \u2013 Albemarle Sound Management Area \u2013 season close",
+          "url": "https://files.nc.gov/deq/documents/2023-03/FF-17-2023_ASMA_STB_REC_CLOSE_FINAL.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-stb-info",
+          "title": "NC DMF Striped Bass Recreational Fishing Information (by management area)",
+          "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/public-information-and-education/striped-bass-recreational-fishing-information",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-seatrout-proc",
+          "title": "NC DMF Proclamation FF-31-2026 Spotted Seatrout \u2013 Commercial and Recreational \u2013 opening and harvest restrictions",
+          "url": "https://files.nc.gov/deq/documents/2026-06/FF-31-2026_SpottedSeatrout_open harvest_final.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-calico-proc",
+          "title": "NC DMF Proclamation SF-4-2024 Calico Scallop \u2013 Atlantic Ocean \u2013 closure",
+          "url": "https://files.nc.gov/deq/documents/2024-05/SF-4-2024_CalicoScallops-Final.pdf",
+          "type": "pdf",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-wrc-nongame-limits",
+          "title": "NC WRC Nongame Fish Size & Creel Limits (eRegulations)",
+          "url": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-size-creel-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "nc-wrc-nongame-regs",
+          "title": "NC WRC Nongame Fish Regulations (eRegulations)",
+          "url": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-regulations",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-wrc-other-regs",
+          "title": "NC WRC Other Fishing Regulations \u2013 species prohibitions (eRegulations)",
+          "url": "https://www.eregulations.com/northcarolina/fishing/other-fishing-regulations",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "nc-wrc-inland-regs",
+          "title": "NC WRC Inland Fishing Regulations (eRegulations)",
+          "url": "https://www.eregulations.com/northcarolina/fishing/inland-fishing-regulations",
+          "type": "html",
+          "role": "secondary"
         }
-      ]
+      ],
+      "audited": "2026-10-31",
+      "auditNote": "Every official source page for this state was read line by line on 2026-10-31 and each species checked against it."
     },
     "SC": {
       "name": "South Carolina",
@@ -312,8 +706,80 @@
           "url": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits",
           "type": "html",
           "role": "primary"
+        },
+        {
+          "id": "sc-sharks",
+          "title": "SC Sharks Size & Catch Limits (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "sc-billfish-tunas",
+          "title": "SC Billfish & Atlantic Tunas Size & Catch Limits (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "sc-freshwater-nongame",
+          "title": "SC Freshwater Nongame Fishing Regulations (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/freshwater-nongame-fishing-regulations",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "sc-freshwater-game-regs",
+          "title": "SC Freshwater Game Fishing Regulations (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/freshwater-game-fishing-regulations",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "sc-general-info",
+          "title": "SC Saltwater General Information (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/general-information",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "sc-shad-herring",
+          "title": "SC Shad & Herring Fishing Regulations (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/shad-herring-fishing-regulations",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "sc-state-lakes",
+          "title": "SC State Lakes special limits (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/state-lakes",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "sc-nongame-methods",
+          "title": "SC Nongame Methods & Devices (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/nongame-methods-devices",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "sc-invasives",
+          "title": "SC Aquatic Invasive Plants & Animals (eRegulations digest)",
+          "url": "https://www.eregulations.com/southcarolina/fishing/aquatic-invasive-plants-animals",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "sc-redsnapper",
+          "title": "SCDNR Red Snapper Season / Experimental Fishing Permit",
+          "url": "https://dnr.sc.gov/redsnapper/",
+          "type": "html",
+          "role": "secondary"
         }
-      ]
+      ],
+      "audited": "2026-10-31",
+      "auditNote": "Every official source page for this state was read line by line on 2026-10-31 and each species checked against it."
     },
     "GA": {
       "name": "Georgia",
@@ -358,8 +824,80 @@
           "url": "https://gadnrle.org/shrimpregs",
           "type": "html",
           "role": "secondary"
+        },
+        {
+          "id": "ga-eregs-shrimp-crab-shellfish",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 shrimp, crab, shellfish & bait minnows",
+          "url": "https://www.eregulations.com/georgia/fishing/shrimp-crab-shellfish-bait-minnows",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ga-general-regulations",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 freshwater general regulations (seasons, length limits)",
+          "url": "https://www.eregulations.com/georgia/fishing/general-regulations",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ga-trout",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 trout fishing",
+          "url": "https://www.eregulations.com/georgia/fishing/trout-fishing",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ga-border-agreements",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 agreements with bordering states",
+          "url": "https://www.eregulations.com/georgia/fishing/agreements-with-bordering-states",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ga-pfa",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 public fishing areas",
+          "url": "https://www.eregulations.com/georgia/fishing/public-fishing-areas",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ga-fishing-methods",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 fishing methods",
+          "url": "https://www.eregulations.com/georgia/fishing/fishing-methods",
+          "type": "html",
+          "role": "primary"
+        },
+        {
+          "id": "ga-saltwater-fish-id",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 Georgia saltwater fish (ID plates, harvestable sharks)",
+          "url": "https://www.eregulations.com/georgia/fishing/georgia-saltwater-fish",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "ga-recreational-fishing",
+          "title": "Georgia Hunting & Fishing Regulations guide \u2014 recreational (saltwater) fishing, landing and gear rules",
+          "url": "https://www.eregulations.com/georgia/fishing/recreational-fishing",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "ga-crd-shellfish-rec",
+          "title": "GA DNR CRD Shellfish - Recreational (oyster/clam limits and season)",
+          "url": "https://coastalgadnr.org/Shellfish/Recreational",
+          "type": "html",
+          "role": "secondary"
+        },
+        {
+          "id": "ga-crd-hms",
+          "title": "GA DNR CRD Highly Migratory Species",
+          "url": "https://coastalgadnr.org/HMS",
+          "type": "html",
+          "role": "secondary"
         }
-      ]
+      ],
+      "audited": "2026-10-31",
+      "auditNote": "Every official source page for this state was read line by line on 2026-10-31 and each species checked against it."
     },
     "FL": {
       "name": "Florida",
@@ -622,7 +1160,8 @@
           "role": "secondary"
         }
       ],
-      "agencyShort": "FWC"
+      "agencyShort": "FWC",
+      "auditNote": "This state has not yet had a full line-by-line audit against its official pages; some species the state regulates may be missing. Always confirm with the official source linked on each species."
     },
     "NY": {
       "name": "New York",
@@ -654,7 +1193,8 @@
           "role": "secondary"
         }
       ],
-      "agencyShort": "NYSDEC"
+      "agencyShort": "NYSDEC",
+      "auditNote": "This state has not yet had a full line-by-line audit against its official pages; some species the state regulates may be missing. Always confirm with the official source linked on each species."
     },
     "CT": {
       "name": "Connecticut",
@@ -693,7 +1233,8 @@
           "role": "secondary"
         }
       ],
-      "agencyShort": "CT DEEP"
+      "agencyShort": "CT DEEP",
+      "auditNote": "This state has not yet had a full line-by-line audit against its official pages; some species the state regulates may be missing. Always confirm with the official source linked on each species."
     }
   }
 }

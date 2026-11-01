@@ -1,1681 +1,3447 @@
 {
- "1": {
-  "name": "American Eel",
-  "reviewed": "2026-10-04",
-  "rawHash": "47cf10d39538",
-  "aliases": [
-   "eel"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": [
-     [
-      "01-01",
-      "08-31"
-     ]
+  "1": {
+    "name": "American Eel",
+    "reviewed": "2026-10-04",
+    "rawHash": "47cf10d39538",
+    "aliases": [
+      "eel"
     ],
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": [
+          [
+            "01-01",
+            "08-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": [
+          [
+            "01-01",
+            "08-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": [
-     [
-      "01-01",
-      "08-31"
-     ]
+    "notes": [
+      "Open year-round for spears and baited pots."
+    ]
+  },
+  "3": {
+    "name": "Black Drum",
+    "reviewed": "2026-10-04",
+    "rawHash": "a5d441ef4798",
+    "aliases": [
+      "drum"
     ],
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 16,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person, boat limit 6",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 16,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person, boat limit 6",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Open year-round for spears and baited pots."
-  ]
- },
- "3": {
-  "name": "Black Drum",
-  "reviewed": "2026-10-04",
-  "rawHash": "a5d441ef4798",
-  "aliases": [
-   "drum"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 16,
-      "max": null
-     }
+    "notes": []
+  },
+  "5": {
+    "name": "Black Sea Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "13c4213f0f9f",
+    "aliases": [
+      "sea bass"
     ],
-    "bag": 1,
-    "bagNote": "1 per person, boat limit 6",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 16,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 12.5,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "12.5 in, excluding tail filament"
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": [
+          [
+            "05-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 12.5,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "12.5 in, excluding tail filament"
+      }
     ],
-    "bag": 1,
-    "bagNote": "1 per person, boat limit 6",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "5": {
-  "name": "Black Sea Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "13c4213f0f9f",
-  "aliases": [
-   "sea bass"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": [
-     [
-      "05-01",
-      "12-31"
-     ]
+    "notes": []
+  },
+  "7": {
+    "name": "Bluefish",
+    "reviewed": "2026-10-04",
+    "rawHash": "f95dbe5aabbc",
+    "aliases": [
+      "blues",
+      "snapper blues"
     ],
-    "size": [
-     {
-      "min": 12.5,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 8,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person (7 on for-hire boats)",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 8,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person (7 on for-hire boats)",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "12.5 in, excluding tail filament"
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": [
-     [
-      "05-01",
-      "12-31"
-     ]
+    "notes": []
+  },
+  "9": {
+    "name": "Cobia",
+    "reviewed": "2026-10-04",
+    "rawHash": "2eaf3cd41eea",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": [
+          [
+            "06-15",
+            "09-20"
+          ]
+        ],
+        "size": [
+          {
+            "min": 43,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person; 2 per vessel with 2+ aboard",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": [
+          [
+            "06-15",
+            "09-20"
+          ]
+        ],
+        "size": [
+          {
+            "min": 43,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per person; 2 per vessel with 2+ aboard",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "size": [
-     {
-      "min": 12.5,
-      "max": null
-     }
+    "notes": [
+      "Catch-and-release only Sept 21 – June 14."
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "12.5 in, excluding tail filament"
-   }
-  ],
-  "notes": []
- },
- "7": {
-  "name": "Bluefish",
-  "reviewed": "2026-10-04",
-  "rawHash": "f95dbe5aabbc",
-  "aliases": [
-   "blues",
-   "snapper blues"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 8,
-      "max": null
-     }
+    "review": [
+      {
+        "field": "notes",
+        "current": "",
+        "shouldBe": "May catch-and-release Sept. 21–June 14",
+        "quote": "COBIA | 43 inches (total length) | June 15–Sept. 20 | 1 cobia per person per day; or up to 2 cobia per vessel per day if there are 2 or more individuals on the vessel | May catch-and-release Sept. 21–June 14",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "11": {
+    "name": "Atlantic Croaker",
+    "reviewed": "2026-10-04",
+    "rawHash": "e3d27fc41cd2",
+    "aliases": [
+      "croaker",
+      "hardhead"
     ],
-    "bag": 5,
-    "bagNote": "5 per person (7 on for-hire boats)",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 8,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 5,
-    "bagNote": "5 per person (7 on for-hire boats)",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "9": {
-  "name": "Cobia",
-  "reviewed": "2026-10-04",
-  "rawHash": "2eaf3cd41eea",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": [
-     [
-      "06-15",
-      "09-20"
-     ]
+    "notes": []
+  },
+  "13": {
+    "name": "Dolphin",
+    "reviewed": "2026-10-04",
+    "rawHash": "9927dc0e5143",
+    "aliases": [
+      "mahi",
+      "mahi-mahi",
+      "dolphinfish"
     ],
-    "size": [
-     {
-      "min": 43,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "federal",
+        "label": "Federal waters",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 per person, boat limit 54",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 1,
-    "bagNote": "1 per person; 2 per vessel with 2+ aboard",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": [
-     [
-      "06-15",
-      "09-20"
-     ]
+    "notes": [],
+    "photoOf": 112
+  },
+  "14": {
+    "name": "Grouper",
+    "reviewed": "2026-10-04",
+    "rawHash": "9126051ee79c",
+    "aliases": [
+      "groupers"
     ],
-    "size": [
-     {
-      "min": 43,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 1,
-    "bagNote": "1 per person; 2 per vessel with 2+ aboard",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Catch-and-release only Sept 21 – June 14."
-  ]
- },
- "11": {
-  "name": "Atlantic Croaker",
-  "reviewed": "2026-10-04",
-  "rawHash": "e3d27fc41cd2",
-  "aliases": [
-   "croaker",
-   "hardhead"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 173,
+    "review": [
+      {
+        "field": "aliases/notes",
+        "current": "aliases: groupers",
+        "shouldBe": "Add all COMAR 08.02.05.29 grouper species: black grouper, coney, gag grouper, goliath grouper, graysby, misty grouper, nassau grouper, red grouper, red hind, rock hind, scamp, snowy grouper, speckled hind, tiger grouper, warsaw grouper, wreckfish, yellowedge grouper, yellowfin grouper, yellowmouth grouper; limit 'One of any species or any combination'; note DNR may change limits by public notice to match NOAA",
+        "quote": "(1) Grouper. The following species of the snapper grouper complex are defined as grouper: (a) Black grouper (Mycteroperca bonaci); (b) Coney (Cephalopholis fulva); (c) Gag grouper (Mycteroperca microlepis); (d) Goliath grouper (Epinephelus itajara); (e) Graysby (Cephalopholis cruentata); (f) Misty grouper (Epinephelus mystacinus); (g) Nassau grouper (Epinephelus striatus); (h) Red grouper (Epinephelus morio); (i) Red hind (Epinephelus guttatus); (j) Rock hind (Epinephelus adscensionis); (k) Scamp (Mycteroperca phenax); (l) Snowy grouper (Epinephelus niveatus); (m) Speckled hind (Epinephelus drummondhayi); (n) Tiger grouper (Mycteroperca tigris); (o) Warsaw grouper (Epinephelus nigritus); (p) Wreckfish (Polyprion americanus); (q) Yellowedge grouper (Epinephelus flavolimbatus); (r) Yellowfin grouper (Mycteroperca venenosa); and (s) Yellowmouth grouper (Mycteroperca interstitialis). ... D. Recreational. An individual may not catch or possess more than: (1) One of any species or any combination of the species listed in §A(1) of this regulation;",
+        "sourceUrl": "https://regs.maryland.gov/us/md/exec/comar/08.02.05.29",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "15": {
+    "name": "American Lobster",
+    "reviewed": "2026-10-04",
+    "rawHash": "0e796b4822ad",
+    "aliases": [
+      "lobster"
     ],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": [
+          [
+            "04-01",
+            "01-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 3.375,
+            "max": 5.25
+          }
+        ],
+        "bag": 100,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "3 3/8 to 5 1/4 inch carapace"
+      }
     ],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "13": {
-  "name": "Dolphin",
-  "reviewed": "2026-10-04",
-  "rawHash": "9927dc0e5143",
-  "aliases": [
-   "mahi",
-   "mahi-mahi",
-   "dolphinfish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "federal",
-    "label": "Federal waters",
-    "seasons": null,
-    "size": [],
-    "bag": 10,
-    "bagNote": "10 per person, boat limit 54",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 112
- },
- "14": {
-  "name": "Grouper",
-  "reviewed": "2026-10-04",
-  "rawHash": "9126051ee79c",
-  "aliases": [
-   "groupers"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 173
- },
- "15": {
-  "name": "American Lobster",
-  "reviewed": "2026-10-04",
-  "rawHash": "0e796b4822ad",
-  "aliases": [
-   "lobster"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": [
-     [
-      "04-01",
-      "01-31"
-     ]
+    "notes": [
+      "Land whole; no spearing; no egg-bearing females."
     ],
-    "size": [
-     {
-      "min": 3.375,
-      "max": 5.25
-     }
+    "photoOf": 67,
+    "review": [
+      {
+        "field": "notes",
+        "current": "",
+        "shouldBe": "Must be landed whole. Spearing is prohibited. No egg-bearing females.",
+        "quote": "LOBSTER | 33⁄8–5¼ inches carapace length | April 1–January 31 | 100/person/24 hour period or 500 for a 5-day or longer trip when using gear other than lobster traps | Must be landed whole. Spearing is prohibited. No egg-bearing females.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "16": {
+    "name": "Red Drum",
+    "reviewed": "2026-10-04",
+    "rawHash": "fe8e0bb8c1ea",
+    "aliases": [
+      "redfish",
+      "puppy drum",
+      "channel bass",
+      "red"
     ],
-    "bag": 100,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "3 3/8 to 5 1/4 inch carapace"
-   }
-  ],
-  "notes": [
-   "Land whole; no spearing; no egg-bearing females."
-  ],
-  "photoOf": 67
- },
- "16": {
-  "name": "Red Drum",
-  "reviewed": "2026-10-04",
-  "rawHash": "fe8e0bb8c1ea",
-  "aliases": [
-   "redfish",
-   "puppy drum",
-   "channel bass",
-   "red"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 18,
-      "max": 26
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": 26
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "18 to 26 inch slot"
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": 26
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "18 to 26 inch slot"
+      }
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "18 to 26 inch slot"
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 18,
-      "max": 26
-     }
+    "notes": []
+  },
+  "18": {
+    "name": "Scup",
+    "reviewed": "2026-10-04",
+    "rawHash": "fbf8a4e49e99",
+    "aliases": [
+      "porgy"
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "18 to 26 inch slot"
-   }
-  ],
-  "notes": []
- },
- "18": {
-  "name": "Scup",
-  "reviewed": "2026-10-04",
-  "rawHash": "fbf8a4e49e99",
-  "aliases": [
-   "porgy"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 30,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 30,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "19": {
-  "name": "Sheepshead",
-  "reviewed": "2026-10-04",
-  "rawHash": "db23bdadeccd",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": []
+  },
+  "19": {
+    "name": "Sheepshead",
+    "reviewed": "2026-10-04",
+    "rawHash": "db23bdadeccd",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 4,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": []
+  },
+  "21": {
+    "name": "Snapper",
+    "reviewed": "2026-10-04",
+    "rawHash": "ff487ec334cc",
+    "aliases": [
+      "snappers"
     ],
-    "bag": 4,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "21": {
-  "name": "Snapper",
-  "reviewed": "2026-10-04",
-  "rawHash": "ff487ec334cc",
-  "aliases": [
-   "snappers"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [],
-    "bag": 20,
-    "bagNote": "20 combined, max 10 of one species",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [],
-    "bag": 20,
-    "bagNote": "20 combined, max 10 of one species",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 207
- },
- "23": {
-  "name": "Spanish Mackerel",
-  "reviewed": "2026-10-04",
-  "rawHash": "e1439ec3294d",
-  "aliases": [
-   "spanish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20 combined, max 10 of one species",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": 20,
+        "bagNote": "20 combined, max 10 of one species",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 207,
+    "review": [
+      {
+        "field": "aliases/notes",
+        "current": "aliases: snappers",
+        "shouldBe": "Add all COMAR 08.02.05.29 'Other' snapper-grouper complex species (the printed 'SNAPPER SPECIES (INCLUDES MANY SPECIES, PLEASE SEE LIST)' row): queen snapper, yellowtail snapper, gray snapper (mangrove), mutton snapper, lane snapper, cubera snapper, dog snapper, schoolmaster, mahogany snapper, vermilion snapper (beeliner), red snapper, silk snapper, blackfin snapper, black snapper, red porgy, knobbed porgy, jolthead porgy, whitebone porgy, saucereye porgy, grass porgy, longspine porgy, white grunt, black margate, margate, tomtate, sailor's choice, porkfish, bluestriped grunt, French grunt, cottonwick, Spanish grunt, smallmouth grunt, greater amberjack, crevalle jack, blue runner, almaco jack, banded rudderfish, bar jack, lesser amberjack, yellow jack, gray triggerfish, ocean triggerfish, queen triggerfish, hogfish, puddingwife, Atlantic spadefish. Limit: 10 of any single species and 20 of any combination. Note the group includes porgies, grunts, jacks, triggerfish, hogfish and spadefish, not just snappers",
+        "quote": "(3) Other. The remaining species of the snapper grouper complex are: (a) Queen snapper (Etelis oculatus); (b) Yellowtail snapper (Ocyurus chrysurus); (c) Gray snapper (Lutjanus griseus); (d) Mutton snapper (Lutjanus analis); (e) Lane snapper (Lutjanus synagris); (f) Cubera snapper (Lutjanus cyanopterus); (g) Dog snapper (Lutjanus jocu); (h) Schoolmaster (Lutjanus apodus); (i) Mahogany snapper (Lutjanus mahogoni); (j) Vermilion snapper (Rhomboplites aurorubens); (k) Red snapper (Lutjanus campechanus); (l) Silk snapper (Lutjanus vivanus); (m) Blackfin snapper (Lutjanus buccanella); (n) Black snapper (Apsilus dentatus); (o) Red porgy (Pagrus pagrus); (p) Knobbed porgy (Calamus nodosus); (q) Jolthead porgy (Calamus bajonado); (r) Whitebone porgy (Calamus leucosteus); (s) Saucereye porgy (Calamus calamus); (t) Grass porgy (Calamus arctifrons); (u) Longspine porgy (Stenotomus caprinus); (v) White grunt (Haemulon plumieri); (w) Black margate (Anisotremus surinamensis); (x) Margate (Haemulon album); (y) Tomtate (Haemulon aurolineatum); (z) Sailor's choice (Haemulon parra); (aa) Porkfish (Anisotremus virginicus); (bb) Bluestriped grunt (Haemulon sciurus); (cc) French grunt (Haemulon flavolineatum); (dd) Cottonwick (Haemulon melanurum); (ee) Spanish grunt (Haemulon macrostomum); (ff) Smallmouth grunt (Haemulon chrysargeryum); (gg) Greater amberjack (Seriola dumerili); (hh) Crevalle jack (Caranx hippos); (ii) Blue runner (Caranx crysos); (jj) Almaco jack (Seriola rivoliana); (kk) Banded rudderfish (Seriola zonata); (ll) Bar jack (Caranx ruber); (mm) Lesser amberjack (Seriola fasciata); (nn) Yellow jack (Caranx bartholomaei); (oo) Gray triggerfish (Balistes capriscus); (pp) Ocean triggerfish (Canthidermis sufflamen); (qq) Queen triggerfish (Balistes vetula); (rr) Hogfish (Lachnolaimus maximus); (ss) Puddingwife (Halichoeres radiates); and (tt) Atlantic spadefish (Chaetodipterus faber). ... (3) For species listed in §A(3) of this regulation: (a) Ten of any single species; and (b) 20 of any combination of the species.",
+        "sourceUrl": "https://regs.maryland.gov/us/md/exec/comar/08.02.05.29",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "23": {
+    "name": "Spanish Mackerel",
+    "reviewed": "2026-10-04",
+    "rawHash": "e1439ec3294d",
+    "aliases": [
+      "spanish"
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "25": {
-  "name": "Spot",
-  "reviewed": "2026-10-04",
-  "rawHash": "85108e3702fb",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [],
-    "bag": 50,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [],
-    "bag": 50,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "27": {
-  "name": "Spotted Seatrout",
-  "reviewed": "2026-10-04",
-  "rawHash": "65e8dec50029",
-  "aliases": [
-   "speckled trout",
-   "specks",
-   "speck"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 4,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "notes": [],
+    "review": [
+      {
+        "field": "notes (Chesapeake zone)",
+        "current": "",
+        "shouldBe": "Must be landed with head and fins intact (printed on Chesapeake Bay table)",
+        "quote": "SPANISH MACKEREL | 14 inches | Open Year Round | Daily—15 | Must be landed with head and fins intact.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/chesapeake-bay-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "25": {
+    "name": "Spot",
+    "reviewed": "2026-10-04",
+    "rawHash": "85108e3702fb",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 4,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "29": {
-  "name": "Striped Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "81912a47d9a1",
-  "aliases": [
-   "striper",
-   "stripers",
-   "rockfish",
-   "rock"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 28,
-      "max": 31
-     }
+    "notes": []
+  },
+  "27": {
+    "name": "Spotted Seatrout",
+    "reviewed": "2026-10-04",
+    "rawHash": "65e8dec50029",
+    "aliases": [
+      "speckled trout",
+      "specks",
+      "speck"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "28 to 31 inch slot"
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": [
-     [
-      "05-01",
-      "07-31"
-     ],
-     [
-      "09-01",
-      "12-05"
-     ]
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "size": [
-     {
-      "min": 19,
-      "max": 24
-     }
+    "notes": []
+  },
+  "29": {
+    "name": "Striped Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "81912a47d9a1",
+    "aliases": [
+      "striper",
+      "stripers",
+      "rockfish",
+      "rock"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "19 to 24 inch slot"
-   }
-  ],
-  "notes": [
-   "Chesapeake: catch-and-release only Jan 1 – Apr 30 (Mar–Apr lower Bay only) and Dec 6 – 31; no targeting Aug 1–31; May 1–31 harvest limited to designated areas. Circle hooks required with bait; cannot be used as bait."
-  ]
- },
- "31": {
-  "name": "Summer Flounder",
-  "reviewed": "2026-10-04",
-  "rawHash": "8d447f63e6ee",
-  "aliases": [
-   "fluke",
-   "flounder"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 16,
-      "max": null,
-      "from": "01-01",
-      "to": "05-31"
-     },
-     {
-      "min": 17.5,
-      "max": null,
-      "from": "06-01",
-      "to": "12-31"
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 28,
+            "max": 31
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "28 to 31 inch slot"
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": [
+          [
+            "05-01",
+            "07-31"
+          ],
+          [
+            "09-01",
+            "12-05"
+          ]
+        ],
+        "size": [
+          {
+            "min": 19,
+            "max": 24
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "19 to 24 inch slot"
+      }
     ],
-    "bag": 4,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 16,
-      "max": null,
-      "from": "01-01",
-      "to": "05-31"
-     },
-     {
-      "min": 17.5,
-      "max": null,
-      "from": "06-01",
-      "to": "12-31"
-     }
+    "notes": [
+      "Chesapeake: catch-and-release only Jan 1 – Apr 30 (Mar–Apr lower Bay only) and Dec 6 – 31; no targeting Aug 1–31; May 1–31 harvest limited to designated areas. Circle hooks required with bait; cannot be used as bait."
     ],
-    "bag": 4,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
-   }
-  ],
-  "notes": []
- },
- "33": {
-  "name": "Tautog",
-  "reviewed": "2026-10-04",
-  "rawHash": "c87529828bb3",
-  "aliases": [
-   "tog",
-   "blackfish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": [
-     [
-      "07-01",
-      "05-15"
-     ]
+    "review": [
+      {
+        "field": "notes (Chesapeake zone)",
+        "current": "Harvest May 1–July 31 and Sept. 1–Dec. 5; catch-and-release only Jan 1–Apr 30 (limited areas Mar–Apr) and Dec 6–31; all areas closed Aug 1–31",
+        "shouldBe": "Add: May 1–15 harvest only in Bay mainstem Brewerton Channel to VA line (plus Tangier/Pocomoke Sounds and Potomac tributaries below Nice Bridge); May 16–31 harvest area expands to Hart-Miller/Tolchester line south plus lower Chester, Patuxent, Choptank; spawning rivers and Upper Bay spawning area off limits through May 31; Mar 1–May 15 stinger hooks prohibited, barbless when trolling, max 6 trolling lines; new 2026 prohibition on using striped bass as bait; EEZ (3–200 mi) closed to striped bass",
+        "quote": "MAY 1–MAY 15, 2026 | Chesapeake Bay from the Brewerton Channel to the Virginia line, excluding all bays, sounds, tributaries, creeks and rivers, except Tangier and Pocomoke Sounds and all Potomac River tributaries downstream of the Nice Memorial Bridge (U.S. 301). | 1 fish per person per day. Must be at least 19\" and cannot exceed 24\". | Stinger (trailing) hooks are prohibited. Barbless hooks are required when trolling. No more than 6 lines may be employed while trolling. ... To use striped bass as bait. ... Striped bass may not be caught, harassed or possessed in the Exclusive Economic Zone, which stretches from 3–200 miles off the coast.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/striped-bass",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "31": {
+    "name": "Summer Flounder",
+    "reviewed": "2026-10-04",
+    "rawHash": "8d447f63e6ee",
+    "aliases": [
+      "fluke",
+      "flounder"
     ],
-    "size": [
-     {
-      "min": 16,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 16,
+            "max": null,
+            "from": "01-01",
+            "to": "05-31"
+          },
+          {
+            "min": 17.5,
+            "max": null,
+            "from": "06-01",
+            "to": "12-31"
+          }
+        ],
+        "bag": 4,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 16,
+            "max": null,
+            "from": "01-01",
+            "to": "05-31"
+          },
+          {
+            "min": 17.5,
+            "max": null,
+            "from": "06-01",
+            "to": "12-31"
+          }
+        ],
+        "bag": 4,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "16 in Jan 1 – May 31; 17.5 in Jun 1 – Dec 31"
+      }
     ],
-    "bag": 4,
-    "bagNote": "4 (Jan 1 – May 15 and Nov 1 – Dec 31); 2 (Jul 1 – Oct 31)",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": [
-     [
-      "07-01",
-      "05-15"
-     ]
+    "notes": []
+  },
+  "33": {
+    "name": "Tautog",
+    "reviewed": "2026-10-04",
+    "rawHash": "c87529828bb3",
+    "aliases": [
+      "tog",
+      "blackfish"
     ],
-    "size": [
-     {
-      "min": 16,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": [
+          [
+            "07-01",
+            "05-15"
+          ]
+        ],
+        "size": [
+          {
+            "min": 16,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "4 (Jan 1 – May 15 and Nov 1 – Dec 31); 2 (Jul 1 – Oct 31)",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": [
+          [
+            "07-01",
+            "05-15"
+          ]
+        ],
+        "size": [
+          {
+            "min": 16,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "4 (Jan 1 – May 15 and Nov 1 – Dec 31); 2 (Jul 1 – Oct 31)",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 4,
-    "bagNote": "4 (Jan 1 – May 15 and Nov 1 – Dec 31); 2 (Jul 1 – Oct 31)",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Catch-and-release only May 16 – June 30."
-  ]
- },
- "36": {
-  "name": "Wahoo",
-  "reviewed": "2026-10-04",
-  "rawHash": "1a155b5ab9ee",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "federal",
-    "label": "Federal waters",
-    "seasons": null,
-    "size": [],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "37": {
-  "name": "Weakfish",
-  "reviewed": "2026-10-04",
-  "rawHash": "82dc5c3f257e",
-  "aliases": [
-   "gray trout",
-   "grey trout",
-   "sea trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": null,
-    "size": [
-     {
-      "min": 13,
-      "max": null
-     }
+    "notes": [
+      "Catch-and-release only May 16 – June 30."
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 13,
-      "max": null
-     }
+    "review": [
+      {
+        "field": "notes",
+        "current": "",
+        "shouldBe": "May catch-and-release May 16–June 30",
+        "quote": "TAUTOG | 16 inches | July 1–May 15 | January 1–May 15: Daily—4 July 1–October 31: Daily—2 November 1–December 31: Daily—4 | May catch-and-release May 16–June 30",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "35": {
+    "name": "Tilefish",
+    "reviewed": null,
+    "aliases": [],
+    "status": "open",
+    "zones": [],
+    "notes": [],
+    "review": [
+      {
+        "field": "aliases/notes",
+        "current": "Federal limits; permit and reporting required",
+        "shouldBe": "Aliases: blueline tilefish, golden tilefish, sand tilefish. Notes: federal private recreational tilefish vessel permit required north of NC/VA border; trips targeting or retaining tilefish must be reported by eVTR within 24 hours; MD closes when NOAA closes federal waters",
+        "quote": "TILEFISH (BLUELINE, GOLDEN, SAND) | Must follow federal limits and season, permit, and reporting requirements as outlined in the federal snapper-grouper regulations. ... Any recreational vessel that intends to fish for blueline or golden tilefish north of the North Carolina/Virginia border must have a Federal private recreational tilefish vessel permit before taking a trip. ... Recreational vessel operators must report all trips that either targeted or retained tilefish within 24 hours of returning to port",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "36": {
+    "name": "Wahoo",
+    "reviewed": "2026-10-04",
+    "rawHash": "1a155b5ab9ee",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "federal",
+        "label": "Federal waters",
+        "seasons": null,
+        "size": [],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "39": {
-  "name": "Alewife and Blueback Herring",
-  "reviewed": "2026-10-04",
-  "rawHash": "9f18fd9c5f1b",
-  "aliases": [
-   "river herring",
-   "alewife",
-   "blueback herring",
-   "herring"
-  ],
-  "status": "closed",
-  "zones": [],
-  "notes": [],
-  "photoOf": 71
- },
- "41": {
-  "name": "American Shad",
-  "reviewed": "2026-10-04",
-  "rawHash": "9f18fd9c5f1b",
-  "aliases": [
-   "shad"
-  ],
-  "status": "closed",
-  "zones": [],
-  "notes": []
- },
- "43": {
-  "name": "Hickory Shad",
-  "reviewed": "2026-10-04",
-  "rawHash": "9f18fd9c5f1b",
-  "aliases": [],
-  "status": "closed",
-  "zones": [],
-  "notes": []
- },
- "45": {
-  "name": "Atlantic Sturgeon",
-  "reviewed": "2026-10-04",
-  "rawHash": "9f18fd9c5f1b",
-  "aliases": [
-   "sturgeon"
-  ],
-  "status": "closed",
-  "zones": [],
-  "notes": []
- },
- "47": {
-  "name": "Atlantic Menhaden",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [
-   "bunker",
-   "menhaden"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "48": {
-  "name": "Largemouth Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "a9afa27d5771",
-  "aliases": [
-   "largemouth",
-   "bass"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 15,
-      "max": null,
-      "from": "03-01",
-      "to": "06-15"
-     },
-     {
-      "min": 12,
-      "max": null,
-      "from": "06-16",
-      "to": "02-29"
-     }
+    "notes": []
+  },
+  "37": {
+    "name": "Weakfish",
+    "reviewed": "2026-10-04",
+    "rawHash": "82dc5c3f257e",
+    "aliases": [
+      "gray trout",
+      "grey trout",
+      "sea trout"
     ],
-    "bag": 5,
-    "bagNote": "5 largemouth + smallmouth combined",
-    "closed": false,
-    "sizeNote": "15 in Mar 1 – Jun 15; 12 in rest of year"
-   }
-  ],
-  "notes": []
- },
- "49": {
-  "name": "Smallmouth Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "a9afa27d5771",
-  "aliases": [
-   "smallmouth",
-   "smallie"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 15,
-      "max": null,
-      "from": "03-01",
-      "to": "06-15"
-     },
-     {
-      "min": 12,
-      "max": null,
-      "from": "06-16",
-      "to": "02-29"
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": null,
+        "size": [
+          {
+            "min": 13,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 13,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 5,
-    "bagNote": "5 largemouth + smallmouth combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "50": {
-  "name": "Catfish",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [
-   "blue catfish",
-   "channel catfish",
-   "flathead"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 22
- },
- "51": {
-  "name": "Chain Pickerel",
-  "reviewed": "2026-10-04",
-  "rawHash": "f1a7a01855ec",
-  "aliases": [
-   "pickerel",
-   "pike"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": [
-     [
-      "05-01",
-      "03-14"
-     ]
+    "notes": []
+  },
+  "39": {
+    "name": "Alewife and Blueback Herring",
+    "reviewed": "2026-10-04",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [
+      "river herring",
+      "alewife",
+      "blueback herring",
+      "herring"
     ],
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "closed",
+    "zones": [],
+    "notes": [],
+    "photoOf": 71
+  },
+  "41": {
+    "name": "American Shad",
+    "reviewed": "2026-10-04",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [
+      "shad"
     ],
-    "bag": 10,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "52": {
-  "name": "Longnose Gar",
-  "reviewed": "2026-10-04",
-  "rawHash": "fb7438d0a540",
-  "aliases": [
-   "gar"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [],
-    "bag": 5,
-    "bagNote": "5 (1 during Apr 15 – Jun 30)",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "53": {
-  "name": "Northern Snakehead",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [
-   "snakehead",
-   "chesapeake channa"
-  ],
-  "status": "invasive",
-  "zones": [],
-  "notes": [
-   "Illegal to possess live."
-  ]
- },
- "54": {
-  "name": "Walleye",
-  "reviewed": "2026-10-04",
-  "rawHash": "9f00af0c18ee",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 15,
-      "max": null
-     }
+    "status": "closed",
+    "zones": [],
+    "notes": []
+  },
+  "43": {
+    "name": "Hickory Shad",
+    "reviewed": "2026-10-04",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [],
+    "status": "closed",
+    "zones": [],
+    "notes": []
+  },
+  "45": {
+    "name": "Atlantic Sturgeon",
+    "reviewed": "2026-10-04",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [
+      "sturgeon"
     ],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "55": {
-  "name": "White Perch",
-  "reviewed": "2026-10-04",
-  "rawHash": "0fff04260637",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "no minimum by hook and line (8 in with other gear)"
-   }
-  ],
-  "notes": []
- },
- "56": {
-  "name": "Yellow Perch",
-  "reviewed": "2026-10-04",
-  "rawHash": "793428986d19",
-  "aliases": [
-   "perch"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "status": "closed",
+    "zones": [],
+    "notes": []
+  },
+  "47": {
+    "name": "Atlantic Menhaden",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "bunker",
+      "menhaden"
     ],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "57": {
-  "name": "Largemouth Bass (nontidal)",
-  "reviewed": "2026-10-04",
-  "rawHash": "a8244d395c94",
-  "aliases": [
-   "largemouth",
-   "smallmouth",
-   "bass",
-   "smallmouth bass (nontidal)"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": [
-     [
-      "06-16",
-      "02-29"
-     ]
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": []
+  },
+  "48": {
+    "name": "Largemouth Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "a9afa27d5771",
+    "aliases": [
+      "largemouth",
+      "bass"
     ],
-    "bag": 5,
-    "bagNote": "5 largemouth + smallmouth combined",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Catch and release allowed year-round."
-  ],
-  "photoOf": 38
- },
- "58": {
-  "name": "Carp",
-  "reviewed": "2026-10-04",
-  "rawHash": "f054e13f1005",
-  "aliases": [
-   "common carp"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 29
- },
- "59": {
-  "name": "Chain Pickerel (nontidal)",
-  "reviewed": "2026-10-04",
-  "rawHash": "46b7b0351356",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": null,
+            "from": "03-01",
+            "to": "06-15"
+          },
+          {
+            "min": 12,
+            "max": null,
+            "from": "06-16",
+            "to": "02-29"
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 largemouth + smallmouth combined",
+        "closed": false,
+        "sizeNote": "15 in Mar 1 – Jun 15; 12 in rest of year"
+      }
     ],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 28
- },
- "60": {
-  "name": "Channel Catfish",
-  "reviewed": "2026-10-04",
-  "rawHash": "051a6602e8c3",
-  "aliases": [
-   "channel cat"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 30
- },
- "61": {
-  "name": "Crappie",
-  "reviewed": "2026-10-04",
-  "rawHash": "f054e13f1005",
-  "aliases": [
-   "black crappie",
-   "white crappie"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "62": {
-  "name": "Muskellunge",
-  "reviewed": "2026-10-04",
-  "rawHash": "92b59a4804c7",
-  "aliases": [
-   "musky",
-   "muskie",
-   "tiger muskie"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 36,
-      "max": null
-     }
+    "notes": []
+  },
+  "49": {
+    "name": "Smallmouth Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "a9afa27d5771",
+    "aliases": [
+      "smallmouth",
+      "smallie"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "63": {
-  "name": "Northern Pike",
-  "reviewed": "2026-10-04",
-  "rawHash": "7ed2dee3f896",
-  "aliases": [
-   "pike"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 30,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": null,
+            "from": "03-01",
+            "to": "06-15"
+          },
+          {
+            "min": 12,
+            "max": null,
+            "from": "06-16",
+            "to": "02-29"
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 largemouth + smallmouth combined",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "64": {
-  "name": "Saugeye",
-  "reviewed": "2026-10-04",
-  "rawHash": "7eefe4a5121a",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 15,
-      "max": null
-     }
+    "notes": []
+  },
+  "50": {
+    "name": "Catfish",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "blue catfish",
+      "channel catfish",
+      "flathead"
     ],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "65": {
-  "name": "Striped Bass (lakes and ponds)",
-  "reviewed": "2026-10-04",
-  "rawHash": "87f17196b4a1",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 18,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 2,
-    "bagNote": "2, only 1 over 30 in",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Illegal to keep striped bass from nontidal streams and rivers."
-  ],
-  "photoOf": 55
- },
- "66": {
-  "name": "Suckers",
-  "reviewed": "2026-10-04",
-  "rawHash": "95b4cb60bb9e",
-  "aliases": [
-   "sucker"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 30,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "67": {
-  "name": "Sunfish",
-  "reviewed": "2026-10-04",
-  "rawHash": "dc6cf7288af4",
-  "aliases": [
-   "bluegill",
-   "rock bass",
-   "redear",
-   "pumpkinseed",
-   "panfish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "68": {
-  "name": "Trout",
-  "reviewed": "2026-10-04",
-  "rawHash": "1974c5bd395c",
-  "aliases": [
-   "brook trout",
-   "brown trout",
-   "rainbow trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Put-and-Take areas and Special Trout Management Areas have their own limits and seasons."
-  ]
- },
- "69": {
-  "name": "Walleye (nontidal)",
-  "reviewed": "2026-10-04",
-  "rawHash": "5b7f48775283",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 15,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 22
+  },
+  "51": {
+    "name": "Chain Pickerel",
+    "reviewed": "2026-10-04",
+    "rawHash": "f1a7a01855ec",
+    "aliases": [
+      "pickerel",
+      "pike"
     ],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 59
- },
- "70": {
-  "name": "Yellow Perch (nontidal)",
-  "reviewed": "2026-10-04",
-  "rawHash": "bc096b25f5be",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Maryland nontidal waters (statewide; special areas differ)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": [
+          [
+            "05-01",
+            "03-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 5,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "9 in in rivers and streams; none in lakes (10 per day)"
-   }
-  ],
-  "notes": [],
-  "photoOf": 64
- },
- "71": {
-  "name": "Blue Crab",
-  "reviewed": "2026-10-30",
-  "rawHash": "7ae1e6dc8f69",
-  "aliases": [
-   "crab",
-   "crabs",
-   "blue crabs",
-   "jimmy",
-   "jimmies",
-   "sook",
-   "sooks",
-   "hard crab",
-   "hard crabs"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "chesapeake",
-    "label": "Chesapeake Bay & tidal tributaries",
-    "seasons": [
-     [
-      "04-01",
-      "12-15"
-     ]
+    "notes": []
+  },
+  "52": {
+    "name": "Longnose Gar",
+    "reviewed": "2026-10-04",
+    "rawHash": "fb7438d0a540",
+    "aliases": [
+      "gar"
     ],
-    "size": [
-     {
-      "min": 5,
-      "max": null,
-      "from": "04-01",
-      "to": "07-14"
-     },
-     {
-      "min": 5.25,
-      "max": null,
-      "from": "07-15",
-      "to": "12-15"
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "5 (1 during Apr 15 – Jun 30)",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": null,
-    "bagNote": "2 dozen males per person (unlicensed); 1 bushel or 6 dozen (licensed); females prohibited",
-    "closed": false,
-    "sizeNote": "Male hard crab 5 in to Jul 14, 5¼ in from Jul 15; soft 3½ in"
-   },
-   {
-    "zone": "atlantic",
-    "label": "Atlantic Ocean & coastal bays",
-    "seasons": [
-     [
-      "04-01",
-      "12-31"
-     ]
+    "notes": [],
+    "review": [
+      {
+        "field": "notes",
+        "current": "",
+        "shouldBe": "Legal bowfishing target; bowfishing creel '5 per person creel (July 1 - April 14); 1 per person creel (April 15 - June 30)' matches hook-and-line table",
+        "quote": "Longnose Gar* ... * 5 per person creel (July 1 - April 14); 1 per person creel (April 15 - June 30)",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/bowfishing",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "53": {
+    "name": "Northern Snakehead",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "snakehead",
+      "chesapeake channa"
     ],
-    "size": [
-     {
-      "min": 5,
-      "max": null
-     }
+    "status": "invasive",
+    "zones": [],
+    "notes": [
+      "Illegal to possess live."
     ],
-    "bag": null,
-    "bagNote": "1 bushel (6 dozen) per person, 2 bushels (12 dozen) per boat",
-    "closed": false,
-    "sizeNote": "Hard crab 5 in; soft 3½ in; mature females no minimum"
-   }
-  ],
-  "notes": [
-   "Recreational crabbers may not keep any female crab in Maryland Chesapeake waters. Hours: ½ hour before/after sunrise to sunset (5 p.m. in the Bay mainstem)."
-  ]
- },
- "72": {
-  "name": "Oyster",
-  "reviewed": "2026-10-30",
-  "rawHash": "68f09d9cd2ea",
-  "aliases": [
-   "oyster",
-   "oysters"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Maryland tidal waters (open areas)",
-    "seasons": [
-     [
-      "10-01",
-      "03-31"
-     ]
+    "review": [
+      {
+        "field": "zones/notes",
+        "current": "zones: [] (Chesapeake row only)",
+        "shouldBe": "Add a zone (statewide, no size/creel) and note 'Illegal to possess live' - must be killed immediately; printed name is now 'Chesapeake Channa (Northern Snakehead)'",
+        "quote": "CHESAPEAKE CHANNA (NORTHERN SNAKEHEAD) | None | Open Year Round | None | Illegal to possess live.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/chesapeake-bay-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "54": {
+    "name": "Walleye",
+    "reviewed": "2026-10-04",
+    "rawHash": "9f00af0c18ee",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "size": [
-     {
-      "min": 3,
-      "max": null
-     }
+    "notes": []
+  },
+  "55": {
+    "name": "White Perch",
+    "reviewed": "2026-10-04",
+    "rawHash": "0fff04260637",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "no minimum by hook and line (8 in with other gear)"
+      }
     ],
-    "bag": 100,
-    "bagNote": "100 oysters per person per day (Mon–Sat, sunrise to noon)",
-    "closed": false,
-    "sizeNote": "3 inches hinge to bill"
-   }
-  ],
-  "notes": [
-   "Maryland residents only. $10 resident oyster license (or free waterfront landowner registration) required. Rakes, diving, hand or shaft tongs only; not from sanctuaries, leases or closed areas."
-  ]
- },
- "73": {
-  "name": "Hard Clam",
-  "reviewed": "2026-10-30",
-  "rawHash": "7a086bc31101",
-  "aliases": [
-   "clam",
-   "clams",
-   "quahog",
-   "quahogs",
-   "hard clams",
-   "littleneck",
-   "cherrystone"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Maryland tidal waters (open areas)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 1,
-      "max": null
-     }
+    "notes": []
+  },
+  "56": {
+    "name": "Yellow Perch",
+    "reviewed": "2026-10-04",
+    "rawHash": "793428986d19",
+    "aliases": [
+      "perch"
     ],
-    "bag": 250,
-    "bagNote": "250 clams per person per day",
-    "closed": false,
-    "sizeNote": "1 inch across"
-   }
-  ],
-  "notes": [
-   "Maryland residents only, except nonresidents may harvest clams in Worcester County."
-  ]
- }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "57": {
+    "name": "Largemouth Bass (nontidal)",
+    "reviewed": "2026-10-04",
+    "rawHash": "a8244d395c94",
+    "aliases": [
+      "largemouth",
+      "smallmouth",
+      "bass",
+      "smallmouth bass (nontidal)"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": [
+          [
+            "06-16",
+            "02-29"
+          ]
+        ],
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 largemouth + smallmouth combined",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Catch and release allowed year-round."
+    ],
+    "photoOf": 38,
+    "review": [
+      {
+        "field": "size/notes (special areas)",
+        "current": "12 inches",
+        "shouldBe": "12 inches or as provided for by special regulations. Add zones: Slot Length Limit Areas (Johnson Pond, Leonard Mill Pond, Little Seneca Lake, St. Mary's Lake) - 5 bass combined, none 11-15 inches, only one 15 inches or longer; Catch-and-Release Areas (Monocacy River Potomac to Buckeystown Dam, Patapsco River I-70 to MD 144, Potomac River Dam No. 2 to Monocacy mouth) - no possession",
+        "quote": "BASS (LARGEMOUTH AND SMALLMOUTH) | 12 inches or as provided for by special regulations. | June 16–Last Day of February | Daily—5 in aggregate Possession—10 in aggregate ... Slot Length Limit Areas ... You may not possess more than five bass (largemouth and smallmouth bass combined) per day while fishing in these areas. No bass in possession can measure between 11 and 15 inches long. Only one bass in possession may be 15 inches or longer. ... Catch-and-Release Bass Fishing Areas ... You may not possess largemouth or smallmouth bass in these areas.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/bass-fishing",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "58": {
+    "name": "Carp",
+    "reviewed": "2026-10-04",
+    "rawHash": "f054e13f1005",
+    "aliases": [
+      "common carp"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 29
+  },
+  "59": {
+    "name": "Chain Pickerel (nontidal)",
+    "reviewed": "2026-10-04",
+    "rawHash": "46b7b0351356",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 28
+  },
+  "60": {
+    "name": "Channel Catfish",
+    "reviewed": "2026-10-04",
+    "rawHash": "051a6602e8c3",
+    "aliases": [
+      "channel cat"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 30
+  },
+  "61": {
+    "name": "Crappie",
+    "reviewed": "2026-10-04",
+    "rawHash": "f054e13f1005",
+    "aliases": [
+      "black crappie",
+      "white crappie"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "62": {
+    "name": "Muskellunge",
+    "reviewed": "2026-10-04",
+    "rawHash": "92b59a4804c7",
+    "aliases": [
+      "musky",
+      "muskie",
+      "tiger muskie"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 36,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "63": {
+    "name": "Northern Pike",
+    "reviewed": "2026-10-04",
+    "rawHash": "7ed2dee3f896",
+    "aliases": [
+      "pike"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 30,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "64": {
+    "name": "Saugeye",
+    "reviewed": "2026-10-04",
+    "rawHash": "7eefe4a5121a",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "65": {
+    "name": "Striped Bass (lakes and ponds)",
+    "reviewed": "2026-10-04",
+    "rawHash": "87f17196b4a1",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2, only 1 over 30 in",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Illegal to keep striped bass from nontidal streams and rivers."
+    ],
+    "photoOf": 55,
+    "review": [
+      {
+        "field": "limit/aliases/notes",
+        "current": "2 striped bass/hybrid striped bass per day, only one of which may be over 30 inches",
+        "shouldBe": "Add 'Possession—4, only one of which may be over 30 inches'; aliases hybrid striped bass, wiper; notes: illegal to keep striped bass/hybrids from nontidal streams and rivers; cannot be used as bait",
+        "quote": "STRIPED BASS AND HYBRID STRIPED BASS (LAKES AND PONDS) | 18 inches | Open Year Round | 2 striped bass/hybrid striped bass per day, only one of which may be over 30 inches. Possession—4, only one of which may be over 30 inches | It is illegal to keep striped bass and hybrid striped bass caught in nontidal streams and rivers. Cannot be used as bait.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "66": {
+    "name": "Suckers",
+    "reviewed": "2026-10-04",
+    "rawHash": "95b4cb60bb9e",
+    "aliases": [
+      "sucker"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 30,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "67": {
+    "name": "Sunfish",
+    "reviewed": "2026-10-04",
+    "rawHash": "dc6cf7288af4",
+    "aliases": [
+      "bluegill",
+      "rock bass",
+      "redear",
+      "pumpkinseed",
+      "panfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "aliases",
+        "current": "bluegill, rock bass, redear, pumpkinseed, panfish",
+        "shouldBe": "Add printed names 'red eye' and 'goggle-eye' (rock bass)",
+        "quote": "SUNFISH, INCLUDING BLUEGILLS AND ROCK BASS (COMMONLY KNOWN AS RED EYE OR GOGGLE-EYE) | None | Open Year Round | Daily—15 in aggregate Possession—30 in aggregate",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "68": {
+    "name": "Trout",
+    "reviewed": "2026-10-04",
+    "rawHash": "1974c5bd395c",
+    "aliases": [
+      "brook trout",
+      "brown trout",
+      "rainbow trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Put-and-Take areas and Special Trout Management Areas have their own limits and seasons."
+    ],
+    "review": [
+      {
+        "field": "notes/zones",
+        "current": "Daily—2 in aggregate Possession—4 in aggregate (single inland zone)",
+        "shouldBe": "Keep statewide 2/4 but add userNotes: brook trout release-only in all nontidal waters east of I-81; Put-and-Take areas 5/10 (brook 0) with Closure 1 waters closed Mar 8–28, 2026; Delayed Harvest, Catch-and-Return and Trophy areas have separate rules (see new rows Brook Trout, Brown Trout, Trout (Put-and-Take...)); brown and brook trout cannot be used as bait",
+        "quote": "TROUT—STATEWIDE (ALL SPECIES OF TROUT) | None | Open Year Round | Daily—2 in aggregate Possession—4 in aggregate | Different rules apply for Put-and-Take Areas and Special Trout Management Areas. See Put-and-Take Trout Fishing Areas. Brown and Brook Trout cannot be used as bait.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "69": {
+    "name": "Walleye (nontidal)",
+    "reviewed": "2026-10-04",
+    "rawHash": "5b7f48775283",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 59,
+    "review": [
+      {
+        "field": "season",
+        "current": "Open year-round",
+        "shouldBe": "Open year round—Except on Deep Creek Lake and the Youghiogheny River downstream of Route 42 bridge where it is closed from March 1 through April 15",
+        "quote": "WALLEYE | ... | Open year round—Except on Deep Creek Lake and the Youghiogheny River downstream of Route 42 bridge where it is closed from March 1 through April 15. | Daily—5 Possession—10 | Cannot be used as bait.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "70": {
+    "name": "Yellow Perch (nontidal)",
+    "reviewed": "2026-10-04",
+    "rawHash": "bc096b25f5be",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Maryland nontidal waters (statewide; special areas differ)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "9 in in rivers and streams; none in lakes (10 per day)"
+      }
+    ],
+    "notes": [],
+    "photoOf": 64
+  },
+  "71": {
+    "name": "Blue Crab",
+    "reviewed": "2026-10-30",
+    "rawHash": "7ae1e6dc8f69",
+    "aliases": [
+      "crab",
+      "crabs",
+      "blue crabs",
+      "jimmy",
+      "jimmies",
+      "sook",
+      "sooks",
+      "hard crab",
+      "hard crabs"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": [
+          [
+            "04-01",
+            "12-15"
+          ]
+        ],
+        "size": [
+          {
+            "min": 5,
+            "max": null,
+            "from": "04-01",
+            "to": "07-14"
+          },
+          {
+            "min": 5.25,
+            "max": null,
+            "from": "07-15",
+            "to": "12-15"
+          }
+        ],
+        "bag": null,
+        "bagNote": "2 dozen males per person (unlicensed); 1 bushel or 6 dozen (licensed); females prohibited",
+        "closed": false,
+        "sizeNote": "Male hard crab 5 in to Jul 14, 5¼ in from Jul 15; soft 3½ in"
+      },
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean & coastal bays",
+        "seasons": [
+          [
+            "04-01",
+            "12-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 5,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 bushel (6 dozen) per person, 2 bushels (12 dozen) per boat",
+        "closed": false,
+        "sizeNote": "Hard crab 5 in; soft 3½ in; mature females no minimum"
+      }
+    ],
+    "notes": [
+      "Recreational crabbers may not keep any female crab in Maryland Chesapeake waters. Hours: ½ hour before/after sunrise to sunset (5 p.m. in the Bay mainstem)."
+    ],
+    "review": [
+      {
+        "field": "size/limit (Atlantic zone row is blank)",
+        "current": "",
+        "shouldBe": "Season April 1–Dec. 31; Hard crabs 5 inches; Soft crabs 3½ inches; Peeler crabs Apr 1–Jul 14 3¼ in, Jul 15–Dec 31 3½ in; mature female crabs no minimum size; 1 bushel per person (or 6 dozen in other container), 2 bushels per boat (or 12 dozen); sponge crabs prohibited; no license required but gear must be marked",
+        "quote": "Season April 1–Dec. 31. ... Hard crabs—5 inches. Soft crabs—3½ inches. Peeler crabs April 1–July 14—3¼ inches. July 15–Dec. 31—3½ inches. Mature female crabs—no minimum size. The daily catch limit in the waters of the coastal bays of the Atlantic Ocean and their tidal tributaries is: One bushel per person if using a bushel basket, 6 dozen if using a container other than a bushel basket. Two bushels per boat if using a bushel basket or 12 dozen if using a container other than a bushel basket. ... The taking of sponge crabs is prohibited.",
+        "sourceUrl": "https://www.eregulations.com/maryland/fishing/blue-crabs-atlantic",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "72": {
+    "name": "Oyster",
+    "reviewed": "2026-10-30",
+    "rawHash": "68f09d9cd2ea",
+    "aliases": [
+      "oyster",
+      "oysters"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Maryland tidal waters (open areas)",
+        "seasons": [
+          [
+            "10-01",
+            "03-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 3,
+            "max": null
+          }
+        ],
+        "bag": 100,
+        "bagNote": "100 oysters per person per day (Mon–Sat, sunrise to noon)",
+        "closed": false,
+        "sizeNote": "3 inches hinge to bill"
+      }
+    ],
+    "notes": [
+      "Maryland residents only. $10 resident oyster license (or free waterfront landowner registration) required. Rakes, diving, hand or shaft tongs only; not from sanctuaries, leases or closed areas."
+    ]
+  },
+  "73": {
+    "name": "Hard Clam",
+    "reviewed": "2026-10-30",
+    "rawHash": "7a086bc31101",
+    "aliases": [
+      "clam",
+      "clams",
+      "quahog",
+      "quahogs",
+      "hard clams",
+      "littleneck",
+      "cherrystone"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Maryland tidal waters (open areas)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 1,
+            "max": null
+          }
+        ],
+        "bag": 250,
+        "bagNote": "250 clams per person per day",
+        "closed": false,
+        "sizeNote": "1 inch across"
+      }
+    ],
+    "notes": [
+      "Maryland residents only, except nonresidents may harvest clams in Worcester County."
+    ]
+  },
+  "74": {
+    "name": "Shrimp",
+    "reviewed": "2026-10-31",
+    "rawHash": "c59f7a2d5cbc",
+    "aliases": [
+      "brown shrimp",
+      "white shrimp",
+      "shrimp (brown, white)"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean, coastal bays & tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No size or daily limit on brown or white shrimp in Maryland tidal waters.",
+      "You must use authorized recreational gear (cast nets up to 10 ft radius, seines, dip nets - see the Saltwater Fishing Regulations gear table).",
+      "Printed identically on the Chesapeake Bay table: 'SHRIMP (BROWN, WHITE) | None | Open Year Round | None | Must use authorized gear.'"
+    ],
+    "sourceId": "md-atlantic",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+    "auditQuote": "SHRIMP (BROWN, WHITE) | None | Open Year Round | None | Must use authorized gear."
+  },
+  "75": {
+    "name": "Shortnose Sturgeon",
+    "reviewed": "2026-10-31",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [
+      "sturgeon"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "atlantic",
+        "label": "Atlantic Ocean, coastal bays & tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "chesapeake",
+        "label": "Chesapeake Bay & tidal tributaries",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "inland",
+        "label": "Nontidal (inland) waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Harvest closed everywhere in Maryland. Release immediately.",
+      "Nontidal table: 'ATLANTIC STURGEON, SHORTNOSE STURGEON, AND BIVALVES/SHELLFISH | CLOSED' (https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits)."
+    ],
+    "sourceId": "md-atlantic",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/atlantic-seasons-sizes-limits",
+    "auditQuote": "ALEWIFE HERRING, AMERICAN SHAD, ATLANTIC STURGEON, BLUEBACK HERRING, HICKORY SHAD AND SHORTNOSE STURGEON | CLOSED"
+  },
+  "76": {
+    "name": "Atlantic Sharpnose Shark and Bonnethead Shark",
+    "reviewed": "2026-10-31",
+    "rawHash": "09faf2e0f8e9",
+    "aliases": [
+      "atlantic sharpnose shark",
+      "sharpnose shark",
+      "bonnethead",
+      "bonnethead shark",
+      "shark"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "shore",
+        "label": "Shore anglers (MD tidal waters)",
+        "seasons": null,
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 of each species (1 bonnethead + 1 Atlantic sharpnose) per angler per calendar day, in addition to the 1 approved-list shark",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "vessel",
+        "label": "Vessel anglers (MD tidal waters)",
+        "seasons": null,
+        "size": [],
+        "bag": 1,
+        "bagNote": "1 of each species (1 bonnethead + 1 Atlantic sharpnose) per angler per trip, in addition to the vessel's 1 approved-list shark per trip",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No minimum size for these two species.",
+      "Shore anglers: 1 shark per calendar day from the approved list (plus 1 bonnethead and 1 Atlantic sharpnose). Vessels: 1 shark per trip from the approved list for the whole boat (plus 1 bonnethead and 1 Atlantic sharpnose per angler).",
+      "Handline or rod and reel only; corrodible non-stainless circle hooks required except with artificial flies/lures. Heads, tails and fins must stay attached through landing. Sale and finning prohibited.",
+      "As of January 1, 2026 recreational anglers no longer need to report or tag landed sharks."
+    ],
+    "sourceId": "md-sharks",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/sharks",
+    "auditQuote": "ATLANTIC SHARPNOSE SHARK, BONNETHEAD SHARK | Open Year Round | None | Each recreational shore angler is allowed a maximum of 1 shark per calendar day from this list of approved species. In addition, each recreational shore angler may harvest 1 of each of the following species per calendar day: 1. Bonnethead 2. Atlantic Sharpnose shark | Each recreational vessel is allowed a maximum of 1 shark per trip from this list of approved species. In addition, each recreational angler may harvest 1 of each of the following species per trip: 1. Bonnethead 2. Atlantic Sharpnose shark"
+  },
+  "77": {
+    "name": "Sharks - 54 inch group, open year round (Blacknose, Blue, Common Thresher, Finetooth, Porbeagle)",
+    "reviewed": "2026-10-31",
+    "rawHash": "db8e1fbd2ee2",
+    "aliases": [
+      "blacknose shark",
+      "blue shark",
+      "common thresher shark",
+      "thresher shark",
+      "thresher",
+      "finetooth shark",
+      "porbeagle shark",
+      "porbeagle",
+      "shark"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "shore",
+        "label": "Shore anglers (MD tidal waters)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 54,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 shark per angler per calendar day from the approved list (all approved species combined)",
+        "closed": false,
+        "sizeNote": "54 inches fork length"
+      },
+      {
+        "zone": "vessel",
+        "label": "Vessel anglers (MD tidal waters)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 54,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 shark per vessel per trip from the approved list (all approved species combined, whole boat)",
+        "closed": false,
+        "sizeNote": "54 inches fork length"
+      }
+    ],
+    "notes": [
+      "Minimum size is fork length, not total length.",
+      "Shore anglers: 1 shark per calendar day from the approved list (plus 1 bonnethead and 1 Atlantic sharpnose). Vessels: 1 shark per trip from the approved list for the whole boat (plus 1 bonnethead and 1 Atlantic sharpnose per angler).",
+      "Handline or rod and reel only; corrodible non-stainless circle hooks required except with artificial flies/lures. Heads, tails and fins must stay attached through landing. Sale and finning prohibited."
+    ],
+    "sourceId": "md-sharks",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/sharks",
+    "auditQuote": "BLACKNOSE SHARK, BLUE SHARK, COMMON THRESHER SHARK, FINETOOTH SHARK, PORBEAGLE SHARK | Open Year Round | 54 inches"
+  },
+  "78": {
+    "name": "Sharks - 54 inch group, closed May 15 to July 15 (Blacktip, Bull, Lemon, Nurse, Spinner, Tiger)",
+    "reviewed": "2026-10-31",
+    "rawHash": "b3aa5578ff2b",
+    "aliases": [
+      "blacktip shark",
+      "blacktip",
+      "bull shark",
+      "lemon shark",
+      "nurse shark",
+      "spinner shark",
+      "tiger shark",
+      "shark"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "shore",
+        "label": "Shore anglers (MD tidal waters)",
+        "seasons": [
+          [
+            "07-16",
+            "05-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 54,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 shark per angler per calendar day from the approved list",
+        "closed": false,
+        "sizeNote": "54 inches fork length"
+      },
+      {
+        "zone": "vessel",
+        "label": "Vessel anglers (MD tidal waters)",
+        "seasons": [
+          [
+            "07-16",
+            "05-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 54,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 shark per vessel per trip from the approved list (whole boat)",
+        "closed": false,
+        "sizeNote": "54 inches fork length"
+      }
+    ],
+    "notes": [
+      "Closed May 15 through July 15 each year - release these species during that window.",
+      "Shore anglers: 1 shark per calendar day from the approved list (plus 1 bonnethead and 1 Atlantic sharpnose). Vessels: 1 shark per trip from the approved list for the whole boat (plus 1 bonnethead and 1 Atlantic sharpnose per angler).",
+      "Handline or rod and reel only; corrodible non-stainless circle hooks required except with artificial flies/lures. Heads, tails and fins must stay attached through landing. Sale and finning prohibited."
+    ],
+    "sourceId": "md-sharks",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/sharks",
+    "auditQuote": "BLACKTIP SHARK, BULL SHARK, LEMON SHARK, NURSE SHARK, SPINNER SHARK, TIGER SHARK | Open Year Round Except May 15–July 15 | 54 inches"
+  },
+  "79": {
+    "name": "Hammerhead Sharks (Great, Scalloped, Smooth)",
+    "reviewed": "2026-10-31",
+    "rawHash": "a6484dae0364",
+    "aliases": [
+      "great hammerhead",
+      "scalloped hammerhead",
+      "smooth hammerhead",
+      "hammerhead shark",
+      "hammerhead",
+      "shark"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "shore",
+        "label": "Shore anglers (MD tidal waters)",
+        "seasons": [
+          [
+            "07-16",
+            "05-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 78,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 shark per angler per calendar day from the approved list",
+        "closed": false,
+        "sizeNote": "78 inches fork length"
+      },
+      {
+        "zone": "vessel",
+        "label": "Vessel anglers (MD tidal waters)",
+        "seasons": [
+          [
+            "07-16",
+            "05-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 78,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 shark per vessel per trip from the approved list (whole boat)",
+        "closed": false,
+        "sizeNote": "78 inches fork length"
+      }
+    ],
+    "notes": [
+      "Closed May 15 through July 15.",
+      "78 inch fork length minimum - much larger than other sharks.",
+      "Shore anglers: 1 shark per calendar day from the approved list (plus 1 bonnethead and 1 Atlantic sharpnose). Vessels: 1 shark per trip from the approved list for the whole boat (plus 1 bonnethead and 1 Atlantic sharpnose per angler).",
+      "Handline or rod and reel only; corrodible non-stainless circle hooks required except with artificial flies/lures. Heads, tails and fins must stay attached through landing. Sale and finning prohibited."
+    ],
+    "sourceId": "md-sharks",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/sharks",
+    "auditQuote": "GREAT, SCALLOPED, AND SMOOTH HAMMERHEAD SHARKS | Open Year Round Except May 15–July 15 | 78 inches"
+  },
+  "80": {
+    "name": "Smooth Dogfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "c59f7a2d5cbc",
+    "aliases": [
+      "dogfish",
+      "smooth dog",
+      "dusky smoothhound"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Maryland tidal waters (shore or vessel)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No size or creel limit; not counted against the 1-shark approved-list limit.",
+      "Handline or rod and reel only; corrodible non-stainless circle hooks required except with artificial flies/lures. Heads, tails and fins must stay attached through landing. Sale and finning prohibited."
+    ],
+    "sourceId": "md-sharks",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/sharks",
+    "auditQuote": "SMOOTH DOGFISH | Open Year Round | None | None | None"
+  },
+  "81": {
+    "name": "Spiny Dogfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "c59f7a2d5cbc",
+    "aliases": [
+      "dogfish",
+      "spiny dog"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Maryland tidal waters (shore or vessel)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No size or creel limit; not counted against the 1-shark approved-list limit.",
+      "Handline or rod and reel only; corrodible non-stainless circle hooks required except with artificial flies/lures. Heads, tails and fins must stay attached through landing. Sale and finning prohibited."
+    ],
+    "sourceId": "md-sharks",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/sharks",
+    "auditQuote": "SPINY DOGFISH | Open Year Round | None | None | None"
+  },
+  "82": {
+    "name": "Prohibited Sharks (Sandbar, Dusky, Sand Tiger, Oceanic Whitetip, Shortfin Mako and all unlisted species)",
+    "reviewed": "2026-10-31",
+    "rawHash": "90da4acbad1b",
+    "aliases": [
+      "sandbar shark",
+      "dusky shark",
+      "sand tiger shark",
+      "sand tiger",
+      "oceanic whitetip shark",
+      "oceanic white tip",
+      "shortfin mako",
+      "mako shark",
+      "mako",
+      "white shark",
+      "great white",
+      "shark"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Maryland tidal waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Any shark not on the approved-harvest list must be released immediately in the water - 'If you don't know, let it go.'",
+      "Sand tiger was added to the printed prohibited list for 2026.",
+      "You may not sit on, gaff, hold open the mouth of, or put on sand or deck a shark you are releasing."
+    ],
+    "sourceId": "md-sharks",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/sharks",
+    "auditQuote": "All species not listed in the above table, including sandbar, dusky, sand tiger, oceanic white tip, and shortfin mako sharks, may not be retained and must be released."
+  },
+  "83": {
+    "name": "Highly Migratory Species - Tunas, Billfish and Swordfish (Bluefin Tuna, Blue Marlin, White Marlin, Roundscale Spearfish, Sailfish, Swordfish)",
+    "reviewed": "2026-10-31",
+    "rawHash": "376c66bfc155",
+    "aliases": [
+      "bluefin tuna",
+      "bluefin",
+      "yellowfin tuna",
+      "tuna",
+      "blue marlin",
+      "white marlin",
+      "marlin",
+      "roundscale spearfish",
+      "spearfish",
+      "sailfish",
+      "swordfish",
+      "billfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "federal",
+        "label": "Federal waters (3-200 mi) - NOAA Atlantic HMS rules apply",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Federal HMS limits; see hmspermits.noaa.gov",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Maryland does not print its own limits for tunas, marlin, spearfish, sailfish or swordfish - follow NOAA Atlantic HMS retention limits (https://hmspermits.noaa.gov/).",
+      "An Atlantic HMS permit is required to fish for or keep these species in federal waters.",
+      "Effective Dec 22, 2025 HMS permit holders must electronically report landed bluefin tuna, dead discards, and non-tournament billfish/swordfish landings within 24 hours of the trip."
+    ],
+    "sourceId": "md-hms",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/highly-migratory-species",
+    "auditQuote": "A valid Atlantic HMS permit is required to fish for or keep Atlantic tunas, billfishes, swordfish, and sharks in federal waters."
+  },
+  "84": {
+    "name": "Striped Bass (Susquehanna Flats, Lower Susquehanna River and Northeast River)",
+    "reviewed": "2026-10-31",
+    "rawHash": "d8a3e9bdd69a",
+    "aliases": [
+      "striper",
+      "rockfish",
+      "susquehanna flats striped bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "susquehanna",
+        "label": "Susquehanna Flats, Lower Susquehanna River & Northeast River",
+        "seasons": [
+          [
+            "06-01",
+            "07-31"
+          ],
+          [
+            "09-01",
+            "12-05"
+          ]
+        ],
+        "size": [
+          {
+            "min": 19,
+            "max": 24
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 fish per person per day",
+        "closed": false,
+        "sizeNote": "19 to 24 inch slot"
+      }
+    ],
+    "notes": [
+      "This area has its own calendar: unlike the main Bay, there is NO May harvest here - the Flats and everything upstream of the Abbey Point to Worton Point line are closed to all striped bass fishing (even catch-and-release) April 1 through May 31.",
+      "March 1-31: catch-and-release only on the Flats, lower Susquehanna (below the Lapidum/Twin Rocks/Tomes Wharf line) and Northeast River; stinger hooks prohibited, barbless hooks when trolling, max 6 trolling lines.",
+      "August 1-31: closed to all striped bass fishing (no targeting). Dec 6-31 and Jan 1-Feb 28: catch-and-release only.",
+      "Striped bass must be landed whole; no possession midnight-5 a.m.; non-offset circle hooks with bait; eels may not be used as bait Dec 6-May 15 and Aug 1-31."
+    ],
+    "sourceId": "md-striped-bass",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/striped-bass",
+    "auditQuote": "APR. 1–MAY 31, 2026 | All waters upstream of a line from Abbey Point to Worton Point closed to striped bass fishing. | CLOSED | No targeting. Attempting to catch striped bass is illegal during this time period."
+  },
+  "85": {
+    "name": "Striped Bass (nontidal rivers and streams)",
+    "reviewed": "2026-10-31",
+    "rawHash": "11b6bcc06eb0",
+    "aliases": [
+      "striper",
+      "rockfish",
+      "hybrid striped bass"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Nontidal rivers and streams",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Striped bass and hybrids caught in any nontidal river or stream must be released - harvest is only allowed in nontidal reservoirs, lakes and ponds (18 inch min, 2 per day)."
+    ],
+    "sourceId": "md-striped-bass",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/striped-bass",
+    "auditQuote": "NONTIDAL RIVERS AND STREAMS | Closed at all times"
+  },
+  "86": {
+    "name": "American Eel (nontidal)",
+    "reviewed": "2026-10-31",
+    "rawHash": "035284dcee16",
+    "aliases": [
+      "eel"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Nontidal (inland) waters",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "25 daily / 25 possession",
+        "closed": false,
+        "sizeNote": "9 inches"
+      }
+    ],
+    "notes": [
+      "Nontidal waters are open year-round (tidal waters close Sept 1-Dec 31 to hook and line)."
+    ],
+    "sourceId": "md-freshwater",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+    "auditQuote": "AMERICAN EEL | 9 inches | Open Year Round | Daily—25 Possession—25"
+  },
+  "87": {
+    "name": "Baitfish (including madtoms)",
+    "reviewed": "2026-10-31",
+    "rawHash": "efc3aa591489",
+    "aliases": [
+      "baitfish",
+      "minnows",
+      "madtom",
+      "madtoms",
+      "shiners",
+      "bait fish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Nontidal (inland) waters",
+        "seasons": null,
+        "size": [],
+        "bag": 35,
+        "bagNote": "35 in aggregate daily and in possession",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "35 baitfish total of all species combined, daily and in possession, in nontidal waters.",
+      "Seines must be 1/4 inch mesh or smaller and no more than 6 ft x 4 ft in nontidal waters; only one bait trap per person.",
+      "Taking baitfish from Put-and-Take or special trout management areas is illegal.",
+      "Youghiogheny River Lake has its own limit: 'BAITFISH, FISH BAIT | None | Open Year Round | Daily—50 in aggregate'."
+    ],
+    "sourceId": "md-freshwater",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+    "auditQuote": "BAITFISH (INCLUDING MADTOMS) | None | Open Year Round | Daily—35 in aggregate Possession—35 in aggregate"
+  },
+  "88": {
+    "name": "Alewife and Blueback Herring (nontidal)",
+    "reviewed": "2026-10-31",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [
+      "river herring",
+      "alewife",
+      "blueback herring",
+      "herring"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Nontidal (inland) waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Harvest closed in nontidal waters; catch and release is allowed.",
+      "Exception: Youghiogheny River Lake prints 'RIVER HERRING | None | Open Year Round | Daily—50 in aggregate' (see separate row)."
+    ],
+    "sourceId": "md-freshwater",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+    "auditQuote": "HERRING (ALEWIFE AND BLUEBACK) | | CLOSED | | Catch and Release is permitted at all times."
+  },
+  "89": {
+    "name": "American Shad and Hickory Shad (nontidal)",
+    "reviewed": "2026-10-31",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [
+      "american shad",
+      "white shad",
+      "hickory shad",
+      "shad"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Nontidal (inland) waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Harvest closed in nontidal waters; catch and release is allowed.",
+      "Exception: Youghiogheny River Lake prints 'AMERICAN SHAD | None | Open Year Round | Daily—3' (see separate row)."
+    ],
+    "sourceId": "md-freshwater",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+    "auditQuote": "SHAD (AMERICAN/WHITE AND HICKORY) | | CLOSED | | Catch and Release is permitted at all times."
+  },
+  "90": {
+    "name": "White Perch (nontidal)",
+    "reviewed": "2026-10-31",
+    "rawHash": "c59f7a2d5cbc",
+    "aliases": [
+      "white perch",
+      "perch"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Nontidal (inland) waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No size or creel limit in nontidal waters.",
+      "DNR is considering declaring white perch a species in need of conservation (comment period to Nov 13, 2026) - check for changes."
+    ],
+    "sourceId": "md-freshwater",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+    "auditQuote": "WHITE PERCH | None | Open Year Round | None"
+  },
+  "91": {
+    "name": "Freshwater Mussels, Clams and Bivalves (nontidal)",
+    "reviewed": "2026-10-31",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [
+      "mussels",
+      "freshwater mussels",
+      "bivalves",
+      "shellfish (nontidal)"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Nontidal (inland) waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "All bivalves/shellfish in nontidal waters are closed to harvest.",
+      "Youghiogheny River Lake also prints 'PADDLEFISH, MUSSELS, CLAMS, AND THREATENED AND ENDANGERED SPECIES | CLOSED'."
+    ],
+    "sourceId": "md-freshwater",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/freshwater-seasons-sizes-limits",
+    "auditQuote": "ATLANTIC STURGEON, SHORTNOSE STURGEON, AND BIVALVES/SHELLFISH | CLOSED"
+  },
+  "92": {
+    "name": "Northern Snakehead (nontidal)",
+    "reviewed": "2026-10-31",
+    "rawHash": "7ab83e6baf12",
+    "aliases": [
+      "chesapeake channa",
+      "snakehead",
+      "channa"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Nontidal (inland) waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No size or creel limit anywhere in Maryland; you must kill the fish immediately - possessing a live snakehead carries fines up to $2,500 per fish.",
+      "Legal bowfishing target; dip nets may be used for snakehead in the Potomac, Monocacy and Conococheague within Allegany, Carroll, Frederick and Washington counties."
+    ],
+    "sourceId": "md-invasive",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/invasive-species",
+    "auditQuote": "Anglers are encouraged to catch and keep Chesapeake Channa year round. There is no minimum size or creel limit for Chesapeake Channa."
+  },
+  "93": {
+    "name": "Brook Trout",
+    "reviewed": "2026-10-31",
+    "rawHash": "f7bbad0726c6",
+    "aliases": [
+      "brookie",
+      "brook",
+      "native trout",
+      "trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "eastofi81",
+        "label": "All nontidal waters east of Interstate 81",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited - release all brook trout",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "savage",
+        "label": "Savage River and tributaries above Savage River Reservoir dam",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited - release all brook trout",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "putandtake",
+        "label": "Put-and-Take Trout Fishing Areas",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "0 daily / 0 possession - release all brook trout",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "trophy",
+        "label": "Savage River Trophy Trout areas (Rt. 135 bridge to reservoir dam)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 daily / 4 possession, all trout combined",
+        "closed": false,
+        "sizeNote": "Brook trout 12 inches"
+      },
+      {
+        "zone": "inland",
+        "label": "Other nontidal waters west of I-81",
+        "seasons": null,
+        "size": [],
+        "bag": 2,
+        "bagNote": "2 daily / 4 possession, all trout species combined",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "If you are anywhere east of I-81 (most of Maryland), every brook trout must go back - no exceptions.",
+      "West of I-81 brook trout count toward the statewide 2-trout aggregate unless you are in a Put-and-Take or Savage River area, where they are also release-only.",
+      "Youth-Only Trout Fishing Day (Mar 21, 2026): no brook trout allowed."
+    ],
+    "sourceId": "md-trout-sma",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/special-management-areas-trout",
+    "auditQuote": "Catch-and-Return Trout Fishing Area—Waters East of Interstate 81 ... All nontidal waters east of Interstate 81. ... You may not possess brook trout in this area. You must immediately release any brook trout."
+  },
+  "94": {
+    "name": "Brown Trout",
+    "reviewed": "2026-10-31",
+    "rawHash": "61677a4a4994",
+    "aliases": [
+      "brown",
+      "trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "beavercreek",
+        "label": "Beaver Creek, Washington County (hatchery to Antietam Creek)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited - release all brown trout",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "trophy",
+        "label": "Savage River Trophy Trout areas (Rt. 135 bridge to reservoir dam)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 daily / 4 possession, all trout combined",
+        "closed": false,
+        "sizeNote": "Brown trout 18 inches"
+      },
+      {
+        "zone": "inland",
+        "label": "Other nontidal waters",
+        "seasons": null,
+        "size": [],
+        "bag": 2,
+        "bagNote": "2 daily / 4 possession, all trout species combined",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Release every brown trout in Beaver Creek from the Albert Powell hatchery down to Antietam Creek.",
+      "In the Savage River trophy sections a brown must be 18 inches to keep; elsewhere there is no size limit."
+    ],
+    "sourceId": "md-trout-sma",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/special-management-areas-trout",
+    "auditQuote": "Beaver Creek from Albert Powell State Fish Hatchery downstream to confluence with Antietam Creek. ... You may not possess brown trout in this area. You must immediately release any brown trout."
+  },
+  "95": {
+    "name": "Trout (Put-and-Take, Delayed Harvest and Catch-and-Return areas)",
+    "reviewed": "2026-10-31",
+    "rawHash": "6efde3cdce90",
+    "aliases": [
+      "stocked trout",
+      "rainbow trout",
+      "golden trout",
+      "trout",
+      "put and take trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "putandtake",
+        "label": "Put-and-Take Trout Fishing Areas (Closure 0 waters)",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "5 daily / 10 possession, all trout except brook (brook = 0)",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "putandtake1",
+        "label": "Put-and-Take Trout Fishing Areas (Closure 1 waters)",
+        "seasons": [
+          [
+            "03-28",
+            "03-08"
+          ]
+        ],
+        "size": [],
+        "bag": 5,
+        "bagNote": "5 daily / 10 possession, all trout except brook (brook = 0); closed to all fishing Mar 8-28, 2026",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "delayed1",
+        "label": "Delayed Harvest Group I (Catoctin/Little Catoctin Creek, Middle Patuxent, Town Creek, South Branch Patapsco)",
+        "seasons": [
+          [
+            "06-01",
+            "09-30"
+          ]
+        ],
+        "size": [],
+        "bag": 5,
+        "bagNote": "June 1-Sept 30: 5 daily / 10 possession; Oct 1-May 31: no possession, artificials only, barbless",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "delayed2",
+        "label": "Delayed Harvest Group II (Casselman River, North Branch Potomac in Potomac State Forest)",
+        "seasons": [
+          [
+            "06-16",
+            "09-30"
+          ]
+        ],
+        "size": [],
+        "bag": 5,
+        "bagNote": "June 16-Sept 30: 5 daily / 10 possession; Oct 1-June 15: no possession, artificials only, barbless",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "owenscreek",
+        "label": "Owens Creek, Buck Lantz Rd to Roddy Rd",
+        "seasons": [
+          [
+            "03-01",
+            "05-31"
+          ]
+        ],
+        "size": [],
+        "bag": 5,
+        "bagNote": "Mar 1-May 31 Put-and-Take rules (5/10); June 1-last day of Feb no possession",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "catchreturn",
+        "label": "Catch-and-Return Trout Fishing Areas (Big Hunting Creek, Beaver Creek fly section, Patuxent River sections, Morgan Run, Paint Branch, Gunpowder Falls Prettyboy-Bluemount, North Branch Potomac sections, Little Hunting Creek)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No possession of trout - release immediately",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "trophy",
+        "label": "Savage River Trophy Trout areas",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 daily / 4 possession all trout combined; brook 12 in, brown 18 in, others no minimum",
+        "closed": false,
+        "sizeNote": "Brook 12 in, brown 18 in, other trout none"
+      }
+    ],
+    "notes": [
+      "Statewide default outside these areas is 2 trout per day / 4 in possession, no size limit.",
+      "Put-and-Take (stocked) areas allow 5 per day / 10 possession, no size limit, but brook trout are always release-only there.",
+      "Closure 1 Put-and-Take waters are closed to ALL fishing from 10 p.m. March 8 to 6:30 a.m. March 28, 2026 (opening day). Closure 0 waters never close.",
+      "Catch-and-Return areas: no trout may be kept; fly-only sections require conventional fly tackle; artificial-lure sections ban bait and scent; barbless hooks required.",
+      "Trout streams are closed to fishing 10 p.m.-5:30 a.m. (except impoundments of 5+ acres). Culling trout is illegal.",
+      "Proposed for 2027: Governors Bridge Pond and Waterworks Park Pond added as year-round put-and-take (5/day); lower Savage trophy sections to become catch-and-return (https://dnr.maryland.gov/fisheries/pages/regulations/changes.aspx)."
+    ],
+    "sourceId": "md-trout-pat",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/put-and-take-trout-fishing-areas",
+    "auditQuote": "Creel limit (brook) – 0 Daily/0 Possession – all brook trout must be immediately released. Creel Limit (all other species of trout) combined 5 Daily/10 Possession. Minimum Size—no minimum size. Season—areas are closed to all fishing from 10 p.m. of the first date, to 6:30 a.m. of the second date ... Closure 0 — No Closure. Closure 1 — March 8–March 28, 2026"
+  },
+  "96": {
+    "name": "American Eel (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "2d928be049d5",
+    "aliases": [
+      "eel"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "25 per day",
+        "closed": false,
+        "sizeNote": "9 inches"
+      }
+    ],
+    "notes": [
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "AMERICAN EEL | 9 inches | Open Year Round | Daily—25"
+  },
+  "97": {
+    "name": "American Shad (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "038cbe8dee05",
+    "aliases": [
+      "shad",
+      "white shad"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [],
+        "bag": 3,
+        "bagNote": "3 per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "This is the only Maryland water where American shad harvest is printed as open - everywhere else shad are CLOSED.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "AMERICAN SHAD | None | Open Year Round | Daily—3"
+  },
+  "98": {
+    "name": "Baitfish (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "f3929bf6173a",
+    "aliases": [
+      "baitfish",
+      "fish bait",
+      "minnows"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "50 in aggregate per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "BAITFISH, FISH BAIT | None | Open Year Round | Daily—50 in aggregate"
+  },
+  "99": {
+    "name": "Bass - Largemouth, Smallmouth and Spotted (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "47548d0d1766",
+    "aliases": [
+      "largemouth bass",
+      "smallmouth bass",
+      "spotted bass",
+      "black bass",
+      "bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": [
+          [
+            "11-01",
+            "04-10"
+          ],
+          [
+            "06-13",
+            "10-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 6,
+        "bagNote": "June 13-Oct 31: 6 in aggregate, 12 inch min; Nov 1-Apr 10: 4 in aggregate, 15 inch min; Apr 11-June 12 catch and release only",
+        "closed": false,
+        "sizeNote": "12 inches summer/fall, 15 inches winter"
+      }
+    ],
+    "notes": [
+      "Two different rule sets by date: cold season (Nov 1-Apr 10) 15 inch / 4 fish; warm season (June 13-Oct 31) 12 inch / 6 fish; spawning closure Apr 11-June 12 is catch and release only.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "BASS – LARGEMOUTH, SMALLMOUTH AND SPOTTED | 15 inches | Jan. 1–April 10 and Nov. 1–Dec. 31 | Daily—4 in aggregate | No Harvest (Catch and Release) all other dates; No tournaments during closure. Cannot be used as bait. 12 inches | June 13–Oct. 31 | Daily—6 in aggregate"
+  },
+  "100": {
+    "name": "Crayfish (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "5701e3fe26e5",
+    "aliases": [
+      "crawfish",
+      "crawdad",
+      "crayfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "50 per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Statewide (Susquehanna, Middle/Upper Potomac and Monocacy basins) crayfish must have the head removed behind the eyes immediately upon capture, and egg-bearing females may not be kept (https://www.eregulations.com/maryland/fishing/freshwater-fishing-regulations).",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "CRAYFISH | None | Open Year Round | Daily—50 | Head must be immediately removed behind the eyes upon capture unless used as bait in the water from which taken."
+  },
+  "101": {
+    "name": "Gizzard Shad (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "5701e3fe26e5",
+    "aliases": [
+      "gizzard shad",
+      "shad"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "50 per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Gizzard shad are a legal bowfishing target statewide.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "GIZZARD SHAD | None | Open Year Round | Daily—50"
+  },
+  "102": {
+    "name": "Mud Bugs (Dragonfly Nymphs) (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "c59f7a2d5cbc",
+    "aliases": [
+      "mud bugs",
+      "dragonfly nymphs",
+      "hellgrammites"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "MUD BUGS (DRAGONFLY NYMPHS) | None | Open Year Round | None"
+  },
+  "103": {
+    "name": "Muskellunge and Tiger Muskie (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "7ad126ed5d10",
+    "aliases": [
+      "musky",
+      "muskie",
+      "tiger musky",
+      "tiger muskie",
+      "muskellunge"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 40,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 in aggregate per day",
+        "closed": false,
+        "sizeNote": "40 inches"
+      }
+    ],
+    "notes": [
+      "40 inch minimum here versus 36 inches statewide.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "MUSKELLUNGE AND TIGER MUSKIE | 40 inches | Open Year Round | Daily—1 in aggregate | Cannot be used as bait."
+  },
+  "104": {
+    "name": "Northern Pike (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "fb5952cb3806",
+    "aliases": [
+      "pike"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 per day",
+        "closed": false,
+        "sizeNote": "24 inches"
+      }
+    ],
+    "notes": [
+      "24 inch minimum here versus 30 inches statewide.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "NORTHERN PIKE | 24 inches | Open Year Round | Daily—2 | Cannot be used as bait."
+  },
+  "105": {
+    "name": "Pickerel (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "10e066b4e33f",
+    "aliases": [
+      "chain pickerel",
+      "pickerel",
+      "pike"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 4,
+        "bagNote": "4 per day",
+        "closed": false,
+        "sizeNote": "18 inches"
+      }
+    ],
+    "notes": [
+      "18 inch minimum here versus 14 inches statewide.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "PICKEREL | 18 inches | Open Year Round | Daily—4 | Cannot be used as bait."
+  },
+  "106": {
+    "name": "River Herring (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "f3929bf6173a",
+    "aliases": [
+      "alewife",
+      "blueback herring",
+      "herring"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "50 in aggregate per day",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Only Maryland water where river herring harvest is printed as open; everywhere else they are CLOSED.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "RIVER HERRING | None | Open Year Round | Daily—50 in aggregate"
+  },
+  "107": {
+    "name": "Sauger (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "327b0315d41b",
+    "aliases": [
+      "sauger"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": [
+          [
+            "05-02",
+            "03-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 6,
+        "bagNote": "6 per day",
+        "closed": false,
+        "sizeNote": "12 inches"
+      }
+    ],
+    "notes": [
+      "Closed March 15 through May 1 (spawning).",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "SAUGER | 12 inches | Jan. 1–March 14 and May 2–Dec. 31 | Daily—6"
+  },
+  "108": {
+    "name": "Striped Bass and Hybrid Striped Bass (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "e21133c51cc7",
+    "aliases": [
+      "striper",
+      "hybrid striped bass",
+      "wiper",
+      "rockfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 in aggregate per day",
+        "closed": false,
+        "sizeNote": "20 inches"
+      }
+    ],
+    "notes": [
+      "20 inch minimum here versus 18 inches in other nontidal lakes and ponds; no over-30-inch restriction is printed for this lake.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "STRIPED BASS AND HYBRID STRIPED BASS | 20 inches | Open Year Round | Daily—2 in aggregate | Cannot be used as bait."
+  },
+  "109": {
+    "name": "Panfish aggregate - Sunfish, Yellow Perch, White Perch, Crappies, Catfish, Rock Bass, Suckers, Carp and White Bass (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "f3929bf6173a",
+    "aliases": [
+      "sunfish",
+      "bluegill",
+      "yellow perch",
+      "white perch",
+      "crappie",
+      "crappies",
+      "catfish",
+      "channel catfish",
+      "rock bass",
+      "suckers",
+      "sucker",
+      "carp",
+      "common carp",
+      "white bass",
+      "panfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "50 in aggregate per day, all listed species combined",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "All nine species share one 50-fish daily aggregate on this lake; statewide per-species limits (e.g. 15 crappie, 5 channel catfish) do not apply here.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "SUNFISH, YELLOW PERCH, WHITE PERCH, CRAPPIES, CATFISH, ROCK BASS, SUCKERS, CARP AND WHITE BASS | None | Open Year Round | Daily—50 in aggregate"
+  },
+  "110": {
+    "name": "Trout and Salmon (all species) (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "ce486c7e6d01",
+    "aliases": [
+      "trout",
+      "rainbow trout",
+      "brown trout",
+      "brook trout",
+      "salmon",
+      "lake trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": [
+          [
+            "04-18",
+            "09-07"
+          ],
+          [
+            "09-08",
+            "02-28"
+          ]
+        ],
+        "size": [
+          {
+            "min": 7,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 in aggregate Apr 18 (8 a.m.)-Sept 7; 3 in aggregate Jan 1-Feb 28 and Sept 8-Dec 31; no harvest Mar 1-Apr 18 8 a.m.",
+        "closed": false,
+        "sizeNote": "7 inches"
+      }
+    ],
+    "notes": [
+      "Season opens at 8 a.m. on April 18, 2026 (Pennsylvania-style opener). March 1 to opening is catch and release only.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "TROUT AND SALMON (ALL SPECIES) | 7 inches | 8 a.m. April 18–Sept. 7 | Daily—5 in aggregate | No Harvest (Catch and Release) all other dates. Brown and Brook Trout cannot be used as bait. Jan. 1–Feb. 28 and Sept. 8–Dec. 31 | Daily—3 in aggregate"
+  },
+  "111": {
+    "name": "Walleye and Hybrids (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "14599ab145d2",
+    "aliases": [
+      "walleye",
+      "saugeye",
+      "walleye hybrids"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": [
+          [
+            "05-02",
+            "03-14"
+          ]
+        ],
+        "size": [
+          {
+            "min": 15,
+            "max": null
+          }
+        ],
+        "bag": 6,
+        "bagNote": "6 in aggregate per day",
+        "closed": false,
+        "sizeNote": "15 inches"
+      }
+    ],
+    "notes": [
+      "Closed March 15 through May 1; 6-fish limit here versus 5 statewide.",
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "WALLEYE AND HYBRIDS | 15 inches | Jan. 1–March 14 and May 2–Dec. 31 | Daily—6 in aggregate | Cannot be used as bait."
+  },
+  "112": {
+    "name": "Paddlefish, Mussels, Clams and Threatened/Endangered Species (Youghiogheny River Lake)",
+    "reviewed": "2026-10-31",
+    "rawHash": "9f18fd9c5f1b",
+    "aliases": [
+      "paddlefish",
+      "mussels",
+      "clams",
+      "endangered species"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "yough",
+        "label": "Youghiogheny River Lake (reservoir)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Youghiogheny River Lake is the reservoir shared with Pennsylvania and has its own table that overrides the statewide nontidal limits."
+    ],
+    "sourceId": "md-yough",
+    "sourceUrl": "https://www.eregulations.com/maryland/fishing/youghiogheny-river-lake-seasons-sizes-limits",
+    "auditQuote": "PADDLEFISH, MUSSELS, CLAMS, AND THREATENED AND ENDANGERED SPECIES | CLOSED"
+  }
 }

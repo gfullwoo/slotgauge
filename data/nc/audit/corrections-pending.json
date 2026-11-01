@@ -1,0 +1,196 @@
+{
+  "state": "NC",
+  "auditedOn": "2026-10-31",
+  "pending": [
+    {
+      "existingName": "Snapper-Grouper complex",
+      "field": "whole row",
+      "current": "placeholder 'See the most recent Snapper/Grouper Complex recreational DMF proclamation'",
+      "shouldBe": "Replace with the per-species rows in this file (FF-45-2026, effective Oct 28, 2026, supersedes FF-40-2026). Keep the family heading text as the group description only.",
+      "quote": "This proclamation supersedes proclamation FF-40-2026 dated September 28, 2026. This proclamation implements the requirements of the final rule for Regulatory Amendment 36",
+      "sourceUrl": "https://files.nc.gov/deq/documents/2026-10/FF-45-2026 Snapper-Grouper Recreational_GagBlackGrouperAggVesselLimit-RegAmend36_Final.pdf",
+      "id": 28,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sharks (coastal species)",
+      "field": "size/limit",
+      "current": "See most recent DMF proclamations",
+      "shouldBe": "Replace with the per-species/group shark rows in this file (FF-3-2026): sharpnose and bonnethead 1 per person, hammerheads 78\" FL, other LCS/pelagic/blacknose/finetooth 54\" FL, 1 additional shark per vessel per day; prohibited list.",
+      "quote": "It shall be unlawful to possess more than one (1) additional shark from the recreationally permitted species list aboard a vessel, per calendar day, regardless of the number of people on board the vessel.",
+      "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-3-2026_Comm_Rec_Shark_Open.pdf",
+      "id": 8,
+      "status": "pending"
+    },
+    {
+      "existingName": "Flounder",
+      "field": "season",
+      "current": "September 1, 2026 until 11:59 P.M. on September 14, 2026 (status open)",
+      "shouldBe": "Closed — the 2026 season ended Sept 14, 2026; DMF page effective Nov 1, 2026 prints UNLAWFUL TO POSSESS. Keep the Sept 1–14 window as the last-known season but mark closed: true until a 2027 proclamation issues. Inland waters (WRC) mirror: 15-inch minimum, 1 per day Sept 1–14.",
+      "quote": "Flounder ▲ (All Species) | UNLAWFUL TO POSSESS",
+      "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+      "id": 13,
+      "status": "pending"
+    },
+    {
+      "existingName": "Oyster",
+      "field": "season/size/limit",
+      "current": "SEASON CLOSED / UNLAWFUL TO POSSESS",
+      "shouldBe": "Open: season opened sunrise Oct 15, 2026 and closes March 31, 2027 (SF-1-2026). Size 3 inch shell length; 1 bushel per person per day, not to exceed 2 bushels per vessel per day; hand and hand-operated implements only; no harvest sunset to sunrise; polluted-area closures still apply.",
+      "quote": "Oyster (I) | 3\" Shell Length | 1 Buschel Oysters/Day not to exceed 2 Bushels Oysters/Vessel/Day",
+      "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+      "id": 36,
+      "status": "pending"
+    },
+    {
+      "existingName": "Dolphin",
+      "field": "limit",
+      "current": "10/Day",
+      "shouldBe": "10 per person per day, not to exceed 54 per vessel per day (headboats with a USCG Certificate of Inspection: 10 per paying customer); no sale of recreational bag limit from charter/head boats.",
+      "quote": "Limit of 10 per person per day or 54 per trip, whichever is less. On head boats, limit is 10 per person per day.",
+      "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+      "id": 4,
+      "status": "pending"
+    },
+    {
+      "existingName": "Mullet",
+      "field": "limit",
+      "current": "100/Day (species combined)",
+      "shouldBe": "100 per person per day (striped and white combined), vessel limit 100 per angler up to a maximum of 400 per vessel; for-hire may hold 400 in advance of a trip.",
+      "quote": "The recreational vessel limit is 100 fish per angler fishing up to a maximum of 400 fish per vessel.",
+      "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+      "id": 29,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "zone (Internal coastal waters)",
+      "current": "single 'Internal coastal waters' closed row",
+      "shouldBe": "Split into management areas: Albemarle Sound MA closed (slot 18–25 when open); Roanoke River MA (WRC, 18–22 inch slot, 1/day, season by proclamation); CSMA closed except upper Tar-Pamlico/Neuse April 1–30 by proclamation (18 inch min, none 22–27, 1/day); Cape Fear River closed; inland impoundments 20 inch min, 4 in combination. See 'Striped Bass (by management area)' row in this file.",
+      "quote": "Albemarle Sound Management Area:  SEASON CURRENTLY CLOSED; Central Southern Management Area (CSMA): Unlawful to possess striped bass (including hybrid bass);  Atlantic Ocean: Year-round: 1 per person per day and a harvest slot limit of 28 inches to 31 inches TL.",
+      "sourceUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+      "id": 19,
+      "status": "pending"
+    },
+    {
+      "existingName": "American Shad",
+      "field": "limit",
+      "current": "aggregate creel limit by proclamation (D)",
+      "shouldBe": "FF-8-2026: 10 American/hickory shad in the aggregate per person per day; of those no more than 5 American shad in the Cape Fear River system, no more than 1 American shad in all other internal coastal/joint waters; Pamlico and Pungo rivers 10 aggregate (no American sub-cap printed); Atlantic Ocean: American shad possession prohibited, hickory 10. Hook-and-line only after April 14, 2026. WRC inland: 10 in combination incl. no more than 1 American (Cape Fear 5; Pee Dee/Pungo/Tar-Pamlico 10); Kerr, Gaston, Roanoke Rapids and Yadkin-Pee Dee above Blewett Falls: no American shad.",
+      "quote": "more than ten (10) American shad or hickory shad in the aggregate ... only five (5) of the ten (10) may be an American shad ... only one (1) of the ten (10) may be an American shad",
+      "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-8-2026 Commercial and Rec Shad season_Draft (003).pdf",
+      "id": 21,
+      "status": "pending"
+    },
+    {
+      "existingName": "Hickory Shad",
+      "field": "limit",
+      "current": "aggregate creel limit by proclamation (D)",
+      "shouldBe": "10 American/hickory shad in the aggregate per person per day in internal coastal/joint waters; Atlantic Ocean 10 hickory shad per person per day; hook-and-line only after April 14, 2026 (FF-8-2026). WRC inland: 10 in combination.",
+      "quote": "more than ten (10) hickory shad per person per day for recreational purposes.",
+      "sourceUrl": "https://files.nc.gov/deq/documents/2025-12/FF-8-2026 Commercial and Rec Shad season_Draft (003).pdf",
+      "id": 22,
+      "status": "pending"
+    },
+    {
+      "existingName": "Rock Bass",
+      "field": "size/limit",
+      "current": "None / No limit",
+      "shouldBe": "West of I-77: no limit. All public waters east of I-77: 8-inch minimum, 2 in combination with Roanoke bass.",
+      "quote": "Rock Bass and Roanoke Bass — All public fishing waters except those listed below: | None | All public waters east of I-77 | 8-inch minimum | 2 in combination",
+      "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+      "id": 43,
+      "status": "pending"
+    },
+    {
+      "existingName": "Spotted Bass",
+      "field": "aliases/notes",
+      "current": "Spotted Bass | None | No limit",
+      "shouldBe": "Row covers 'Alabama Bass And Spotted Bass' — add alias Alabama bass and the Lake Chatuge exception (no minimum, 10 black bass in combination).",
+      "quote": "Alabama Bass And Spotted Bass — All public waters except those listed below: | None | None | Lake Chatuge (Clay Co.) | No minimum size limit | 10 largemouth bass, smallmouth bass, Alabama bass, and spotted bass in combination",
+      "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+      "id": 40,
+      "status": "pending"
+    },
+    {
+      "existingName": "Largemouth Bass",
+      "field": "notes/zones",
+      "current": "single statewide 14-inch/5 rule",
+      "shouldBe": "Add printed exceptions: Albemarle/Currituck/Roanoke sounds and listed NE rivers 14-inch minimum, 5 (no under-14 allowance); New Lake, Pungo Lake, Lake Raleigh, Sutton Lake, Lake Hampton 14-inch min, 2 under 14, none 16–20 inches; Lake Phelps 14-inch min, none 16–20, 5; Buckhorn Reservoir 16-inch min, 5; Cane Creek Lake & Lake Mattamuskeet 16-inch min, only 1 over 20, 5; Lake Thom-A-Lex 18-inch min, 5; Lake Chatuge 12-inch min, 10 black bass combined; Lake Santeetlah/Cammack/Holt and New River (Alleghany) special slot rules; Jean Guite Creek and Martin Marietta Park ponds: no largemouth bass may be possessed.",
+      "quote": "Lake Thom-A-Lex (Davidson Co.) | 18-inch minimum | 5 | Jean Guite Creek and assoicated canals within the Town of Southern Shores (Dare Co.) | No largemouth bass may be possessed",
+      "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+      "id": 38,
+      "status": "pending"
+    },
+    {
+      "existingName": "Smallmouth Bass",
+      "field": "notes/zones",
+      "current": "single statewide 14-inch/5 rule",
+      "shouldBe": "Add exceptions: Lake Chatuge no minimum, 10 black bass combined; New River (Alleghany Co.) no minimum, none 14–22 inches, only 1 largemouth/smallmouth over 22, 5 combined; Lake Santeetlah no minimum, no creel under 14 inches, 5 largemouth/smallmouth over 14 combined.",
+      "quote": "New River (Alleghany Co. portion downstream of Fields Dam in Grayson Co., VA) | No minimum size limit, none between 14–22 inches may be possessed, and only 1 largemouth bass or smallmouth bass may be greater than 22 inches",
+      "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+      "id": 39,
+      "status": "pending"
+    },
+    {
+      "existingName": "Crappie",
+      "field": "notes/zones",
+      "current": "notes mention 8 in / 20 for many waters",
+      "shouldBe": "Add: Buckhorn Reservoir 20 in combination (no size); Lake Chatuge 30 in combination; John H. Kerr Reservoir 9-inch minimum, 25; Cashie, Eastmost, Middle and Roanoke rivers below Roanoke Rapids Dam and Lake Mattamuskeet 10-inch minimum, 20.",
+      "quote": "John H. Kerr Reservoir | 9-inch minimum | 25 in combination | Cashie, Eastmost, Middle, and Roanoke River (downstream of Roanoke Rapids Dam), and their tributaries | 10-inch minimum | 20 in combination",
+      "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+      "id": 41,
+      "status": "pending"
+    },
+    {
+      "existingName": "White Perch",
+      "field": "notes",
+      "current": "No limit",
+      "shouldBe": "Add: in and west of Buncombe, Haywood and Rutherford counties no live white perch may be possessed, transported or released.",
+      "quote": "All public fishing waters in and west of Buncombe, Haywood, and Rutherford counties | No live white perch may be possessed, transported or released.",
+      "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/warm-water-game-fish-regulations",
+      "id": 45,
+      "status": "pending"
+    },
+    {
+      "existingName": "Mountain Trout",
+      "field": "zones",
+      "current": "Hatchery Supported and Wild Trout only",
+      "shouldBe": "Add Delayed Harvest waters (Oct 1, 2026 – June 4, 2027 no trout may be possessed, artificial single-hook lures only; June 5 – July 31 and Aug 1 – Sept 30: no size, 7); Catch and Release/Artificial Flies and Lures Only waters (no trout may be possessed, year-round); Special Regulation waters: Catawba River Muddy Creek to Morganton intake 14 inches, 2; Apalachia Reservoir 3 per day, only one over 14 inches; Wild Trout 7 inches, 4, artificial single-hook lures only; Hatchery Supported closed March 1 – April 2, 2027 (no fishing) except listed no-closed-season waters.",
+      "quote": "DELAYED HARVEST TROUT WATERS Oct. 1, 2026 – June 4, 2027 **No trout may be possessed ... SPECIAL REGULATION TROUT WATERS No closed season Catawba River from Muddy Creek to Morganton water intake dam | 14 inches | 2",
+      "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/general-mountain-trout-regulations",
+      "id": 46,
+      "status": "pending"
+    },
+    {
+      "existingName": "Alewife and Blueback Herring",
+      "field": "zones",
+      "current": "statewide closed",
+      "shouldBe": "Keep closed for DMF coastal/joint waters. Add WRC inland zone: inland fishing waters generally none/none; inland waters of coastal rivers up to the first dam (Cape Fear–Buckhorn, Neuse–Falls Lake, Pee Dee–Blewett Falls, Roanoke–Roanoke Rapids, Tar–Rocky Mount Mill, Waccamaw–Lake Waccamaw), Lumber River and all other inland waters east of I-95: no river herring greater than 6 inches may be taken or possessed; Little Tennessee basin above Santeetlah/Cedar Cliff: no live possession.",
+      "quote": "No minimum size limit, but no river herring greater than 6 inches may be taken or possessed (regardless or origin)",
+      "sourceUrl": "https://www.eregulations.com/northcarolina/fishing/nongame-fish-size-creel-limits",
+      "id": 23,
+      "status": "pending"
+    },
+    {
+      "existingName": "Spiny Lobster",
+      "field": "notes",
+      "current": "",
+      "shouldBe": "Add: unlawful to possess egg-bearing lobster or one with eggs removed; no detached tails aboard or landed; no gaff/spear, nets, pots or traps; 2 per person per trip.",
+      "quote": "It is unlawful to possess aboard a vessel or land more than two spiny lobsters per person per trip.",
+      "sourceUrl": "https://files.nc.gov/deq/documents/2022-04/M-7-2022_SpinyLobster-FINAL.pdf",
+      "id": 34,
+      "status": "pending"
+    },
+    {
+      "existingName": "Spotted Seatrout",
+      "field": "notes",
+      "current": "Open year-round",
+      "shouldBe": "Note FF-31-2026 re-opened harvest July 1, 2026 after a cold-stun closure; DMF closes seatrout by proclamation after cold-stun events — season should be flagged 'open unless closed by proclamation'. Also main page prints 26' (typo for 26\").",
+      "quote": "This proclamation opens the commercial and recreational spotted seatrout (speckled trout) fishery ... in Coastal and Joint Fishing Waters including the Atlantic Ocean on July 1, 2026",
+      "sourceUrl": "https://files.nc.gov/deq/documents/2026-06/FF-31-2026_SpottedSeatrout_open harvest_final.pdf",
+      "id": 14,
+      "status": "pending"
+    }
+  ]
+}

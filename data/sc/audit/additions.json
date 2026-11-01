@@ -1,0 +1,871 @@
+{
+  "state": "SC",
+  "auditedOn": "2026-10-31",
+  "sources": [
+    { "id": "sc-sharks", "title": "SC Sharks Size & Catch Limits (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits", "type": "html", "role": "primary" },
+    { "id": "sc-billfish-tunas", "title": "SC Billfish & Atlantic Tunas Size & Catch Limits (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits", "type": "html", "role": "primary" },
+    { "id": "sc-freshwater-nongame", "title": "SC Freshwater Nongame Fishing Regulations (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/freshwater-nongame-fishing-regulations", "type": "html", "role": "primary" },
+    { "id": "sc-freshwater-game-regs", "title": "SC Freshwater Game Fishing Regulations (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/freshwater-game-fishing-regulations", "type": "html", "role": "secondary" },
+    { "id": "sc-general-info", "title": "SC Saltwater General Information (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/general-information", "type": "html", "role": "secondary" },
+    { "id": "sc-shad-herring", "title": "SC Shad & Herring Fishing Regulations (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/shad-herring-fishing-regulations", "type": "html", "role": "secondary" },
+    { "id": "sc-state-lakes", "title": "SC State Lakes special limits (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/state-lakes", "type": "html", "role": "secondary" },
+    { "id": "sc-nongame-methods", "title": "SC Nongame Methods & Devices (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/nongame-methods-devices", "type": "html", "role": "secondary" },
+    { "id": "sc-invasives", "title": "SC Aquatic Invasive Plants & Animals (eRegulations digest)", "url": "https://www.eregulations.com/southcarolina/fishing/aquatic-invasive-plants-animals", "type": "html", "role": "secondary" },
+    { "id": "sc-redsnapper", "title": "SCDNR Red Snapper Season / Experimental Fishing Permit", "url": "https://dnr.sc.gov/redsnapper/", "type": "html", "role": "secondary" }
+  ],
+  "species": [
+    {
+      "name": "Atlantic Sharpnose Shark",
+      "aliases": ["sharpnose", "sharpnose shark", "atlantic sharpnose"],
+      "habitat": "saltwater",
+      "family": "Sharks",
+      "sourceId": "sc-sharks",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits",
+      "quote": "Atlantic Sharpnose | | 1 per person per day | |",
+      "season": "Open year-round (no closed season printed)",
+      "size": "None",
+      "limit": "1 per person per day",
+      "notes": "Federal Highly Migratory Species Permit with a Shark Endorsement are required in federal waters to recreationally fish for, retain, possess, or land sharks. All sharks must be landed with fins, head and tail naturally attached. Recreational anglers may only catch sharks using a rod & reel or handline. All other gears prohibited. Additionally, angers fishing recreationally for sharks are required to use non-offset, non-stainless steel circle hooks, except when fishing with flies or artificial lures.",
+      "zones": [
+        { "zone": "state", "label": "SC state waters (to 3 mi)", "seasons": null, "size": [], "bag": 1, "bagNote": "1 per person per day", "closed": false, "sizeNote": "No size limit printed" },
+        { "zone": "federal", "label": "Federal waters (3–200 mi)", "seasons": null, "size": [], "bag": 1, "bagNote": "1 per person per day", "closed": false, "sizeNote": "No size limit printed" }
+      ],
+      "userNotes": [
+        "Rod & reel or handline only; non-offset, non-stainless circle hooks required with natural bait.",
+        "Land with fins, head and tail naturally attached.",
+        "In federal waters (beyond 3 mi) you need a federal HMS Angling permit with a shark endorsement.",
+        "Gigging sharks is unlawful; sharks may not be taken by gill net."
+      ]
+    },
+    {
+      "name": "Bonnethead Shark",
+      "aliases": ["bonnethead", "bonnet head", "shovelhead shark"],
+      "habitat": "saltwater",
+      "family": "Sharks",
+      "sourceId": "sc-sharks",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits",
+      "quote": "Bonnethead | | 1 per person per day | |",
+      "season": "Open year-round (no closed season printed)",
+      "size": "None",
+      "limit": "1 per person per day",
+      "notes": "Federal Highly Migratory Species Permit with a Shark Endorsement are required in federal waters to recreationally fish for, retain, possess, or land sharks. All sharks must be landed with fins, head and tail naturally attached. Recreational anglers may only catch sharks using a rod & reel or handline.",
+      "zones": [
+        { "zone": "state", "label": "SC state waters (to 3 mi)", "seasons": null, "size": [], "bag": 1, "bagNote": "1 per person per day", "closed": false, "sizeNote": "No size limit printed" },
+        { "zone": "federal", "label": "Federal waters (3–200 mi)", "seasons": null, "size": [], "bag": 1, "bagNote": "1 per person per day", "closed": false, "sizeNote": "No size limit printed" }
+      ],
+      "userNotes": [
+        "Rod & reel or handline only; non-offset, non-stainless circle hooks required with natural bait.",
+        "Land with fins, head and tail naturally attached.",
+        "In federal waters (beyond 3 mi) you need a federal HMS Angling permit with a shark endorsement."
+      ]
+    },
+    {
+      "name": "Sharks (1-per-vessel group)",
+      "aliases": ["blacknose shark", "blacktip shark", "blue shark", "bull shark", "finetooth shark", "lemon shark", "nurse shark", "porbeagle shark", "porbeagle", "spinner shark", "thresher shark", "common thresher", "tiger shark", "blacknose", "blacktip", "finetooth", "spinner", "thresher"],
+      "habitat": "saltwater",
+      "family": "Sharks",
+      "sourceId": "sc-sharks",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits",
+      "quote": "Blacknose, Blacktip, Blue, Bull, Finetooth, Lemon, Nurse, Porbeagle, Spinner, Thresher and Tiger Sharks | | 1 shark per vessel per trip | 54-inch FL |",
+      "season": "Open year-round (no closed season printed)",
+      "size": "54-inch FL",
+      "limit": "1 shark per vessel per trip",
+      "notes": "Group row as printed by SCDNR. All sharks must be landed with fins, head and tail naturally attached. Recreational anglers may only catch sharks using a rod & reel or handline. All other gears prohibited.",
+      "zones": [
+        { "zone": "state", "label": "SC state waters (to 3 mi)", "seasons": null, "size": [{ "min": 54, "max": null }], "bag": null, "bagNote": "1 shark per vessel per trip (combined for all species in this group)", "closed": false, "sizeNote": "54 inch fork length" },
+        { "zone": "federal", "label": "Federal waters (3–200 mi)", "seasons": null, "size": [{ "min": 54, "max": null }], "bag": null, "bagNote": "1 shark per vessel per trip (combined for all species in this group)", "closed": false, "sizeNote": "54 inch fork length" }
+      ],
+      "userNotes": [
+        "One shark total per boat per trip from this whole list (blacknose, blacktip, blue, bull, finetooth, lemon, nurse, porbeagle, spinner, thresher, tiger) — not one of each.",
+        "Minimum 54 inches fork length (snout to center of tail fork, straight line).",
+        "Rod & reel or handline only; non-offset, non-stainless circle hooks required with natural bait; land with fins, head and tail attached.",
+        "Federal HMS Angling permit with shark endorsement required beyond 3 miles."
+      ]
+    },
+    {
+      "name": "Hammerhead Sharks",
+      "aliases": ["great hammerhead", "scalloped hammerhead", "smooth hammerhead", "hammerhead"],
+      "habitat": "saltwater",
+      "family": "Sharks",
+      "sourceId": "sc-sharks",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits",
+      "quote": "Great Hammerhead, Scalloped Hammerhead and Smooth Hammerhead Sharks | | | 78-inch FL |",
+      "season": "Open year-round (no closed season printed)",
+      "size": "78-inch FL",
+      "limit": "Bag limit cell is blank on the printed row (see userNotes)",
+      "notes": "Group row as printed by SCDNR. The BAG LIMIT cell for this row is blank in the digest; only the 78-inch FL size limit is printed. Verify the vessel limit with NOAA HMS before retaining.",
+      "zones": [
+        { "zone": "state", "label": "SC state waters (to 3 mi)", "seasons": null, "size": [{ "min": 78, "max": null }], "bag": null, "bagNote": "No bag limit printed on this row — confirm with NOAA HMS rules before keeping one", "closed": false, "sizeNote": "78 inch fork length" },
+        { "zone": "federal", "label": "Federal waters (3–200 mi)", "seasons": null, "size": [{ "min": 78, "max": null }], "bag": null, "bagNote": "No bag limit printed on this row — confirm with NOAA HMS rules before keeping one", "closed": false, "sizeNote": "78 inch fork length" }
+      ],
+      "userNotes": [
+        "Minimum 78 inches fork length for great, scalloped and smooth hammerhead.",
+        "The SC digest prints no bag number for hammerheads; federal HMS rules (fisheries.noaa.gov) govern the vessel limit — check before retaining.",
+        "Rod & reel or handline only; circle hooks required with natural bait; land with fins, head and tail attached."
+      ]
+    },
+    {
+      "name": "Prohibited Sharks",
+      "aliases": ["atlantic angel shark", "angel shark", "basking shark", "bignose shark", "dusky shark", "galapagos shark", "shortfin mako", "mako", "longfin mako", "narrowtooth shark", "night shark", "oceanic whitetip", "caribbean reef shark", "reef shark", "sandbar shark", "sandbar", "sevengill shark", "caribbean sharpnose", "silky shark", "bigeye sixgill", "sixgill shark", "smalltail shark", "bigeye thresher", "bigeye sand tiger", "sand tiger", "sand tiger shark", "whale shark", "white shark", "great white"],
+      "habitat": "saltwater",
+      "family": "Sharks",
+      "sourceId": "sc-sharks",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits",
+      "quote": "Atlantic Angel, Basking, Bignose, Dusky, Galapagos, Shortfin Mako, Longfin Mako, Narrowtooth, Night, Oceanic Whitetip, Caribbean Reef, Sandbar, Sevengill, Caribbean Sharpnose, Silky, Bigeye Sixgill, Sixgill, Smalltail, Bigeye Thresher, Bigeye Sand Tiger, Sand Tiger, Whale and White Sharks | Possession prohibited | Possession prohibited | | If caught, sharks from this group must be released immediately, without removing it from the water.",
+      "season": "Possession prohibited",
+      "size": "Possession prohibited",
+      "limit": "Possession prohibited",
+      "notes": "If caught, sharks from this group must be released immediately, without removing it from the water.",
+      "zones": [
+        { "zone": "state", "label": "SC state waters (to 3 mi)", "seasons": null, "size": [], "bag": null, "bagNote": "Possession prohibited", "closed": true, "sizeNote": "" },
+        { "zone": "federal", "label": "Federal waters (3–200 mi)", "seasons": null, "size": [], "bag": null, "bagNote": "Possession prohibited", "closed": true, "sizeNote": "" }
+      ],
+      "userNotes": [
+        "Release immediately without removing the shark from the water.",
+        "Includes shortfin and longfin mako, sandbar, dusky, silky, sand tiger, white and whale sharks among others — see the full list in aliases."
+      ]
+    },
+    {
+      "name": "Dogfish (spiny & smooth)",
+      "aliases": ["spiny dogfish", "smooth dogfish", "dogfish", "dog shark", "sand shark"],
+      "habitat": "saltwater",
+      "family": "Sharks",
+      "sourceId": "sc-sharks",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits",
+      "quote": "Dogfish (spiny & smooth) | No associated regulations.",
+      "season": "Open year-round",
+      "size": "None",
+      "limit": "No associated regulations",
+      "notes": "Printed in the Sharks table as having no associated regulations.",
+      "zones": [
+        { "zone": "state", "label": "SC state waters (to 3 mi)", "seasons": null, "size": [], "bag": null, "bagNote": "No associated regulations", "closed": false, "sizeNote": "No size limit" }
+      ],
+      "userNotes": [
+        "SC prints no size, bag or season for spiny or smooth dogfish.",
+        "General shark gear rules on the same page (rod & reel/handline, circle hooks, fins attached) still apply to sharks."
+      ]
+    },
+    {
+      "name": "Blue Marlin",
+      "aliases": ["marlin"],
+      "habitat": "saltwater",
+      "family": "Billfish",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Blue Marlin | | | 99-inch FL from lower jaw | May only be taken by rod & reel.",
+      "season": "Open year-round (no closed season printed)",
+      "size": "99-inch FL from lower jaw",
+      "limit": "No bag limit printed (federal HMS rules apply)",
+      "notes": "Federal Highly Migratory Species Permit required to fish for these species. All billfish to be released may not be removed from the water. All recreationally caught Atlantic billfish landed must be reported to NMFS within 24 hours of landing at the dock. Recreationally caught billfish may not be sold.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [{ "min": 99, "max": null }], "bag": null, "bagNote": "No bag limit printed; federal HMS rules apply", "closed": false, "sizeNote": "99 inch lower-jaw fork length" }
+      ],
+      "userNotes": [
+        "Rod & reel only. Federal HMS permit required even to possess in state waters.",
+        "Report any landed billfish to NMFS within 24 hours (1-800-894-5528 or hmspermits.noaa.gov).",
+        "Billfish you intend to release may not be removed from the water. Billfish may not be sold."
+      ]
+    },
+    {
+      "name": "White Marlin",
+      "aliases": ["marlin"],
+      "habitat": "saltwater",
+      "family": "Billfish",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "White Marlin | | | 66-inch FL from lower jaw | May only be taken by rod & reel.",
+      "season": "Open year-round (no closed season printed)",
+      "size": "66-inch FL from lower jaw",
+      "limit": "No bag limit printed (federal HMS rules apply)",
+      "notes": "Federal Highly Migratory Species Permit required to fish for these species. All billfish to be released may not be removed from the water. All recreationally caught Atlantic billfish landed must be reported to NMFS within 24 hours of landing at the dock.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [{ "min": 66, "max": null }], "bag": null, "bagNote": "No bag limit printed; federal HMS rules apply", "closed": false, "sizeNote": "66 inch lower-jaw fork length" }
+      ],
+      "userNotes": [
+        "Rod & reel only. Federal HMS permit required.",
+        "Report any landed billfish to NMFS within 24 hours. Released billfish stay in the water."
+      ]
+    },
+    {
+      "name": "Sailfish",
+      "aliases": ["atlantic sailfish", "sail"],
+      "habitat": "saltwater",
+      "family": "Billfish",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Sailfish | | | 63-inch FL from lower jaw | May only be taken by rod & reel.",
+      "season": "Open year-round (no closed season printed)",
+      "size": "63-inch FL from lower jaw",
+      "limit": "No bag limit printed (federal HMS rules apply)",
+      "notes": "Federal Highly Migratory Species Permit required to fish for these species. All recreationally caught Atlantic billfish landed must be reported to NMFS within 24 hours of landing at the dock.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [{ "min": 63, "max": null }], "bag": null, "bagNote": "No bag limit printed; federal HMS rules apply", "closed": false, "sizeNote": "63 inch lower-jaw fork length" }
+      ],
+      "userNotes": [
+        "Rod & reel only. Federal HMS permit required.",
+        "Report any landed billfish to NMFS within 24 hours. Released billfish stay in the water."
+      ]
+    },
+    {
+      "name": "Swordfish",
+      "aliases": ["sword", "broadbill"],
+      "habitat": "saltwater",
+      "family": "Billfish",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Swordfish | | 1 per person per day not to exceed 4 per vessel per trip | 47-inch FL from lower jaw OR 25-inch cleithrum to caudal keel | May only be taken by rod & reel and handlines. Handlines must be attached to, or remain in contact with, the vessel at all times. See https://hmspermits.noaa.gov for for-hire vessel bag limits.",
+      "season": "Open year-round (no closed season printed)",
+      "size": "47-inch FL from lower jaw OR 25-inch cleithrum to caudal keel",
+      "limit": "1 per person per day not to exceed 4 per vessel per trip",
+      "notes": "May only be taken by rod & reel and handlines. Handlines must be attached to, or remain in contact with, the vessel at all times. See https://hmspermits.noaa.gov for for-hire vessel bag limits.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [{ "min": 47, "max": null }], "bag": 1, "bagNote": "1 per person per day, max 4 per vessel per trip", "closed": false, "sizeNote": "47 inch lower-jaw fork length, or 25 inch cleithrum-to-keel if head is removed" }
+      ],
+      "userNotes": [
+        "Rod & reel or handline only; a handline must stay attached to or in contact with the boat.",
+        "For-hire (charter/headboat) vessel limits differ — see hmspermits.noaa.gov.",
+        "Federal HMS permit required; report landings to NMFS within 24 hours."
+      ]
+    },
+    {
+      "name": "Roundscale Spearfish",
+      "aliases": ["spearfish"],
+      "habitat": "saltwater",
+      "family": "Billfish",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Roundscale Spearfish | | | 66-inch FL from lower jaw | May only be taken by rod & reel.",
+      "season": "Open year-round (no closed season printed)",
+      "size": "66-inch FL from lower jaw",
+      "limit": "No bag limit printed (federal HMS rules apply)",
+      "notes": "Federal Highly Migratory Species Permit required to fish for these species. All recreationally caught Atlantic billfish landed must be reported to NMFS within 24 hours of landing at the dock.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [{ "min": 66, "max": null }], "bag": null, "bagNote": "No bag limit printed; federal HMS rules apply", "closed": false, "sizeNote": "66 inch lower-jaw fork length" }
+      ],
+      "userNotes": [
+        "Rod & reel only. Federal HMS permit required.",
+        "Easily confused with longbill spearfish, which is possession-prohibited — if unsure, release in the water."
+      ]
+    },
+    {
+      "name": "Longbill Spearfish",
+      "aliases": ["spearfish"],
+      "habitat": "saltwater",
+      "family": "Billfish",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Longbill Spearfish | Possession prohibited | | | If caught fish must be released immediately.",
+      "season": "Possession prohibited",
+      "size": "Possession prohibited",
+      "limit": "Possession prohibited",
+      "notes": "If caught fish must be released immediately.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters", "seasons": null, "size": [], "bag": null, "bagNote": "Possession prohibited", "closed": true, "sizeNote": "" }
+      ],
+      "userNotes": [
+        "Release immediately without removing from the water."
+      ]
+    },
+    {
+      "name": "Albacore & Skipjack Tuna",
+      "aliases": ["albacore", "albacore tuna", "skipjack", "skipjack tuna", "longfin tuna"],
+      "habitat": "saltwater",
+      "family": "Atlantic Tunas",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Albacore, Skipjack | No associated regulations.",
+      "season": "Open year-round",
+      "size": "None",
+      "limit": "No associated regulations",
+      "notes": "Federal Highly Migratory Species Permit required to fish for these species except for the Other Tunas.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [], "bag": null, "bagNote": "No associated regulations", "closed": false, "sizeNote": "No size limit" }
+      ],
+      "userNotes": [
+        "No size or bag limit printed by SC, but a federal HMS Angling permit is still required to fish for Atlantic tunas.",
+        "Check current federal rules at hmspermits.noaa.gov or 1-888-USA-TUNA."
+      ]
+    },
+    {
+      "name": "Bigeye Tuna",
+      "aliases": ["bigeye"],
+      "habitat": "saltwater",
+      "family": "Atlantic Tunas",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Bigeye Tuna | | | 27-inch curved FL |",
+      "season": "Open year-round (no closed season printed)",
+      "size": "27-inch curved FL",
+      "limit": "No bag limit printed (federal HMS rules apply)",
+      "notes": "Federal Highly Migratory Species Permit required to fish for these species except for the Other Tunas. Check current federal regulations by calling 1-888-USA-TUNA (888) 872-8862 or checking https://hmspermits.noaa.gov/.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [{ "min": 27, "max": null }], "bag": null, "bagNote": "No bag limit printed; federal HMS rules apply", "closed": false, "sizeNote": "27 inch curved fork length" }
+      ],
+      "userNotes": [
+        "Minimum 27 inches curved fork length. Federal HMS permit required.",
+        "Check hmspermits.noaa.gov for current federal limits."
+      ]
+    },
+    {
+      "name": "Bluefin Tuna",
+      "aliases": ["bluefin", "giant bluefin"],
+      "habitat": "saltwater",
+      "family": "Atlantic Tunas",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Bluefin Tuna | | NOAA Fisheries has adjusted the Atlantic Bluefin tuna daily retention limits which applies to vessels permitted in the Highly Migratory Species Angling category and the HMS Charter/Headboat category. Visit https://www.fisheries.noaa.gov/bulletin/bluefin-tuna-angling-category-daily-retention-limit-adjustment for detailed information regarding bag limits prior to fishing. | | See https://hmspermits.noaa.gov for for-hire vessel bag and size limits. All recreationally caught Atlantic billfish and Bluefin tuna landed must be reported to NMFS within 24 hours of landing at the dock.",
+      "season": "See NOAA HMS (federally managed; SC prints no state season)",
+      "size": "See NOAA HMS (SC prints no size)",
+      "limit": "See NOAA daily retention limit bulletin (SC prints no number)",
+      "notes": "Federally managed; SC defers to NOAA Fisheries HMS. See https://www.fisheries.noaa.gov/bulletin/bluefin-tuna-angling-category-daily-retention-limit-adjustment and https://hmspermits.noaa.gov.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [], "bag": null, "bagNote": "Set by NOAA HMS daily retention limit — check before fishing", "closed": false, "sizeNote": "Set by NOAA HMS — check before fishing" }
+      ],
+      "userNotes": [
+        "SC does not print bluefin limits; NOAA sets a daily retention limit by permit category that changes during the year — check fisheries.noaa.gov before the trip.",
+        "Federal HMS permit required. Every bluefin landed must be reported to NMFS within 24 hours."
+      ]
+    },
+    {
+      "name": "Yellowfin Tuna",
+      "aliases": ["yellowfin", "ahi"],
+      "habitat": "saltwater",
+      "family": "Atlantic Tunas",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Yellowfin Tuna | | 3 per person per day per trip | 27-inch curved FL |",
+      "season": "Open year-round (no closed season printed)",
+      "size": "27-inch curved FL",
+      "limit": "3 per person per day per trip",
+      "notes": "Federal Highly Migratory Species Permit required to fish for these species except for the Other Tunas.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters (HMS permit required)", "seasons": null, "size": [{ "min": 27, "max": null }], "bag": 3, "bagNote": "3 per person per day per trip", "closed": false, "sizeNote": "27 inch curved fork length" }
+      ],
+      "userNotes": [
+        "3 per person per trip, minimum 27 inches curved fork length.",
+        "Federal HMS Angling permit required."
+      ]
+    },
+    {
+      "name": "Other Tunas (Blackfin, Bonita, Little Tunny)",
+      "aliases": ["blackfin tuna", "blackfin", "bonita", "bonito", "little tunny", "false albacore", "albie", "fat albert"],
+      "habitat": "saltwater",
+      "family": "Atlantic Tunas",
+      "sourceId": "sc-billfish-tunas",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "quote": "Other tunas: Blackfin, Bonita, and Little tunny | No associated regulations.",
+      "season": "Open year-round",
+      "size": "None",
+      "limit": "No associated regulations",
+      "notes": "Federal Highly Migratory Species Permit required to fish for these species except for the Other Tunas.",
+      "zones": [
+        { "zone": "state", "label": "SC state & federal waters", "seasons": null, "size": [], "bag": null, "bagNote": "No associated regulations", "closed": false, "sizeNote": "No size limit" }
+      ],
+      "userNotes": [
+        "No size, bag or season for blackfin, bonita or little tunny (false albacore), and no HMS permit needed for these."
+      ]
+    },
+    {
+      "name": "Herring",
+      "aliases": ["blueback herring", "river herring", "herring"],
+      "habitat": "saltwater",
+      "family": "Shad & Herring",
+      "sourceId": "sc-finfish-limits",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/finfish-size-catch-limits",
+      "quote": "Herring | See Shad & Herring Fishing Regulations. | 1 US bushel of herring per person per day | | See Shad & Herring Fishing Regulations. for licensing, permitting, and gear requirements.",
+      "season": "See Shad & Herring Fishing Regulations (closed areas: Savannah River; Winyah Bay system except Great Pee Dee)",
+      "size": "None",
+      "limit": "1 US bushel of herring per person per day",
+      "notes": "Shad & Herring page (https://www.eregulations.com/southcarolina/fishing/shad-herring-fishing-regulations): \"HERRING One US bushel of herring per person per day. Herring Fishery closed in the Savannah River and in all rivers in the Winyah Bay River System (which means all waters of Winyah Bay east of a line running south from the southern tip of North Island to the eastern tip of Sand Island, and extending to the mouths of the Sampit, Great Pee Dee, and Waccamaw Rivers) except for the Great Pee Dee River.\" Nongame page: \"American shad and herring may be harvested by skimbow net from February through April.\" and \"Herring fishing is prohibited within one hundred feet of the fish lift exit channel located above the dam at St. Stephens Powerhouse.\"",
+      "zones": [
+        { "zone": "state", "label": "SC waters (fresh & salt), except closed areas", "seasons": null, "size": [], "bag": null, "bagNote": "1 US bushel per person per day", "closed": false, "sizeNote": "No size limit" },
+        { "zone": "savannah", "label": "Savannah River", "seasons": null, "size": [], "bag": null, "bagNote": "Herring fishery closed", "closed": true, "sizeNote": "" },
+        { "zone": "winyah", "label": "Winyah Bay river system (except Great Pee Dee River)", "seasons": null, "size": [], "bag": null, "bagNote": "Herring fishery closed", "closed": true, "sizeNote": "" }
+      ],
+      "userNotes": [
+        "Limit is 1 US bushel per person per day; no size limit.",
+        "Herring fishing is closed in the Savannah River and throughout the Winyah Bay system (Sampit, Waccamaw, etc.) except the Great Pee Dee River.",
+        "Skimbow nets may be used only February through April; shad/herring gill nets need a separate gill-net license and permit.",
+        "No herring fishing within 100 feet of the fish lift exit channel at St. Stephens Powerhouse."
+      ]
+    },
+    {
+      "name": "Hybrid Striped Bass (saltwater)",
+      "aliases": ["hybrid bass", "hybrid", "wiper", "white bass (saltwater)", "palmetto bass"],
+      "habitat": "saltwater",
+      "family": "Temperate Bass",
+      "sourceId": "sc-finfish-limits",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/finfish-size-catch-limits",
+      "quote": "Hybrid Bass, White Bass, & Combinations | | In lower reach of the Savannah River: 2 per person per day / All other saltwaters: no bag limit | In the lower reach of the Savannah River: 27 inch TL / All other saltwaters: no size limit |",
+      "season": "Open year-round",
+      "size": "No size limit in saltwater except lower reach of the Savannah River (27 inch TL)",
+      "limit": "No bag limit in saltwater except lower reach of the Savannah River (2 per person per day)",
+      "notes": "Row covers hybrid bass, white bass and combinations in SC saltwaters.",
+      "zones": [
+        { "zone": "state", "label": "SC saltwaters (except lower Savannah River)", "seasons": null, "size": [], "bag": null, "bagNote": "No bag limit", "closed": false, "sizeNote": "No size limit" },
+        { "zone": "savannah", "label": "Savannah River, lower reach", "seasons": null, "size": [{ "min": 27, "max": null }], "bag": 2, "bagNote": "2 per person per day (striped, hybrid or white bass combined)", "closed": false, "sizeNote": "27 inch total length" }
+      ],
+      "userNotes": [
+        "In SC saltwater there is no size or bag limit on hybrid or white bass, except the lower Savannah River: 27 inch minimum, 2 per person.",
+        "Different rules apply upstream of the saltwater/freshwater dividing line — see Hybrid Striped Bass (freshwater)."
+      ]
+    },
+    {
+      "name": "Florida Pompano",
+      "aliases": ["pompano"],
+      "habitat": "saltwater",
+      "family": "",
+      "sourceId": "sc-finfish-limits",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/finfish-size-catch-limits",
+      "quote": "Florida Pompano | No associated regulations",
+      "season": "Open year-round",
+      "size": "None",
+      "limit": "No associated regulations",
+      "notes": "",
+      "zones": [
+        { "zone": "state", "label": "SC state waters (to 3 mi)", "seasons": null, "size": [], "bag": null, "bagNote": "No associated regulations", "closed": false, "sizeNote": "No size limit" }
+      ],
+      "userNotes": [
+        "SC prints no size, bag or season for Florida pompano."
+      ]
+    },
+    {
+      "name": "Other Snapper-Grouper Complex Species",
+      "aliases": ["lesser amberjack", "scup", "almaco jack", "bar jack", "margate", "whitebone porgy", "knobbed porgy", "jolthead porgy", "saucereye porgy", "banded rudderfish", "sailors choice", "sailor's choice", "porgy", "porgies", "jack"],
+      "habitat": "saltwater",
+      "family": "Snapper-Grouper Complex",
+      "sourceId": "sc-snapper-grouper",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits",
+      "quote": "ALL OTHER SNAPPER-GROUPER COMPLEX SPECIES Including but not limited to: Lesser Amberjack; White Grunt; Scup; Almaco & Bar Jacks; Margate; Whitebone, Knobbed, Jolthead & Saucereye; Banded Rudderfish; Sailors Choice | | 20 per person per day aggregate with no more than 10 of any one species | |",
+      "season": "No closed season in state waters; federal seasons may close when catch limits are met",
+      "size": "None",
+      "limit": "20 per person per day aggregate with no more than 10 of any one species",
+      "notes": "Group row as printed. White Grunt and Gray Triggerfish (12-inch FL) and Spadefish already have their own rows. Dehooking tool and descending device required; non-stainless, non-offset circle hooks required with natural bait; land with head and tail intact.",
+      "zones": [
+        { "zone": "state", "label": "SC state waters (to 3 mi)", "seasons": null, "size": [], "bag": 10, "bagNote": "20 per person per day aggregate across this group, no more than 10 of any one species", "closed": false, "sizeNote": "No size limit" },
+        { "zone": "federal", "label": "Federal waters (3–200 mi)", "seasons": null, "size": [], "bag": 10, "bagNote": "20 per person per day aggregate across this group, no more than 10 of any one species", "closed": false, "sizeNote": "No size limit" }
+      ],
+      "userNotes": [
+        "Covers lesser amberjack, scup, almaco jack, bar jack, margate, whitebone/knobbed/jolthead/saucereye porgy, banded rudderfish and sailors choice (and any other snapper-grouper species without its own row).",
+        "20 fish total per person from this group, and no more than 10 of any single species. White grunt and gray triggerfish count in the same 20.",
+        "Federal waters can close when annual catch limits are met — check safmc.net / sero.nmfs.noaa.gov."
+      ]
+    },
+    {
+      "name": "Redeye Bass",
+      "aliases": ["bartrams bass", "bartram's bass", "redeye", "redeye (bartrams) bass"],
+      "habitat": "freshwater",
+      "family": "Black Bass",
+      "sourceId": "sc-freshwater-limits",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "quote": "Statewide except the water bodies listed below: | Redeye (Bartrams) Bass | Any length | No more than 5 combined total of smallmouth, largemouth, redeye bass or their hybrids || Lakes Hartwell, Keowee, Russell (including the Lake Hartwell tailwater), Thurmond, Tugaloo, Yonah; Stevens Creek Reservoir; the Chattooga and Savannah Rivers | Redeye (Bartrams) Bass | Any length | No more than 10 combined total of black bass",
+      "season": "Open year-round",
+      "size": "Any length",
+      "limit": "No more than 5 combined total of smallmouth, largemouth, redeye bass or their hybrids (10 combined black bass in the Savannah-basin lakes listed)",
+      "notes": "A total of 40 game fish may be kept in any one day.",
+      "zones": [
+        { "zone": "inland", "label": "SC freshwater statewide (except Savannah-basin lakes below)", "seasons": null, "size": [], "bag": 5, "bagNote": "5 combined smallmouth, largemouth, redeye bass or hybrids", "closed": false, "sizeNote": "Any length" },
+        { "zone": "savannahlakes", "label": "Lakes Hartwell, Keowee, Russell (incl. Hartwell tailwater), Thurmond, Tugaloo, Yonah; Stevens Creek Reservoir; Chattooga & Savannah Rivers", "seasons": null, "size": [], "bag": 10, "bagNote": "10 combined black bass", "closed": false, "sizeNote": "Any length" }
+      ],
+      "userNotes": [
+        "Counts toward the 5-fish black bass limit (largemouth, smallmouth, redeye and hybrids) statewide; 10 combined black bass on the Savannah-basin lakes and rivers listed.",
+        "Daily total of 40 game fish of all kinds applies."
+      ]
+    },
+    {
+      "name": "Redfin Pickerel",
+      "aliases": ["redfin", "grass pickerel", "little jack"],
+      "habitat": "freshwater",
+      "family": "Pickerel",
+      "sourceId": "sc-freshwater-limits",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "quote": "Statewide | Redfin Pickerel | Any length | 30",
+      "season": "Open year-round",
+      "size": "Any length",
+      "limit": "30",
+      "notes": "A total of 40 game fish may be kept in any one day.",
+      "zones": [
+        { "zone": "inland", "label": "SC freshwater statewide", "seasons": null, "size": [], "bag": 30, "bagNote": "30 per person per day", "closed": false, "sizeNote": "Any length" }
+      ],
+      "userNotes": [
+        "30 per day, any length. Daily total of 40 game fish of all kinds applies."
+      ]
+    },
+    {
+      "name": "Blue Catfish",
+      "aliases": ["blue cat", "blues", "catfish"],
+      "habitat": "freshwater",
+      "family": "Catfish",
+      "sourceId": "sc-freshwater-nongame",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-nongame-fishing-regulations",
+      "quote": "The daily bag limit for blue catfish harvest is 150 fish per day per person on all state waterways except the daily bag limit remains 25 fish per day for Lake Marion, Lake Moultrie, the section of the Pee Dee River from the state border with North Carolina south to the Highway 301 bridge, and the upper reach of the Santee River. It is also unlawful to possess more than two blue catfish greater than thirty-two inches in length in any one day in Lake Marion, Lake Moultrie, the upper reach of the Santee River, the section of the Pee Dee River from the state border with North Carolina south to the Highway 301 bridge, and the Congaree and Wateree rivers.",
+      "season": "Open year-round",
+      "size": "No minimum; no more than 2 over 32 inches per day in Lakes Marion & Moultrie, upper Santee River, Pee Dee River (NC line to Hwy 301) and the Congaree & Wateree rivers",
+      "limit": "150 per person per day statewide; 25 per person per day in Lakes Marion & Moultrie, upper Santee River and the Pee Dee River from the NC line to the Hwy 301 bridge",
+      "notes": "Effective May 15, 2026 (Act No. 120) per the page's What's Changed box: \"150 fish per person per day on most state waterways. Exception: 25/day for Lake Marion, Lake Moultrie, the Pee Dee River (NC border to Hwy 301 bridge), and the upper Santee River. No more than 2 blue catfish over 32 inches per day in Lake Marion, Lake Moultrie, upper Santee River, the Pee Dee exception area, and the Congaree and Wateree rivers.\" Freshwater limits page lists Blue Catfish as \"See limits in Freshwater Nongame Fishing Regulations section.\"",
+      "zones": [
+        { "zone": "inland", "label": "SC freshwater statewide (except waters below)", "seasons": null, "size": [], "bag": 150, "bagNote": "150 per person per day", "closed": false, "sizeNote": "No size limit" },
+        { "zone": "santee", "label": "Lakes Marion & Moultrie, upper Santee River, Pee Dee River (NC line to Hwy 301 bridge)", "seasons": null, "size": [], "bag": 25, "bagNote": "25 per person per day; no more than 2 over 32 inches", "closed": false, "sizeNote": "No minimum; max 2 fish over 32 inches per day" },
+        { "zone": "congareewateree", "label": "Congaree & Wateree rivers", "seasons": null, "size": [], "bag": 150, "bagNote": "150 per person per day; no more than 2 over 32 inches", "closed": false, "sizeNote": "No minimum; max 2 fish over 32 inches per day" }
+      ],
+      "userNotes": [
+        "New May 15, 2026: 150 blue catfish per day on most waters (was 25).",
+        "Santee-Cooper lakes (Marion, Moultrie), the upper Santee River and the Pee Dee from the NC line to Hwy 301 stay at 25 per day, and only 2 of those may be over 32 inches.",
+        "On the Congaree and Wateree rivers the bag is 150 but still only 2 fish over 32 inches.",
+        "SCDNR State Lakes have their own catfish creel limits (3 or 5 per day depending on the lake) — see the State Lakes table."
+      ]
+    },
+    {
+      "name": "Hybrid Striped Bass (freshwater)",
+      "aliases": ["hybrid bass", "hybrid", "wiper", "palmetto bass", "striped or hybrid bass"],
+      "habitat": "freshwater",
+      "family": "Temperate Bass",
+      "sourceId": "sc-freshwater-limits",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "quote": "Statewide except the water bodies list below: | Striped or Hybrid Bass or a combination | Any length | 10 || Ashepoo River; Ashley River; Back River in Jasper County and the Back River in Berkeley County; Black River; Black Mingo Creek; Bull Creek and Little Bull Creek; Combahee River; Cooper River system (see map); Coosawhatchie River; Cuckholds Creek; Edisto River; Horseshoe Creek; Intracoastal Waterway (Horry County); Lumber River; Lynches River; Great Pee Dee and Little Pee Dee Rivers; Pocotaligo in Beaufort, Jasper, and Hampton Counties; Salkehatchie and Little Salkehatchie Rivers; Sampit River; Tulifinny River; Thoroughfare Creek; and Waccamaw River | Striped or Hybrid Bass or a combination | Oct. 1 - June 15: 26 inches min | 3 | June 16 - Sept. 30 closed || Santee River system (see map below); includes Saluda River (Lower Reach) | Striped or Hybrid Bass or a combination | Oct. 1 - June 15 striped bass between 23 and 25 inches may be harvested except that one fish may be greater than 26 inches | 3 | June 16 - Sept. 30 closed except for Lower Reach Saluda River where catch and release is allowed ... || Lake Murray | Striped or Hybrid Bass or a combination | Oct. 1 - May 31: 21 inches min | 5 | June 1 - Sept. 30: any length | Unlawful to take, attempt to take, or possess more than 5 || Saluda River (Middle Reach) ... | Oct. 1 - May 31: 21 inches | 5 | June 1 - Sept. 30: any length || Lake Russell | Striped or Hybrid Bass or a combination | Only 1 fish larger than 34 inches | 2 || Lake Hartwell Tailwater | Striped or Hybrid Bass or a combination | Only 1 fish over 34 inches | 2 || Savannah River (Lower) ... | Striped, Hybrid or White Bass or a combination | 27 inches min | 2 || Lake Hartwell & Lake Thurmond | Striped or Hybrid Bass or a combination | Only 3 fish over 26 inches | 10",
+      "season": "Open year-round statewide; coastal rivers and Santee system closed June 16 - Sept. 30",
+      "size": "Any length statewide; see water-body zones",
+      "limit": "10 striped or hybrid bass combined statewide; see water-body zones",
+      "notes": "All limits are striped bass + hybrid bass combined. A total of 40 game fish may be kept in any one day.",
+      "zones": [
+        { "zone": "inland", "label": "SC freshwater statewide (except water bodies below)", "seasons": null, "size": [], "bag": 10, "bagNote": "10 striped or hybrid bass combined", "closed": false, "sizeNote": "Any length" },
+        { "zone": "coastalrivers", "label": "Coastal rivers: Ashepoo, Ashley, Back (Jasper & Berkeley), Black, Black Mingo Cr., Bull & Little Bull Cr., Combahee, Cooper system, Coosawhatchie, Cuckholds Cr., Edisto, Horseshoe Cr., ICW (Horry Co.), Lumber, Lynches, Great & Little Pee Dee, Pocotaligo, Salkehatchie & Little Salkehatchie, Sampit, Tulifinny, Thoroughfare Cr., Waccamaw", "seasons": [["10-01", "06-15"]], "size": [{ "min": 26, "max": null }], "bag": 3, "bagNote": "3 striped or hybrid bass combined, Oct. 1 - June 15; closed June 16 - Sept. 30", "closed": false, "sizeNote": "26 inch minimum" },
+        { "zone": "santee", "label": "Santee River system incl. lower Saluda River", "seasons": [["10-01", "06-15"]], "size": [{ "min": 23, "max": 25 }], "bag": 3, "bagNote": "3 combined; slot 23-25 inches, except one fish may be over 26 inches; closed June 16 - Sept. 30 (catch & release only on lower Saluda)", "closed": false, "sizeNote": "23 to 25 inch slot, plus one fish over 26 inches allowed" },
+        { "zone": "murray", "label": "Lake Murray & middle reach of the Saluda River (Hwy 395 to Lake Greenwood Dam)", "seasons": null, "size": [{ "min": 21, "max": null }], "bag": 5, "bagNote": "5 combined; 21 inch minimum Oct. 1 - May 31, any length June 1 - Sept. 30", "closed": false, "sizeNote": "21 inch minimum Oct. 1 - May 31; any length June 1 - Sept. 30" },
+        { "zone": "russell", "label": "Lake Russell & Lake Hartwell tailwater", "seasons": null, "size": [], "bag": 2, "bagNote": "2 combined; only 1 fish over 34 inches", "closed": false, "sizeNote": "Only one fish may exceed 34 inches" },
+        { "zone": "savannah", "label": "Savannah River, lower (ocean to Thurmond Dam)", "seasons": null, "size": [{ "min": 27, "max": null }], "bag": 2, "bagNote": "2 striped, hybrid or white bass combined", "closed": false, "sizeNote": "27 inch minimum" },
+        { "zone": "hartwellthurmond", "label": "Lake Hartwell & Lake Thurmond", "seasons": null, "size": [], "bag": 10, "bagNote": "10 combined; only 3 fish over 26 inches", "closed": false, "sizeNote": "Only three fish may exceed 26 inches" }
+      ],
+      "userNotes": [
+        "Hybrids and striped bass share one limit everywhere — count them together.",
+        "Statewide default is 10 per day, any size. Coastal rivers: 3 per day, 26 inch minimum, closed June 16 - Sept. 30. Santee system: 3 per day in a 23-25 inch slot plus one over 26, same closure.",
+        "Lake Murray / middle Saluda: 5 per day, 21 inch minimum Oct. 1 - May 31 (any size in summer). Lakes Russell and Hartwell tailwater: 2 per day, only one over 34 inches. Hartwell & Thurmond: 10 per day, only three over 26 inches. Lower Savannah River: 2 per day, 27 inch minimum.",
+        "During the June 16 - Sept. 30 closure on the lower Saluda, catch-and-release is allowed but live/cut bait hooks must have a gap of 3/8 inch or less unless using inline, non-offset, non-stainless circle hooks."
+      ]
+    },
+    {
+      "name": "Grass Carp",
+      "aliases": ["white amur", "amur"],
+      "habitat": "freshwater",
+      "family": "",
+      "sourceId": "sc-freshwater-game-regs",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-game-fishing-regulations",
+      "quote": "It is unlawful to take, harm, or kill grass carp or robust redhorse from public waters. Any grass carp or robust redhorse taken must be returned immediately to the water from which it was taken.",
+      "season": "Possession prohibited",
+      "size": "Possession prohibited",
+      "limit": "Possession prohibited",
+      "notes": "Also on the Aquatic Invasive page: \"It is unlawful to take, harm, or kill grass carp from public waters. Any grass carp taken must be returned immediately to the water from which it was taken. ... Sterile grass carp may only be sold, purchased or possessed under a SCDNR permit.\"",
+      "zones": [
+        { "zone": "inland", "label": "SC public freshwaters", "seasons": null, "size": [], "bag": null, "bagNote": "Possession prohibited", "closed": true, "sizeNote": "" }
+      ],
+      "userNotes": [
+        "Stocked for weed control; it is illegal to take, harm or kill grass carp in public waters — release immediately."
+      ]
+    },
+    {
+      "name": "Robust Redhorse",
+      "aliases": ["redhorse", "redhorse sucker"],
+      "habitat": "freshwater",
+      "family": "",
+      "sourceId": "sc-freshwater-game-regs",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-game-fishing-regulations",
+      "quote": "It is unlawful to take, harm, or kill grass carp or robust redhorse from public waters. Any grass carp or robust redhorse taken must be returned immediately to the water from which it was taken.",
+      "season": "Possession prohibited",
+      "size": "Possession prohibited",
+      "limit": "Possession prohibited",
+      "notes": "",
+      "zones": [
+        { "zone": "inland", "label": "SC public freshwaters", "seasons": null, "size": [], "bag": null, "bagNote": "Possession prohibited", "closed": true, "sizeNote": "" }
+      ],
+      "userNotes": [
+        "Protected sucker species — release immediately where caught."
+      ]
+    },
+    {
+      "name": "Sturgeon (Atlantic & Shortnose)",
+      "aliases": ["atlantic sturgeon", "shortnose sturgeon", "sturgeon"],
+      "habitat": "saltwater",
+      "family": "",
+      "sourceId": "sc-general-info",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/general-information",
+      "quote": "It is unlawful to buy, sell, possess or ship Shortnose Sturgeon and Atlantic Sturgeon.",
+      "season": "Possession prohibited",
+      "size": "Possession prohibited",
+      "limit": "Possession prohibited",
+      "notes": "Nongame Methods & Devices page: \"A sturgeon caught must be returned immediately to the waters from where it was taken.\"",
+      "zones": [
+        { "zone": "state", "label": "All SC waters (fresh and salt)", "seasons": null, "size": [], "bag": null, "bagNote": "Possession prohibited", "closed": true, "sizeNote": "" }
+      ],
+      "userNotes": [
+        "Both sturgeon species are protected — release immediately in the water where caught. Also federally listed under the Endangered Species Act."
+      ]
+    },
+    {
+      "name": "Horseshoe Crab",
+      "aliases": ["horseshoe crabs"],
+      "habitat": "shellfish",
+      "family": "",
+      "sourceId": "sc-general-info",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/general-information",
+      "quote": "Harvest and possession of horseshoe crabs is prohibited without a commercial permit. A permit is not required to possess a castoff or molted shell of a horseshoe crab.",
+      "season": "Possession prohibited (recreational)",
+      "size": "Possession prohibited",
+      "limit": "Possession prohibited without a commercial permit",
+      "notes": "A permit is not required to possess a castoff or molted shell.",
+      "zones": [
+        { "zone": "state", "label": "SC state waters", "seasons": null, "size": [], "bag": null, "bagNote": "Possession prohibited (commercial permit only)", "closed": true, "sizeNote": "" }
+      ],
+      "userNotes": [
+        "Recreational harvest or possession of live horseshoe crabs is prohibited; empty molted shells are fine."
+      ]
+    },
+    {
+      "name": "Freshwater Mussels (native)",
+      "aliases": ["mussel", "mussels", "freshwater mussel", "heelsplitter"],
+      "habitat": "shellfish",
+      "family": "",
+      "sourceId": "sc-freshwater-nongame",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-nongame-fishing-regulations",
+      "quote": "Native freshwater mussels may not be taken without a permit from SCDNR. The non-native Asian clams, also known as Corbicula may be taken. Contact the Freshwater Fisheries Section at (803) 734-3891 for permits.",
+      "season": "Possession prohibited without SCDNR permit",
+      "size": "Possession prohibited",
+      "limit": "Possession prohibited without SCDNR permit",
+      "notes": "Non-native Asian clams (Corbicula) may be taken.",
+      "zones": [
+        { "zone": "inland", "label": "SC freshwaters", "seasons": null, "size": [], "bag": null, "bagNote": "Possession prohibited without SCDNR permit", "closed": true, "sizeNote": "" }
+      ],
+      "userNotes": [
+        "Native freshwater mussels are off-limits without a permit; the small non-native Asian clam (Corbicula) may be taken."
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "existingName": "Scamp",
+      "field": "zones[federal].bag",
+      "current": "3",
+      "shouldBe": "1 (federal waters: max 1 scamp or yellowmouth, not both; state waters 3)",
+      "quote": "Included in the 3 grouper aggregate daily bag limit. Maximum of 1 scamp or yellowmouth grouper (but not both) per person/day in federal waters. In state waters, the bag limit is 3.",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits"
+    },
+    {
+      "existingName": "Yellowmouth Grouper",
+      "field": "zones[federal].bag",
+      "current": "3",
+      "shouldBe": "1 (federal waters: max 1 scamp or yellowmouth, not both; state waters 3)",
+      "quote": "Included in the 3 grouper aggregate daily bag limit. Maximum of 1 scamp or yellowmouth grouper (but not both) per person/day in federal waters. In state waters, the bag limit is 3.",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits"
+    },
+    {
+      "existingName": "Blueline Tilefish",
+      "field": "zones[federal].bag",
+      "current": "3",
+      "shouldBe": "2 (federal waters); state waters stays 3",
+      "quote": "2 per person per day in federal waters, 3 per person per day in state waters; included in the 3 grouper aggregate daily bag limit",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits"
+    },
+    {
+      "existingName": "Atlantic Spadefish",
+      "field": "zones[federal]",
+      "current": "size min 14, bag 30, bagNote '30 per boat per day (state waters)'",
+      "shouldBe": "SC prints the 14-inch TL and 30-per-boat limit for state waters only; federal zone should not copy them (bag null / size [] with a note to check SAFMC), and state-zone bag should be null with bagNote '30 per boat per day' since the limit is per boat, not per person",
+      "quote": "Spadefish | | 14-inch TL (state waters) | 30 per boat per day (state waters)",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits"
+    },
+    {
+      "existingName": "Red Snapper",
+      "field": "userNotes",
+      "current": "Federal waters: possession prohibited outside the short NOAA/SAFMC season announced each year — see safmc.net.",
+      "shouldBe": "Add: SC runs a state Experimental Fishing Permit (EFP) red snapper season (October 2026 season has concluded; possible December days). Anglers need a free red snapper experimental permit from GoOutdoorsSC, must declare each trip and report catch in the VESL app within 24 hours, and must carry a rigged descending device (60 ft line, 16+ oz), non-offset non-stainless circle hooks and a dehooking tool. Link https://dnr.sc.gov/redsnapper/",
+      "quote": "The October season has concluded, but we're asking anglers to continue declaring and reporting bottom fishing trips on the VESL platform through the end of November. ... NOAA fisheries will evaluate the results of this regional effort and determine if additional days will be provided in December.",
+      "sourceUrl": "https://dnr.sc.gov/redsnapper/"
+    },
+    {
+      "existingName": "White Bass",
+      "field": "zones",
+      "current": "single inland zone, bag 10, no size",
+      "shouldBe": "Statewide zone should be labelled 'Statewide except the Savannah River'; add a 'savannah' zone (lower Savannah River, ocean to Thurmond Dam): 27 inch min, 2 per day combined with striped/hybrid. Saltwater: no bag or size limit except lower Savannah River (2 per day, 27 inch TL).",
+      "quote": "Statewide except the Savannah River | White Bass | Any length | 10 || Savannah River (Lower) All waters of Savannah River from its confluence with the Atlantic Ocean upstream to the Lake J. Strom Thurmond Dam | Striped, Hybrid or White Bass or a combination | 27 inches min | 2",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "zones (freshwater)",
+      "current": "inland zone: bag 10, any length, label 'SC freshwater (statewide; coastal rivers, Santee, Murray differ)'; the coastal-river, Santee, Murray/middle Saluda, Russell/Hartwell tailwater and Hartwell/Thurmond rules are only mentioned in a note",
+      "shouldBe": "Model each printed water body as its own zone (see the 'Hybrid Striped Bass (freshwater)' addition for the exact zones): coastal rivers 3/day 26 in Oct 1-Jun 15 closed Jun 16-Sep 30; Santee system 3/day slot 23-25 in plus one over 26, same closure; Lake Murray & middle Saluda 5/day 21 in Oct 1-May 31 any length Jun 1-Sep 30; Lake Russell & Hartwell tailwater 2/day only 1 over 34 in; Hartwell & Thurmond 10/day only 3 over 26 in; lower Savannah 2/day 27 in. All limits are striped+hybrid combined.",
+      "quote": "Santee River system (see map below); includes Saluda River (Lower Reach) | Striped or Hybrid Bass or a combination | Oct. 1 - June 15 striped bass between 23 and 25 inches may be harvested except that one fish may be greater than 26 inches | 3 | June 16 - Sept. 30 closed",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits"
+    },
+    {
+      "existingName": "Largemouth Bass",
+      "field": "zones",
+      "current": "single inland zone, bag 5, no size; 14-inch lakes only mentioned in a note",
+      "shouldBe": "Add zones: (a) Lakes Blalock, Greenwood, Jocassee, Marion, Monticello, Moultrie, Murray, Secession, Wateree, Wylie, middle Saluda River, upper Santee River: 14 in min, 5 combined; (b) Lakes Hartwell, Keowee, Russell (incl. Hartwell tailwater), Thurmond, Tugaloo, Yonah, Stevens Creek Reservoir, Chattooga & Savannah Rivers: 12 in min, 10 combined black bass; (c) Lake Robinson (Greenville County): 12 in min, 5 combined; (d) Slade's Lake: 12 in min, 2 black bass per person per day. Add 'redeye bass' nuance: aggregate includes redeye and hybrids.",
+      "quote": "Lakes Hartwell, Keowee, Russell (including the Lake Hartwell tailwater), Thurmond, Tugaloo, Yonah; Stevens Creek Reservoir; the Chattooga and Savannah Rivers | Largemouth Bass | 12 inches min | No more than 10 combined total of black bass || Lake Robinson (Greenville County) | Largemouth Bass | 12 inches min | No more than 5 combined ... || Slade's Lake | Black Bass | 12 inches min | No more than 2 bass per person per day",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits"
+    },
+    {
+      "existingName": "Smallmouth Bass",
+      "field": "zones",
+      "current": "single inland zone, 12 in min, bag 5",
+      "shouldBe": "Add zones: Lakes Hartwell, Russell (incl. Hartwell tailwater), Thurmond, Tugaloo, Yonah, Stevens Creek Reservoir, Chattooga & Savannah Rivers: any length, 10 combined black bass; Lake Keowee: 12 in min, 10 combined black bass; Slade's Lake: 12 in min, 2 black bass per day.",
+      "quote": "Lakes Hartwell, Russell (including the Lake Hartwell tailwater), Thurmond, Tugaloo, Yonah; Stevens Creek Reservoir; the Chattooga and Savannah Rivers | Smallmouth Bass | Any length | No more than 10 combined total of black bass || Lake Keowee | Smallmouth Bass | 12 inches min | No more than 10 combined total of black bass",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits"
+    },
+    {
+      "existingName": "Spotted Bass",
+      "field": "zones",
+      "current": "single inland zone, bag 15",
+      "shouldBe": "Add zone: Lakes Hartwell, Keowee, Russell (incl. Hartwell tailwater), Thurmond, Tugaloo, Yonah, Stevens Creek Reservoir, Chattooga & Savannah Rivers: any length, 10 combined black bass (spotted bass count in the 10 there). Slade's Lake: 12 in min, 2 black bass per day.",
+      "quote": "Lakes Hartwell, Keowee, Russell (including the Lake Hartwell tailwater), Thurmond, Tugaloo, Yonah; Stevens Creek Reservoir; the Chattooga and Savannah Rivers | Spotted Bass | Any length | No more than 10 combined total of black bass",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits"
+    },
+    {
+      "existingName": "Trout",
+      "field": "zones",
+      "current": "single inland zone, bag 5, no size",
+      "shouldBe": "Add special-water zones: (a) Chauga River (Hwy 290 to Bone Camp Cr.), Chattooga River (Hwy 28 to Reed Cr.), Cheohee Creek (Piedmont Forestry Center section), Corbin Creek, Devils Fork Creek, Eastatoe Creek (Keowee to Roy Jones Rd), Howard Creek: Nov. 1 - May 14 catch-and-release only with single-hook artificial lures; May 15 - Oct. 31: 5 per day. (b) Lake Jocassee: Oct. 1 - May 31 15 in min with only 1 over 20 in, 3 per day; Jun. 1 - Sept. 30 any length, 3 per day; no corn, cheese, fish eggs or imitations. (c) Lower Saluda River (Broad River confluence to Lake Murray Dam): 5 per day, only 1 over 16 in; the I-20 bridge to Stacey's Ledge section is catch-and-release only. (d) Middle Saluda (Hugh Smith Rd bridge to Jones Gap foot-bridge): catch-and-release, artificial lures only. (e) Artificial-lure-only waters with 5-fish limit: Eastatoe Creek Heritage Preserve, Matthews Creek above Asbury Drive, Middle Saluda above Jones Gap office, Whitewater River.",
+      "quote": "Lake Jocassee | Oct. 1 - May 31: 15 inches, but only 1 fish more than 20 inches | 3 | Unlawful to use or possess corn, cheese, fish eggs or imitations of them. Jun. 1 - Sept. 30: Any length | Unlawful to take, attempt to take, or possess more than 3 || Chauga River (SC Hwy 290 [Cassidy Bridge Road] upstream to Bone Camp Creek) | Any length | Nov. 1 - May 14: Catch and Release only | Unlawful to use or possess any lure or bait except single hook artificial lures. May 15 - Oct. 31: 5",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/trout-size-limits"
+    },
+    {
+      "existingName": "Walleye",
+      "field": "aliases/name",
+      "current": "aliases ['sauger']",
+      "shouldBe": "Keep sauger as alias but make the row name/label show the combined rule ('Walleye & Sauger') and sizeNote 'Any length' so a sauger search is clearly covered",
+      "quote": "Statewide | Walleye & Sauger | Any length | No more than 8 combined total of walleye or sauger",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits"
+    },
+    {
+      "existingName": "Crappie",
+      "field": "userNotes",
+      "current": "none",
+      "shouldBe": "Add: on SCDNR State Lakes the 20-fish statewide creel applies but there is no 8-inch minimum size ('Yes, but no min size'); Lancaster Reservoir applies the statewide rule in full.",
+      "quote": "STATEWIDE CRAPPIE CREEL LIMIT APPLY? ... Yes, but no min size",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/state-lakes"
+    },
+    {
+      "existingName": "Shrimp",
+      "field": "userNotes",
+      "current": "no mention of closed-season bait allowance",
+      "shouldBe": "Add: '12 dozen dead or live shrimp allowed per boat during closed season.' Also the per-day limit is sunrise to sunrise and also applies per seining party.",
+      "quote": "48 quarts whole or 29 quarts headed per day (sunrise to sunrise) per boat, per person if no boat is used, or per seining party | 12 dozen dead or live shrimp allowed per boat during closed season.",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/crustaceans-shellfish-size-catch-limits"
+    },
+    {
+      "existingName": "Oyster",
+      "field": "season",
+      "current": "Typically open October 1 – May 15 (from 2026 digest)",
+      "shouldBe": "No change to the digest value, but the registered secondary source saltwaterfishing.sc.gov/shellfishharvest.html prints 'September 16 through May 15' — the two official pages disagree; flag in UI as 'call (843) 953-9300 for current season dates'. Same applies to Hard Clam.",
+      "quote": "Season: September 16 through May 15, unless conditions warrant shortening or extending the season.",
+      "sourceUrl": "https://saltwaterfishing.sc.gov/shellfishharvest.html"
+    },
+    {
+      "existingName": "Red Drum",
+      "field": "source sc-dnr-rules",
+      "current": "https://saltwaterfishing.sc.gov/rulesandregs.html registered as secondary source",
+      "shouldBe": "Demote/remove: that page still prints the 2018 rule (15-23 inch slot, 2 per person, 6 per boat) which contradicts the current 18-25 inch / 1 per person / 2 per boat rule effective July 1, 2026 shown in the digest. Our Red Drum row is correct; the source is stale.",
+      "quote": "Slot Limit: 15-23 inches (total length) Bag Limit: 2 per person per day, and no more than 6 per boat per day",
+      "sourceUrl": "https://saltwaterfishing.sc.gov/rulesandregs.html"
+    }
+  ],
+  "coverage": {
+    "pagesChecked": [
+      "https://www.eregulations.com/southcarolina/fishing/",
+      "https://www.eregulations.com/southcarolina/fishing/finfish-size-catch-limits",
+      "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits",
+      "https://www.eregulations.com/southcarolina/fishing/billfish-atlantic-tunas-size-catch-limits",
+      "https://www.eregulations.com/southcarolina/fishing/sharks-size-catch-limits",
+      "https://www.eregulations.com/southcarolina/fishing/crustaceans-shellfish-size-catch-limits",
+      "https://www.eregulations.com/southcarolina/fishing/crustacean-shellfish-methods-devices",
+      "https://www.eregulations.com/southcarolina/fishing/general-information",
+      "https://www.eregulations.com/southcarolina/fishing/freshwater-game-fishing-regulations",
+      "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "https://www.eregulations.com/southcarolina/fishing/trout-size-limits",
+      "https://www.eregulations.com/southcarolina/fishing/freshwater-nongame-fishing-regulations",
+      "https://www.eregulations.com/southcarolina/fishing/nongame-methods-devices",
+      "https://www.eregulations.com/southcarolina/fishing/shad-herring-fishing-regulations",
+      "https://www.eregulations.com/southcarolina/fishing/state-lakes",
+      "https://www.eregulations.com/southcarolina/fishing/aquatic-invasive-plants-animals",
+      "https://dnr.sc.gov/redsnapper/",
+      "https://saltwaterfishing.sc.gov/rulesandregs.html",
+      "https://saltwaterfishing.sc.gov/shellfishharvest.html"
+    ],
+    "speciesOnSourceNotAdded": [
+      { "name": "American Shad", "reason": "already present, values match (10/day; 20 in Santee River & Rediversion Canal)" },
+      { "name": "Black Drum", "reason": "already present, values match" },
+      { "name": "Bluefish", "reason": "already present, values match" },
+      { "name": "Flounders (Southern, Summer & Gulf)", "reason": "already present as Flounder, values match" },
+      { "name": "Red Drum", "reason": "already present, values match the July 1, 2026 rule (18-25 in, 1/person, 2/boat, prohibited federal)" },
+      { "name": "Saltwater Catfishes (Hardhead & gafftopsail)", "reason": "already present as Saltwater Catfish, prohibited" },
+      { "name": "Sheepshead", "reason": "already present, values match" },
+      { "name": "Spotted Seatrout", "reason": "already present, values match" },
+      { "name": "Striped Bass (saltwater)", "reason": "already present, saltwater values match; freshwater zones filed as correction" },
+      { "name": "Tarpon", "reason": "already present, values match" },
+      { "name": "Tripletail", "reason": "already present, values match" },
+      { "name": "Weakfish", "reason": "already present, values match" },
+      { "name": "Atlantic Croaker, Spot, Whiting", "reason": "already present (3 rows), 50 aggregate matches" },
+      { "name": "Cobia", "reason": "already present with both zones, values match" },
+      { "name": "Dolphin", "reason": "already present, values match" },
+      { "name": "King Mackerel", "reason": "already present, values match" },
+      { "name": "Spanish Mackerel", "reason": "already present, values match" },
+      { "name": "Wahoo", "reason": "already present, values match" },
+      { "name": "Greater Amberjack", "reason": "already present; federal closure Apr 1-30 matches" },
+      { "name": "Hogfish", "reason": "already present, values match" },
+      { "name": "Wreckfish", "reason": "already present; federal open Jul 1-Aug 31 matches" },
+      { "name": "Black Sea Bass", "reason": "already present, values match" },
+      { "name": "Red Porgy", "reason": "already present; federal open May 1-Jun 30 matches" },
+      { "name": "Vermilion Snapper", "reason": "already present, values match" },
+      { "name": "Red Snapper", "reason": "already present; EFP note filed as correction" },
+      { "name": "Lane / Cubera / Yellowtail / Gray / Blackfin / Silk / Queen / Mutton Snapper", "reason": "already present, values match" },
+      { "name": "Gag & Black Grouper", "reason": "already present; federal windows (gag open May 1-Aug 1, black open May 1-Dec 31) match" },
+      { "name": "Red Grouper", "reason": "already present; federal open Jun 1-Dec 31 matches" },
+      { "name": "Scamp & Yellowmouth", "reason": "already present; federal bag correction filed" },
+      { "name": "Yellowfin Grouper", "reason": "already present, values match" },
+      { "name": "Golden Tilefish", "reason": "already present; federal open Jan 1-Mar 20 matches" },
+      { "name": "Sand Tilefish", "reason": "already present, values match" },
+      { "name": "Blueline Tilefish", "reason": "already present; federal bag correction filed" },
+      { "name": "Misty & Yellowedge Grouper", "reason": "already present, values match" },
+      { "name": "Coney, Graysby, Red Hind & Rock Hind", "reason": "already present; federal open May 1-Dec 31 matches" },
+      { "name": "Snowy Grouper", "reason": "already present; federal open May 1-Jun 6 matches" },
+      { "name": "Warsaw, Speckled Hind, Nassau, Goliath", "reason": "already present, prohibited" },
+      { "name": "White Grunt", "reason": "already present (20 aggregate / 10 per species)" },
+      { "name": "Gray Triggerfish", "reason": "already present, 12 in FL matches" },
+      { "name": "Spadefish", "reason": "already present as Atlantic Spadefish; federal-zone correction filed" },
+      { "name": "Blue Crabs", "reason": "already present, values match (1 bushel/person, 2/boat, 5 in)" },
+      { "name": "Stone Crabs", "reason": "already present, values match" },
+      { "name": "Spiny Lobster", "reason": "already present, values match" },
+      { "name": "Oysters", "reason": "already present; season source conflict filed as correction" },
+      { "name": "Clams", "reason": "already present as Hard Clam, values match" },
+      { "name": "Shrimp (without bait) / Shrimp Baiting", "reason": "already present with two zones; closed-season bait allowance filed as correction" },
+      { "name": "American Eel", "reason": "already present, values match" },
+      { "name": "Bream", "reason": "already present, 30 matches; aliases should also include flier, pumpkinseed, green sunfish, spotted sunfish" },
+      { "name": "Redbreast Sunfish", "reason": "already present, 15 matches" },
+      { "name": "Crappie", "reason": "already present, 8 in / 20 matches; state-lakes note filed" },
+      { "name": "Walleye & Sauger", "reason": "already present as Walleye with sauger alias; naming correction filed" },
+      { "name": "Chain Pickerel", "reason": "already present, 30 matches" },
+      { "name": "Yellow Perch", "reason": "already present, 30 matches" },
+      { "name": "White Bass", "reason": "already present; Savannah River exception filed as correction" },
+      { "name": "Largemouth / Smallmouth / Spotted Bass", "reason": "already present; missing water-body zones filed as corrections" },
+      { "name": "Trout (brook, brown, rainbow)", "reason": "already present; special-water zones filed as correction" },
+      { "name": "Hickory Shad", "reason": "Shad & Herring page says rules apply to American and hickory shad; the 10-per-day shad limit is printed as 'shad' — covered by American Shad row; recommend adding 'hickory shad' alias" },
+      { "name": "SCDNR State Lakes per-lake catfish/bass/bream creels", "reason": "Printed as an 18-lake matrix (catfish 3 or 5; bass 2-5, some 16 in; bream 5-20). Not modelled as zones here — recommend a separate state-lakes layer; summarised in REPORT.md" },
+      { "name": "Grass carp, robust redhorse", "reason": "added (prohibited)" },
+      { "name": "Sea turtles, marine mammals, diamondback terrapin", "reason": "protected / sale-prohibited animals, not angler-target fish" },
+      { "name": "Invasive species list (snakehead, piranha, walking catfish, rudd, etc.)", "reason": "possession/import prohibition on live non-native species, not a harvest regulation" },
+      { "name": "Native freshwater mussels", "reason": "added (permit required)" },
+      { "name": "Whelks and other mollusks", "reason": "Named only in the Methods & Devices shellfish heading ('Oysters, Clams, Mussels, Whelks, and other Mollusks') with the general Oct 1-May 15 season; no whelk-specific size or bag printed, so no row added" }
+    ]
+  },
+  "issues": [
+    "Direct HTTP fetch (curl) of eregulations.com was blocked by the sandbox proxy (403 CONNECT). WebFetch returned only summaries and refused verbatim table text, so every page was read through the built-in Browser pane (get_page_text) instead; quotes are copied from that text.",
+    "Hammerhead sharks row: the BAG LIMIT cell is blank in the digest (only 78-inch FL printed). Not filled from memory; flagged in the species row for the user to confirm against NOAA HMS.",
+    "Billfish (blue/white marlin, sailfish, roundscale spearfish) and bigeye tuna rows print a size but no bag number; recorded as bag null with 'federal HMS rules apply'.",
+    "Herring: the General Information page says 'No closed season in saltwater (except shad and herring)' but neither the finfish nor the shad & herring page prints a herring season other than the skimbow-net window (Feb-Apr) and area closures; seasons left null with notes.",
+    "Shellfish season conflict: 2026 digest says 'Typically open Oct. 1 through May 15' while saltwaterfishing.sc.gov/shellfishharvest.html says 'September 16 through May 15'. Digest kept; flagged.",
+    "saltwaterfishing.sc.gov/rulesandregs.html is stale (2018 red drum rule). Recommend removing it as a registered source.",
+    "dnr.sc.gov/redsnapper does not print a bag/size for the EFP season; only program steps and gear. Added as userNote correction only.",
+    "SCDNR State Lakes table (18 lakes with lake-specific catfish/bass/bream creels and open days) not modelled as zones in this file; see REPORT.md.",
+    "Nongame Device Limits by Location page was not opened (gear/area table, not species limits)."
+  ]
+}

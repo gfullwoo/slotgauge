@@ -1,0 +1,166 @@
+{
+  "state": "SC",
+  "auditedOn": "2026-10-31",
+  "pending": [
+    {
+      "existingName": "Scamp",
+      "field": "zones[federal].bag",
+      "current": "3",
+      "shouldBe": "1 (federal waters: max 1 scamp or yellowmouth, not both; state waters 3)",
+      "quote": "Included in the 3 grouper aggregate daily bag limit. Maximum of 1 scamp or yellowmouth grouper (but not both) per person/day in federal waters. In state waters, the bag limit is 3.",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits",
+      "id": 56,
+      "status": "pending"
+    },
+    {
+      "existingName": "Yellowmouth Grouper",
+      "field": "zones[federal].bag",
+      "current": "3",
+      "shouldBe": "1 (federal waters: max 1 scamp or yellowmouth, not both; state waters 3)",
+      "quote": "Included in the 3 grouper aggregate daily bag limit. Maximum of 1 scamp or yellowmouth grouper (but not both) per person/day in federal waters. In state waters, the bag limit is 3.",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits",
+      "id": 57,
+      "status": "pending"
+    },
+    {
+      "existingName": "Blueline Tilefish",
+      "field": "zones[federal].bag",
+      "current": "3",
+      "shouldBe": "2 (federal waters); state waters stays 3",
+      "quote": "2 per person per day in federal waters, 3 per person per day in state waters; included in the 3 grouper aggregate daily bag limit",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits",
+      "id": 67,
+      "status": "pending"
+    },
+    {
+      "existingName": "Atlantic Spadefish",
+      "field": "zones[federal]",
+      "current": "size min 14, bag 30, bagNote '30 per boat per day (state waters)'",
+      "shouldBe": "SC prints the 14-inch TL and 30-per-boat limit for state waters only; federal zone should not copy them (bag null / size [] with a note to check SAFMC), and state-zone bag should be null with bagNote '30 per boat per day' since the limit is per boat, not per person",
+      "quote": "Spadefish | | 14-inch TL (state waters) | 30 per boat per day (state waters)",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/snapper-grouper-complex-size-catch-limits",
+      "id": 75,
+      "status": "pending"
+    },
+    {
+      "existingName": "Red Snapper",
+      "field": "userNotes",
+      "current": "Federal waters: possession prohibited outside the short NOAA/SAFMC season announced each year — see safmc.net.",
+      "shouldBe": "Add: SC runs a state Experimental Fishing Permit (EFP) red snapper season (October 2026 season has concluded; possible December days). Anglers need a free red snapper experimental permit from GoOutdoorsSC, must declare each trip and report catch in the VESL app within 24 hours, and must carry a rigged descending device (60 ft line, 16+ oz), non-offset non-stainless circle hooks and a dehooking tool. Link https://dnr.sc.gov/redsnapper/",
+      "quote": "The October season has concluded, but we're asking anglers to continue declaring and reporting bottom fishing trips on the VESL platform through the end of November. ... NOAA fisheries will evaluate the results of this regional effort and determine if additional days will be provided in December.",
+      "sourceUrl": "https://dnr.sc.gov/redsnapper/",
+      "id": 42,
+      "status": "pending"
+    },
+    {
+      "existingName": "White Bass",
+      "field": "zones",
+      "current": "single inland zone, bag 10, no size",
+      "shouldBe": "Statewide zone should be labelled 'Statewide except the Savannah River'; add a 'savannah' zone (lower Savannah River, ocean to Thurmond Dam): 27 inch min, 2 per day combined with striped/hybrid. Saltwater: no bag or size limit except lower Savannah River (2 per day, 27 inch TL).",
+      "quote": "Statewide except the Savannah River | White Bass | Any length | 10 || Savannah River (Lower) All waters of Savannah River from its confluence with the Atlantic Ocean upstream to the Lake J. Strom Thurmond Dam | Striped, Hybrid or White Bass or a combination | 27 inches min | 2",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "id": 33,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "zones (freshwater)",
+      "current": "inland zone: bag 10, any length, label 'SC freshwater (statewide; coastal rivers, Santee, Murray differ)'; the coastal-river, Santee, Murray/middle Saluda, Russell/Hartwell tailwater and Hartwell/Thurmond rules are only mentioned in a note",
+      "shouldBe": "Model each printed water body as its own zone (see the 'Hybrid Striped Bass (freshwater)' addition for the exact zones): coastal rivers 3/day 26 in Oct 1-Jun 15 closed Jun 16-Sep 30; Santee system 3/day slot 23-25 in plus one over 26, same closure; Lake Murray & middle Saluda 5/day 21 in Oct 1-May 31 any length Jun 1-Sep 30; Lake Russell & Hartwell tailwater 2/day only 1 over 34 in; Hartwell & Thurmond 10/day only 3 over 26 in; lower Savannah 2/day 27 in. All limits are striped+hybrid combined.",
+      "quote": "Santee River system (see map below); includes Saluda River (Lower Reach) | Striped or Hybrid Bass or a combination | Oct. 1 - June 15 striped bass between 23 and 25 inches may be harvested except that one fish may be greater than 26 inches | 3 | June 16 - Sept. 30 closed",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "id": 10,
+      "status": "pending"
+    },
+    {
+      "existingName": "Largemouth Bass",
+      "field": "zones",
+      "current": "single inland zone, bag 5, no size; 14-inch lakes only mentioned in a note",
+      "shouldBe": "Add zones: (a) Lakes Blalock, Greenwood, Jocassee, Marion, Monticello, Moultrie, Murray, Secession, Wateree, Wylie, middle Saluda River, upper Santee River: 14 in min, 5 combined; (b) Lakes Hartwell, Keowee, Russell (incl. Hartwell tailwater), Thurmond, Tugaloo, Yonah, Stevens Creek Reservoir, Chattooga & Savannah Rivers: 12 in min, 10 combined black bass; (c) Lake Robinson (Greenville County): 12 in min, 5 combined; (d) Slade's Lake: 12 in min, 2 black bass per person per day. Add 'redeye bass' nuance: aggregate includes redeye and hybrids.",
+      "quote": "Lakes Hartwell, Keowee, Russell (including the Lake Hartwell tailwater), Thurmond, Tugaloo, Yonah; Stevens Creek Reservoir; the Chattooga and Savannah Rivers | Largemouth Bass | 12 inches min | No more than 10 combined total of black bass || Lake Robinson (Greenville County) | Largemouth Bass | 12 inches min | No more than 5 combined ... || Slade's Lake | Black Bass | 12 inches min | No more than 2 bass per person per day",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "id": 24,
+      "status": "pending"
+    },
+    {
+      "existingName": "Smallmouth Bass",
+      "field": "zones",
+      "current": "single inland zone, 12 in min, bag 5",
+      "shouldBe": "Add zones: Lakes Hartwell, Russell (incl. Hartwell tailwater), Thurmond, Tugaloo, Yonah, Stevens Creek Reservoir, Chattooga & Savannah Rivers: any length, 10 combined black bass; Lake Keowee: 12 in min, 10 combined black bass; Slade's Lake: 12 in min, 2 black bass per day.",
+      "quote": "Lakes Hartwell, Russell (including the Lake Hartwell tailwater), Thurmond, Tugaloo, Yonah; Stevens Creek Reservoir; the Chattooga and Savannah Rivers | Smallmouth Bass | Any length | No more than 10 combined total of black bass || Lake Keowee | Smallmouth Bass | 12 inches min | No more than 10 combined total of black bass",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "id": 25,
+      "status": "pending"
+    },
+    {
+      "existingName": "Spotted Bass",
+      "field": "zones",
+      "current": "single inland zone, bag 15",
+      "shouldBe": "Add zone: Lakes Hartwell, Keowee, Russell (incl. Hartwell tailwater), Thurmond, Tugaloo, Yonah, Stevens Creek Reservoir, Chattooga & Savannah Rivers: any length, 10 combined black bass (spotted bass count in the 10 there). Slade's Lake: 12 in min, 2 black bass per day.",
+      "quote": "Lakes Hartwell, Keowee, Russell (including the Lake Hartwell tailwater), Thurmond, Tugaloo, Yonah; Stevens Creek Reservoir; the Chattooga and Savannah Rivers | Spotted Bass | Any length | No more than 10 combined total of black bass",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "id": 26,
+      "status": "pending"
+    },
+    {
+      "existingName": "Trout",
+      "field": "zones",
+      "current": "single inland zone, bag 5, no size",
+      "shouldBe": "Add special-water zones: (a) Chauga River (Hwy 290 to Bone Camp Cr.), Chattooga River (Hwy 28 to Reed Cr.), Cheohee Creek (Piedmont Forestry Center section), Corbin Creek, Devils Fork Creek, Eastatoe Creek (Keowee to Roy Jones Rd), Howard Creek: Nov. 1 - May 14 catch-and-release only with single-hook artificial lures; May 15 - Oct. 31: 5 per day. (b) Lake Jocassee: Oct. 1 - May 31 15 in min with only 1 over 20 in, 3 per day; Jun. 1 - Sept. 30 any length, 3 per day; no corn, cheese, fish eggs or imitations. (c) Lower Saluda River (Broad River confluence to Lake Murray Dam): 5 per day, only 1 over 16 in; the I-20 bridge to Stacey's Ledge section is catch-and-release only. (d) Middle Saluda (Hugh Smith Rd bridge to Jones Gap foot-bridge): catch-and-release, artificial lures only. (e) Artificial-lure-only waters with 5-fish limit: Eastatoe Creek Heritage Preserve, Matthews Creek above Asbury Drive, Middle Saluda above Jones Gap office, Whitewater River.",
+      "quote": "Lake Jocassee | Oct. 1 - May 31: 15 inches, but only 1 fish more than 20 inches | 3 | Unlawful to use or possess corn, cheese, fish eggs or imitations of them. Jun. 1 - Sept. 30: Any length | Unlawful to take, attempt to take, or possess more than 3 || Chauga River (SC Hwy 290 [Cassidy Bridge Road] upstream to Bone Camp Creek) | Any length | Nov. 1 - May 14: Catch and Release only | Unlawful to use or possess any lure or bait except single hook artificial lures. May 15 - Oct. 31: 5",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/trout-size-limits",
+      "id": 34,
+      "status": "pending"
+    },
+    {
+      "existingName": "Walleye",
+      "field": "aliases/name",
+      "current": "aliases ['sauger']",
+      "shouldBe": "Keep sauger as alias but make the row name/label show the combined rule ('Walleye & Sauger') and sizeNote 'Any length' so a sauger search is clearly covered",
+      "quote": "Statewide | Walleye & Sauger | Any length | No more than 8 combined total of walleye or sauger",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/freshwater-fish-size-possession-limits",
+      "id": 30,
+      "status": "pending"
+    },
+    {
+      "existingName": "Crappie",
+      "field": "userNotes",
+      "current": "none",
+      "shouldBe": "Add: on SCDNR State Lakes the 20-fish statewide creel applies but there is no 8-inch minimum size ('Yes, but no min size'); Lancaster Reservoir applies the statewide rule in full.",
+      "quote": "STATEWIDE CRAPPIE CREEL LIMIT APPLY? ... Yes, but no min size",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/state-lakes",
+      "id": 29,
+      "status": "pending"
+    },
+    {
+      "existingName": "Shrimp",
+      "field": "userNotes",
+      "current": "no mention of closed-season bait allowance",
+      "shouldBe": "Add: '12 dozen dead or live shrimp allowed per boat during closed season.' Also the per-day limit is sunrise to sunrise and also applies per seining party.",
+      "quote": "48 quarts whole or 29 quarts headed per day (sunrise to sunrise) per boat, per person if no boat is used, or per seining party | 12 dozen dead or live shrimp allowed per boat during closed season.",
+      "sourceUrl": "https://www.eregulations.com/southcarolina/fishing/crustaceans-shellfish-size-catch-limits",
+      "id": 41,
+      "status": "pending"
+    },
+    {
+      "existingName": "Oyster",
+      "field": "season",
+      "current": "Typically open October 1 – May 15 (from 2026 digest)",
+      "shouldBe": "No change to the digest value, but the registered secondary source saltwaterfishing.sc.gov/shellfishharvest.html prints 'September 16 through May 15' — the two official pages disagree; flag in UI as 'call (843) 953-9300 for current season dates'. Same applies to Hard Clam.",
+      "quote": "Season: September 16 through May 15, unless conditions warrant shortening or extending the season.",
+      "sourceUrl": "https://saltwaterfishing.sc.gov/shellfishharvest.html",
+      "id": 39,
+      "status": "pending"
+    },
+    {
+      "existingName": "Red Drum",
+      "field": "source sc-dnr-rules",
+      "current": "https://saltwaterfishing.sc.gov/rulesandregs.html registered as secondary source",
+      "shouldBe": "Demote/remove: that page still prints the 2018 rule (15-23 inch slot, 2 per person, 6 per boat) which contradicts the current 18-25 inch / 1 per person / 2 per boat rule effective July 1, 2026 shown in the digest. Our Red Drum row is correct; the source is stale.",
+      "quote": "Slot Limit: 15-23 inches (total length) Bag Limit: 2 per person per day, and no more than 6 per boat per day",
+      "sourceUrl": "https://saltwaterfishing.sc.gov/rulesandregs.html",
+      "id": 5,
+      "status": "pending"
+    }
+  ]
+}

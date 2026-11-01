@@ -1,1017 +1,2037 @@
 {
- "1": {
-  "name": "Amberjack",
-  "reviewed": "2026-10-01",
-  "rawHash": "1f563f28c8a0",
-  "aliases": [
-   "greater amberjack",
-   "aj"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 28,
-      "max": null
-     }
+  "1": {
+    "name": "Amberjack",
+    "reviewed": "2026-10-01",
+    "rawHash": "1f563f28c8a0",
+    "aliases": [
+      "greater amberjack",
+      "aj"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "28 inch fork length"
-   }
-  ],
-  "notes": [],
-  "photoOf": 124
- },
- "2": {
-  "name": "American Eel",
-  "reviewed": "2026-10-01",
-  "rawHash": "dd0926b0fe03",
-  "aliases": [
-   "eel"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 9,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 28,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "28 inch fork length"
+      }
     ],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "3": {
-  "name": "Atlantic Croaker",
-  "reviewed": "2026-10-01",
-  "rawHash": "d7aeae31a450",
-  "aliases": [
-   "croaker"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "4": {
-  "name": "Atlantic Sturgeon",
-  "reviewed": "2026-10-01",
-  "rawHash": "b3f30cd01597",
-  "aliases": [
-   "sturgeon"
-  ],
-  "status": "closed",
-  "zones": [],
-  "notes": []
- },
- "5": {
-  "name": "Black Drum",
-  "reviewed": "2026-10-01",
-  "rawHash": "73da6281e591",
-  "aliases": [
-   "drum"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 124
+  },
+  "2": {
+    "name": "American Eel",
+    "reviewed": "2026-10-01",
+    "rawHash": "dd0926b0fe03",
+    "aliases": [
+      "eel"
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "6": {
-  "name": "Black Sea Bass",
-  "reviewed": "2026-10-01",
-  "rawHash": "f2986e6e5fae",
-  "aliases": [
-   "sea bass"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 9,
+            "max": null
+          }
+        ],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "7": {
-  "name": "Bluefish",
-  "reviewed": "2026-10-01",
-  "rawHash": "d2bf394204c9",
-  "aliases": [
-   "blues"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": []
+  },
+  "3": {
+    "name": "Atlantic Croaker",
+    "reviewed": "2026-10-01",
+    "rawHash": "d7aeae31a450",
+    "aliases": [
+      "croaker"
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "12 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "8": {
-  "name": "Cobia",
-  "reviewed": "2026-10-01",
-  "rawHash": "7805ef24363a",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": [
-     [
-      "03-01",
-      "10-31"
-     ]
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "size": [
-     {
-      "min": 36,
-      "max": null
-     }
+    "notes": []
+  },
+  "4": {
+    "name": "Atlantic Sturgeon",
+    "reviewed": "2026-10-01",
+    "rawHash": "b3f30cd01597",
+    "aliases": [
+      "sturgeon"
     ],
-    "bag": 1,
-    "bagNote": "1 per angler, max 6 per boat",
-    "closed": false,
-    "sizeNote": "36 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "9": {
-  "name": "Dolphin",
-  "reviewed": "2026-10-01",
-  "rawHash": "e017fae6bad7",
-  "aliases": [
-   "mahi",
-   "mahi-mahi",
-   "dolphinfish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 20,
-      "max": null
-     }
+    "status": "closed",
+    "zones": [],
+    "notes": [],
+    "review": [
+      {
+        "field": "zones",
+        "current": "zones [] (status closed)",
+        "shouldBe": "Add explicit state and federal zones with closed: true, bagNote 'Possession prohibited', and note that no sturgeon may be taken in fresh or salt water.",
+        "quote": "Sturgeon – May not be taken in fresh or saltwater in Georgia.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "5": {
+    "name": "Black Drum",
+    "reviewed": "2026-10-01",
+    "rawHash": "73da6281e591",
+    "aliases": [
+      "drum"
     ],
-    "bag": 10,
-    "bagNote": "10 per person, max 54 per boat",
-    "closed": false,
-    "sizeNote": "20 inch fork length"
-   }
-  ],
-  "notes": [],
-  "photoOf": 112
- },
- "10": {
-  "name": "Flounder",
-  "reviewed": "2026-10-01",
-  "rawHash": "f2986e6e5fae",
-  "aliases": [
-   "fluke",
-   "southern flounder",
-   "summer flounder"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 185
- },
- "11": {
-  "name": "Gag Grouper",
-  "reviewed": "2026-10-01",
-  "rawHash": "40cdb2e1d6c3",
-  "aliases": [
-   "gag",
-   "grouper"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 24,
-      "max": null
-     }
+    "notes": []
+  },
+  "6": {
+    "name": "Black Sea Bass",
+    "reviewed": "2026-10-01",
+    "rawHash": "f2986e6e5fae",
+    "aliases": [
+      "sea bass"
     ],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 173
- },
- "12": {
-  "name": "King Mackerel",
-  "reviewed": "2026-10-01",
-  "rawHash": "4b9e9f622008",
-  "aliases": [
-   "kingfish",
-   "king"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 24,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "24 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "13": {
-  "name": "Red Drum",
-  "reviewed": "2026-10-01",
-  "rawHash": "f0c0465c2a0f",
-  "aliases": [
-   "redfish",
-   "spottail",
-   "spottail bass",
-   "channel bass",
-   "red"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 15,
-      "max": 23
-     }
+    "notes": []
+  },
+  "7": {
+    "name": "Bluefish",
+    "reviewed": "2026-10-01",
+    "rawHash": "d2bf394204c9",
+    "aliases": [
+      "blues"
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "15 to 23 inch slot (conservative: legal under both the printed 14–23 / 5 fish rule and the proposed 15–24 / 3 fish rule)"
-   }
-  ],
-  "notes": [
-   "The printed 2026 guide says 5 fish, 14–23 in; the Board of Natural Resources considered 3 fish, 15–24 in on Aug 25, 2026. SlotGauge applies the stricter overlap until CoastalGaDNR.org/RedDrum confirms. Rod & reel only."
-  ]
- },
- "14": {
-  "name": "Red Porgy",
-  "reviewed": "2026-10-01",
-  "rawHash": "0899e36806c2",
-  "aliases": [
-   "pink snapper",
-   "porgy"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "12 inch fork length"
+      }
     ],
-    "bag": 3,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 160
- },
- "15": {
-  "name": "Red Snapper",
-  "reviewed": "2026-10-01",
-  "rawHash": "6b9821efec34",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 20,
-      "max": null
-     }
+    "notes": [],
+    "review": [
+      {
+        "field": "season",
+        "current": "Open year-round (seasons: null)",
+        "shouldBe": "CRD prints 'May 1 - Feb. 28 annually' (closed March 1 – April 30); the eRegulations guide prints 'All year'. The two official sources conflict — the agency's own CRD page is the more specific statement; flag for confirmation with CRD before changing.",
+        "quote": "Bluefish Season: May 1 - Feb. 28 annually Limit: 15 Minimum size: 12\" FL",
+        "sourceUrl": "https://coastalgadnr.org/limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "8": {
+    "name": "Cobia",
+    "reviewed": "2026-10-01",
+    "rawHash": "7805ef24363a",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": [
+          [
+            "03-01",
+            "10-31"
+          ]
+        ],
+        "size": [
+          {
+            "min": 36,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per angler, max 6 per boat",
+        "closed": false,
+        "sizeNote": "36 inch fork length"
+      }
     ],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "State waters only; federal waters (3–200 mi) have a separate, very short season — see safmc.net."
-  ]
- },
- "16": {
-  "name": "Small Shark Composite",
-  "reviewed": "2026-10-01",
-  "rawHash": "1556bfb48c2a",
-  "aliases": [
-   "sharpnose",
-   "atlantic sharpnose",
-   "bonnethead",
-   "spiny dogfish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 30,
-      "max": null
-     }
+    "notes": [],
+    "review": [
+      {
+        "field": "notes",
+        "current": "none",
+        "shouldBe": "Add the Jan. 1, 2027 Reef & Migratory Fish Endorsement note (cobia is one of the nine species).",
+        "quote": "Effective January 1, 2027, a “Reef & Migratory Fish Endorsement” will be required of any angler landing any of the following nine species in Georgia: Amberjack, Black sea bass, Cobia, Dolphin, Gag, King Mackerel, Red Porgy, Red Snapper, and Spanish Mackerel.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "9": {
+    "name": "Dolphin",
+    "reviewed": "2026-10-01",
+    "rawHash": "e017fae6bad7",
+    "aliases": [
+      "mahi",
+      "mahi-mahi",
+      "dolphinfish"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "30 inch fork length"
-   }
-  ],
-  "notes": [],
-  "photoOf": 82
- },
- "18": {
-  "name": "Sheepshead",
-  "reviewed": "2026-10-01",
-  "rawHash": "4a656d11b22b",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 10,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 per person, max 54 per boat",
+        "closed": false,
+        "sizeNote": "20 inch fork length"
+      }
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "10 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "19": {
-  "name": "Spanish Mackerel",
-  "reviewed": "2026-10-01",
-  "rawHash": "d2bf394204c9",
-  "aliases": [
-   "spanish"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 12,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 112
+  },
+  "10": {
+    "name": "Flounder",
+    "reviewed": "2026-10-01",
+    "rawHash": "f2986e6e5fae",
+    "aliases": [
+      "fluke",
+      "southern flounder",
+      "summer flounder"
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "12 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "20": {
-  "name": "Spot",
-  "reviewed": "2026-10-01",
-  "rawHash": "d7aeae31a450",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [],
-    "bag": 25,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "21": {
-  "name": "Spotted Seatrout",
-  "reviewed": "2026-10-01",
-  "rawHash": "73da6281e591",
-  "aliases": [
-   "speckled trout",
-   "specks",
-   "speck",
-   "trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 14,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "22": {
-  "name": "Striped Bass",
-  "reviewed": "2026-10-01",
-  "rawHash": "2c2d7e979e81",
-  "aliases": [
-   "striper",
-   "stripers",
-   "rockfish",
-   "rock"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia saltwater",
-    "seasons": null,
-    "size": [
-     {
-      "min": 22,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 185,
+    "review": [
+      {
+        "field": "notes",
+        "current": "none",
+        "shouldBe": "Add gear note: only flounder may be taken with a gig; all size and bag limits apply regardless of gear.",
+        "quote": "Only flounder may be taken with a gig (any handheld shaft with single or multiple points, barbed or barbless).",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/recreational-fishing",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "11": {
+    "name": "Gag Grouper",
+    "reviewed": "2026-10-01",
+    "rawHash": "40cdb2e1d6c3",
+    "aliases": [
+      "gag",
+      "grouper"
     ],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "savannah",
-    "label": "Savannah River",
-    "seasons": null,
-    "size": [
-     {
-      "min": 27,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": 15,
-    "bagNote": "15 striped/white/hybrid combined, only 2 of 22 in or longer",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Freshwater statewide: 15 per day, only 2 of which may be 22 inches or longer; coastal rivers 2 per day at 22 in; lower Savannah 2 at 27 in."
-  ]
- },
- "24": {
-  "name": "Tarpon",
-  "reviewed": "2026-10-01",
-  "rawHash": "d7d1e0ab0bb6",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 68,
-      "max": null
-     }
+    "notes": [],
+    "photoOf": 173,
+    "review": [
+      {
+        "field": "size",
+        "current": "24 TL",
+        "shouldBe": "CRD prints 25\" TL; the eRegulations guide prints 24 TL. Official sources conflict — flag for confirmation with CRD (the federal SAFMC gag minimum is also worth checking at https://safmc.net/species/grouper-gag/).",
+        "quote": "Gag Grouper* Season: All year Limit: 2 Minimum size: 25\" TL *Federal regulations (3-200 nautical miles out): https://safmc.net/species/grouper-gag/",
+        "sourceUrl": "https://coastalgadnr.org/limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "12": {
+    "name": "King Mackerel",
+    "reviewed": "2026-10-01",
+    "rawHash": "4b9e9f622008",
+    "aliases": [
+      "kingfish",
+      "king"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": "68 inch fork length"
-   }
-  ],
-  "notes": []
- },
- "25": {
-  "name": "Tripletail",
-  "reviewed": "2026-10-01",
-  "rawHash": "76a414ef1dac",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 18,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 24,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "24 inch fork length"
+      }
     ],
-    "bag": 2,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 86
- },
- "26": {
-  "name": "Weakfish",
-  "reviewed": "2026-10-01",
-  "rawHash": "a95e5bc631da",
-  "aliases": [
-   "gray trout",
-   "grey trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 13,
-      "max": null
-     }
+    "notes": []
+  },
+  "13": {
+    "name": "Red Drum",
+    "reviewed": "2026-10-01",
+    "rawHash": "f0c0465c2a0f",
+    "aliases": [
+      "redfish",
+      "spottail",
+      "spottail bass",
+      "channel bass",
+      "red"
     ],
-    "bag": 1,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "27": {
-  "name": "Black Bass",
-  "reviewed": "2026-10-04",
-  "rawHash": "b1729469b454",
-  "aliases": [
-   "largemouth",
-   "largemouth bass",
-   "smallmouth",
-   "smallmouth bass",
-   "spotted bass",
-   "shoal bass",
-   "bass"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": 10,
-    "bagNote": "10 black bass, only 5 of the native stream species (shoal, Bartram's, Chattahoochee, Coosa, smallmouth…)",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 38
- },
- "28": {
-  "name": "Catfish",
-  "reviewed": "2026-10-04",
-  "rawHash": "c9ff6cec4f73",
-  "aliases": [
-   "channel catfish",
-   "flathead"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 30
- },
- "29": {
-  "name": "Crappie",
-  "reviewed": "2026-10-04",
-  "rawHash": "42fe795269c7",
-  "aliases": [
-   "speck",
-   "black crappie",
-   "white crappie"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": 30,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "30": {
-  "name": "Pickerel",
-  "reviewed": "2026-10-04",
-  "rawHash": "8e25beb5135b",
-  "aliases": [
-   "chain pickerel",
-   "jack"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": 15,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 28
- },
- "31": {
-  "name": "Shad (freshwater)",
-  "reviewed": "2026-10-04",
-  "rawHash": "06d8fdf7f6a8",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": 8,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [],
-  "photoOf": 19
- },
- "32": {
-  "name": "Sunfish",
-  "reviewed": "2026-10-04",
-  "rawHash": "3ccd7aa79441",
-  "aliases": [
-   "bluegill",
-   "bream",
-   "redbreast",
-   "shellcracker",
-   "warmouth"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": 50,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "33": {
-  "name": "Trout",
-  "reviewed": "2026-10-04",
-  "rawHash": "06d8fdf7f6a8",
-  "aliases": [
-   "brook trout",
-   "brown trout",
-   "rainbow trout"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": 8,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Special streams (Chattooga, Toccoa, Smith Creek, Waters Creek…) have their own limits."
-  ]
- },
- "34": {
-  "name": "Walleye",
-  "reviewed": "2026-10-04",
-  "rawHash": "06d8fdf7f6a8",
-  "aliases": [],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "inland",
-    "label": "Georgia freshwater (statewide)",
-    "seasons": null,
-    "size": [],
-    "bag": 8,
-    "bagNote": "",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": []
- },
- "35": {
-  "name": "Blue Crab",
-  "reviewed": "2026-10-30",
-  "rawHash": "365476427e32",
-  "aliases": [
-   "crab",
-   "crabs",
-   "blue crabs",
-   "jimmy",
-   "jimmies",
-   "sook",
-   "sooks",
-   "hard crab",
-   "hard crabs"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (to 3 nm)",
-    "seasons": null,
-    "size": [
-     {
-      "min": 5,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": 23
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "15 to 23 inch slot (conservative: legal under both the printed 14–23 / 5 fish rule and the proposed 15–24 / 3 fish rule)"
+      }
     ],
-    "bag": null,
-    "bagNote": "1 bushel per person per day, 2 bushels per boat",
-    "closed": false,
-    "sizeNote": "5 inch spike to spike (peelers 3 in; mature females exempt)"
-   }
-  ],
-  "notes": [
-   "Up to six crab traps (2 x 2 ft or smaller) with two 2⅜ in escape rings and a lime/fluorescent green float marked with name and address."
-  ]
- },
- "36": {
-  "name": "Shrimp",
-  "reviewed": "2026-10-30",
-  "rawHash": "5cfff2009a03",
-  "aliases": [
-   "shrimp",
-   "shrimps",
-   "white shrimp",
-   "brown shrimp",
-   "pink shrimp",
-   "cast net shrimp"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia state waters (food shrimp, cast net)",
-    "seasons": [
-     [
-      "06-15",
-      "01-15"
-     ]
+    "notes": [
+      "The printed 2026 guide says 5 fish, 14–23 in; the Board of Natural Resources considered 3 fish, 15–24 in on Aug 25, 2026. SlotGauge applies the stricter overlap until CoastalGaDNR.org/RedDrum confirms. Rod & reel only."
     ],
-    "size": [],
-    "bag": null,
-    "bagNote": "48 quarts heads-on (30 quarts tails) per person per day",
-    "closed": false,
-    "sizeNote": ""
-   },
-   {
-    "zone": "bait",
-    "label": "Georgia state waters (bait shrimp)",
-    "seasons": null,
-    "size": [],
-    "bag": null,
-    "bagNote": "4 quarts per person per day, 2 quarts at a time",
-    "closed": false,
-    "sizeNote": ""
-   }
-  ],
-  "notes": [
-   "Georgia fishing license and free Saltwater Information Permit (SIP) required. Exact opening/closing dates are set by Coastal Resources Division each year."
-  ]
- },
- "37": {
-  "name": "Oyster",
-  "reviewed": "2026-10-30",
-  "rawHash": "865632b7512e",
-  "aliases": [
-   "oyster",
-   "oysters"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia public shellfish harvest areas",
-    "seasons": null,
-    "size": [
-     {
-      "min": 3,
-      "max": null
-     }
+    "review": [
+      {
+        "field": "zones",
+        "current": "state zone size min 15 / max 23, bag 3 (overlay applies 'stricter overlap')",
+        "shouldBe": "Until 2026-12-31: size 14–23 inch TL slot, bag 5. Effective 2027-01-01: size 15–24 inch TL slot, bag 3.",
+        "quote": "Season: All year Limit: 5 Minimum size: 14\" TL (Maximum 23\" TL) Note: Effective Jan. 1, 2027, Red Drum daily creel limit will decrease from five (5) fish to three (3) and increase the slot size limit from 14 - 23 inches Total Length (TL) to 15 - 24 inches Total Length (TL).",
+        "sourceUrl": "https://coastalgadnr.org/limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "14": {
+    "name": "Red Porgy",
+    "reviewed": "2026-10-01",
+    "rawHash": "0899e36806c2",
+    "aliases": [
+      "pink snapper",
+      "porgy"
     ],
-    "bag": null,
-    "bagNote": "2 bushels per person per day, 6 per boat",
-    "closed": false,
-    "sizeNote": "3 inches hinge to mouth"
-   }
-  ],
-  "notes": [
-   "Georgia fishing license and Saltwater Information Permit required. Harvest only from approved public harvest areas (CRD maps)."
-  ]
- },
- "38": {
-  "name": "Hard Clam",
-  "reviewed": "2026-10-30",
-  "rawHash": "332325579126",
-  "aliases": [
-   "clam",
-   "clams",
-   "quahog",
-   "quahogs",
-   "hard clams",
-   "littleneck",
-   "cherrystone"
-  ],
-  "status": "open",
-  "zones": [
-   {
-    "zone": "state",
-    "label": "Georgia public shellfish harvest areas",
-    "seasons": null,
-    "size": [
-     {
-      "min": 0.75,
-      "max": null
-     }
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 3,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
     ],
-    "bag": null,
-    "bagNote": "1 bushel per person per day (1 per boat)",
-    "closed": false,
-    "sizeNote": "¾ inch thick"
-   }
-  ],
-  "notes": [
-   "Georgia fishing license and Saltwater Information Permit required."
-  ]
- }
+    "notes": [],
+    "photoOf": 160
+  },
+  "15": {
+    "name": "Red Snapper",
+    "reviewed": "2026-10-01",
+    "rawHash": "6b9821efec34",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "State waters only; federal waters (3–200 mi) have a separate, very short season — see safmc.net."
+    ],
+    "review": [
+      {
+        "field": "notes",
+        "current": "State waters only; federal waters (3–200 mi) have a separate, very short season — see safmc.net.",
+        "shouldBe": "Also add for Amberjack, Black Sea Bass, Dolphin, Gag Grouper, King Mackerel, Red Porgy, Spanish Mackerel and Red Snapper: 'Effective Jan. 1, 2027 a Reef & Migratory Fish Endorsement ($10 resident / $20 non-resident) is required to land this species in Georgia.' and the federal link printed by CRD (e.g. https://safmc.net/species/snapper-red/).",
+        "quote": "Effective January 1, 2027, a “Reef & Migratory Fish Endorsement” will be required of any angler landing any of the following nine species in Georgia: Amberjack, Black sea bass, Cobia, Dolphin, Gag, King Mackerel, Red Porgy, Red Snapper, and Spanish Mackerel.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "16": {
+    "name": "Small Shark Composite",
+    "reviewed": "2026-10-01",
+    "rawHash": "1556bfb48c2a",
+    "aliases": [
+      "sharpnose",
+      "atlantic sharpnose",
+      "bonnethead",
+      "spiny dogfish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 30,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "30 inch fork length"
+      }
+    ],
+    "notes": [],
+    "photoOf": 82,
+    "review": [
+      {
+        "field": "notes",
+        "current": "no gear note",
+        "shouldBe": "Add userNote: sharks may be taken by hook and line only, with non-offset corrodible non-stainless circle hooks except when using flies or artificial lures; land with head and fins intact. Add alias 'ssc', 'dogfish'.",
+        "quote": "Sharks: Recreational harvest of sharks is limited to hook and line gear only. Additionally, anglers must use non-offset, corrodible, non-stainless steel circle hooks when fishing for sharks recreationally, except when fishing with flies or artificial lures.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/recreational-fishing",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "17": {
+    "name": "Sharks (other)",
+    "reviewed": null,
+    "aliases": [],
+    "status": "open",
+    "zones": [],
+    "notes": [],
+    "review": [
+      {
+        "field": "zones",
+        "current": "no overlay entry (zones [], aliases none)",
+        "shouldBe": "state + federal zones: size min 54 FL, bag 1, bagNote '1 per angler or boat, whichever is less'; aliases must list the harvestable members printed on the saltwater fish ID page: blacknose, blacktip, bull, finetooth, lemon, nurse, thresher, tiger (hammerheads and shortfin mako split into their own rows, see additions). Add userNotes: hook and line only, non-offset non-stainless circle hooks except flies/artificials; land with head and fins intact.",
+        "quote": "Sharks (other than Hammerheads, SSC and Prohibited Sharks)A | 1 per angler or boat, whichever is less | 54 FL",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
+        "found": "2026-10-31"
+      },
+      {
+        "field": "size",
+        "current": "54 FL (hammerheads 78 FL; shortfin mako 83 FL when federal quota available)",
+        "shouldBe": "54 FL (hammerheads and shortfin mako should be separate rows — the state prints them as separate table rows with their own sizes/season)",
+        "quote": "Sharks Found in Georgia Waters that can be Harvested (not including small shark composite above) Blacknose Blacktip Bull Finetooth Lemon Nurse Scalloped Hammerhead Smooth Hammerhead Thresher Tiger (has interdorsal ridge)",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/georgia-saltwater-fish",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "18": {
+    "name": "Sheepshead",
+    "reviewed": "2026-10-01",
+    "rawHash": "4a656d11b22b",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 10,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "10 inch fork length"
+      }
+    ],
+    "notes": []
+  },
+  "19": {
+    "name": "Spanish Mackerel",
+    "reviewed": "2026-10-01",
+    "rawHash": "d2bf394204c9",
+    "aliases": [
+      "spanish"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "12 inch fork length"
+      }
+    ],
+    "notes": []
+  },
+  "20": {
+    "name": "Spot",
+    "reviewed": "2026-10-01",
+    "rawHash": "d7aeae31a450",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [],
+        "bag": 25,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "21": {
+    "name": "Spotted Seatrout",
+    "reviewed": "2026-10-01",
+    "rawHash": "73da6281e591",
+    "aliases": [
+      "speckled trout",
+      "specks",
+      "speck",
+      "trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "22": {
+    "name": "Striped Bass",
+    "reviewed": "2026-10-01",
+    "rawHash": "2c2d7e979e81",
+    "aliases": [
+      "striper",
+      "stripers",
+      "rockfish",
+      "rock"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia saltwater",
+        "seasons": null,
+        "size": [
+          {
+            "min": 22,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "savannah",
+        "label": "Savannah River",
+        "seasons": null,
+        "size": [
+          {
+            "min": 27,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "15 striped/white/hybrid combined, only 2 of 22 in or longer",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Freshwater statewide: 15 per day, only 2 of which may be 22 inches or longer; coastal rivers 2 per day at 22 in; lower Savannah 2 at 27 in."
+    ],
+    "review": [
+      {
+        "field": "zones",
+        "current": "state 22 TL/2; savannah 27 TL/2; inland bag 15 (2 of 22+). Raw id 23 'Striped Bass | Savannah River' has no overlay entry (duplicate of the savannah zone on id 22).",
+        "shouldBe": "Add zones: coastalrivers (North Newport, Medway incl. Mount Hope Creek, Little Ogeechee, Ogeechee, Oconee below GA 22, Ocmulgee below GA 96, Altamaha, St. Mary's, Satilla + tributaries) bag 2, min 22; russell (Lake Richard B. Russell) bag 2, only 1 over 34 in; hartwellclarkshill (Lakes Hartwell and Clarks Hill) bag 10 striped/hybrid combined, only 3 over 26 in; flintchattahoochee (Flint River Albany dams to US 84, Chattahoochee Columbia Lock & Dam to GA 91, Spring Creek to GA 253) CLOSED to striped bass fishing May 1 – Oct 31 (seasons [[\"11-01\",\"04-30\"]]). Merge or overlay raw id 23. Note the inland 15 limit is combined striped + white + hybrid.",
+        "quote": "Limit taken from Lake Richard B. Russell from the Russell Dam to Lake Hartwell Dam and Lake Secession Dam, all tributaries to Lake Richard B. Russell is two (2) striped bass per day, only one (1) of which can exceed 34 inches in length.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+        "found": "2026-10-31"
+      },
+      {
+        "field": "season",
+        "current": "Open year-round",
+        "shouldBe": "Open year-round except Flint River (Albany dams to US 84), Chattahoochee River (Columbia Lock & Dam to GA 91) and Spring Creek (to GA 253) and their tributaries: closed to striped bass fishing May 1 – Oct 31",
+        "quote": "Flint, Chattahoochee and Spring Creeks: The Flint River and its tributaries from the Georgia Power Co. dams at Albany to the US Hwy 84 bridge; the Chattahoochee River and its tributaries from the Columbia Lock and Dam to the GA Hwy 91 bridge; and Spring Creek and its tributaries downstream to GA Hwy 253 are CLOSED to striped bass fishing and spear fishing from May 1 - October 31 each year.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/general-regulations",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "24": {
+    "name": "Tarpon",
+    "reviewed": "2026-10-01",
+    "rawHash": "d7d1e0ab0bb6",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 68,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": "68 inch fork length"
+      }
+    ],
+    "notes": []
+  },
+  "25": {
+    "name": "Tripletail",
+    "reviewed": "2026-10-01",
+    "rawHash": "76a414ef1dac",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 86
+  },
+  "26": {
+    "name": "Weakfish",
+    "reviewed": "2026-10-01",
+    "rawHash": "a95e5bc631da",
+    "aliases": [
+      "gray trout",
+      "grey trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 13,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": []
+  },
+  "27": {
+    "name": "Black Bass",
+    "reviewed": "2026-10-04",
+    "rawHash": "b1729469b454",
+    "aliases": [
+      "largemouth",
+      "largemouth bass",
+      "smallmouth",
+      "smallmouth bass",
+      "spotted bass",
+      "shoal bass",
+      "bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 black bass, only 5 of the native stream species (shoal, Bartram's, Chattahoochee, Coosa, smallmouth…)",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 38,
+    "review": [
+      {
+        "field": "aliases",
+        "current": "largemouth, largemouth bass, smallmouth, smallmouth bass, spotted bass, shoal bass, bass",
+        "shouldBe": "add every member printed: altamaha bass, bartram's bass, bartrams bass, chattahoochee bass, coosa bass, shoal bass, smallmouth bass, suwannee bass, tallapoosa bass, redeye bass, spotted bass, largemouth bass",
+        "quote": "Total daily limit of 10 black bass, only 5 of which may be Altamaha, Bartrams, Chattahoochee, Coosa, Shoal, Smallmouth, Suwannee, Tallapoosa.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+        "found": "2026-10-31"
+      },
+      {
+        "field": "zones",
+        "current": "inland: size [] (no size), bag 10",
+        "shouldBe": "Size is species- and lake-specific (largemouth 12 in statewide / 14 in on listed lakes and PFAs; shoal 15 in; spotted 14 in on Lanier; Lindsay Grace 15–22 protected slot). Add pfa zone: bag 5 largemouth, 14 in. Add scborder zone: bag 10, largemouth 12 in. See the Largemouth Bass, Shoal Bass and Spotted Bass additions.",
+        "quote": "Lake Lindsay Grace (Wayne Co.) — Only one bass may be greater than 22 inches.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "28": {
+    "name": "Catfish",
+    "reviewed": "2026-10-04",
+    "rawHash": "c9ff6cec4f73",
+    "aliases": [
+      "channel catfish",
+      "flathead"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 30,
+    "review": [
+      {
+        "field": "zones",
+        "current": "inland: no limit",
+        "shouldBe": "Keep statewide no limit for channel/flathead; add pfa zone: 'Channel catfish - 5' on Public Fishing Areas. Add aliases 'flathead catfish', 'channel catfish', 'blue catfish' (blue catfish is named in the noodling rule). Note: the 50-fish total game-fish possession cap does not apply to channel and flathead catfish.",
+        "quote": "Channel catfish - 5",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/public-fishing-areas",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "29": {
+    "name": "Crappie",
+    "reviewed": "2026-10-04",
+    "rawHash": "42fe795269c7",
+    "aliases": [
+      "speck",
+      "black crappie",
+      "white crappie"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": 30,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "notes",
+        "current": "none",
+        "shouldBe": "Add note: 'South Carolina regulations differ for crappie and bream' on GA–SC border waters; the 40-fish aggregate of all game fish applies on border waters and the 50-fish aggregate statewide.",
+        "quote": "Note: South Carolina regulations differ for crappie and bream.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/agreements-with-bordering-states",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "30": {
+    "name": "Pickerel",
+    "reviewed": "2026-10-04",
+    "rawHash": "8e25beb5135b",
+    "aliases": [
+      "chain pickerel",
+      "jack"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 28,
+    "review": [
+      {
+        "field": "aliases",
+        "current": "chain pickerel, jack",
+        "shouldBe": "add grass pickerel, redfin pickerel, jackfish",
+        "quote": "Pickerel | Chain, Grass and/or Redfin | 15",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "31": {
+    "name": "Shad (freshwater)",
+    "reviewed": "2026-10-04",
+    "rawHash": "06d8fdf7f6a8",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": 8,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "photoOf": 19,
+    "review": [
+      {
+        "field": "aliases",
+        "current": "none",
+        "shouldBe": "add american shad, hickory shad, shad; userNote: sport shad fishing limited to 2 poles; trotlines/set hooks allowed for shad only during shad season",
+        "quote": "Shad | American and/or Hickory | 8",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "32": {
+    "name": "Sunfish",
+    "reviewed": "2026-10-04",
+    "rawHash": "3ccd7aa79441",
+    "aliases": [
+      "bluegill",
+      "bream",
+      "redbreast",
+      "shellcracker",
+      "warmouth"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": 50,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "aliases",
+        "current": "bluegill, bream, redbreast, shellcracker, warmouth",
+        "shouldBe": "add all printed members: flier, redear, redear sunfish, rock bass, spotted sunfish, stumpknocker, shadow bass, redbreast sunfish",
+        "quote": "Sunfish or Bream | Bluegill, Flier, Redbreast, Redear, Rock bass, Spotted sunfish, Warmouth and/or Shadow bass | 50",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+        "found": "2026-10-31"
+      },
+      {
+        "field": "zones",
+        "current": "inland: bag 50",
+        "shouldBe": "add pfa zone: 'Bream or sunfish (of any one species or a combination) - 15'; add silverlakehousepond zone: bluegill/redear/warmouth 5 combined, min 8 in TL; note 'Bream: See South Carolina Agreement' (SC regulations differ for bream on border waters).",
+        "quote": "Bream or sunfish (of any one species or a combination) - 15",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/public-fishing-areas",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "33": {
+    "name": "Trout",
+    "reviewed": "2026-10-04",
+    "rawHash": "06d8fdf7f6a8",
+    "aliases": [
+      "brook trout",
+      "brown trout",
+      "rainbow trout"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": 8,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Special streams (Chattooga, Toccoa, Smith Creek, Waters Creek…) have their own limits."
+    ],
+    "review": [
+      {
+        "field": "zones",
+        "current": "inland: bag 8, no size",
+        "shouldBe": "add zones: waterscreek (Waters Creek) min 22 in brown/rainbow, 18 in brook; noontootla (Noontootla Creek and tributaries on Blue Ridge WMA) min 16 in all trout, artificial lures only; dukescreek (Dukes Creek, Smithgall Woods) closed — all fish released, no trout possessed; delayedharvest (Amicalola Creek CR 192 to GA 53, Chattahoochee Sope Creek to US 41, Chattooga GA 28 bridge to Reed Creek, Smith Creek Unicoi Dam to park boundary, Toccoa River USFS section) catch-and-release, single-hook artificials only Nov 1 – May 14, open to harvest May 15 – Oct 31 (seasons [[\"05-15\",\"10-31\"]]); scborder (GA–SC border waters) bag 5, no size. Add alias 'mountain trout', 'hybrid trout'. All designated trout waters are open year round.",
+        "quote": "Waters Creek Size limits: 22 inches for brown and rainbow trout and 18 inches for brook trout. It is a violation to possess a trout smaller than these limits while fishing on Waters creek. Noontootla Creek and its tributaries on Blue Ridge WMA Size limit: 16 inches for all mountain trout.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/trout-fishing",
+        "found": "2026-10-31"
+      },
+      {
+        "field": "notes",
+        "current": "Special streams (Chattooga, Toccoa, Smith Creek, Waters Creek…) have their own limits.",
+        "shouldBe": "Add: delayed harvest streams are catch-and-release with single-hook artificial lures only Nov. 1 – May 14; trout license required to possess trout; one handheld pole only; no live fish bait in trout streams; night fishing not allowed on Dockery Lake, Rock Creek Lake, Chattahoochee Buford Dam–Peachtree Creek, Conasauga watershed above TN line, Smith Creek below Unicoi dam.",
+        "quote": "Anglers fishing delayed harvest streams must release all trout immediately and use and possess only artificial lures with one single hook per lure from Nov. 1 - May 14 annually.",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/trout-fishing",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "34": {
+    "name": "Walleye",
+    "reviewed": "2026-10-04",
+    "rawHash": "06d8fdf7f6a8",
+    "aliases": [],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater (statewide)",
+        "seasons": null,
+        "size": [],
+        "bag": 8,
+        "bagNote": "",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [],
+    "review": [
+      {
+        "field": "aliases",
+        "current": "none",
+        "shouldBe": "add sauger, walleye or sauger; add scborder zone: 'Walleye or Sauger or combination | All border waters covered | 8 | No size limit'",
+        "quote": "Walleye or Sauger or combination | All border waters covered | 8 | No size limit",
+        "sourceUrl": "https://www.eregulations.com/georgia/fishing/agreements-with-bordering-states",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "35": {
+    "name": "Blue Crab",
+    "reviewed": "2026-10-30",
+    "rawHash": "365476427e32",
+    "aliases": [
+      "crab",
+      "crabs",
+      "blue crabs",
+      "jimmy",
+      "jimmies",
+      "sook",
+      "sooks",
+      "hard crab",
+      "hard crabs"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 5,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 bushel per person per day, 2 bushels per boat",
+        "closed": false,
+        "sizeNote": "5 inch spike to spike (peelers 3 in; mature females exempt)"
+      }
+    ],
+    "notes": [
+      "Up to six crab traps (2 x 2 ft or smaller) with two 2⅜ in escape rings and a lime/fluorescent green float marked with name and address."
+    ],
+    "review": [
+      {
+        "field": "notes",
+        "current": "trap gear note only",
+        "shouldBe": "Add: 'No sponge (egg-bearing) crabs are allowed.' Mature adult females and peelers (3 in) exempt from the 5-inch minimum. Crab traps may only be set in waters defined as saltwater (St. Mary's and Satilla seaward of the Seaboard Coastline Railroad; Altamaha system seaward of I-95).",
+        "quote": "It is unlawful to take or possess any crab less than 5 inches from spike to spike across the back (other than a “peeler” or a “mature adult female” crab). Peelers must measure at least 3 inches from spike to spike across the back. No sponge (egg-bearing) crabs are allowed.",
+        "sourceUrl": "https://gadnrle.org/shrimpregs",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "36": {
+    "name": "Shrimp",
+    "reviewed": "2026-10-30",
+    "rawHash": "5cfff2009a03",
+    "aliases": [
+      "shrimp",
+      "shrimps",
+      "white shrimp",
+      "brown shrimp",
+      "pink shrimp",
+      "cast net shrimp"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia state waters (food shrimp, cast net)",
+        "seasons": [
+          [
+            "06-15",
+            "01-15"
+          ]
+        ],
+        "size": [],
+        "bag": null,
+        "bagNote": "48 quarts heads-on (30 quarts tails) per person per day",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "bait",
+        "label": "Georgia state waters (bait shrimp)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "4 quarts per person per day, 2 quarts at a time",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Georgia fishing license and free Saltwater Information Permit (SIP) required. Exact opening/closing dates are set by Coastal Resources Division each year."
+    ],
+    "review": [
+      {
+        "field": "zones",
+        "current": "state (cast net food shrimp 48 qt heads-on / 30 qt tails, seasons 06-15 to 01-15); bait (4 qt/day)",
+        "shouldBe": "Add a seine zone: food shrimp by seine only — 24 quarts heads-on or 15 quarts tails per person per 24 hours (cast-net limits apply if a cast net is also aboard). Bait zone: also 2 quarts possession at any time, 4 qt/8 qt per boat when two or more aboard; bait trawl (10 ft, sport bait trawl) same 2/4 qt limits, no more than 1/2 pint dead, daylight only, only in DNR bait zones. Season window is set yearly by the Commissioner (may open May 15 – end of February; generally mid-June to mid-January) — the hard-coded 06-15 to 01-15 should be flagged as approximate.",
+        "quote": "No one person taking food shrimp solely by means of a seine, whether such person is acting alone or in a group of persons, may possess more than 24 quarts of shrimp with heads on or 15 quarts of tails taken by such seine in any 24-hour period.",
+        "sourceUrl": "https://gadnrle.org/shrimpregs",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "37": {
+    "name": "Oyster",
+    "reviewed": "2026-10-30",
+    "rawHash": "865632b7512e",
+    "aliases": [
+      "oyster",
+      "oysters"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia public shellfish harvest areas",
+        "seasons": null,
+        "size": [
+          {
+            "min": 3,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "2 bushels per person per day, 6 per boat",
+        "closed": false,
+        "sizeNote": "3 inches hinge to mouth"
+      }
+    ],
+    "notes": [
+      "Georgia fishing license and Saltwater Information Permit required. Harvest only from approved public harvest areas (CRD maps)."
+    ],
+    "review": [
+      {
+        "field": "season",
+        "current": "Open year-round by law (check CRD seasonal closures; summer harvest is usually closed) — zone seasons: null",
+        "shouldBe": "Closed June 1 – September 30 every year; open Oct 1 – May 31 (zone seasons [[\"10-01\",\"05-31\"]]) unless CRD shortens or extends",
+        "quote": "To protect public health, oyster harvest is closed from June 1 through September 30 every year, unless conditions warrant shortening or extending the season.",
+        "sourceUrl": "https://coastalgadnr.org/Shellfish/Recreational",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "38": {
+    "name": "Hard Clam",
+    "reviewed": "2026-10-30",
+    "rawHash": "332325579126",
+    "aliases": [
+      "clam",
+      "clams",
+      "quahog",
+      "quahogs",
+      "hard clams",
+      "littleneck",
+      "cherrystone"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "Georgia public shellfish harvest areas",
+        "seasons": null,
+        "size": [
+          {
+            "min": 0.75,
+            "max": null
+          }
+        ],
+        "bag": null,
+        "bagNote": "1 bushel per person per day (1 per boat)",
+        "closed": false,
+        "sizeNote": "¾ inch thick"
+      }
+    ],
+    "notes": [
+      "Georgia fishing license and Saltwater Information Permit required."
+    ],
+    "review": [
+      {
+        "field": "season",
+        "current": "Open year-round by law (check CRD seasonal closures)",
+        "shouldBe": "Permitted year-round from approved areas (no summer closure, unlike oysters); still subject to area closures for bacteria levels",
+        "quote": "The harvest of clams from approved shellfish harvesting areas is permitted year-round.",
+        "sourceUrl": "https://coastalgadnr.org/Shellfish/Recreational",
+        "found": "2026-10-31"
+      }
+    ]
+  },
+  "39": {
+    "name": "Billfish",
+    "reviewed": "2026-10-31",
+    "rawHash": "61843228d1a3",
+    "aliases": [
+      "blue marlin",
+      "white marlin",
+      "sailfish",
+      "marlin"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "GA state waters (to 3 nm)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Federal HMS rules apply — no separate Georgia limit",
+        "closed": false,
+        "sizeNote": "Federal HMS minimum sizes apply"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 nm)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Federal HMS rules apply",
+        "closed": false,
+        "sizeNote": "Federal HMS minimum sizes apply"
+      }
+    ],
+    "notes": [
+      "Georgia sets no state limit on blue marlin, white marlin or sailfish — you may land them in Georgia only if you follow all federal HMS rules (permit, sizes, reporting).",
+      "Check NOAA Atlantic HMS regulations before keeping any billfish: https://www.fisheries.noaa.gov/topic/atlantic-highly-migratory-species/overview"
+    ],
+    "sourceId": "ga-finfish-limits",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
+    "auditQuote": "Billfish (Blue marlin, White marlin, Sailfish)* | Billfish may be landed in Georgia, provided the angler complies with all federal regulations. Visit CoastalGaDNR.org/HMS for federal regulations."
+  },
+  "40": {
+    "name": "Hammerhead Sharks",
+    "reviewed": "2026-10-31",
+    "rawHash": "b0c1f835eacc",
+    "aliases": [
+      "great hammerhead",
+      "scalloped hammerhead",
+      "smooth hammerhead",
+      "hammerhead",
+      "hammerhead shark"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "GA state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 78,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 shark per angler or per boat, whichever is less (shared with all other non-SSC sharks)",
+        "closed": false,
+        "sizeNote": "78 inch fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 78,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "Federal HMS rules apply — see NOAA",
+        "closed": false,
+        "sizeNote": "Federal HMS minimum size applies (78 inch FL)"
+      }
+    ],
+    "notes": [
+      "Great, scalloped and smooth hammerheads must be at least 78 inches fork length — much bigger than the 54-inch rule for other sharks.",
+      "Only one shark (of any non-small-shark-composite species) per angler or per boat, whichever is less.",
+      "Hook and line only, with non-offset non-stainless circle hooks unless using flies or artificial lures. Land the shark with head and fins intact.",
+      "Federal rules also apply: https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/atlantic-highly-migratory-species-minimum-sizes-and-bag-limits"
+    ],
+    "sourceId": "ga-finfish-limits",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
+    "auditQuote": "Hammerhead Sharks (Great, Scalloped, and Smooth)A | 78 FL"
+  },
+  "41": {
+    "name": "Shortfin Mako Shark",
+    "reviewed": "2026-10-31",
+    "rawHash": "b49e08f9dbad",
+    "aliases": [
+      "shortfin mako",
+      "mako",
+      "mako shark"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "GA state waters (to 3 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 83,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 per angler or boat, whichever is less — only when the federal shortfin mako retention quota is open",
+        "closed": false,
+        "sizeNote": "83 inch fork length"
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 nm)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 83,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "Federal HMS rules apply — retention only when NOAA opens the quota",
+        "closed": false,
+        "sizeNote": "83 inch fork length"
+      }
+    ],
+    "notes": [
+      "Shortfin mako can only be kept when NOAA has the federal retention quota open — assume it is closed unless you have confirmed on the NOAA HMS site.",
+      "Minimum 83 inches fork length; one shark per angler or boat, whichever is less.",
+      "Longfin mako looks similar and is PROHIBITED — if in doubt, release."
+    ],
+    "sourceId": "ga-finfish-limits",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
+    "auditQuote": "Shortfin Mako Shark | When Federal Quota is Available. | 83 FL"
+  },
+  "42": {
+    "name": "Prohibited Sharks",
+    "reviewed": "2026-10-31",
+    "rawHash": "917465ba1efa",
+    "aliases": [
+      "sand tiger",
+      "sandbar",
+      "sandbar shark",
+      "silky",
+      "silky shark",
+      "bigeye sand tiger",
+      "whale shark",
+      "basking shark",
+      "white shark",
+      "great white",
+      "dusky",
+      "dusky shark",
+      "bignose",
+      "galapagos",
+      "night shark",
+      "reef shark",
+      "caribbean reef",
+      "narrowtooth",
+      "caribbean sharpnose",
+      "smalltail",
+      "atlantic angel",
+      "angel shark",
+      "longfin mako",
+      "bigeye thresher",
+      "sharpnose sevengill",
+      "bluntnose sixgill",
+      "oceanic whitetip",
+      "bigeye sixgill"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "GA state waters (to 3 nm)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      },
+      {
+        "zone": "federal",
+        "label": "Federal waters (3–200 nm)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "No harvest of any of these 22 shark species in Georgia: sand tiger, sandbar, silky, bigeye sand tiger, whale, basking, white, dusky, bignose, Galapagos, night, reef, narrowtooth, Caribbean sharpnose, smalltail, Atlantic angel, longfin mako, bigeye thresher, sharpnose sevengill, bluntnose sixgill, oceanic whitetip, bigeye sixgill.",
+      "Most ridge-backed sharks (an interdorsal ridge between the dorsal fins) caught off Georgia are prohibited. If you are not sure of the species, release it."
+    ],
+    "sourceId": "ga-finfish-limits",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
+    "auditQuote": "Prohibited Sharks (NO HARVEST)A | Sand tiger, Sandbar, Silky, Bigeye sand tiger, Whale, Basking, White, Dusky, Bignose, Galapagos, Night, Reef, Narrowtooth, Caribbean sharpnose, Smalltail, Atlantic angel, Longfin mako, Bigeye thresher, Sharpnose sevengill, Bluntnose sixgill, Oceanic Whitetip, and Bigeye sixgill"
+  },
+  "43": {
+    "name": "Largemouth Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "e601da7898b1",
+    "aliases": [
+      "largemouth",
+      "bucketmouth",
+      "green trout",
+      "black bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater, statewide",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 black bass of all species combined",
+        "closed": false,
+        "sizeNote": "12 inch total length"
+      },
+      {
+        "zone": "lakes14",
+        "label": "Lakes Blackshear, Lanier, Oconee, Walter F. George, West Point",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 black bass of all species combined",
+        "closed": false,
+        "sizeNote": "14 inch total length"
+      },
+      {
+        "zone": "lakesnomin",
+        "label": "Lakes Blue Ridge, Burton, Juliette",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 black bass of all species combined",
+        "closed": false,
+        "sizeNote": "No minimum length"
+      },
+      {
+        "zone": "lindsaygrace",
+        "label": "Lake Lindsay Grace (Wayne Co.)",
+        "seasons": null,
+        "size": [
+          {
+            "min": null,
+            "max": 15
+          },
+          {
+            "min": 22,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 black bass; only one bass may be greater than 22 inches",
+        "closed": false,
+        "sizeNote": "Bass 15–22 inches must be released; keep under 15 or over 22 (only one over 22)"
+      },
+      {
+        "zone": "pfa",
+        "label": "DNR Public Fishing Areas (default)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "5 per person unless otherwise posted",
+        "closed": false,
+        "sizeNote": "14 inch minimum unless otherwise posted"
+      },
+      {
+        "zone": "scborder",
+        "label": "GA–SC border waters (Savannah/Tugaloo/Chattooga rivers, Clarks Hill, Russell, Hartwell, Yonah, Tugaloo, Stevens Creek lakes)",
+        "seasons": null,
+        "size": [
+          {
+            "min": 12,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 bass (largemouth, spotted, redeye, smallmouth or combination)",
+        "closed": false,
+        "sizeNote": "12-inch minimum length for largemouth bass"
+      }
+    ],
+    "notes": [
+      "Statewide minimum is 12 inches; it is 14 inches on Blackshear, Lanier, Oconee, Walter F. George, West Point and DNR Public Fishing Area lakes; no minimum on Blue Ridge, Burton and Juliette.",
+      "Lake Lindsay Grace: release every bass between 15 and 22 inches, and keep only one bass over 22.",
+      "Daily limit is 10 black bass of all species combined (only 5 may be the native stream species). On PFAs the limit is 5 largemouth and several PFAs have their own slots: Marben (1 over 16 in), Dodge County and Hugh M. Gillis (release 16–24 in), Evans County (release 12–16 in, 1 over 16), Paradise (1 over 24 in), Ocmulgee (catch-and-release only), Silver Lake Panic Pond (1 over 24 in).",
+      "No more than 50 game fish total of all species (except channel and flathead catfish) may be possessed."
+    ],
+    "sourceId": "ga-general-regulations",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/general-regulations",
+    "auditQuote": "Largemouth Bass 12 inches statewide except: Lake Blackshear: 14 inches Lake Blue Ridge: no minimum (0 inches) Lake Burton: no minimum (0 inches) Lake Juliette: no minimum (0 inches) Lake Lanier: 14 inches Lake Oconee: 14 inches Lake Lindsay Grace: bass between 15 and 22 inches must be released immediately. All others may be kept. In addition, only one bass may be greater than 22 inches. Lake Walter F. George: 14 inches West Point Reservoir: 14 inches Public Fishing Area lakes operated by the Department of Natural Resources: 14 inches."
+  },
+  "44": {
+    "name": "Shoal Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "2d2c46d23867",
+    "aliases": [
+      "shoal",
+      "shoalie",
+      "black bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater, statewide",
+        "seasons": null,
+        "size": [
+          {
+            "min": 15,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "Within the 10 black bass limit, no more than 5 combined of shoal, Altamaha, Bartram's, Chattahoochee, Coosa, smallmouth, Suwannee, Tallapoosa bass",
+        "closed": false,
+        "sizeNote": "15 inch total length"
+      },
+      {
+        "zone": "flintbelowwarwick",
+        "label": "Flint River downstream of Warwick Dam (Lake Blackshear)",
+        "seasons": null,
+        "size": [
+          {
+            "min": null,
+            "max": 15
+          },
+          {
+            "min": 20,
+            "max": null
+          }
+        ],
+        "bag": 5,
+        "bagNote": "Within the 10 black bass limit, no more than 5 of the native stream bass species",
+        "closed": false,
+        "sizeNote": "Bass between 15 and 20 inches must be released; all others may be kept"
+      }
+    ],
+    "notes": [
+      "Shoal bass must be 15 inches statewide. On the Flint River below Warwick Dam (Lake Blackshear) you must release 15–20 inch fish and may keep fish under 15 or over 20.",
+      "Counts toward the 10-bass daily limit, and toward the sub-limit of 5 native stream bass (shoal, Altamaha, Bartram's, Chattahoochee, Coosa, smallmouth, Suwannee, Tallapoosa)."
+    ],
+    "sourceId": "ga-general-regulations",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/general-regulations",
+    "auditQuote": "Shoal Bass 15-inches statewide except: Flint River downstream of Warwick Dam (Lake Blackshear): Bass between 15 and 20 inches must be released immediately. All others may be kept."
+  },
+  "45": {
+    "name": "Spotted Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "0e3d0a223f45",
+    "aliases": [
+      "spot bass",
+      "spots",
+      "kentucky bass",
+      "black bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater, statewide",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 black bass of all species combined",
+        "closed": false,
+        "sizeNote": "No minimum length"
+      },
+      {
+        "zone": "lanier",
+        "label": "Lake Lanier",
+        "seasons": null,
+        "size": [
+          {
+            "min": 14,
+            "max": null
+          }
+        ],
+        "bag": 10,
+        "bagNote": "10 black bass of all species combined",
+        "closed": false,
+        "sizeNote": "14 inch total length"
+      }
+    ],
+    "notes": [
+      "No minimum size statewide, but spotted bass on Lake Lanier must be 14 inches.",
+      "Counts toward the 10 black bass daily limit."
+    ],
+    "sourceId": "ga-general-regulations",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/general-regulations",
+    "auditQuote": "Spotted Bass Lake Lanier: 14 inches"
+  },
+  "46": {
+    "name": "White Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "8f317954a945",
+    "aliases": [
+      "whites",
+      "sand bass",
+      "striped bass, white bass and/or hybrid white-striped bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater, statewide",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "15 striped, white and hybrid bass combined; only 2 may be 22 inches or longer",
+        "closed": false,
+        "sizeNote": "No minimum; only two fish 22 inches or longer"
+      },
+      {
+        "zone": "coastalrivers",
+        "label": "North Newport, Medway (incl. Mount Hope Creek), Little Ogeechee, Ogeechee, Oconee below GA 22, Ocmulgee below GA 96, Altamaha, St. Mary's, Satilla rivers and tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 22,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 striped/white/hybrid bass combined",
+        "closed": false,
+        "sizeNote": "22 inch minimum"
+      },
+      {
+        "zone": "savannah",
+        "label": "Savannah River and tributaries below J. Strom Thurmond (Clarks Hill) Dam",
+        "seasons": null,
+        "size": [
+          {
+            "min": 27,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 striped/white/hybrid bass combined",
+        "closed": false,
+        "sizeNote": "27 inch minimum"
+      },
+      {
+        "zone": "scborder",
+        "label": "GA–SC border waters except Savannah River below Clarks Hill Dam",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 white bass",
+        "closed": false,
+        "sizeNote": "No size limit"
+      }
+    ],
+    "notes": [
+      "Statewide freshwater: 15 striped, white and hybrid bass combined, and only 2 of them may be 22 inches or longer.",
+      "In the lower coastal rivers (Ogeechee, Altamaha, Satilla, St. Mary's, lower Oconee/Ocmulgee, etc.) the limit is 2 fish and each must be at least 22 inches; on the Savannah below Thurmond Dam it is 2 fish at 27 inches.",
+      "On the GA–SC border lakes (Hartwell, Clarks Hill, Russell, etc.) white bass limit is 10 with no size limit."
+    ],
+    "sourceId": "ga-game-limits",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+    "auditQuote": "Striped Bass, White Bass and/or Hybrid White-Striped Bass | — | 15, only two of which can be 22 inches or longer."
+  },
+  "47": {
+    "name": "Hybrid Striped Bass",
+    "reviewed": "2026-10-31",
+    "rawHash": "8f317954a945",
+    "aliases": [
+      "hybrid",
+      "hybrids",
+      "hybrid bass",
+      "white-striped bass hybrid",
+      "wiper",
+      "striped bass, white bass and/or hybrid white-striped bass"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater, statewide",
+        "seasons": null,
+        "size": [],
+        "bag": 15,
+        "bagNote": "15 striped, white and hybrid bass combined; only 2 may be 22 inches or longer",
+        "closed": false,
+        "sizeNote": "No minimum; only two fish 22 inches or longer"
+      },
+      {
+        "zone": "coastalrivers",
+        "label": "North Newport, Medway, Little Ogeechee, Ogeechee, lower Oconee, lower Ocmulgee, Altamaha, St. Mary's, Satilla rivers and tributaries",
+        "seasons": null,
+        "size": [
+          {
+            "min": 22,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 striped/white/hybrid bass combined",
+        "closed": false,
+        "sizeNote": "22 inch minimum"
+      },
+      {
+        "zone": "savannah",
+        "label": "Savannah River and tributaries below J. Strom Thurmond (Clarks Hill) Dam",
+        "seasons": null,
+        "size": [
+          {
+            "min": 27,
+            "max": null
+          }
+        ],
+        "bag": 2,
+        "bagNote": "2 striped/white/hybrid bass combined",
+        "closed": false,
+        "sizeNote": "27 inch minimum"
+      },
+      {
+        "zone": "hartwellclarkshill",
+        "label": "Lakes Hartwell and Clarks Hill (GA–SC agreement)",
+        "seasons": null,
+        "size": [],
+        "bag": 10,
+        "bagNote": "10 striped or hybrid bass combined; only 3 may be over 26 inches",
+        "closed": false,
+        "sizeNote": "Only 3 may be over 26 inches"
+      },
+      {
+        "zone": "russell",
+        "label": "Lake Richard B. Russell (GA–SC agreement)",
+        "seasons": null,
+        "size": [],
+        "bag": 2,
+        "bagNote": "2 striped or hybrid bass combined; only 1 may be over 34 inches",
+        "closed": false,
+        "sizeNote": "Only 1 may be over 34 inches"
+      },
+      {
+        "zone": "paradisepfa",
+        "label": "Paradise PFA",
+        "seasons": null,
+        "size": [],
+        "bag": 5,
+        "bagNote": "5 hybrid striped bass",
+        "closed": false,
+        "sizeNote": ""
+      },
+      {
+        "zone": "silverlakehousepond",
+        "label": "Silver Lake PFA — House Pond",
+        "seasons": null,
+        "size": [
+          {
+            "min": 18,
+            "max": null
+          }
+        ],
+        "bag": 1,
+        "bagNote": "1 hybrid striped bass",
+        "closed": false,
+        "sizeNote": "Not less than 18 inches total length"
+      }
+    ],
+    "notes": [
+      "Hybrids share one limit with striped bass and white bass: 15 combined statewide, only 2 of which may be 22 inches or longer.",
+      "Hartwell and Clarks Hill: 10 striped/hybrid combined, only 3 over 26 inches. Lake Russell: 2, only 1 over 34 inches. Savannah River below Clarks Hill Dam: 2 at 27 inches minimum.",
+      "Paradise PFA allows 5 hybrids; Silver Lake House Pond allows 1 hybrid of at least 18 inches."
+    ],
+    "sourceId": "ga-game-limits",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+    "auditQuote": "Striped Bass, White Bass and/or Hybrid White-Striped Bass | — | 15, only two of which can be 22 inches or longer."
+  },
+  "48": {
+    "name": "Lake Sturgeon",
+    "reviewed": "2026-10-31",
+    "rawHash": "116977ecf6ab",
+    "aliases": [
+      "sturgeon"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "inland",
+        "label": "Georgia freshwater, statewide (incl. Coosa River)",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "Sturgeon of any kind may not be taken in fresh or salt water in Georgia. The Coosa River lake sturgeon season is closed — release immediately."
+    ],
+    "sourceId": "ga-general-regulations",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/general-regulations",
+    "auditQuote": "Coosa River: The season for taking lake sturgeon from the Coosa River and its tributaries is CLOSED."
+  },
+  "49": {
+    "name": "Grass Carp",
+    "reviewed": "2026-10-31",
+    "rawHash": "e24dcae080d8",
+    "aliases": [
+      "white amur",
+      "amur",
+      "carp"
+    ],
+    "status": "closed",
+    "zones": [
+      {
+        "zone": "pfa",
+        "label": "DNR Public Fishing Areas",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "Possession prohibited",
+        "closed": true,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "On any DNR Public Fishing Area, grass carp must be released immediately — they are stocked for weed control.",
+      "No statewide limit is printed for grass carp outside PFAs."
+    ],
+    "sourceId": "ga-pfa",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/public-fishing-areas",
+    "auditQuote": "Grass carp must be released immediately."
+  },
+  "50": {
+    "name": "Whelk",
+    "reviewed": "2026-10-31",
+    "rawHash": "6653dcf8c266",
+    "aliases": [
+      "conch",
+      "knobbed whelk",
+      "channeled whelk",
+      "whelks"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "GA state waters and beaches",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "1 bushel per person",
+        "closed": false,
+        "sizeNote": "No minimum size"
+      }
+    ],
+    "notes": [
+      "Whelk (conch): 1 bushel (8 gallons) per person, no size limit, no closed season or area.",
+      "A fishing license and free Saltwater Information Permit are required even for picking whelks by hand on the beach."
+    ],
+    "sourceId": "ga-eregs-shrimp-crab-shellfish",
+    "sourceUrl": "https://www.eregulations.com/georgia/fishing/shrimp-crab-shellfish-bait-minnows",
+    "auditQuote": "Whelk (conch) Recreational harvest of whelk is limited to 1 bushel/person. There is no minimum size, closed season or closed area. A recreational fishing license and Saltwater Information Permit (SIP) are required, including hand harvest from the beach."
+  },
+  "51": {
+    "name": "Stone Crab",
+    "reviewed": "2026-10-31",
+    "rawHash": "e50e65bcdc17",
+    "aliases": [
+      "stone crabs",
+      "stone crab claw"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "GA state waters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "No limit — unregulated",
+        "closed": false,
+        "sizeNote": "No legal minimum; DNR recommends one claw of at least 2 3/4 inches"
+      }
+    ],
+    "notes": [
+      "Georgia does not regulate stone crab harvest, but DNR asks that you take only one claw (at least 2 3/4 inches from elbow to tip of the fixed finger) and release the crab rather than keeping the whole animal."
+    ],
+    "sourceId": "ga-shrimp-crab-shellfish",
+    "sourceUrl": "https://gadnrle.org/shrimpregs",
+    "auditQuote": "Georgia does not regulate the harvest of stone crab; however, the harvest of the whole crab is discouraged. It is recommended that only one claw measuring at least 2 3⁄4 inches from the elbow to the tip of the lower, immovable finger be removed. A properly removed claw should not have meat from the body attached."
+  },
+  "52": {
+    "name": "Bait Minnows (saltwater)",
+    "reviewed": "2026-10-31",
+    "rawHash": "af52320b5496",
+    "aliases": [
+      "bait minnows",
+      "minnows",
+      "mud minnows",
+      "mummichog",
+      "killifish",
+      "finger mullet"
+    ],
+    "status": "open",
+    "zones": [
+      {
+        "zone": "state",
+        "label": "GA state saltwaters",
+        "seasons": null,
+        "size": [],
+        "bag": null,
+        "bagNote": "2 quarts per person at any time (10 quarts for a licensed saltwater guide)",
+        "closed": false,
+        "sizeNote": ""
+      }
+    ],
+    "notes": [
+      "You may hold no more than 2 quarts of bait minnows at a time (10 quarts for a licensed saltwater fishing guide).",
+      "Up to two minnow traps per person (four for a guide), each tagged with your name and address; cast nets and seines are also allowed year-round."
+    ],
+    "sourceId": "ga-shrimp-crab-shellfish",
+    "sourceUrl": "https://gadnrle.org/shrimpregs",
+    "auditQuote": "Bait minnows may be harvested year-round. ... No individual recreationally harvesting bait minnows may possess more than two quarts of bait minnows at any given time. A licensed saltwater fishing guide may possess not more than 10 quarts at any given time."
+  }
 }

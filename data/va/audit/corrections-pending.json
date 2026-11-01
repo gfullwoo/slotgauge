@@ -1,0 +1,436 @@
+{
+  "state": "VA",
+  "auditedOn": "2026-10-31",
+  "pending": [
+    {
+      "existingName": "Alewife",
+      "field": "zones[0].closed / bagNote",
+      "current": "closed: false, bagNote: \"\"",
+      "shouldBe": "closed: true, bagNote: \"Possession prohibited\" (brief convention for prohibited species)",
+      "quote": "ALEWIFE ... Moratorium on River Herring, illegal to possess.",
+      "sourceUrl": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
+      "id": 1,
+      "status": "pending"
+    },
+    {
+      "existingName": "Blueback Herring",
+      "field": "zones[0].closed / bagNote",
+      "current": "closed: false, bagNote: \"\"",
+      "shouldBe": "closed: true, bagNote: \"Possession prohibited\" (brief convention for prohibited species)",
+      "quote": "BLUEBACK HERRING ... Moratorium on River Herring, illegal to possess.",
+      "sourceUrl": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
+      "id": 6,
+      "status": "pending"
+    },
+    {
+      "existingName": "American Shad",
+      "field": "zones[0].closed / bagNote",
+      "current": "closed: false, bagNote: \"\"",
+      "shouldBe": "closed: true, bagNote: \"Possession prohibited\" (brief convention for prohibited species)",
+      "quote": "SHAD, AMERICAN ... Illegal to possess American shad.",
+      "sourceUrl": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
+      "id": 15,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sturgeon",
+      "field": "zones[0].closed / bagNote",
+      "current": "closed: false, bagNote: \"\"",
+      "shouldBe": "closed: true, bagNote: \"Possession prohibited\" (brief convention for prohibited species)",
+      "quote": "STURGEON Code Section 28.2-303 Illegal to possess",
+      "sourceUrl": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
+      "id": 25,
+      "status": "pending"
+    },
+    {
+      "existingName": "Alewife",
+      "field": "zones",
+      "current": "single 'state' marine zone",
+      "shouldBe": "add inland zone: Chesapeake Bay coastal rivers above/below fall line follow VMRC ban; Meherrin, Nottoway, Blackwater (Chowan), North Landing, Northwest rivers and Back Bay: No possession",
+      "quote": "Anadromous (coastal) Alewife and Blueback Herring ... Creel and length limits shall be the same as those set by the Virginia Marine Resources Comm. ... Meherrin River, Nottoway River, Blackwater River (Chowan Drainage), North Landing and Northwest rivers and their tributaries, plus Back Bay No possession",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 1,
+      "status": "pending"
+    },
+    {
+      "existingName": "Blueback Herring",
+      "field": "zones",
+      "current": "single 'state' marine zone",
+      "shouldBe": "same inland zones as Alewife (VMRC ban in coastal rivers; no possession in Chowan drainage and Back Bay)",
+      "quote": "Anadromous (coastal) Alewife and Blueback Herring ... Meherrin River, Nottoway River, Blackwater River (Chowan Drainage), North Landing and Northwest rivers and their tributaries, plus Back Bay No possession",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 6,
+      "status": "pending"
+    },
+    {
+      "existingName": "American Shad",
+      "field": "zones",
+      "current": "single 'state' marine zone",
+      "shouldBe": "add inland zone: statewide freshwater No possession (catch and release only)",
+      "quote": "American Shad No possession (catch and release only)",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 15,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sharks (coastal species)",
+      "field": "overlay",
+      "current": "raw id 16 has NO overlay.json entry (overlay keys skip 16), so the row renders from raw only",
+      "shouldBe": "create overlay or replace with the split shark rows in this audit (large coastal group, Atlantic sharpnose, bonnethead, blacknose & finetooth, pelagic, dogfish, prohibited)",
+      "quote": "A. Recreational fishing vessels are allowed a maximum possession limit of one recreationally permitted shark, excluding smooth dogfish, per trip",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter490/section40/",
+      "id": 16,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sharks (coastal species)",
+      "field": "season",
+      "current": "Season Closed May 15 - July 15 (applied to all sharks)",
+      "shouldBe": "Closure applies ONLY to blacktip, bull, great/scalloped/smooth hammerhead, lemon, nurse, spinner and tiger; sharpnose, bonnethead, blacknose, finetooth, blue, porbeagle, thresher and dogfish stay open",
+      "quote": "E. It shall be unlawful for any person to take, harvest, land, or possess any blacktip, bull, great hammerhead, lemon, nurse, scalloped hammerhead, smooth hammerhead, spinner or tiger shark from May 15 through July 15 of any calendar year.",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter490/section40/",
+      "id": 16,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sharks (coastal species)",
+      "field": "size (mako footnote)",
+      "current": "footnote '***Female Mako must be 83 inches fork length or greater, male Mako must be 71 inches' copied from MRC web table",
+      "shouldBe": "Shortfin and longfin mako are now recreationally PROHIBITED (4VAC20-490-20, amended eff. May 1, 2025; 2026 card lists Mako under prohibited). Drop mako size text.",
+      "quote": "\"Recreationally prohibited shark\" means any of the following species: ... Longfin mako, Isurus paucus ... Shortfin mako, Isurus oxyrinchus",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter490/section20/",
+      "id": 16,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sharks (coastal species)",
+      "field": "notes",
+      "current": "no circle-hook note",
+      "shouldBe": "add: non-offset, corrodible, non-stainless steel circle hooks required when fishing for sharks except with flies or artificial lures",
+      "quote": "H. Any person fishing recreationally for sharks shall use non-offset, corrodible, non-stainless steel circle hooks except when fishing with flies or artificial lures.",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter490/section40/",
+      "id": 16,
+      "status": "pending"
+    },
+    {
+      "existingName": "King Mackerel",
+      "field": "aliases",
+      "current": "['kingfish','king']",
+      "shouldBe": "remove 'kingfish' - in Virginia 'Kingfish (Roundhead)' is the sea mullet (Menticirrhus), a separate printed row with no limits; keep 'king'",
+      "quote": "KINGFISH (ROUNDHEAD) ... KING MACKEREL Minimum Size Limit: 27 IN. Possession Limit: 3 per person",
+      "sourceUrl": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
+      "id": 12,
+      "status": "pending"
+    },
+    {
+      "existingName": "American Eel",
+      "field": "bagNote",
+      "current": "''",
+      "shouldBe": "25 per person (50 for for-hire captain & mate per 2026 card); DWR Back Bay/North Landing: 25 per day, 9 inch min, no limit with 4VAC15-340-80 permit",
+      "quote": "Possession Limit……………25 per person (50 for hire captain & mate)",
+      "sourceUrl": "https://webapps.mrc.virginia.gov/public/reports/FinfishRegCardMay2026.pdf",
+      "id": 3,
+      "status": "pending"
+    },
+    {
+      "existingName": "Cobia",
+      "field": "notes",
+      "current": "['Gaffing is prohibited.']",
+      "shouldBe": "add 'no towing' from 2026 card: COBIA (no towing or gaffing)",
+      "quote": "COBIA …………………………………………...(no towing or gaffing)",
+      "sourceUrl": "https://webapps.mrc.virginia.gov/public/reports/FinfishRegCardMay2026.pdf",
+      "id": 8,
+      "status": "pending"
+    },
+    {
+      "existingName": "Spotted Seatrout",
+      "field": "zones",
+      "current": "single marine zone",
+      "shouldBe": "add DWR Back Bay zone: Back Bay and tributaries incl. Lake Tecumseh and North Landing River: 4 per day, no fish less than 14 inches",
+      "quote": "Spotted Sea Trout Back Bay and tributaries, including Brinson's Inlet Lake (Lake Tecumseh), and the North Landing River and its tributaries 4 per day, no fish less than 14 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 20,
+      "status": "pending"
+    },
+    {
+      "existingName": "Spotted Seatrout",
+      "field": "aliases",
+      "current": "includes 'trout'",
+      "shouldBe": "drop bare 'trout' (collides with freshwater Trout row); keep 'speckled trout','specks'",
+      "quote": "SPECKLED TROUT (SPOTTED SEATROUT)",
+      "sourceUrl": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
+      "id": 20,
+      "status": "pending"
+    },
+    {
+      "existingName": "Red Drum",
+      "field": "zones",
+      "current": "single marine zone (18-26 slot, 3/person)",
+      "shouldBe": "add DWR Back Bay zone: Back Bay/Lake Tecumseh/North Landing River: 1 per day between 18 and 27 inches",
+      "quote": "Red Drum Back Bay and tributaries, including Brinson's Inlet Lake (Lake Tecumseh), and the North Landing River and its tributaries 1 per day between 18 and 27 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 13,
+      "status": "pending"
+    },
+    {
+      "existingName": "Weakfish",
+      "field": "zones",
+      "current": "single marine zone",
+      "shouldBe": "add DWR Back Bay zone: Back Bay/Lake Tecumseh/North Landing River: 1 per day, no fish less than 12 inches (same numbers, different jurisdiction)",
+      "quote": "Grey Trout Back Bay and tributaries, including Brinson's Inlet Lake (Lake Tecumseh), and the North Landing River and its tributaries 1 per day, no fish less than 12 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 10,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "zones (inland)",
+      "current": "inland zone: 4/day, 20 inch min, statewide only",
+      "shouldBe": "add lake zones: Kerr/Buggs Island (Oct 1-May 31: 2/day aggregate, 20-26 inch slot; Jun 1-Sep 30: 4/day no length limit); Claytor (Sep 16-Jun 30: 2/day, 20 inch min; Jul 1-Sep 15: 4/day no length limit); Gaston (4/day; Oct 1-May 31 20 inch min; Jun 1-Sep 30 none); Smith Mountain Lake (2/day; Nov 1-May 31 no fish 30-40 inches; Jun 1-Oct 31 none)",
+      "quote": "Buggs Island Lake/Kerr Reservoir ... October 1-May 31: 2 per day in the aggregate (combined) No striped bass or hybrid striped bass less than 20 inches or greater than 26 inches June 1-September 30: 4 per day in the aggregate (combined) No length limit ... Claytor Lake and its tributaries September 16-June 30: 2 per day in the aggregate, no striped bass or hybrid bass less than 20 inches July 1-September 15: 4 per day in the aggregate; no length limit ... Lake Gaston 4 per day in the aggregate (combined) October 1-May 31: No striped bass or hybrid striped bass less than 20 inches June 1-September 30: No length limit ... Smith Mountain Lake ... 2 per day in the aggregate (combined) November 1-May 31: No striped bass 30 to 40 inches June 1-October 31: No length limit",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 22,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "zones (Chowan drainage)",
+      "current": "missing",
+      "shouldBe": "add closed zone: Meherrin, Nottoway, Blackwater (Chowan), North Landing and Northwest rivers and tributaries plus Back Bay: No possession",
+      "quote": "Striped bass in the Meherrin, Nottoway, Blackwater (Chowan Drainage), North Landing and Northwest rivers and their tributaries plus Back Bay No possession",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 22,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "zones (anadromous above fall line)",
+      "current": "missing",
+      "shouldBe": "note: anadromous striped bass above the fall line in all Chesapeake Bay coastal rivers and Crane Lake (Suffolk) follow VMRC tidal rules, not the inland 4-fish/20-inch rule",
+      "quote": "Anadromous (coastal) striped bass above the fall line in all coastal rivers of the Chesapeake Bay and Crane Lake (City of Suffolk) Creel and length limits shall be as set by the Virginia Marine Resources Commission for recreational fishing in tidal waters",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 22,
+      "status": "pending"
+    },
+    {
+      "existingName": "Striped Bass",
+      "field": "aliases",
+      "current": "['striper','stripers','rockfish','rock']",
+      "shouldBe": "add 'landlocked striped bass'; hybrids are a separate added row",
+      "quote": "Landlocked Striped Bass and Landlocked Striped Bass X White Bass Hybrids",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 22,
+      "status": "pending"
+    },
+    {
+      "existingName": "Largemouth Bass",
+      "field": "zones",
+      "current": "statewide only (5 aggregate, no length limit)",
+      "shouldBe": "add printed exceptions: Briery Creek Lake (no bass 16-24 in, only 1 >24); Kerr, Gaston, Leesville, Smith Mt. Lake, Dan River below Union St. Dam, Staunton River below Difficult Creek (only 2 of 5 <14 in); Flannagan (no LMB <12); Lake Moomaw (no bass <12); Clinch River (Scott/Wise/Russell/Tazewell), Levisa Fork (Buchanan), N. Fork Holston below Rt 91 (no bass <20, only 1 >20); James River Botetourt to 14th St Bridge and New River Fields Dam to WV line (no bass 14-22, only 1 >22); Potomac tidal tributaries above Rt 301 (no bass <15 Mar 1-Jun 15); Shenandoah N/S Fork and mainstem (no bass 11-14)",
+      "quote": "Briery Creek Lake No largemouth or smallmouth bass 16 to 24 inches, only 1 per day longer than 24 inches ... Buggs Island Lake/Kerr Reservoir Only 2 of 5 largemouth or smallmouth bass less than 14 inches ... Flannagan Reservoir No largemouth bass less than 12 inches; no smallmouth bass less than 15 inches ... Lake Moomaw No largemouth or smallmouth bass less than 12 inches ... James River-Confluence of the Jackson and Cowpasture rivers (Botetourt Cty) downstream to the 14th St. Bridge in Richmond No largemouth or smallmouth bass 14 to 22 inches, only 1 per day longer than 22 inches ... Potomac River - Virginia tidal tributaries above Rt. 301 bridge No largemouth or smallmouth bass less than 15 inches from March 1 through June 15 ... North Fork, South Fork and Mainstem Shenandoah River No largemouth or smallmouth bass 11 to 14 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 30,
+      "status": "pending"
+    },
+    {
+      "existingName": "Smallmouth Bass",
+      "field": "zones",
+      "current": "statewide only",
+      "shouldBe": "same exceptions as Largemouth Bass plus smallmouth-only rules: Claytor Lake (no SMB <14); Flannagan (no SMB <15); South Holston (no SMB <15); Staunton River Leesville Dam to Difficult Creek (no SMB <20, only 1 >20)",
+      "quote": "Claytor Lake No smallmouth less than 14 inches ... South Holston Reservoir No smallmouth less than 15 inches ... Staunton River-Leesville Dam (Campbell County) downstream to the mouth of Difficult Creek, Charlotte County No smallmouth bass less than 20 inches, only 1 per day longer than 20 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 31,
+      "status": "pending"
+    },
+    {
+      "existingName": "Walleye",
+      "field": "zones / aliases",
+      "current": "statewide only; no 'saugeye' alias",
+      "shouldBe": "add alias 'saugeye' (printed in same row); add Claytor Lake and New River upstream to Fries Dam zone: 2 walleye per day, no walleye 19 to 28 inches",
+      "quote": "Walleye, Saugeye 5 per day in the aggregate No walleye or saugeye less than 18 inches | Claytor Lake and the New River upstream to Fries Dam in Grayson County 2 walleye per day; no walleye 19 to 28 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 34,
+      "status": "pending"
+    },
+    {
+      "existingName": "White Bass",
+      "field": "zones",
+      "current": "statewide only (5/day)",
+      "shouldBe": "add South Holston Reservoir: no harvest (catch and release only); Lake Gaston and Kerr incl. Staunton River to Leesville Dam and Dan River to Union St. Dam: 10 per day, no white bass less than 14 inches",
+      "quote": "White Bass ... South Holston Reservoir No harvest or possession (catch and release only) ... Lake Gaston and Buggs Island Lake/Kerr Reservoir ... 10 per day; no white bass less than 14 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 33,
+      "status": "pending"
+    },
+    {
+      "existingName": "Northern Pike",
+      "field": "zones",
+      "current": "statewide only",
+      "shouldBe": "add Lake Gaston and Kerr Reservoir: No daily limit",
+      "quote": "Chain Pickerel and Northern Pike 5 per day | Lake Gaston and Buggs Island Lake/Kerr Reservoir No daily limit",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 37,
+      "status": "pending"
+    },
+    {
+      "existingName": "Chain Pickerel",
+      "field": "zones",
+      "current": "statewide only",
+      "shouldBe": "add Lake Gaston and Kerr Reservoir: No daily limit",
+      "quote": "Chain Pickerel and Northern Pike 5 per day | Lake Gaston and Buggs Island Lake/Kerr Reservoir No daily limit",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 38,
+      "status": "pending"
+    },
+    {
+      "existingName": "Muskellunge",
+      "field": "zones",
+      "current": "statewide only (1/day, 40 in)",
+      "shouldBe": "add New River Claytor Dam to WV line: 1 per day; Jun 1-last day of Feb no muskellunge 40 to 48 inches; Mar 1-May 31 no muskellunge less than 48 inches",
+      "quote": "New River-Claytor Dam downstream to VA-WV state line 1 per day June 1-last day of February: No muskellunge 40 to 48 inches March 1-May 31: No muskellunge less than 48 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 36,
+      "status": "pending"
+    },
+    {
+      "existingName": "Trout",
+      "field": "zones",
+      "current": "statewide 6/day 7 in only",
+      "shouldBe": "add zones: South Holston Reservoir (7/day, only 2 lake trout, no min); Jackson River tailwater Gathright Dam-Westvaco Dam (4/day rainbow+brown, no rainbow 12-16, no brown <20, only 1 brown >20); Lake Moomaw (16 in min, 2/day); Smith River Philpott Dam-Rt 636 (6/day, no brown 10-24, only 1 brown >24, rainbow/brook 7 in); 9-inch special-reg streams (single-hook artificial only, no bait); 16-inch/2-fish streams; 20-inch/1-fish fly-only (Mossy Creek, upper South River); catch-and-release streams; Delayed Harvest waters (Oct 1-May 31 artificial only, no possession; Jun 1-Sep 30 normal)",
+      "quote": "Virginia's trout season is open year-round and the general statewide limits are 6 trout per day, no fish less than 7 inches. ... Jackson River Tailwater ... No rainbow trout 12 to 16 inches; no brown trout less than 20 inches; 4 trout (combined rainbow and brown) creel (harvest) limit per day, only 1 of 4 can be a brown trout over 20 inches ... Lake Moomaw ... 16-inch minimum size limit and 2 fish per day ... Smith River ... No brown trout 10 to 24 inches, only 1 brown trout per day longer than 24 inches ... South Holston Reservoir 7 per day creel (harvest) limit, only 2 of 7 can be a Lake trout; no length limits ... From October 1 through May 31 fishing on the following waters is permitted under specific regulations only: Only artificial lures may be used. No trout may be in possession (catch and release only)",
+      "sourceUrl": "https://dwr.virginia.gov/fishing/trout/special-regulation-trout-waters/",
+      "id": 39,
+      "status": "pending"
+    },
+    {
+      "existingName": "Trout",
+      "field": "aliases",
+      "current": "['brook trout','brown trout','rainbow trout']",
+      "shouldBe": "add 'lake trout','tiger trout','brookie','speckled trout (freshwater)'",
+      "quote": "7 fish per day-only 2 lake trout. No minimum size.",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 39,
+      "status": "pending"
+    },
+    {
+      "existingName": "Crappie",
+      "field": "zones",
+      "current": "statewide 25/day only",
+      "shouldBe": "add: Lake Gaston and New River VA-NC line to New/Little confluence: no daily limit; Kerr incl. Staunton River to Difficult Creek and Dan River to Banister River: no crappie <9 in; Briery Creek and Sandy River reservoirs: no crappie <9 in; Flannagan and South Holston: no crappie <10 in, South Holston 15 per day aggregate",
+      "quote": "Crappie (black or white) 25 per day in the aggregate (combined) No statewide length limits | Lake Gaston and that portion of the New River ... No daily limit | Buggs Island Lake/Kerr Reservoir ... No crappie less than 9 inches | Briery Creek and Sandy River reservoirs No crappie less than 9 inches | Flannagan and South Holston reservoirs No crappie less than 10 inches; South Holston Res. - 15 per day in the aggregate (combined)",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 40,
+      "status": "pending"
+    },
+    {
+      "existingName": "Sunfish",
+      "field": "zones / name",
+      "current": "statewide 50/day only",
+      "shouldBe": "label row 'Bluegill (bream) and other sunfish excluding crappie, rock bass and Roanoke bass'; add Lake Gaston, Kerr (incl. Staunton River to Difficult Creek, Dan River to Banister River) and New River VA-NC line to New/Little confluence: No daily limit",
+      "quote": "Bluegill (bream) and other sunfish excluding Crappie, Rock Bass (redeye) and Roanoke Bass 50 per day in the aggregate (combined) No statewide length limits | Lake Gaston and Buggs Island Lake/Kerr Reservoir ... New River ... No daily limit",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 41,
+      "status": "pending"
+    },
+    {
+      "existingName": "Rock Bass",
+      "field": "aliases / zones",
+      "current": "aliases include 'roanoke bass'; statewide 25 only",
+      "shouldBe": "Roanoke bass is printed as its own row (added); keep 'redeye'. Add: Lake Gaston, Kerr and New River VA-NC line to New/Little confluence: no daily limit; Nottoway, Meherrin, Blackwater (Franklin Co. & Chowan), Falling and Smith rivers: 5 per day combined with Roanoke bass, no rock bass <8 in; South Holston: 20 per day. bagNote: 25 per day in the aggregate with Roanoke bass",
+      "quote": "Rock Bass (redeye) 25 per day in the aggregate with Roanoke bass No statewide length limits | Lake Gaston and Buggs Island Lake/Kerr Reservoir and ... New River ... No daily limit | Nottoway, Meherrin, Blackwater (Franklin County), Blackwater (Chowan), Falling and Smith rivers and their tributaries 5 per day in the aggregate (combined) with Roanoke bass No rock bass less than 8 inches | South Holston Reservoir 20 per day",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 42,
+      "status": "pending"
+    },
+    {
+      "existingName": "Yellow Perch",
+      "field": "zones",
+      "current": "statewide no limit only",
+      "shouldBe": "add Lake Moomaw: 10 per day; Tidal rivers of the Chesapeake Bay below the fall line: no yellow perch less than 9 inches",
+      "quote": "Perch (yellow and white) No statewide daily limit No statewide length limit | Lake Moomaw 10 per day | Tidal rivers of the Chesapeake Bay below the fall line No yellow perch less than 9 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 43,
+      "status": "pending"
+    },
+    {
+      "existingName": "Channel Catfish",
+      "field": "zones / name",
+      "current": "statewide 20/day; aliases flathead, white catfish",
+      "shouldBe": "row is printed as 'Channel, White, and Flathead' - fine as group; add zones: All rivers below the fall line: No daily limit; South Holston Reservoir (all catfish): 20 per day, only 1 catfish longer than 34 inches",
+      "quote": "Catfish Channel, White, and Flathead 20 per day No length limits | All rivers below the fall line No daily limit ... All Catfish South Holston Reservoir 20 per day, only 1 catfish per day longer than 34 inches",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 44,
+      "status": "pending"
+    },
+    {
+      "existingName": "Blue Catfish",
+      "field": "zones",
+      "current": "statewide 20/day only",
+      "shouldBe": "add: Kerr incl. Staunton River to Difficult Creek and Dan River to Banister River: 20 per day, only 1 >32 in; tidal James River and tributaries below fall line to Hog Point-College Creek line: no daily limit, only 1 >32 in; Lake Gaston: no daily limit, only 1 >32 in; all other rivers below the fall line: no daily limit; South Holston: 20/day only 1 >34 in",
+      "quote": "Blue ... Buggs Island Lake/Kerr Reservoir ... 20 per day, except only 1 blue catfish per day longer than 32 inches | James River and its tributaries below the fall line downstream to a line connecting Hog Point ... No daily limit, except only 1 blue catfish per day longer than 32 inches | Lake Gaston No daily limit, except only 1 blue catfish per day longer than 32 inches | All rivers below the fall line other than the tidal James River ... No daily limit",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 45,
+      "status": "pending"
+    },
+    {
+      "existingName": "Longnose Gar",
+      "field": "aliases",
+      "current": "['gar','bowfin']",
+      "shouldBe": "remove 'bowfin' - DWR prints Bowfin as its own row (added in this audit) with the same seasonal limits",
+      "quote": "Longnose Gar July 1 to April 14: 5 per day April 15 to June 30: 1 per day ... Bowfin July 1 to April 14: 5 per day April 15 to June 30: 1 per day",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 46,
+      "status": "pending"
+    },
+    {
+      "existingName": "Longnose Gar",
+      "field": "notes",
+      "current": "none",
+      "shouldBe": "bow and arrow allowed day/night except trout-stocked waters; bow-taken gar must be retained",
+      "quote": "These may be used to take common carp, grass carp, northern snakehead, and gar (fishing license required) during day and night hours (24 hrs.), except from waters stocked with trout. ... Any common carp, grass carp, northern snakehead, goldfish, catfish, longnose gar, or bowfin taken with bow and arrow must be retained",
+      "sourceUrl": "https://dwr.virginia.gov/fishing/regulations/nongame/",
+      "id": 46,
+      "status": "pending"
+    },
+    {
+      "existingName": "Blue Crab",
+      "field": "sizeNote / seasons",
+      "current": "peeler 3.25 to Jul 15 then 3.5; seasons null",
+      "shouldBe": "peeler on Seaside Eastern Shore is 3.25 inches all season; crab pots (up to 2) only Mar 17-Dec 19; licensed 3-5 pots Jun 1-Sep 15 (not Sundays); trotline/pound Apr 15-Oct 15; hand line/collapsible traps/cast net all year; sanctuary closures Area 1A Jun 1-Sep 15, 1B May 16-Sep 15, Area 3 May 9-Sep 15",
+      "quote": "Peeler Crabs March 17-July 15 3.25 inches ... July 16-November 30 3.5 inches ... Seaside Eastern Shore 3.25 inches ... Up to 2 crab pots March 17 - December 19 Licensed 3-5 crab pots June 1 - September 15 Crab trotline or pound/trap April 15 - October 15 Hand line, collapsible recreational traps, cast net All year",
+      "sourceUrl": "https://mrc.virginia.gov/regulations/VA-recreational-crabbing-rules.shtm",
+      "id": 48,
+      "status": "pending"
+    },
+    {
+      "existingName": "Oyster",
+      "field": "seasons",
+      "current": "null ('set each year by area')",
+      "shouldBe": "2026-27 public season now published: hand-tong areas generally October 1, 2026 - May 31, 2027 (James River Areas 1-3 hand tong Oct 1-14 and Mar 1-May 31; Nassawadox Creek Oct 1-Dec 31); Seaside Eastern Shore by hand or hand tong November 1, 2026 - May 31, 2027. Recreational limit remains 1 bushel/person/day (28.2-226)",
+      "quote": "Corrotoman Hand Tong Area October 1, 2026, through May 31, 2027 Hand Tong ... Seaside Eastern Shore November 1, 2026, through May 31, 2027 By Hand or Hand Tong",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter720/section40/",
+      "id": 49,
+      "status": "pending"
+    },
+    {
+      "existingName": "Hard Clam",
+      "field": "notes",
+      "current": "none about vessel cap",
+      "shouldBe": "add: in the Pocomoke and Tangier Sounds Rotation Areas it is unlawful to possess more than 250 hard clams on board any vessel",
+      "quote": "D. In the Pocomoke and Tangier Sounds Rotation Areas, it shall be unlawful to possess on board any vessel more than 250 hard clams.",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title4/agency20/chapter720/section40/",
+      "id": 50,
+      "status": "pending"
+    },
+    {
+      "existingName": "Northern Snakehead",
+      "field": "notes",
+      "current": "['Kill immediately and notify DWR.']",
+      "shouldBe": "add phone and bow rule: notify DWR at (804) 367-2925; bow and arrow allowed day/night except trout-stocked waters; bow-taken snakehead must be retained",
+      "quote": "Anglers may possess snakeheads taken from Virginia waters if they immediately kill the fish and notify the headquarters or a regional office of the department; notification may be made by calling (804) 367-2925.",
+      "sourceUrl": "https://dwr.virginia.gov/wp-content/uploads/media/creel-and-length-limits.pdf",
+      "id": 47,
+      "status": "pending"
+    }
+  ]
+}

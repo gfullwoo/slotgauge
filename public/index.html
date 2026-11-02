@@ -489,9 +489,13 @@ async function geoState(){
   return 'unknown';
 }
 async function resolveState(){
-  GEO_BLOCKED = (await geoState()) === 'denied';
   let override = readOverride(), last = null; try { last = localStorage.getItem(STATE_KEY); } catch(e){}
+  // Always ask for a position before judging. In the Play app Chrome delegates location to the Android
+  // app, and the site permission can still read "denied" while getCurrentPosition works fine — so the
+  // Permissions API is only ever used to word the message, never to decide whether to try.
   const coords = await geoPosition(7000);
+  GEO_BLOCKED = !coords && (await geoState()) === 'denied';
+  if (!coords) override = readOverride();   // re-read: a pick must not expire when nothing can replace it
   if (coords) {
     try {
       const r = await fetch(`/api/locate?lat=${coords.latitude.toFixed(4)}&lon=${coords.longitude.toFixed(4)}`);
@@ -897,8 +901,11 @@ document.addEventListener('click', e => {
 // state list IS the answer; the permission steps are a footnote for the few who want automatic back.
 function locHelp(){
   const android = /Android/i.test(navigator.userAgent), ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  const steps = android
-    ? ['Android Settings → Apps → SlotGauge → Permissions → Location → <b>Allow only while using the app</b>', 'Chrome → ⋮ → Settings → Site settings → Location → <b>slotgauge.com</b> → Allow', 'Force-stop SlotGauge and open it again']
+  const inApp = (() => { try { return sessionStorage.getItem('sg.platform') === 'android' || /[?&]source=android/.test(location.search); } catch(e) { return false; } })();
+  const steps = android && inApp
+    ? ['Android Settings → Apps → SlotGauge → Permissions → Location → <b>Allow only while using the app</b>', 'Force-stop SlotGauge and open it again']
+    : android
+    ? ['Chrome → ⋮ → Settings → Site settings → Location → <b>slotgauge.com</b> → Allow', 'Reload the page']
     : ios ? ['iOS Settings → Privacy &amp; Security → Location Services → <b>on</b>', 'Settings → Safari → Location → <b>Ask</b> or <b>Allow</b>', 'Close SlotGauge and open it again']
     : ['Click the padlock or location icon in the address bar', 'Set Location to <b>Allow</b> for slotgauge.com', 'Reload the page'];
   const live = STATES.filter(s=>s.live);
@@ -919,8 +926,9 @@ $('#locFix').addEventListener('click', async (e) => {
   // browser actually locate us? Never discard a working pick for a location that is blocked — that is
   // what made the app look stuck on its default state.
   const fix = $('#locFix'); fix.disabled = true; const was = fix.textContent; fix.textContent = 'Checking…';
-  const denied = await geoState() === 'denied';
-  const coords = denied ? null : await geoPosition(8000);
+  const coords = await geoPosition(8000);   // try for real first — delegation may answer even when the
+                                            // site permission reads as denied
+  GEO_BLOCKED = !coords && (await geoState()) === 'denied';
   if (coords) { clearOverride(); try { localStorage.removeItem(STATE_KEY); } catch(_){} return location.reload(); }
   fix.disabled = false; fix.textContent = was; drawLoc(); locHelp();
 });

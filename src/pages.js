@@ -297,20 +297,22 @@ export function sitemapAll(pagesByState) {
 
 /** Privacy policy (linked from the app, the Android app and the Play listing). */
 export function privacyPage() {
-  const updated = '2026-10-30';
+  const updated = '2026-11-02';
   const body = `
 <nav class="crumbs"><a href="/">SlotGauge</a> › Privacy</nav>
 <h1>Privacy policy</h1>
-<p style="color:var(--ink-2)">Last updated 2026-10-31. Applies to slotgauge.com, the installed web app, and the SlotGauge Android app and widgets.</p>
+<p style="color:var(--ink-2)">Last updated 2026-11-02. Applies to slotgauge.com, the installed web app, and the SlotGauge Android app and widgets.</p>
 <h2>What SlotGauge does</h2>
 <p>SlotGauge tells you whether a fish is a keeper under your state's current regulations and shows tide predictions for your area. We built it to need as little of your data as possible, and we do not sell or share personal data with advertisers.</p>
 <h2>Information we use</h2>
 <h3>Location</h3>
-<p>If you allow it, your device's approximate location is used to pick the state whose regulations apply and the nearest NOAA tide station. Coordinates are sent to our server only to look up the state (via the U.S. Census geocoder) and the nearest tide stations, and are not stored. The Android widgets use the phone's last known location on the device for the same purpose. You can decline location access and choose a state or tide station by hand.</p>
+<p>If you allow it, your device's approximate location is used to pick the state whose regulations apply and the nearest NOAA tide station. Coordinates are sent to our server to look up the state (via the U.S. Census geocoder), the nearest tide stations and your local forecast; those lookups do not keep them. The one place SlotGauge stores a location is the catch log below, and only for catches you log with “Use my location for conditions” ticked. The Android widgets use the phone's last known location on the device for the same purpose. You can decline location access and choose a state or tide station by hand.</p>
 <h3>Microphone</h3>
 <p>"Say it" uses your browser's built-in speech recognition to turn your words into text. Audio is handled by your browser or phone's speech service (for example Google's on Android) under that provider's policy; SlotGauge only receives the resulting text, which is not stored on our servers. The microphone turns off automatically after a few seconds of silence.</p>
 <h3>Photos</h3>
 <p>"Snap it" sends the photo you choose to our server, where an AI model (Google Vertex AI or Anthropic Claude) identifies the species. If you are not signed in, the photo is discarded after identification. If you sign in and save a catch, the photo and the identification are stored in your gallery until you delete them.</p>
+<h3>Catch log (Pro)</h3>
+<p>If you log a catch, SlotGauge stores what you entered — species, length, weight, the spot name and your notes — with the date and time. If you leave “Use my location for conditions” ticked, it also stores the coordinates of that catch and uses them once to record the tide stage, moon phase, solunar window and weather at that moment. The coordinates stay on the record so Best Windows can compare where and when you catch fish. Untick that box and the catch is saved without any location. Deleting a catch deletes its location and conditions with it, and deleting your account removes the whole log.</p>
 <h3>Account</h3>
 <p>Sign-in is optional and only needed for the gallery. It uses Google sign-in through Firebase Authentication; we store your Google account ID, display name and email so your catches stay yours. Sign out at any time from the account menu. To delete your account and everything tied to it, follow the steps on <a href="/delete-account/">Delete your account</a>.</p>
 <h3>Payments (SlotGauge Pro)</h3>

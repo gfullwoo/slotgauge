@@ -277,6 +277,7 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 /* ---- weather ---- */
 .wx-line{font-size:13px;color:var(--ink-2);margin:-4px 0 10px;cursor:pointer}.wx-line b{color:var(--ink);font-size:14px}.wx-line .wx-place{color:var(--ink-3)}.wx-ico{font-size:1.15em;line-height:1;margin-right:2px}
 .lochelp{margin-top:14px;border-top:1px solid var(--line);padding-top:10px;text-align:left}
+.locdiag{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:6px 8px;word-break:break-word}
 .lochelp summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
 .lochelp ol{line-height:1.7;padding-left:20px;font-size:13px;color:var(--ink-2)}
 .lochelp p{font-size:13px;color:var(--ink-2)}
@@ -483,7 +484,18 @@ function clearOverride(){ try { localStorage.removeItem(STATE_MANUAL); } catch(e
 function overrideLeft(ms){ const h = Math.round(ms / 3600e3); return h >= 2 ? `${h}h` : `${Math.max(1, Math.round(ms / 60e3))}m`; }
 let LOC = { status: 'pending' };   // filled by resolveState; read by initApp for the location chip
 // The browser's own timeout only starts once permission is granted; an unanswered prompt would hang the app, so race a hard timer too.
-function geoPosition(timeout){ return new Promise(res => { if (!navigator.geolocation) return res(null); let done=false; const fin = v => { if (!done) { done=true; res(v); } }; setTimeout(() => fin(null), timeout + 1000); try { navigator.geolocation.getCurrentPosition(p => fin(p.coords), () => fin(null), { timeout, maximumAge: 600000 }); } catch(e) { fin(null); } }); }
+let GEO_ERR = null;   // why the last position request failed — shown in the help panel so a failure is diagnosable
+const GEO_CODES = { 1: 'PERMISSION_DENIED', 2: 'POSITION_UNAVAILABLE', 3: 'TIMEOUT' };
+function geoPosition(timeout){ return new Promise(res => {
+  if (!navigator.geolocation) { GEO_ERR = 'no geolocation API in this browser'; return res(null); }
+  let done=false; const fin = v => { if (!done) { done=true; res(v); } };
+  setTimeout(() => { GEO_ERR = GEO_ERR || `no answer within ${timeout + 1000}ms`; fin(null); }, timeout + 1000);
+  try { navigator.geolocation.getCurrentPosition(
+    p => { GEO_ERR = null; fin(p.coords); },
+    err => { GEO_ERR = `${GEO_CODES[err && err.code] || 'error'}${err && err.message ? ': ' + err.message : ''}`; fin(null); },
+    { timeout, maximumAge: 600000 }); }
+  catch(e) { GEO_ERR = 'threw: ' + (e && e.message); fin(null); }
+}); }
 async function geoState(){
   try { if (navigator.permissions) return (await navigator.permissions.query({ name: 'geolocation' })).state; } catch(e){}
   return 'unknown';
@@ -915,7 +927,8 @@ function locHelp(){
 <div class="list">${opts}</div>
 <label class="keepstate"><input type="checkbox" id="keepState" checked> Keep this state until I change it</label>
 <details class="lochelp"><summary>Prefer it to detect this automatically?</summary>
-<p>Your browser is currently blocking location for slotgauge.com, and only you can unblock it:</p>
+<p class="locdiag">Last attempt: <b>${escapeHtml(GEO_ERR || 'no error recorded')}</b>${inApp ? ' · running in the installed app' : ' · running in a browser tab'}</p>
+<p>Location isn't reaching SlotGauge. If you're in the installed app, the app's own location permission is the one that matters:</p>
 <ol>${steps.map(x=>`<li>${x}</li>`).join('')}</ol>
 <div class="list"><button class="chip" data-state="auto">Try location again</button></div></details></div>`;
   $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});

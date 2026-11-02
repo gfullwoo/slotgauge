@@ -280,6 +280,8 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 .lochelp summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
 .lochelp ol{line-height:1.7;padding-left:20px;font-size:13px;color:var(--ink-2)}
 .lochelp p{font-size:13px;color:var(--ink-2)}
+.keepstate{display:flex;align-items:center;gap:8px;justify-content:center;margin:10px 0 0;font-size:13px;color:var(--ink-2);cursor:pointer}
+.keepstate input{width:auto;cursor:pointer}
 .locfix{font:inherit;font-size:12px;margin-left:6px;padding:4px 10px;border-radius:999px;border:1px solid var(--accent,#0f6f8c);background:transparent;color:var(--accent,#0f6f8c);cursor:pointer;white-space:nowrap}
 .locfix:hover{background:var(--accent,#0f6f8c);color:#fff}
 .locfix:disabled{opacity:.6;cursor:default}
@@ -469,14 +471,14 @@ function readOverride(){
   if (!raw) return null;
   let o; try { o = JSON.parse(raw); } catch(e){ o = null; }
   if (!o || !o.state) o = { state: raw, setAt: Date.now() };          // migrate the old plain-string form
+  // A pick the user explicitly asked to keep never expires. Everything else is a trip: it lapses and
+  // automatic detection — which is never stored and so never expires — takes over again.
+  if (o.pin) return { state: o.state, setAt: o.setAt, msLeft: Infinity, pinned: true };
   const left = o.setAt + OVERRIDE_HOURS * 3600e3 - Date.now();
-  // Expiry only makes sense when there is something to fall back to. With location blocked, expiring the
-  // pick would drop the user on the wrong state every day — so the pick simply stands until they change it.
-  if (GEO_BLOCKED) return { state: o.state, setAt: o.setAt, msLeft: Infinity, pinned: true };
   if (left <= 0) { clearOverride(); return null; }
   return { state: o.state, setAt: o.setAt, msLeft: left };
 }
-function setOverride(st){ try { localStorage.setItem(STATE_MANUAL, JSON.stringify({ state: st, setAt: Date.now() })); localStorage.setItem(STATE_KEY, st); } catch(e){} }
+function setOverride(st, pin){ try { localStorage.setItem(STATE_MANUAL, JSON.stringify({ state: st, setAt: Date.now(), pin: !!pin })); localStorage.setItem(STATE_KEY, st); } catch(e){} }
 function clearOverride(){ try { localStorage.removeItem(STATE_MANUAL); } catch(e){} }
 function overrideLeft(ms){ const h = Math.round(ms / 3600e3); return h >= 2 ? `${h}h` : `${Math.max(1, Math.round(ms / 60e3))}m`; }
 let LOC = { status: 'pending' };   // filled by resolveState; read by initApp for the location chip
@@ -850,7 +852,7 @@ function drawLoc(){
   chip.classList.remove('ok','warn');
   fix.hidden = true; fix.textContent = ''; fix.dataset.act = '';
   if (o) {
-    txt.textContent = `${STATE_NAME} · you picked this`;
+    txt.textContent = o.pinned ? `${STATE_NAME} · kept by you` : `${STATE_NAME} · you picked this`;
     chip.classList.add('ok');
     fix.hidden = false; fix.textContent = o.pinned ? 'Use my location' : `Use my location (expires in ${overrideLeft(o.msLeft)})`; fix.dataset.act = 'auto';
     return;
@@ -875,15 +877,17 @@ function pickState(){
   const live = STATES.filter(s=>s.live);
   const opts = live.map(s=>`<button class="chip${s.code===STATE?' on':''}" data-state="${s.code}">${escapeHtml(s.name)}<span style="color:var(--ink-3)">· ${s.species}</span></button>`).join('');
   const auto = `<button class="chip" data-state="auto">Use my location</button>`;
+  const keep = `<label class="keepstate"><input type="checkbox" id="keepState"${LOC.override && LOC.override.pinned ? ' checked' : ''}> Keep this state until I change it</label>`;
   const o = LOC.override;
-  const why = o ? `<p class="hint">You're showing <b>${escapeHtml(STATE_NAME)}</b> because you picked it.${o.pinned ? ' It stays until you change it, because your browser is blocking location.' : ` It goes back to your location automatically in ${overrideLeft(o.msLeft)}.`}</p>`
+  const why = o ? `<p class="hint">You're showing <b>${escapeHtml(STATE_NAME)}</b> because you picked it.${o.pinned ? ' It stays until you change it.' : ` It goes back to your location automatically in ${overrideLeft(o.msLeft)}.`}</p>`
     : LOC.status === 'off' ? `<p class="hint">Location is off, so SlotGauge is showing ${escapeHtml(STATE_NAME)}. Turning location on keeps this right by itself.</p>` : '';
-  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3>${why}<p>Rules and seasons differ by state. Pick where you're fishing${GEO_BLOCKED ? ' and SlotGauge stays on it until you change it' : `, and SlotGauge shows it for the next ${OVERRIDE_HOURS} hours before going back to your location`}.</p><div class="list">${opts}${auto}</div><p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>`;
+  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3>${why}<p>Rules and seasons differ by state. Pick where you're fishing and SlotGauge shows it for the next ${OVERRIDE_HOURS} hours, then goes back to your location — unless you tick the box below to keep it.</p><div class="list">${opts}${auto}</div>${keep}<p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>`;
   $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
 }
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-state]'); if (!b) return;
-  if (b.dataset.state === 'auto') { clearOverride(); try { localStorage.removeItem(STATE_KEY); } catch(_){} } else setOverride(b.dataset.state);
+  const pin = !!document.querySelector('#keepState')?.checked;
+  if (b.dataset.state === 'auto') { clearOverride(); try { localStorage.removeItem(STATE_KEY); } catch(_){} } else setOverride(b.dataset.state, pin);
   location.reload();
 });
 // "Use my location" used to clear the pick and reload — and when the browser had location blocked it
@@ -900,8 +904,9 @@ function locHelp(){
   const live = STATES.filter(s=>s.live);
   const opts = live.map(s=>`<button class="chip${s.code===STATE?' on':''}" data-state="${s.code}">${escapeHtml(s.name)}</button>`).join('');
   $('#out').innerHTML = `<div class="picker"><h3>Where are you fishing?</h3>
-<p>Pick a state and SlotGauge stays on it${GEO_BLOCKED ? '' : ` for ${OVERRIDE_HOURS} hours`}. You can change it any time by tapping the location chip.</p>
+<p>Pick a state and SlotGauge shows it for ${OVERRIDE_HOURS} hours, or tick the box to keep it until you change it. You can change it any time by tapping the location chip.</p>
 <div class="list">${opts}</div>
+<label class="keepstate"><input type="checkbox" id="keepState" checked> Keep this state until I change it</label>
 <details class="lochelp"><summary>Prefer it to detect this automatically?</summary>
 <p>Your browser is currently blocking location for slotgauge.com, and only you can unblock it:</p>
 <ol>${steps.map(x=>`<li>${x}</li>`).join('')}</ol>

@@ -16,7 +16,8 @@
     "test": "NODE_ENV=test node --test test/*.test.js",
     "watch-sources": "node scripts/watch-sources.js",
     "extract": "node scripts/extract-state.js",
-    "species-info": "node scripts/fetch-species-info.js"
+    "species-info": "node scripts/fetch-species-info.js",
+    "readme": "node scripts/readme-coverage.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.127.0",

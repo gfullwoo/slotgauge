@@ -70,6 +70,22 @@ object TideData {
         j.getJSONArray("stations").let { a -> (0 until a.length()).map { parseStation(a.getJSONObject(it)) } }
     } catch (e: Exception) { emptyList() }
 
+    /**
+     * The state the phone is standing in, resolved by this app rather than by the browser.
+     *
+     * Chrome's location delegation into a Trusted Web Activity proved unreliable ("NoTwaFound"), and the
+     * app already holds the location permission for the widgets — so it resolves the state itself and
+     * hands the two-letter code to the web layer at launch. Only a state code crosses over, never
+     * coordinates. Short timeouts: this runs on the splash screen and must never hold the app up.
+     */
+    fun stateHere(ctx: Context): String? {
+        val loc = lastLocation(ctx) ?: return null
+        return try {
+            val j = getJson("$SITE/api/locate?lat=%.4f&lon=%.4f".format(java.util.Locale.US, loc.latitude, loc.longitude), 1500, 2000)
+            if (!j.optBoolean("supported", false)) null else j.optString("state", "").takeIf { it.length == 2 }
+        } catch (e: Exception) { null }
+    }
+
     fun lastLocation(ctx: Context): Location? {
         if (ContextCompat.checkSelfPermission(ctx, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) return null
         val lm = ctx.getSystemService(Context.LOCATION_SERVICE) as LocationManager
@@ -97,9 +113,9 @@ object TideData {
     } catch (e: Exception) { "" }
 
     // ---- helpers ----
-    private fun getJson(url: String): JSONObject {
+    private fun getJson(url: String, connectMs: Int = 10_000, readMs: Int = 15_000): JSONObject {
         val c = URL(url).openConnection() as HttpURLConnection
-        c.connectTimeout = 10_000; c.readTimeout = 15_000
+        c.connectTimeout = connectMs; c.readTimeout = readMs
         c.setRequestProperty("User-Agent", "SlotGauge-Android/1.0")
         try {
             if (c.responseCode !in 200..299) throw IllegalStateException("HTTP ${c.responseCode}")

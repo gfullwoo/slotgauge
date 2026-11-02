@@ -51,8 +51,26 @@ class MainActivity : ComponentActivity() {
         } else launchSite()
     }
 
+    /**
+     * Resolve the state natively and pass it to the web layer, then launch. Chrome's geolocation
+     * delegation does not reliably reach a TWA, but this app has the location permission already, so it
+     * answers the question itself. Capped at ~2s on a background thread; if it is slow or fails we launch
+     * without it and the page falls back to browser geolocation or the user's own pick.
+     */
     private fun launchSite() {
-        val url: Uri = intent?.data?.takeIf { it.host == getString(R.string.host) } ?: Uri.parse("${TideData.SITE}/?source=android")
+        val base: Uri = intent?.data?.takeIf { it.host == getString(R.string.host) } ?: Uri.parse("${TideData.SITE}/?source=android")
+        val done = java.util.concurrent.atomic.AtomicBoolean(false)
+        val go = { st: String? ->
+            if (done.compareAndSet(false, true)) {
+                val u = if (st != null && base.getQueryParameter("state") == null) base.buildUpon().appendQueryParameter("state", st).build() else base
+                runOnUiThread { openTwa(u) }
+            }
+        }
+        Thread { go(try { TideData.stateHere(this) } catch (e: Exception) { null }) }.start()
+        android.os.Handler(mainLooper).postDelayed({ go(null) }, 2200)   // never let the lookup hold the splash
+    }
+
+    private fun openTwa(url: Uri) {
         try {
             startActivity(Intent(this, LauncherActivity::class.java).setAction(Intent.ACTION_VIEW).setData(url))
         } catch (e: Exception) {

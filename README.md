@@ -45,7 +45,7 @@ page-by-page against their official regulations, so they may still be missing sp
 | **Moon & solunar** | Phase, illumination, moonrise/set and the four solunar windows (moon overhead, underfoot, rise, set), computed locally — no API key. | Free |
 | **Catch log** | Every logged fish is auto-stamped with the tide stage, moon phase, solunar window and weather at that moment. | Pro |
 | **Best windows** | Reads your own log back: which tide stage, moon phase, time of day and wind you actually catch fish in, and which upcoming windows match. | Pro |
-| **Android app** | Trusted Web Activity with 1×1 and 2×1 tide widgets and a microphone shortcut. | Free |
+| **Android app** | Trusted Web Activity with 1×1 and 2×1 tide widgets and a microphone shortcut. The app resolves the state natively and passes it to the page as `?state=XX`, because Chrome's geolocation delegation into a TWA is unreliable (`NoTwaFound`); only a state code crosses over, never coordinates. | Free |
 
 SlotGauge Pro is $19.99/year or $2.99/month through Stripe. Tides stay usable for free; the planning features are Pro.
 

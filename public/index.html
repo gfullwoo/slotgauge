@@ -505,6 +505,15 @@ async function resolveState(){
   // Always ask for a position before judging. In the Play app Chrome delegates location to the Android
   // app, and the site permission can still read "denied" while getCurrentPosition works fine — so the
   // Permissions API is only ever used to word the message, never to decide whether to try.
+  // The installed Android app resolves the state itself and passes it as ?state=XX, because Chrome's
+  // geolocation delegation into a Trusted Web Activity cannot be relied on. It is still the device's own
+  // location, so it ranks with detection — above a remembered state, below an explicit pick.
+  let fromApp = null;
+  try {
+    const q = new URLSearchParams(location.search).get('state');
+    if (q && /^[A-Za-z]{2}$/.test(q)) { fromApp = q.toUpperCase(); sessionStorage.setItem('sg.appState', fromApp); }
+    else fromApp = sessionStorage.getItem('sg.appState');
+  } catch (e) {}
   const coords = await geoPosition(7000);
   GEO_BLOCKED = !coords && (await geoState()) === 'denied';
   if (!coords) override = readOverride();   // re-read: a pick must not expire when nothing can replace it
@@ -518,6 +527,7 @@ async function resolveState(){
   // Standing in the state you picked makes the pick redundant — drop it and go back to automatic.
   if (override && LOC.status === 'ok' && LOC.state === override.state) { clearOverride(); override = null; }
   LOC.override = override;
+  if (LOC.status !== 'ok' && fromApp) LOC = { status: 'ok', state: fromApp, name: null, supported: true, viaApp: true };
   LOC.fallback = !override && LOC.status !== 'ok' && !!last;   // showing a remembered state, not a known one
   LOC.defaulted = !override && LOC.status !== 'ok' && !last;   // ... or the built-in default, which is a guess
   const st = (override && override.state) || (LOC.status === 'ok' && LOC.state) || last || 'DE';
@@ -879,7 +889,7 @@ function drawLoc(){
     else txt.textContent = `${STATE_NAME} · from your location`;
     return;
   }
-  if (LOC.status === 'ok' && LOC.state) txt.textContent = `Located in ${LOC.name} · showing ${STATE_NAME}`;
+  if (LOC.status === 'ok' && LOC.state) txt.textContent = LOC.viaApp ? `Located in ${LOC.state} · showing ${STATE_NAME}` : `Located in ${LOC.name} · showing ${STATE_NAME}`;
   else if (LOC.status === 'ok') txt.textContent = `${LOC.detected ? LOC.detected + ' not covered yet' : 'Far from covered waters'} · showing ${STATE_NAME}`;
   else if (LOC.status === 'off') {
     chip.classList.add('warn');

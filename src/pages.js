@@ -276,7 +276,12 @@ ${groups.map((h) => `<h2 data-h="${h}"><a href="/${st.slug}/${h}/" style="color:
     const urls = [{ loc: SITE + '/', p: '1.0' }, { loc: `${SITE}/${st.slug}/`, p: '0.9' }, { loc: `${SITE}/${st.slug}/species/`, p: '0.8' },
       ...['saltwater', 'freshwater', 'shellfish'].filter((h) => species.some((s) => s.habitat === h)).map((h) => ({ loc: `${SITE}/${st.slug}/${h}/`, p: '0.8' })),
       ...species.map((s) => ({ loc: SITE + urlOf(s), p: '0.7' }))];
-    return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${u.loc}</loc><lastmod>${regs.scraped}</lastmod><changefreq>weekly</changefreq><priority>${u.p}</priority></url>`).join('\n')}\n</urlset>\n`;
+    // lastmod must move when the rules move, or Google has no reason to recrawl a page it already has.
+    // `scraped` is when the source text was captured; `reviewed` is the newest hand-check in the overlay,
+    // which is what actually changes when an audit corrects a species.
+    const reviewed = regs.species.map((sp) => sp.reviewed).filter(Boolean).sort().pop();
+    const lastmod = [regs.scraped, reviewed].filter(Boolean).sort().pop();
+    return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${u.loc}</loc><lastmod>${lastmod}</lastmod><changefreq>weekly</changefreq><priority>${u.p}</priority></url>`).join('\n')}\n</urlset>\n`;
   }
 
   return { speciesPage, hubPage, statePage, directoryPage, sitemap, slugOf, urlOf, bySlug, state: st, species };

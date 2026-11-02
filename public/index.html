@@ -276,6 +276,10 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 
 /* ---- weather ---- */
 .wx-line{font-size:13px;color:var(--ink-2);margin:-4px 0 10px;cursor:pointer}.wx-line b{color:var(--ink);font-size:14px}.wx-line .wx-place{color:var(--ink-3)}.wx-ico{font-size:1.15em;line-height:1;margin-right:2px}
+.lochelp{margin-top:14px;border-top:1px solid var(--line);padding-top:10px;text-align:left}
+.lochelp summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
+.lochelp ol{line-height:1.7;padding-left:20px;font-size:13px;color:var(--ink-2)}
+.lochelp p{font-size:13px;color:var(--ink-2)}
 .locfix{font:inherit;font-size:12px;margin-left:6px;padding:4px 10px;border-radius:999px;border:1px solid var(--accent,#0f6f8c);background:transparent;color:var(--accent,#0f6f8c);cursor:pointer;white-space:nowrap}
 .locfix:hover{background:var(--accent,#0f6f8c);color:#fff}
 .locfix:disabled{opacity:.6;cursor:default}
@@ -459,12 +463,16 @@ const STATE_KEY = 'sg.state', STATE_MANUAL = 'sg.stateManual';
 // A manual state pick is a trip, not a setting: it expires so the app can never be stuck showing the
 // wrong state the way a permanent override could. Location is always the default when no pick is live.
 const OVERRIDE_HOURS = 24;
+let GEO_BLOCKED = false;   // browser permission is 'denied': location can never take over on its own
 function readOverride(){
   let raw = null; try { raw = localStorage.getItem(STATE_MANUAL); } catch(e){ return null; }
   if (!raw) return null;
   let o; try { o = JSON.parse(raw); } catch(e){ o = null; }
   if (!o || !o.state) o = { state: raw, setAt: Date.now() };          // migrate the old plain-string form
   const left = o.setAt + OVERRIDE_HOURS * 3600e3 - Date.now();
+  // Expiry only makes sense when there is something to fall back to. With location blocked, expiring the
+  // pick would drop the user on the wrong state every day — so the pick simply stands until they change it.
+  if (GEO_BLOCKED) return { state: o.state, setAt: o.setAt, msLeft: Infinity, pinned: true };
   if (left <= 0) { clearOverride(); return null; }
   return { state: o.state, setAt: o.setAt, msLeft: left };
 }
@@ -474,7 +482,12 @@ function overrideLeft(ms){ const h = Math.round(ms / 3600e3); return h >= 2 ? `$
 let LOC = { status: 'pending' };   // filled by resolveState; read by initApp for the location chip
 // The browser's own timeout only starts once permission is granted; an unanswered prompt would hang the app, so race a hard timer too.
 function geoPosition(timeout){ return new Promise(res => { if (!navigator.geolocation) return res(null); let done=false; const fin = v => { if (!done) { done=true; res(v); } }; setTimeout(() => fin(null), timeout + 1000); try { navigator.geolocation.getCurrentPosition(p => fin(p.coords), () => fin(null), { timeout, maximumAge: 600000 }); } catch(e) { fin(null); } }); }
+async function geoState(){
+  try { if (navigator.permissions) return (await navigator.permissions.query({ name: 'geolocation' })).state; } catch(e){}
+  return 'unknown';
+}
 async function resolveState(){
+  GEO_BLOCKED = (await geoState()) === 'denied';
   let override = readOverride(), last = null; try { last = localStorage.getItem(STATE_KEY); } catch(e){}
   const coords = await geoPosition(7000);
   if (coords) {
@@ -839,7 +852,7 @@ function drawLoc(){
   if (o) {
     txt.textContent = `${STATE_NAME} · you picked this`;
     chip.classList.add('ok');
-    fix.hidden = false; fix.textContent = `Use my location (expires in ${overrideLeft(o.msLeft)})`; fix.dataset.act = 'auto';
+    fix.hidden = false; fix.textContent = o.pinned ? 'Use my location' : `Use my location (expires in ${overrideLeft(o.msLeft)})`; fix.dataset.act = 'auto';
     return;
   }
   if (LOC.status === 'ok' && LOC.state === STATE) {
@@ -863,9 +876,9 @@ function pickState(){
   const opts = live.map(s=>`<button class="chip${s.code===STATE?' on':''}" data-state="${s.code}">${escapeHtml(s.name)}<span style="color:var(--ink-3)">· ${s.species}</span></button>`).join('');
   const auto = `<button class="chip" data-state="auto">Use my location</button>`;
   const o = LOC.override;
-  const why = o ? `<p class="hint">You're showing <b>${escapeHtml(STATE_NAME)}</b> because you picked it. It goes back to your location automatically in ${overrideLeft(o.msLeft)}.</p>`
+  const why = o ? `<p class="hint">You're showing <b>${escapeHtml(STATE_NAME)}</b> because you picked it.${o.pinned ? ' It stays until you change it, because your browser is blocking location.' : ` It goes back to your location automatically in ${overrideLeft(o.msLeft)}.`}</p>`
     : LOC.status === 'off' ? `<p class="hint">Location is off, so SlotGauge is showing ${escapeHtml(STATE_NAME)}. Turning location on keeps this right by itself.</p>` : '';
-  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3>${why}<p>Rules and seasons differ by state. Pick where you're fishing and SlotGauge shows it for the next ${OVERRIDE_HOURS} hours, then goes back to your location.</p><div class="list">${opts}${auto}</div><p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>`;
+  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3>${why}<p>Rules and seasons differ by state. Pick where you're fishing${GEO_BLOCKED ? ' and SlotGauge stays on it until you change it' : `, and SlotGauge shows it for the next ${OVERRIDE_HOURS} hours before going back to your location`}.</p><div class="list">${opts}${auto}</div><p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>`;
   $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
 }
 document.addEventListener('click', e => {
@@ -876,18 +889,23 @@ document.addEventListener('click', e => {
 // "Use my location" used to clear the pick and reload — and when the browser had location blocked it
 // silently fell through to the built-in default, which looked exactly like being stuck. Now we ask for a
 // fix first and say plainly when the browser is the thing refusing.
-async function geoState(){
-  try { if (navigator.permissions) return (await navigator.permissions.query({ name: 'geolocation' })).state; } catch(e){}
-  return 'unknown';
-}
+// When location is unavailable the user needs an answer in one tap, not a settings walkthrough. The
+// state list IS the answer; the permission steps are a footnote for the few who want automatic back.
 function locHelp(){
   const android = /Android/i.test(navigator.userAgent), ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   const steps = android
-    ? ['Android Settings → Apps → SlotGauge → Permissions → Location → <b>Allow only while using the app</b>', 'Then Chrome → ⋮ → Settings → Site settings → Location → <b>slotgauge.com</b> → Allow', 'Force-stop SlotGauge and open it again']
-    : ios ? ['iOS Settings → Privacy &amp; Security → Location Services → <b>on</b>', 'Settings → Safari → Location → <b>Ask</b> or <b>Allow</b>', 'Close the SlotGauge tab or app and open it again']
+    ? ['Android Settings → Apps → SlotGauge → Permissions → Location → <b>Allow only while using the app</b>', 'Chrome → ⋮ → Settings → Site settings → Location → <b>slotgauge.com</b> → Allow', 'Force-stop SlotGauge and open it again']
+    : ios ? ['iOS Settings → Privacy &amp; Security → Location Services → <b>on</b>', 'Settings → Safari → Location → <b>Ask</b> or <b>Allow</b>', 'Close SlotGauge and open it again']
     : ['Click the padlock or location icon in the address bar', 'Set Location to <b>Allow</b> for slotgauge.com', 'Reload the page'];
-  const kept = LOC.override ? ` Your <b>${escapeHtml(STATE_NAME)}</b> pick has been kept so you aren't left on the wrong rules.` : '';
-  $('#out').innerHTML = `<div class="picker"><h3>Your browser is blocking location</h3><p>SlotGauge can't read where you are, so it is showing ${escapeHtml(STATE_NAME)}.${kept} That block is a browser setting — the app can't change it for you.</p><ol class="hint" style="text-align:left;line-height:1.7;padding-left:20px">${steps.map(x=>`<li>${x}</li>`).join('')}</ol><p>Or keep picking your state by hand — that works fine, it just expires after ${OVERRIDE_HOURS} hours.</p><div class="list"><button class="chip" data-state="auto">Try location again</button></div></div>`;
+  const live = STATES.filter(s=>s.live);
+  const opts = live.map(s=>`<button class="chip${s.code===STATE?' on':''}" data-state="${s.code}">${escapeHtml(s.name)}</button>`).join('');
+  $('#out').innerHTML = `<div class="picker"><h3>Where are you fishing?</h3>
+<p>Pick a state and SlotGauge stays on it${GEO_BLOCKED ? '' : ` for ${OVERRIDE_HOURS} hours`}. You can change it any time by tapping the location chip.</p>
+<div class="list">${opts}</div>
+<details class="lochelp"><summary>Prefer it to detect this automatically?</summary>
+<p>Your browser is currently blocking location for slotgauge.com, and only you can unblock it:</p>
+<ol>${steps.map(x=>`<li>${x}</li>`).join('')}</ol>
+<div class="list"><button class="chip" data-state="auto">Try location again</button></div></details></div>`;
   $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
 }
 $('#locFix').addEventListener('click', async (e) => {

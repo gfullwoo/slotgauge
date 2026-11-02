@@ -276,6 +276,10 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 
 /* ---- weather ---- */
 .wx-line{font-size:13px;color:var(--ink-2);margin:-4px 0 10px;cursor:pointer}.wx-line b{color:var(--ink);font-size:14px}.wx-line .wx-place{color:var(--ink-3)}.wx-ico{font-size:1.15em;line-height:1;margin-right:2px}
+.locfix{font:inherit;font-size:12px;margin-left:6px;padding:4px 10px;border-radius:999px;border:1px solid var(--accent,#0f6f8c);background:transparent;color:var(--accent,#0f6f8c);cursor:pointer;white-space:nowrap}
+.locfix:hover{background:var(--accent,#0f6f8c);color:#fff}
+.locfix:disabled{opacity:.6;cursor:default}
+.chip.warn .dot{background:#c7861f}
 .tv-wx{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
 /* --- moon & solunar --- */
 .tv-moon{margin-top:12px}
@@ -370,7 +374,7 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 <div class="hero" id="hero" hidden><img id="heroImg" alt=""><div class="cap"><b id="heroName"></b><span id="heroSub"></span></div></div>
 
 <div class="chips" id="ctx">
-  <span class="chip" id="locChip"><span class="dot"></span><span id="locTxt">Locating…</span></span>
+  <span class="chip" id="locChip"><span class="dot"></span><span id="locTxt">Locating…</span></span><button class="locfix" id="locFix" type="button" hidden></button>
   <span class="chip" id="zoneChip" role="button" tabindex="0" title="Tap to cycle water type"><span id="zoneTxt">State waters</span> ▾</span>
 </div>
 
@@ -452,11 +456,26 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 
 <script>
 const STATE_KEY = 'sg.state', STATE_MANUAL = 'sg.stateManual';
+// A manual state pick is a trip, not a setting: it expires so the app can never be stuck showing the
+// wrong state the way a permanent override could. Location is always the default when no pick is live.
+const OVERRIDE_HOURS = 24;
+function readOverride(){
+  let raw = null; try { raw = localStorage.getItem(STATE_MANUAL); } catch(e){ return null; }
+  if (!raw) return null;
+  let o; try { o = JSON.parse(raw); } catch(e){ o = null; }
+  if (!o || !o.state) o = { state: raw, setAt: Date.now() };          // migrate the old plain-string form
+  const left = o.setAt + OVERRIDE_HOURS * 3600e3 - Date.now();
+  if (left <= 0) { clearOverride(); return null; }
+  return { state: o.state, setAt: o.setAt, msLeft: left };
+}
+function setOverride(st){ try { localStorage.setItem(STATE_MANUAL, JSON.stringify({ state: st, setAt: Date.now() })); localStorage.setItem(STATE_KEY, st); } catch(e){} }
+function clearOverride(){ try { localStorage.removeItem(STATE_MANUAL); } catch(e){} }
+function overrideLeft(ms){ const h = Math.round(ms / 3600e3); return h >= 2 ? `${h}h` : `${Math.max(1, Math.round(ms / 60e3))}m`; }
 let LOC = { status: 'pending' };   // filled by resolveState; read by initApp for the location chip
 // The browser's own timeout only starts once permission is granted; an unanswered prompt would hang the app, so race a hard timer too.
 function geoPosition(timeout){ return new Promise(res => { if (!navigator.geolocation) return res(null); let done=false; const fin = v => { if (!done) { done=true; res(v); } }; setTimeout(() => fin(null), timeout + 1000); try { navigator.geolocation.getCurrentPosition(p => fin(p.coords), () => fin(null), { timeout, maximumAge: 600000 }); } catch(e) { fin(null); } }); }
 async function resolveState(){
-  let manual = null, last = null; try { manual = localStorage.getItem(STATE_MANUAL); last = localStorage.getItem(STATE_KEY); } catch(e){}
+  let override = readOverride(), last = null; try { last = localStorage.getItem(STATE_KEY); } catch(e){}
   const coords = await geoPosition(7000);
   if (coords) {
     try {
@@ -465,7 +484,12 @@ async function resolveState(){
       else LOC = { status: 'error' };
     } catch(e) { LOC = { status: 'error' }; }
   } else LOC = { status: 'off' };
-  const st = manual || (LOC.status === 'ok' && LOC.state) || last || 'DE';
+  // Standing in the state you picked makes the pick redundant — drop it and go back to automatic.
+  if (override && LOC.status === 'ok' && LOC.state === override.state) { clearOverride(); override = null; }
+  LOC.override = override;
+  LOC.fallback = !override && LOC.status !== 'ok' && !!last;   // showing a remembered state, not a known one
+  LOC.defaulted = !override && LOC.status !== 'ok' && !last;   // ... or the built-in default, which is a guess
+  const st = (override && override.state) || (LOC.status === 'ok' && LOC.state) || last || 'DE';
   try { localStorage.setItem(STATE_KEY, st); } catch(e){}
   return st;
 }
@@ -805,32 +829,77 @@ $('#zoneChip').addEventListener('keydown', e=>{ if (e.key==='Enter'||e.key===' '
 // ---------- location + state ----------
 let STATES = [];
 fetch('/api/states').then(r=>r.json()).then(j=>{ STATES = j.states; }).catch(()=>{});
+// The chip must always answer "why am I seeing this state?" — a wrong state the user cannot explain is
+// the difference between a tool they trust and one they stop using.
 function drawLoc(){
-  const chip=$('#locChip'), txt=$('#locTxt');
-  let manual = null; try { manual = localStorage.getItem(STATE_MANUAL); } catch(e){}
-  chip.classList.remove('ok');
-  if (manual) { txt.textContent = `${STATE_NAME} rules · chosen`; chip.classList.add('ok'); return; }
+  const chip=$('#locChip'), txt=$('#locTxt'), fix=$('#locFix');
+  const o = LOC.override;
+  chip.classList.remove('ok','warn');
+  fix.hidden = true; fix.textContent = ''; fix.dataset.act = '';
+  if (o) {
+    txt.textContent = `${STATE_NAME} · you picked this`;
+    chip.classList.add('ok');
+    fix.hidden = false; fix.textContent = `Use my location (expires in ${overrideLeft(o.msLeft)})`; fix.dataset.act = 'auto';
+    return;
+  }
   if (LOC.status === 'ok' && LOC.state === STATE) {
     chip.classList.add('ok');
     if (LOC.offshore) { txt.textContent = `Near ${STATE_NAME} · likely federal waters`; if (ZONES.federal) setZone('federal'); }
     else txt.textContent = `${STATE_NAME} · from your location`;
+    return;
   }
-  else if (LOC.status === 'ok' && LOC.state) txt.textContent = `Located in ${LOC.name} · showing ${STATE_NAME}`;
+  if (LOC.status === 'ok' && LOC.state) txt.textContent = `Located in ${LOC.name} · showing ${STATE_NAME}`;
   else if (LOC.status === 'ok') txt.textContent = `${LOC.detected ? LOC.detected + ' not covered yet' : 'Far from covered waters'} · showing ${STATE_NAME}`;
-  else if (LOC.status === 'off') txt.textContent = `Location off · ${STATE_NAME} rules`;
+  else if (LOC.status === 'off') {
+    chip.classList.add('warn');
+    txt.textContent = LOC.defaulted ? `Location off · showing ${STATE_NAME} by default` : `Location off · showing ${STATE_NAME}`;
+    fix.hidden = false; fix.textContent = 'Turn on location'; fix.dataset.act = 'retry';
+  }
+  else if (LOC.status === 'error') { chip.classList.add('warn'); txt.textContent = `Couldn't check your location · showing ${STATE_NAME}`; fix.hidden = false; fix.textContent = 'Try again'; fix.dataset.act = 'retry'; }
   else txt.textContent = `${STATE_NAME} rules`;
 }
 function pickState(){
   const live = STATES.filter(s=>s.live);
   const opts = live.map(s=>`<button class="chip${s.code===STATE?' on':''}" data-state="${s.code}">${escapeHtml(s.name)}<span style="color:var(--ink-3)">· ${s.species}</span></button>`).join('');
   const auto = `<button class="chip" data-state="auto">Use my location</button>`;
-  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3><p>Rules and seasons differ by state. Pick where you're fishing; SlotGauge remembers it until you switch back to your location.</p><div class="list">${opts}${auto}</div><p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>`;
+  const o = LOC.override;
+  const why = o ? `<p class="hint">You're showing <b>${escapeHtml(STATE_NAME)}</b> because you picked it. It goes back to your location automatically in ${overrideLeft(o.msLeft)}.</p>`
+    : LOC.status === 'off' ? `<p class="hint">Location is off, so SlotGauge is showing ${escapeHtml(STATE_NAME)}. Turning location on keeps this right by itself.</p>` : '';
+  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3>${why}<p>Rules and seasons differ by state. Pick where you're fishing and SlotGauge shows it for the next ${OVERRIDE_HOURS} hours, then goes back to your location.</p><div class="list">${opts}${auto}</div><p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>`;
   $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
 }
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-state]'); if (!b) return;
-  try { if (b.dataset.state === 'auto') { localStorage.removeItem(STATE_MANUAL); localStorage.removeItem(STATE_KEY); } else { localStorage.setItem(STATE_MANUAL, b.dataset.state); localStorage.setItem(STATE_KEY, b.dataset.state); } } catch(_){}
+  if (b.dataset.state === 'auto') { clearOverride(); try { localStorage.removeItem(STATE_KEY); } catch(_){} } else setOverride(b.dataset.state);
   location.reload();
+});
+// "Use my location" used to clear the pick and reload — and when the browser had location blocked it
+// silently fell through to the built-in default, which looked exactly like being stuck. Now we ask for a
+// fix first and say plainly when the browser is the thing refusing.
+async function geoState(){
+  try { if (navigator.permissions) return (await navigator.permissions.query({ name: 'geolocation' })).state; } catch(e){}
+  return 'unknown';
+}
+function locHelp(){
+  const android = /Android/i.test(navigator.userAgent), ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const steps = android
+    ? ['Android Settings → Apps → SlotGauge → Permissions → Location → <b>Allow only while using the app</b>', 'Then Chrome → ⋮ → Settings → Site settings → Location → <b>slotgauge.com</b> → Allow', 'Force-stop SlotGauge and open it again']
+    : ios ? ['iOS Settings → Privacy &amp; Security → Location Services → <b>on</b>', 'Settings → Safari → Location → <b>Ask</b> or <b>Allow</b>', 'Close the SlotGauge tab or app and open it again']
+    : ['Click the padlock or location icon in the address bar', 'Set Location to <b>Allow</b> for slotgauge.com', 'Reload the page'];
+  const kept = LOC.override ? ` Your <b>${escapeHtml(STATE_NAME)}</b> pick has been kept so you aren't left on the wrong rules.` : '';
+  $('#out').innerHTML = `<div class="picker"><h3>Your browser is blocking location</h3><p>SlotGauge can't read where you are, so it is showing ${escapeHtml(STATE_NAME)}.${kept} That block is a browser setting — the app can't change it for you.</p><ol class="hint" style="text-align:left;line-height:1.7;padding-left:20px">${steps.map(x=>`<li>${x}</li>`).join('')}</ol><p>Or keep picking your state by hand — that works fine, it just expires after ${OVERRIDE_HOURS} hours.</p><div class="list"><button class="chip" data-state="auto">Try location again</button></div></div>`;
+  $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
+}
+$('#locFix').addEventListener('click', async (e) => {
+  e.stopPropagation();
+  // Whether we are dropping a pick or turning location back on, the question is the same: can this
+  // browser actually locate us? Never discard a working pick for a location that is blocked — that is
+  // what made the app look stuck on its default state.
+  const fix = $('#locFix'); fix.disabled = true; const was = fix.textContent; fix.textContent = 'Checking…';
+  const denied = await geoState() === 'denied';
+  const coords = denied ? null : await geoPosition(8000);
+  if (coords) { clearOverride(); try { localStorage.removeItem(STATE_KEY); } catch(_){} return location.reload(); }
+  fix.disabled = false; fix.textContent = was; drawLoc(); locHelp();
 });
 $('#locChip').addEventListener('click', pickState);
 $('#locChip').setAttribute('role','button'); $('#locChip').setAttribute('title','Change state');

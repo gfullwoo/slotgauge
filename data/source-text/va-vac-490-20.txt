@@ -1,0 +1,116 @@
+4VAC20-490-20. Definitions.
+The following words and terms when used in this chapter shall have the following meanings unless the context clearly indicates otherwise.
+"Agent" means any person who possesses the Commercial Fisherman Registration License, fishing gear license, or fishing permit of a registered commercial fisherman in order to fish that commercial fisherman's gear or sell that commercial fisherman's harvest.
+"Annual quota" means Virginia's 10.795% share of the annual coastwide commercial spiny dogfish quota managed by the Atlantic States Marine Fisheries Commission.
+"Carcass length" means that length measured in a straight line from the anterior edge of the first dorsal fin to the posterior end of the shark carcass.
+"Circle hook" means a non-offset, non-stainless steel hook with the point turned sharply and straight back toward the shank.
+"COLREGS Line" means the COLREGS Demarcation Line, as defined in the Code of Federal Regulations (33 CFR 80.510 Chesapeake Bay Entrance, VA).
+"Commercial shark fisherman" means any commercial fisherman permitted to land or possess sharks (excluding spiny dogfish) that has landed and sold one pound of shark or more (excludes spiny dogfish) in that calendar year (January 1 through December 31).
+"Commercially permitted aggregated large coastal shark" means any of the following species:
+Blacktip, Carcharhinus limbatus
+Bull, Carcharhinus leucas
+Lemon, Negaprion brevirostris
+Nurse, Ginglymostoma cirratum
+Silky, Carcharhinus falciformis
+Spinner, Carcharhinus brevipinna
+Tiger, Galeocerdo cuvier
+"Commercially permitted hammerhead shark" means any of the following species:
+Great hammerhead, Sphyrna mokarran
+Scalloped hammerhead, Sphyrna lewini
+Smooth hammerhead, Sphyrna zygaena
+"Commercially permitted nonblacknose small coastal shark" means any of the following species:
+Atlantic sharpnose, Rhizoprionodon terraenovae
+Bonnethead, Sphyrna tiburo
+Finetooth, Carcharhinus isodon
+"Commercially permitted pelagic shark" means any of the following species:
+Blue, Prionace glauca
+Porbeagle, Lamna nasus
+Thresher, Alopias vulpinus
+"Commercially prohibited shark" means any of the following species:
+Atlantic angel, Squatina dumeril
+Basking, Cetorhinus maximus
+Bigeye sand tiger, Odontaspis noronhai
+Bigeye sixgill, Hexanchus nakamurai
+Bigeye thresher, Alopias superciliosus
+Bignose, Carcharhinus altimus
+Blacknose, Carcharhinus acronotus
+Caribbean reef, Carcharhinus perezii
+Caribbean sharpnose, Rhizoprionodon porosus
+Dusky, Carcharhinus obscurus
+Galapagos, Carcharhinus galapagensis
+Longfin mako, Isurus paucus
+Narrowtooth, Carcharhinus brachyurus
+Night, Carcharhinus signatus
+Oceanic whitetip, Carcharhinus longimanus
+Sand tiger, Carcharias taurus
+Sevengill, Heptranchias perlo
+Shortfin mako, Isurus oxyrinchus
+Sixgill, Hexanchus griseus
+Smalltail, Carcharhinus porosus
+Whale, Rhincodon typus
+White, Carcharodon carcharias
+"Control rule" means a time-certain date, past, present, or future, used to establish participation in a limited entry fishery and may or may not include specific past harvest amounts.
+"Delaware and Maryland Atlantic Sturgeon Bycatch Reduction Area" means all tidal waters of the Atlantic Ocean that are bounded by a line beginning at a point at Latitude 38° 27.00' N, Longitude 75° 06.00' W; thence southeasterly to a point at Latitude 38° 21.00' N, Longitude 74° 48.00' W; thence southerly to a point at Latitude 37° 30.00' N, Longitude 75° 12.00' W; thence northwesterly to a point at Latitude 37° 48.00' N, Longitude 75° 30.00' W; thence northeasterly to a point at Latitude 38° 27.00' N, Longitude 75° 06.00' W, which is the point of beginning.
+"Dressed weight" means the result from processing a fish by removal of head, viscera, and fins, but does not include removal of the backbone, halving, quartering, or otherwise further reducing the carcass.
+"Finning" means removing the fins and returning the remainder of the shark to the sea.
+"Fork length" means the length of a fish measured from the most forward projection of the snout, with the mouth closed, to the fork of the tail along the midline, using a straight-line measure, not measured over the curve of the body.
+"Large mesh gill net" means any gill net with a stretched mesh of greater than five inches.
+"Longline" means any fishing gear that is set horizontally, either anchored, floating, or attached to a vessel, and that consists of a mainline or groundline, greater than 1,000 feet in length, with multiple leaders (gangions) and hooks, whether retrieved by hand or mechanical means.
+"Movable gill net" means any gill net other than a staked gill net.
+"Permitted commercial gear" means rod and reel, handlines, shark shortlines, small mesh gill nets, large mesh gill nets, pound nets, and weirs.
+"Recreational shore angler" means a person neither fishing from a vessel nor transported to or from a fishing location by a vessel.
+"Recreational vessel angler" means a person fishing from a vessel or transported to or from a fishing location by a vessel.
+"Recreationally permitted shark" means any of the following species:
+Atlantic sharpnose, Rhizoprionodon terraenovae
+Blacknose, Carcharhinus acronotus
+Blacktip, Carcharhinus limbatus
+Blue, Prionace glauca
+Bonnethead, Sphyrna tiburo
+Bull, Carcharhinus leucas
+Finetooth, Carcharhinus isodon
+Great hammerhead, Sphyrna mokarran
+Lemon, Negaprion brevirostris
+Nurse, Ginglymostoma cirratum
+Porbeagle, Lamna nasus
+Scalloped hammerhead, Sphyrna lewini
+Smooth dogfish, Mustelus canis
+Smooth hammerhead, Sphyrna zygaena
+Spinner, Carcharhinus brevipinna
+Thresher, Alopias vulpinus
+Tiger, Galeocerdo cuvier
+"Recreationally prohibited shark" means any of the following species:
+Atlantic angel, Squatina dumeril
+Basking, Cetorhinus maximus
+Bigeye sand tiger, Odontaspis noronhai
+Bigeye sixgill, Hexanchus nakamurai
+Bigeye thresher, Alopias superciliosus
+Bignose, Carcharhinus altimus
+Caribbean reef, Carcharhinus perezii
+Caribbean sharpnose, Rhizoprionodon porosus
+Dusky, Carcharhinus obscurus
+Galapagos, Carcharhinus galapagensis
+Longfin mako, Isurus paucus
+Narrowtooth, Carcharhinus brachyurus
+Night, Carcharhinus signatus
+Oceanic whitetip, Carcharhinus longimanus
+Sand tiger, Carcharias taurus
+Sandbar, Carcharhinus plumbeus
+Sevengill, Heptranchias perlo
+Shortfin mako, Isurus oxyrinchus
+Silky, Carcharhinus falciformis
+Sixgill, Hexanchus griseus
+Smalltail, Carcharhinus porosus
+Whale, Rhincodon typus
+White, Carcharodon carcharias
+"Research only shark" means any of the following species:
+Sandbar, Carcharhinus plumbeus
+"Shark shortline" means a fish trotline that is set horizontally, either anchored, floating, or attached to a vessel, and that consists of a mainline or groundline, 1,000 feet in length or less, with multiple leaders (gangions) and no more than 50 corrodible circle hooks, whether retrieved by hand or mechanical means.
+"Small mesh gill net" means any gill net with a stretched mesh of equal to or less than five inches.
+"Smooth dogfish" means any shark of the species Mustelus canis. Smooth dogfish are also known as "smoothhound shark."
+"Snout" means the most forward projection from a fish's head that includes the upper and lower jaw.
+"Spiny dogfish" means any shark of the species Squalus acanthias.
+"Virginia Atlantic Sturgeon Bycatch Reduction Area" means all tidal waters of the Atlantic Ocean that are bounded by a line beginning at a point at Latitude 37° 18.00' N, Longitude 75° 54.00' W; thence southeasterly to a point at Latitude 36° 48.00' N, Longitude 75° 36.00' W; thence southwesterly to a point at Latitude 36° 33.00' N, Longitude 75° 51.00' W; thence northwesterly to a point at Latitude 36° 54.00' N, Longitude 76° 06.00' W; thence northeasterly to a point at Latitude 37° 18.00' N, Longitude 75° 54.00' W, which is the point of beginning.
+Statutory Authority
+§ 28.2-201 of the Code of Virginia.
+Historical Notes
+Derived from VR450-01-0063 § 2, Virginia Register Volume 11, Issue 22, eff. July 1, 1995; amended, Virginia Register Volume 13, Issue 18, eff. May 1, 1997; Volume 17, Issue 3, eff. October 15, 2000; Volume 22, Issue 8, eff. December 1, 2005; Volume 25, Issue 14, eff. March 1, 2009; Volume 26, Issue 6, eff. November 1 2009; Volume 26, Issue 14, eff. March 1, 2010; Volume 26, Issue 19, eff. May 1, 2010; Volume 27, Issue 23, eff. July 1, 2011; Volume 29, Issue 19, eff. May 1, 2013; Volume 30, Issue 15, eff. March 1, 2014; Volume 31, Issue 4, eff. October 1, 2014; Volume 32, Issue 15, eff. March 1, 2016; Volume 35, Issue 2, eff. September 1, 2018; Volume 36, Issue 23, eff. July 1, 2020; Volume 39, Issue 6, eff. November 1, 2022; Volume 41, Issue 3, eff. September 1, 2024; Volume 41, Issue 20, eff. May 1, 2025.

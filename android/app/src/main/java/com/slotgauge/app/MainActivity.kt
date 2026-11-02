@@ -37,10 +37,16 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun start() {
-        val prefs = TideData.prefs(this)
         val granted = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
-        if (!granted && !prefs.getBoolean("askedLocation", false)) {
-            prefs.edit().putBoolean("askedLocation", true).apply()
+        // Ask whenever we don't have it. This used to fire once ever, so anyone who dismissed the very
+        // first prompt could never be asked again and the app looked permanently stuck on one state.
+        // Android stops showing the dialog itself after two refusals, so this cannot become nagging:
+        // shouldShowRequestPermissionRationale() going false while still ungranted means the user has
+        // settled on "no", and we leave them to the in-app state picker.
+        val settled = !shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_COARSE_LOCATION) &&
+            TideData.prefs(this).getBoolean("askedLocation", false)
+        if (!granted && !settled) {
+            TideData.prefs(this).edit().putBoolean("askedLocation", true).apply()
             askLocation.launch(arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION))
         } else launchSite()
     }

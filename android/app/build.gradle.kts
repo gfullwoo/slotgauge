@@ -55,5 +55,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.browser:browser:1.8.0")
     implementation("com.google.androidbrowserhelper:androidbrowserhelper:2.5.0")
+    // Routes the web layer's geolocation requests through the app's Android permission.
+    implementation("com.google.androidbrowserhelper:locationdelegation:1.1.1")
     implementation("androidx.work:work-runtime-ktx:2.10.2")
 }

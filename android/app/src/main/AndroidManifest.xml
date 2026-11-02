@@ -70,6 +70,23 @@
                 android:value="com.slotgauge.app.fileprovider" />
         </activity>
 
+        <!-- Chrome talks to this service to verify the TWA and to delegate geolocation to the app, so the
+             single Android location permission covers the site too (no separate Chrome site permission). -->
+        <service
+            android:name=".DelegationService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!-- Shown by the delegation library if it needs to ask for location mid-session. -->
+        <activity
+            android:name="com.google.androidbrowserhelper.locationdelegation.PermissionRequestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SlotGauge.Translucent" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.slotgauge.app.fileprovider"

@@ -6,6 +6,15 @@
         <item name="android:windowBackground">@color/bg</item>
         <item name="android:statusBarColor">@color/brand</item>
     </style>
+    <!-- For the delegation library's permission prompt: no window of its own, just the system dialog. -->
+    <style name="Theme.SlotGauge.Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
     <style name="Theme.SlotGauge.Launch">
         <item name="android:windowBackground">@color/bg</item>
         <item name="android:windowIsTranslucent">true</item>

@@ -84,3 +84,23 @@ test('assetlinks.json is served only when a certificate fingerprint is configure
     assert.equal(j[0].target.package_name, 'com.slotgauge.app'); assert.deepEqual(j[0].target.sha256_cert_fingerprints, ['AA:BB', 'CC:DD']);
   } finally { srv.close(); if (prev == null) delete process.env.ANDROID_CERT_SHA256; else process.env.ANDROID_CERT_SHA256 = prev; }
 });
+
+test('species info endpoint answers for the in-app species page, and 404s on an unknown fish', async () => {
+  const app = createApp({ wikiLive: false, tidesRefresh: false });
+  const srv = app.listen(0); const base = `http://127.0.0.1:${srv.address().port}`;
+  try {
+    const regs = await (await fetch(`${base}/api/regs?state=de`)).json();
+    const tog = regs.species.find((s) => /^tautog$/i.test(s.name));
+    const r = await fetch(`${base}/api/species/${tog.id}/info`);
+    assert.equal(r.status, 200);
+    const j = await r.json();
+    assert.equal(j.id, tog.id);
+    assert.equal(j.name, tog.name);
+    assert.ok(j.info && j.info.extract, 'the ingested Wikipedia summary should come back without the network');
+
+    // A species nobody wrote about is a 200 with info: null, not an error — the page just omits About.
+    const miss = await fetch(`${base}/api/species/999999/info`);
+    assert.equal(miss.status, 404);
+    assert.match((await miss.json()).error, /unknown species/i);
+  } finally { srv.close(); }
+});

@@ -351,6 +351,17 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
   // anything missing is fetched once at request time and kept in memory.
   const speciesInfo = loadSpeciesInfo();
   const infoFor = makeInfoLookup({ info: speciesInfo, fetchImpl: wikiFetch, live: wikiLive });
+  // Species background for the in-app species page. The regulation data is already in the client
+  // (from /api/regs), so this returns only the Wikipedia summary. A miss is a 200 with info: null —
+  // the page simply omits the About block rather than showing an error for a fish nobody wrote about.
+  app.get('/api/species/:id/info', async (req, res) => {
+    const sp = speciesById.get(Number(req.params.id));
+    if (!sp) return res.status(404).json({ error: 'Unknown species.' });
+    const info = await Promise.race([infoFor(sp.name), new Promise((r) => { const t = setTimeout(r, 2500, null); t.unref?.(); })]).catch(() => null);
+    res.set('Cache-Control', 'public, max-age=86400');
+    res.json({ id: sp.id, name: sp.name, info: info || null });
+  });
+
   const html = (res, body, maxAge = 3600) => { res.set('Cache-Control', `public, max-age=${maxAge}`); res.type('html').send(body); };
   // Digital Asset Links so the Android app can open slotgauge.com full-screen (Trusted Web Activity).
   // ANDROID_CERT_SHA256 = SHA-256 fingerprints separated by | (Cloud Run env vars cannot contain commas) of the app signing certificate(s); see docs/ANDROID.md.

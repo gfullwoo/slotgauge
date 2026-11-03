@@ -40,6 +40,7 @@ page-by-page against their official regulations, so they may still be missing sp
 | **Keep/release checker** | Parses a plain-language description (or voice input) and evaluates season, slot, minimum size and bag limit for the right state and zone. | Free |
 | **Photo identification** | Camera or upload → Gemini/Claude vision picks the species from the state catalog → the normal check runs on the result. | 3/month free, then Pro |
 | **Species directory** | `/<state>/species/` lists every regulated species with its limits, the official source and background from Wikipedia. Crawlable; one page per species. | Free |
+| **Species page** | Tap the hero image on the checker and you get that fish on its own page: today's rule for your zone, the agency's exact wording, Wikipedia background, and a gallery of your own photos of it. No verdict is shown — there is no length here, so the checker answers that. | Free; photo gallery needs sign-in |
 | **Tides** | NOAA CO-OPS highs/lows and a 30-minute curve for ~3,500 stations, a header badge showing the current state of the tide, and station search. | Nearest station free; any station and the week ahead are Pro |
 | **Weather** | National Weather Service current conditions, hourly and 7-day, beside the tide chart. The Ocean theme animates to match (rain, cloud, sun, storm). | Free |
 | **Moon & solunar** | Phase, illumination, moonrise/set and the four solunar windows (moon overhead, underfoot, rise, set), computed locally — no API key. | Free |
@@ -98,6 +99,7 @@ GET    /api/me                                 account: Pro status, plan, renewa
 GET    /api/quota                              anonymous photo-ID allowance (header x-sg-device)
 GET    /api/sources                            freshness dashboard: every source, last checked / changed, audit date
 GET    /api/locate?lat&lon                     which state's waters a point is in
+GET    /api/species/:id/info                   Wikipedia background for the in-app species page (info: null when none)
 POST   /api/identify   multipart image=…       photo → species (402 with {upgrade:true} when over the free quota)
 GET    /api/scans · PATCH /api/scans/:id · DELETE /api/scans/:id · POST /api/scans/delete (bulk)
 GET    /api/tides/stations?lat&lon|q|state  ·  GET /api/tides?station&date&days

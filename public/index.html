@@ -212,6 +212,8 @@ header .right{display:flex;align-items:center;gap:8px}
 .hero.illus .cap{background:linear-gradient(to top,rgba(13,23,28,.7),rgba(13,23,28,0))}
 .hero .cap b{font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:700;letter-spacing:.01em;line-height:1}
 .hero .cap span{font-size:12px;opacity:.85}
+.hero.tappable{cursor:pointer}.hero .cap .go{margin-left:auto;font-size:20px;opacity:.9}.hero:not(.tappable) .cap .go{display:none}
+.sp-hero{height:170px;margin-bottom:6px}.sp-sub{margin:0 0 12px}.sp-rule .facts{margin-top:0}.sp-about p{margin:6px 0 0}.sp-shots h3 .n{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3);font-weight:500}
 @media (min-width:600px){.hero{height:190px}}
 /* ---- install banner ---- */
 .install{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 40px -12px rgba(0,0,0,.45);padding:12px 12px 12px 14px;display:flex;gap:12px;align-items:center;max-width:560px;margin:0 auto}
@@ -378,7 +380,7 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
   </div>
 </header>
 <div class="eyebrow" id="today" style="margin:-6px 0 10px"></div>
-<div class="hero" id="hero" hidden><img id="heroImg" alt=""><div class="cap"><b id="heroName"></b><span id="heroSub"></span></div></div>
+<div class="hero" id="hero" hidden role="button" tabindex="0" aria-label="Open species details"><img id="heroImg" alt=""><div class="cap"><b id="heroName"></b><span id="heroSub"></span><span class="go" aria-hidden="true">›</span></div></div>
 
 <div class="chips" id="ctx">
   <span class="chip" id="locChip"><span class="dot"></span><span id="locTxt">Locating…</span></span><button class="locfix" id="locFix" type="button" hidden></button>
@@ -799,18 +801,21 @@ function renderPicker(title, msg, list, extra){
 
 // ---------- hero banner: last fish searched ----------
 const SPECIES_IMG = id => `/img/species/${id}.jpg`;
-function setHero({src, fallback, name, sub}){
+function setHero({src, fallback, name, sub, id}){
   const h=$('#hero'), img=$('#heroImg'); if (!src) return;
+  // The id is what makes the hero a link to the species page; without one it stays a plain picture.
+  if (id!=null) h.dataset.species=String(id); else delete h.dataset.species;
+  h.classList.toggle('tappable', id!=null);
   const show=()=>{ h.hidden=false; h.classList.toggle('illus', /^\/img\/species\//.test(img.getAttribute('src')||'')); $('#heroName').textContent=name||''; $('#heroSub').textContent=sub||''; requestAnimationFrame(()=>img.classList.add('in')); };
   img.classList.remove('in');
   img.onload=show;
   img.onerror=()=>{ if (fallback && img.src!==fallback) { img.src=fallback; } else h.hidden=true; };
   img.src=src;
-  try { localStorage.setItem('sg.hero', JSON.stringify({src, fallback, name, sub})); } catch(e){}
+  try { localStorage.setItem('sg.hero', JSON.stringify({src, fallback, name, sub, id})); } catch(e){}
 }
-function heroForSpecies(sp, sub){ if (!sp.photo) return; setHero({src:sp.photo, name:sp.name, sub: sub || 'Last checked'}); }
+function heroForSpecies(sp, sub){ if (!sp.photo) return; setHero({src:sp.photo, name:sp.name, sub: sub || 'Last checked', id: sp.id}); }
 const fixImg = u => { const m = /imageDB\.ashx\?id=(\d+)/.exec(u||''); return m ? SPECIES_IMG(+m[1]) : u; };
-try { const h=JSON.parse(localStorage.getItem('sg.hero')||'null'); if (h && h.src) { h.src=fixImg(h.src); h.fallback=fixImg(h.fallback); setHero(h); } else { const d=SP.find(s=>/^striped bass$/i.test(s.name)&&s.photo)||SP.find(s=>s.photo); if (d) setHero({src:d.photo, name:d.name, sub:'Try a check to see your fish here'}); } } catch(e){}
+try { const h=JSON.parse(localStorage.getItem('sg.hero')||'null'); if (h && h.src) { h.src=fixImg(h.src); h.fallback=fixImg(h.fallback); setHero(h); } else { const d=SP.find(s=>/^striped bass$/i.test(s.name)&&s.photo)||SP.find(s=>s.photo); if (d) setHero({src:d.photo, name:d.name, sub:'Try a check to see your fish here', id:d.id}); } } catch(e){}
 
 // ---------- run ----------
 let pending = null; // {text, q}
@@ -1036,13 +1041,15 @@ $('#brandHome').addEventListener('click', (e) => { e.preventDefault(); try { his
 try { const q0 = new URLSearchParams(location.search).get('q'); if (q0) { $('#q').value = q0; run(q0); } } catch(e){}
 // /?voice=1 (home-screen widget / app shortcut): start listening right away
 try { if (new URLSearchParams(location.search).get('voice') === '1') { history.replaceState(null, '', location.pathname + location.hash); setTimeout(() => $('#mic').click(), 350); } } catch(e){}
-window.SG = { loc: () => LOC, SP, run, evaluate, render, escapeHtml, $, fmtIn, ZONES, STATE, STATE_NAME, showWelcome, setHero, SPECIES_IMG, findSp: id => SP.find(s=>s.id===id) || SP.find(s=>s.deId===id) || null, get zone(){ return ctxZone; } };
+$('#hero').addEventListener('keydown', e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); $('#hero').click(); } });
+window.SG = { loc: () => LOC, SP, run, evaluate, render, escapeHtml, $, fmtIn, ZONES, STATE, STATE_NAME, AGENCY: D.agency, showWelcome, setHero, SPECIES_IMG, findSp: id => SP.find(s=>s.id===id) || SP.find(s=>s.deId===id) || null, get zone(){ return ctxZone; } };
 document.dispatchEvent(new Event('sg:ready'));
 }
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script src="/scans.js"></script>
+<script src="/species.js"></script>
 <script src="/tides.js"></script>
 <script src="/log.js" defer></script>
 <script src="/sky.js"></script>

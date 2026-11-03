@@ -17,6 +17,7 @@
     await ready();
     window.SG.showView = showView;
     window.SG.registerView = registerView;
+    window.SG.api = api;   // other view scripts need the signed-in fetch, not a bare one
     try { cfg = await fetch('/api/config').then((r) => r.json()); } catch (e) { return; }
     const canIdentify = !!cfg.features?.identify;
     const canSave = !!(cfg.features?.scans && cfg.firebase?.apiKey);
@@ -176,7 +177,7 @@ ${buy}
     if (sp) rows.push(candRow(sp.id, sp.name, scan.userCorrected ? 1 : scan.confidence, scan.userCorrected ? '' : scan.why, true));
     for (const a of scan.alternates || []) rows.push(candRow(a.speciesId, a.name, a.confidence, a.why, false));
     const heroSrc = imgUrl || scan.fullUrl;
-    if (heroSrc) window.SG.setHero({ src: heroSrc, fallback: sp ? window.SG.SPECIES_IMG(sp.id) : null, name: sp ? sp.name : 'Your photo', sub: scan.userCorrected ? 'You chose this' : sp ? 'Identified from your photo' : 'No match' });
+    if (heroSrc) window.SG.setHero({ src: heroSrc, fallback: sp ? window.SG.SPECIES_IMG(sp.id) : null, name: sp ? sp.name : 'Your photo', sub: scan.userCorrected ? 'You chose this' : sp ? 'Identified from your photo' : 'No match', id: sp ? sp.id : null });
     $('#scanCard').innerHTML = `<div class="scan">
       <div class="photo"><img src="${esc(imgUrl || scan.fullUrl)}" alt="${esc(scan.speciesName || 'fish')}"></div>
       <div class="body">

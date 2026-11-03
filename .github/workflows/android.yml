@@ -17,8 +17,11 @@ jobs:
       ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
       ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
       ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-      ANDROID_VERSION_CODE: ${{ github.run_number }}
-      ANDROID_VERSION_NAME: 1.0.${{ github.run_number }}
+      # Play burns a version code permanently the moment an upload is attempted, even if that
+      # release is later discarded — so a failed upload makes run_number collide forever. Bump the
+      # ANDROID_VERSION_OFFSET repo variable past the highest burned code to step over it.
+      ANDROID_VERSION_CODE: ${{ github.run_number + fromJSON(vars.ANDROID_VERSION_OFFSET || '0') }}
+      ANDROID_VERSION_NAME: 1.0.${{ github.run_number + fromJSON(vars.ANDROID_VERSION_OFFSET || '0') }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v5

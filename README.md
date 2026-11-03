@@ -148,7 +148,10 @@ Feature flags are environment-driven and independent — with none set the app s
 | `GOOGLE_CLOUD_PROJECT` | Firestore-backed accounts and catch log |
 | `ANDROID_CERT_SHA256` | `/.well-known/assetlinks.json` for the Android app (fingerprints separated by `\|`) |
 
-Android builds come from `.github/workflows/android.yml` (signed APK + AAB from the keystore secrets). See
+Android builds come from `.github/workflows/android.yml` (signed APK + AAB from the keystore secrets). The
+version code is the workflow run number plus the optional `ANDROID_VERSION_OFFSET` repository variable. Google
+Play burns a version code permanently as soon as an upload is attempted — even one that is discarded — so if an
+upload fails, set `ANDROID_VERSION_OFFSET` past the highest burned code rather than retrying the same number. See
 [docs/ANDROID.md](docs/ANDROID.md) and [docs/PLAY.md](docs/PLAY.md).
 
 ## Adding a state

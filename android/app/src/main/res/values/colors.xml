@@ -3,6 +3,11 @@
     <color name="brand">#0F6F8C</color>
     <color name="falling">#B3561F</color>
     <color name="bg">#EEF3F4</color>
+    <!-- Bottom stop of the ocean theme's page gradient (the page-bg custom property in public/index.html, 100% stop).
+         The system navigation bar is drawn by Android outside the web view, so it cannot inherit
+         the page background; this keeps the two from meeting in a white seam. Ocean is forced as
+         the default theme, so this matches what nearly every user sees. -->
+    <color name="navbar">#2BB7B9</color>
     <color name="surface">#F7FAFA</color>
     <color name="ink">#14232A</color>
     <color name="ink2">#4D6169</color>

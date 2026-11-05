@@ -94,13 +94,21 @@
     $('#tvBack').addEventListener('click', () => window.SG.showView('check'));
     $('#tvChange').addEventListener('click', () => { const p = $('#tvPick'); p.hidden = !p.hidden; if (!p.hidden) { $('#tvQ').focus(); showNearby(); } });
     let t; $('#tvQ').addEventListener('input', () => { clearTimeout(t); t = setTimeout(search, 250); });
-    $('#tvState').addEventListener('change', async () => { const st = $('#tvState').value; if (!st) return; if (!pro('tide-stations')) { $('#tvState').value = ''; return; } const r = await fetch(`/api/tides/stations?state=${st}`); drawResults(r.ok ? (await r.json()).stations : [], `Stations in ${st}`); });
+    $('#tvState').addEventListener('change', async () => { const st = $('#tvState').value; if (!st) return; if (!isPro()) { $('#tvState').value = ''; return proHint('Browsing stations by state'); } const r = await fetch(`/api/tides/stations?state=${st}`); drawResults(r.ok ? (await r.json()).stations : [], `Stations in ${st}`); });
     $('#tvLoc').addEventListener('click', async () => { $('#tvResults').innerHTML = '<div class="tv-msg">Locating…</div>'; const c = await geo(); if (!c) return ($('#tvResults').innerHTML = '<div class="tv-msg">Location unavailable. Allow location access, or search by name.</div>'); const list = await stationsNear(c.latitude, c.longitude).catch(() => []); const near = pickNear(list); if (near) { await setStation(near, false); $('#tvPick').hidden = true; } else drawResults(list, 'Nearest stations'); });
     $('#tvPrev').addEventListener('click', () => shift(-1)); $('#tvNext').addEventListener('click', () => shift(1));
-    $('#tvResults').addEventListener('click', async (e) => { const b = e.target.closest('[data-id]'); if (!b) return; const s = JSON.parse(b.dataset.s); if (s.miles == null && !pro('tide-stations')) return; await setStation(s, true); $('#tvPick').hidden = true; });
+    $('#tvResults').addEventListener('click', async (e) => { const b = e.target.closest('[data-id]'); if (!b) return; const s = JSON.parse(b.dataset.s); if (s.miles == null && !isPro()) return proHint('Stations outside your area'); await setStation(s, true); $('#tvPick').hidden = true; });
   }
   const pro = (f) => !window.SG_PRO || window.SG_PRO.isPro() || (window.SG_PRO.gate(f), false);
-  async function search() { const q = $('#tvQ').value.trim(); if (q.length < 2) return showNearby(); if (!pro('tide-stations')) return; const r = await fetch(`/api/tides/stations?q=${encodeURIComponent(q)}&n=25`); drawResults(r.ok ? (await r.json()).stations : [], `Matches for “${q}”`); }
+  // Free users keep their own area (Use my location, nearest stations). Stations elsewhere are Pro.
+  // The gate stays inside the picker and never navigates, so typing (and the iOS keyboard) survives.
+  const isPro = () => !window.SG_PRO || window.SG_PRO.isPro();
+  function proHint(what) {
+    $('#tvResults').innerHTML = `<div class="tv-msg">${esc(what)} is a SlotGauge Pro feature. Your own area stays free: tap <b>Use my location</b> or pick one of the nearest stations.</div><div class="tv-msg"><button class="btn primary" type="button" id="tvProBtn">See SlotGauge Pro</button></div>`;
+    $('#tvProBtn').addEventListener('click', () => window.SG_PRO.open());
+    return false;
+  }
+  async function search() { const q = $('#tvQ').value.trim(); if (q.length < 2) return showNearby(); if (!isPro()) return proHint('Searching by name'); const r = await fetch(`/api/tides/stations?q=${encodeURIComponent(q)}&n=25`); drawResults(r.ok ? (await r.json()).stations : [], `Matches for “${q}”`); }
   async function showNearby() { const loc = (window.SG && window.SG.loc && window.SG.loc()) || {}; if (loc.status === 'ok' && loc.lat != null) { const list = await stationsNear(loc.lat, loc.lon).catch(() => []); drawResults(list, 'Nearest to you'); } else $('#tvResults').innerHTML = '<div class="tv-msg">Search by name, pick a state, or use your location.' + (window.SG_PRO && !window.SG_PRO.isPro() ? ' Stations away from you are a Pro feature.' : '') + '</div>'; }
   function drawResults(list, title) {
     if (!list.length) return ($('#tvResults').innerHTML = '<div class="tv-msg">No stations found.</div>');

@@ -88,3 +88,24 @@ test('PRO_TEST_EMAILS accounts are Pro without a subscription', async () => {
     const other = await (await fetch(`${base}/api/me`, { headers: { Authorization: 'Bearer someone' } })).json(); assert.equal(other.pro, false);
   } finally { srv.close(); delete process.env.PRO_TEST_EMAILS; }
 });
+
+test('PRO_TEST_EMAILS accepts pipe, comma or space separators', async () => {
+  const { proTestEmails, isTestPro } = await import('../src/billing.js');
+  const prev = process.env.PRO_TEST_EMAILS;
+  try {
+    // "|" is the form the deploy must use: gcloud's --set-env-vars is comma-delimited, so a comma
+    // inside the value ends the variable and the deploy fails outright.
+    process.env.PRO_TEST_EMAILS = 'a@x.com|b@y.com';
+    assert.deepEqual([...proTestEmails()].sort(), ['a@x.com', 'b@y.com']);
+    assert.equal(isTestPro({ email: 'B@Y.com' }), true, 'matching is case-insensitive');
+    assert.equal(isTestPro({ email: 'c@z.com' }), false);
+
+    // values already in the wild keep working
+    process.env.PRO_TEST_EMAILS = 'a@x.com, b@y.com';
+    assert.deepEqual([...proTestEmails()].sort(), ['a@x.com', 'b@y.com']);
+    process.env.PRO_TEST_EMAILS = '';
+    assert.equal(proTestEmails().size, 0);
+    assert.equal(isTestPro({ email: 'a@x.com' }), false);
+    assert.equal(isTestPro(null), false);
+  } finally { if (prev == null) delete process.env.PRO_TEST_EMAILS; else process.env.PRO_TEST_EMAILS = prev; }
+});

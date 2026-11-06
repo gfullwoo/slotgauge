@@ -14,8 +14,16 @@ export const PLANS = { year: { label: 'Yearly', price: '$19.99/year' }, month: {
 
 export const monthKey = (d = new Date()) => d.toISOString().slice(0, 7);
 
-/** Emails that are always Pro (store reviewers, testers): env PRO_TEST_EMAILS="a@x.com,b@y.com". */
-export const proTestEmails = () => new Set(String(process.env.PRO_TEST_EMAILS || '').toLowerCase().split(/[,\s]+/).filter(Boolean));
+/**
+ * Emails that are always Pro (store reviewers, testers): env PRO_TEST_EMAILS="a@x.com|b@y.com".
+ *
+ * Separate with "|". Cloud Run's `gcloud run deploy --set-env-vars` is itself comma-delimited, so a
+ * comma inside a value ends the variable and the rest is read as a malformed second one:
+ *   argument --set-env-vars: Bad syntax for dict arg: [b@y.com]
+ * ANDROID_CERT_SHA256 uses "|" for the same reason. Commas and whitespace still parse so that any
+ * value already set keeps working.
+ */
+export const proTestEmails = () => new Set(String(process.env.PRO_TEST_EMAILS || '').toLowerCase().split(/[,|\s]+/).filter(Boolean));
 export const isTestPro = (user) => !!(user?.email && proTestEmails().has(String(user.email).toLowerCase()));
 
 export function isPro(acct, now = Date.now()) {

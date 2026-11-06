@@ -146,7 +146,7 @@ Feature flags are environment-driven and independent — with none set the app s
 | `FIREBASE_API_KEY`, `FIREBASE_AUTH_DOMAIN`, `SCANS_BUCKET` | sign-in, photo ID, galleries |
 | `GEMINI_ENABLED=1` / `ANTHROPIC_API_KEY` / `IDENTIFY_PROVIDER` | the vision identifier (Gemini on Vertex, Claude fallback) |
 | `STRIPE_SECRET_KEY` + `STRIPE_PRICE_YEAR` (+ `STRIPE_PRICE_MONTH`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_TAX`) | Pro subscriptions |
-| `PRO_TEST_EMAILS`, `FREE_IDENTIFY_PER_MONTH` | reviewer accounts, free-tier size |
+| `PRO_TEST_EMAILS` (separate with `\|`), `FREE_IDENTIFY_PER_MONTH` | reviewer accounts, free-tier size |
 | `GOOGLE_CLOUD_PROJECT` | Firestore-backed accounts and catch log |
 | `ANDROID_CERT_SHA256` | `/.well-known/assetlinks.json` for the Android app (fingerprints separated by `\|`) |
 

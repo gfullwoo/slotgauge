@@ -14,6 +14,19 @@
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0f6f8c" id="themeColor">
+<script>
+// Start the hero image before anything else. Its URL is in localStorage and needs nothing from
+// /api/regs, but setHero() runs inside initApp(), which waits on that 157 KB fetch — so the picture
+// used to start ~150 ms late on a warm load, and seconds late on a cold start. Preloading here puts
+// the request in flight during head parsing; by the time setHero sets src, it is already cached.
+(function(){try{
+  var h = JSON.parse(localStorage.getItem('sg.hero')||'null'); if (!h || !h.src) return;
+  var m = /imageDB\.ashx\?id=(\d+)/.exec(h.src); var src = m ? '/img/species/'+m[1]+'.jpg' : h.src;
+  if (!/^\/img\/species\//.test(src)) return;          // only our own immutable images
+  var l = document.createElement('link'); l.rel='preload'; l.as='image'; l.href=src;
+  document.head.appendChild(l);
+}catch(e){}})();
+</script>
 <script>(function(){try{var t=localStorage.getItem('sg.theme');if(t==='ocean'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}var z=localStorage.getItem('sg.text')||(window.innerWidth<=480?'large':'normal');document.documentElement.setAttribute('data-text',z);}catch(e){}})();</script>
 <meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">

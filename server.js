@@ -2,6 +2,7 @@ import express from 'express';
 import compression from 'compression';
 import multer from 'multer';
 import path from 'node:path';
+import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { buildRegs, rawHash } from './src/regs.js';
 import { makePages, sitemapAll, SITE, privacyPage, proPage, termsPage, deleteAccountPage } from './src/pages.js';
@@ -45,6 +46,14 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
   app.use(express.json({ limit: '64kb' }));
 
   const allRegs = buildAllRegs();
+  // Licence requirements ride along on /api/regs so the picker has them offline (the service worker
+  // caches that response) and no extra round trip is needed. data/licenses.json states what each
+  // state generally requires and links the agency; it deliberately does not rule on whether a given
+  // angler needs one — age, residency, water type and charter coverage all change that answer.
+  try {
+    const licenses = JSON.parse(readFileSync(new URL('./data/licenses.json', import.meta.url), 'utf8')).states || {};
+    for (const [code, r] of Object.entries(allRegs)) if (licenses[code]) r.license = licenses[code];
+  } catch (e) { console.warn('licenses.json not loaded:', e.message); }
   const regs = allRegs.DE;
   const etagOf = (r) => `"${rawHash({ season: r.scraped + r.state, size: String(r.species.length), limit: process.env.K_REVISION || 'local' })}"`;
   const etag = etagOf(regs);

@@ -1,0 +1,139 @@
+{
+  "_doc": "Recreational fishing LICENCE requirements per state, for the licence block in the state picker. Researched 2026-11-08 from official agency pages only (see each entry's infoUrl / sources). This file deliberately does NOT rule on whether a given angler needs a licence: age, residency, water type, charter coverage and free-fishing days all change the answer, and a wrong 'no licence needed' is how someone gets fined. Each entry states what the state generally requires, names the common exemptions without resolving them, and links the official page. Keep `checked` current; re-verify before changing any `summary`.",
+  "_schema": {
+    "salt": "license | registry | license+registry — what saltwater fishing generally requires",
+    "fresh": "license | none",
+    "from": "age at which the requirement generally starts",
+    "summary": "one or two sentences, hedged, shown in the popup",
+    "exemptions": "who is commonly exempt; never exhaustive, always ends at the official page",
+    "buyUrl": "where a person actually buys/registers",
+    "infoUrl": "the agency's own rules page (.gov where one exists)",
+    "confidence": "high | medium — medium means re-verify before trusting the detail",
+    "note": "optional extra caution rendered under the summary"
+  },
+  "states": {
+    "DE": {
+      "agency": "DNREC",
+      "salt": "license+registry",
+      "fresh": "license",
+      "from": 16,
+      "summary": "A Delaware recreational fishing licence covers fishing, crabbing and clamming in all Delaware waters. Anglers 16 and older also need a free FIN (Fisherman Information Network) number each year, which comes with a licence.",
+      "exemptions": "Surf fishing under a valid surf-fishing vehicle permit, and some age-based exemptions. Licence-exempt anglers may still need to register for a FIN number separately.",
+      "buyUrl": "https://epermitting.dnrec.delaware.gov",
+      "infoUrl": "https://dnrec.delaware.gov/fish-wildlife/licenses/",
+      "checked": "2026-11-08",
+      "confidence": "high"
+    },
+    "NJ": {
+      "agency": "NJDEP Fish & Wildlife",
+      "salt": "registry",
+      "fresh": "license",
+      "from": 16,
+      "summary": "New Jersey has no saltwater fishing licence, but every saltwater angler must enrol in the free Saltwater Recreational Registry, which expires at the end of each calendar year. Freshwater fishing needs a licence.",
+      "exemptions": "Under 16 generally exempt from the freshwater licence. A freshwater or out-of-state licence does not cover the saltwater registry.",
+      "buyUrl": "https://saltwaterregistry.nj.gov/",
+      "freshBuyUrl": "https://dep.nj.gov/njfw/fishing/freshwater/buy-a-license/",
+      "infoUrl": "https://dep.nj.gov/njfw/fishing/",
+      "checked": "2026-11-08",
+      "confidence": "medium",
+      "note": "NJ's own site blocks automated checks, so the current-year fees and exemption list were not confirmed. Read the official page before relying on the detail."
+    },
+    "MD": {
+      "agency": "Maryland DNR",
+      "salt": "license",
+      "fresh": "license",
+      "from": 16,
+      "summary": "Maryland requires a licence to fish recreationally in tidal waters — the Chesapeake Bay & Coastal Sport Fish Licence — and a separate non-tidal licence for freshwater. Trout fishing needs an extra stamp.",
+      "exemptions": "Under 16; licensed charter boats and commercial fishing piers; free fishing days (first two Saturdays in June and July 4). Some exempt anglers must still complete the free angler registration.",
+      "buyUrl": "https://dnr.maryland.gov/pages/service_fishing_license.aspx",
+      "infoUrl": "https://dnr.maryland.gov/fisheries/pages/regulations/index.aspx",
+      "checked": "2026-11-08",
+      "confidence": "high"
+    },
+    "VA": {
+      "agency": "VMRC / Virginia DWR",
+      "salt": "license",
+      "fresh": "license",
+      "from": 16,
+      "summary": "Virginia requires a saltwater licence for ages 16–64 in tidal waters out to 3 miles; at 65 and over the paid licence is replaced by a free Fisherman Identification Program (FIP) registration. Inland fishing needs a freshwater licence.",
+      "exemptions": "Under 16; licensed headboats, charter boats and public piers; landowners on their own land; free fishing days, which do not extend to charter or rental boats.",
+      "buyUrl": "https://dwr.virginia.gov/licenses/",
+      "infoUrl": "https://mrc.virginia.gov/regulations/recfish-licensing.shtm",
+      "checked": "2026-11-08",
+      "confidence": "high"
+    },
+    "NC": {
+      "agency": "NC DMF / NC Wildlife Resources Commission",
+      "salt": "license",
+      "fresh": "license",
+      "from": 16,
+      "summary": "North Carolina requires a Coastal Recreational Fishing Licence to take finfish in coastal waters at 16 and over, and an inland licence for fresh water. In joint waters either one works.",
+      "exemptions": "Under 16; ocean fishing piers carry blanket privileges; for-hire operators may buy a blanket licence covering passengers; July 4 is a free fishing day, though size and bag limits still apply.",
+      "buyUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/licenses-permits-and-leases/recreational-fishing-licenses",
+      "infoUrl": "https://www.deq.nc.gov/about/divisions/marine-fisheries/licenses-permits-and-leases/recreational-fishing-licenses",
+      "checked": "2026-11-08",
+      "confidence": "high"
+    },
+    "SC": {
+      "agency": "SCDNR",
+      "salt": "license",
+      "fresh": "license",
+      "from": 16,
+      "summary": "South Carolina requires a saltwater recreational fishing licence at 16 and over when fishing from shore, boat, dock or wading, and a freshwater licence for inland waters.",
+      "exemptions": "Under 16; licensed public fishing piers and charter vessels under hire; crabbing with three or fewer drop nets or handlines; senior and disability licences for residents.",
+      "buyUrl": "https://www.dnr.sc.gov/purchase.html",
+      "infoUrl": "https://www.dnr.sc.gov/licenses/genlicense.html",
+      "checked": "2026-11-08",
+      "confidence": "high"
+    },
+    "GA": {
+      "agency": "Georgia DNR",
+      "salt": "license+registry",
+      "fresh": "license",
+      "from": 16,
+      "summary": "One Georgia fishing licence covers both fresh and salt water. Saltwater anglers 16 and over also need the free Saltwater Information Program (SIP) permit, which expires 365 days after it is issued and is required even of anglers who are otherwise licence-exempt.",
+      "exemptions": "Non-resident youth 15 and under; resident landowners on their own land; anglers fishing only with a guide whose licence covers everyone aboard. Mountain trout needs a separate licence. Residents 65+ use a reduced senior licence.",
+      "buyUrl": "https://georgiawildlife.com/licenses-permits-passes/choose",
+      "infoUrl": "https://coastalgadnr.org/SIP",
+      "checked": "2026-11-08",
+      "confidence": "high",
+      "note": "The SIP permit catches people out: it is required even if you are exempt from the licence, and it lapses on its own schedule."
+    },
+    "FL": {
+      "agency": "FWC",
+      "salt": "license",
+      "fresh": "license",
+      "from": 16,
+      "summary": "Florida requires a saltwater licence to attempt to take marine life — casting a line counts, even catch and release. Residents fishing from shore can instead use the free Shoreline-Only licence, which is not valid from a vessel or from a shoreline reached by vessel.",
+      "exemptions": "Under 16; resident seniors 65 and over; free fishing days; anglers aboard a licensed charter or pier. Add-on permits such as snook, tarpon and shore-based shark have no exemptions at all.",
+      "buyUrl": "https://www.gooutdoorsflorida.com/",
+      "infoUrl": "https://myfwc.com/license/recreational/do-i-need-one/",
+      "checked": "2026-11-08",
+      "confidence": "high"
+    },
+    "NY": {
+      "agency": "NYSDEC",
+      "salt": "registry",
+      "fresh": "license",
+      "from": 16,
+      "summary": "New York has no saltwater licence: marine anglers 16 and over register with the Recreational Marine Fishing Registry, valid 365 days. Freshwater fishing needs a licence at 16 and over.",
+      "exemptions": "Under 16; anglers aboard a licensed party or charter boat in the marine district; Connecticut and Rhode Island residents holding a valid marine licence from their own state. Freshwater has free fishing days and reduced-fee licences for seniors, veterans and active military.",
+      "buyUrl": "https://dec.ny.gov/regulatory/permits-licenses/sporting-and-use/sporting/decals",
+      "infoUrl": "https://dec.ny.gov/regulatory/permits-licenses/sporting-and-use/sporting/recreational-marine-fishing-registry",
+      "checked": "2026-11-08",
+      "confidence": "high"
+    },
+    "CT": {
+      "agency": "CT DEEP",
+      "salt": "license",
+      "fresh": "license",
+      "from": 16,
+      "summary": "Connecticut requires a Marine Waters licence at 16 and over, whether you fish from shore or from a boat, and an Inland Waters licence for fresh water. An All Waters licence covers both.",
+      "exemptions": "Under 16; Connecticut residents 65 and over fish free but must renew each year. Free Fishing Day needs no licence; Free Fishing Licence Days need a free one-day licence obtained in advance.",
+      "buyUrl": "https://ct.aspirafocus.com/internetsales/",
+      "infoUrl": "https://portal.ct.gov/deep/fishing/general-information/fisheries-licenses-and-permits",
+      "checked": "2026-11-08",
+      "confidence": "high"
+    }
+  }
+}

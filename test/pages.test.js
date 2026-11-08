@@ -104,3 +104,24 @@ test('species info endpoint answers for the in-app species page, and 404s on an 
     assert.match((await miss.json()).error, /unknown species/i);
   } finally { srv.close(); }
 });
+
+test('every live state ships licence guidance with a working-looking official link', async () => {
+  const app = createApp({ wikiLive: false, tidesRefresh: false });
+  const srv = app.listen(0); const base = `http://127.0.0.1:${srv.address().port}`;
+  try {
+    const { states } = await (await fetch(`${base}/api/states`)).json();
+    for (const st of states.filter((s) => s.live)) {
+      const r = await (await fetch(`${base}/api/regs?state=${st.code}`)).json();
+      const L = r.license;
+      assert.ok(L, `${st.code} has no licence block`);
+      assert.ok(['license', 'registry', 'license+registry', 'none'].includes(L.salt), `${st.code} salt=${L.salt}`);
+      assert.ok(['license', 'none'].includes(L.fresh), `${st.code} fresh=${L.fresh}`);
+      assert.match(L.buyUrl, /^https:\/\//, `${st.code} buyUrl`);
+      assert.match(L.infoUrl, /^https:\/\//, `${st.code} infoUrl`);
+      assert.ok(L.summary.length > 40 && L.exemptions.length > 20, `${st.code} copy too thin`);
+      assert.ok(L.agency && L.checked, `${st.code} missing agency/checked`);
+      // The block must never resolve the question for an individual angler.
+      assert.doesNotMatch(L.summary, /\byou (do not|don't) need\b/i, `${st.code} summary rules someone out`);
+    }
+  } finally { srv.close(); }
+});

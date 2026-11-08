@@ -41,6 +41,7 @@ page-by-page against their official regulations, so they may still be missing sp
 | **Photo identification** | Camera or upload → Gemini/Claude vision picks the species from the state catalog → the normal check runs on the result. | 3/month free, then Pro |
 | **Species directory** | `/<state>/species/` lists every regulated species with its limits, the official source and background from Wikipedia. Crawlable; one page per species. | Free |
 | **Species page** | Tap the hero image on the checker and you get that fish on its own page: today's rule for your zone, the agency's exact wording, Wikipedia background, and a gallery of your own photos of it. No verdict is shown — there is no length here, so the checker answers that. | Free; photo gallery needs sign-in |
+| **Licence guidance** | The state picker shows what that state generally requires for salt and fresh water, who is commonly exempt, and links the agency's own purchase page. It never rules on whether a given angler needs one — age, residency, water type and charter coverage all change that. | Free |
 | **Tides** | NOAA CO-OPS highs/lows and a 30-minute curve for ~3,500 stations, a header badge showing the current state of the tide, and station search. | Nearest station free; any station and the week ahead are Pro |
 | **Weather** | National Weather Service current conditions, hourly and 7-day, beside the tide chart. The Ocean theme animates to match (rain, cloud, sun, storm). | Free |
 | **Moon & solunar** | Phase, illumination, moonrise/set and the four solunar windows (moon overhead, underfoot, rise, set), computed locally — no API key. | Free |
@@ -57,6 +58,7 @@ data/<st>/raw.json       official text, one row per species per zone, each row c
 data/<st>/overlay.json    hand-reviewed machine-readable rules (seasons, slots, bags) keyed by raw id
 data/<st>/audit/          full line-by-line audit output: additions, corrections, coverage report
 data/sources.json         the registry: every official URL, per state, with its audit date
+data/licenses.json        licence requirements per state (salt/fresh, exemptions, agency buy link)
 src/regs.js               merges raw + overlay into GET /api/regs and flags anything that changed
 ```
 

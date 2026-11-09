@@ -36,8 +36,17 @@
   }
   function drawBadge() {
     const b = $('#tideBadge'); if (!b) return;
-    const ph = phase(); if (!ph || ph.rising == null) { b.hidden = true; return; }
-    b.hidden = false; b.classList.toggle('falling', !ph.rising);
+    // No data is not the same as no feature: keep the badge as the way into the tide view so the
+    // user can pick a station by hand, rather than removing the entry point without a word.
+    const ph = phase();
+    if (!ph || ph.rising == null) {
+      b.hidden = false; b.classList.remove('falling'); b.classList.add('nodata');
+      $('#tbPhase').textContent = 'Tides';
+      $('#tbNext').textContent = station ? 'Tap to pick a station' : 'Tap to choose';
+      b.title = station ? `No predictions for ${nice(station.name)} — tap to pick another station` : 'Tap to choose a tide station';
+      return;
+    }
+    b.hidden = false; b.classList.remove('nodata'); b.classList.toggle('falling', !ph.rising);
     $('#tbPhase').textContent = ph.rising ? 'Rising' : 'Falling';
     $('#tbNext').textContent = ph.next ? `${ph.next.type === 'H' ? 'High' : 'Low'} ${fmtT(ph.next.ms, station.tz)}` : '';
     b.title = `${ph.rising ? 'Rising' : 'Falling'} tide at ${nice(station.name)}${ph.height != null ? `, about ${ph.height} ft` : ''}${ph.next ? `; ${ph.next.type === 'H' ? 'high' : 'low'} at ${fmtT(ph.next.ms, station.tz)} (in ${mins(ph.minutesToNext)})` : ''}. Tap for the chart.`;
@@ -54,18 +63,41 @@
     if (!r.ok) throw new Error('tide service');
     const d = await r.json(); if (dateOffset === 0) data = d; return d;
   }
+  // Returns whether the station actually produced predictions. NOAA lists stations it has no data
+  // for — Carolina Forest, ICWW (8660754) is one: it comes back as the nearest reference station
+  // near Myrtle Beach and /api/tides 502s for it. This used to be swallowed, leaving data null and
+  // the badge hidden with nothing to explain it, and the dead station was saved so every later
+  // visit from the same place repeated it.
   async function setStation(s, isManual) {
     station = s; manual = !!isManual; data = null;
-    try { localStorage.setItem(KEY, JSON.stringify(s)); if (isManual) localStorage.setItem(MANUAL, '1'); else localStorage.removeItem(MANUAL); } catch (e) {}
     try { await load(0); } catch (e) { data = null; }
+    if (data || isManual) {
+      try { localStorage.setItem(KEY, JSON.stringify(s)); if (isManual) localStorage.setItem(MANUAL, '1'); else localStorage.removeItem(MANUAL); } catch (e) {}
+    }
     drawBadge(); if (!$('#tideView').hidden) drawView(data);
+    return !!data;
+  }
+
+  // Try the candidates in order and keep the first that answers, so one dead station near the user
+  // no longer costs them the tide feature entirely.
+  async function firstWorking(list) {
+    for (const s of list.slice(0, 5)) if (await setStation(s, false)) return true;
+    return false;
+  }
+  // pickNear's preference first, then everything else by distance.
+  function candidates(list) {
+    const first = pickNear(list);
+    return first ? [first, ...list.filter((s) => s.id !== first.id)] : list;
   }
   async function resolveStation() {
     let saved = null; try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); manual = localStorage.getItem(MANUAL) === '1'; } catch (e) {}
     if (manual && saved) return setStation(saved, true);
     const loc = (window.SG && window.SG.loc && window.SG.loc()) || {};
-    if (loc.status === 'ok' && loc.lat != null) { const near = pickNear(await stationsNear(loc.lat, loc.lon).catch(() => [])); if (near) return setStation(near, false); }
-    if (saved) return setStation(saved, false);
+    if (loc.status === 'ok' && loc.lat != null) {
+      const list = await stationsNear(loc.lat, loc.lon).catch(() => []);
+      if (list.length && await firstWorking(candidates(list))) return;
+    }
+    if (saved && await setStation(saved, false)) return;
     const st = window.SG?.STATE || 'DE';
     const r = await fetch(`/api/tides/stations?q=${DEFAULT_BY_STATE[st] || DEFAULT_BY_STATE.DE}`).catch(() => null);
     const list = r && r.ok ? (await r.json()).stations : [];

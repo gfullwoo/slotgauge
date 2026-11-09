@@ -259,7 +259,7 @@ html,body{margin:0}
 /* ---- tides ---- */
 .tide-badge{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px 10px 3px 6px;color:var(--accent);cursor:pointer;font:inherit;line-height:1.05;margin-right:6px}
 .tide-badge .tb-txt{display:flex;flex-direction:column;align-items:flex-start;text-align:left}.tide-badge b{font-size:11.5px;font-weight:700;color:var(--ink)}.tide-badge small{font-size:10.5px;color:var(--ink-2);white-space:nowrap}
-.tide-badge .tb-arrow{transform-origin:14px 7px;transition:transform .3s}.tide-badge.falling .tb-arrow{transform:rotate(180deg)}.tide-badge.falling{color:var(--falling)}
+.tide-badge .tb-arrow{transform-origin:14px 7px;transition:transform .3s}.tide-badge.falling .tb-arrow{transform:rotate(180deg)}.tide-badge.falling{color:var(--falling)}.tide-badge.nodata{color:var(--ink-3)}.tide-badge.nodata .tb-arrow,.tide-badge.nodata .tb-wave{opacity:.45}
 .tide-badge .tb-wave{animation:tbwave 2.4s ease-in-out infinite}@keyframes tbwave{0%,100%{transform:translateX(0)}50%{transform:translateX(-3px)}}
 @media(prefers-reduced-motion:reduce){.tide-badge .tb-wave{animation:none}}
 #tideView{padding-bottom:20px}.tv-head{display:flex;align-items:center;gap:10px;margin:4px 0 10px}.tv-head h2{margin:0}.tv-back{background:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;color:var(--ink-2);cursor:pointer}

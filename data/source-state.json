@@ -8,7 +8,7 @@
    "status": 200,
    "hash": "da9d9ca6c5e52f32",
    "bytes": 43460,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "de-guide": {
@@ -19,7 +19,7 @@
    "status": 200,
    "hash": "36135b119a3f9b39",
    "bytes": 84646,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "nj-marine-digest": {
@@ -29,7 +29,7 @@
    "url": "https://dep.nj.gov/wp-content/uploads/njfw/digest-marine-2026-complete.pdf",
    "status": 403,
    "bytes": 0,
-   "checked": "2026-11-02"
+   "checked": "2026-11-09"
   },
   "nj-marine-seasons": {
    "state": "NJ",
@@ -38,7 +38,7 @@
    "url": "https://dep.nj.gov/njfw/fishing/marine/seasons-and-regulations/",
    "status": 403,
    "bytes": 0,
-   "checked": "2026-11-02"
+   "checked": "2026-11-09"
   },
   "nj-digest-index": {
    "state": "NJ",
@@ -47,7 +47,7 @@
    "url": "https://dep.nj.gov/njfw/digests/marine/",
    "status": 403,
    "bytes": 0,
-   "checked": "2026-11-02"
+   "checked": "2026-11-09"
   },
   "md-atlantic": {
    "state": "MD",
@@ -57,7 +57,7 @@
    "status": 200,
    "hash": "b5addd156d8fbc90",
    "bytes": 87030,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "md-chesapeake": {
@@ -68,7 +68,7 @@
    "status": 200,
    "hash": "8036b04f7a59f3d8",
    "bytes": 86695,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "md-dnr": {
@@ -78,8 +78,8 @@
    "url": "https://dnr.maryland.gov/fisheries/pages/regulations/changes.aspx",
    "status": 200,
    "hash": "e3b0c44298fc1c14",
-   "bytes": 114855,
-   "checked": "2026-11-02",
+   "bytes": 113932,
+   "checked": "2026-11-09",
    "changed": null
   },
   "va-mrc-rules": {
@@ -89,8 +89,8 @@
    "url": "https://webapps.mrc.virginia.gov/public/reports/swrecfishingrules.php",
    "status": 200,
    "hash": "a1043145fdcd2507",
-   "bytes": 56192,
-   "checked": "2026-11-02",
+   "bytes": 56206,
+   "checked": "2026-11-09",
    "changed": null
   },
   "va-mrc-card": {
@@ -101,7 +101,7 @@
    "status": 200,
    "hash": "63e542201abbbde0",
    "bytes": 599015,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-fwc-recreational": {
@@ -112,7 +112,7 @@
    "status": 200,
    "hash": "030f726e9e76f718",
    "bytes": 199981,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "ny-marine": {
@@ -122,8 +122,8 @@
    "url": "https://dec.ny.gov/things-to-do/saltwater-fishing/recreational-fishing-regulations",
    "status": 200,
    "hash": "6f90e0270402dc15",
-   "bytes": 104135,
-   "checked": "2026-11-02",
+   "bytes": 104138,
+   "checked": "2026-11-09",
    "changed": null
   },
   "ct-marine": {
@@ -133,8 +133,8 @@
    "url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/species-regulations",
    "status": 200,
    "hash": "256800c2f29ac310",
-   "bytes": 45270,
-   "checked": "2026-11-02",
+   "bytes": 45072,
+   "checked": "2026-11-09",
    "changed": null
   },
   "nj-attention-anglers": {
@@ -144,7 +144,7 @@
    "url": "https://dep.nj.gov/njfw/wp-content/uploads/njfw/attention-anglers-2026.pdf",
    "status": 403,
    "bytes": 0,
-   "checked": "2026-11-02"
+   "checked": "2026-11-09"
   },
   "nj-freshwater-digest": {
    "state": "NJ",
@@ -153,7 +153,7 @@
    "url": "https://dep.nj.gov/wp-content/uploads/njfw/digest-freshwater-fishing-2026-complete.pdf",
    "status": 403,
    "bytes": 0,
-   "checked": "2026-11-02"
+   "checked": "2026-11-09"
   },
   "md-striped-bass": {
    "state": "MD",
@@ -163,7 +163,7 @@
    "status": 200,
    "hash": "1587f33b1a37e84a",
    "bytes": 90669,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "md-freshwater": {
@@ -174,7 +174,7 @@
    "status": 200,
    "hash": "c9b642071bedb66f",
    "bytes": 86684,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "va-dwr-creel": {
@@ -185,7 +185,7 @@
    "status": 200,
    "hash": "9751ed03ee6cd9cb",
    "bytes": 1002819,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "nc-dmf-limits": {
@@ -196,7 +196,7 @@
    "status": 200,
    "hash": "1e8fb01d3acf06e8",
    "bytes": 108142,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": "2026-11-02"
   },
   "nc-flounder-proc": {
@@ -207,7 +207,7 @@
    "status": 200,
    "hash": "82b96cc4a040a466",
    "bytes": 348617,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "nc-cobia-proc": {
@@ -218,7 +218,7 @@
    "status": 200,
    "hash": "a2787f340a569638",
    "bytes": 262400,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "nc-proclamations": {
@@ -227,10 +227,10 @@
    "title": "NC DMF fisheries management proclamations (index)",
    "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/fisheries-management-proclamations",
    "status": 200,
-   "hash": "4cbbfb7ba4d84b37",
-   "bytes": 99965,
-   "checked": "2026-11-02",
-   "changed": "2026-11-02"
+   "hash": "53d63db14a236374",
+   "bytes": 99928,
+   "checked": "2026-11-09",
+   "changed": "2026-11-09"
   },
   "nc-wrc-warmwater": {
    "state": "NC",
@@ -240,7 +240,7 @@
    "status": 200,
    "hash": "c1185beef42cec19",
    "bytes": 87630,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "nc-wrc-trout": {
@@ -251,7 +251,7 @@
    "status": 200,
    "hash": "96b14d90be2217c4",
    "bytes": 112419,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "sc-finfish-limits": {
@@ -262,7 +262,7 @@
    "status": 200,
    "hash": "4501fa2cc105b3b4",
    "bytes": 84552,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "sc-dnr-rules": {
@@ -273,7 +273,7 @@
    "status": 200,
    "hash": "97330ced3cc1a0f5",
    "bytes": 6087,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "sc-freshwater-limits": {
@@ -284,7 +284,7 @@
    "status": 200,
    "hash": "e27a3b75ef33f211",
    "bytes": 86588,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "sc-trout-limits": {
@@ -295,7 +295,7 @@
    "status": 200,
    "hash": "df00366cca2bd78e",
    "bytes": 83333,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "ga-finfish-limits": {
@@ -305,8 +305,8 @@
    "url": "https://www.eregulations.com/georgia/fishing/finfish-seasons-limits-sizes",
    "status": 200,
    "hash": "a12c6232a1961c59",
-   "bytes": 80352,
-   "checked": "2026-11-02",
+   "bytes": 80320,
+   "checked": "2026-11-09",
    "changed": null
   },
   "ga-crd-limits": {
@@ -317,7 +317,7 @@
    "status": 200,
    "hash": "48bafa9dc8da071d",
    "bytes": 86191,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": "2026-10-19"
   },
   "ga-red-drum": {
@@ -328,7 +328,7 @@
    "status": 200,
    "hash": "5c27c3590d888fff",
    "bytes": 98240,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "ga-game-limits": {
@@ -339,7 +339,7 @@
    "status": 200,
    "hash": "7928bb36cb5cb830",
    "bytes": 71761,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-red-drum": {
@@ -350,7 +350,7 @@
    "status": 200,
    "hash": "6d5148acaa20c110",
    "bytes": 187930,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-spotted-seatrout": {
@@ -361,7 +361,7 @@
    "status": 200,
    "hash": "a6551eebdd0bd770",
    "bytes": 193970,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-flounder": {
@@ -372,7 +372,7 @@
    "status": 200,
    "hash": "307ff15b333430a4",
    "bytes": 161283,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-sheepshead": {
@@ -383,7 +383,7 @@
    "status": 200,
    "hash": "01457b6312586af4",
    "bytes": 162255,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-snook": {
@@ -394,7 +394,7 @@
    "status": 200,
    "hash": "766667c2edc21205",
    "bytes": 195389,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-black-drum": {
@@ -405,7 +405,7 @@
    "status": 200,
    "hash": "f7a476a3eda6d9e1",
    "bytes": 162130,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-cobia": {
@@ -416,7 +416,7 @@
    "status": 200,
    "hash": "3fd17089cc410f1a",
    "bytes": 161791,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-dolphinfish": {
@@ -427,7 +427,7 @@
    "status": 200,
    "hash": "20bfd5789e3b17d5",
    "bytes": 161802,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-bluefish": {
@@ -438,7 +438,7 @@
    "status": 200,
    "hash": "ee0436adc629d515",
    "bytes": 162713,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-king-mackerel": {
@@ -449,7 +449,7 @@
    "status": 200,
    "hash": "d7da2774bf87a3af",
    "bytes": 163298,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-spanish-mackerel": {
@@ -460,7 +460,7 @@
    "status": 200,
    "hash": "c07fdf4317dff152",
    "bytes": 162214,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-mullet": {
@@ -471,7 +471,7 @@
    "status": 200,
    "hash": "8f891564b01fd05e",
    "bytes": 162344,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-permit": {
@@ -482,7 +482,7 @@
    "status": 200,
    "hash": "2062d254eabfe0ac",
    "bytes": 170627,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-tarpon": {
@@ -493,7 +493,7 @@
    "status": 200,
    "hash": "27fb28333c2cdf4e",
    "bytes": 177469,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-tripletail": {
@@ -504,7 +504,7 @@
    "status": 200,
    "hash": "f92e7a4a6154861d",
    "bytes": 160918,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-weakfish": {
@@ -515,7 +515,7 @@
    "status": 200,
    "hash": "50eaa8c7a41036f1",
    "bytes": 164268,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-amberjack": {
@@ -526,7 +526,7 @@
    "status": 200,
    "hash": "15006f4ea24c8a0b",
    "bytes": 168493,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-black-sea-bass": {
@@ -537,7 +537,7 @@
    "status": 200,
    "hash": "779ded3fa9cc5bb5",
    "bytes": 162110,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-groupers": {
@@ -548,7 +548,7 @@
    "status": 200,
    "hash": "85d684a055fca3c6",
    "bytes": 247966,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": "2026-11-02"
   },
   "fl-hogfish": {
@@ -559,7 +559,7 @@
    "status": 200,
    "hash": "c8d218e0b1fa5608",
    "bytes": 164666,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-snappers": {
@@ -570,7 +570,7 @@
    "status": 200,
    "hash": "4a8f3be89664dcb1",
    "bytes": 225819,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": "2026-10-26"
   },
   "fl-atlantic-red-snapper": {
@@ -581,7 +581,7 @@
    "status": 200,
    "hash": "665be0ef23322d08",
    "bytes": 219300,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": "2026-10-26"
   },
   "fl-triggerfish": {
@@ -592,7 +592,7 @@
    "status": 200,
    "hash": "51b8a3706226cee4",
    "bytes": 164214,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-wahoo": {
@@ -603,7 +603,7 @@
    "status": 200,
    "hash": "213c4972f6dbf3e8",
    "bytes": 160806,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-spot-croaker": {
@@ -614,7 +614,7 @@
    "status": 200,
    "hash": "e9e6d4851bc103d1",
    "bytes": 160604,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-lobster": {
@@ -625,7 +625,7 @@
    "status": 200,
    "hash": "927a0e89258c0e4a",
    "bytes": 169299,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-stone-crab": {
@@ -636,7 +636,7 @@
    "status": 200,
    "hash": "3626f20f87298340",
    "bytes": 167482,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-blue-crab": {
@@ -647,7 +647,7 @@
    "status": 200,
    "hash": "340893bcb66525bc",
    "bytes": 172106,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-bonefish": {
@@ -658,7 +658,7 @@
    "status": 200,
    "hash": "e819bc133455164c",
    "bytes": 162956,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-barracuda": {
@@ -669,7 +669,7 @@
    "status": 200,
    "hash": "3b562481a52c51f5",
    "bytes": 162912,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-sharks": {
@@ -680,7 +680,7 @@
    "status": 200,
    "hash": "a1ebcf6b2a2c19fe",
    "bytes": 205702,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "fl-freshwater-general": {
@@ -691,7 +691,7 @@
    "status": 200,
    "hash": "04fa825f47a90d4e",
    "bytes": 167148,
-   "checked": "2026-11-02",
+   "checked": "2026-11-09",
    "changed": null
   },
   "ny-freshwater-statewide": {
@@ -701,8 +701,8 @@
    "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/statewide-season-sizes-catch-limits",
    "status": 200,
    "hash": "c5e39778c6a467a1",
-   "bytes": 94224,
-   "checked": "2026-11-02",
+   "bytes": 94227,
+   "checked": "2026-11-09",
    "changed": null
   },
   "ct-inland-species": {
@@ -712,8 +712,8 @@
    "url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/species-regulations",
    "status": 200,
    "hash": "7789cf41729b4239",
-   "bytes": 55046,
-   "checked": "2026-11-02",
+   "bytes": 54848,
+   "checked": "2026-11-09",
    "changed": null
   },
   "nj-ereg-sw-limits": {
@@ -724,9 +724,8 @@
    "status": 200,
    "hash": "172b5e1f104d3030",
    "bytes": 89728,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-sw-sharks": {
    "state": "NJ",
@@ -736,9 +735,8 @@
    "status": 200,
    "hash": "e1c524e8392184d5",
    "bytes": 74181,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-sw-mollusks": {
    "state": "NJ",
@@ -748,9 +746,8 @@
    "status": 200,
    "hash": "30160f463f3f9c22",
    "bytes": 87744,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-sw-finfish": {
    "state": "NJ",
@@ -760,9 +757,8 @@
    "status": 200,
    "hash": "b2d3bf9df8842466",
    "bytes": 73747,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-sw-sbbp": {
    "state": "NJ",
@@ -772,9 +768,8 @@
    "status": 200,
    "hash": "88d3c7ab753135c8",
    "bytes": 73865,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-fw-limits": {
    "state": "NJ",
@@ -784,9 +779,8 @@
    "status": 200,
    "hash": "7f76df61f0b1c4e4",
    "bytes": 83469,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-fw-trout": {
    "state": "NJ",
@@ -796,9 +790,8 @@
    "status": 200,
    "hash": "e8e49d2163ebf12f",
    "bytes": 112087,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-fw-delaware": {
    "state": "NJ",
@@ -808,9 +801,8 @@
    "status": 200,
    "hash": "9b0cd33a45e204c7",
    "bytes": 79330,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-fw-greenwood": {
    "state": "NJ",
@@ -820,9 +812,8 @@
    "status": 200,
    "hash": "33f04d758ac19d35",
    "bytes": 74666,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-fw-baitfish": {
    "state": "NJ",
@@ -832,9 +823,8 @@
    "status": 200,
    "hash": "a2b4098ddb5c028b",
    "bytes": 76153,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nj-ereg-fw-summary": {
    "state": "NJ",
@@ -844,9 +834,8 @@
    "status": 200,
    "hash": "807f938c36a15735",
    "bytes": 83436,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-crab-chesapeake": {
    "state": "MD",
@@ -856,9 +845,8 @@
    "status": 200,
    "hash": "41242e9779f9d0bd",
    "bytes": 85471,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-crab-atlantic": {
    "state": "MD",
@@ -868,9 +856,8 @@
    "status": 200,
    "hash": "6ec9cbf27265a582",
    "bytes": 79369,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-oysters-clams": {
    "state": "MD",
@@ -880,9 +867,8 @@
    "status": 200,
    "hash": "4ae8153bbe909b26",
    "bytes": 81240,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-crab-limits-notice": {
    "state": "MD",
@@ -892,9 +878,8 @@
    "status": 200,
    "hash": "04c12c42e5ad619a",
    "bytes": 139053,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-sharks": {
    "state": "MD",
@@ -904,9 +889,8 @@
    "status": 200,
    "hash": "94da16bc31f59b67",
    "bytes": 86649,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-hms": {
    "state": "MD",
@@ -916,9 +900,8 @@
    "status": 200,
    "hash": "ec6b1d3415e0e926",
    "bytes": 83790,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-yough": {
    "state": "MD",
@@ -928,9 +911,8 @@
    "status": 200,
    "hash": "6313790587fd9ec8",
    "bytes": 81978,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-bass-areas": {
    "state": "MD",
@@ -940,9 +922,8 @@
    "status": 200,
    "hash": "66cebe0a46bb9e86",
    "bytes": 79809,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-trout-sma": {
    "state": "MD",
@@ -952,9 +933,8 @@
    "status": 200,
    "hash": "0ee15e2c57e14663",
    "bytes": 88650,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-trout-pat": {
    "state": "MD",
@@ -964,9 +944,8 @@
    "status": 200,
    "hash": "d344216c7243a308",
    "bytes": 92896,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-invasive": {
    "state": "MD",
@@ -976,9 +955,8 @@
    "status": 200,
    "hash": "c3258cfc0be2fc66",
    "bytes": 79982,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-comar-snapper-grouper": {
    "state": "MD",
@@ -988,9 +966,8 @@
    "status": 200,
    "hash": "5f276efa6ea1ae34",
    "bytes": 23636,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-sw-regs": {
    "state": "MD",
@@ -1000,9 +977,8 @@
    "status": 200,
    "hash": "6dcf63236c733e8e",
    "bytes": 84656,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-fw-regs": {
    "state": "MD",
@@ -1012,9 +988,8 @@
    "status": 200,
    "hash": "8c49c40964c937ab",
    "bytes": 84847,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "md-bowfishing": {
    "state": "MD",
@@ -1024,9 +999,8 @@
    "status": 200,
    "hash": "5eab277861d90345",
    "bytes": 76714,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-rec-crabbing": {
    "state": "VA",
@@ -1035,10 +1009,9 @@
    "url": "https://mrc.virginia.gov/regulations/VA-recreational-crabbing-rules.shtm",
    "status": 200,
    "hash": "060407faac9b5557",
-   "bytes": 39717,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "bytes": 39092,
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-rec-shellfish": {
    "state": "VA",
@@ -1047,10 +1020,9 @@
    "url": "https://mrc.virginia.gov/Regulations/VA-recreational-shellfish-non-HL-fish-gears.shtm",
    "status": 200,
    "hash": "3beedb6f24fcfb6f",
-   "bytes": 38536,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "bytes": 37911,
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-mrc-sheet": {
    "state": "VA",
@@ -1060,9 +1032,8 @@
    "status": 200,
    "hash": "e4379ad65b449206",
    "bytes": 332921,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-mrc-spear": {
    "state": "VA",
@@ -1071,10 +1042,9 @@
    "url": "https://mrc.virginia.gov/Regulations/spearfishing-rules.shtm",
    "status": 200,
    "hash": "603788ea7e612bd8",
-   "bytes": 22157,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "bytes": 21532,
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-vac-490-20": {
    "state": "VA",
@@ -1084,9 +1054,8 @@
    "status": 200,
    "hash": "4898cc5059ff9c8f",
    "bytes": 54051,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-vac-490-40": {
    "state": "VA",
@@ -1096,9 +1065,8 @@
    "status": 200,
    "hash": "199a2124652c7c66",
    "bytes": 36767,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-vac-110": {
    "state": "VA",
@@ -1108,9 +1076,8 @@
    "status": 200,
    "hash": "5e3f0c117ca1d047",
    "bytes": 29062,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-vac-720-40": {
    "state": "VA",
@@ -1120,9 +1087,8 @@
    "status": 200,
    "hash": "ed822b1cbe585354",
    "bytes": 85767,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-dwr-trout": {
    "state": "VA",
@@ -1132,9 +1098,8 @@
    "status": 200,
    "hash": "a0974047a7974bec",
    "bytes": 51197,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-dwr-trout-special": {
    "state": "VA",
@@ -1144,9 +1109,8 @@
    "status": 200,
    "hash": "d1230fb7febb7615",
    "bytes": 68601,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-dwr-trout-dh": {
    "state": "VA",
@@ -1156,9 +1120,8 @@
    "status": 200,
    "hash": "ab16e1457cd37c26",
    "bytes": 57180,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "va-dwr-nongame": {
    "state": "VA",
@@ -1168,9 +1131,8 @@
    "status": 200,
    "hash": "d669895b723fbae0",
    "bytes": 66224,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-sg-proc": {
    "state": "NC",
@@ -1180,9 +1142,8 @@
    "status": 200,
    "hash": "a1bd050f58e1db7e",
    "bytes": 497291,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-redsnapper-proc": {
    "state": "NC",
@@ -1192,9 +1153,8 @@
    "status": 200,
    "hash": "64183a0a76cc37ae",
    "bytes": 501504,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-shark-proc": {
    "state": "NC",
@@ -1204,9 +1164,8 @@
    "status": 200,
    "hash": "3ca0bb934df8faea",
    "bytes": 492229,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-bluefish-proc": {
    "state": "NC",
@@ -1216,9 +1175,8 @@
    "status": 200,
    "hash": "c7e79e543fe1101a",
    "bytes": 345851,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-bsb-north-proc": {
    "state": "NC",
@@ -1228,9 +1186,8 @@
    "status": 200,
    "hash": "c2240d428998a390",
    "bytes": 305163,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-shad-proc": {
    "state": "NC",
@@ -1240,9 +1197,8 @@
    "status": 200,
    "hash": "2d82caedbfdc5221",
    "bytes": 351770,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-dolphin-proc": {
    "state": "NC",
@@ -1252,9 +1208,8 @@
    "status": 200,
    "hash": "dc788c2ebd17debd",
    "bytes": 299017,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-sheepshead-proc": {
    "state": "NC",
@@ -1264,9 +1219,8 @@
    "status": 200,
    "hash": "42d847e9d27c3d63",
    "bytes": 649893,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-weakfish-proc": {
    "state": "NC",
@@ -1276,9 +1230,8 @@
    "status": 200,
    "hash": "c3642f5fa9670320",
    "bytes": 246688,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-scup-proc": {
    "state": "NC",
@@ -1288,9 +1241,8 @@
    "status": 200,
    "hash": "50945f6fa9c69314",
    "bytes": 314435,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-shrimp-proc": {
    "state": "NC",
@@ -1300,9 +1252,8 @@
    "status": 200,
    "hash": "66a2fa94f521a303",
    "bytes": 246991,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-oyster-proc": {
    "state": "NC",
@@ -1312,9 +1263,8 @@
    "status": 200,
    "hash": "7518e3a8fdccca60",
    "bytes": 691031,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-lobster-proc": {
    "state": "NC",
@@ -1324,9 +1274,8 @@
    "status": 200,
    "hash": "890adde7c173afea",
    "bytes": 222763,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-stb-ocean-proc": {
    "state": "NC",
@@ -1336,9 +1285,8 @@
    "status": 200,
    "hash": "134186b208bbb692",
    "bytes": 333109,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-stb-csma-proc": {
    "state": "NC",
@@ -1348,9 +1296,8 @@
    "status": 200,
    "hash": "6b4eecf674784373",
    "bytes": 706999,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-stb-asma-proc": {
    "state": "NC",
@@ -1360,9 +1307,8 @@
    "status": 200,
    "hash": "64cc89ac029c280c",
    "bytes": 251937,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-stb-info": {
    "state": "NC",
@@ -1372,9 +1318,8 @@
    "status": 200,
    "hash": "ba8de7580745c114",
    "bytes": 95378,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-seatrout-proc": {
    "state": "NC",
@@ -1384,9 +1329,8 @@
    "status": 200,
    "hash": "77717365ea1209a5",
    "bytes": 347693,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-calico-proc": {
    "state": "NC",
@@ -1396,9 +1340,8 @@
    "status": 200,
    "hash": "38d55e3fd69f52a7",
    "bytes": 286195,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-wrc-nongame-limits": {
    "state": "NC",
@@ -1408,9 +1351,8 @@
    "status": 200,
    "hash": "17fca6db3ae97afb",
    "bytes": 77703,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-wrc-nongame-regs": {
    "state": "NC",
@@ -1420,9 +1362,8 @@
    "status": 200,
    "hash": "e44b884fadaadfb1",
    "bytes": 103862,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-wrc-other-regs": {
    "state": "NC",
@@ -1432,9 +1373,8 @@
    "status": 200,
    "hash": "d56ba9dc24f8c706",
    "bytes": 77775,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "nc-wrc-inland-regs": {
    "state": "NC",
@@ -1444,9 +1384,8 @@
    "status": 200,
    "hash": "deb189cd22221a33",
    "bytes": 70829,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-crustacean-limits": {
    "state": "SC",
@@ -1456,9 +1395,8 @@
    "status": 200,
    "hash": "fb32379fc279a30d",
    "bytes": 79420,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-shellfish-harvest": {
    "state": "SC",
@@ -1468,9 +1406,8 @@
    "status": 200,
    "hash": "820165a879840494",
    "bytes": 8485,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-snapper-grouper": {
    "state": "SC",
@@ -1480,9 +1417,8 @@
    "status": 200,
    "hash": "b388eec553fca13f",
    "bytes": 85313,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-sharks": {
    "state": "SC",
@@ -1492,9 +1428,8 @@
    "status": 200,
    "hash": "c37d3a92a7ba9b60",
    "bytes": 76978,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-billfish-tunas": {
    "state": "SC",
@@ -1504,9 +1439,8 @@
    "status": 200,
    "hash": "edd5c18ef16e92ff",
    "bytes": 79449,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-freshwater-nongame": {
    "state": "SC",
@@ -1516,9 +1450,8 @@
    "status": 200,
    "hash": "134f991caa00b089",
    "bytes": 86756,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-freshwater-game-regs": {
    "state": "SC",
@@ -1528,9 +1461,8 @@
    "status": 200,
    "hash": "4d87df8281984721",
    "bytes": 79138,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-general-info": {
    "state": "SC",
@@ -1540,9 +1472,8 @@
    "status": 200,
    "hash": "1da883f8db272ef8",
    "bytes": 85524,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-shad-herring": {
    "state": "SC",
@@ -1552,9 +1483,8 @@
    "status": 200,
    "hash": "934e0b0160ab30c2",
    "bytes": 78217,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-state-lakes": {
    "state": "SC",
@@ -1564,9 +1494,8 @@
    "status": 200,
    "hash": "9152c164a5da2d5d",
    "bytes": 87066,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-nongame-methods": {
    "state": "SC",
@@ -1576,9 +1505,8 @@
    "status": 200,
    "hash": "c020541aca831c99",
    "bytes": 83873,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-invasives": {
    "state": "SC",
@@ -1588,9 +1516,8 @@
    "status": 200,
    "hash": "0e82acfe4e2b29fb",
    "bytes": 77864,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "sc-redsnapper": {
    "state": "SC",
@@ -1600,9 +1527,8 @@
    "status": 200,
    "hash": "482e5f2c2bab997d",
    "bytes": 25981,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-shrimp-crab-shellfish": {
    "state": "GA",
@@ -1611,10 +1537,9 @@
    "url": "https://gadnrle.org/shrimpregs",
    "status": 200,
    "hash": "1de4c27fe4a6e8af",
-   "bytes": 78787,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "bytes": 79920,
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-eregs-shrimp-crab-shellfish": {
    "state": "GA",
@@ -1624,9 +1549,8 @@
    "status": 200,
    "hash": "1b48979532b8714a",
    "bytes": 83846,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-general-regulations": {
    "state": "GA",
@@ -1636,9 +1560,8 @@
    "status": 200,
    "hash": "3de227befb9d370b",
    "bytes": 77694,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-trout": {
    "state": "GA",
@@ -1648,9 +1571,8 @@
    "status": 200,
    "hash": "5227e4fc2783aba6",
    "bytes": 75918,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-border-agreements": {
    "state": "GA",
@@ -1660,9 +1582,8 @@
    "status": 200,
    "hash": "208c399652bc902e",
    "bytes": 79369,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-pfa": {
    "state": "GA",
@@ -1671,10 +1592,9 @@
    "url": "https://www.eregulations.com/georgia/fishing/public-fishing-areas",
    "status": 200,
    "hash": "b2cccf175f6b4777",
-   "bytes": 87632,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "bytes": 87600,
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-fishing-methods": {
    "state": "GA",
@@ -1684,9 +1604,8 @@
    "status": 200,
    "hash": "99a7655ae49892a6",
    "bytes": 75554,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-saltwater-fish-id": {
    "state": "GA",
@@ -1696,9 +1615,8 @@
    "status": 200,
    "hash": "220af3ca91f4b352",
    "bytes": 77035,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-recreational-fishing": {
    "state": "GA",
@@ -1708,9 +1626,8 @@
    "status": 200,
    "hash": "d3d9491bcbddfa13",
    "bytes": 84229,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-crd-shellfish-rec": {
    "state": "GA",
@@ -1720,9 +1637,8 @@
    "status": 200,
    "hash": "f1b92b96c05aa5ac",
    "bytes": 71853,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ga-crd-hms": {
    "state": "GA",
@@ -1732,9 +1648,8 @@
    "status": 200,
    "hash": "15fc89be8b0a7646",
    "bytes": 66116,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "fl-shrimp": {
    "state": "FL",
@@ -1744,9 +1659,8 @@
    "status": 200,
    "hash": "fbeeff083f8c18ed",
    "bytes": 167704,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "fl-bay-scallops": {
    "state": "FL",
@@ -1756,9 +1670,8 @@
    "status": 200,
    "hash": "c8b411b518953396",
    "bytes": 170182,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "fl-shellfish": {
    "state": "FL",
@@ -1768,9 +1681,8 @@
    "status": 200,
    "hash": "2f4bc2a71a4d8540",
    "bytes": 220069,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ny-shellfish": {
    "state": "NY",
@@ -1779,10 +1691,9 @@
    "url": "https://dec.ny.gov/things-to-do/shellfishing/harvesting-regulations",
    "status": 200,
    "hash": "51bccd39cddfab02",
-   "bytes": 84586,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "bytes": 84589,
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ct-crab-lobster": {
    "state": "CT",
@@ -1791,10 +1702,9 @@
    "url": "https://portal.ct.gov/deep/fishing/saltwater-fishing-guide/bait-species-blue-crab-and-lobster-regulations",
    "status": 200,
    "hash": "f0545c8552fa77c5",
-   "bytes": 36244,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "bytes": 36046,
+   "checked": "2026-11-09",
+   "changed": null
   },
   "ct-lobster-guidelines": {
    "state": "CT",
@@ -1804,10 +1714,9 @@
    "status": 200,
    "hash": "d23c52b1402d4cc4",
    "bytes": 347098,
-   "checked": "2026-11-02",
-   "changed": null,
-   "firstSeen": true
+   "checked": "2026-11-09",
+   "changed": null
   }
  },
- "lastRun": "2026-11-02T20:24:59.556Z"
+ "lastRun": "2026-11-09T20:51:53.888Z"
 }

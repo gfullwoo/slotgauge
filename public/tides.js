@@ -117,10 +117,15 @@
   <div class="tv-results" id="tvResults"></div>
 </div>
 <div class="tv-now" id="tvNow"></div>
-<div class="tv-wx" id="tvWx" hidden></div>
+<!-- Tides first. This view is reached by tapping the tide badge, so the chart and the highs/lows
+     are what was asked for; the weather block runs to twelve hourly cards plus eight daily rows and
+     used to push the chart below the fold on a phone. The moon card has an explicit slot here too,
+     so the order lives in one place instead of depending on where log.js inserts itself. -->
 <div class="tv-nav"><button class="btn" id="tvPrev" type="button">‹ Earlier</button><span id="tvRange"></span><button class="btn" id="tvNext" type="button">Later ›</button></div>
 <div class="tv-chart" id="tvChart"></div>
 <table class="tv-table"><thead><tr><th>Day</th><th>Tide</th><th>Time</th><th>Height</th></tr></thead><tbody id="tvRows"></tbody></table>
+<div class="tv-moon" id="tvMoon" hidden></div>
+<div class="tv-wx" id="tvWx" hidden></div>
 <p class="tv-foot">Predictions from <a href="https://tidesandcurrents.noaa.gov/" target="_blank" rel="noopener">NOAA CO-OPS</a>, station <span id="tvId"></span>, feet above MLLW, station local time. Weather and wind can change actual water levels.</p>`;
     $('#galleryView').insertAdjacentElement('afterend', sec);
     $('#tvBack').addEventListener('click', () => window.SG.showView('check'));

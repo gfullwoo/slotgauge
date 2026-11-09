@@ -13,21 +13,21 @@
 <meta property="og:image" content="https://slotgauge.com/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0f6f8c" id="themeColor">
+<meta name="theme-color" content="#02203a" id="themeColor">
 <script>
 // Start the hero image before anything else. Its URL is in localStorage and needs nothing from
-// /api/regs, but setHero() runs inside initApp(), which waits on that 157 KB fetch — so the picture
-// used to start ~150 ms late on a warm load, and seconds late on a cold start. Preloading here puts
-// the request in flight during head parsing; by the time setHero sets src, it is already cached.
+// /api/regs, but setHero() runs inside initApp(), which waits on that fetch — so the picture used to
+// start late on a warm load and seconds late on a cold start. Preloading here puts the request in
+// flight during head parsing.
 (function(){try{
   var h = JSON.parse(localStorage.getItem('sg.hero')||'null'); if (!h || !h.src) return;
   var m = /imageDB\.ashx\?id=(\d+)/.exec(h.src); var src = m ? '/img/species/'+m[1]+'.jpg' : h.src;
-  if (!/^\/img\/species\//.test(src)) return;          // only our own immutable images
+  if (!/^\/img\/species\//.test(src)) return;
   var l = document.createElement('link'); l.rel='preload'; l.as='image'; l.href=src;
   document.head.appendChild(l);
 }catch(e){}})();
 </script>
-<script>(function(){try{var t=localStorage.getItem('sg.theme');if(t==='ocean'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}var z=localStorage.getItem('sg.text')||(window.innerWidth<=480?'large':'normal');document.documentElement.setAttribute('data-text',z);}catch(e){}})();</script>
+<script>(function(){try{var t=localStorage.getItem('sg.theme');if(!t||(t==='light'&&!localStorage.getItem('sg.themeChosen'))){t='ocean';localStorage.setItem('sg.theme',t);}if(t==='ocean'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}var z=localStorage.getItem('sg.text')||(window.innerWidth<=480?'large':'normal');document.documentElement.setAttribute('data-text',z);}catch(e){}})();</script>
 <meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="SlotGauge">
@@ -291,7 +291,78 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 
 /* ---- weather ---- */
 .wx-line{font-size:13px;color:var(--ink-2);margin:-4px 0 10px;cursor:pointer}.wx-line b{color:var(--ink);font-size:14px}.wx-line .wx-place{color:var(--ink-3)}.wx-ico{font-size:1.15em;line-height:1;margin-right:2px}
+.lochelp{margin-top:14px;border-top:1px solid var(--line);padding-top:10px;text-align:left}
+.locdiag{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:6px 8px;word-break:break-word}
+.lochelp summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
+.lochelp ol{line-height:1.7;padding-left:20px;font-size:13px;color:var(--ink-2)}
+.lochelp p{font-size:13px;color:var(--ink-2)}
+.keepstate{display:flex;align-items:center;gap:8px;justify-content:center;margin:10px 0 0;font-size:13px;color:var(--ink-2);cursor:pointer}
+.keepstate input{width:auto;cursor:pointer}
+.locfix{font:inherit;font-size:12px;margin-left:6px;padding:4px 10px;border-radius:999px;border:1px solid var(--accent,#0f6f8c);background:transparent;color:var(--accent,#0f6f8c);cursor:pointer;white-space:nowrap}
+.locfix:hover{background:var(--accent,#0f6f8c);color:#fff}
+.locfix:disabled{opacity:.6;cursor:default}
+.chip.warn .dot{background:#c7861f}
 .tv-wx{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+/* --- moon & solunar --- */
+.tv-moon{margin-top:12px}
+.tv-card.moon{display:block}
+.moon-top{display:flex;align-items:center;gap:12px}
+.moon-face{font-size:32px;line-height:1}
+.moon-win{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.moon-win li{display:flex;align-items:baseline;gap:8px;padding:7px 10px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line)}
+.moon-win li.major{border-color:var(--accent,#0f6f8c);box-shadow:inset 3px 0 0 var(--accent,#0f6f8c)}
+.moon-win li b{flex:1}
+.moon-win li span{font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.moon-win li small{color:var(--ink-3);text-transform:uppercase;font-size:10px;letter-spacing:.06em}
+.moon-foot{margin:8px 0 0;font-size:12px;color:var(--ink-3);line-height:1.45}
+/* --- catch log --- */
+.log-intro{color:var(--ink-2);margin:0 0 12px;line-height:1.5}
+.log-form{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:10px}
+.log-row{display:flex;gap:10px;flex-wrap:wrap}
+.log-row label{flex:1;min-width:130px;display:grid;gap:4px;font-size:12px;color:var(--ink-2)}
+.log-form input,.log-form textarea,.log-form select{font:inherit;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);color:var(--ink);width:100%}
+.log-note{display:grid;gap:4px;font-size:12px;color:var(--ink-2)}
+.log-keep{align-items:center}
+.log-keep .chk{flex:0 0 auto;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink)}
+.log-keep .chk input{width:auto}
+.log-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.log-msg{font-size:13px;color:var(--ink-2)}
+.log-msg.good{color:#1a7f4b}.log-msg.bad{color:#b3261e}
+.log-count{margin:16px 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3)}
+.log-item{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 38px 12px 14px;margin-bottom:8px}
+.log-main b{font-size:16px}
+.log-main span{color:var(--ink-2);margin-left:6px}
+.log-main small{display:block;color:var(--ink-3);margin-top:2px}
+.log-cond{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.pill{font-size:11px;padding:3px 8px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-2)}
+.pill.tide{border-color:#2f7fa8}.pill.moon{border-color:#8a7ab8}.pill.sol{border-color:#c08a3e}
+.log-noteline{margin:8px 0 0;color:var(--ink-2);font-size:13px;line-height:1.5}
+.log-del{position:absolute;top:8px;right:8px;border:0;background:transparent;color:var(--ink-3);font-size:20px;line-height:1;cursor:pointer;padding:4px 8px;border-radius:8px}
+.log-del:hover{background:var(--surface-2);color:var(--ink)}
+/* --- best windows --- */
+.ins-head{color:var(--ink-2);line-height:1.55;margin:0 0 14px}
+.ins-group{margin:0 0 18px}
+.ins-group h3{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);margin:0 0 8px;font-weight:600}
+.ins-bars{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.ins-bars li{display:grid;grid-template-columns:minmax(90px,1fr) 2fr auto;align-items:center;gap:10px;font-size:13px}
+.ins-bars .bar{height:8px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden}
+.ins-bars .bar i{display:block;height:100%;background:var(--ink-3)}
+.ins-bars li.best .bar i{background:var(--accent,#0f6f8c)}
+.ins-bars li.best .bk{font-weight:700}
+.ins-bars .bn{color:var(--ink-3);font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ins-flat{margin:6px 0 0;font-size:12px;color:var(--ink-3)}
+.ins-win{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ins-win li{display:flex;gap:12px;padding:10px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--line)}
+.ins-win li.hit{border-color:var(--accent,#0f6f8c)}
+.iw-when{min-width:110px}
+.iw-when b{display:block;font-size:13px}
+.iw-when span{font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.iw-what small{color:var(--ink-3);font-size:11px}
+.iw-why{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:3px}
+.iw-why li{font-size:12px;color:var(--ink-2)}
+.iw-why li::before{content:'✓ ';color:var(--accent,#0f6f8c)}
+.ins-foot{margin:14px 0 0;font-size:12px;color:var(--ink-3);line-height:1.5}
+@media (max-width:480px){.ins-bars li{grid-template-columns:1fr auto;grid-template-areas:'k n' 'b b'}.ins-bars .bk{grid-area:k}.ins-bars .bn{grid-area:n}.ins-bars .bar{grid-area:b}.ins-win li{flex-direction:column;gap:4px}}
 .wx-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}.wx-now{display:flex;align-items:center;gap:10px}.wx-now .wx-ico{font-size:34px}.wx-temp{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:34px;line-height:1}.wx-temp span{font-size:16px;font-weight:600;color:var(--ink-2);margin-left:2px}.wx-text{font-size:14px;color:var(--ink-2)}
 .wx-facts{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2)}.wx-facts b{color:var(--ink);font-weight:600}
 .wx-hours{display:flex;gap:4px;overflow-x:auto;margin-top:10px;padding-bottom:4px;-webkit-overflow-scrolling:touch}.wx-h{flex:0 0 52px;display:grid;justify-items:center;gap:2px;background:var(--surface-2);border-radius:10px;padding:6px 2px;font-size:12px}.wx-h small{color:var(--ink-3);font-size:11px}.wx-h .pop{color:var(--accent);min-height:13px}.wx-h .wx-ico{font-size:18px}
@@ -325,7 +396,7 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 <div class="hero" id="hero" hidden role="button" tabindex="0" aria-label="Open species details"><img id="heroImg" alt=""><div class="cap"><b id="heroName"></b><span id="heroSub"></span><span class="go" aria-hidden="true">›</span></div></div>
 
 <div class="chips" id="ctx">
-  <span class="chip" id="locChip"><span class="dot"></span><span id="locTxt">Locating…</span></span>
+  <span class="chip" id="locChip"><span class="dot"></span><span id="locTxt">Locating…</span></span><button class="locfix" id="locFix" type="button" hidden></button>
   <span class="chip" id="zoneChip" role="button" tabindex="0" title="Tap to cycle water type"><span id="zoneTxt">State waters</span> ▾</span>
 </div>
 
@@ -407,12 +478,60 @@ html[data-text="large"]{zoom:1.2}html[data-text="xl"]{zoom:1.35}
 
 <script>
 const STATE_KEY = 'sg.state', STATE_MANUAL = 'sg.stateManual';
+// A manual state pick is a trip, not a setting: it expires so the app can never be stuck showing the
+// wrong state the way a permanent override could. Location is always the default when no pick is live.
+const OVERRIDE_HOURS = 24;
+let GEO_BLOCKED = false;   // browser permission is 'denied': location can never take over on its own
+function readOverride(){
+  let raw = null; try { raw = localStorage.getItem(STATE_MANUAL); } catch(e){ return null; }
+  if (!raw) return null;
+  let o; try { o = JSON.parse(raw); } catch(e){ o = null; }
+  if (!o || !o.state) o = { state: raw, setAt: Date.now() };          // migrate the old plain-string form
+  // A pick the user explicitly asked to keep never expires. Everything else is a trip: it lapses and
+  // automatic detection — which is never stored and so never expires — takes over again.
+  if (o.pin) return { state: o.state, setAt: o.setAt, msLeft: Infinity, pinned: true };
+  const left = o.setAt + OVERRIDE_HOURS * 3600e3 - Date.now();
+  if (left <= 0) { clearOverride(); return null; }
+  return { state: o.state, setAt: o.setAt, msLeft: left };
+}
+function setOverride(st, pin){ try { localStorage.setItem(STATE_MANUAL, JSON.stringify({ state: st, setAt: Date.now(), pin: !!pin })); localStorage.setItem(STATE_KEY, st); } catch(e){} }
+function clearOverride(){ try { localStorage.removeItem(STATE_MANUAL); } catch(e){} }
+function overrideLeft(ms){ const h = Math.round(ms / 3600e3); return h >= 2 ? `${h}h` : `${Math.max(1, Math.round(ms / 60e3))}m`; }
 let LOC = { status: 'pending' };   // filled by resolveState; read by initApp for the location chip
 // The browser's own timeout only starts once permission is granted; an unanswered prompt would hang the app, so race a hard timer too.
-function geoPosition(timeout){ return new Promise(res => { if (!navigator.geolocation) return res(null); let done=false; const fin = v => { if (!done) { done=true; res(v); } }; setTimeout(() => fin(null), timeout + 1000); try { navigator.geolocation.getCurrentPosition(p => fin(p.coords), () => fin(null), { timeout, maximumAge: 600000 }); } catch(e) { fin(null); } }); }
+let GEO_ERR = null;   // why the last position request failed — shown in the help panel so a failure is diagnosable
+const GEO_CODES = { 1: 'PERMISSION_DENIED', 2: 'POSITION_UNAVAILABLE', 3: 'TIMEOUT' };
+function geoPosition(timeout){ return new Promise(res => {
+  if (!navigator.geolocation) { GEO_ERR = 'no geolocation API in this browser'; return res(null); }
+  let done=false; const fin = v => { if (!done) { done=true; res(v); } };
+  setTimeout(() => { GEO_ERR = GEO_ERR || `no answer within ${timeout + 1000}ms`; fin(null); }, timeout + 1000);
+  try { navigator.geolocation.getCurrentPosition(
+    p => { GEO_ERR = null; fin(p.coords); },
+    err => { GEO_ERR = `${GEO_CODES[err && err.code] || 'error'}${err && err.message ? ': ' + err.message : ''}`; fin(null); },
+    { timeout, maximumAge: 600000 }); }
+  catch(e) { GEO_ERR = 'threw: ' + (e && e.message); fin(null); }
+}); }
+async function geoState(){
+  try { if (navigator.permissions) return (await navigator.permissions.query({ name: 'geolocation' })).state; } catch(e){}
+  return 'unknown';
+}
 async function resolveState(){
-  let manual = null, last = null; try { manual = localStorage.getItem(STATE_MANUAL); last = localStorage.getItem(STATE_KEY); } catch(e){}
+  let override = readOverride(), last = null; try { last = localStorage.getItem(STATE_KEY); } catch(e){}
+  // Always ask for a position before judging. In the Play app Chrome delegates location to the Android
+  // app, and the site permission can still read "denied" while getCurrentPosition works fine — so the
+  // Permissions API is only ever used to word the message, never to decide whether to try.
+  // The installed Android app resolves the state itself and passes it as ?state=XX, because Chrome's
+  // geolocation delegation into a Trusted Web Activity cannot be relied on. It is still the device's own
+  // location, so it ranks with detection — above a remembered state, below an explicit pick.
+  let fromApp = null;
+  try {
+    const q = new URLSearchParams(location.search).get('state');
+    if (q && /^[A-Za-z]{2}$/.test(q)) { fromApp = q.toUpperCase(); sessionStorage.setItem('sg.appState', fromApp); }
+    else fromApp = sessionStorage.getItem('sg.appState');
+  } catch (e) {}
   const coords = await geoPosition(7000);
+  GEO_BLOCKED = !coords && (await geoState()) === 'denied';
+  if (!coords) override = readOverride();   // re-read: a pick must not expire when nothing can replace it
   if (coords) {
     try {
       const r = await fetch(`/api/locate?lat=${coords.latitude.toFixed(4)}&lon=${coords.longitude.toFixed(4)}`);
@@ -420,7 +539,13 @@ async function resolveState(){
       else LOC = { status: 'error' };
     } catch(e) { LOC = { status: 'error' }; }
   } else LOC = { status: 'off' };
-  const st = manual || (LOC.status === 'ok' && LOC.state) || last || 'DE';
+  // Standing in the state you picked makes the pick redundant — drop it and go back to automatic.
+  if (override && LOC.status === 'ok' && LOC.state === override.state) { clearOverride(); override = null; }
+  LOC.override = override;
+  if (LOC.status !== 'ok' && fromApp) LOC = { status: 'ok', state: fromApp, name: null, supported: true, viaApp: true };
+  LOC.fallback = !override && LOC.status !== 'ok' && !!last;   // showing a remembered state, not a known one
+  LOC.defaulted = !override && LOC.status !== 'ok' && !last;   // ... or the built-in default, which is a guess
+  const st = (override && override.state) || (LOC.status === 'ok' && LOC.state) || last || 'DE';
   try { localStorage.setItem(STATE_KEY, st); } catch(e){}
   return st;
 }
@@ -431,7 +556,7 @@ async function loadRegs(){
 }
 // ---------- themes: light (default), ocean, dark ----------
 const THEME_COLORS = { light: '#0f6f8c', ocean: '#02203a', dark: '#121416' };
-function setTheme(t){ t = THEME_COLORS[t] ? t : 'light'; if (t === 'light') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t); try { localStorage.setItem('sg.theme', t); } catch(e){} const m = document.getElementById('themeColor'); if (m) m.content = THEME_COLORS[t]; for (const b of document.querySelectorAll('.theme-pick button')) b.setAttribute('aria-pressed', String(b.dataset.theme === t)); }
+function setTheme(t, chosen){ t = THEME_COLORS[t] ? t : 'ocean'; if (t === 'light') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t); try { localStorage.setItem('sg.theme', t); if (chosen) localStorage.setItem('sg.themeChosen', '1'); } catch(e){} const m = document.getElementById('themeColor'); if (m) m.content = THEME_COLORS[t]; for (const b of document.querySelectorAll('.theme-pick button')) b.setAttribute('aria-pressed', String(b.dataset.theme === t)); }
 function themePickHtml(){ const c = currentTheme(); return `<div class="menu-sec">Theme</div><div class="theme-pick" role="group" aria-label="Theme">${['light','ocean','dark'].map(t => `<button type="button" data-theme="${t}" aria-pressed="${t===c}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>`; }
 function currentTheme(){ return document.documentElement.getAttribute('data-theme') || 'light'; }
 const TEXT_SIZES = { normal: 'Normal', large: 'Large', xl: 'Extra large' };
@@ -439,9 +564,9 @@ function setTextSize(z){ z = TEXT_SIZES[z] ? z : 'normal'; document.documentElem
 function currentTextSize(){ return document.documentElement.getAttribute('data-text') || 'normal'; }
 function textPickHtml(){ const c = currentTextSize(); return `<div class="menu-sec">Text size</div><div class="theme-pick text-pick" role="group" aria-label="Text size">${Object.entries(TEXT_SIZES).map(([k, v]) => `<button type="button" data-text="${k}" aria-pressed="${k===c}">${v}</button>`).join('')}</div>`; }
 document.addEventListener('click', e => { const b = e.target.closest('.text-pick [data-text]'); if (b) { e.stopPropagation(); setTextSize(b.dataset.text); } });
-document.addEventListener('click', e => { const b = e.target.closest('.theme-pick [data-theme]'); if (b) { e.stopPropagation(); setTheme(b.dataset.theme); } });
+document.addEventListener('click', e => { const b = e.target.closest('.theme-pick [data-theme]'); if (b) { e.stopPropagation(); setTheme(b.dataset.theme, true); } });
 setTheme(currentTheme());
-window.SG_THEME = { set: setTheme, get: currentTheme, pickerHtml: () => themePickHtml() + textPickHtml(), next: () => { const o = ['light','ocean','dark']; setTheme(o[(o.indexOf(currentTheme()) + 1) % o.length]); } };
+window.SG_THEME = { set: setTheme, get: currentTheme, pickerHtml: () => themePickHtml() + textPickHtml(), next: () => { const o = ['light','ocean','dark']; setTheme(o[(o.indexOf(currentTheme()) + 1) % o.length], true); } };
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
 // ---------- install prompt (PWA) ----------
 (function(){
@@ -529,10 +654,9 @@ function findSpecies(text){
   }
   if (hits.length) return {hits:dedupe(hits), term:best};
   // Second pass: anglers split compound names — "sheeps head" for sheepshead, "blue fish" for
-  // bluefish, "black drum" is two words but "blackdrum" gets typed too. Drop every non-letter from
-  // both sides and compare. Only runs when the normal pass found nothing, and only for terms of 6+
-  // characters, because without word boundaries a short alias like "cod" or "bass" would match
-  // inside unrelated names.
+  // bluefish. Drop every non-letter from both sides and compare. Only runs when the normal pass
+  // found nothing, and only for terms of 6+ characters, because without word boundaries a short
+  // alias like "cod" or "bass" would match inside unrelated names.
   const squash = x => x.replace(/[^a-z0-9]/g, '');
   const sq = squash(t);
   let bestSq = null; const hitsSq = [];
@@ -574,11 +698,10 @@ function parseLength(t){
   if (m) return +m[1];
   m = t.match(/\b(\d+(?:\.\d+)?)\s*(?:incher|inchers)\b/);
   if (m) return +m[1];
-  // A bare trailing number is a length: people type "sheeps head 14" far more often than they
-  // reach for the inch mark. Guarded tightly — it must be the last thing in the string and be
-  // preceded by whitespace, so a date fragment ("11/8") or a slot written "18-25" is not picked
-  // up; 1-3 digits keeps years out; and parseCount's shapes all need a word or ordinal after the
-  // number, so "2 flounder" is still two fish rather than a two-inch one.
+  // A bare trailing number is a length: people type "sheeps head 14" far more often than they reach
+  // for the inch mark. Guarded tightly — it must end the string and follow whitespace, so a date
+  // fragment ("11/8") is not picked up; 1-3 digits keeps years out; and parseCount's shapes all need
+  // a word or ordinal after the number, so "2 flounder" is still two fish.
   m = t.match(/(?:^|\s)(\d{1,3}(?:\.\d+)?)\s*$/);
   if (m) { const n = +m[1]; if (n >= 1 && n <= 200) return n; }
   return null;
@@ -723,14 +846,11 @@ function setHero({src, fallback, name, sub, id, transient}){
   img.classList.remove('in');
   img.onload=()=>{ show(); if (!transient) { try { localStorage.setItem('sg.heroOk', JSON.stringify({src:img.getAttribute('src'), name, sub, id})); } catch(e){} } };
   // There is always a hero. A photo that fails to identify has no species to fall back to, and a
-  // picture that 404s used to hide the banner for good with nothing to bring it back. Walk down:
-  // the species illustration, then the last image that actually loaded, then the house fish.
+  // picture that 404s used to hide the banner for good with nothing to bring it back.
   img.onerror=()=>{
     const tried = img.getAttribute('src') || '';
-    // Same fish, different URL: swap the source and keep the caption.
-    if (fallback && fallback !== tried) { img.src = fallback; return; }
+    if (fallback && fallback !== tried) { img.src = fallback; return; }   // same fish, other URL
     // Different fish: re-enter so the caption and the tap target match the picture actually shown.
-    // `transient` stops a fallback from overwriting the real last pick in storage.
     if (!transient) {
       const g = lastGoodHero(); if (g && g.src !== tried && g.src !== src) return setHero({ ...g, transient: true });
       const d = defaultHero(); if (d && d.src !== tried && d.src !== src) return setHero({ ...d, transient: true });
@@ -805,19 +925,33 @@ $('#zoneChip').addEventListener('keydown', e=>{ if (e.key==='Enter'||e.key===' '
 // ---------- location + state ----------
 let STATES = [];
 fetch('/api/states').then(r=>r.json()).then(j=>{ STATES = j.states; }).catch(()=>{});
+// The chip must always answer "why am I seeing this state?" — a wrong state the user cannot explain is
+// the difference between a tool they trust and one they stop using.
 function drawLoc(){
-  const chip=$('#locChip'), txt=$('#locTxt');
-  let manual = null; try { manual = localStorage.getItem(STATE_MANUAL); } catch(e){}
-  chip.classList.remove('ok');
-  if (manual) { txt.textContent = `${STATE_NAME} rules · chosen`; chip.classList.add('ok'); return; }
+  const chip=$('#locChip'), txt=$('#locTxt'), fix=$('#locFix');
+  const o = LOC.override;
+  chip.classList.remove('ok','warn');
+  fix.hidden = true; fix.textContent = ''; fix.dataset.act = '';
+  if (o) {
+    txt.textContent = o.pinned ? `${STATE_NAME} · kept by you` : `${STATE_NAME} · you picked this`;
+    chip.classList.add('ok');
+    fix.hidden = false; fix.textContent = o.pinned ? 'Use my location' : `Use my location (expires in ${overrideLeft(o.msLeft)})`; fix.dataset.act = 'auto';
+    return;
+  }
   if (LOC.status === 'ok' && LOC.state === STATE) {
     chip.classList.add('ok');
     if (LOC.offshore) { txt.textContent = `Near ${STATE_NAME} · likely federal waters`; if (ZONES.federal) setZone('federal'); }
     else txt.textContent = `${STATE_NAME} · from your location`;
+    return;
   }
-  else if (LOC.status === 'ok' && LOC.state) txt.textContent = `Located in ${LOC.name} · showing ${STATE_NAME}`;
+  if (LOC.status === 'ok' && LOC.state) txt.textContent = LOC.viaApp ? `Located in ${LOC.state} · showing ${STATE_NAME}` : `Located in ${LOC.name} · showing ${STATE_NAME}`;
   else if (LOC.status === 'ok') txt.textContent = `${LOC.detected ? LOC.detected + ' not covered yet' : 'Far from covered waters'} · showing ${STATE_NAME}`;
-  else if (LOC.status === 'off') txt.textContent = `Location off · ${STATE_NAME} rules`;
+  else if (LOC.status === 'off') {
+    chip.classList.add('warn');
+    txt.textContent = LOC.defaulted ? `Location off · showing ${STATE_NAME} by default` : `Location off · showing ${STATE_NAME}`;
+    fix.hidden = false; fix.textContent = 'Turn on location'; fix.dataset.act = 'retry';
+  }
+  else if (LOC.status === 'error') { chip.classList.add('warn'); txt.textContent = `Couldn't check your location · showing ${STATE_NAME}`; fix.hidden = false; fix.textContent = 'Try again'; fix.dataset.act = 'retry'; }
   else txt.textContent = `${STATE_NAME} rules`;
 }
 // Licence block for the state currently selected. It never answers "do YOU need one" — age,
@@ -846,13 +980,57 @@ function pickState(){
   const live = STATES.filter(s=>s.live);
   const opts = live.map(s=>`<button class="chip${s.code===STATE?' on':''}" data-state="${s.code}">${escapeHtml(s.name)}<span style="color:var(--ink-3)">· ${s.species}</span></button>`).join('');
   const auto = `<button class="chip" data-state="auto">Use my location</button>`;
-  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3><p>Rules and seasons differ by state. Pick where you're fishing; SlotGauge remembers it until you switch back to your location.</p><div class="list">${opts}${auto}</div>${licenceHtml()}<p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>`;
+  const keep = `<label class="keepstate"><input type="checkbox" id="keepState"${LOC.override && LOC.override.pinned ? ' checked' : ''}> Keep this state until I change it</label>`;
+  const o = LOC.override;
+  const why = o ? `<p class="hint">You're showing <b>${escapeHtml(STATE_NAME)}</b> because you picked it.${o.pinned ? ' It stays until you change it.' : ` It goes back to your location automatically in ${overrideLeft(o.msLeft)}.`}</p>`
+    : LOC.status === 'off' ? `<p class="hint">Location is off, so SlotGauge is showing ${escapeHtml(STATE_NAME)}. Turning location on keeps this right by itself.</p>` : '';
+  $('#out').innerHTML = `<div class="picker"><h3>Which state's rules?</h3>${why}<p>Rules and seasons differ by state. Pick where you're fishing and SlotGauge shows it for the next ${OVERRIDE_HOURS} hours, then goes back to your location — unless you tick the box below to keep it.</p><div class="list">${opts}${auto}</div>${keep}<p class="hint">Coming next: ${STATES.filter(s=>!s.live).map(s=>s.name).join(', ')}.</p></div>${licenceHtml()}`;
   $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
 }
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-state]'); if (!b) return;
-  try { if (b.dataset.state === 'auto') { localStorage.removeItem(STATE_MANUAL); localStorage.removeItem(STATE_KEY); } else { localStorage.setItem(STATE_MANUAL, b.dataset.state); localStorage.setItem(STATE_KEY, b.dataset.state); } } catch(_){}
+  const pin = !!document.querySelector('#keepState')?.checked;
+  if (b.dataset.state === 'auto') { clearOverride(); try { localStorage.removeItem(STATE_KEY); } catch(_){} } else setOverride(b.dataset.state, pin);
   location.reload();
+});
+// "Use my location" used to clear the pick and reload — and when the browser had location blocked it
+// silently fell through to the built-in default, which looked exactly like being stuck. Now we ask for a
+// fix first and say plainly when the browser is the thing refusing.
+// When location is unavailable the user needs an answer in one tap, not a settings walkthrough. The
+// state list IS the answer; the permission steps are a footnote for the few who want automatic back.
+function locHelp(){
+  const android = /Android/i.test(navigator.userAgent), ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const inApp = (() => { try { return sessionStorage.getItem('sg.platform') === 'android' || /[?&]source=android/.test(location.search); } catch(e) { return false; } })();
+  const steps = android && inApp
+    ? ['Android Settings → Apps → SlotGauge → Permissions → Location → <b>Allow only while using the app</b>', 'Force-stop SlotGauge and open it again']
+    : android
+    ? ['Chrome → ⋮ → Settings → Site settings → Location → <b>slotgauge.com</b> → Allow', 'Reload the page']
+    : ios ? ['iOS Settings → Privacy &amp; Security → Location Services → <b>on</b>', 'Settings → Safari → Location → <b>Ask</b> or <b>Allow</b>', 'Close SlotGauge and open it again']
+    : ['Click the padlock or location icon in the address bar', 'Set Location to <b>Allow</b> for slotgauge.com', 'Reload the page'];
+  const live = STATES.filter(s=>s.live);
+  const opts = live.map(s=>`<button class="chip${s.code===STATE?' on':''}" data-state="${s.code}">${escapeHtml(s.name)}</button>`).join('');
+  $('#out').innerHTML = `<div class="picker"><h3>Where are you fishing?</h3>
+<p>Pick a state and SlotGauge shows it for ${OVERRIDE_HOURS} hours, or tick the box to keep it until you change it. You can change it any time by tapping the location chip.</p>
+<div class="list">${opts}</div>
+<label class="keepstate"><input type="checkbox" id="keepState" checked> Keep this state until I change it</label>
+<details class="lochelp"><summary>Prefer it to detect this automatically?</summary>
+<p class="locdiag">Last attempt: <b>${escapeHtml(GEO_ERR || 'no error recorded')}</b>${inApp ? ' · running in the installed app' : ' · running in a browser tab'}</p>
+<p>Location isn't reaching SlotGauge. If you're in the installed app, the app's own location permission is the one that matters:</p>
+<ol>${steps.map(x=>`<li>${x}</li>`).join('')}</ol>
+<div class="list"><button class="chip" data-state="auto">Try location again</button></div></details></div>`;
+  $('#out').scrollIntoView?.({behavior:'smooth',block:'start'});
+}
+$('#locFix').addEventListener('click', async (e) => {
+  e.stopPropagation();
+  // Whether we are dropping a pick or turning location back on, the question is the same: can this
+  // browser actually locate us? Never discard a working pick for a location that is blocked — that is
+  // what made the app look stuck on its default state.
+  const fix = $('#locFix'); fix.disabled = true; const was = fix.textContent; fix.textContent = 'Checking…';
+  const coords = await geoPosition(8000);   // try for real first — delegation may answer even when the
+                                            // site permission reads as denied
+  GEO_BLOCKED = !coords && (await geoState()) === 'denied';
+  if (coords) { clearOverride(); try { localStorage.removeItem(STATE_KEY); } catch(_){} return location.reload(); }
+  fix.disabled = false; fix.textContent = was; drawLoc(); locHelp();
 });
 $('#locChip').addEventListener('click', pickState);
 $('#locChip').setAttribute('role','button'); $('#locChip').setAttribute('title','Change state');
@@ -945,6 +1123,7 @@ document.dispatchEvent(new Event('sg:ready'));
 <script src="/scans.js"></script>
 <script src="/species.js"></script>
 <script src="/tides.js"></script>
+<script src="/log.js" defer></script>
 <script src="/sky.js"></script>
 </body>
 </html>

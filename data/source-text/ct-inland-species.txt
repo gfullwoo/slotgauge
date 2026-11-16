@@ -2,7 +2,7 @@ Connecticut State
  Department of Energy & Environmental Protection
  Freshwater Fishing Guide 
  Species Regulations
-Statewide Inland Fisheries Species Regulations
+Statewide Inland Fisheries species regulations
 As of January 1, 2026, all trout (brook, brown, rainbow, tiger, lake) must be at least 9 inches to keep.
 December 27, 2022 - From March 1 until 6:00 a.m. on the second Saturday of April, trout fishing is catch and release only statewide. There are exceptions, so please refer to the river/stream or lake/pond pages for regulations on a specific waterbody. 
 March 1, 2022 - The passage of Public Act 21-12 by the legislature eliminated the closed season for trout. 
@@ -178,10 +178,11 @@ Taking of smelt in rivers and streams is prohibited.
  Minimum Length: No minimum length
  Daily Creel Limit: 50 fish
 Striped Bass
+November 10, 2026 - Per Public Act 26-101, all Striped Bass fishing is Catch and Release commencing December 1. Catch and release ends March 31 of the following year (harvest resumes on April 1). During the Catch and Release time period all Striped Bass must be returned, without avoidable injury, to the water from which taken. This applies to all CT waters.
 Effective May 26, 2023, Connecticut's Striped Bass regulations changed to become a slot of 28 inches to 31 inches. Any striped bass that is less than 28 inches or greater than or equal to 31 inches must be released without avoidable injury. This change was the result of emergency action by the Atlantic States Marine Fisheries Commission on May 2, 2023. This action set a maximum size of 31 inches for striped bass coast-wide. As a result, Connecticut's previous slot of 28 inches to 35 inches is now reduced to 28-31 inches.
  Area: All waters
  Legal Methods: Angling, Ice Fishing
- Season: Open year-round
+ Season: April 1 until November 30
  Slot: 28 inches to to 31 inches 
  Daily Creel Limit: 1 fish
 Note: Circle hooks required when using bait.
@@ -219,4 +220,4 @@ Walleye
 Please contact the Fisheries Division with any questions. 
 Phone: 860-424-FISH (3474)
 E-mail: deep.inland.fisheries@ct.gov
-Content last updated December 2025
+Content last updated November 2026

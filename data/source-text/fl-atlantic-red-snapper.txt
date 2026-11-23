@@ -46,47 +46,47 @@ Example: if a single angler harvests 1 red snapper, 1 black grouper, 2 vermilion
  Common Name 
  Species Name 
  Per Person Limit 
-Snapper 
-Red snapper
-1 
-Snapper 
-Cubera snapper (min 30 in TL)
-2 
-Snapper 
-Mutton snapper
+ Snapper 
+ Red snapper
+ 1 
+ Snapper 
+ Cubera snapper (min 30 in TL)
+ 2 
+ Snapper 
+ Mutton snapper
 Vermilion snapper
-5 
-Snapper 
-Blackfin snapper
+ 5 
+ Snapper 
+ Blackfin snapper
 Gray snapper
 Lane snapper
 Queen snapper
 Schoolmaster snapper
 Silk snapper
 Yellowtail snapper
-7 
-Grouper 
-Black grouper
+ 7 
+ Grouper 
+ Black grouper
 Scamp grouper
-1 
-Grouper 
-Coney grouper
+ 1 
+ Grouper 
+ Coney grouper
 Graysby grouper
 Red grouper
 Red hind grouper
 Rock hind grouper
 Yellowfin grouper
 Yellowmouth grouper
-2 
-Jack 
-Greater amberjack
-1 
-Sea Bass 
-Black sea bass
-2 
-Triggerfish 
-Gray triggerfish
-5 
+ 2 
+ Jack 
+ Greater amberjack
+ 1 
+ Sea Bass 
+ Black sea bass
+ 2 
+ Triggerfish 
+ Gray triggerfish
+ 5 
  Helpful Videos
  Welcome Video
  How to use the FWC Reporting App

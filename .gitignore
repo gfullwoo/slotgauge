@@ -4,3 +4,5 @@ data/CHANGES.md
 Claude outputs/
 slotgauge-release.jks
 slotgauge-release.password.txt
+play-screenshots/
+*.zip

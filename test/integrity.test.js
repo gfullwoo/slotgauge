@@ -40,6 +40,8 @@ test('index.html still contains every feature it is meant to', () => {
     '.moon-win': 'the moon and solunar card styles',
     '.ins-bars': 'the Best Windows styles',
     '.log-form': 'the catch log styles',
+    '.tp-grid': 'the Plan my Trip calendar styles',
+    '.tp-day-card': 'the Plan my Trip per-day cards',
     "rel='preload'": 'early hero image load',
   };
   const missing = Object.entries(features)

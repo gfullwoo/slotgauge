@@ -46,6 +46,7 @@ page-by-page against their official regulations, so they may still be missing sp
 | **Weather** | National Weather Service current conditions, hourly and 7-day, beside the tide chart. The Ocean theme animates to match (rain, cloud, sun, storm). | Free |
 | **Moon & solunar** | Phase, illumination, moonrise/set and the four solunar windows (moon overhead, underfoot, rise, set), computed locally — no API key. | Free |
 | **Catch log** | Every logged fish is auto-stamped with the tide stage, moon phase, solunar window and weather at that moment. | Pro |
+| **Plan my Trip** | Pick dates and a place and get the window as a whole: tides and moon for every day, forecast where one exists, and which species the rules actually allow on those dates. A grounded advisor then suggests what to target, when, and with what — reasoning only over those facts plus your own log, never over invented fishing reports, and every species it names is re-checked against the regulations. | Pro |
 | **Best windows** | Reads your own log back: which tide stage, moon phase, time of day and wind you actually catch fish in, and which upcoming windows match. | Pro |
 | **Android app** | Trusted Web Activity with 1×1 and 2×1 tide widgets and a microphone shortcut. The app resolves the state natively and passes it to the page as `?state=XX`, because Chrome's geolocation delegation into a TWA is unreliable (`NoTwaFound`); only a state code crosses over, never coordinates. | Free |
 
@@ -109,6 +110,8 @@ GET    /api/weather?lat&lon
 GET    /api/moon?lat&lon&days                  phase, moonrise/set, solunar windows
 GET    /api/catches · POST /api/catches · DELETE /api/catches/:id      (Pro)
 GET    /api/insights?lat&lon[&species]         your patterns + ranked upcoming windows (Pro)
+GET    /api/trip?lat&lon&start&end            trip facts: legal species for those dates, tides, moon, forecast (Pro)
+POST   /api/trip/advice                       grounded species suggestions for a trip window (Pro)
 POST   /api/billing/checkout · /api/billing/portal · /api/billing/webhook
 ```
 

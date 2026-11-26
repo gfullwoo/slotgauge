@@ -11,6 +11,9 @@ import { loadSources, loadState as loadSourceState } from './src/sources.js';
 import { makeLocator } from './src/locate.js';
 import { makeInfoLookup, loadSpeciesInfo } from './src/wiki.js';
 import { makeTides, addDays } from './src/tides.js';
+import { tripDays, moonAcross, tidesAcross, weatherAcross, forecastCoverage, MAX_DAYS } from './src/trip.js';
+import { openAcross } from './src/season.js';
+import { buildBrief, advise, MAX_SPECIES } from './src/advisor.js';
 import { makeWeather } from './src/weather.js';
 import { makeMemoryAccounts, makeBilling, isPro, isTestPro, FREE_IDENTIFY_PER_MONTH, PLANS } from './src/billing.js';
 import { normalizeImage } from './src/identify.js';
@@ -345,6 +348,80 @@ export function createApp({ verifyToken, identifier, store, firebaseConfig = {},
         windows = rankWindows({ summary, days, hilo }).slice(0, 12);
       }
       res.json({ summary, windows, note: summary.enough ? null : `Log ${MIN_CATCHES - summary.catches} more catches and SlotGauge will start showing patterns. Until then this is just your tally.` });
+    });
+
+    // ---- Plan my Trip (Pro) ----
+    // /api/trip?lat&lon&start&end[&state][&zone][&station]
+    // The facts: which species the rules allow on those dates, tides, moon and solunar, and the
+    // forecast where one exists. Nothing here is generated; a day beyond the forecast horizon is
+    // reported as out of range rather than filled in.
+    app.get('/api/trip', requireAuth, proOnly, async (req, res) => {
+      let days;
+      try { days = tripDays(req.query.start, req.query.end); } catch (e) { return res.status(400).json({ error: e.message }); }
+      const la = +req.query.lat, lo = +req.query.lon;
+      if (!Number.isFinite(la) || !Number.isFinite(lo)) return res.status(400).json({ error: 'Give the trip location as lat and lon.' });
+
+      const station = req.query.station ? (tides.station(req.query.station) || null) : (tides.nearest(la, lo, 1)[0] || null);
+      const tz = station?.tz || 'America/New_York';
+      const code = String(req.query.state || '').toUpperCase() || (await locator(la, lo).catch(() => null))?.state || 'DE';
+      const regs = allRegs[code];
+      if (!regs) return res.status(400).json({ error: `No regulations for ${code}.` });
+
+      const zone = req.query.zone || 'state';
+      const legal = openAcross(regs.species, days, zone);
+      const moonDays = moonAcross(days, la, lo, tz);
+      const tideDays = station ? await tidesAcross(tides, station.id, days) : days.map((d) => ({ date: d, hilo: [], error: 'No tide station near this point.' }));
+      let daily = [];
+      try { daily = (await weather.at(la, lo))?.daily || []; } catch { /* forecast is optional */ }
+      const wx = weatherAcross(daily, days);
+
+      res.json({
+        days, state: code, zone, station, tz,
+        species: legal, moon: moonDays, tides: tideDays, weather: wx,
+        coverage: forecastCoverage(wx),
+        maxDays: MAX_DAYS,
+        note: 'Tides and moon are computed for any date. The weather forecast runs about a week; days past it are marked and stay empty until closer to the trip.',
+      });
+    });
+
+    // POST /api/trip/advice   { lat, lon, start, end, state?, zone?, station?, target? }
+    // Suggestions, grounded in the facts above plus the angler's own log. The model is never asked
+    // what has been biting — it has no such data — and every species it names is checked back
+    // against the regulations before it reaches the client.
+    app.post('/api/trip/advice', requireAuth, proOnly, async (req, res) => {
+      const b = req.body || {};
+      let days;
+      try { days = tripDays(b.start, b.end); } catch (e) { return res.status(400).json({ error: e.message }); }
+      const la = +b.lat, lo = +b.lon;
+      if (!Number.isFinite(la) || !Number.isFinite(lo)) return res.status(400).json({ error: 'Give the trip location as lat and lon.' });
+
+      const station = b.station ? (tides.station(b.station) || null) : (tides.nearest(la, lo, 1)[0] || null);
+      const tz = station?.tz || 'America/New_York';
+      const code = String(b.state || '').toUpperCase() || 'DE';
+      const regs = allRegs[code];
+      if (!regs) return res.status(400).json({ error: `No regulations for ${code}.` });
+      const zone = b.zone || 'state';
+      const legal = openAcross(regs.species, days, zone);
+      if (!legal.length) return res.status(200).json({ advice: null, reason: `Nothing is open to harvest in ${code} on those dates.` });
+
+      const moonDays = moonAcross(days, la, lo, tz);
+      const tideDays = station ? await tidesAcross(tides, station.id, days) : days.map((d) => ({ date: d, hilo: [] }));
+      let daily = [];
+      try { daily = (await weather.at(la, lo))?.daily || []; } catch { /* optional */ }
+      const wx = weatherAcross(daily, days);
+      let log = null;
+      if (catches) {
+        try { const rows = await catches.list(req.user.uid, { limit: 500 }); const sm = summarize(rows); log = { ...sm, total: sm.catches }; } catch { /* optional */ }
+      }
+
+      const brief = buildBrief({ place: station?.name || null, state: code, days, species: legal, tides: tideDays, moon: moonDays, weather: wx, coverage: forecastCoverage(wx), log, target: b.target || null, tz });
+      try {
+        const { advice, dropped } = await advise({ brief, legal, days, zone });
+        res.json({
+          advice, dropped, target: b.target || null, species: legal.map((s) => s.name),
+          note: 'Generated guidance, not a fishing report. SlotGauge has no feed of recent local catches; this reasons over the regulations, tides, moon and your own log. Bait and style are general angling knowledge for the species, not a claim about this week.',
+        });
+      } catch (e) { res.status(e.status || 502).json({ error: e.message }); }
     });
   }
 
